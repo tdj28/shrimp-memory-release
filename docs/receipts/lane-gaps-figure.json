@@ -1,0 +1,3639 @@
+{
+ "kind": "lane-gap-figure",
+ "model_calls": 0,
+ "script": {
+  "path": "/data2/shrimp-memory/tools/plot_lane_gaps.py",
+  "bytes": 5865,
+  "sha256": "2c75ab7728547f88c4b8a62ddee8b789870cb9b46eae3aa2439f163827ad81a9"
+ },
+ "utc": "2026-11-13T21:29:21Z",
+ "outputs": [
+  {
+   "path": "/data2/chaos-journal-shrimp-memory/figures/lane-gaps.pdf",
+   "bytes": 20735,
+   "sha256": "4fa48aacf6e09e7d6d1ced337fab0618201cff1b3c37c743b85d9d76d1a2d1e4"
+  },
+  {
+   "path": "/data2/chaos-journal-shrimp-memory/figures/lane-gaps.png",
+   "bytes": 186156,
+   "sha256": "d41bf3fae912d60e664c82428e23ecbde9db056f03b6137ec9f0a13c6d0a6437"
+  }
+ ],
+ "cases": [
+  {
+   "operation": "W",
+   "start": 0,
+   "updates": 252,
+   "max_gap": 7.306655280814311e-15,
+   "at_update": 125,
+   "at_move_end": 1.6783449630075609e-15,
+   "at_hold_end": 2.5457067009959644e-15
+  },
+  {
+   "operation": "W",
+   "start": 1,
+   "updates": 252,
+   "max_gap": 4.141478826547029e-14,
+   "at_update": 95,
+   "at_move_end": 1.6808603120477272e-14,
+   "at_hold_end": 1.719024228519217e-14
+  },
+  {
+   "operation": "E0",
+   "start": 0,
+   "updates": 360,
+   "max_gap": 1.7676832220203664e-14,
+   "at_update": 17,
+   "at_move_end": 2.321060010856968e-15,
+   "at_hold_end": 1.1622647289044608e-15
+  },
+  {
+   "operation": "E0",
+   "start": 1,
+   "updates": 360,
+   "max_gap": 2.909304741560703e-14,
+   "at_update": 53,
+   "at_move_end": 1.3010426069826053e-15,
+   "at_hold_end": 3.159798811491754e-15
+  },
+  {
+   "operation": "E1",
+   "start": 0,
+   "updates": 360,
+   "max_gap": 1.4479320520344174e-12,
+   "at_update": 83,
+   "at_move_end": 3.7721822193637067e-13,
+   "at_hold_end": 1.1182027526146499e-14
+  },
+  {
+   "operation": "E1",
+   "start": 1,
+   "updates": 360,
+   "max_gap": 4.8960835385969403e-14,
+   "at_update": 89,
+   "at_move_end": 3.309852392163748e-15,
+   "at_hold_end": 8.500145032286355e-15
+  },
+  {
+   "operation": "T",
+   "start": 0,
+   "updates": 252,
+   "max_gap": 1.722164078010735e-13,
+   "at_update": 41,
+   "at_move_end": 1.2274903316011887e-14,
+   "at_hold_end": 1.3356503403283426e-14
+  },
+  {
+   "operation": "T",
+   "start": 1,
+   "updates": 252,
+   "max_gap": 9.32171007050897e-14,
+   "at_update": 43,
+   "at_move_end": 9.367506770274758e-16,
+   "at_hold_end": 2.121566811119635e-15
+  }
+ ],
+ "two_lane_arrangements_bitwise_equal_to_usual": 32,
+ "bound_inputs": [
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-00-initial.npy",
+   "bytes": 14464,
+   "sha256": "a9d7fd345ca4cc064903b3470b2cadbdc76c9fa25d9ba098660b86b527401cd4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-00-block-012.npz",
+   "bytes": 166412,
+   "sha256": "68356239e76b2ddddd4e01b0aa7b048a3e9dd3f79f0e66a7adb4131601400e9c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-initial.npy",
+   "bytes": 14464,
+   "sha256": "e98147735c6e4cfa5211e1cf18bac4c77a54b8ecf1e38359886f6dc71126d92a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-012.npz",
+   "bytes": 166445,
+   "sha256": "5007edb323bfd160f34cebb0e678fcceea80bbe2cf296a051b76f27b00b8a99d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-024.npz",
+   "bytes": 166411,
+   "sha256": "6047b223a0c41c595cc835166cd9b49fa150e61650a100548c92deb14dc663aa"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-036.npz",
+   "bytes": 166437,
+   "sha256": "e80b7ed28d4fef66c5caf5d33658f39c89f47aab7eefd591d86c8b8f5796e64f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-048.npz",
+   "bytes": 166409,
+   "sha256": "b4f3eff9d8f4c86046230a899771d2a8ed64f3d89fe141c09ae34d778f92aad8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-060.npz",
+   "bytes": 166425,
+   "sha256": "9919f8d63ede180019ebcfedddfa33b36e1aceabb0f908b43f779a74c0a0fb99"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-072.npz",
+   "bytes": 166431,
+   "sha256": "34766b2d0ca7ad8b513ecb4e1013cad1de02fee2bf6ac711014f6689c5af7360"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-084.npz",
+   "bytes": 166454,
+   "sha256": "85fada4f4cb1b53f8ac469d902e836c03a949e25f995d7d76d14618fcc372981"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-096.npz",
+   "bytes": 166439,
+   "sha256": "85a68ca33380b23a826164022cf8afb7c9b208c2bd73f56468c60e0eefeae945"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-108.npz",
+   "bytes": 166452,
+   "sha256": "f9a4986bcc9a23b1bd36269510711ccd7c3f0aa5e7063d5951a1ba1911c37645"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-120.npz",
+   "bytes": 166412,
+   "sha256": "1d8b124e720be8ca8ed275a9bcb62f9a945413243a0778d5251a53d18ff3646f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-132.npz",
+   "bytes": 166431,
+   "sha256": "3e77a14b8774a50b2626746a6657fd1f33a209a8ab4cc2e2a5e4800dd72f2313"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-144.npz",
+   "bytes": 166406,
+   "sha256": "9c306d7a61297bcece98db8841763e58b4877bd2a18f9665eb42d7fe4188dba2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-156.npz",
+   "bytes": 166468,
+   "sha256": "32252bb9482858b781ae0e3e5c45c027623580332c3f19fb5b51eddfaf964b31"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-168.npz",
+   "bytes": 166415,
+   "sha256": "1499d1bd561b847a3e8bf8c8fab506bde1ece76457aedf1a3b4ae18e4f83b533"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-180.npz",
+   "bytes": 166391,
+   "sha256": "3c22f8304d217241f3f5832e44050fbbf22db841d7238feb633df82ae21d68bb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-192.npz",
+   "bytes": 166415,
+   "sha256": "de7e28117e1522e497c52b92a4c55145ad68576e943aa291fd887f2c68920fb7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-204.npz",
+   "bytes": 166421,
+   "sha256": "3e3d4d5d3fc16de82f916def0710966b514ed17f5de4a2a2dea3d05d94d7f9eb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-216.npz",
+   "bytes": 166441,
+   "sha256": "33517af6dd48c3764f912723393b44fb789422e7b1521878f5fb6d3cdc9fcf46"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-228.npz",
+   "bytes": 166419,
+   "sha256": "bf4f4dbd5f00d9017a9bb2875b7cf5824f790c6244f3871203b2a92b2a77ccfe"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/stage-01-block-240.npz",
+   "bytes": 166445,
+   "sha256": "9cae7fe40b75d95f28562498adba31b9a36194042d71e814a91fddf561423dee"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/result.json",
+   "bytes": 544825,
+   "sha256": "120a1f9ab0325e5b4965e3186de611f09844b774ba48a58600e608d8b2879c05"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/manifest.json",
+   "bytes": 7582,
+   "sha256": "7a4384afb4a3f8c80b6a0369c9ea35d221643d246ac88d533c16a99c3141d819"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-02-initial.npy",
+   "bytes": 14464,
+   "sha256": "7aeab82cfb1db23b7c72fe45f805e60ac01568a3ec0e66580c3ad36ac5026278"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-02-block-012.npz",
+   "bytes": 166404,
+   "sha256": "17c4eccb394a13406da4b4ab5c5cf4bf1751f0bc4e370e1160fcf39a87f8cf91"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-initial.npy",
+   "bytes": 14464,
+   "sha256": "060f369e948a0441a596a5335750cd98cb5039a745a1a741f6f0a1d950b5d1d6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-012.npz",
+   "bytes": 166421,
+   "sha256": "dfc6dee5ef7960f7c7eef5aa42fc67b4389551b3c6787cb62c2513f8be9dd585"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-024.npz",
+   "bytes": 166397,
+   "sha256": "96b256b84a3210eb2b6b89ed3d16db388cd3bc9cf173485f68040b8068db9c9a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-036.npz",
+   "bytes": 166448,
+   "sha256": "df41a7010d49bcadcf95ede53873916b7f97488565852cfbaafb222ef19c7e2e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-048.npz",
+   "bytes": 166387,
+   "sha256": "ffd07ab88176725e2736262530d0862af0c50ad389b001781016bea04e35f2ed"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-060.npz",
+   "bytes": 166406,
+   "sha256": "67ac5f0cd32f86d30ae3a6ce849e863842146601f7696bc09b4b0c7dacadf899"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-072.npz",
+   "bytes": 166414,
+   "sha256": "529170d82dd07ca1136c04f1cb84490d81870f81c5b66477acee2c1408d807a6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-084.npz",
+   "bytes": 166447,
+   "sha256": "2018046d409ce6da1945d18c0666e0b00173da97d7749ee16613cd95af10c7f2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-096.npz",
+   "bytes": 166431,
+   "sha256": "47217dad1bc0309d6841f47fe83a552d0971df0a4cac6d1d11f280e0067e7bfb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-108.npz",
+   "bytes": 166431,
+   "sha256": "dac5544f2ab2b7e875c3e825f3e24867c4251feafcd2d255f57178a7df213220"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-120.npz",
+   "bytes": 166406,
+   "sha256": "6f0a995629ee4322070f4a517ec7843fe7f36091ee488418520dae74d0fe0c1d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-132.npz",
+   "bytes": 166419,
+   "sha256": "633bc670e7fa950417b124c15d1c200a69fce616ea61abf6f01128b19e96ed1c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-144.npz",
+   "bytes": 166407,
+   "sha256": "629f6b1f140cc1d22ceee39f4d5783247d975f9843e260b3872a189b02db0d64"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-156.npz",
+   "bytes": 166444,
+   "sha256": "dd1d7c4aaa381953f5a176568e0c14c064c3aa61e923b55010b47e0990ee68fc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-168.npz",
+   "bytes": 166415,
+   "sha256": "83717948969d9e9dc046fa0702c3492e17a8365d612835746c1641f064e79415"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-180.npz",
+   "bytes": 166396,
+   "sha256": "e6bb877c56cff3dd0c178bc30f920d3ff15021f14587a89bbf5001e5dbb2b3bd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-192.npz",
+   "bytes": 166419,
+   "sha256": "c56adf13ce9baeaa1c47365c63c669dc2d72e56c6f3d68964d2e9ef4ee8a0feb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-204.npz",
+   "bytes": 166412,
+   "sha256": "7b062d8f4d22a327e7d87e802c9d30c26d7b792cf98008f85da2b53169f62f48"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-216.npz",
+   "bytes": 166416,
+   "sha256": "324f58d24101246c7070a56fdd2c7ceb63489b02b8aea2944e9db026a70e5085"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-228.npz",
+   "bytes": 166419,
+   "sha256": "c530eba02d7fc727734e2a020e3a46e23e9c9cd973f98db44d62d2f51720127e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/stage-03-block-240.npz",
+   "bytes": 166432,
+   "sha256": "8c9b39f0c7dc0ce0f6246091e5ebf7f15ed6773e1fc8a7aaa2068b43e8f5b1bf"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/result.json",
+   "bytes": 544823,
+   "sha256": "afd89a45ebbc968188dc78597842db72883da34997029ddec9581c120f2b8503"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/manifest.json",
+   "bytes": 7582,
+   "sha256": "c81345adfe0dc093211760e46dc3902a74ae33928964e978d7dc5a55e2fb4fea"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-04-initial.npy",
+   "bytes": 14464,
+   "sha256": "bdae2b78197d0c768d8f3bc4c0b42a090f03d8f06ce284df5233d3c0f826e135"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-04-block-012.npz",
+   "bytes": 84976,
+   "sha256": "9c10aee02d36745981c584c95b408e36b082a4a0d4927179bf90c70566072c79"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-initial.npy",
+   "bytes": 14464,
+   "sha256": "d7104285cadd2ed42ec8877e43590d33397bd88a3e07ed5dc7abbf309af9b3c7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-012.npz",
+   "bytes": 84999,
+   "sha256": "9be4a990006f3725fdd733813391e08f130cb03bc32e40a7ecab11e669d1710c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-024.npz",
+   "bytes": 84986,
+   "sha256": "768946fb9c48f3faefee825b91cba0206796543acfe9db90e9a13d57eb58402b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-036.npz",
+   "bytes": 85002,
+   "sha256": "3acf47cdeb2532bdc126e54fc88ad86ab80160c30b34f1c262a0f4aede50d2b3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-048.npz",
+   "bytes": 84986,
+   "sha256": "d3daaa2a09d7f883df470c53399fe9f726c3580903bb8f236d0711e8db376fa8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-060.npz",
+   "bytes": 85009,
+   "sha256": "24aad5e205e1ff35550c6da25874f35bbac85c01bbbc8d0d2fec9a5c7b4fd1d1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-072.npz",
+   "bytes": 84996,
+   "sha256": "b141a079dd670b03295adec89c212f910b5ea4e5f4a728aaf892ea1f57f9c0a2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-084.npz",
+   "bytes": 84994,
+   "sha256": "32f30d624dca4788a66272e68e6a1551a29a52484bc66f3ccdb177c757e7c941"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-096.npz",
+   "bytes": 84987,
+   "sha256": "dc554ec581597811f9d4909f4bf3db2a6604aa5bf1d42edbabfd36459f76263a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-108.npz",
+   "bytes": 85003,
+   "sha256": "1eb1849bd4e855f86696d0f9296398dbc1db9f763d10fa6f6ebf8db2b4ddce39"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-120.npz",
+   "bytes": 84983,
+   "sha256": "ab3efb4a191480e20f75e731a902be699b5249c33e24a8dbf92b2b66300d5580"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-132.npz",
+   "bytes": 84987,
+   "sha256": "868fa12a7385f36330b28e510330fecede5a9eee0ee87bbefca99898b7c4c563"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-144.npz",
+   "bytes": 84976,
+   "sha256": "dd96c245755beb17d8841a97667a6affe0ccaaef335afc92b21091ef6bc185d9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-156.npz",
+   "bytes": 84996,
+   "sha256": "d080577f40dd4772cbb7b59ceac62f646465a4349e35ff4b326a28c951b23ba7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-168.npz",
+   "bytes": 85001,
+   "sha256": "01e55fa54a7eaee845747b7f76c34e22802ca677224792613b6c44a93c5e4c21"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-180.npz",
+   "bytes": 84995,
+   "sha256": "658374dc74c47407c806be109c0b3ec2b6f5a9681a566b34248d9b16ab60d183"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-192.npz",
+   "bytes": 84980,
+   "sha256": "7ccfa8474c45c911d07977f9de481db52c792164bc158bb40144f29238894f0f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-204.npz",
+   "bytes": 84983,
+   "sha256": "c6a1eb6ff68f6af7d37c2b77a13b40527370383e29ac9d24a690d139c4f90c85"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-216.npz",
+   "bytes": 84984,
+   "sha256": "532c15a7f33c16f1eadbdfe6e5251de06853fc14a07faa8c1436ab8ea4f1be3f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-228.npz",
+   "bytes": 84986,
+   "sha256": "a3dd571ede3dd39cccaad212db886dddc3de0beaf19d0c46142d0f2407380176"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/stage-05-block-240.npz",
+   "bytes": 84995,
+   "sha256": "48f51c00a4ef18e1fdf4bef0d184e37a6690940bad282c75ed46595761308a97"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/result.json",
+   "bytes": 545039,
+   "sha256": "9f2d050704d935408f46b88683e0929a9a4d180ba1c0ae7c0291be4614697495"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/manifest.json",
+   "bytes": 7561,
+   "sha256": "b97a07c2f44ad1f61a66522c06a7871d62d2f66d2e870aa890418cd2ea20615c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-06-initial.npy",
+   "bytes": 14464,
+   "sha256": "660a24fb7ca127399aecb4ff461b56849e7933fe000c3f65748c35509c5b20cc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-06-block-012.npz",
+   "bytes": 85008,
+   "sha256": "7626a8fa443830cddbf7d42aaa6cebf99f82c99a0bfe5c524193733a835b9fec"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-initial.npy",
+   "bytes": 14464,
+   "sha256": "788cc703f2ee58c876212193bcb9c9fc61aab1fa91b881b3e36e4e755a204f79"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-012.npz",
+   "bytes": 85006,
+   "sha256": "0638db717c634014a5f2983128ec7ed4d35b1cb202ab9fbbb5d30e173bd8399b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-024.npz",
+   "bytes": 84987,
+   "sha256": "c9ce83e2d3402c6899de2c1320b6310aa1a07984211c1b875b875eed7b359413"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-036.npz",
+   "bytes": 85011,
+   "sha256": "04317fc88dba6eefcdfa200ffc19d05f4845399e48344f8d0ace9a96f24adcc5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-048.npz",
+   "bytes": 84985,
+   "sha256": "8ce6b750a8164fff1faab9a2880d3d30035a269223738667f448d7df59121f4e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-060.npz",
+   "bytes": 84986,
+   "sha256": "0e3a389e6a9ce6164e302c7d46277efa84a0e962a8e7909f226b7715e8cba11a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-072.npz",
+   "bytes": 84982,
+   "sha256": "2caf32296a3a398cd0595173012e0951b09c331a706ef70ae693ee8f23ce1aca"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-084.npz",
+   "bytes": 85022,
+   "sha256": "93ee14901a8c70162543a6e2d6080c90894ee3636f15e7f1d78f1cad3a9fbb4c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-096.npz",
+   "bytes": 85017,
+   "sha256": "8752de7e20a30bc4faa450986e904f30b2c4b5561c999e5a455c9f151a6d88a4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-108.npz",
+   "bytes": 84992,
+   "sha256": "71a97a4f042cdf9e1c440c5dd3e2b1e5fe6935247e8cda03330db5eeafb8af85"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-120.npz",
+   "bytes": 84990,
+   "sha256": "92061b139353a5cc41071132f9ba6d282225afb5acb22d8bd1223eee4233076f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-132.npz",
+   "bytes": 84999,
+   "sha256": "46a39c4288022bfabd0650862c891a1172c4cfaf602c43f71f1a5e53119d5d99"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-144.npz",
+   "bytes": 84998,
+   "sha256": "fca3a6894f967f18480018d0f8cf37885d68b097f6aef210d4295ffb7eac272c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-156.npz",
+   "bytes": 85013,
+   "sha256": "2886a16e9af72d3e612709bc5b6516b83185e516cbd792138a736d81d51222fc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-168.npz",
+   "bytes": 84990,
+   "sha256": "961d0117df71488401244692096e9bad668d4d05eed71843e54cbcfe844d417b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-180.npz",
+   "bytes": 84974,
+   "sha256": "f98b762adb6c727f76512b7e6b104b1a08d1df1336e9b87712fb482badd08c82"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-192.npz",
+   "bytes": 84993,
+   "sha256": "9436f00e93cf7b469fce28294c088b21d01fb1283cda5747ab476cdc4a3113b1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-204.npz",
+   "bytes": 85000,
+   "sha256": "1f9ff1778a9fe425933fe589608085881135dd1ab41f852fe0c32544d05da808"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-216.npz",
+   "bytes": 84990,
+   "sha256": "fe9279e4cbdbe11b30d3f9c6fc447ce112b84b0b5739f36dcae6eb6b26c83231"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-228.npz",
+   "bytes": 84986,
+   "sha256": "61d28fb017da6f7931e0c11e8d08ceed64bd769d4a4eb783233100b8127358fd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/stage-07-block-240.npz",
+   "bytes": 85008,
+   "sha256": "b210d1d14ed2c0520c0140ec2bb73fccc45dd2c99b8dbc954ed5d66336c1b69b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/result.json",
+   "bytes": 545044,
+   "sha256": "5db479957da3818189927c14a1ce58daa1ce7e11e9fea6dd049cf40e5f905e42"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/manifest.json",
+   "bytes": 7561,
+   "sha256": "14eac2e343a5e52d59b59d83dc432794d903e360de30b1cc04de0e22731d4c78"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-00-initial.npy",
+   "bytes": 7296,
+   "sha256": "bb0f33ccc621e80cd2bec9f633c5ad47ead3497971d63c80329c2e93a8b20d6a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-00-block-012.npz",
+   "bytes": 84018,
+   "sha256": "630ee88474944fb1ac5beb14dad17a94772fc729094ae7e21845aab8fd07d9df"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-initial.npy",
+   "bytes": 7296,
+   "sha256": "590bf25c3159700c7d7c86eb446b97b1cc581345139c84636500a02a8ddb7256"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-012.npz",
+   "bytes": 84013,
+   "sha256": "c7934b946427f8db19e6fd7c17e92f61926d3be1fcef38adc0271351f88b0cc4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-024.npz",
+   "bytes": 84032,
+   "sha256": "e64e87054f58639e1f281b421671fb2416700ac23b1aba2836199c9fccfc1941"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-036.npz",
+   "bytes": 84031,
+   "sha256": "b09feeac7084fd4d76d936b43dd46d6eedd0acf6b1b09f6de522c34153588c74"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-048.npz",
+   "bytes": 84033,
+   "sha256": "884ae1d47f382f699a7b41e0189629c63236f9e35a480bd560e0d175f7247b33"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-060.npz",
+   "bytes": 84030,
+   "sha256": "6af5779164ed7938822f14c1cc63faa603e61f3fd2dc4f2ea5ed0f47048aa4ed"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-072.npz",
+   "bytes": 84016,
+   "sha256": "4e234577f10d4e5e2db081a652a100bd3c8c5939debb8ac305f71d7dfbbba8ac"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-084.npz",
+   "bytes": 84017,
+   "sha256": "e2f32dfef32df5be643bfd62ed98c39ca2956059cb4bbcb716883bfbbddb3e57"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-096.npz",
+   "bytes": 84018,
+   "sha256": "7ad772d8cd4499f55e097e9e58e7a018c80a8798c90419fc893434de73ced353"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-108.npz",
+   "bytes": 84008,
+   "sha256": "f0622a7c771020eee8575dd150c809b6138f86233b196cdf84a212d351b569ed"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-120.npz",
+   "bytes": 84024,
+   "sha256": "a2fab0083e8b0780cbfd773dd3bacf55d670f8bade08a3891b39f41f055e4112"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-132.npz",
+   "bytes": 84029,
+   "sha256": "3161291fd529d8e78bd8e8e885899629981d6b2985521c2b5b6daed11d0fa163"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-144.npz",
+   "bytes": 84022,
+   "sha256": "2574fde507bf922732c4f66ececa7159dfd707fb74db304f9aa3a2588146af73"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-156.npz",
+   "bytes": 84027,
+   "sha256": "78a69efb5f45be5d1d91348cc2d991ceb495a76b9effe0f1097fb9026b0b8229"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-168.npz",
+   "bytes": 84033,
+   "sha256": "d69563d1bf2dfd0aba5b017132ad79a8a37b14b3d2ad0a9743be6ce0d1eb9fdb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-180.npz",
+   "bytes": 84018,
+   "sha256": "e72c5d59528166a9e381b92dc862dc293671d92b823125a2e12c24748f425710"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-192.npz",
+   "bytes": 84009,
+   "sha256": "7f63754ce74aa409b08acebacb2c44f64ebc42e17fb695c84c3e4b6e90305e1f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-204.npz",
+   "bytes": 84036,
+   "sha256": "32ae1be26ab0b6a70ecc4556ad1301ca68f318f9aa0e8ffa8e2881b3a33c54a3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-216.npz",
+   "bytes": 84028,
+   "sha256": "e36329edfac33ffaa8f8e417384f5321f687e657100ef891da1424993cdfdc9d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-228.npz",
+   "bytes": 84014,
+   "sha256": "8d0dc0b29fbbddad184625ce8da20b16de8f235644abc54e0d2e09cc5acf35c1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/stage-01-block-240.npz",
+   "bytes": 84014,
+   "sha256": "852c84d4869a68f1f72a776c51001c1ffd4f392dffb9f27ec79fbab7e866d5a1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/result.json",
+   "bytes": 481327,
+   "sha256": "6e74c2c75a34b460a2adf84bc794e6d51ef28fd3a225586d1d21faf7c83e7c10"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/manifest.json",
+   "bytes": 7069,
+   "sha256": "2d79b692d60ce4e83a893bf12661ba5ac556787134f67b44023feba4b1375668"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-02-initial.npy",
+   "bytes": 7296,
+   "sha256": "8a8884c020a4ce76ed3d75496795a4cbc0eb5ecba06a5beeac49b25174b0ea4b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-02-block-012.npz",
+   "bytes": 84001,
+   "sha256": "dc2717160466c2eb400f71b0ea2e3a6393883dd1ec248bf2851260f9f53a1c18"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-initial.npy",
+   "bytes": 7296,
+   "sha256": "fe67137d7216c1b9c26eceba90a5846a5fe6918bc8897fcfdfc046797cba2f47"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-012.npz",
+   "bytes": 84025,
+   "sha256": "35e9180fc67c32a4eaa164527c8b1706d0844e67ee67bbefc805d044a13ac284"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-024.npz",
+   "bytes": 84020,
+   "sha256": "f8528d9fb2f59565b377a92a0b565e43d4795202f017936e66940e232396aa12"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-036.npz",
+   "bytes": 83998,
+   "sha256": "5cdd97ea2a05ab219928c5654775f43319444398872271a6221e71ca29b30bd8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-048.npz",
+   "bytes": 83999,
+   "sha256": "1617e8fd936a0e63bf41bd06f430dbc0f84d55f400c249abbb5c3bd439eb9ecf"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-060.npz",
+   "bytes": 84029,
+   "sha256": "605d20d2e8126ca618e2f2a6144b1de39fd2cbc79f962cb0b602184124cb9a7f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-072.npz",
+   "bytes": 83997,
+   "sha256": "b24111299a7136996759cd6df5611d9cc1299fc13e7a8784c80b1fbd999c862c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-084.npz",
+   "bytes": 83985,
+   "sha256": "81a64c58ef6facc75c40f8897ae4262c8c9269fe69d2f48d759b67cee439c245"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-096.npz",
+   "bytes": 83989,
+   "sha256": "92b05319de1af8da338c997f385c46ef90b51432fa3948a70e04e4f1eac81807"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-108.npz",
+   "bytes": 84010,
+   "sha256": "dd8f14ada15c3881a83fd9b229b3efc81184b78561d1c8d9604f2907f29ba582"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-120.npz",
+   "bytes": 84001,
+   "sha256": "dc5abfecbc265861eba19af04418b7dbc3960e595940e386dd4b2747564a83c2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-132.npz",
+   "bytes": 83981,
+   "sha256": "144a6a8afb9688b8b85c1de8e94cb9ea515d288461ab1ae281635a722cd35c21"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-144.npz",
+   "bytes": 83991,
+   "sha256": "a1a40dca2cc018c4812c772638c6a067e7a2517f6d392d1fccd99c3170558e16"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-156.npz",
+   "bytes": 83992,
+   "sha256": "636f434e82da51c1c6fdb39171fe23ba6738387eb9392e1c284d1cd45c742e3e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-168.npz",
+   "bytes": 84000,
+   "sha256": "c2dc9ccdd64a57ced94156b63741e64c53db71ce2a488b8ca9829c6dd3761d97"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-180.npz",
+   "bytes": 83974,
+   "sha256": "c2889379382bbb6b6763930ce70dab122ccf8b533ccbcbcffab91713ccf79dac"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-192.npz",
+   "bytes": 83988,
+   "sha256": "bbf4e3bc8a16085e92555a2744d10817e2d228d7c7bf1f956d446028ca9e623c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-204.npz",
+   "bytes": 84007,
+   "sha256": "d39401774796aadbb4b044ed6c398adf4d4ea7061e20f4ab85c89f41dca13303"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-216.npz",
+   "bytes": 84007,
+   "sha256": "b427b4c147102cba62921cf4de5b469c7575812e4d6abb22a416ecb5e1d76beb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-228.npz",
+   "bytes": 83992,
+   "sha256": "6f6ed0d3189cd844022720ddbfeb7ce3344686ec0794be03f484b38865e73f1b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/stage-03-block-240.npz",
+   "bytes": 83993,
+   "sha256": "2bc68bbd645269f2bdaa0d1ba4f3eb88f847af91fb42e330f000f7cbca83d9f9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/result.json",
+   "bytes": 481331,
+   "sha256": "0ad477f75b1fbc3cb1ddb57a3b47d0d87882d29269eb83fe79ede95b18adba4f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/manifest.json",
+   "bytes": 7069,
+   "sha256": "1a1f976ee69e51a81ef06d79a2a2f30a71f3c2dbe1c744a09234c263714314be"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-08-initial.npy",
+   "bytes": 14464,
+   "sha256": "a9d7fd345ca4cc064903b3470b2cadbdc76c9fa25d9ba098660b86b527401cd4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-08-block-012.npz",
+   "bytes": 166408,
+   "sha256": "7adae10409922cc68d01f4d5fb77f50fcf408395c27210a162753026517d46cd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-08-block-024.npz",
+   "bytes": 166414,
+   "sha256": "82ac6cb872dd717b0169a51d559eac54dded53064225e4f217d21a7ae746ef7e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-08-block-036.npz",
+   "bytes": 166391,
+   "sha256": "8f8445a6cb6dc58ab0929c8163064e615768f6ed269408bd9b23da37e7cb017f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-08-block-048.npz",
+   "bytes": 166397,
+   "sha256": "fb3b783f260c930e9d528141c4ecc3545824130da937312ee97246c386a7fcb1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-08-block-060.npz",
+   "bytes": 166412,
+   "sha256": "960669e78a59b733b0315648ea549563fef5f77581594197aa920742823a471f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-08-block-072.npz",
+   "bytes": 166421,
+   "sha256": "9773345b30cbdc9a6a9e30ec08e5fed762565d19b6b264d517b15b55f4f28b69"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-08-block-084.npz",
+   "bytes": 166365,
+   "sha256": "cb8ded986426e48fa0e18954c0748346f3d3a9ee390400f7bf5e4f5760b07644"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-08-block-096.npz",
+   "bytes": 165759,
+   "sha256": "85a9da05b64c573009d2d71ff75d28b8e1de2d5f2d9107146d1f623048156284"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-08-block-108.npz",
+   "bytes": 162977,
+   "sha256": "f6acc617ca2783325c1bae1057fa7e7e54ac0e55e4dfecf266aca9af7e558257"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-08-block-120.npz",
+   "bytes": 157528,
+   "sha256": "7c6c42d35fd5ccd3f45aa1bf9e57c4dfbd6666cb8353dcaee6d742dbdb41c3fd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-initial.npy",
+   "bytes": 14464,
+   "sha256": "c355d907970e270f11c582e8251006f352d9b1d23609e4f71cdf20b93d313b9c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-012.npz",
+   "bytes": 153265,
+   "sha256": "03a44d77d067ba2facbc06633d4ee80378a39111efb871a41be1fe89e5c187b5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-024.npz",
+   "bytes": 150141,
+   "sha256": "898d71a9edc0de9b02ee72d5af39365e1a89b7d602aa8b7e7fafe6341d95f4a8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-036.npz",
+   "bytes": 146797,
+   "sha256": "f4e1eb36e53f5e630d628aae3047e220f72b662e71c2f1b492f89aa2a553e0ce"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-048.npz",
+   "bytes": 143611,
+   "sha256": "e834948461cdd789b5ded19b80b73ccae57e02f370f0e51f600c3d5743fc3da8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-060.npz",
+   "bytes": 141420,
+   "sha256": "ca532b5cd6f7de65fa2e02d8b2def6925b0a2697113b4a1c64cae5b60cc42d57"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-072.npz",
+   "bytes": 139591,
+   "sha256": "c9f37d988d81a5b8e7a652852964e3ae047789f7e2435006165fee218306d1df"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-084.npz",
+   "bytes": 136910,
+   "sha256": "6d02be5b6b7b4ef46bc398a313f28606ac121d0e45170974ae147b9e0a205fd6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-096.npz",
+   "bytes": 133567,
+   "sha256": "07ce17f6fa2a55382db5f390fe8fd4dd1940731aff9bd4b37928aa426cf10272"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-108.npz",
+   "bytes": 130999,
+   "sha256": "4c0ff948fb00c8fe1ff3b65a2b9236a9fd60863dcf20113f9374872b1ed066a3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-120.npz",
+   "bytes": 129401,
+   "sha256": "b7556c74e887bde6eedede6f3f89246f73833ea6c9446c7e8f3749b49ee98d08"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-132.npz",
+   "bytes": 126356,
+   "sha256": "ab1933a13dde8a299a65390cd59d83780722b4d02fbed1a2face8bf03d53d5e3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-144.npz",
+   "bytes": 125401,
+   "sha256": "fbbb5e9100528296ac3748caaf07701b7761ae8ce9927df6508d6f35999b4d31"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-156.npz",
+   "bytes": 126070,
+   "sha256": "8fdde980e6631d1a0f269212f3cfbed95172586d9da55759d33e6c2fd3822a1d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-168.npz",
+   "bytes": 126402,
+   "sha256": "cae27ee255fe6156dc7c3398d9ed84bff4a9055210837dd4cf36c5708cf2d4bc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-180.npz",
+   "bytes": 125571,
+   "sha256": "094911ef0ccd00e01082e982f456bd8395594bc3176a9cd96d14883303f16558"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-192.npz",
+   "bytes": 125118,
+   "sha256": "1e11a090843075e0abd528702e6c3d7314388f320526670c8e667ff5be137e36"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-204.npz",
+   "bytes": 126449,
+   "sha256": "890107bb0c44feb426dc2607262aab862ee39c12b30461606a6b2ecbfdc1ebb0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-216.npz",
+   "bytes": 124787,
+   "sha256": "86a4c45e14a0ad41acf18b009f0dda0059f92caf148f81e8908625813f49d201"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-228.npz",
+   "bytes": 124036,
+   "sha256": "6c0735ef4b4ec4258f36f853b4380218499d68959192335d3cbdc4046b5b9637"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/stage-09-block-240.npz",
+   "bytes": 126323,
+   "sha256": "e11da8681b1e22b89e5b05c65a01af6e01f5a772002e7c57d28f4d8ebb6f86c9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/result.json",
+   "bytes": 742512,
+   "sha256": "577472130eca5ccc0d50b1b7c8f7d3ac4e88bfaf950def2878ce8864d5467a9f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/manifest.json",
+   "bytes": 9013,
+   "sha256": "418f67c6d6bc2d16a5d7d0475339e44217a7d5258645c8d8a1c6a47bffa73673"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-10-initial.npy",
+   "bytes": 14464,
+   "sha256": "7aeab82cfb1db23b7c72fe45f805e60ac01568a3ec0e66580c3ad36ac5026278"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-10-block-012.npz",
+   "bytes": 166400,
+   "sha256": "759de929dda79fc318f388d3e872b19b2ccd354223789a6141e4eaa60a56f20d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-10-block-024.npz",
+   "bytes": 166410,
+   "sha256": "f4efe7055e8c475b34560241dcde5718e98babd9761caacad48564afa8cde514"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-10-block-036.npz",
+   "bytes": 166404,
+   "sha256": "71e1770247d637e4caf3342c9ba4a461ff471c70362ba7cf1f7b8e5d23910ac1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-10-block-048.npz",
+   "bytes": 166418,
+   "sha256": "4d01cdc47d21a7948c72eefebb79b546d870090eec48b4f50aa87d78938a591e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-10-block-060.npz",
+   "bytes": 166406,
+   "sha256": "c13177da960f417c068e97a5dbab534b0f0f9df9a5fd72e183a3e95a762d7847"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-10-block-072.npz",
+   "bytes": 166403,
+   "sha256": "4f03edbedd932da2c6ca5a4f9fa4a83fcd37d31a17da582d601e3576961bf9e6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-10-block-084.npz",
+   "bytes": 166358,
+   "sha256": "bda3807869452b5818151a47b81c3329368b8497d243626e63064c4e9f54992d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-10-block-096.npz",
+   "bytes": 165760,
+   "sha256": "cf968559112353edccbf916c386f4137ba2ce9301e7eb2ea02823318d801db47"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-10-block-108.npz",
+   "bytes": 162964,
+   "sha256": "7b10fb10e8877a94551ffb6da694e09f735601a7cd79e5b4880c885690989862"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-10-block-120.npz",
+   "bytes": 157515,
+   "sha256": "22ca63d1529d02110bd1c07c77dc14f743c6b2a3b4e80de23c8610bd453aede1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-initial.npy",
+   "bytes": 14464,
+   "sha256": "71f5a7e7e79b66536604ef7b87fdb1833406a32169fa1b2f3fce47dd4432e261"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-012.npz",
+   "bytes": 153292,
+   "sha256": "b765dd070c4f88ec986b73461179a80ea56f7d5593054e031490a5bd3ffbd211"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-024.npz",
+   "bytes": 150153,
+   "sha256": "1e7a329c9f8e624cbad1fdec37995f798a82c2b80fa75d8d8edfceea81583cdc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-036.npz",
+   "bytes": 146809,
+   "sha256": "4d316627af36c4ba0748f26466688d2e326400803a9212ac21632ebb1825855f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-048.npz",
+   "bytes": 143634,
+   "sha256": "4fdd2d5a65b650c248bc13b027f262aa2ceb0d55aa2d1077e3aef7b1d5eef7e2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-060.npz",
+   "bytes": 141403,
+   "sha256": "54359bec21cd837a2a76545403141f5df4635fb2e89fffa9d81fe1563f7160d5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-072.npz",
+   "bytes": 139580,
+   "sha256": "a7f3fb404a91ea015251f3d0e33c9635b3e471c8683fc746e6cc0beef90eb3bc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-084.npz",
+   "bytes": 136912,
+   "sha256": "01a301daa4987abb25ee5b15c460d0aa77b0e24c64abb87e92e648816e85b1ca"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-096.npz",
+   "bytes": 133589,
+   "sha256": "f7f7dcf45db9d267c1a126fd4ebef7f7fca750a5eb6f2b23ddb73de9d6875d51"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-108.npz",
+   "bytes": 130991,
+   "sha256": "b32828f760ea54ee26e85b020340e16de1a2b8596f7e5b091295f3895da12b96"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-120.npz",
+   "bytes": 129394,
+   "sha256": "04c97773fb6e84086170c4a81a8d94a3c813304314dbeb07c3629992e735b394"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-132.npz",
+   "bytes": 126344,
+   "sha256": "a0ee96f4dcd69dd8c5c9775c2d9cbf919dd9532d5220705acb7bb69f5a91db96"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-144.npz",
+   "bytes": 125400,
+   "sha256": "173b87c73813bed01a0fc3696cfb8e5b84f7e84e9e14dea6955f23ad29eb22d8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-156.npz",
+   "bytes": 126070,
+   "sha256": "c14732f942f01e45bbaa68225b232a314418b0f340b22808f2c3c923e4b85443"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-168.npz",
+   "bytes": 126406,
+   "sha256": "949cdf5a8c06be02acb939c6bcb09c8475b760180aa145305eca607e039e4a72"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-180.npz",
+   "bytes": 125581,
+   "sha256": "ef6b30117c940ae893fb0eef1c168740c2117231f2df4dfce916a5b057971580"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-192.npz",
+   "bytes": 125124,
+   "sha256": "2c586a71f699878aa22c6760e98887baf41027b444dd7aa8a0e165426e00f319"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-204.npz",
+   "bytes": 126456,
+   "sha256": "d48c50a38582df1ffaa3057938ed1bc9134c903ec236dbe0f52a8057b69fd8c1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-216.npz",
+   "bytes": 124775,
+   "sha256": "0cf2c94c3eafa953a9fc93e4d437e6d45548ad28094bbd76fcf4acd0f3b8ade0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-228.npz",
+   "bytes": 124010,
+   "sha256": "1f62808e24fcde2308c13600753caaba7490578accfebe739b8350a8f7db0c16"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/stage-11-block-240.npz",
+   "bytes": 126325,
+   "sha256": "4f35e6b26b3f700e1067a3c93dba343888d514808b7103d77a53764ff93dd760"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/result.json",
+   "bytes": 742867,
+   "sha256": "dbab266b16d276c1c275d65b1f4c46931a9b7a4f45364c423b197b9ebd10b9bf"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/manifest.json",
+   "bytes": 9013,
+   "sha256": "f6b43a316200c23f1f5b9059cd66ada5eacebb95024a1c7822b4678216164ad2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-12-initial.npy",
+   "bytes": 14464,
+   "sha256": "bdae2b78197d0c768d8f3bc4c0b42a090f03d8f06ce284df5233d3c0f826e135"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-12-block-012.npz",
+   "bytes": 84990,
+   "sha256": "582075ffadc9f4b8c0dd9d891d1b2e7bb62e7c3b090ee59af875262a038850fd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-12-block-024.npz",
+   "bytes": 84991,
+   "sha256": "35d56576b70c938a5720505bb0d1fce2f9621ee423f97df747da6c6f1773bc65"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-12-block-036.npz",
+   "bytes": 84986,
+   "sha256": "d187c8de633524f96ff08c9925ff96b07b109cb93787d13c07b08075fe55148d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-12-block-048.npz",
+   "bytes": 85015,
+   "sha256": "b8d06e02ad2ccf7572b1e8db081981f55acd3a3d9ec4227f36c6e47d2c2fc0bc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-12-block-060.npz",
+   "bytes": 84981,
+   "sha256": "b2fc783ed4ea7a035730546d70c1f8b89f2dcd3f483fb71152b8f420feae79b9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-12-block-072.npz",
+   "bytes": 84974,
+   "sha256": "f2b21486f64e8107c7af6ce7876c6f2be04f371e3b9eaa0cabd7f9799de572ac"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-12-block-084.npz",
+   "bytes": 84997,
+   "sha256": "e639ef87cfe5ef6c063a42d971dc18afede38e1b2edeea40e631d14461120500"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-12-block-096.npz",
+   "bytes": 84980,
+   "sha256": "d539e0f24801c107fe17fb6b96e90c088e82b26e757e3c8ec5662df3fa8ac1eb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-12-block-108.npz",
+   "bytes": 84996,
+   "sha256": "dd0d7683a133bfdbe5707134830f64d6dfd65c3a7876fdf7673d085b8ab21274"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-12-block-120.npz",
+   "bytes": 84989,
+   "sha256": "f0132789425ad6e9de085a959674aaf41d0dbf29cd2270066a044d184c677f45"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-initial.npy",
+   "bytes": 14464,
+   "sha256": "87517e3c841da44e3a721a9213994e940aed69a70641c2febe66ab9ed143882d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-012.npz",
+   "bytes": 84968,
+   "sha256": "2ff71273723d0bc57e14ae9918b12dbefd6e16e8d78ae2e6b5093dc57cf55b86"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-024.npz",
+   "bytes": 84981,
+   "sha256": "4175cc7c3769672372c62b97cd4d6da864a9ba7724e05f5f7781917ca59710af"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-036.npz",
+   "bytes": 84982,
+   "sha256": "0f522d73d2435b15f3c620882f99d70402ec218a15d0dc51e8f26501311d6184"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-048.npz",
+   "bytes": 84959,
+   "sha256": "3ba6a5e9d2b6ea79288196200d6bb8a118f32736d3433aa8d35463d4a167fa2a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-060.npz",
+   "bytes": 84975,
+   "sha256": "f2bb651ec225fcf2ec047516747cf5993cb0f14882c8423568bf449b35751ea3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-072.npz",
+   "bytes": 84994,
+   "sha256": "24d0d702b09baa2cbdce9e68ff3e0191991021b07f36c4433e9c1fcad71bc7ba"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-084.npz",
+   "bytes": 84978,
+   "sha256": "462b07b6903fd670a916af8d50cd9f047aa9a77dc6671957003088f0bad944c6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-096.npz",
+   "bytes": 84988,
+   "sha256": "95dce0cc12ee4ed4e4b3a0982c7c96c4b8fa4574075210ebc55073a0629f2fd8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-108.npz",
+   "bytes": 85002,
+   "sha256": "ba7aff7b38d0cd5ee7352ba3a68695695882089a43a2b543d66ac0bf361803ab"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-120.npz",
+   "bytes": 85007,
+   "sha256": "8039ea41c650bd73d2bd9720e705a1fba5a39ff7e2f573667aa060c042e626e3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-132.npz",
+   "bytes": 85007,
+   "sha256": "2d5da054e8780e9cd72fc383a5d64c7d42167e71548786c7e7f67afa2fe1be51"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-144.npz",
+   "bytes": 85008,
+   "sha256": "b0303f52a3aa0d1b80d8456ecf3fb3bceea16abd9d7b0e4b31a303c45c2c6f06"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-156.npz",
+   "bytes": 85005,
+   "sha256": "2ddfc7c466526a2761def9498889b21519e493397b21b52442c4592227843ffa"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-168.npz",
+   "bytes": 84997,
+   "sha256": "3059734834e848cf7606432b132a935bcc467a056a7dccac348237997a13f15a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-180.npz",
+   "bytes": 84998,
+   "sha256": "f8cc615d6d70c5bd7d9ee799fb230dbadc223dccfe0d051216f178de1f22f920"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-192.npz",
+   "bytes": 84985,
+   "sha256": "33675b092a27f129d7b1232920905eb1bf5484399cbda82275345e0997cfad36"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-204.npz",
+   "bytes": 84995,
+   "sha256": "c9366277bcadc6f767ae2a2b9f0a2e7db4768b1642b8840408e22bbf1c3228cf"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-216.npz",
+   "bytes": 84995,
+   "sha256": "86b576321a49b4beeb594c7fac08cf9a5d93c0a0c8b3d7f6cf5b3bd493fe50d5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-228.npz",
+   "bytes": 84999,
+   "sha256": "1d2b1b5d422db7400ce3262edfc1d5a4da0367dedfb01bbc28be4827b026ab57"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/stage-13-block-240.npz",
+   "bytes": 84997,
+   "sha256": "717813d190190f15966a381bc2cb94971c93bfd78d4303ece272d17e02192a9d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/result.json",
+   "bytes": 743183,
+   "sha256": "dbf31bae6dabda927b0fddeca5a0cd254fd95c7338fb35e789b4b95fc206c42d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/manifest.json",
+   "bytes": 8983,
+   "sha256": "39567463bdae600996c2e401eb2c1bfe2d46a3e7b786856a73ce4ddd905966f0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-14-initial.npy",
+   "bytes": 14464,
+   "sha256": "660a24fb7ca127399aecb4ff461b56849e7933fe000c3f65748c35509c5b20cc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-14-block-012.npz",
+   "bytes": 84969,
+   "sha256": "9494d72d6f262c64f0d58e469ed86a5c5e32734c4b96fa0d973f6526883834a8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-14-block-024.npz",
+   "bytes": 84990,
+   "sha256": "9a566c8b683666391cd5822385b4af60c0b29251b2e11c1f6c4914b20cd95ba3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-14-block-036.npz",
+   "bytes": 84967,
+   "sha256": "df76b65969a1be3ac4d4b7d44dfd306392a1cf75ecf688853c6960dd95fd1c8a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-14-block-048.npz",
+   "bytes": 84976,
+   "sha256": "a96097b8f94c360460363b145bb80f06097de3387863a53aa75b3f15d41eed4e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-14-block-060.npz",
+   "bytes": 84996,
+   "sha256": "284958e3b3550674922ea24d2b0770ea981f59c2fcf664f94b1208a028694b23"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-14-block-072.npz",
+   "bytes": 84997,
+   "sha256": "a661ee5b0320e9d9968419e4bd304d151fafc164171938a08fcd6bcc3e0fa79c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-14-block-084.npz",
+   "bytes": 84989,
+   "sha256": "fbc8a41ef2f1e9f59033d46bc1c19fa4d2c05552b236c37e5dc197374b871b30"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-14-block-096.npz",
+   "bytes": 84981,
+   "sha256": "6c588486d35bdd168d08c586342a58c3cfd29ea32ce8ef5bb1f8b89dfd493ff4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-14-block-108.npz",
+   "bytes": 84991,
+   "sha256": "38acd71fa903a7711cbcfba75b80b57650b09b59e0e0d611ebbb637acc4d59d8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-14-block-120.npz",
+   "bytes": 84999,
+   "sha256": "47aa67ce62f4dc7a141cdbff608097b1b36e0b353d6a28077ff42221b88d192d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-initial.npy",
+   "bytes": 14464,
+   "sha256": "7b1e0efa0dc4f98b146edc9a45166a05180af2c4837f9b83df8e28906aa4be34"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-012.npz",
+   "bytes": 84960,
+   "sha256": "6b2237208e1ed976aa2e3fcf5580ad50d1ffba1b88140a4a2bf0bd9c8afa8f04"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-024.npz",
+   "bytes": 84989,
+   "sha256": "816d249b3a451cc537ac5806aebdc410729163b9f45bbf3f85e51b28fbecd1f8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-036.npz",
+   "bytes": 84981,
+   "sha256": "3ba8a7c449aa0bfba2e7019e7ee3772307b4de2138f92ef9cad7f80fdaf89018"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-048.npz",
+   "bytes": 84983,
+   "sha256": "7730af5ee1fbf8bfc226d00f3413a3a23ae1ec9844b4eac4d53a3cbbc66f553a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-060.npz",
+   "bytes": 84996,
+   "sha256": "ec322f61a67c872dd16e2b5704c35e0436fa346d6282fbe60e501d1e93a86e18"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-072.npz",
+   "bytes": 85003,
+   "sha256": "a709c039e357c55df4c2fa181b20e661065dfa0a3935938b66009528b4b7a6a5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-084.npz",
+   "bytes": 85001,
+   "sha256": "2e5cc4a8d6111350e6bf28e66ebcc5499c1cab40a678e8e3eafc350976b41447"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-096.npz",
+   "bytes": 84998,
+   "sha256": "5083ebd450378540aa6b1c26333f4f0b6dc6917bd2937abea32284dc652fc911"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-108.npz",
+   "bytes": 84992,
+   "sha256": "030a3c73cff5e7b59da73eecd9e64794c22024080995a64ed34e917814e92baa"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-120.npz",
+   "bytes": 84996,
+   "sha256": "0156870d18334022afa31d159b3214b7b25b39737ad22a77617a99ca61e166a3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-132.npz",
+   "bytes": 84997,
+   "sha256": "37099e640b5d4353d1be73315a039737634afa4dc1e4d168e20dda255ae26caa"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-144.npz",
+   "bytes": 85000,
+   "sha256": "3f18c1cba3c6dec11384d67a02ef9d4765066f125476a9fb68ebbcd5bcdd663d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-156.npz",
+   "bytes": 85012,
+   "sha256": "653e1530bde46bd7401d56b231d16f13a601690af984d549ef45e04b3fc3c242"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-168.npz",
+   "bytes": 85008,
+   "sha256": "f3b2fcda0c00a865b183b4182df76cfaba253a34a016a7458c37e8a25339c51b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-180.npz",
+   "bytes": 85007,
+   "sha256": "a550aae77eef7b5a05b265058a3fb533bc1bb6846024f490e57dc5509ffc7e72"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-192.npz",
+   "bytes": 84986,
+   "sha256": "e71922fe90d252bd18d26f5b6b5b9a0634b2fbd848ed7b0b71e418650c639637"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-204.npz",
+   "bytes": 85000,
+   "sha256": "6ecbe413c656abab4c734f93724547e985102970e0df246aeb0e8b2bd4c4aa4c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-216.npz",
+   "bytes": 84992,
+   "sha256": "5770f5d5282f028411a9d4b39838bfd18187e5f7f0acf62bf489778a2f9e6c10"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-228.npz",
+   "bytes": 85005,
+   "sha256": "6cd57dbe70183b6d49e1883b0b2b88cf53b74c0a3117925a1ca15e3a984ceb1d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/stage-15-block-240.npz",
+   "bytes": 84989,
+   "sha256": "7eb0ddb49e805a438efe74c6032a572b8c412828dbe1bfbfa89975b8e14457d7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/result.json",
+   "bytes": 743201,
+   "sha256": "a10721ac85cad4345bdd2fe6f5fbe62b7a3059945fd23e0257a256c365a5fc06"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/manifest.json",
+   "bytes": 8983,
+   "sha256": "64cfd4384da1666b0f6a557da781b2ef15dcaf78123a803bee3ab8981fbbbac2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-04-initial.npy",
+   "bytes": 7296,
+   "sha256": "bb0f33ccc621e80cd2bec9f633c5ad47ead3497971d63c80329c2e93a8b20d6a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-04-block-012.npz",
+   "bytes": 84010,
+   "sha256": "d8f6ec6b84607180075643f69b30878283753785fe2baff846b381542ae10470"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-04-block-024.npz",
+   "bytes": 83973,
+   "sha256": "c01f8d1243986477e665d95beb487394c1ed247b8fa934e27bee7477c2e3b4e1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-04-block-036.npz",
+   "bytes": 84011,
+   "sha256": "b6e4660efc224719df2b38d0513deb111efd68a8e42fbde12a758620507a7596"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-04-block-048.npz",
+   "bytes": 84018,
+   "sha256": "7fcd7f8eeeda75b623224d6ea585a2147cd673b09f180da00585f75ae7c24287"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-04-block-060.npz",
+   "bytes": 83990,
+   "sha256": "8c7e3e45da8338aa63714900a6d039a5273eb41ef6ae60ee4325e91acb47ae6d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-04-block-072.npz",
+   "bytes": 83985,
+   "sha256": "17161cdc21b092a6c8f11e1b8c8d517cf009aa835027267b0b021f201b0d1cbc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-04-block-084.npz",
+   "bytes": 83998,
+   "sha256": "e56ffc36e6fa16ec0279c49ba223010b6ab08bd4b46c325338230df26ca834fd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-04-block-096.npz",
+   "bytes": 83992,
+   "sha256": "617b2e875129b601d89e1d2836e6dc87d200a4c33a494a2a46550d66aa94950c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-04-block-108.npz",
+   "bytes": 83993,
+   "sha256": "eeeb70f04e46970ce97f4d6b8451166e071be4235807f13c56b959584ed4f58a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-04-block-120.npz",
+   "bytes": 83983,
+   "sha256": "ac0974dbf46437654838b3f0c9bef2e16781a53029f2fe12deff4668474a49bf"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-initial.npy",
+   "bytes": 7296,
+   "sha256": "f54a5c1620c0b4da68e3f2e49f4204d839358d0f860ea04b03e9893496953b07"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-012.npz",
+   "bytes": 83995,
+   "sha256": "b824f5ea9c41acb7edb36689e728b88f5751a2ec50bf28863d203d83788e8e8a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-024.npz",
+   "bytes": 83987,
+   "sha256": "ec55266b06d78136a999108a9f87b2024dc72e97a3f061c717397793c3f92dbc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-036.npz",
+   "bytes": 84009,
+   "sha256": "707844b05f8ef82f6baa9596d42ed2f24c2a6d70cec6b7300c1ccae390885c27"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-048.npz",
+   "bytes": 84005,
+   "sha256": "8bff41a2f8033e289f1b37ccff00434245f69a7b3c79101f212e0662c8e5252f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-060.npz",
+   "bytes": 84014,
+   "sha256": "e0ed34c7763d84535d18d153d52f98abe93a075157f6f7e5bfe9863a6ca15e18"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-072.npz",
+   "bytes": 84006,
+   "sha256": "167ba49c745d2e59529a5cf7c66a0a627c265cb74b47d3162981e8b7c12e7c02"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-084.npz",
+   "bytes": 84006,
+   "sha256": "5ae22cfa1db1a07538231994007f8a8e458719eb69cd879df17b678ea24c386f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-096.npz",
+   "bytes": 84006,
+   "sha256": "dd9971ae5fff6e4bf7386169cd568769f9804b93a53bf6008be761d0e00110ad"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-108.npz",
+   "bytes": 84032,
+   "sha256": "95df1b62e9cbcec7d22b06b22a665f4f894cf94b741077beea149d1f37e3dc05"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-120.npz",
+   "bytes": 84020,
+   "sha256": "6e4136e46c334eb1005120cf200beb45355df49611abde0b1b0ae212071fb8de"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-132.npz",
+   "bytes": 84019,
+   "sha256": "861e5a36bffbeb15e722d2c56282de714159a64be769f01b90ec282f39de6915"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-144.npz",
+   "bytes": 84033,
+   "sha256": "35ced245842db71ad05dfbcd4c79ac14dad574406d83b4deedc8d1e130d9bd9c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-156.npz",
+   "bytes": 84013,
+   "sha256": "0159ba0df941f1968edaafe2e41254c7ddfdc8f5b785a6e310beb8a64d9f2dce"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-168.npz",
+   "bytes": 84016,
+   "sha256": "1d43cfcff397714973da958fbdd7e9ec2a73a6b6e3869c99e12338e3c2b0e3be"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-180.npz",
+   "bytes": 84018,
+   "sha256": "50ad8b6d5156ffc0bd9e6b49966a15098c1087102250bf7f383bbea9971c83c9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-192.npz",
+   "bytes": 84005,
+   "sha256": "8f44c607886c5188cf5a2c39e078520f34d6802b98d28cd59f2e8a164e7682fc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-204.npz",
+   "bytes": 84001,
+   "sha256": "a377c25be0b5774a4cd67d43653e1682ff01c10e72e611e8cd94194207c2e2a2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-216.npz",
+   "bytes": 84015,
+   "sha256": "485f9396492020fa50e10f47625a5ca8d4dd66b0b0ef9de40b670ac95db71856"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-228.npz",
+   "bytes": 84033,
+   "sha256": "0fcefb7dedba4cc6604d803ddfd68a579f69495453df05806fd5539a86862d95"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/stage-05-block-240.npz",
+   "bytes": 84009,
+   "sha256": "cfba2adaf04389e411e56ff23a3af2ec4c9de85530275770008a1f8b662d87e0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/result.json",
+   "bytes": 666237,
+   "sha256": "9122b99f178129176153de4eaf62e88e2b39c7e2e324e4d78cb09505099f034a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/manifest.json",
+   "bytes": 8492,
+   "sha256": "aca14d938ea626335d2a65284b9ebc58a554d9672c87f5b19d9d6142cc785dac"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-06-initial.npy",
+   "bytes": 7296,
+   "sha256": "8a8884c020a4ce76ed3d75496795a4cbc0eb5ecba06a5beeac49b25174b0ea4b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-06-block-012.npz",
+   "bytes": 83992,
+   "sha256": "9834a62339acb1f425d03ac674d1b424057dacbebd291375272d95b77e3449c9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-06-block-024.npz",
+   "bytes": 84004,
+   "sha256": "ff33417cc4076060bc6107221774f925c08c907e3a6fa9aaf877f0ace8b0a84d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-06-block-036.npz",
+   "bytes": 84008,
+   "sha256": "982e5cd28c923d3b53e1d9381b289e2d2ff2445b55fda701c7bb39d432f9cb3c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-06-block-048.npz",
+   "bytes": 84001,
+   "sha256": "5305d24706cf531c17638b06526a2c88795f71f757d69bf0bcd8c10dd5d5b917"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-06-block-060.npz",
+   "bytes": 84020,
+   "sha256": "3806e69e0c4e50cf71b12a6ee621f3721fe9da82a788c41c409ec2eeb591e7b8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-06-block-072.npz",
+   "bytes": 84012,
+   "sha256": "a74a5e9956d7336c5932c4948d14355991e9d57bdc18789bb779e1bba731811e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-06-block-084.npz",
+   "bytes": 83996,
+   "sha256": "c224428cb11212764c4f3d22acfbbf62622f2c722e03308025a7dff3fa618803"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-06-block-096.npz",
+   "bytes": 83998,
+   "sha256": "77f6bec23e2185fe1ff7d0561caf873750e7bd0c96f7d7e9e3963bd834e86f52"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-06-block-108.npz",
+   "bytes": 84000,
+   "sha256": "da93021447d644c2ceb635c65db264748ddf0f27ae286c9af7ff085ef799fb5e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-06-block-120.npz",
+   "bytes": 84011,
+   "sha256": "f985f912c628f018c839b8f889b51d9265f289e4d6658e71b837f2abde8229ff"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-initial.npy",
+   "bytes": 7296,
+   "sha256": "a8a0e35eb5be579fe7b0827bbbb53ba53535353d70222f8f0d42659f99ba240f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-012.npz",
+   "bytes": 83991,
+   "sha256": "f262c0f88946eca5c92b89aad0fa591605ddccb0c9c84f6acfeac57bf3375c25"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-024.npz",
+   "bytes": 84015,
+   "sha256": "61078cd54adf75d7412800a32294fda819c1eb533e64e06762825373a48d83d8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-036.npz",
+   "bytes": 83990,
+   "sha256": "edfbec686d45af7ac6c1e4169eefe5217d6ab64ea7465c69cfccf46c0658b7ec"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-048.npz",
+   "bytes": 83992,
+   "sha256": "d81b9a4e3aaac2a724c9ddab49a73d967f664db1003868075748d4e50409a899"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-060.npz",
+   "bytes": 84007,
+   "sha256": "686ffbd09c09f2ec33c8687887951a6ac90aef7fc778d562eea98927dfad598a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-072.npz",
+   "bytes": 84015,
+   "sha256": "2ba3160a2bb9eacfcdd9338e2cb01b8ff4a8a39859624971f8d49ca80a132ea9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-084.npz",
+   "bytes": 84007,
+   "sha256": "3ed29da18d5b1c9cc627be697463937225655f97b586263b5281c63068082cfd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-096.npz",
+   "bytes": 84017,
+   "sha256": "c1664964f33761a2a3a7443ed440488aa7a57fc7f5e5a406062428417b57029b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-108.npz",
+   "bytes": 84015,
+   "sha256": "e2bda896a478ba28d17da1c9eadb6dd61e99efb8c78b2707caa97a741db21785"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-120.npz",
+   "bytes": 84020,
+   "sha256": "fce150f855dfc37111a7e57c812abfd24325a017fbbee06799f9f9a7302e0661"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-132.npz",
+   "bytes": 84017,
+   "sha256": "016d0f8ee352c0cf4c6b7307b5fb0cf8c386a758030f708dda23bbe119482ed5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-144.npz",
+   "bytes": 84035,
+   "sha256": "25bf202aec5f1a56143e509a64b61469762e24d35a27da1c3a5b03a6ca5c2c15"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-156.npz",
+   "bytes": 84030,
+   "sha256": "140a5f43a9b08ed53433b1824ca86d0fb14b546ed89c2b433ed6943a923d22ef"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-168.npz",
+   "bytes": 84015,
+   "sha256": "f169d4c28544bd2481ecd760199e9a07c7693d09000d7aa4936106bed8e047b2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-180.npz",
+   "bytes": 84027,
+   "sha256": "0791ad4d825ce7a73f9a463ea2a4fe27c07778a6c075a26b23dcd42ca6f6f90b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-192.npz",
+   "bytes": 84011,
+   "sha256": "113f55ba17200b22d2ac82bc383f0eba7dbcd373a6c6fb109ab1f2ee52a405df"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-204.npz",
+   "bytes": 84026,
+   "sha256": "1261a5896a6b8ceef0b1bb1226f5c4383b700abc2b032b7399a556d4902b4042"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-216.npz",
+   "bytes": 84016,
+   "sha256": "90ba8b1951175041c8a3f2088037e9e5a09a26f1c37c5f6fade4af0da188fe57"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-228.npz",
+   "bytes": 84023,
+   "sha256": "3f06c5471434514400533f5c7534cbc6578a7650eb8340fa7d537a46679a4c31"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/stage-07-block-240.npz",
+   "bytes": 84023,
+   "sha256": "c5326bfc5607a528afadac6c8a93919b63ca58adc387a3f2b2e95a7793c04ea2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/result.json",
+   "bytes": 666256,
+   "sha256": "7741f87bd65591b2cccf37684bc08225b29c1970ed08ac907a53386b2e7784b2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/manifest.json",
+   "bytes": 8492,
+   "sha256": "59f580c984f9e21babcb2374adac8347c0be389eb0051a35c513dc53b32306f1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-16-initial.npy",
+   "bytes": 14464,
+   "sha256": "a9d7fd345ca4cc064903b3470b2cadbdc76c9fa25d9ba098660b86b527401cd4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-16-block-012.npz",
+   "bytes": 166412,
+   "sha256": "e31eda21cf323119ce1918c3615754da8df4fca7c6fbb10d9ab4733013458027"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-16-block-024.npz",
+   "bytes": 166423,
+   "sha256": "f299f5075a165ea1df96cece0e512ccea8563c1e829625d82856bd785ab800df"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-16-block-036.npz",
+   "bytes": 166435,
+   "sha256": "d3d4d9d7c4ae10b0d86b893a0fa9d18d3260427a98446040fd947f23a1b95f3a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-16-block-048.npz",
+   "bytes": 166404,
+   "sha256": "aa62684059045163495d6a93c2b7a3efe06f97bf011c9523e0d806b423a769f7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-16-block-060.npz",
+   "bytes": 166428,
+   "sha256": "bca64a2f8ceba18073ba65b66a1060263eda5777f90aa54c3712412be215a491"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-16-block-072.npz",
+   "bytes": 166370,
+   "sha256": "458f89347e434154aa537e08dc282fb694da836748e4717585d3678bebbbcff3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-16-block-084.npz",
+   "bytes": 166422,
+   "sha256": "73929a52c7490742496de314cf5cbe023932adfe70d74251dc39b028ad7370a2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-16-block-096.npz",
+   "bytes": 166413,
+   "sha256": "33e9bdc9b936a21c5b2a96f797cd7e0b3ba1adc2e7941fe87b81c957a66e9240"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-16-block-108.npz",
+   "bytes": 166429,
+   "sha256": "e6a964f30ee4ff7a42b176600c82f96ac38851acf9473828bd9d42ce96c611e6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-16-block-120.npz",
+   "bytes": 166359,
+   "sha256": "a70a781adc9e378f621d103738085a6df090df50213b4c3fc2ceb85bdecf2b4f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-initial.npy",
+   "bytes": 14464,
+   "sha256": "78d5d73c516a51dbe725e0e8e586194752730fd66dab6772a7f4d52a39b11217"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-012.npz",
+   "bytes": 166373,
+   "sha256": "e1ce0e940dc4055f713e96146c4b8ebaf57d835d3abf27e7b4c6fa81b9644c37"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-024.npz",
+   "bytes": 166394,
+   "sha256": "3a3758237a99c97d39792bf3af868d8af23c9e70b765757d5b9d3f35466f6ad5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-036.npz",
+   "bytes": 166408,
+   "sha256": "4b885393d28211e916229e33c0d6e40791758712982012ed6adcafdf946721cc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-048.npz",
+   "bytes": 166287,
+   "sha256": "280c345ddbf04a89e72d8e7dbdc2f4e13fad16a9f75f102f52f8be86ccd1f345"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-060.npz",
+   "bytes": 166017,
+   "sha256": "b9b86491dda62c0838a2ecbd03d2a61ac5b9b8e1454a2d1fc16ab817d6309ba4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-072.npz",
+   "bytes": 165070,
+   "sha256": "ea17a0560be386a7ead7b8415192dea8fabb66787662c0a7473399d7a926d9e3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-084.npz",
+   "bytes": 162910,
+   "sha256": "b4e61dc40647b07a6cfd759d1f46ad9e6c6f34c12e4c58c7c3b892234655b7d7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-096.npz",
+   "bytes": 159601,
+   "sha256": "e2c7cae823c1e720b7576b18f71515e384019840a0cd99c9bba13ba44cd9d9e1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-108.npz",
+   "bytes": 156385,
+   "sha256": "02e6a5fb54a092fd6c5b71ef27df1f0c7c1c0b73d56529cbbdee9c5701507c12"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-120.npz",
+   "bytes": 153896,
+   "sha256": "256c79406b0dae5854578d1564d848bdd95b152abd213d305690abfbd474baec"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-132.npz",
+   "bytes": 152247,
+   "sha256": "369e808cad383df4e7bce448cd114f1852ac91120b64fcb999bdb9cd9f354fc6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-144.npz",
+   "bytes": 150846,
+   "sha256": "8dc308f8020e5b3da23478a6280d6406c2bdedcc09acc65d565477069b8c4482"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-156.npz",
+   "bytes": 148954,
+   "sha256": "f02c9a2d46ec4ac92589e78404d3e3e6b2631394791b4128895be265f7d65ed0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-168.npz",
+   "bytes": 146494,
+   "sha256": "8b77af667d5a852e47cbfe973a69af4a09b4a35ae3aeb2f4f085b5da204079ee"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-180.npz",
+   "bytes": 144110,
+   "sha256": "b8a17690ec59eede48c3968934324df1e4aeaf13537fa2d543d5f26214d4f2aa"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-192.npz",
+   "bytes": 142165,
+   "sha256": "4ad1d8f15a6798e162695571631e1b9518f16eff94f16a45d25ab2c1f9d32e97"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-204.npz",
+   "bytes": 140826,
+   "sha256": "a547523528447a26cb274fd903bb53e6a2b1f73996f40ca4c714d22cede2b0c1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-216.npz",
+   "bytes": 139489,
+   "sha256": "bc15ed44dd4e16e509d985285a26494b116325e4df65ad175d3da8c95586027e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-228.npz",
+   "bytes": 137501,
+   "sha256": "055fecf9e3afa7eea1af7e6d6c90041b7147f3168a2a2ba3f7f2d23ea15beb14"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/stage-17-block-240.npz",
+   "bytes": 135152,
+   "sha256": "c3cd588208f32de457f0923c9a1b8a29ef1d1029fa12e4117b9fe890f1ca27f8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/result.json",
+   "bytes": 742924,
+   "sha256": "069f97e6f1cee12e2d0b2ccde4436d675e4b96b5c31af7967b81732eed3f0e7d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/manifest.json",
+   "bytes": 9014,
+   "sha256": "5bfc942be55ee0aeb19d8acaab809edec68b7f7d2c2c7ac65db8e6c1d257b8fa"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-18-initial.npy",
+   "bytes": 14464,
+   "sha256": "7aeab82cfb1db23b7c72fe45f805e60ac01568a3ec0e66580c3ad36ac5026278"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-18-block-012.npz",
+   "bytes": 166406,
+   "sha256": "3609a849891b6fb2e00e668f24787f7cd20243a6727cda4841b8c9672cf1eb91"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-18-block-024.npz",
+   "bytes": 166418,
+   "sha256": "79cb09fe86a5783a30b3920a3cea759c71e63a59e95e374746ac66187013277a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-18-block-036.npz",
+   "bytes": 166442,
+   "sha256": "990b610a70641c32fb90bc965e0f9e741038107fc6b6106dae83d08a79e309c4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-18-block-048.npz",
+   "bytes": 166427,
+   "sha256": "adbf2d0019f41cf9b5ff02f9727fde77fa4cec9d05cbc697403d16d1ee018520"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-18-block-060.npz",
+   "bytes": 166440,
+   "sha256": "a2a4456855820765715d0b28832e9201478626fc94ace0bc696fddba07887ad5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-18-block-072.npz",
+   "bytes": 166376,
+   "sha256": "4e4fd315774bf9841ed56ca6ad719c8ffda0d94c49619d982391cd771f5e7a02"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-18-block-084.npz",
+   "bytes": 166430,
+   "sha256": "31a7e5576fbd8e7c3accc8769236057b1f0fd8f66a4cb0a47890dc925b4dc5d9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-18-block-096.npz",
+   "bytes": 166418,
+   "sha256": "f432e13ad283d5e61391086ddc41fde91e57497880e356f9d89f820cbe34e1a2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-18-block-108.npz",
+   "bytes": 166432,
+   "sha256": "55428fc01a797e9b51b1fe27f062a617efa71883b9255f76ec8a83970a5a1476"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-18-block-120.npz",
+   "bytes": 166420,
+   "sha256": "f3360e08643bb84fd823b40000ea504e7b86e43f06477e8b84aa9f403b544ec8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-initial.npy",
+   "bytes": 14464,
+   "sha256": "91970196f48113ef10121e886dc4b6225309bbeceba2dba8374a06cd21fcd9f1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-012.npz",
+   "bytes": 166384,
+   "sha256": "ef5e5f6bb054b40a12ca5eb54e398870bf0090b8e0117dbcc448c104fbb87643"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-024.npz",
+   "bytes": 166368,
+   "sha256": "00eae88971f84452273269ab03c63689c70038cd4c97364cef6d9fa67a5b626a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-036.npz",
+   "bytes": 166400,
+   "sha256": "df38e2d22ba599ad6bd90ba371024a30d0530ccf595c1683ad1c487e6e2018fe"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-048.npz",
+   "bytes": 166286,
+   "sha256": "341b6c6c6ac0d8b1cf708e4214b0f9e355585e55dd4bc9ee37b722fc2d5894dc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-060.npz",
+   "bytes": 166021,
+   "sha256": "51c4fe2bd04e518851384c57083a13ffc02240a94347f42d9251aafbbbc36586"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-072.npz",
+   "bytes": 165068,
+   "sha256": "b0509a592e902df6a1bd491e2b4c52118ebd26238c5ec24a2c674fefaa7b9c03"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-084.npz",
+   "bytes": 162919,
+   "sha256": "8b168e43c6f91b332dcf15b275fe8766e5869d89d6150091de952a911dc42103"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-096.npz",
+   "bytes": 159601,
+   "sha256": "8d5c819c92621a1e966b3cb60e8a2bba0992f53b67b9a3eaf4c5b46f45070daf"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-108.npz",
+   "bytes": 156366,
+   "sha256": "4b5f52f894b53088f332a8ca4af78228f43148d39efe1ceba8403478f258b2b7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-120.npz",
+   "bytes": 153882,
+   "sha256": "324d6746b7e2b63bfa3825aac938c3b5a8733c66d786612f60c96c722d7dab23"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-132.npz",
+   "bytes": 152240,
+   "sha256": "e55bd80707fd2912f848ab5833f16f9defb33b28ec16cafab2d88cf53805457c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-144.npz",
+   "bytes": 150849,
+   "sha256": "40f033e6e79584d7c4b9366eb349738f06ca8867e1bdf6a85c39d2807bfc580c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-156.npz",
+   "bytes": 148951,
+   "sha256": "1810a46870eb41ea245e7c5fcd9c0696bed352f9d76a92a9c22dea5bbf1cf3ce"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-168.npz",
+   "bytes": 146507,
+   "sha256": "a1aa66b042ea54cc0be95bf220f34d61ab71b7d6c30d327ae24162859a308bfa"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-180.npz",
+   "bytes": 144104,
+   "sha256": "25fb94a469ecb41ac1f1a7f841ecab462385a8c294732580a1953f1bcd3b70dc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-192.npz",
+   "bytes": 142172,
+   "sha256": "4c5e8ff9b6d6df1282e8b830c26988feeb5e5f7940356da11ea48ee4f0c29914"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-204.npz",
+   "bytes": 140817,
+   "sha256": "afc5266d887be9b24dab7367603eb7b7c5825182678ddd47d8c37056ff80ca23"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-216.npz",
+   "bytes": 139486,
+   "sha256": "5536f2b380684a19486be6d6697e6bdc1ff48afd5ce3081f8b237ea2de7e98eb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-228.npz",
+   "bytes": 137489,
+   "sha256": "b87d4e18b7ce2b44a0954e7196358690ec9b43d8265b5490c67b5a8b23c3a4c3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/stage-19-block-240.npz",
+   "bytes": 135137,
+   "sha256": "025655b92e13a6ed52f4614cfa9d066dbf12fe15177ae49fc3bd9836af960fbe"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/result.json",
+   "bytes": 742919,
+   "sha256": "25ae46259395ee894b0bce0a66a16547caecfb89136d1a4efb0f5461466047a9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/manifest.json",
+   "bytes": 9014,
+   "sha256": "b65734a619c2af32c6b065b0b6bcefd0f0bcf951c5ef900a05a2b2b1afbd82ee"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-20-initial.npy",
+   "bytes": 14464,
+   "sha256": "bdae2b78197d0c768d8f3bc4c0b42a090f03d8f06ce284df5233d3c0f826e135"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-20-block-012.npz",
+   "bytes": 84973,
+   "sha256": "3a6701134fba2e272e28ec856cf5f7349654c1715d2373a6078d2b5dedd73d80"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-20-block-024.npz",
+   "bytes": 84976,
+   "sha256": "1087fc52f67674896c60dae579d4b420a44ec0790400385917edef974b6f0641"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-20-block-036.npz",
+   "bytes": 84978,
+   "sha256": "35e5c8ac8dc1afa4c1d49233a6ffcca53b8671373e4ab7fd7337e461a8462164"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-20-block-048.npz",
+   "bytes": 84989,
+   "sha256": "1ad5dfef2be85f89e4741c447e54a3743a864f3bfdc938255dada9f0c9b98aaf"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-20-block-060.npz",
+   "bytes": 85012,
+   "sha256": "8b26c3682b5bec566894446a75daefdc50b5a249ea3a8e37d0838f3573a8d259"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-20-block-072.npz",
+   "bytes": 84981,
+   "sha256": "8d662176afe4406d8bf55d4ba0fb5a64856f0d25dad998d59e8d07e21c66f6b2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-20-block-084.npz",
+   "bytes": 84994,
+   "sha256": "383a1485a4847c51fd5dbbd74badf0b5abcbaee2ad0c6d72fef6f8e481f0ba22"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-20-block-096.npz",
+   "bytes": 84989,
+   "sha256": "b8773d29540c2d25fe1d94dd19106333990fa569268640857f07ca87fac34207"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-20-block-108.npz",
+   "bytes": 85007,
+   "sha256": "6af03d31d2ad8d1a6b9940a2de481236c3f3ffe0b91b801476c321cf96a94f54"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-20-block-120.npz",
+   "bytes": 84962,
+   "sha256": "14ac6af58e69da7acb4bb8c1f46cd8b8f4c688c002a5bbb76bcee0bf17d90a67"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-initial.npy",
+   "bytes": 14464,
+   "sha256": "2e8e4cf1ac863c945ee49124523f0d18d07774bea75da9d8fe8130ae480e6a85"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-012.npz",
+   "bytes": 84952,
+   "sha256": "f42c9dbc4b1e9512ba3d7200b634d70bca44fae6625affd436ee920a1a2dbb6a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-024.npz",
+   "bytes": 84972,
+   "sha256": "3a309352c1c9a128688213d2d58ef4213ee7591f84d78900ca6d744d679d2cb4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-036.npz",
+   "bytes": 85012,
+   "sha256": "c87c971de1b535bab0d839a2fc15627de1fc24fc63c36b08be76559822e749f4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-048.npz",
+   "bytes": 85000,
+   "sha256": "c11ed0743478788845d4bc36e8ac28ff3c0836b34275502f2a7762bbe6fffd2b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-060.npz",
+   "bytes": 84998,
+   "sha256": "2aff38bfe71aa0f4a05e8ee47f61535787bab0baadd963723a2069166e3337a3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-072.npz",
+   "bytes": 85013,
+   "sha256": "5bf1f422c4e9fea3ea653b5eb34f7f688b681a65a4e7ef7c00038ac96a701dd9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-084.npz",
+   "bytes": 85017,
+   "sha256": "c911acf8416d334b060e6d5c82b2f40fbdbda504fd3318c62e8f76d91758ddc3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-096.npz",
+   "bytes": 84952,
+   "sha256": "ce7fcc3110788a2318a0c6ac1f0e7de61a09e1bafdc482fafbaf13c44bc384de"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-108.npz",
+   "bytes": 84984,
+   "sha256": "7eee329c878f60c8a0f94a5b991d469e4d39faecb8154822977be6c907b75a0f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-120.npz",
+   "bytes": 84965,
+   "sha256": "73b042fd7422c2f73b8bc1d5aeee0a81d3d344111aa8fede0bc9e2d645c2b470"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-132.npz",
+   "bytes": 85008,
+   "sha256": "885dd50572f2a81cab789fe1daa122345dccd15092a2e45a9364110d4b7f52e4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-144.npz",
+   "bytes": 84980,
+   "sha256": "54d316c11db88181a886161aa17cc8a27e5d3bf624c5eca26dacedcace0e396b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-156.npz",
+   "bytes": 84981,
+   "sha256": "358aee4f1777681c83bba3abc09de8e4ceca4602c327909e997eed866ddf88f5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-168.npz",
+   "bytes": 84986,
+   "sha256": "fcf3fdb02210e9e8e30f4e21943200ede6428e4637457cb97f4aedf2aca19123"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-180.npz",
+   "bytes": 84991,
+   "sha256": "c4033eacb8808265678ef4b30236a4af60d4c9766b45005d39ff29632e6827c4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-192.npz",
+   "bytes": 84986,
+   "sha256": "d6f2f4d064f5e487c03d442a442ba2c36a6e6e61fb231f04938f03edd1a52e74"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-204.npz",
+   "bytes": 85008,
+   "sha256": "e68328e9368e8c78d9e4ab888d42970c6662c1a72050ce00239869c427146c08"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-216.npz",
+   "bytes": 84996,
+   "sha256": "4a629e33ccb2f6fddea86a5b5a53e78bcffe2fe96936f5e488901216c2f2dcf9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-228.npz",
+   "bytes": 84994,
+   "sha256": "ccce35f01af4eddddce9300381e2ddd880223083d30d886574c785477e85f132"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/stage-21-block-240.npz",
+   "bytes": 84987,
+   "sha256": "84cd327eec1a09ecbd136b8f1fbbcae89506cd18318ef0b0267793d29f5d7e14"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/result.json",
+   "bytes": 743597,
+   "sha256": "03c242a70433f73646ac203a4aa1622671cf83f7e2e3cfe52a1cdc1b14c9b4e3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/manifest.json",
+   "bytes": 8984,
+   "sha256": "ec78ae1832e4cc109be4ad6755aae62d22d18ac7433aade33b13e970a5741d04"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-22-initial.npy",
+   "bytes": 14464,
+   "sha256": "660a24fb7ca127399aecb4ff461b56849e7933fe000c3f65748c35509c5b20cc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-22-block-012.npz",
+   "bytes": 84991,
+   "sha256": "990046b9afd1d311d01bda266c431dff230c92994ae375798d5aa464f7269ef5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-22-block-024.npz",
+   "bytes": 84990,
+   "sha256": "045ef9d4548adfa5f9c5158fab2194cfb0f3da085590a6fb9e4e60c626544c34"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-22-block-036.npz",
+   "bytes": 84990,
+   "sha256": "e8272b63ac96727233836848bad5d4b6703da16a49f72cad39a646d816b42be5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-22-block-048.npz",
+   "bytes": 84977,
+   "sha256": "9c96ea640df8c232479bf105f2ff7fc8f026378de86f007e85e6a8f60ec8056d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-22-block-060.npz",
+   "bytes": 84996,
+   "sha256": "67db1000b65e7a214624f89e33eef479c756e45d093aca28d3d21d53b77ff7ab"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-22-block-072.npz",
+   "bytes": 84957,
+   "sha256": "d6968c31677e9748a1282b991f9977685cae266c25ad346975ec6833856271d7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-22-block-084.npz",
+   "bytes": 84986,
+   "sha256": "ee33f6286e51231581ac17cf518fb634bc496ba9581cf743584b719b0a6c4065"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-22-block-096.npz",
+   "bytes": 84988,
+   "sha256": "4b12636d723f933f04aad9baa8ae0e7961d8899c5c95e0e8aebac490f5bb99b9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-22-block-108.npz",
+   "bytes": 84985,
+   "sha256": "700fdd4993cafd71189f30792037f77d6e60ac5f5a3d03d0d9b26cdec01e1de6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-22-block-120.npz",
+   "bytes": 84994,
+   "sha256": "30d3c4f1f5219bf54c0d60d961ca8f73d707322b8c1b4f4265cc78a92f13a8c8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-initial.npy",
+   "bytes": 14464,
+   "sha256": "d4399fda4e2fb46de837197b955f4a5281c15248573871b070049b76c2deb6b7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-012.npz",
+   "bytes": 84987,
+   "sha256": "2197c970570bffcce6b3be2d5dbc99e3054144217f307ce4590450852a485555"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-024.npz",
+   "bytes": 84987,
+   "sha256": "726555604b034d8aa678336169bbe702bea0a5b2b3bb5d56d1703786aeb5b020"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-036.npz",
+   "bytes": 85003,
+   "sha256": "ef93954271dfb502fc45fea53c11298de7e660402af09a6410dfdf7eff3ef6b7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-048.npz",
+   "bytes": 84979,
+   "sha256": "dd38c33f5d87b55b39fa2a063461faffe032dffe1e75fc1852b3da1133214b92"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-060.npz",
+   "bytes": 84995,
+   "sha256": "0b712132cc9fe35cbc87d2ed9236a2c59f519a35fffc172a572cd024fd0ea092"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-072.npz",
+   "bytes": 84996,
+   "sha256": "6e312da016761b16a0ebea0d44ef6cefd10a8262d345d82e47b4a1a5e4a8d179"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-084.npz",
+   "bytes": 84995,
+   "sha256": "df06a62268e2f77373641f5692fe0d9aa071013a0024d66ef7399753554658a0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-096.npz",
+   "bytes": 85002,
+   "sha256": "2ef072c29e44dd4f2f97519e8db5b7cbcdfcdcc3bb979e21d8fe89a6f05321b5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-108.npz",
+   "bytes": 84959,
+   "sha256": "9e2cd3cfdf629f84a88cf9f47e375e25f24ab9feba3891f5136998762fa5379e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-120.npz",
+   "bytes": 84991,
+   "sha256": "750ac73d509c3057ccf1bd01e037ade0ba34c40406c9006494cd610d1d094291"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-132.npz",
+   "bytes": 84998,
+   "sha256": "2804287923e564120a475829c38cc93f3be878ee4d48765932006829c4810a94"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-144.npz",
+   "bytes": 84980,
+   "sha256": "acddeb218546408cc012beb0dd855ba3d1d5620c2c6bb7e0b19876cf866ff95e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-156.npz",
+   "bytes": 85001,
+   "sha256": "875c6c5930df911ce750625d484784e5af2c9153aef286238bc26ecc7c204d80"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-168.npz",
+   "bytes": 84989,
+   "sha256": "1d020b05d731b743fd22c759b5ec154391da4699d9fa8c10ca77d345d35bd03a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-180.npz",
+   "bytes": 85009,
+   "sha256": "e4093c71fdd1752c67eea4cc75333c2437b562412a68639f5193cc77f19d90c9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-192.npz",
+   "bytes": 85004,
+   "sha256": "eb3c95721429d381f190d4a834a3649e8cb2c540e6dc33328c37ac7acfa34184"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-204.npz",
+   "bytes": 84993,
+   "sha256": "4a611772fe9e8e7c695447c3636b9c7ac48d9c9767da38c1b27e7f51686bf35c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-216.npz",
+   "bytes": 84991,
+   "sha256": "296bef68010d1223daa36e0ab04d1fb26a6a36b48b4eb2af1bb682aaf69a8209"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-228.npz",
+   "bytes": 84963,
+   "sha256": "0d98e9ff37bb031195299b325e5486755ec76c188fd2b511f82bd055290e064d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/stage-23-block-240.npz",
+   "bytes": 84991,
+   "sha256": "dd3ae20f3fe0793e3422dd4d3128d049f53b16682acafc1a9a973fcbfef3f218"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/result.json",
+   "bytes": 743554,
+   "sha256": "ac5fbe4eec2d12e970e7ccd06118ecb3e2f318fc33a1ffa6876e4e15b9d7e6ab"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/manifest.json",
+   "bytes": 8984,
+   "sha256": "2aa89da53f78d65032ca1d4e2bd8e72c967ae48916da9b61f47f3b0f25c159aa"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-08-initial.npy",
+   "bytes": 7296,
+   "sha256": "bb0f33ccc621e80cd2bec9f633c5ad47ead3497971d63c80329c2e93a8b20d6a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-08-block-012.npz",
+   "bytes": 84014,
+   "sha256": "e457c2c67956c332beb37c726f62259f3cca2171617a8a390667c7a926f99aa9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-08-block-024.npz",
+   "bytes": 83985,
+   "sha256": "ba4f87d4bd87604683fdabc2a3502bd1570777f21e5c8ed5d0fec587b112127d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-08-block-036.npz",
+   "bytes": 83974,
+   "sha256": "ab5a85d39e067e3ddb4d2e2ddc35dfbde2ce075c7bb3c33ae21f5290f9ee9aa8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-08-block-048.npz",
+   "bytes": 84019,
+   "sha256": "eee2f01c49dcfd51856160857061f0b2146225e7729c05287f1ca546970e4b7c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-08-block-060.npz",
+   "bytes": 83998,
+   "sha256": "e8f2812d34db1b5e7bcdb8b892d1d0497f7585f8576b2e618633c4033f61c10d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-08-block-072.npz",
+   "bytes": 84006,
+   "sha256": "803ba7a696669369db2033199ebba815e9a904a107d1cffefbf4a5eba31fea91"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-08-block-084.npz",
+   "bytes": 83993,
+   "sha256": "8812250ca70ee343626bae659414ca9470c6a4cb4b7b027d234faeceddf1651b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-08-block-096.npz",
+   "bytes": 84012,
+   "sha256": "01ea82245a487430f5bf1f355d569d7e3766694b4afe630174b95341b3add058"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-08-block-108.npz",
+   "bytes": 84011,
+   "sha256": "8c8a82cdd7bc9eff4f63a707a6772a5cc8e0f487312278bcf2457924a519a24b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-08-block-120.npz",
+   "bytes": 83978,
+   "sha256": "af7635ae655a0d6a68fc8eb2b95b589a43e9c1e89eafcc7478f32f322d96cf0b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-initial.npy",
+   "bytes": 7296,
+   "sha256": "ca7fd9ee58dc7ea14b1f609c6ae3215945fbb998ef2017bb62dc2eebfda53b96"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-012.npz",
+   "bytes": 83986,
+   "sha256": "41344dd3cb260e9c3518fbf66684967e4d7e481e3150538a895cc059f8fdff2d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-024.npz",
+   "bytes": 84010,
+   "sha256": "c9e9d469407bbbc7e59584b034d211b92b61533a8057f4f49a1ac078f36a8349"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-036.npz",
+   "bytes": 84032,
+   "sha256": "bbe07be89e24ba6daa80d895a289c13f2086379916b9c8c3bc337295cb77520f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-048.npz",
+   "bytes": 84014,
+   "sha256": "fd9aadc0d212ff561de244673b8d626253cb5215005f5d3143aa9f93470b1c9f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-060.npz",
+   "bytes": 84022,
+   "sha256": "6807acc254635725a4db0dfa520e1bc3ec3228d716d588802ba47f170c014132"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-072.npz",
+   "bytes": 84044,
+   "sha256": "18e9b5ea873f6bda6fbd313597968324db8edfed49141b474ca7f030c9e73dd0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-084.npz",
+   "bytes": 84057,
+   "sha256": "3428aea30aba044f3657eca6ec2d33faf322be528f73b12bc3facb25e5848efe"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-096.npz",
+   "bytes": 83994,
+   "sha256": "e90dd55d0b60d39f35fed2cda6fe10945e53901c06becf642d5cd448bfa92c35"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-108.npz",
+   "bytes": 83956,
+   "sha256": "81e8a8d2fd7e4c68c517975fdd32582afc682d319de8bd2e1e1daf733708f5cc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-120.npz",
+   "bytes": 84010,
+   "sha256": "a3d7eaf9d3328941622492a248805340de04855f85a03dd2ac9e7cee3ed9265e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-132.npz",
+   "bytes": 84006,
+   "sha256": "b9bddc2c56627420bf613d7c6144bb3ab7bc26dabfa6bcfd60d4faf5323a7644"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-144.npz",
+   "bytes": 83995,
+   "sha256": "96f7feebd9bff5c153207165032a0ba876779a64dba3ea81124312300d78dd84"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-156.npz",
+   "bytes": 84000,
+   "sha256": "f3d6c4d4717b0a7910d2f1fae7c2dd7b78a75cef3e45e5f29ddd15d14bdf268b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-168.npz",
+   "bytes": 83991,
+   "sha256": "8562bce88f09a5e988915b19344af4852e0b32c861b8709d31ef23c438907dcc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-180.npz",
+   "bytes": 84021,
+   "sha256": "992f4f34712166eb831d36b21c73049ea498711e84cbeea636410a0b2c64c663"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-192.npz",
+   "bytes": 84012,
+   "sha256": "889a59305f24c15079a9a472cd85425a90d1784ad40cb3b0c9d8124b5ede5402"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-204.npz",
+   "bytes": 84022,
+   "sha256": "237db8a46cc3e4aab6fed046ec7606b44758b08e3af40148f1eb9e8e59d62c1f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-216.npz",
+   "bytes": 84011,
+   "sha256": "d541b2c3313f2f56efcf5d747d88b0ad864cd075085a29ff71315dc9a1e4b22a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-228.npz",
+   "bytes": 84005,
+   "sha256": "58446e76779a6e25f1ef6071ce71ab6c611fa94faa84b3323e90b22f9cab9090"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/stage-09-block-240.npz",
+   "bytes": 84018,
+   "sha256": "43cd999e58dd80eeaae6643551f977f34c9848da38b6577a89a54d4892ccebed"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/result.json",
+   "bytes": 666286,
+   "sha256": "71f1f4f23a9af689353417bb278129ac4b028c09a8d439330173bb5de6066f9e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/manifest.json",
+   "bytes": 8492,
+   "sha256": "892a149ffcc62397dad397faa3bfd3ee9ce05e1c2ca2cfcf8d35e73ca762d06e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-10-initial.npy",
+   "bytes": 7296,
+   "sha256": "8a8884c020a4ce76ed3d75496795a4cbc0eb5ecba06a5beeac49b25174b0ea4b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-10-block-012.npz",
+   "bytes": 84007,
+   "sha256": "9876ba025e9a0c41a8c45bce5dc7f43ba9d8f225aeefb916dfdd53540fda3fc9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-10-block-024.npz",
+   "bytes": 84001,
+   "sha256": "b7d769809e3a15a18d586fedb80e17d80aad0bbb533fe5fcde65d1ba9d389466"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-10-block-036.npz",
+   "bytes": 84012,
+   "sha256": "ec255b860b462ed4b550aa2bb8a699d5c2cd67bc56bc1fdd384a0a85c068374b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-10-block-048.npz",
+   "bytes": 84001,
+   "sha256": "bf0334fdc86c0808e13b82e56f5c16af10c5f2cedcd1b2317c84c7f7591306eb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-10-block-060.npz",
+   "bytes": 83999,
+   "sha256": "47e679b82a7e14051837a64703e61c8480e5dec76d5c2b5f6f067d893e81a8ac"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-10-block-072.npz",
+   "bytes": 83998,
+   "sha256": "b5ea1c5f12e986e17f15e2c27affd7006a7c114e1ed2db3d8b2773bc34d3dfd1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-10-block-084.npz",
+   "bytes": 84009,
+   "sha256": "2da7253316b0875377669e3cbc804d0ed40f5517bd4454374236b2543e372c79"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-10-block-096.npz",
+   "bytes": 83994,
+   "sha256": "3911bca1ddc3cf8721188d5b5e5b610c5af624906bb2aa5b930cedf2dfc63ee3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-10-block-108.npz",
+   "bytes": 84008,
+   "sha256": "9d2bafe2cdafae199d5866b300333f5e2f6ea614c90a47ec3062d55e486515d0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-10-block-120.npz",
+   "bytes": 84023,
+   "sha256": "9020d3e4d1fc54d4179e2cda191eb397585bd74103cfa55e157835f59d5071ad"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-initial.npy",
+   "bytes": 7296,
+   "sha256": "0fa09429129c93089172165c5d29fd4d965d1121df1ca2d08655d865279fa2c0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-012.npz",
+   "bytes": 84016,
+   "sha256": "820562ab5d6ddaab70d8276bd33da263c7d5e58ceff257286c4ce43da74d191b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-024.npz",
+   "bytes": 84008,
+   "sha256": "2cbfbba16072d868622bd39be372d874196e894ae721c69902eb7bb5eabc64ee"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-036.npz",
+   "bytes": 84013,
+   "sha256": "96d202782a1e6f921ca92a80f6e864d127a456463d41c4e96d1cb96515bcbfa0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-048.npz",
+   "bytes": 84009,
+   "sha256": "2cb6270535e9b31579a26c9b929b237f1bf32861389f3948ac08d3b6bd1ab48e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-060.npz",
+   "bytes": 84012,
+   "sha256": "9eebdb9cc7c691c8ff526f11f6b8838b3f0d0ba9727077b6073b3457ef6e2718"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-072.npz",
+   "bytes": 84001,
+   "sha256": "1e3fc450169339f891d1d13b742c3889864bc84eb6c0ba1f190b4d4aebfe3012"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-084.npz",
+   "bytes": 83980,
+   "sha256": "15b118fa4dc81925b50b582fbfd770f1c265fd351eea0cf81966001b2105b976"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-096.npz",
+   "bytes": 84007,
+   "sha256": "e39863f45d0a586cc11f1210a80822fb425ef34766f810204d2a245cd9b0ce5e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-108.npz",
+   "bytes": 83990,
+   "sha256": "64aca9da321624879e03d17dffd640e5c93c5e7f970d0a0b26af6012ad85f080"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-120.npz",
+   "bytes": 83998,
+   "sha256": "5d9c5ab944df3f951ad8aefe023c219e34b5ebcae993ab97e514ce74ea8600ae"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-132.npz",
+   "bytes": 84008,
+   "sha256": "df84fef6f0029fe22a9e62ac30fc1a82f71fc69a2c2e7aca893ff994eeb02e8a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-144.npz",
+   "bytes": 83993,
+   "sha256": "b7f3eaf67b207f8c6cc86b433198f05b7ab4e7eb5babf3105f0c439ca152ed97"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-156.npz",
+   "bytes": 83981,
+   "sha256": "8805d74ab9771790deb4397ab9a9a5a2fc5347ff7080bcf6b033104514650296"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-168.npz",
+   "bytes": 83989,
+   "sha256": "dad645d1087ddfe40b1fcaba269da5cfedbabd135e65c6c994919431d976edeb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-180.npz",
+   "bytes": 84013,
+   "sha256": "d6107cff711a8bc0275f9923e75e4e167f44bdea3dc5d630f7e4264888808367"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-192.npz",
+   "bytes": 84010,
+   "sha256": "fdb1e93765101f460880696bbe16952e39794cf794d09f17a2efba2c76bf8f6e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-204.npz",
+   "bytes": 83980,
+   "sha256": "b23c81660378ef81afa4a4035a0f6baf81a08f3b87e0d652032a5cba6d7ee8e6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-216.npz",
+   "bytes": 84001,
+   "sha256": "0ddcb26697a1a4632b121ff5b9ff4c2f52cc42c4cee0c78bd79280d6d2285cc4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-228.npz",
+   "bytes": 84011,
+   "sha256": "aba86b9ca2847509a4c8990c8129b183486e4e7551474fbcd5ece6d2fec590ec"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/stage-11-block-240.npz",
+   "bytes": 84007,
+   "sha256": "1438be4dbfbfed696de30911c74808c4ed58040df15c6537f829a6ad71c19e3f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/result.json",
+   "bytes": 666645,
+   "sha256": "15d41720cab6e289867dd840967624b80734a0530f6ac8e90c8ee2d59139c4b6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/manifest.json",
+   "bytes": 8492,
+   "sha256": "b10a81998dc58b1ac2864caef276577cf005894b6b255cbc10c02747a2556dad"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-24-initial.npy",
+   "bytes": 14464,
+   "sha256": "a9d7fd345ca4cc064903b3470b2cadbdc76c9fa25d9ba098660b86b527401cd4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-24-block-012.npz",
+   "bytes": 166415,
+   "sha256": "258b7af965c70fbd812119e7cc0a41cf9c3dce36714fbf97154725536d66d283"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-initial.npy",
+   "bytes": 14464,
+   "sha256": "57b432ac3d81b86ee8e3f4810e12395b38c819ad6ad44d3f2655b1a421e6e52f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-012.npz",
+   "bytes": 166411,
+   "sha256": "bd62968e8f0fc0a9558b5b18a62af0eb7522df346f8cf925d2a52f2c137bc110"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-024.npz",
+   "bytes": 166436,
+   "sha256": "5d5314d572840c6935c37a0f66165ba1176c183fb704d741c3036b12a7fa588b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-036.npz",
+   "bytes": 166399,
+   "sha256": "6b524dc0f1f8fec66454344a2718a329e0242db4959d95ad144d3ac0c1747023"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-048.npz",
+   "bytes": 166403,
+   "sha256": "c1d5be010a5a071b6a392e3a62aa8dd9ce7c8aac08f66a95eb8ca45132c94715"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-060.npz",
+   "bytes": 166416,
+   "sha256": "7f19ff58a4b4c46a714c1319b6b0884b52db4cb60e961d4f783419c6c8a45302"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-072.npz",
+   "bytes": 166431,
+   "sha256": "39132bda723ea8eec674ae316a36a1a175492353f27cb2c832473d426350e493"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-084.npz",
+   "bytes": 166452,
+   "sha256": "161e5d43b74a019e05903f3e10a919d4bb56e8d340c93df890b92e74a195cb0d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-096.npz",
+   "bytes": 166484,
+   "sha256": "a77e33cb635365d1355eec3c9475877fcb18a7292aea789d7a64b8a6f6c93469"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-108.npz",
+   "bytes": 166433,
+   "sha256": "3aa3e150df75f91e3126105c81d21934e3044eb1a3ee7194eeacf4553d466ca3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-120.npz",
+   "bytes": 166437,
+   "sha256": "d49c3a37283c32e38a2ef99efd9ef46363e33f63efe973c5f90ce955c39b7eeb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-132.npz",
+   "bytes": 166388,
+   "sha256": "100fed44fe3793c3fc4f8af5df94291ff742ea430b3a166012fc65529346a40b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-144.npz",
+   "bytes": 166405,
+   "sha256": "d48be0b118ffd30df10b6010b035c91b004ba8eb121872080efdffcb30373949"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-156.npz",
+   "bytes": 166453,
+   "sha256": "2cd6f207880da3216756bce2adde2bb6da2ac3c9be0b6020596027bcc65ede47"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-168.npz",
+   "bytes": 166429,
+   "sha256": "1804df3fc9da06299674f1a104d713ee11869e9f4ddb68e5fb285813c53050a8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-180.npz",
+   "bytes": 166407,
+   "sha256": "de1a29bf254b707ea4203938a430a9b8b3071c2ebf6d5896773fb04b076deb68"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-192.npz",
+   "bytes": 166464,
+   "sha256": "69d388346b65d932cab727cfd73517beea63c46bc891329070f6d39cffcb45e5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-204.npz",
+   "bytes": 166427,
+   "sha256": "7ac451f9c7db52eff78a01504fe6e295243aa1429c5c13dd1598d4928399d3ab"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-216.npz",
+   "bytes": 166395,
+   "sha256": "f43388c218235056db939c9523cf1566d9f63b2b38e1325f66b0b2dce2fac31b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-228.npz",
+   "bytes": 166414,
+   "sha256": "95bda5c92c8577735012ddb98bb7835a90c2b4dea2d4b9b0f1f5ddcfbd8fe89b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/stage-25-block-240.npz",
+   "bytes": 166418,
+   "sha256": "d53795986144fcddbb27be5f4a14282f1dc728cf5d738cf1f326a2db049f6e9f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/result.json",
+   "bytes": 545387,
+   "sha256": "e3bbe24c45a989c95118c41eb6fbc353ebe71a18f6142bb9e2e69ac760be6db8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/manifest.json",
+   "bytes": 7582,
+   "sha256": "b5d2deef81ac4cef3ff298db041987c285192b8a9c73c7ab4c9ac1e4e972d606"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-26-initial.npy",
+   "bytes": 14464,
+   "sha256": "7aeab82cfb1db23b7c72fe45f805e60ac01568a3ec0e66580c3ad36ac5026278"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-26-block-012.npz",
+   "bytes": 166417,
+   "sha256": "d706b330790d12664d2a060db972d694207af6a42a7de7a646a105ade8d8e303"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-initial.npy",
+   "bytes": 14464,
+   "sha256": "8883e9b6720d195578d0280086fce7666e23bfb0bb026802e5c441737210dd2c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-012.npz",
+   "bytes": 166401,
+   "sha256": "a923dbcf867f24cfd22d767ab42c9d0f3c61de3c360b3ac98da73e766ac6b18f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-024.npz",
+   "bytes": 166443,
+   "sha256": "14b6f3a06f272d486c36e2021a80b5678e66060bc76d2095f7a6f986bc4523c9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-036.npz",
+   "bytes": 166411,
+   "sha256": "a748d57c6e1fe6543cb2726231c9caeee19a74b24ae750b6c36355ef34095fdc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-048.npz",
+   "bytes": 166425,
+   "sha256": "44403d6d8ad3f5227cd9428c80f37226a173eee684466ea4ecad22000736ef31"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-060.npz",
+   "bytes": 166418,
+   "sha256": "c779312daecd29e9345c89eaa1663f3b050cc15a354ed580d85088d2a4dbd93d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-072.npz",
+   "bytes": 166425,
+   "sha256": "1290b6f012272afae4625bf1c7da932322d64f34f84724f81140c80a775b92ba"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-084.npz",
+   "bytes": 166448,
+   "sha256": "a0b59334de069ddaf8058ca7049f9a7bd20d9b8df983478d5523e323aab438e8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-096.npz",
+   "bytes": 166467,
+   "sha256": "7e7f3110c7a409e6e11cb10390dd86e5c37f0e5a1d9fef26be031272eb24580d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-108.npz",
+   "bytes": 166405,
+   "sha256": "2ebc1152b3285980f615249dfdeab6156b69a8f02b3cac0385d163a283cb64fc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-120.npz",
+   "bytes": 166422,
+   "sha256": "de810895c420387565e486ed68f34a1338ae88056cdb87a4b82462f0632544fc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-132.npz",
+   "bytes": 166379,
+   "sha256": "7475d585ac6cf0a02a5704d96310fe95bc5ca3b56c121bde9167aad616e2b4bf"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-144.npz",
+   "bytes": 166401,
+   "sha256": "47d239e3ceac0a3a9e83f4c5776a8ae3ec95729a1ab88ceea6e09e7451b7949b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-156.npz",
+   "bytes": 166444,
+   "sha256": "7e0282c8ba96da10e46280838dc186695a595e547f06e5fda7ce24711c66d23a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-168.npz",
+   "bytes": 166447,
+   "sha256": "8ea0ecb96f0b5bdd09ca114df8050bec5a687569087c21f01064c7c93f7163de"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-180.npz",
+   "bytes": 166414,
+   "sha256": "0b6a4fc77d51574050715bc34f5e69bd3df52df80bf6fef025fb39a249b8e464"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-192.npz",
+   "bytes": 166466,
+   "sha256": "96c9209fe746d7e85b2652a6ef6e01b4a6d8dccd1bfbddb10b0bb6b08d2f7c4d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-204.npz",
+   "bytes": 166432,
+   "sha256": "d7caa4a5effdda4e608f83a7348e7c3a82168ae84c621d106d53628c88d9222d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-216.npz",
+   "bytes": 166410,
+   "sha256": "1bd4708ad01d3cc19f4eec9662b666ff737cd90aa659b5b44bcf1a3f0646d96a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-228.npz",
+   "bytes": 166406,
+   "sha256": "a6b0e0c4691f1a6a175fdbbd620e1c306b54ba4b6dc75d0fe7d0b835863f7ba8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/stage-27-block-240.npz",
+   "bytes": 166420,
+   "sha256": "51688fa9da5c0cf2def32067d77ceefd3adf4ad1a40c5a437b380ce9a78a8fa4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/result.json",
+   "bytes": 545380,
+   "sha256": "96f9ae1bdd5b91a653ef9d8fb549426d81e30399a66a18f13c850de8a6589be7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/manifest.json",
+   "bytes": 7582,
+   "sha256": "017772a776f6c82e76dcdb0f7e03eb6b5adb085a035ffda4d086a1fe2ad0dad4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-28-initial.npy",
+   "bytes": 14464,
+   "sha256": "bdae2b78197d0c768d8f3bc4c0b42a090f03d8f06ce284df5233d3c0f826e135"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-28-block-012.npz",
+   "bytes": 84975,
+   "sha256": "09f84ef46dba4ac5a1aa587636fc4dd55a54d62822f467973e34d6db67671e06"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-initial.npy",
+   "bytes": 14464,
+   "sha256": "b3bc14a100d4eada7bf7772bebc6ea4fbb77c27fc5b9a6b90297043a2ccbef56"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-012.npz",
+   "bytes": 84958,
+   "sha256": "b92b4ee6ead822a2a58cd29015355156d928c04783d6446d670e17a5d87b24e6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-024.npz",
+   "bytes": 84989,
+   "sha256": "8af950357b1089238bd3b07b5a04960806f92517fee21de9e96bb046471883a9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-036.npz",
+   "bytes": 84972,
+   "sha256": "1e1c85d2034ff4fefe015f535955bc7d7f360ce93956d4e1730e674fb6d5bb8f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-048.npz",
+   "bytes": 84985,
+   "sha256": "3e6e25826a31605fe93ac0887e6a79d2700320d174ad1a71be443a042a25e67e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-060.npz",
+   "bytes": 84975,
+   "sha256": "386c1796d99480a8444192210c02397565bbca284649658c5bca7e90db12fcbe"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-072.npz",
+   "bytes": 84992,
+   "sha256": "6f4ebf06ad57ffa1bbdafe8177288c645f69c1fee2fc45a47674a18a9f398fe1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-084.npz",
+   "bytes": 85009,
+   "sha256": "019276559115081b600be7d1827de783d1aba346fb745efb0545150547c2ace5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-096.npz",
+   "bytes": 85013,
+   "sha256": "760f909fad76121ea0f17d49c9af80c2640811897e20260b472eacff7d0b58f4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-108.npz",
+   "bytes": 84981,
+   "sha256": "d56958ea2d42542f6c36b1714ff51a5df0e9ab3f3fb404b3772d825cf8c7d511"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-120.npz",
+   "bytes": 84991,
+   "sha256": "5dc83c03e44fe2b1dc8bd7f72a061525ffee021f4fb27bd0c6a8dd2e7f0b0b6b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-132.npz",
+   "bytes": 84967,
+   "sha256": "cfd00ffd678496dea5ea2c2f2aa7e85f36a890a505706e6b3343c9f7cdd8ad1e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-144.npz",
+   "bytes": 84977,
+   "sha256": "8e977bf0420bdb5ffba555d390dfb2c262831c580981a4c411a98fc4b34bd3e1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-156.npz",
+   "bytes": 84987,
+   "sha256": "b167b00981af2f311f4d4118d6d5dcfae6da0922f866521bb8469fdc180167f3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-168.npz",
+   "bytes": 84998,
+   "sha256": "bc02cbabd8d06402aac8c8005bbe78c00dddcfb5b12670387a17ab17c8f72eb5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-180.npz",
+   "bytes": 84967,
+   "sha256": "c73458e15de59ac0784da2e0357376d4f939ae32c107189e6cea325ec560a3e5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-192.npz",
+   "bytes": 85008,
+   "sha256": "17e05c56c266b81a58499fd98dd71e14a2dccc5c2f7c0c75e2198dc306e103d1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-204.npz",
+   "bytes": 84991,
+   "sha256": "1efbf7cc1b0c47d6635b01adc5b1e76e1a8664d7b4132c3f2d2927ef13e233fd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-216.npz",
+   "bytes": 84961,
+   "sha256": "603f968a7c46d0f7d9363c1ae7cfd2b2a41990bd768a3e8689707f91326955b7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-228.npz",
+   "bytes": 84961,
+   "sha256": "c223275c086ede8219a975dd827421b25c9d4f15fc2c90f90434c78c6730221c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/stage-29-block-240.npz",
+   "bytes": 84986,
+   "sha256": "a4f904054cde098bbdece3d6955f71cea984286aca84d6b1c1d223df11573159"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/result.json",
+   "bytes": 545615,
+   "sha256": "fcedaca7634b0fdc55b19f6fc7272a4d8fa685cd7c2d8fd38876e6dc89c93fc5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/manifest.json",
+   "bytes": 7561,
+   "sha256": "8ca6a06beb9b70fce930704479830ce440a0892ba1e1dcd16d5c6327b8330d5d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-30-initial.npy",
+   "bytes": 14464,
+   "sha256": "660a24fb7ca127399aecb4ff461b56849e7933fe000c3f65748c35509c5b20cc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-30-block-012.npz",
+   "bytes": 84983,
+   "sha256": "6e3d05db224cdbb1002c76acd2697295b2ef06ac67c0cfeb69dcc410d480931b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-initial.npy",
+   "bytes": 14464,
+   "sha256": "424e0aa47a9e51877b13efb6ce78d26bc928e2b9f5d92a5d13f7d796a6ab89a2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-012.npz",
+   "bytes": 84992,
+   "sha256": "bf8dcfd61ce0f4bdcfe1f7f2e750d86d323bc2454d73ab89b53ead20e5fb58d6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-024.npz",
+   "bytes": 85001,
+   "sha256": "9b8d901bc9151a056ad0b7942b096e90e43635c51ecf3801b34d4a4fc018f20f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-036.npz",
+   "bytes": 84982,
+   "sha256": "d2259fdeced54571045720bc7dd4f89a15b3bee1157c3d9e9d89ba0a0ed5f9b2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-048.npz",
+   "bytes": 84998,
+   "sha256": "6771b9902d356c4c1b35224e15f32da6f538430b1560da7b84cb55fc61413ed1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-060.npz",
+   "bytes": 84975,
+   "sha256": "65dee36e9f88fab59e421c4dca25bdadc6d3d34a2574a2aa9fb940e820951645"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-072.npz",
+   "bytes": 84983,
+   "sha256": "c879f96dbda007d05ff8838a01f035e2a98f72ddaa8c8f166c355efd5d015daf"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-084.npz",
+   "bytes": 84977,
+   "sha256": "903a50d83778dbc60e32b1c15bc18229f26c39ee778466fbb58e7ac29bb601f0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-096.npz",
+   "bytes": 85009,
+   "sha256": "8c9db5ed759bdbe703d547bd7000009c0737f841ec7a1f05b48893a4998147e5"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-108.npz",
+   "bytes": 85003,
+   "sha256": "b7207b966e0184b01e54aeb906a6265bf7760155915b4849ad74d022deadb3a0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-120.npz",
+   "bytes": 85008,
+   "sha256": "def33d75e806aae893bade44a280439bb12e71a0c6f61d4e3fcef286d09675ad"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-132.npz",
+   "bytes": 84991,
+   "sha256": "ee6223fab99f0ddef1bebce53c6ea9bbedcb17bc14f7a7f21c8a782b7c2565ee"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-144.npz",
+   "bytes": 84984,
+   "sha256": "fe23d2426817e34b6ba77c3395de3b5b000b590a1e1bb21aa935b7dda04c11f2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-156.npz",
+   "bytes": 85043,
+   "sha256": "99bf344a8e2e27bcf1e52882a6aa573e0eb0817ef5c0c045b2e90b6086b54a38"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-168.npz",
+   "bytes": 85012,
+   "sha256": "f331b3bece188d08e7c56dfec2aab5274ac4d6f46a3aa85a468ba7544970edcd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-180.npz",
+   "bytes": 84992,
+   "sha256": "d2ddccc4ddf4bde5e873fdbe21ab10b116ebddfb1cc4689b5a532393fbb78682"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-192.npz",
+   "bytes": 85022,
+   "sha256": "1ddd043452012f86fc33ae36d40ead58cd0e981a578ca8f67868a279564eda57"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-204.npz",
+   "bytes": 85000,
+   "sha256": "6261fb1265f32556b8b13f710ebb42109790c3d6cc0947b05737938a3f6aca94"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-216.npz",
+   "bytes": 84997,
+   "sha256": "8a326b356bba54d93c48de85755bdf78e7108ada82754998fe312e49b312b3cc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-228.npz",
+   "bytes": 84993,
+   "sha256": "5fbefefd363fe3230108909d8f47645feebf89aea70c9584cec45b64833c0c7e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/stage-31-block-240.npz",
+   "bytes": 85007,
+   "sha256": "8167d74c7f2445e6f6a5948b50129cf40e921a53b05e0fa11bc140c00bc16363"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/result.json",
+   "bytes": 545596,
+   "sha256": "5d41b6b1c5e86cfa064c47051745bb76565a7d01ea8450f62b224a96fda048fd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/manifest.json",
+   "bytes": 7561,
+   "sha256": "31658888057ae3ddd6533387b40b80fc65f2d43fed83f27872d2d06b125122c1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-12-initial.npy",
+   "bytes": 7296,
+   "sha256": "bb0f33ccc621e80cd2bec9f633c5ad47ead3497971d63c80329c2e93a8b20d6a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-12-block-012.npz",
+   "bytes": 83997,
+   "sha256": "a48be3d041c0123dc6b6504267725da9ee330e6b90fa25f967f78fc1f8457350"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-initial.npy",
+   "bytes": 7296,
+   "sha256": "f375d993af3c881294ca3ab828795fc631c06cb6aa9cb49e8c540a190e084ce3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-012.npz",
+   "bytes": 84003,
+   "sha256": "ebee22a126a9a3c713387bb55a3fd8da33cdfe8cad1f3502aead4fdd0fb63644"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-024.npz",
+   "bytes": 84024,
+   "sha256": "2dafe785fdcace7bbc4e410ba7309deb6c3b7cd1a3a0481363398949a0e77ce3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-036.npz",
+   "bytes": 83989,
+   "sha256": "bd45e4bb43823576accf1365dc45baac75a54a71b59fa9dc9b8c41d04b79840a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-048.npz",
+   "bytes": 84012,
+   "sha256": "0690dacd492754b95c29d630db2a1565f053b21be812f963325e738991700e38"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-060.npz",
+   "bytes": 83982,
+   "sha256": "e95e25990bd2a14913422d8b997d9d0819fbfd1d00fd9653d5b198acef54da3d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-072.npz",
+   "bytes": 84005,
+   "sha256": "0ebae613cc4222a8625875bf550ce45f5e11873041338790ad05738f996762c0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-084.npz",
+   "bytes": 84029,
+   "sha256": "573dd597a50c7b24e8535adf3f5ee50c07c11d667f7fb0979d37ebca770376cb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-096.npz",
+   "bytes": 84015,
+   "sha256": "50cd189d17b9f65189e471d7edd3cd5d08ab2de5e952837ba9825e20eed387c0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-108.npz",
+   "bytes": 84012,
+   "sha256": "a30c6ef928f6d015e55f080247a9a94d0882c03550bee5be9d44b49341aeab62"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-120.npz",
+   "bytes": 84006,
+   "sha256": "c07d3bdbbd5678ebc5b77b333abf9bb5edc4466a3689c9141da212214b527cb4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-132.npz",
+   "bytes": 83985,
+   "sha256": "1fd7ab20fb0dcd1740fa25d9275d4510e3e1795cf6a075bded19dda26fa0e97f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-144.npz",
+   "bytes": 83979,
+   "sha256": "fd22b7f8fc98efe28b55b929ada2c21bd2cccd16ba5f012113e92b440c5e8aea"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-156.npz",
+   "bytes": 84007,
+   "sha256": "57e2adf23ad9e30a8fe84dd05d0e5246dbaf0d9f462675cfc82fdc63b30da5f7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-168.npz",
+   "bytes": 83994,
+   "sha256": "c4cf4f50d328bdf1e46795febe2beb2bd95f666c087f65f639cc2830c9d64d3a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-180.npz",
+   "bytes": 84011,
+   "sha256": "2f460010d45784254e03024b9092e7a71edf57d17ab249f74bf411f0ebe31040"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-192.npz",
+   "bytes": 84008,
+   "sha256": "f03d60f3b0e2aec5d6df29c7c0a6da52ef48ed9c031186b18b80c0fa964565d4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-204.npz",
+   "bytes": 84008,
+   "sha256": "04b209d1d8e3fd504dc76783bd3b05390feb5564aefc4e540e214bf0964ff3c4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-216.npz",
+   "bytes": 84003,
+   "sha256": "06a0940c2d59454fbc792d04786f6434e2dd6153bacab15bb504bcd029c77d5e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-228.npz",
+   "bytes": 83998,
+   "sha256": "9cbbfe8342fbbb34a7b77a5988a34076f299a995f9e326faa4aebc3dddcd0c02"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/stage-13-block-240.npz",
+   "bytes": 84003,
+   "sha256": "aa2e70c533b2b9218645766d11441c9d1abcae89aa290442732f02ce0e77d589"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/result.json",
+   "bytes": 481636,
+   "sha256": "2b447f2bcb6d991f1985675a0ad8b7f8401c2e8f3e3d1057a0dcf8f4dd1bfe70"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/manifest.json",
+   "bytes": 7069,
+   "sha256": "43afc1651054e01580961e42235d5a91c266befc067efa5bd7ed6d3a06825467"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-14-initial.npy",
+   "bytes": 7296,
+   "sha256": "8a8884c020a4ce76ed3d75496795a4cbc0eb5ecba06a5beeac49b25174b0ea4b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-14-block-012.npz",
+   "bytes": 83987,
+   "sha256": "93cbb9ad4a2f78417758e260fb807c79a8385fec3deb9f4c5becb1f033e85d56"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-initial.npy",
+   "bytes": 7296,
+   "sha256": "77f8674bb6ac6fb21f24487cf43a327c9c6f35dad8e87456feda1a56c52b41f0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-012.npz",
+   "bytes": 84032,
+   "sha256": "d304ed018de3c249fbf05261d21bba40ce96eefa7239cf4b76c1609b5efa2dc9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-024.npz",
+   "bytes": 83980,
+   "sha256": "d9c6217a439ba3fd034d0dec278bc489b38fbf5fe535f08212f77e86a03e305b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-036.npz",
+   "bytes": 84017,
+   "sha256": "883a3d6176fadea6c43237c1cd43210e3cf5c81c0293f51bfbbc5f008f602422"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-048.npz",
+   "bytes": 83979,
+   "sha256": "1f2b621f016130b03c1918110465e6db01053c47a8957badbc8be80475af2516"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-060.npz",
+   "bytes": 84019,
+   "sha256": "9862799d0844b0a793937e386b86e1578658f134258499a0472ac7805de6f9b1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-072.npz",
+   "bytes": 84016,
+   "sha256": "654fa88b4b512265047f45c46ecd429656b60812d9441cb944c1fa0e6997e37e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-084.npz",
+   "bytes": 84025,
+   "sha256": "5f70f1c4757df7967dba36def25c4fed97fe232a1a41d6c9c87bf5b00e4813ab"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-096.npz",
+   "bytes": 84021,
+   "sha256": "c842efed0b251f69cdf93a3037315d8207eaf69faa8bb3bdefca6bf1fb4207cd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-108.npz",
+   "bytes": 84039,
+   "sha256": "0f2f21780cf411867645df14cf2351d9d482e09c994b9d9a6ca9ff03401bafae"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-120.npz",
+   "bytes": 84013,
+   "sha256": "9bfa1dfca3ae070986aace50a92a4279021309df3322df6a357f863798ee1fca"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-132.npz",
+   "bytes": 84015,
+   "sha256": "f268d1f9fe6d7e3586cdfdc181eb691c1f45782097a19cf41118e015a3e231d8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-144.npz",
+   "bytes": 83993,
+   "sha256": "97f9fbc7956096e8d5c484bae15eef4a9c28c3164ff2908d961f7984d40b9f64"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-156.npz",
+   "bytes": 84018,
+   "sha256": "ecca5d88739aead0a540271976984c827b78cc2bac0e0e344f870de72f514974"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-168.npz",
+   "bytes": 84047,
+   "sha256": "b859aa123e4da19135d350bfc8ad50998fc0772fb05c7c674992ec5970fd7877"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-180.npz",
+   "bytes": 83996,
+   "sha256": "85b5418144bb60a8bbe637653885da74464a93e4e64263f83dcaa3f7d94605e6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-192.npz",
+   "bytes": 84021,
+   "sha256": "1ab8b12fdcc9fd6c14f7c9af0d46297cc741d9f1e3856b6b73bba419cb8f837e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-204.npz",
+   "bytes": 84009,
+   "sha256": "499d6356828a2071a1b4c43adb474e56d0d5b18b4bedd92fe6801094d2c639d1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-216.npz",
+   "bytes": 84027,
+   "sha256": "52d418e75dc4e0e12c84cfd88f348313c967a6e534e40928412523a42768b099"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-228.npz",
+   "bytes": 84011,
+   "sha256": "6716f5df8515f9481aeaace9cd325c2f6b47f38f6b6e965deeff7a2e976e71d8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/stage-15-block-240.npz",
+   "bytes": 83994,
+   "sha256": "24fd226802cdf6b0c418f7e087111c231191466587b2d3ba9aa51aaf4dbcca73"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/result.json",
+   "bytes": 481611,
+   "sha256": "b4888ed3c3c53e1899865571e32c7ca69cb0503fc993a74d51cfcc8dbcfefb44"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/manifest.json",
+   "bytes": 7069,
+   "sha256": "2a4eb3ec3c5486d798a5323fd03c37ea87ec892211d818a2e4433abdb8473195"
+  }
+ ]
+}

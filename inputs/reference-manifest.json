@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-25T22:10:11Z",
+  "source_commit_at_extraction": "471b5eac00924638df3285aa223a84c3c94cedb7",
+  "hold": {
+    "alpha": 0.07293697809562831,
+    "log10_temperature": -0.15395151820007266
+  },
+  "source_hold_results": {
+    "path": "/data2/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/continued-hold/results.json",
+    "bytes": 12218,
+    "sha256": "8d9b779f6ec6652af1ec803026e7a8f60018de7f91e660f4e1604740177ffec8"
+  },
+  "source_hold_metadata": {
+    "path": "/data2/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/continued-hold/metadata.json",
+    "bytes": 6238,
+    "sha256": "ad1dba0b172e1639e87062bad1a1c05c28de645870cad1822e30981a0a3cb2bb"
+  },
+  "output": {
+    "path": "/data2/shrimp-memory-data/audits/p6-recovery/20261025T221011Z-recovery/reference-cycles.npz",
+    "bytes": 82695,
+    "sha256": "d96f923d537a6bcd6b86be7fe91f29a4cba6a46e5e036c8dd408817281395fe0",
+    "key": "states",
+    "shape": [
+      2,
+      6,
+      896
+    ],
+    "dtype": "float64",
+    "order": [
+      "ad",
+      "td"
+    ]
+  },
+  "evidence": "adapted numerical qualification after original120-step failure; no writable-memory or finite-perturbation result yet"
+}

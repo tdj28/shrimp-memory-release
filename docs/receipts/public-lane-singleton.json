@@ -1,0 +1,651 @@
+{
+ "kind": "public-lane-singleton-audit",
+ "plan": "docs/public-lane-layout-check.md",
+ "model_calls": 0,
+ "frozen_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+ "instrument_checks_passed": true,
+ "S1_all_8_lanes_as_expected": true,
+ "S2_all_within_tolerance": true,
+ "operational_or_instrument_problems": [],
+ "jobs": [
+  {
+   "job": "single-00",
+   "operation": "W",
+   "start_cycle": 0,
+   "expected": 0,
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/source.json",
+     "bytes": 7454,
+     "sha256": "cf23f2fcb86523b63bc658578bc9bebc55c86d4662471df4d09afdd58df940a6"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "bit": 0,
+   "match": true,
+   "model_calls": 258
+  },
+  {
+   "job": "single-01",
+   "operation": "W",
+   "start_cycle": 1,
+   "expected": 1,
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/source.json",
+     "bytes": 7454,
+     "sha256": "b745c1878f6936f04e7e92026414d274a29c69f149424f6f1fa1c9751e0d226d"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "bit": 1,
+   "match": true,
+   "model_calls": 258
+  },
+  {
+   "job": "single-02",
+   "operation": "E0",
+   "start_cycle": 0,
+   "expected": 0,
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/source.json",
+     "bytes": 7454,
+     "sha256": "0b55a42c2b81d8e42175603df63c3cb10c93fcb2251aa1443856aa5440fd822d"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "bit": 0,
+   "match": true,
+   "model_calls": 366
+  },
+  {
+   "job": "single-03",
+   "operation": "E0",
+   "start_cycle": 1,
+   "expected": 0,
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/source.json",
+     "bytes": 7454,
+     "sha256": "4633ed3cd7631d30002e85b5072a0e01f40c5beae0fb3fef59c06c734dfa8d80"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "bit": 0,
+   "match": true,
+   "model_calls": 366
+  },
+  {
+   "job": "single-04",
+   "operation": "E1",
+   "start_cycle": 0,
+   "expected": 1,
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/source.json",
+     "bytes": 7454,
+     "sha256": "ed79554e261f61fa21c3292dd6868795fc5d66fef408e120583522c5f5274dc3"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "bit": 1,
+   "match": true,
+   "model_calls": 366
+  },
+  {
+   "job": "single-05",
+   "operation": "E1",
+   "start_cycle": 1,
+   "expected": 1,
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/source.json",
+     "bytes": 7454,
+     "sha256": "14553f248368b78302dff507e8664f4d5b9d91390863d72a79c7cc86c1244822"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "bit": 1,
+   "match": true,
+   "model_calls": 366
+  },
+  {
+   "job": "single-06",
+   "operation": "T",
+   "start_cycle": 0,
+   "expected": 1,
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/source.json",
+     "bytes": 7454,
+     "sha256": "6df387394052a48f5dbb762422b7f88edd5a8028e83c669759ef63d1ef2f7a58"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "bit": 1,
+   "match": true,
+   "model_calls": 258
+  },
+  {
+   "job": "single-07",
+   "operation": "T",
+   "start_cycle": 1,
+   "expected": 0,
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/source.json",
+     "bytes": 7454,
+     "sha256": "27ade0aee5db06932e60dbc85132560744ecdb1cc09d661eac1a48350b6e4817"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "bit": 0,
+   "match": true,
+   "model_calls": 258
+  }
+ ],
+ "against_two_lane_runs": {
+  "status": "compared",
+  "comparisons": 32,
+  "tolerance": 1e-10,
+  "largest_gap": 1.4479320520344174e-12,
+  "bitwise_identical": 0,
+  "coverage_notes": [],
+  "gaps": [
+   {
+    "operation": "W",
+    "start_cycle": 0,
+    "layout": "P",
+    "lane": 0,
+    "max_gap": 7.306655280814311e-15,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "W",
+    "start_cycle": 0,
+    "layout": "R",
+    "lane": 1,
+    "max_gap": 7.306655280814311e-15,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "W",
+    "start_cycle": 0,
+    "layout": "D0",
+    "lane": 0,
+    "max_gap": 7.306655280814311e-15,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "W",
+    "start_cycle": 0,
+    "layout": "D0",
+    "lane": 1,
+    "max_gap": 7.306655280814311e-15,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "W",
+    "start_cycle": 1,
+    "layout": "P",
+    "lane": 1,
+    "max_gap": 4.141478826547029e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "W",
+    "start_cycle": 1,
+    "layout": "R",
+    "lane": 0,
+    "max_gap": 4.141478826547029e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "W",
+    "start_cycle": 1,
+    "layout": "D1",
+    "lane": 0,
+    "max_gap": 4.141478826547029e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "W",
+    "start_cycle": 1,
+    "layout": "D1",
+    "lane": 1,
+    "max_gap": 4.141478826547029e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E0",
+    "start_cycle": 0,
+    "layout": "P",
+    "lane": 0,
+    "max_gap": 1.7676832220203664e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E0",
+    "start_cycle": 0,
+    "layout": "R",
+    "lane": 1,
+    "max_gap": 1.7676832220203664e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E0",
+    "start_cycle": 0,
+    "layout": "D0",
+    "lane": 0,
+    "max_gap": 1.7676832220203664e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E0",
+    "start_cycle": 0,
+    "layout": "D0",
+    "lane": 1,
+    "max_gap": 1.7676832220203664e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E0",
+    "start_cycle": 1,
+    "layout": "P",
+    "lane": 1,
+    "max_gap": 2.909304741560703e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E0",
+    "start_cycle": 1,
+    "layout": "R",
+    "lane": 0,
+    "max_gap": 2.909304741560703e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E0",
+    "start_cycle": 1,
+    "layout": "D1",
+    "lane": 0,
+    "max_gap": 2.909304741560703e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E0",
+    "start_cycle": 1,
+    "layout": "D1",
+    "lane": 1,
+    "max_gap": 2.909304741560703e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E1",
+    "start_cycle": 0,
+    "layout": "P",
+    "lane": 0,
+    "max_gap": 1.4479320520344174e-12,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E1",
+    "start_cycle": 0,
+    "layout": "R",
+    "lane": 1,
+    "max_gap": 1.4479320520344174e-12,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E1",
+    "start_cycle": 0,
+    "layout": "D0",
+    "lane": 0,
+    "max_gap": 1.4479320520344174e-12,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E1",
+    "start_cycle": 0,
+    "layout": "D0",
+    "lane": 1,
+    "max_gap": 1.4479320520344174e-12,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E1",
+    "start_cycle": 1,
+    "layout": "P",
+    "lane": 1,
+    "max_gap": 4.8960835385969403e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E1",
+    "start_cycle": 1,
+    "layout": "R",
+    "lane": 0,
+    "max_gap": 4.8960835385969403e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E1",
+    "start_cycle": 1,
+    "layout": "D1",
+    "lane": 0,
+    "max_gap": 4.8960835385969403e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "E1",
+    "start_cycle": 1,
+    "layout": "D1",
+    "lane": 1,
+    "max_gap": 4.8960835385969403e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "T",
+    "start_cycle": 0,
+    "layout": "P",
+    "lane": 0,
+    "max_gap": 1.722164078010735e-13,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "T",
+    "start_cycle": 0,
+    "layout": "R",
+    "lane": 1,
+    "max_gap": 1.722164078010735e-13,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "T",
+    "start_cycle": 0,
+    "layout": "D0",
+    "lane": 0,
+    "max_gap": 1.722164078010735e-13,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "T",
+    "start_cycle": 0,
+    "layout": "D0",
+    "lane": 1,
+    "max_gap": 1.722164078010735e-13,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "T",
+    "start_cycle": 1,
+    "layout": "P",
+    "lane": 1,
+    "max_gap": 9.32171007050897e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "T",
+    "start_cycle": 1,
+    "layout": "R",
+    "lane": 0,
+    "max_gap": 9.32171007050897e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "T",
+    "start_cycle": 1,
+    "layout": "D1",
+    "lane": 0,
+    "max_gap": 9.32171007050897e-14,
+    "bitwise_identical": false
+   },
+   {
+    "operation": "T",
+    "start_cycle": 1,
+    "layout": "D1",
+    "lane": 1,
+    "max_gap": 9.32171007050897e-14,
+    "bitwise_identical": false
+   }
+  ],
+  "lane_run_problems": []
+ },
+ "bound_inputs": [
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run/reference-cycles.npz",
+   "bytes": 82695,
+   "sha256": "d96f923d537a6bcd6b86be7fe91f29a4cba6a46e5e036c8dd408817281395fe0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run/model-inputs.json",
+   "bytes": 709,
+   "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/manifest.json",
+   "bytes": 7069,
+   "sha256": "2d79b692d60ce4e83a893bf12661ba5ac556787134f67b44023feba4b1375668"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/manifest.json",
+   "bytes": 7069,
+   "sha256": "1a1f976ee69e51a81ef06d79a2a2f30a71f3c2dbe1c744a09234c263714314be"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/manifest.json",
+   "bytes": 8492,
+   "sha256": "aca14d938ea626335d2a65284b9ebc58a554d9672c87f5b19d9d6142cc785dac"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/manifest.json",
+   "bytes": 8492,
+   "sha256": "59f580c984f9e21babcb2374adac8347c0be389eb0051a35c513dc53b32306f1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/manifest.json",
+   "bytes": 8492,
+   "sha256": "892a149ffcc62397dad397faa3bfd3ee9ce05e1c2ca2cfcf8d35e73ca762d06e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/manifest.json",
+   "bytes": 8492,
+   "sha256": "b10a81998dc58b1ac2864caef276577cf005894b6b255cbc10c02747a2556dad"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/manifest.json",
+   "bytes": 7069,
+   "sha256": "43afc1651054e01580961e42235d5a91c266befc067efa5bd7ed6d3a06825467"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/manifest.json",
+   "bytes": 7069,
+   "sha256": "2a4eb3ec3c5486d798a5323fd03c37ea87ec892211d818a2e4433abdb8473195"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/manifest.json",
+   "bytes": 7582,
+   "sha256": "7a4384afb4a3f8c80b6a0369c9ea35d221643d246ac88d533c16a99c3141d819"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/manifest.json",
+   "bytes": 7582,
+   "sha256": "c81345adfe0dc093211760e46dc3902a74ae33928964e978d7dc5a55e2fb4fea"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/manifest.json",
+   "bytes": 7561,
+   "sha256": "b97a07c2f44ad1f61a66522c06a7871d62d2f66d2e870aa890418cd2ea20615c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/manifest.json",
+   "bytes": 7561,
+   "sha256": "14eac2e343a5e52d59b59d83dc432794d903e360de30b1cc04de0e22731d4c78"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/manifest.json",
+   "bytes": 9013,
+   "sha256": "418f67c6d6bc2d16a5d7d0475339e44217a7d5258645c8d8a1c6a47bffa73673"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/manifest.json",
+   "bytes": 9013,
+   "sha256": "f6b43a316200c23f1f5b9059cd66ada5eacebb95024a1c7822b4678216164ad2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/manifest.json",
+   "bytes": 8983,
+   "sha256": "39567463bdae600996c2e401eb2c1bfe2d46a3e7b786856a73ce4ddd905966f0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/manifest.json",
+   "bytes": 8983,
+   "sha256": "64cfd4384da1666b0f6a557da781b2ef15dcaf78123a803bee3ab8981fbbbac2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/manifest.json",
+   "bytes": 9014,
+   "sha256": "5bfc942be55ee0aeb19d8acaab809edec68b7f7d2c2c7ac65db8e6c1d257b8fa"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/manifest.json",
+   "bytes": 9014,
+   "sha256": "b65734a619c2af32c6b065b0b6bcefd0f0bcf951c5ef900a05a2b2b1afbd82ee"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/manifest.json",
+   "bytes": 8984,
+   "sha256": "ec78ae1832e4cc109be4ad6755aae62d22d18ac7433aade33b13e970a5741d04"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/manifest.json",
+   "bytes": 8984,
+   "sha256": "2aa89da53f78d65032ca1d4e2bd8e72c967ae48916da9b61f47f3b0f25c159aa"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/manifest.json",
+   "bytes": 7582,
+   "sha256": "b5d2deef81ac4cef3ff298db041987c285192b8a9c73c7ab4c9ac1e4e972d606"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/manifest.json",
+   "bytes": 7582,
+   "sha256": "017772a776f6c82e76dcdb0f7e03eb6b5adb085a035ffda4d086a1fe2ad0dad4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/manifest.json",
+   "bytes": 7561,
+   "sha256": "8ca6a06beb9b70fce930704479830ce440a0892ba1e1dcd16d5c6327b8330d5d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/manifest.json",
+   "bytes": 7561,
+   "sha256": "31658888057ae3ddd6533387b40b80fc65f2d43fed83f27872d2d06b125122c1"
+  }
+ ]
+}

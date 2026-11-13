@@ -1,0 +1,5 @@
+# Enough for every audit, analysis, figure and test, which make no model call.
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+pytest==9.1.1

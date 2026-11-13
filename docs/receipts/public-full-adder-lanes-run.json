@@ -1,0 +1,267 @@
+{
+ "kind": "public-full-adder-lanes-run",
+ "utc": "2026-11-13T20:58:35Z",
+ "plans": [
+  "docs/public-full-adder-truth-table.md",
+  "docs/public-lane-layout-check.md"
+ ],
+ "frozen_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+ "freeze_commits": [
+  "e27594d63125e6f6e530b780dc3c5f361715c94e",
+  "39e855e1da5db1adffd743422c0293ef10e100c1"
+ ],
+ "frozen_copy": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/source",
+ "approval": "the human: \"Freeze and run\"",
+ "review": "docs/audits/2026-11-13-n1-final",
+ "runs": {
+  "run-adder-and-lanes": {
+   "root": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes",
+   "jobs": 20,
+   "all_exited_zero": true,
+   "model_calls": 8304,
+   "started": "2026-11-13T20:14:05Z",
+   "finished": "2026-11-13T20:48:25Z",
+   "launch_record": {
+    "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/launch-record.json",
+    "bytes": 943,
+    "sha256": "756fc10b8bc3ff0e303132210708f43082e58529589952925bcd91207487cc4c"
+   },
+   "launch_summary": {
+    "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/launch-summary.json",
+    "bytes": 3544,
+    "sha256": "145da1ec0612521127cba326cb6486e669a6e1e19cb387ca3ec33d724688e2b5"
+   },
+   "job_manifests": [
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x0-y0/manifest.json",
+     "bytes": 19391,
+     "sha256": "4811175a9803ed41fbe9fe9e3645217228c870b38ad4473cb57acb37a5215db9"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x0-y1/manifest.json",
+     "bytes": 17959,
+     "sha256": "65643f1d60dc280d695cb02fbdebace828f9589437a6f1dcd5247115ae8bc680"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x1-y0/manifest.json",
+     "bytes": 17959,
+     "sha256": "296a1e4653afd9dff1b8072f2197101f1ffb449ac372520427ecbc37ae891e42"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x1-y1/manifest.json",
+     "bytes": 19391,
+     "sha256": "8bac00f2355df238c6757ef6d54995b929836d2645c02cc980902b54b0e9eb5b"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-00/manifest.json",
+     "bytes": 7582,
+     "sha256": "7a4384afb4a3f8c80b6a0369c9ea35d221643d246ac88d533c16a99c3141d819"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-01/manifest.json",
+     "bytes": 7582,
+     "sha256": "c81345adfe0dc093211760e46dc3902a74ae33928964e978d7dc5a55e2fb4fea"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-02/manifest.json",
+     "bytes": 7561,
+     "sha256": "b97a07c2f44ad1f61a66522c06a7871d62d2f66d2e870aa890418cd2ea20615c"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-03/manifest.json",
+     "bytes": 7561,
+     "sha256": "14eac2e343a5e52d59b59d83dc432794d903e360de30b1cc04de0e22731d4c78"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-04/manifest.json",
+     "bytes": 9013,
+     "sha256": "418f67c6d6bc2d16a5d7d0475339e44217a7d5258645c8d8a1c6a47bffa73673"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-05/manifest.json",
+     "bytes": 9013,
+     "sha256": "f6b43a316200c23f1f5b9059cd66ada5eacebb95024a1c7822b4678216164ad2"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-06/manifest.json",
+     "bytes": 8983,
+     "sha256": "39567463bdae600996c2e401eb2c1bfe2d46a3e7b786856a73ce4ddd905966f0"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-07/manifest.json",
+     "bytes": 8983,
+     "sha256": "64cfd4384da1666b0f6a557da781b2ef15dcaf78123a803bee3ab8981fbbbac2"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-08/manifest.json",
+     "bytes": 9014,
+     "sha256": "5bfc942be55ee0aeb19d8acaab809edec68b7f7d2c2c7ac65db8e6c1d257b8fa"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-09/manifest.json",
+     "bytes": 9014,
+     "sha256": "b65734a619c2af32c6b065b0b6bcefd0f0bcf951c5ef900a05a2b2b1afbd82ee"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-10/manifest.json",
+     "bytes": 8984,
+     "sha256": "ec78ae1832e4cc109be4ad6755aae62d22d18ac7433aade33b13e970a5741d04"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-11/manifest.json",
+     "bytes": 8984,
+     "sha256": "2aa89da53f78d65032ca1d4e2bd8e72c967ae48916da9b61f47f3b0f25c159aa"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-12/manifest.json",
+     "bytes": 7582,
+     "sha256": "b5d2deef81ac4cef3ff298db041987c285192b8a9c73c7ab4c9ac1e4e972d606"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-13/manifest.json",
+     "bytes": 7582,
+     "sha256": "017772a776f6c82e76dcdb0f7e03eb6b5adb085a035ffda4d086a1fe2ad0dad4"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-14/manifest.json",
+     "bytes": 7561,
+     "sha256": "8ca6a06beb9b70fce930704479830ce440a0892ba1e1dcd16d5c6327b8330d5d"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/lanes-15/manifest.json",
+     "bytes": 7561,
+     "sha256": "31658888057ae3ddd6533387b40b80fc65f2d43fed83f27872d2d06b125122c1"
+    }
+   ]
+  },
+  "run-single-lane": {
+   "root": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane",
+   "jobs": 8,
+   "all_exited_zero": true,
+   "model_calls": 2496,
+   "started": "2026-11-13T20:48:53Z",
+   "finished": "2026-11-13T20:57:44Z",
+   "launch_record": {
+    "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/launch-record.json",
+    "bytes": 938,
+    "sha256": "d698dce75ecdfb82e456515f03a6aecd5331f32346b7574be7a516062ad78fba"
+   },
+   "launch_summary": {
+    "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/launch-summary.json",
+    "bytes": 1508,
+    "sha256": "0bf1912f6b9f7a750a4eae400f95d0af3f20d1ac808b931243e1c75408392485"
+   },
+   "job_manifests": [
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-00/manifest.json",
+     "bytes": 7069,
+     "sha256": "2d79b692d60ce4e83a893bf12661ba5ac556787134f67b44023feba4b1375668"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-01/manifest.json",
+     "bytes": 7069,
+     "sha256": "1a1f976ee69e51a81ef06d79a2a2f30a71f3c2dbe1c744a09234c263714314be"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-02/manifest.json",
+     "bytes": 8492,
+     "sha256": "aca14d938ea626335d2a65284b9ebc58a554d9672c87f5b19d9d6142cc785dac"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-03/manifest.json",
+     "bytes": 8492,
+     "sha256": "59f580c984f9e21babcb2374adac8347c0be389eb0051a35c513dc53b32306f1"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-04/manifest.json",
+     "bytes": 8492,
+     "sha256": "892a149ffcc62397dad397faa3bfd3ee9ce05e1c2ca2cfcf8d35e73ca762d06e"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-05/manifest.json",
+     "bytes": 8492,
+     "sha256": "b10a81998dc58b1ac2864caef276577cf005894b6b255cbc10c02747a2556dad"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-06/manifest.json",
+     "bytes": 7069,
+     "sha256": "43afc1651054e01580961e42235d5a91c266befc067efa5bd7ed6d3a06825467"
+    },
+    {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-single-lane/single-07/manifest.json",
+     "bytes": 7069,
+     "sha256": "2a4eb3ec3c5486d798a5323fd03c37ea87ec892211d818a2e4433abdb8473195"
+    }
+   ]
+  }
+ },
+ "audits": {
+  "public-full-adder": {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/audits/public-full-adder.json",
+   "bytes": 34710,
+   "sha256": "d459a1eb6bd0676847b580c8921473a8450c7b6f305db470595d613bac8494db"
+  },
+  "public-lane-layout": {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/audits/public-lane-layout.json",
+   "bytes": 68364,
+   "sha256": "59b025496f4682e793213b7dd1b00f8ff779e3f02d4e55c1cf5533d8c8d09c08"
+  },
+  "public-lane-singleton": {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/audits/public-lane-singleton.json",
+   "bytes": 21109,
+   "sha256": "8a896c6e008a35dc784e9de389404021429644695e6a1fec6bf2674111c5bcc7"
+  }
+ },
+ "outcomes": {
+  "A1_truth_table": true,
+  "readouts_matching": 24,
+  "group_1_0_gap_to_11_plus_6": 0.0,
+  "L1": true,
+  "L2": true,
+  "L2_largest_gap": 0.0,
+  "L2_bitwise_identical": 24,
+  "against_earlier": [
+   [
+    "toggle check phase 0 (pod), 12 + 240 updates",
+    "compared",
+    2.5156959848615656e-13
+   ],
+   [
+    "Part B full-offset run (this machine), first 6 pulse updates",
+    "compared",
+    0.0
+   ],
+   [
+    "sweep baseline-write0 (pod), 120 + 240 updates",
+    "compared",
+    1.0065386024660228e-13
+   ],
+   [
+    "sweep baseline-write1 (pod), 120 + 240 updates",
+    "compared",
+    3.0495259095708604e-12
+   ],
+   [
+    "sweep baseline-hold (pod), first 252 updates at H",
+    "compared",
+    4.944655795924291e-14
+   ]
+  ],
+  "S1": true,
+  "S2": true,
+  "S2_largest_gap": 1.4479320520344174e-12,
+  "S2_bitwise_identical": 0,
+  "instrument_checks": [
+   true,
+   true,
+   true
+  ]
+ },
+ "model_calls": 10800,
+ "evidence_class": "measured; audited with the frozen code; independently verified by Codex",
+ "independent_evidence_check": {
+  "report": "docs/audits/2026-11-13-full-adder-lanes",
+  "commit": "a7cacba4833b454cafa89a6e3e81aecdabd5ce36",
+  "outcome": "A1 24/24, L1 32/32, L2 24/24 with equal path bytes, S1 8/8, S2 32/32; singleton maximum 1.4479320520344174e-12 (state as at most 1.45e-12 or 1.5e-12)"
+ }
+}

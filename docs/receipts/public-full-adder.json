@@ -1,0 +1,1335 @@
+{
+ "kind": "public-full-adder-audit",
+ "plan": "docs/public-full-adder-truth-table.md",
+ "model_calls": 0,
+ "frozen_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+ "instrument_checks_passed": true,
+ "readouts_matching_truth_table": 24,
+ "A1_truth_table_passed": true,
+ "operational_or_instrument_problems": [],
+ "truth_table": [
+  {
+   "c": 0,
+   "x": 0,
+   "y": 0,
+   "sum": 0,
+   "carry": 0,
+   "expected_sum": 0,
+   "expected_carry": 0
+  },
+  {
+   "c": 1,
+   "x": 0,
+   "y": 0,
+   "sum": 1,
+   "carry": 0,
+   "expected_sum": 1,
+   "expected_carry": 0
+  },
+  {
+   "c": 0,
+   "x": 0,
+   "y": 1,
+   "sum": 1,
+   "carry": 0,
+   "expected_sum": 1,
+   "expected_carry": 0
+  },
+  {
+   "c": 1,
+   "x": 0,
+   "y": 1,
+   "sum": 0,
+   "carry": 1,
+   "expected_sum": 0,
+   "expected_carry": 1
+  },
+  {
+   "c": 0,
+   "x": 1,
+   "y": 0,
+   "sum": 1,
+   "carry": 0,
+   "expected_sum": 1,
+   "expected_carry": 0
+  },
+  {
+   "c": 1,
+   "x": 1,
+   "y": 0,
+   "sum": 0,
+   "carry": 1,
+   "expected_sum": 0,
+   "expected_carry": 1
+  },
+  {
+   "c": 0,
+   "x": 1,
+   "y": 1,
+   "sum": 0,
+   "carry": 1,
+   "expected_sum": 0,
+   "expected_carry": 1
+  },
+  {
+   "c": 1,
+   "x": 1,
+   "y": 1,
+   "sum": 1,
+   "carry": 1,
+   "expected_sum": 1,
+   "expected_carry": 1
+  }
+ ],
+ "jobs": [
+  {
+   "job": "adder-x0-y0",
+   "x": 0,
+   "y": 0,
+   "moves": [
+    "W",
+    "W",
+    "E0"
+   ],
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x0-y0/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x0-y0/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x0-y0/source.json",
+     "bytes": 7443,
+     "sha256": "c8f1347de70f2ef902031fb7acd7f5be2edf0c57f071046c9734816285cf6d31"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "readouts": [
+    {
+     "move_index": 0,
+     "move": "W",
+     "bits": [
+      0,
+      1
+     ],
+     "expected": [
+      0,
+      1
+     ],
+     "match": true
+    },
+    {
+     "move_index": 1,
+     "move": "W",
+     "bits": [
+      0,
+      1
+     ],
+     "expected": [
+      0,
+      1
+     ],
+     "match": true
+    },
+    {
+     "move_index": 2,
+     "move": "E0",
+     "bits": [
+      0,
+      0
+     ],
+     "expected": [
+      0,
+      0
+     ],
+     "match": true
+    }
+   ],
+   "settle": [
+    {
+     "move_index": 0,
+     "lanes": [
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 0
+      },
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 0
+      }
+     ]
+    },
+    {
+     "move_index": 1,
+     "lanes": [
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 0
+      },
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 0
+      }
+     ]
+    },
+    {
+     "move_index": 2,
+     "lanes": [
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 68
+      },
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 68
+      }
+     ]
+    }
+   ],
+   "stage_ends": [
+    {
+     "stage": "m00-W",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 1.358687632772458e-14
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 3.0609738499810887e-13
+      }
+     ]
+    },
+    {
+     "stage": "m00-hold",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 1.9033242809434346e-14
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 5.900011966944343e-13
+      }
+     ]
+    },
+    {
+     "stage": "m01-W",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 1.5916045747405692e-14
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 6.115228402792843e-13
+      }
+     ]
+    },
+    {
+     "stage": "m01-hold",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 1.8336507509258676e-14
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 6.338765899024156e-13
+      }
+     ]
+    },
+    {
+     "stage": "m02-E0",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 0.00027106043061518316
+      },
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 0.0002710549099469327
+      }
+     ]
+    },
+    {
+     "stage": "m02-hold",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 1.3610075847726712e-14
+      },
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 1.2785152593694693e-14
+      }
+     ]
+    }
+   ],
+   "model_calls": 882,
+   "elapsed_seconds": 1618.3302480159327
+  },
+  {
+   "job": "adder-x0-y1",
+   "x": 0,
+   "y": 1,
+   "moves": [
+    "W",
+    "T",
+    "T"
+   ],
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x0-y1/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x0-y1/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x0-y1/source.json",
+     "bytes": 7443,
+     "sha256": "e812bbfabf24f5ace61e2ac92716a40c35aaafec768516b0c4ea59944d146d05"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "readouts": [
+    {
+     "move_index": 0,
+     "move": "W",
+     "bits": [
+      0,
+      1
+     ],
+     "expected": [
+      0,
+      1
+     ],
+     "match": true
+    },
+    {
+     "move_index": 1,
+     "move": "T",
+     "bits": [
+      1,
+      0
+     ],
+     "expected": [
+      1,
+      0
+     ],
+     "match": true
+    },
+    {
+     "move_index": 2,
+     "move": "T",
+     "bits": [
+      0,
+      1
+     ],
+     "expected": [
+      0,
+      1
+     ],
+     "match": true
+    }
+   ],
+   "settle": [
+    {
+     "move_index": 0,
+     "lanes": [
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 0
+      },
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 0
+      }
+     ]
+    },
+    {
+     "move_index": 1,
+     "lanes": [
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 114
+      },
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 87
+      }
+     ]
+    },
+    {
+     "move_index": 2,
+     "lanes": [
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 87
+      },
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 114
+      }
+     ]
+    }
+   ],
+   "stage_ends": [
+    {
+     "stage": "m00-W",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 1.358687632772458e-14
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 3.0609738499810887e-13
+      }
+     ]
+    },
+    {
+     "stage": "m00-hold",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 1.9033242809434346e-14
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 5.900011966944343e-13
+      }
+     ]
+    },
+    {
+     "stage": "m01-T",
+     "lanes": [
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 0.0019349115454925178
+      },
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 0.002455520871399262
+      }
+     ]
+    },
+    {
+     "stage": "m01-hold",
+     "lanes": [
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 2.568676270211036e-11
+      },
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 2.5858730219295936e-14
+      }
+     ]
+    },
+    {
+     "stage": "m02-T",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 0.0024555208720430017
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 0.001934911545548163
+      }
+     ]
+    },
+    {
+     "stage": "m02-hold",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 2.4774854273208468e-14
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 2.5685045008464823e-11
+      }
+     ]
+    }
+   ],
+   "model_calls": 774,
+   "elapsed_seconds": 1469.199261080008
+  },
+  {
+   "job": "adder-x1-y0",
+   "x": 1,
+   "y": 0,
+   "moves": [
+    "T",
+    "W",
+    "T"
+   ],
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x1-y0/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x1-y0/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x1-y0/source.json",
+     "bytes": 7443,
+     "sha256": "a80d8dcfca292b9de72ddc814515aee5c35fed56d9436297c4bb4957ec258d56"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "readouts": [
+    {
+     "move_index": 0,
+     "move": "T",
+     "bits": [
+      1,
+      0
+     ],
+     "expected": [
+      1,
+      0
+     ],
+     "match": true
+    },
+    {
+     "move_index": 1,
+     "move": "W",
+     "bits": [
+      1,
+      0
+     ],
+     "expected": [
+      1,
+      0
+     ],
+     "match": true
+    },
+    {
+     "move_index": 2,
+     "move": "T",
+     "bits": [
+      0,
+      1
+     ],
+     "expected": [
+      0,
+      1
+     ],
+     "match": true
+    }
+   ],
+   "settle": [
+    {
+     "move_index": 0,
+     "lanes": [
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 114
+      },
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 87
+      }
+     ]
+    },
+    {
+     "move_index": 1,
+     "lanes": [
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 0
+      },
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 0
+      }
+     ]
+    },
+    {
+     "move_index": 2,
+     "lanes": [
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 87
+      },
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 114
+      }
+     ]
+    }
+   ],
+   "stage_ends": [
+    {
+     "stage": "m00-T",
+     "lanes": [
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 0.001934911545493282
+      },
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 0.0024555208713750954
+      }
+     ]
+    },
+    {
+     "stage": "m00-hold",
+     "lanes": [
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 2.566324326366736e-11
+      },
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 2.4576284964802214e-14
+      }
+     ]
+    },
+    {
+     "stage": "m01-W",
+     "lanes": [
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 1.0322511304682424e-11
+      },
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 1.459784645612702e-14
+      }
+     ]
+    },
+    {
+     "stage": "m01-hold",
+     "lanes": [
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 6.403307923153252e-13
+      },
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 1.4615677558309626e-14
+      }
+     ]
+    },
+    {
+     "stage": "m02-T",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 0.0024555208714008726
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 0.0019349115455008562
+      }
+     ]
+    },
+    {
+     "stage": "m02-hold",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 2.3488520456617113e-14
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 2.5686857147455667e-11
+      }
+     ]
+    }
+   ],
+   "model_calls": 774,
+   "elapsed_seconds": 1449.716120381956
+  },
+  {
+   "job": "adder-x1-y1",
+   "x": 1,
+   "y": 1,
+   "moves": [
+    "T",
+    "T",
+    "E1"
+   ],
+   "environment": {
+    "backend_readiness": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x1-y1/backend-readiness.json",
+     "bytes": 2375,
+     "sha256": "a6a8acbd26181c55210acdf783668b3e098aec92394d4640bc405c5d3c0d2502"
+    },
+    "model_inputs": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x1-y1/model-inputs.json",
+     "bytes": 709,
+     "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+    },
+    "source": {
+     "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x1-y1/source.json",
+     "bytes": 7443,
+     "sha256": "57d5a69585e6ca201b6cae35eba678eaa0e12b7081d136aec993dc18f9ed6d3f"
+    },
+    "source_commit": "39e855e1da5db1adffd743422c0293ef10e100c1",
+    "working_tree_clean": true
+   },
+   "status": "checked",
+   "problems": [],
+   "readouts": [
+    {
+     "move_index": 0,
+     "move": "T",
+     "bits": [
+      1,
+      0
+     ],
+     "expected": [
+      1,
+      0
+     ],
+     "match": true
+    },
+    {
+     "move_index": 1,
+     "move": "T",
+     "bits": [
+      0,
+      1
+     ],
+     "expected": [
+      0,
+      1
+     ],
+     "match": true
+    },
+    {
+     "move_index": 2,
+     "move": "E1",
+     "bits": [
+      1,
+      1
+     ],
+     "expected": [
+      1,
+      1
+     ],
+     "match": true
+    }
+   ],
+   "settle": [
+    {
+     "move_index": 0,
+     "lanes": [
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 114
+      },
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 87
+      }
+     ]
+    },
+    {
+     "move_index": 1,
+     "lanes": [
+      {
+       "final_cycle": 0,
+       "censored": false,
+       "settled_from_update": 87
+      },
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 114
+      }
+     ]
+    },
+    {
+     "move_index": 2,
+     "lanes": [
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 84
+      },
+      {
+       "final_cycle": 1,
+       "censored": false,
+       "settled_from_update": 84
+      }
+     ]
+    }
+   ],
+   "stage_ends": [
+    {
+     "stage": "m00-T",
+     "lanes": [
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 0.001934911545493282
+      },
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 0.0024555208713750954
+      }
+     ]
+    },
+    {
+     "stage": "m00-hold",
+     "lanes": [
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 2.566324326366736e-11
+      },
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 2.4576284964802214e-14
+      }
+     ]
+    },
+    {
+     "stage": "m01-T",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 0.002455520872046622
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 0.0019349115455313643
+      }
+     ]
+    },
+    {
+     "stage": "m01-hold",
+     "lanes": [
+      {
+       "cycle": 0,
+       "phase": 0,
+       "distance": 2.500865506429106e-14
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 2.5684967552775338e-11
+      }
+     ]
+    },
+    {
+     "stage": "m02-E1",
+     "lanes": [
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 0.00046427197734861555
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 0.0005962115053813376
+      }
+     ]
+    },
+    {
+     "stage": "m02-hold",
+     "lanes": [
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 2.7456559591141045e-12
+      },
+      {
+       "cycle": 1,
+       "phase": 0,
+       "distance": 3.5917351451155347e-12
+      }
+     ]
+    }
+   ],
+   "model_calls": 882,
+   "elapsed_seconds": 1614.7291018860415
+  }
+ ],
+ "group_1_0_largest_gap_to_11_plus_6": 0.0,
+ "group_1_0_against_11_plus_6": {
+  "run": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run",
+  "status": "compared",
+  "problems": [],
+  "earlier": "11 + 6, first three moves (T, W, T)",
+  "planned_states": 757,
+  "compared_updates": 756,
+  "max_gap": 0.0
+ },
+ "bound_inputs": [
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run/reference-cycles.npz",
+   "bytes": 82695,
+   "sha256": "d96f923d537a6bcd6b86be7fe91f29a4cba6a46e5e036c8dd408817281395fe0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run/model-inputs.json",
+   "bytes": 709,
+   "sha256": "54714fbf9a615081062ac01941cc462e5bbf01b6733cfccb4090857c10540311"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x0-y0/manifest.json",
+   "bytes": 19391,
+   "sha256": "4811175a9803ed41fbe9fe9e3645217228c870b38ad4473cb57acb37a5215db9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x0-y1/manifest.json",
+   "bytes": 17959,
+   "sha256": "65643f1d60dc280d695cb02fbdebace828f9589437a6f1dcd5247115ae8bc680"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x1-y0/manifest.json",
+   "bytes": 17959,
+   "sha256": "296a1e4653afd9dff1b8072f2197101f1ffb449ac372520427ecbc37ae891e42"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-full-adder-lanes/20261113T201006Z-39e855e/run-adder-and-lanes/adder-x1-y1/manifest.json",
+   "bytes": 19391,
+   "sha256": "8bac00f2355df238c6757ef6d54995b929836d2645c02cc980902b54b0e9eb5b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/manifest.json",
+   "bytes": 68232,
+   "sha256": "00256d5ce855c36dacdf6fd6fdbf2043ab889a55aa041a7111f158776e7b0a3c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/result.json",
+   "bytes": 6070237,
+   "sha256": "1006e71ac10a3bdde9e8d06bbb612614f1b1b05dbaae087023b0e1f782c195be"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-00-initial.npy",
+   "bytes": 14464,
+   "sha256": "a9d7fd345ca4cc064903b3470b2cadbdc76c9fa25d9ba098660b86b527401cd4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-00-block-012.npz",
+   "bytes": 166411,
+   "sha256": "e7462f34af88321f49d627449f455182c1ee16e54a16a4608551d7dd7b3fc4c9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-initial.npy",
+   "bytes": 14464,
+   "sha256": "57b432ac3d81b86ee8e3f4810e12395b38c819ad6ad44d3f2655b1a421e6e52f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-012.npz",
+   "bytes": 166408,
+   "sha256": "f671467f2fc797a2083305d85696e0ec619ff2ce7141f1848aea71d508ff20bf"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-024.npz",
+   "bytes": 166427,
+   "sha256": "166166175968447cc80162a367368d6c9705d0facbefb3d12a229b056d367d43"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-036.npz",
+   "bytes": 166395,
+   "sha256": "5652aa47e1e27eb389b36b70bc9915d0273e672983b278ace4f0c816cd4d4683"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-048.npz",
+   "bytes": 166393,
+   "sha256": "0d60718ba32f489d3670d3cc2ec7292d9f610127e773b396187c1c8c71a37b75"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-060.npz",
+   "bytes": 166414,
+   "sha256": "30f75bac57e4101f53be4acd5a8b33c86e7319f8fc0e9ad0d0f7a2b59feccd2b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-072.npz",
+   "bytes": 166425,
+   "sha256": "8e874ba86696babe7d4cd3d50b73f12ea49c6f92357b5ce7b21c6df3050e51d1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-084.npz",
+   "bytes": 166447,
+   "sha256": "5798cd18c03ad5128845b76a486ffbdfd34477ea317a1daeabcb7a53e002a653"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-096.npz",
+   "bytes": 166483,
+   "sha256": "1564bd4bfaab0f12ad0e9166f01a8a9b04662f9574e4ecb29ee777f4546e790c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-108.npz",
+   "bytes": 166430,
+   "sha256": "0181545c34c02f179cc2091b83113434b8953b2861cab9fb67c6b09e87aa066c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-120.npz",
+   "bytes": 166436,
+   "sha256": "08465dae1a1b3cddfc1912fc3e0d964cad76b6a6fd26a490701b56daa2941fe3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-132.npz",
+   "bytes": 166388,
+   "sha256": "59d9eb155f605b9f0a3705eb5ab81d7bc12e2fc41657d786daaaa76d554a9d1c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-144.npz",
+   "bytes": 166398,
+   "sha256": "31d39018af6981cb401fbc37981cb2f13375df9275bc486ba16ea5e7a69fe5af"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-156.npz",
+   "bytes": 166447,
+   "sha256": "27ff81759b1cffa2e227d380d364b18f06308028eb56a43f8d554fb443552371"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-168.npz",
+   "bytes": 166424,
+   "sha256": "e480645e99451e01345f80567d74f84f81953dbe822af04dfb416bc70e3c7596"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-180.npz",
+   "bytes": 166401,
+   "sha256": "959623f531b2a95d29760d58423ef03f8f77fc94579249f7c9d32dfa02d70431"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-192.npz",
+   "bytes": 166455,
+   "sha256": "03705f4c989c82f412bc002382a28fb6b10af861f7e6f41e78c0b18a1f5769af"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-204.npz",
+   "bytes": 166429,
+   "sha256": "6e7d46091bc12b0d27ea1fead554c6c61527200e00a8be0b0f736ef3f77aa6e1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-216.npz",
+   "bytes": 166396,
+   "sha256": "b9d4f10064293fb7b7c91c690f03c73a0e53010e84faaa76e36de653d2121d6d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-228.npz",
+   "bytes": 166414,
+   "sha256": "d67d314d14603c6b2ac91fb2b4155ab6bac5e89a8d7d6ac01ed0f4dffbfdcb01"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-01-block-240.npz",
+   "bytes": 166419,
+   "sha256": "b9c37f8bc07b82721bc13b64b45559916c49ee126890ceb633908c9213f55efa"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-02-initial.npy",
+   "bytes": 14464,
+   "sha256": "5fbfa6a3ee816c9765a419342b8813a93fc69ec9447ff99dbb5db4c23c084d0a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-02-block-012.npz",
+   "bytes": 166447,
+   "sha256": "26ad54e71d6f02037f96860a3145042e16e57c0090b0745150fae1fe5f7c99ec"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-initial.npy",
+   "bytes": 14464,
+   "sha256": "df38491d6e1dd45e8aa9de3ce0a9cdcbdf03d5ba0adbe54e8f043f77f1fdc776"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-012.npz",
+   "bytes": 166418,
+   "sha256": "a7e19ef3614b38c160e04ebee12b1be230fea2e8d2dcd19b9e329407655b5f47"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-024.npz",
+   "bytes": 166413,
+   "sha256": "7097b47b724def6eb5e0fdf45177bd69e5f0879209f449db7d6e4c8560c5e531"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-036.npz",
+   "bytes": 166412,
+   "sha256": "8818eb2e0e3dcf0c00c9b22389d84a26114438e2d00ec97dd31edbfd3283d4a9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-048.npz",
+   "bytes": 166417,
+   "sha256": "bb949cad00ef3fc338747fc16c929e30480a0fe069ef4f05b334a1bb758a1976"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-060.npz",
+   "bytes": 166422,
+   "sha256": "a3bf908319216763e23e72f6c82c2f1650122d91c25b0726af573c78978c9577"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-072.npz",
+   "bytes": 166424,
+   "sha256": "7cf946d11b47f25ecb8d891ceb63c5aa48baacceffe14469b35995c09414f843"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-084.npz",
+   "bytes": 166421,
+   "sha256": "fa50785a57ecee5122b387026361adf145a93f5a35146addac04aa9acbb3564b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-096.npz",
+   "bytes": 166406,
+   "sha256": "f7d4a38d8eeb39bc38ef1d7d682c5fee2445d39dcbd8a447fdee4aa1004beb32"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-108.npz",
+   "bytes": 166421,
+   "sha256": "40cb26609c5e289bedb20c6507f45a3d2f3cab299ffd8940c2be939f2627102a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-120.npz",
+   "bytes": 166441,
+   "sha256": "0c64eb14c7d9c1f1ed91cd51a72e86bdddb7734c77a419627fb27997d7218377"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-132.npz",
+   "bytes": 166429,
+   "sha256": "9a8a6ea51c0b2f1a1ac9fc5d342eb4127410729ffb616a74cae55cc159cb44f1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-144.npz",
+   "bytes": 166414,
+   "sha256": "d714b5c463094055cfeeea9b531c2c7aa413985f105515c5283314b0bc65943e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-156.npz",
+   "bytes": 166427,
+   "sha256": "338ea3588f94bac3e073c9a821805e29bc94a77490db052250d90fbec2fa9444"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-168.npz",
+   "bytes": 166405,
+   "sha256": "d6d5119b18d6b981b24ef8f457960a90d1be1305e28bdd0b20148e4ca2f18781"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-180.npz",
+   "bytes": 166436,
+   "sha256": "94e39970498e7cea97accabd789931a462710de15e46aba6396f4068cca8bf0a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-192.npz",
+   "bytes": 166433,
+   "sha256": "1dacbb1bc7655617383ba33dc7a423590dc262dff474058f33b3a38b366eeb4e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-204.npz",
+   "bytes": 166425,
+   "sha256": "e29f089cab91cca35ba9809aa9ac6ae91e59a62b0ee57281a237b288930faaf4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-216.npz",
+   "bytes": 166429,
+   "sha256": "87983a5c552c04a50a5db25e2eaf8a3ceaab941e9c59232297b4bec2269d4a9d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-228.npz",
+   "bytes": 166430,
+   "sha256": "5458c4b07e5bea47c18f734f56f460770b431b8ccda1abaca22f0af011bbad6c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-03-block-240.npz",
+   "bytes": 166409,
+   "sha256": "3ed4dfe4196ae4d5fb94f31d22b5667c31b6b731d48170814024731a163dbc94"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-04-initial.npy",
+   "bytes": 14464,
+   "sha256": "4b6347eaec6f74014b3295c08fa2be374f3d370100edd06bef4943bda38d576e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-04-block-012.npz",
+   "bytes": 166419,
+   "sha256": "115b5b0bb0cbac66e6bd1fe993d5e73e1c693a967ae76137128fd893b378a5e7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-initial.npy",
+   "bytes": 14464,
+   "sha256": "c003605b77b01d4d1733e7bda5ea2778ada58f103e6f960b3246460a25afe99d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-012.npz",
+   "bytes": 166408,
+   "sha256": "f7e3fdd863c168570998ee886ed53c7015bbb6747663a2f47f1156db689debb7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-024.npz",
+   "bytes": 166386,
+   "sha256": "ab753dfa933eea8639a0ca3ac1e5d58a42b9ab5d1c25bd2febfe6be1bfd3ab40"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-036.npz",
+   "bytes": 166429,
+   "sha256": "363e3b5828a4371d009f234e1114b005ae1358f1c05b5e69eeb5b643f1602d8d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-048.npz",
+   "bytes": 166415,
+   "sha256": "79e35e6fda831948a6ca1345d736c99730c50ed939e7840128c257380fb3d73e"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-060.npz",
+   "bytes": 166406,
+   "sha256": "7cb6e0348d11312524d13d3cad87f7d5dfdad9664ce8facaae0e40482d9572e8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-072.npz",
+   "bytes": 166439,
+   "sha256": "19d8097bc3bca4f3da0f898fc64adf848c8de880276f64c6b55d6025a83eeeb2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-084.npz",
+   "bytes": 166447,
+   "sha256": "a12a12dd6fc746dfe809cc6a440d8f8ee55a2ecf9f2b41ea8a6bc09131aa9b5f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-096.npz",
+   "bytes": 166443,
+   "sha256": "c4f6fd1362fd36a857478dd8c5524cdeba232ba4ddc8f9410c9a2a18f68c2035"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-108.npz",
+   "bytes": 166412,
+   "sha256": "4a2c301e4e6ca5e9d50018ffe48123eafea753a2b7f7ef23ecef612eccbdad16"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-120.npz",
+   "bytes": 166445,
+   "sha256": "4253c08866d197e00f701f4ab0b295f47e3f15f8a617f5beaaa5b2b4a22a4ca4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-132.npz",
+   "bytes": 166398,
+   "sha256": "cbd5a661398bdc90b332b60d9313abbd2756e7e8f8e74a55ad39de968db977db"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-144.npz",
+   "bytes": 166389,
+   "sha256": "e6e7867f9f5eb611340a04be0ffb5213349d71a137bc347d1987f77f33d787f9"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-156.npz",
+   "bytes": 166425,
+   "sha256": "33dfa47126b6377ca86fbac9431f50b63d998f566c21d51d2f1d61050c0edeb0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-168.npz",
+   "bytes": 166455,
+   "sha256": "be88f8936ef4754602905c481e3d3ad9471411731f8c5e89237106f602906207"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-180.npz",
+   "bytes": 166445,
+   "sha256": "5e11c349aa5043cbae411661bce2b11fcb8b6a44a3d3a3d8072faf71a899e086"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-192.npz",
+   "bytes": 166437,
+   "sha256": "275290a0be9cdac39b7783bed12c788abf840627907295423c3aaaae08421ab2"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-204.npz",
+   "bytes": 166440,
+   "sha256": "61f3ea877b9555190a4e93aa33f2ce59a1300c2ef7fa02c43244493c71acb2b8"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-216.npz",
+   "bytes": 166416,
+   "sha256": "03857b1294e94f88aed4cab7552ba058838ba5b8f122f3251c225df47f3618d6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-228.npz",
+   "bytes": 166407,
+   "sha256": "10d9ba3a35945dcdc2a024a74e13d461d86edd45b71f4a6b8327727768cae822"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run/stage-05-block-240.npz",
+   "bytes": 166441,
+   "sha256": "2a544fb06d7dbd7515c4acdbf515e37b7753999dfe5cf9fecf8b0e90428dd5b1"
+  }
+ ]
+}

@@ -1,0 +1,3792 @@
+{
+ "schema": "public-write-passage-receipt-v1",
+ "utc": "2026-11-11T01:44:54Z",
+ "model_calls": 0,
+ "status": "zero_call_analysis_of_saved_records",
+ "evidence_class": "adapted exploratory, post hoc",
+ "source_commit": "b2118b14c7121580af476582f5139dc8db35e703",
+ "source_note": "Plan, prediction file and this script were untracked working-tree files at that commit.",
+ "script": {
+  "path": "/data2/shrimp-memory/tools/analyze_public_write_passage.py",
+  "bytes": 39817,
+  "sha256": "51bed0cabaed6086058c11cc64f02a8db8bdecdfefcb9583eb19a01d311bf61e"
+ },
+ "plan": {
+  "path": "/data2/shrimp-memory/docs/public-write-passage.md",
+  "bytes": 12424,
+  "sha256": "1e0a69609fa22b157e4d40e2c62d195db7845a3b4380bef006c7164744fbcd2c"
+ },
+ "prediction": {
+  "path": "docs/receipts/public-write-passage-prediction.json",
+  "bytes": 16469,
+  "sha256": "2c4104f9f1ab584902b9e2c83524f6e07c7781f4840ceceb54ddb11b5336156c"
+ },
+ "reference_cycles": {
+  "path": "/archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run/reference-cycles.npz",
+  "bytes": 82695,
+  "sha256": "d96f923d537a6bcd6b86be7fe91f29a4cba6a46e5e036c8dd408817281395fe0"
+ },
+ "definitions": {
+  "coordinate": "projection of the state on the segment between the two reference cycles at the hold, phase by phase: 0 on cycle 0, 1 on cycle 1",
+  "passage_update": "first update from which the coordinate stays beyond the level three quarters of the way to the requested cycle for six consecutive updates; also reported at one quarter and one half",
+  "update_reaching_hold_unstable_orbit": "update, sampled at the branch's saved phase and interpolated linearly between two samples, at which the coordinate first passes the projection of the hold's unstable orbit",
+  "displacement": "norm of x(n+6) - x(n) during the endpoint stage",
+  "bottleneck": "smallest displacement at each phase before the passage, refined by a three-point parabola when the minimum is interior"
+ },
+ "rows": [
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "nominal",
+   "fraction": null,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1535,
+   "lane_start_cycle": 0,
+   "passage_lane": false,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.238216582844358e-14,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "nominal",
+   "fraction": null,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1535,
+   "lane_start_cycle": 1,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.638603171895689e-14,
+   "requested_bit_stored": true,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": 14,
+    "0.5": 38,
+    "0.75": 50
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 0.022010321807814304,
+   "update_reaching_hold_unstable_orbit": 43.01474052865712,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 8,
+     "update_at_minimum": 24,
+     "minimum": 0.0003222225485359969,
+     "interior": true,
+     "first": 0.0012455203866570102,
+     "last": 0.0004112649823697174,
+     "minimum_interpolated": 0.00032166765773323385,
+     "relative_curvature_per_period_squared": 0.0308526938067117
+    },
+    {
+     "phase": 1,
+     "samples": 8,
+     "update_at_minimum": 13,
+     "minimum": 0.0002703358727651714,
+     "interior": true,
+     "first": 0.0015801176106047489,
+     "last": 0.001256312889323843,
+     "minimum_interpolated": 0.00021350250654426445,
+     "relative_curvature_per_period_squared": 1.4359959605285546
+    },
+    {
+     "phase": 2,
+     "samples": 8,
+     "update_at_minimum": 14,
+     "minimum": 0.00035664384166545605,
+     "interior": true,
+     "first": 0.0025161552601416083,
+     "last": 0.0010845408149313146,
+     "minimum_interpolated": 0.00035586268810380286,
+     "relative_curvature_per_period_squared": 0.09521943436565239
+    },
+    {
+     "phase": 3,
+     "samples": 7,
+     "update_at_minimum": 15,
+     "minimum": 0.0002666026939908322,
+     "interior": true,
+     "first": 0.0019367562111303818,
+     "last": 0.0005556249845167982,
+     "minimum_interpolated": 0.000266230595702964,
+     "relative_curvature_per_period_squared": 0.08315601956599723
+    },
+    {
+     "phase": 4,
+     "samples": 7,
+     "update_at_minimum": 16,
+     "minimum": 0.0007262376649663767,
+     "interior": true,
+     "first": 0.0053604932344946095,
+     "last": 0.0015168349017218477,
+     "minimum_interpolated": 0.0007179929796047878,
+     "relative_curvature_per_period_squared": 0.05474342561260432
+    },
+    {
+     "phase": 5,
+     "samples": 7,
+     "update_at_minimum": 17,
+     "minimum": 0.0008736136256809362,
+     "interior": true,
+     "first": 0.009656836340763173,
+     "last": 0.0014887196061091552,
+     "minimum_interpolated": 0.0008686009948730099,
+     "relative_curvature_per_period_squared": 0.05074783111755008
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": 0.0001044832612346891
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "alpha-minus",
+   "fraction": null,
+   "alpha": 0.07292697809562831,
+   "log10_temperature": -0.1535,
+   "lane_start_cycle": 0,
+   "passage_lane": false,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.0069053193354304e-14,
+   "requested_bit_stored": true,
+   "on_recorded_line": false
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "alpha-minus",
+   "fraction": null,
+   "alpha": 0.07292697809562831,
+   "log10_temperature": -0.1535,
+   "lane_start_cycle": 1,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 2.6452601014076685e-15,
+   "requested_bit_stored": true,
+   "on_recorded_line": false,
+   "passage_update": {
+    "0.25": 14,
+    "0.5": 32,
+    "0.75": 44
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 0.016943510753610655,
+   "update_reaching_hold_unstable_orbit": 36.306647096729165,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 7,
+     "update_at_minimum": 24,
+     "minimum": 0.00039942994987052097,
+     "interior": true,
+     "first": 0.0010504061553183563,
+     "last": 0.00048697712906667796,
+     "minimum_interpolated": 0.00039892811014691573,
+     "relative_curvature_per_period_squared": 0.03566030029563898
+    },
+    {
+     "phase": 1,
+     "samples": 7,
+     "update_at_minimum": 13,
+     "minimum": 0.00036370778897582505,
+     "interior": true,
+     "first": 0.0015133558174382686,
+     "last": 0.0015114474819511933,
+     "minimum_interpolated": 0.00033269250224616197,
+     "relative_curvature_per_period_squared": 0.8230564692634943
+    },
+    {
+     "phase": 2,
+     "samples": 7,
+     "update_at_minimum": 8,
+     "minimum": 0.00046169433131375493,
+     "interior": true,
+     "first": 0.0024568465257509965,
+     "last": 0.0012691294324774626,
+     "minimum_interpolated": 0.0002186243717512189,
+     "relative_curvature_per_period_squared": 4.601978118747271
+    },
+    {
+     "phase": 3,
+     "samples": 6,
+     "update_at_minimum": 15,
+     "minimum": 0.0003565349808313109,
+     "interior": true,
+     "first": 0.001898663726528909,
+     "last": 0.0006515537941893157,
+     "minimum_interpolated": 0.0003507269741765272,
+     "relative_curvature_per_period_squared": 0.0889344693017565
+    },
+    {
+     "phase": 4,
+     "samples": 6,
+     "update_at_minimum": 10,
+     "minimum": 0.0009446434404815284,
+     "interior": true,
+     "first": 0.005245468991869382,
+     "last": 0.001775616448629946,
+     "minimum_interpolated": 0.0004163612490990336,
+     "relative_curvature_per_period_squared": 5.194857793526616
+    },
+    {
+     "phase": 5,
+     "samples": 6,
+     "update_at_minimum": 17,
+     "minimum": 0.0011188994908470674,
+     "interior": true,
+     "first": 0.009369622549744164,
+     "last": 0.0017615953231219666,
+     "minimum_interpolated": 0.0011178125587283704,
+     "relative_curvature_per_period_squared": 0.06433028663192661
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": null
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "alpha-plus",
+   "fraction": null,
+   "alpha": 0.0729469780956283,
+   "log10_temperature": -0.1535,
+   "lane_start_cycle": 0,
+   "passage_lane": false,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 2.0567816291920948e-15,
+   "requested_bit_stored": true,
+   "on_recorded_line": false
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "alpha-plus",
+   "fraction": null,
+   "alpha": 0.0729469780956283,
+   "log10_temperature": -0.1535,
+   "lane_start_cycle": 1,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.0574650933686596e-14,
+   "requested_bit_stored": true,
+   "on_recorded_line": false,
+   "passage_update": {
+    "0.25": 20,
+    "0.5": 50,
+    "0.75": 62
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 0.027447124083268114,
+   "update_reaching_hold_unstable_orbit": 54.310594650320965,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 10,
+     "update_at_minimum": 24,
+     "minimum": 0.00023388384815534362,
+     "interior": true,
+     "first": 0.0014465106779161009,
+     "last": 0.0003611834802909612,
+     "minimum_interpolated": 0.000232883055511242,
+     "relative_curvature_per_period_squared": 0.03215415451793915
+    },
+    {
+     "phase": 1,
+     "samples": 10,
+     "update_at_minimum": 13,
+     "minimum": 0.00018438694337009266,
+     "interior": true,
+     "first": 0.0016542383518301819,
+     "last": 0.0011173843375218324,
+     "minimum_interpolated": 0.00010325696832214185,
+     "relative_curvature_per_period_squared": 3.3932884828032908
+    },
+    {
+     "phase": 2,
+     "samples": 10,
+     "update_at_minimum": 14,
+     "minimum": 0.00024363343509419883,
+     "interior": true,
+     "first": 0.0025823069726026724,
+     "last": 0.0009413041444562471,
+     "minimum_interpolated": 0.00023811735709751596,
+     "relative_curvature_per_period_squared": 0.18294030357397276
+    },
+    {
+     "phase": 3,
+     "samples": 9,
+     "update_at_minimum": 15,
+     "minimum": 0.00018271860870390367,
+     "interior": true,
+     "first": 0.00197936298522918,
+     "last": 0.0004824275192990534,
+     "minimum_interpolated": 0.00018168806649317766,
+     "relative_curvature_per_period_squared": 0.0835993144938762
+    },
+    {
+     "phase": 4,
+     "samples": 9,
+     "update_at_minimum": 16,
+     "minimum": 0.0004984952672835352,
+     "interior": true,
+     "first": 0.00548825774117448,
+     "last": 0.0013224419803918354,
+     "minimum_interpolated": 0.0004984543758373565,
+     "relative_curvature_per_period_squared": 0.035867526185093215
+    },
+    {
+     "phase": 5,
+     "samples": 9,
+     "update_at_minimum": 23,
+     "minimum": 0.0006127592848223466,
+     "interior": true,
+     "first": 0.009964584745760962,
+     "last": 0.0013079219357008103,
+     "minimum_interpolated": 0.0006114716529233163,
+     "relative_curvature_per_period_squared": 0.03662491638580213
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": null
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "log10T-minus",
+   "fraction": null,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1536,
+   "lane_start_cycle": 0,
+   "passage_lane": false,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.1100414484321668e-14,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "log10T-minus",
+   "fraction": null,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1536,
+   "lane_start_cycle": 1,
+   "passage_lane": true,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 3.805800543571559e-12,
+   "requested_bit_stored": false,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": null,
+    "0.5": null,
+    "0.75": null
+   },
+   "passage_within_endpoint_stage": false,
+   "coordinate_at_update_120": 0.40287932998131926,
+   "update_reaching_hold_unstable_orbit": null,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 20,
+     "update_at_minimum": 114,
+     "minimum": 1.7863120519923693e-05,
+     "interior": false,
+     "first": 0.0009605216714745784,
+     "last": 1.7863120519923693e-05
+    },
+    {
+     "phase": 1,
+     "samples": 19,
+     "update_at_minimum": 109,
+     "minimum": 1.1332892266120028e-05,
+     "interior": false,
+     "first": 0.0012163780608994707,
+     "last": 1.1332892266120028e-05
+    },
+    {
+     "phase": 2,
+     "samples": 19,
+     "update_at_minimum": 110,
+     "minimum": 1.5688581812764134e-05,
+     "interior": false,
+     "first": 0.00199145252398952,
+     "last": 1.5688581812764134e-05
+    },
+    {
+     "phase": 3,
+     "samples": 19,
+     "update_at_minimum": 111,
+     "minimum": 1.1947902090597406e-05,
+     "interior": false,
+     "first": 0.0015437714483754075,
+     "last": 1.1947902090597406e-05
+    },
+    {
+     "phase": 4,
+     "samples": 19,
+     "update_at_minimum": 112,
+     "minimum": 3.258940050133534e-05,
+     "interior": false,
+     "first": 0.0042735385900462665,
+     "last": 3.258940050133534e-05
+    },
+    {
+     "phase": 5,
+     "samples": 19,
+     "update_at_minimum": 113,
+     "minimum": 4.374400536563786e-05,
+     "interior": false,
+     "first": 0.007979847723593588,
+     "last": 4.374400536563786e-05
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": 4.483261234700109e-06,
+   "endpoint_stage_tail": {
+    "coordinate_at_end": 0.40287932998131926,
+    "coordinate_one_period_earlier": 0.4060887896849755,
+    "coordinate_largest": 1.1177164607756445,
+    "coordinate_smallest": 0.40287932998131926,
+    "last_four_displacements_same_phase": [
+     1.8904494452400584e-05,
+     1.8412799606163457e-05,
+     1.8069976182604504e-05,
+     1.7863120519923693e-05
+    ],
+    "ratios": [
+     0.9739905847535273,
+     0.9813812439774667,
+     0.9885525215644753
+    ]
+   }
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "log10T-plus",
+   "fraction": null,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1534,
+   "lane_start_cycle": 0,
+   "passage_lane": false,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 9.262462396466957e-15,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "log10T-plus",
+   "fraction": null,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1534,
+   "lane_start_cycle": 1,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 8.906431200142186e-15,
+   "requested_bit_stored": true,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": 7,
+    "0.5": 26,
+    "0.75": 32
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 0.0286256134704083,
+   "update_reaching_hold_unstable_orbit": 28.040280021147325,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 5,
+     "update_at_minimum": 24,
+     "minimum": 0.00044986703956250725,
+     "interior": false,
+     "first": 0.0015358103908249784,
+     "last": 0.00044986703956250725
+    },
+    {
+     "phase": 1,
+     "samples": 5,
+     "update_at_minimum": 13,
+     "minimum": 0.0006176016544107562,
+     "interior": true,
+     "first": 0.00195234323381046,
+     "last": 0.0012320229601409842,
+     "minimum_interpolated": 0.0006125782264611811,
+     "relative_curvature_per_period_squared": 0.5010578214380915
+    },
+    {
+     "phase": 2,
+     "samples": 5,
+     "update_at_minimum": 8,
+     "minimum": 0.0006369628398711203,
+     "interior": true,
+     "first": 0.0030192470130366673,
+     "last": 0.0011105964532776686,
+     "minimum_interpolated": 0.0003741115782906061,
+     "relative_curvature_per_period_squared": 3.31537731274178
+    },
+    {
+     "phase": 3,
+     "samples": 4,
+     "update_at_minimum": 9,
+     "minimum": 0.0004997356312812445,
+     "interior": true,
+     "first": 0.0023057935286318392,
+     "last": 0.0006051527604201769,
+     "minimum_interpolated": 0.00028263512898005184,
+     "relative_curvature_per_period_squared": 3.236583755148838
+    },
+    {
+     "phase": 4,
+     "samples": 4,
+     "update_at_minimum": 10,
+     "minimum": 0.0013161995196582725,
+     "interior": true,
+     "first": 0.0063817029702621115,
+     "last": 0.001650462962037044,
+     "minimum_interpolated": 0.0007223599752209833,
+     "relative_curvature_per_period_squared": 3.5809256916249894
+    },
+    {
+     "phase": 5,
+     "samples": 4,
+     "update_at_minimum": 17,
+     "minimum": 0.0014417414948953546,
+     "interior": true,
+     "first": 0.011112955300852276,
+     "last": 0.0015864252925146668,
+     "minimum_interpolated": 0.0014377491850959471,
+     "relative_curvature_per_period_squared": 0.07229508475996545
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": 0.00020448326123467808
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "nominal",
+   "fraction": null,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 0,
+   "passage_lane": true,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 2.8418757021659595e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": 73,
+    "0.5": 79,
+    "0.75": 79
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 1.0691093264644724,
+   "update_reaching_hold_unstable_orbit": 60.73608757470196,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 13,
+     "update_at_minimum": 18,
+     "minimum": 5.658031431061179e-05,
+     "interior": true,
+     "first": 0.0007698426860354498,
+     "last": 0.0014455950662436647,
+     "minimum_interpolated": 5.657973517522021e-05,
+     "relative_curvature_per_period_squared": 0.03796057493610995
+    },
+    {
+     "phase": 1,
+     "samples": 13,
+     "update_at_minimum": 19,
+     "minimum": 0.00017021585698903687,
+     "interior": true,
+     "first": 0.0023850329470757694,
+     "last": 0.0012864717477600498,
+     "minimum_interpolated": 0.0001700971861043719,
+     "relative_curvature_per_period_squared": 0.03801625763534355
+    },
+    {
+     "phase": 2,
+     "samples": 12,
+     "update_at_minimum": 20,
+     "minimum": 0.00013314948487546356,
+     "interior": true,
+     "first": 0.0016818581834869163,
+     "last": 0.001522030462066896,
+     "minimum_interpolated": 0.0001320480313342432,
+     "relative_curvature_per_period_squared": 0.04002463754561835
+    },
+    {
+     "phase": 3,
+     "samples": 12,
+     "update_at_minimum": 9,
+     "minimum": 5.427653148811105e-05,
+     "interior": true,
+     "first": 0.00018936975036809952,
+     "last": 0.001124785977799038,
+     "minimum_interpolated": 3.746264141070419e-05,
+     "relative_curvature_per_period_squared": 1.8056338129618854
+    },
+    {
+     "phase": 4,
+     "samples": 12,
+     "update_at_minimum": 16,
+     "minimum": 0.0001583554948720078,
+     "interior": true,
+     "first": 0.0001918184349108429,
+     "last": 0.003075266661589625,
+     "minimum_interpolated": 0.00015749719141652717,
+     "relative_curvature_per_period_squared": 0.03895559591083601
+    },
+    {
+     "phase": 5,
+     "samples": 12,
+     "update_at_minimum": 17,
+     "minimum": 0.0001856866599676749,
+     "interior": true,
+     "first": 0.00022865304408645692,
+     "last": 0.0037343128489539736,
+     "minimum_interpolated": 0.00018551954711801198,
+     "relative_curvature_per_period_squared": 0.038300238589214206
+    }
+   ],
+   "predicted_passage_update": 86.30256212916082,
+   "predicted_update_reaching_hold_unstable_orbit": 76.34455699311518,
+   "alpha_beyond_fold": 6.206721693699513e-06,
+   "log10_temperature_beyond_fold": null
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "nominal",
+   "fraction": null,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 1,
+   "passage_lane": false,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 3.671757821533664e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "alpha-minus",
+   "fraction": null,
+   "alpha": 0.07298785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 0,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.812592396318504e-15,
+   "requested_bit_stored": false,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": null,
+    "0.5": null,
+    "0.75": null
+   },
+   "passage_within_endpoint_stage": false,
+   "coordinate_at_update_120": 0.02192789634491235,
+   "update_reaching_hold_unstable_orbit": null,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 20,
+     "update_at_minimum": 114,
+     "minimum": 2.288655280643845e-09,
+     "interior": false,
+     "first": 0.0006550323172079495,
+     "last": 2.288655280643845e-09
+    },
+    {
+     "phase": 1,
+     "samples": 19,
+     "update_at_minimum": 109,
+     "minimum": 9.914905429950658e-09,
+     "interior": false,
+     "first": 0.0020179063255588185,
+     "last": 9.914905429950658e-09
+    },
+    {
+     "phase": 2,
+     "samples": 19,
+     "update_at_minimum": 110,
+     "minimum": 7.100941554028067e-09,
+     "interior": false,
+     "first": 0.0014442721433505835,
+     "last": 7.100941554028067e-09
+    },
+    {
+     "phase": 3,
+     "samples": 19,
+     "update_at_minimum": 111,
+     "minimum": 1.8291908210495879e-09,
+     "interior": false,
+     "first": 0.0001935359980842357,
+     "last": 1.8291908210495879e-09
+    },
+    {
+     "phase": 4,
+     "samples": 19,
+     "update_at_minimum": 112,
+     "minimum": 5.6572402693052386e-09,
+     "interior": false,
+     "first": 4.473655158366622e-05,
+     "last": 5.6572402693052386e-09
+    },
+    {
+     "phase": 5,
+     "samples": 19,
+     "update_at_minimum": 113,
+     "minimum": 7.177622085576483e-09,
+     "interior": false,
+     "first": 1.7879068217274114e-05,
+     "last": 7.177622085576483e-09
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": -3.7932783062966102e-06,
+   "log10_temperature_beyond_fold": null,
+   "endpoint_stage_tail": {
+    "coordinate_at_end": 0.02192789634491235,
+    "coordinate_one_period_earlier": 0.021927923893921102,
+    "coordinate_largest": 0.23209332829395826,
+    "coordinate_smallest": -0.011239117283149651,
+    "last_four_displacements_same_phase": [
+     7.778276332037248e-09,
+     5.173544854578521e-09,
+     3.441012837155968e-09,
+     2.288655280643845e-09
+    ],
+    "ratios": [
+     0.6651274181748557,
+     0.6651170394532707,
+     0.6651109394103399
+    ]
+   }
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "alpha-minus",
+   "fraction": null,
+   "alpha": 0.07298785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 1,
+   "passage_lane": false,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 3.5955721457217777e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "alpha-plus",
+   "fraction": null,
+   "alpha": 0.07300785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 0,
+   "passage_lane": true,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 1.3686655317858393e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": 37,
+    "0.5": 43,
+    "0.75": 49
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 1.0341649675686415,
+   "update_reaching_hold_unstable_orbit": 29.48740502466617,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 8,
+     "update_at_minimum": 6,
+     "minimum": 0.0001458111121516245,
+     "interior": true,
+     "first": 0.0008802613561692408,
+     "last": 0.002359262748837375,
+     "minimum_interpolated": 5.5199170426762056e-05,
+     "relative_curvature_per_period_squared": 6.681746218454658
+    },
+    {
+     "phase": 1,
+     "samples": 8,
+     "update_at_minimum": 7,
+     "minimum": 0.00043701697747020827,
+     "interior": true,
+     "first": 0.002742163928854589,
+     "last": 0.0011018876002561945,
+     "minimum_interpolated": 0.00015738106694515683,
+     "relative_curvature_per_period_squared": 7.396493838880944
+    },
+    {
+     "phase": 2,
+     "samples": 7,
+     "update_at_minimum": 8,
+     "minimum": 0.0003461198467453581,
+     "interior": true,
+     "first": 0.0019119942410582823,
+     "last": 0.0018869890593337267,
+     "minimum_interpolated": 0.00016668151390981332,
+     "relative_curvature_per_period_squared": 4.832620182379525
+    },
+    {
+     "phase": 3,
+     "samples": 7,
+     "update_at_minimum": 9,
+     "minimum": 0.00015881438043588333,
+     "interior": true,
+     "first": 0.00020205550391992158,
+     "last": 0.0014222818915651156,
+     "minimum_interpolated": 0.00015876915909616296,
+     "relative_curvature_per_period_squared": 0.29054607457329434
+    },
+    {
+     "phase": 4,
+     "samples": 7,
+     "update_at_minimum": 4,
+     "minimum": 0.00042461931852030876,
+     "interior": false,
+     "first": 0.00042461931852030876,
+     "last": 0.00390249424752415
+    },
+    {
+     "phase": 5,
+     "samples": 7,
+     "update_at_minimum": 5,
+     "minimum": 0.0004914037326586124,
+     "interior": false,
+     "first": 0.0004914037326586124,
+     "last": 0.005600896628909872
+    }
+   ],
+   "predicted_passage_update": 50.116520397712016,
+   "predicted_update_reaching_hold_unstable_orbit": 40.66244199692832,
+   "alpha_beyond_fold": 1.6206721693695636e-05,
+   "log10_temperature_beyond_fold": null
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "alpha-plus",
+   "fraction": null,
+   "alpha": 0.07300785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 1,
+   "passage_lane": false,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 3.033249489532332e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "log10T-minus",
+   "fraction": null,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15405151820007265,
+   "lane_start_cycle": 0,
+   "passage_lane": true,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 6.0748356141328625e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": false,
+   "passage_update": {
+    "0.25": 67,
+    "0.5": 73,
+    "0.75": 73
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 1.1109795352603942,
+   "update_reaching_hold_unstable_orbit": 57.90385993532631,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 12,
+     "update_at_minimum": 18,
+     "minimum": 6.822783140889602e-05,
+     "interior": true,
+     "first": 0.0007011243093121995,
+     "last": 0.0016000543600318022,
+     "minimum_interpolated": 6.819962568525494e-05,
+     "relative_curvature_per_period_squared": 0.0471002920028436
+    },
+    {
+     "phase": 1,
+     "samples": 12,
+     "update_at_minimum": 19,
+     "minimum": 0.00020156402522010394,
+     "interior": true,
+     "first": 0.002209754707022913,
+     "last": 0.0015309656914499405,
+     "minimum_interpolated": 0.00020114353710344143,
+     "relative_curvature_per_period_squared": 0.047436011613240694
+    },
+    {
+     "phase": 2,
+     "samples": 11,
+     "update_at_minimum": 14,
+     "minimum": 0.0001571208181309316,
+     "interior": true,
+     "first": 0.0015563354528823588,
+     "last": 0.001739159240105438,
+     "minimum_interpolated": 0.00015463910112524051,
+     "relative_curvature_per_period_squared": 0.06516748168972429
+    },
+    {
+     "phase": 3,
+     "samples": 11,
+     "update_at_minimum": 9,
+     "minimum": 6.132747490431131e-05,
+     "interior": true,
+     "first": 0.00017067325674391414,
+     "last": 0.0012865199142284922,
+     "minimum_interpolated": 4.789601156632751e-05,
+     "relative_curvature_per_period_squared": 1.1481336807645959
+    },
+    {
+     "phase": 4,
+     "samples": 11,
+     "update_at_minimum": 16,
+     "minimum": 0.0001808409625447472,
+     "interior": true,
+     "first": 0.0002174217191816405,
+     "last": 0.003512860284310109,
+     "minimum_interpolated": 0.00017927297598731043,
+     "relative_curvature_per_period_squared": 0.04899153330698866
+    },
+    {
+     "phase": 5,
+     "samples": 11,
+     "update_at_minimum": 17,
+     "minimum": 0.00021937931980754792,
+     "interior": true,
+     "first": 0.0002732107690728105,
+     "last": 0.004187867005539881,
+     "minimum_interpolated": 0.0002188879852989073,
+     "relative_curvature_per_period_squared": 0.04776362824246977
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": null
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "log10T-minus",
+   "fraction": null,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15405151820007265,
+   "lane_start_cycle": 1,
+   "passage_lane": false,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 5.034261592733316e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": false
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "log10T-plus",
+   "fraction": null,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15385151820007267,
+   "lane_start_cycle": 0,
+   "passage_lane": true,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 6.929596417883875e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": false,
+   "passage_update": {
+    "0.25": 85,
+    "0.5": 91,
+    "0.75": 91
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 1.0073792840078417,
+   "update_reaching_hold_unstable_orbit": 68.97218118774146,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 15,
+     "update_at_minimum": 18,
+     "minimum": 4.180678881732134e-05,
+     "interior": true,
+     "first": 0.0008345002935994588,
+     "last": 0.001118354323137366,
+     "minimum_interpolated": 4.164164861188562e-05,
+     "relative_curvature_per_period_squared": 0.028521889893255912
+    },
+    {
+     "phase": 1,
+     "samples": 15,
+     "update_at_minimum": 19,
+     "minimum": 0.0001277814456516252,
+     "interior": true,
+     "first": 0.00254404666859864,
+     "last": 0.001063937008040621,
+     "minimum_interpolated": 0.00012752867525467584,
+     "relative_curvature_per_period_squared": 0.028232348106905086
+    },
+    {
+     "phase": 2,
+     "samples": 14,
+     "update_at_minimum": 20,
+     "minimum": 9.970633554087915e-05,
+     "interior": true,
+     "first": 0.0017960739861910184,
+     "last": 0.001225008652428724,
+     "minimum_interpolated": 9.969112686794672e-05,
+     "relative_curvature_per_period_squared": 0.028486953539225836
+    },
+    {
+     "phase": 3,
+     "samples": 14,
+     "update_at_minimum": 15,
+     "minimum": 4.240109207399377e-05,
+     "interior": true,
+     "first": 0.00020898693060433023,
+     "last": 0.0008983579696090359,
+     "minimum_interpolated": 4.237346465115409e-05,
+     "relative_curvature_per_period_squared": 0.027783417594509068
+    },
+    {
+     "phase": 4,
+     "samples": 14,
+     "update_at_minimum": 16,
+     "minimum": 0.00012305284612219145,
+     "interior": true,
+     "first": 0.000159328419038821,
+     "last": 0.002458069996290137,
+     "minimum_interpolated": 0.0001230527256121893,
+     "relative_curvature_per_period_squared": 0.028139518548450947
+    },
+    {
+     "phase": 5,
+     "samples": 14,
+     "update_at_minimum": 17,
+     "minimum": 0.00013990820226987953,
+     "interior": true,
+     "first": 0.0001778976456576687,
+     "last": 0.0029230054583018463,
+     "minimum_interpolated": 0.00013969466935020172,
+     "relative_curvature_per_period_squared": 0.028350457497612187
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": null
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "log10T-plus",
+   "fraction": null,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15385151820007267,
+   "lane_start_cycle": 1,
+   "passage_lane": false,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 7.035730475218888e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": false
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-0",
+   "fraction": 0.0,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1535,
+   "lane_start_cycle": 0,
+   "passage_lane": false,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.238216582844358e-14,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-0",
+   "fraction": 0.0,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1535,
+   "lane_start_cycle": 1,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.638603171895689e-14,
+   "requested_bit_stored": true,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": 14,
+    "0.5": 38,
+    "0.75": 50
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 0.022010321807814304,
+   "update_reaching_hold_unstable_orbit": 43.01474052865712,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 8,
+     "update_at_minimum": 24,
+     "minimum": 0.0003222225485359969,
+     "interior": true,
+     "first": 0.0012455203866570102,
+     "last": 0.0004112649823697174,
+     "minimum_interpolated": 0.00032166765773323385,
+     "relative_curvature_per_period_squared": 0.0308526938067117
+    },
+    {
+     "phase": 1,
+     "samples": 8,
+     "update_at_minimum": 13,
+     "minimum": 0.0002703358727651714,
+     "interior": true,
+     "first": 0.0015801176106047489,
+     "last": 0.001256312889323843,
+     "minimum_interpolated": 0.00021350250654426445,
+     "relative_curvature_per_period_squared": 1.4359959605285546
+    },
+    {
+     "phase": 2,
+     "samples": 8,
+     "update_at_minimum": 14,
+     "minimum": 0.00035664384166545605,
+     "interior": true,
+     "first": 0.0025161552601416083,
+     "last": 0.0010845408149313146,
+     "minimum_interpolated": 0.00035586268810380286,
+     "relative_curvature_per_period_squared": 0.09521943436565239
+    },
+    {
+     "phase": 3,
+     "samples": 7,
+     "update_at_minimum": 15,
+     "minimum": 0.0002666026939908322,
+     "interior": true,
+     "first": 0.0019367562111303818,
+     "last": 0.0005556249845167982,
+     "minimum_interpolated": 0.000266230595702964,
+     "relative_curvature_per_period_squared": 0.08315601956599723
+    },
+    {
+     "phase": 4,
+     "samples": 7,
+     "update_at_minimum": 16,
+     "minimum": 0.0007262376649663767,
+     "interior": true,
+     "first": 0.0053604932344946095,
+     "last": 0.0015168349017218477,
+     "minimum_interpolated": 0.0007179929796047878,
+     "relative_curvature_per_period_squared": 0.05474342561260432
+    },
+    {
+     "phase": 5,
+     "samples": 7,
+     "update_at_minimum": 17,
+     "minimum": 0.0008736136256809362,
+     "interior": true,
+     "first": 0.009656836340763173,
+     "last": 0.0014887196061091552,
+     "minimum_interpolated": 0.0008686009948730099,
+     "relative_curvature_per_period_squared": 0.05074783111755008
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": 0.0001044832612346891
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-025",
+   "fraction": 0.25,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.153525,
+   "lane_start_cycle": 0,
+   "passage_lane": false,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.616283896993319e-14,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-025",
+   "fraction": 0.25,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.153525,
+   "lane_start_cycle": 1,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 9.72985051711692e-15,
+   "requested_bit_stored": true,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": 20,
+    "0.5": 50,
+    "0.75": 56
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 0.020461404301666156,
+   "update_reaching_hold_unstable_orbit": 51.15705066586721,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 9,
+     "update_at_minimum": 24,
+     "minimum": 0.00026436401508208625,
+     "interior": true,
+     "first": 0.0011737762896827481,
+     "last": 0.0003609167979376161,
+     "minimum_interpolated": 0.000263493693927602,
+     "relative_curvature_per_period_squared": 0.03592693138088317
+    },
+    {
+     "phase": 1,
+     "samples": 9,
+     "update_at_minimum": 13,
+     "minimum": 0.0002007542743373482,
+     "interior": true,
+     "first": 0.0014884013760185844,
+     "last": 0.0010331483704351784,
+     "minimum_interpolated": 0.00013109378576723282,
+     "relative_curvature_per_period_squared": 2.364595537913757
+    },
+    {
+     "phase": 2,
+     "samples": 9,
+     "update_at_minimum": 14,
+     "minimum": 0.000269874084182362,
+     "interior": true,
+     "first": 0.002386937061371287,
+     "last": 0.000973261786891118,
+     "minimum_interpolated": 0.0002674780223469252,
+     "relative_curvature_per_period_squared": 0.13015290466294333
+    },
+    {
+     "phase": 3,
+     "samples": 8,
+     "update_at_minimum": 15,
+     "minimum": 0.0002037132501254479,
+     "interior": true,
+     "first": 0.0018406795625500727,
+     "last": 0.0004907749551689884,
+     "minimum_interpolated": 0.00020295754037236494,
+     "relative_curvature_per_period_squared": 0.08432429105008143
+    },
+    {
+     "phase": 4,
+     "samples": 8,
+     "update_at_minimum": 16,
+     "minimum": 0.0005551944812244139,
+     "interior": true,
+     "first": 0.0050947381679505525,
+     "last": 0.0013363697373531035,
+     "minimum_interpolated": 0.0005551885991336386,
+     "relative_curvature_per_period_squared": 0.04666044109100696
+    },
+    {
+     "phase": 5,
+     "samples": 8,
+     "update_at_minimum": 23,
+     "minimum": 0.0006914296689365817,
+     "interior": true,
+     "first": 0.009259334173297764,
+     "last": 0.0012888878187466493,
+     "minimum_interpolated": 0.0006890163810297814,
+     "relative_curvature_per_period_squared": 0.041960495393110545
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": 7.948326123469185e-05
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-050",
+   "fraction": 0.5,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.15355,
+   "lane_start_cycle": 0,
+   "passage_lane": false,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 5.022032446181863e-15,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-050",
+   "fraction": 0.5,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.15355,
+   "lane_start_cycle": 1,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 6.183200521297235e-15,
+   "requested_bit_stored": true,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": 32,
+    "0.5": 62,
+    "0.75": 74
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 0.018951957166566738,
+   "update_reaching_hold_unstable_orbit": 64.96688482976481,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 12,
+     "update_at_minimum": 30,
+     "minimum": 0.00019324501026288287,
+     "interior": true,
+     "first": 0.0011023622631257035,
+     "last": 0.00041744661530388686,
+     "minimum_interpolated": 0.00019309225211495474,
+     "relative_curvature_per_period_squared": 0.027687899603220947
+    },
+    {
+     "phase": 1,
+     "samples": 12,
+     "update_at_minimum": 19,
+     "minimum": 0.00013873411672668672,
+     "interior": true,
+     "first": 0.0013972097817330513,
+     "last": 0.001311482494008745,
+     "minimum_interpolated": 0.00013767597881126492,
+     "relative_curvature_per_period_squared": 0.03968094316534098
+    },
+    {
+     "phase": 2,
+     "samples": 12,
+     "update_at_minimum": 20,
+     "minimum": 0.00018765210710159852,
+     "interior": true,
+     "first": 0.002256395837601193,
+     "last": 0.0010912560911886038,
+     "minimum_interpolated": 0.00018691735405348034,
+     "relative_curvature_per_period_squared": 0.038846102109305516
+    },
+    {
+     "phase": 3,
+     "samples": 11,
+     "update_at_minimum": 21,
+     "minimum": 0.00014181906719220114,
+     "interior": true,
+     "first": 0.0017431365683118212,
+     "last": 0.0005459612844318315,
+     "minimum_interpolated": 0.0001415719970852978,
+     "relative_curvature_per_period_squared": 0.03842205245544031
+    },
+    {
+     "phase": 4,
+     "samples": 11,
+     "update_at_minimum": 22,
+     "minimum": 0.0003865509200447274,
+     "interior": true,
+     "first": 0.004824945731401983,
+     "last": 0.001492568633396431,
+     "minimum_interpolated": 0.0003859108668309199,
+     "relative_curvature_per_period_squared": 0.03839608164719541
+    },
+    {
+     "phase": 5,
+     "samples": 11,
+     "update_at_minimum": 23,
+     "minimum": 0.0004935591367497891,
+     "interior": true,
+     "first": 0.008847604449730711,
+     "last": 0.0015033443516863866,
+     "minimum_interpolated": 0.0004904921277476749,
+     "relative_curvature_per_period_squared": 0.038694345628618655
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": 5.44832612346946e-05
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-075",
+   "fraction": 0.75,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.153575,
+   "lane_start_cycle": 0,
+   "passage_lane": false,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.2575332050690882e-14,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-075",
+   "fraction": 0.75,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.153575,
+   "lane_start_cycle": 1,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 8.157975100768365e-15,
+   "requested_bit_stored": true,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": 56,
+    "0.5": 92,
+    "0.75": 104
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 0.017588233679062874,
+   "update_reaching_hold_unstable_orbit": 94.8378750466871,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 17,
+     "update_at_minimum": 36,
+     "minimum": 0.00011127242973905551,
+     "interior": true,
+     "first": 0.0010312776246001992,
+     "last": 0.0004013602113828931,
+     "minimum_interpolated": 0.00011072253977413663,
+     "relative_curvature_per_period_squared": 0.02102720814374357
+    },
+    {
+     "phase": 1,
+     "samples": 17,
+     "update_at_minimum": 25,
+     "minimum": 7.484421754081703e-05,
+     "interior": true,
+     "first": 0.0013065372018576061,
+     "last": 0.001260080093774264,
+     "minimum_interpolated": 7.44907367544871e-05,
+     "relative_curvature_per_period_squared": 0.02574505916452966
+    },
+    {
+     "phase": 2,
+     "samples": 17,
+     "update_at_minimum": 26,
+     "minimum": 0.00010267453627936819,
+     "interior": true,
+     "first": 0.0021245587074995224,
+     "last": 0.0010660187318323271,
+     "minimum_interpolated": 0.00010206573382695213,
+     "relative_curvature_per_period_squared": 0.024708597652992853
+    },
+    {
+     "phase": 3,
+     "samples": 16,
+     "update_at_minimum": 33,
+     "minimum": 7.7864087189161e-05,
+     "interior": true,
+     "first": 0.0016441572408369988,
+     "last": 0.0005259133429792472,
+     "minimum_interpolated": 7.75783677460295e-05,
+     "relative_curvature_per_period_squared": 0.02169494388850613
+    },
+    {
+     "phase": 4,
+     "samples": 16,
+     "update_at_minimum": 34,
+     "minimum": 0.00021229564951064976,
+     "interior": true,
+     "first": 0.00455118829096712,
+     "last": 0.0014365596772284977,
+     "minimum_interpolated": 0.0002115340697912276,
+     "relative_curvature_per_period_squared": 0.021658259973047135
+    },
+    {
+     "phase": 5,
+     "samples": 16,
+     "update_at_minimum": 35,
+     "minimum": 0.000276417260025225,
+     "interior": true,
+     "first": 0.008421240890720001,
+     "last": 0.0014456075504958798,
+     "minimum_interpolated": 0.0002762297416645024,
+     "relative_curvature_per_period_squared": 0.021255383246601218
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": 2.9483261234697355e-05
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-100",
+   "fraction": 1.0,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1536,
+   "lane_start_cycle": 0,
+   "passage_lane": false,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.1100414484321668e-14,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-100",
+   "fraction": 1.0,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1536,
+   "lane_start_cycle": 1,
+   "passage_lane": true,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 3.805800543571559e-12,
+   "requested_bit_stored": false,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": null,
+    "0.5": null,
+    "0.75": null
+   },
+   "passage_within_endpoint_stage": false,
+   "coordinate_at_update_120": 0.40287932998131926,
+   "update_reaching_hold_unstable_orbit": null,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 20,
+     "update_at_minimum": 114,
+     "minimum": 1.7863120519923693e-05,
+     "interior": false,
+     "first": 0.0009605216714745784,
+     "last": 1.7863120519923693e-05
+    },
+    {
+     "phase": 1,
+     "samples": 19,
+     "update_at_minimum": 109,
+     "minimum": 1.1332892266120028e-05,
+     "interior": false,
+     "first": 0.0012163780608994707,
+     "last": 1.1332892266120028e-05
+    },
+    {
+     "phase": 2,
+     "samples": 19,
+     "update_at_minimum": 110,
+     "minimum": 1.5688581812764134e-05,
+     "interior": false,
+     "first": 0.00199145252398952,
+     "last": 1.5688581812764134e-05
+    },
+    {
+     "phase": 3,
+     "samples": 19,
+     "update_at_minimum": 111,
+     "minimum": 1.1947902090597406e-05,
+     "interior": false,
+     "first": 0.0015437714483754075,
+     "last": 1.1947902090597406e-05
+    },
+    {
+     "phase": 4,
+     "samples": 19,
+     "update_at_minimum": 112,
+     "minimum": 3.258940050133534e-05,
+     "interior": false,
+     "first": 0.0042735385900462665,
+     "last": 3.258940050133534e-05
+    },
+    {
+     "phase": 5,
+     "samples": 19,
+     "update_at_minimum": 113,
+     "minimum": 4.374400536563786e-05,
+     "interior": false,
+     "first": 0.007979847723593588,
+     "last": 4.374400536563786e-05
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": null,
+   "log10_temperature_beyond_fold": 4.483261234700109e-06,
+   "endpoint_stage_tail": {
+    "coordinate_at_end": 0.40287932998131926,
+    "coordinate_one_period_earlier": 0.4060887896849755,
+    "coordinate_largest": 1.1177164607756445,
+    "coordinate_smallest": 0.40287932998131926,
+    "last_four_displacements_same_phase": [
+     1.8904494452400584e-05,
+     1.8412799606163457e-05,
+     1.8069976182604504e-05,
+     1.7863120519923693e-05
+    ],
+    "ratios": [
+     0.9739905847535273,
+     0.9813812439774667,
+     0.9885525215644753
+    ]
+   }
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-0",
+   "fraction": 0.0,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 0,
+   "passage_lane": true,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 2.8418757021659595e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": 73,
+    "0.5": 79,
+    "0.75": 79
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 1.0691093264644724,
+   "update_reaching_hold_unstable_orbit": 60.73608757470196,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 13,
+     "update_at_minimum": 18,
+     "minimum": 5.658031431061179e-05,
+     "interior": true,
+     "first": 0.0007698426860354498,
+     "last": 0.0014455950662436647,
+     "minimum_interpolated": 5.657973517522021e-05,
+     "relative_curvature_per_period_squared": 0.03796057493610995
+    },
+    {
+     "phase": 1,
+     "samples": 13,
+     "update_at_minimum": 19,
+     "minimum": 0.00017021585698903687,
+     "interior": true,
+     "first": 0.0023850329470757694,
+     "last": 0.0012864717477600498,
+     "minimum_interpolated": 0.0001700971861043719,
+     "relative_curvature_per_period_squared": 0.03801625763534355
+    },
+    {
+     "phase": 2,
+     "samples": 12,
+     "update_at_minimum": 20,
+     "minimum": 0.00013314948487546356,
+     "interior": true,
+     "first": 0.0016818581834869163,
+     "last": 0.001522030462066896,
+     "minimum_interpolated": 0.0001320480313342432,
+     "relative_curvature_per_period_squared": 0.04002463754561835
+    },
+    {
+     "phase": 3,
+     "samples": 12,
+     "update_at_minimum": 9,
+     "minimum": 5.427653148811105e-05,
+     "interior": true,
+     "first": 0.00018936975036809952,
+     "last": 0.001124785977799038,
+     "minimum_interpolated": 3.746264141070419e-05,
+     "relative_curvature_per_period_squared": 1.8056338129618854
+    },
+    {
+     "phase": 4,
+     "samples": 12,
+     "update_at_minimum": 16,
+     "minimum": 0.0001583554948720078,
+     "interior": true,
+     "first": 0.0001918184349108429,
+     "last": 0.003075266661589625,
+     "minimum_interpolated": 0.00015749719141652717,
+     "relative_curvature_per_period_squared": 0.03895559591083601
+    },
+    {
+     "phase": 5,
+     "samples": 12,
+     "update_at_minimum": 17,
+     "minimum": 0.0001856866599676749,
+     "interior": true,
+     "first": 0.00022865304408645692,
+     "last": 0.0037343128489539736,
+     "minimum_interpolated": 0.00018551954711801198,
+     "relative_curvature_per_period_squared": 0.038300238589214206
+    }
+   ],
+   "predicted_passage_update": 86.30256212916082,
+   "predicted_update_reaching_hold_unstable_orbit": 76.34455699311518,
+   "alpha_beyond_fold": 6.206721693699513e-06,
+   "log10_temperature_beyond_fold": null
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-0",
+   "fraction": 0.0,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 1,
+   "passage_lane": false,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 3.671757821533664e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-025",
+   "fraction": 0.25,
+   "alpha": 0.07299535589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 0,
+   "passage_lane": true,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 1.5476680700319128e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": 97,
+    "0.5": 103,
+    "0.75": 103
+   },
+   "passage_within_endpoint_stage": true,
+   "coordinate_at_update_120": 0.951807033578654,
+   "update_reaching_hold_unstable_orbit": 86.35190529406205,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 17,
+     "update_at_minimum": 30,
+     "minimum": 3.4216833125015e-05,
+     "interior": true,
+     "first": 0.0007415565767208194,
+     "last": 0.0010195461207383601,
+     "minimum_interpolated": 3.4061001957170365e-05,
+     "relative_curvature_per_period_squared": 0.022376946099293946
+    },
+    {
+     "phase": 1,
+     "samples": 17,
+     "update_at_minimum": 25,
+     "minimum": 0.00010251493085375284,
+     "interior": true,
+     "first": 0.002294184138876363,
+     "last": 0.0012873080532588143,
+     "minimum_interpolated": 0.00010202706571821217,
+     "relative_curvature_per_period_squared": 0.025000615541342863
+    },
+    {
+     "phase": 2,
+     "samples": 16,
+     "update_at_minimum": 26,
+     "minimum": 7.885372697167901e-05,
+     "interior": true,
+     "first": 0.001623260716546849,
+     "last": 0.0012938211143526882,
+     "minimum_interpolated": 7.881112328793734e-05,
+     "relative_curvature_per_period_squared": 0.02494698451488929
+    },
+    {
+     "phase": 3,
+     "samples": 16,
+     "update_at_minimum": 21,
+     "minimum": 3.226966988178656e-05,
+     "interior": true,
+     "first": 0.00018959236056198276,
+     "last": 0.0009401639846663658,
+     "minimum_interpolated": 3.226724937734925e-05,
+     "relative_curvature_per_period_squared": 0.023878065309257644
+    },
+    {
+     "phase": 4,
+     "samples": 16,
+     "update_at_minimum": 22,
+     "minimum": 9.413971551610957e-05,
+     "interior": true,
+     "first": 0.00014228632664687352,
+     "last": 0.002566834205270141,
+     "minimum_interpolated": 9.402477907481369e-05,
+     "relative_curvature_per_period_squared": 0.024735879677274933
+    },
+    {
+     "phase": 5,
+     "samples": 16,
+     "update_at_minimum": 23,
+     "minimum": 0.00011171296575437718,
+     "interior": true,
+     "first": 0.0001684100968123672,
+     "last": 0.002827885449515873,
+     "minimum_interpolated": 0.00011121313174630273,
+     "relative_curvature_per_period_squared": 0.025070918595033652
+    }
+   ],
+   "predicted_passage_update": 114.4619129242611,
+   "predicted_update_reaching_hold_unstable_orbit": 104.36211548856997,
+   "alpha_beyond_fold": 3.7067216936970127e-06,
+   "log10_temperature_beyond_fold": null
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-025",
+   "fraction": 0.25,
+   "alpha": 0.07299535589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 1,
+   "passage_lane": false,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 3.730291321824284e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-050",
+   "fraction": 0.5,
+   "alpha": 0.07299285589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 0,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.681957701310161e-15,
+   "requested_bit_stored": false,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": null,
+    "0.5": null,
+    "0.75": null
+   },
+   "passage_within_endpoint_stage": false,
+   "coordinate_at_update_120": 0.033687170099016554,
+   "update_reaching_hold_unstable_orbit": null,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 20,
+     "update_at_minimum": 66,
+     "minimum": 1.1204849129420084e-05,
+     "interior": true,
+     "first": 0.000712993954676258,
+     "last": 1.8505874533785033e-05,
+     "minimum_interpolated": 1.1201460241105469e-05,
+     "relative_curvature_per_period_squared": 0.007571196889237184
+    },
+    {
+     "phase": 1,
+     "samples": 19,
+     "update_at_minimum": 67,
+     "minimum": 3.350547326572231e-05,
+     "interior": true,
+     "first": 0.0022027122480918213,
+     "last": 4.988267037278139e-05,
+     "minimum_interpolated": 3.348042066977996e-05,
+     "relative_curvature_per_period_squared": 0.007582214926541559
+    },
+    {
+     "phase": 2,
+     "samples": 19,
+     "update_at_minimum": 62,
+     "minimum": 2.5749088390690844e-05,
+     "interior": true,
+     "first": 0.0015641594425797364,
+     "last": 3.9945325450934e-05,
+     "minimum_interpolated": 2.5717929019735304e-05,
+     "relative_curvature_per_period_squared": 0.007913466628648759
+    },
+    {
+     "phase": 3,
+     "samples": 19,
+     "update_at_minimum": 57,
+     "minimum": 1.0576167209247816e-05,
+     "interior": true,
+     "first": 0.00019056255899369104,
+     "last": 1.8754884984470313e-05,
+     "minimum_interpolated": 1.0568211065466568e-05,
+     "relative_curvature_per_period_squared": 0.007799442927457674
+    },
+    {
+     "phase": 4,
+     "samples": 19,
+     "update_at_minimum": 58,
+     "minimum": 3.074833186213346e-05,
+     "interior": true,
+     "first": 9.761601407770326e-05,
+     "last": 5.3430314694321005e-05,
+     "minimum_interpolated": 3.0696419755074414e-05,
+     "relative_curvature_per_period_squared": 0.007897486430315436
+    },
+    {
+     "phase": 5,
+     "samples": 19,
+     "update_at_minimum": 65,
+     "minimum": 3.650466759015585e-05,
+     "interior": true,
+     "first": 0.00011094735679592194,
+     "last": 6.145694872415507e-05,
+     "minimum_interpolated": 3.647488896348508e-05,
+     "relative_curvature_per_period_squared": 0.007593494934340471
+    }
+   ],
+   "predicted_passage_update": 208.06208868897994,
+   "predicted_update_reaching_hold_unstable_orbit": 197.81298954318203,
+   "alpha_beyond_fold": 1.2067216936945124e-06,
+   "log10_temperature_beyond_fold": null,
+   "endpoint_stage_tail": {
+    "coordinate_at_end": 0.033687170099016554,
+    "coordinate_one_period_earlier": 0.03293674343930717,
+    "coordinate_largest": 0.35020931967882346,
+    "coordinate_smallest": -0.012344293457988653,
+    "last_four_displacements_same_phase": [
+     1.3675074590576788e-05,
+     1.4881776778321583e-05,
+     1.6455734907762383e-05,
+     1.8505874533785033e-05
+    ],
+    "ratios": [
+     1.088240994939531,
+     1.1057641270183274,
+     1.1245851150078732
+    ]
+   }
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-050",
+   "fraction": 0.5,
+   "alpha": 0.07299285589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 1,
+   "passage_lane": false,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 3.7047764459705385e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-075",
+   "fraction": 0.75,
+   "alpha": 0.07299035589927694,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 0,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.7370031367154305e-15,
+   "requested_bit_stored": false,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": null,
+    "0.5": null,
+    "0.75": null
+   },
+   "passage_within_endpoint_stage": false,
+   "coordinate_at_update_120": 0.02466816268839608,
+   "update_reaching_hold_unstable_orbit": null,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 20,
+     "update_at_minimum": 114,
+     "minimum": 1.9144579622012378e-07,
+     "interior": false,
+     "first": 0.0006841530753307074,
+     "last": 1.9144579622012378e-07
+    },
+    {
+     "phase": 1,
+     "samples": 19,
+     "update_at_minimum": 109,
+     "minimum": 6.918234390074377e-07,
+     "interior": false,
+     "first": 0.0021106190378256777,
+     "last": 6.918234390074377e-07
+    },
+    {
+     "phase": 2,
+     "samples": 19,
+     "update_at_minimum": 110,
+     "minimum": 5.063403545918137e-07,
+     "interior": false,
+     "first": 0.0015045115379356357,
+     "last": 5.063403545918137e-07
+    },
+    {
+     "phase": 3,
+     "samples": 19,
+     "update_at_minimum": 111,
+     "minimum": 1.6430377898319956e-07,
+     "interior": false,
+     "first": 0.0001919726547260856,
+     "last": 1.6430377898319956e-07
+    },
+    {
+     "phase": 4,
+     "samples": 19,
+     "update_at_minimum": 112,
+     "minimum": 4.926081479123651e-07,
+     "interior": false,
+     "first": 6.11450825078801e-05,
+     "last": 4.926081479123651e-07
+    },
+    {
+     "phase": 5,
+     "samples": 19,
+     "update_at_minimum": 113,
+     "minimum": 6.089469897646895e-07,
+     "interior": false,
+     "first": 5.7154490168290636e-05,
+     "last": 6.089469897646895e-07
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": -1.29327830629411e-06,
+   "log10_temperature_beyond_fold": null,
+   "endpoint_stage_tail": {
+    "coordinate_at_end": 0.02466816268839608,
+    "coordinate_one_period_earlier": 0.024664579284291634,
+    "coordinate_largest": 0.26213795599169787,
+    "coordinate_smallest": -0.011791690749200423,
+    "last_four_displacements_same_phase": [
+     3.620143173221489e-07,
+     2.925802666616999e-07,
+     2.3661147359946816e-07,
+     1.9144579622012378e-07
+    ],
+    "ratios": [
+     0.8082008159951831,
+     0.808706193001914,
+     0.8091145932517201
+    ]
+   }
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-075",
+   "fraction": 0.75,
+   "alpha": 0.07299035589927694,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 1,
+   "passage_lane": false,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 3.674855671609382e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-100",
+   "fraction": 1.0,
+   "alpha": 0.07298785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 0,
+   "passage_lane": true,
+   "final_nearest_cycle": 0,
+   "final_distance_to_that_cycle": 1.812592396318504e-15,
+   "requested_bit_stored": false,
+   "on_recorded_line": true,
+   "passage_update": {
+    "0.25": null,
+    "0.5": null,
+    "0.75": null
+   },
+   "passage_within_endpoint_stage": false,
+   "coordinate_at_update_120": 0.02192789634491235,
+   "update_reaching_hold_unstable_orbit": null,
+   "bottleneck_by_phase": [
+    {
+     "phase": 0,
+     "samples": 20,
+     "update_at_minimum": 114,
+     "minimum": 2.288655280643845e-09,
+     "interior": false,
+     "first": 0.0006550323172079495,
+     "last": 2.288655280643845e-09
+    },
+    {
+     "phase": 1,
+     "samples": 19,
+     "update_at_minimum": 109,
+     "minimum": 9.914905429950658e-09,
+     "interior": false,
+     "first": 0.0020179063255588185,
+     "last": 9.914905429950658e-09
+    },
+    {
+     "phase": 2,
+     "samples": 19,
+     "update_at_minimum": 110,
+     "minimum": 7.100941554028067e-09,
+     "interior": false,
+     "first": 0.0014442721433505835,
+     "last": 7.100941554028067e-09
+    },
+    {
+     "phase": 3,
+     "samples": 19,
+     "update_at_minimum": 111,
+     "minimum": 1.8291908210495879e-09,
+     "interior": false,
+     "first": 0.0001935359980842357,
+     "last": 1.8291908210495879e-09
+    },
+    {
+     "phase": 4,
+     "samples": 19,
+     "update_at_minimum": 112,
+     "minimum": 5.6572402693052386e-09,
+     "interior": false,
+     "first": 4.473655158366622e-05,
+     "last": 5.6572402693052386e-09
+    },
+    {
+     "phase": 5,
+     "samples": 19,
+     "update_at_minimum": 113,
+     "minimum": 7.177622085576483e-09,
+     "interior": false,
+     "first": 1.7879068217274114e-05,
+     "last": 7.177622085576483e-09
+    }
+   ],
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "alpha_beyond_fold": -3.7932783062966102e-06,
+   "log10_temperature_beyond_fold": null,
+   "endpoint_stage_tail": {
+    "coordinate_at_end": 0.02192789634491235,
+    "coordinate_one_period_earlier": 0.021927923893921102,
+    "coordinate_largest": 0.23209332829395826,
+    "coordinate_smallest": -0.011239117283149651,
+    "last_four_displacements_same_phase": [
+     7.778276332037248e-09,
+     5.173544854578521e-09,
+     3.441012837155968e-09,
+     2.288655280643845e-09
+    ],
+    "ratios": [
+     0.6651274181748557,
+     0.6651170394532707,
+     0.6651109394103399
+    ]
+   }
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-100",
+   "fraction": 1.0,
+   "alpha": 0.07298785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "lane_start_cycle": 1,
+   "passage_lane": false,
+   "final_nearest_cycle": 1,
+   "final_distance_to_that_cycle": 3.5955721457217777e-12,
+   "requested_bit_stored": true,
+   "on_recorded_line": true
+  }
+ ],
+ "comparisons": {
+  "write1_prediction": [
+   {
+    "alpha_beyond_fold": 3.7067216936970127e-06,
+    "group": "fraction-025",
+    "profile": "negative-axis-refinement",
+    "measured": 103,
+    "predicted": 114.4619129242611,
+    "measured_over_predicted": 0.8998626474830506,
+    "measured_at_thresholds": {
+     "0.25": 97,
+     "0.5": 103,
+     "0.75": 103
+    }
+   },
+   {
+    "alpha_beyond_fold": 6.206721693699513e-06,
+    "group": "nominal",
+    "profile": "axis-stencil",
+    "measured": 79,
+    "predicted": 86.30256212916082,
+    "measured_over_predicted": 0.9153841792294443,
+    "measured_at_thresholds": {
+     "0.25": 73,
+     "0.5": 79,
+     "0.75": 79
+    }
+   },
+   {
+    "alpha_beyond_fold": 1.6206721693695636e-05,
+    "group": "alpha-plus",
+    "profile": "axis-stencil",
+    "measured": 49,
+    "predicted": 50.116520397712016,
+    "measured_over_predicted": 0.9777215100160268,
+    "measured_at_thresholds": {
+     "0.25": 37,
+     "0.5": 43,
+     "0.75": 49
+    }
+   }
+  ],
+  "write1_line": {
+   "points": 3,
+   "intercept": 6.85805099434684,
+   "slope": 0.0640266825228089,
+   "residuals": [
+    0.13728777191508357,
+    -0.244122737671276,
+    0.10683496575624218
+   ],
+   "max_abs_residual": 0.244122737671276,
+   "ab_from_slope": 8781.738506766236,
+   "ab_from_branch": 6177.932239355573
+  },
+  "write0_measured": [
+   {
+    "log10_temperature_beyond_fold": 2.9483261234697355e-05,
+    "group": "fraction-075",
+    "profile": "negative-axis-refinement",
+    "measured": 104,
+    "measured_at_thresholds": {
+     "0.25": 56,
+     "0.5": 92,
+     "0.75": 104
+    },
+    "rough_from_hold_multiplier": 72.53719347228656,
+    "rough_from_fold_chord": 86.03019091185058
+   },
+   {
+    "log10_temperature_beyond_fold": 5.44832612346946e-05,
+    "group": "fraction-050",
+    "profile": "negative-axis-refinement",
+    "measured": 74,
+    "measured_at_thresholds": {
+     "0.25": 32,
+     "0.5": 62,
+     "0.75": 74
+    },
+    "rough_from_hold_multiplier": 51.61195688703016,
+    "rough_from_fold_chord": 61.21254892528778
+   },
+   {
+    "log10_temperature_beyond_fold": 7.948326123469185e-05,
+    "group": "fraction-025",
+    "profile": "negative-axis-refinement",
+    "measured": 56,
+    "measured_at_thresholds": {
+     "0.25": 20,
+     "0.5": 50,
+     "0.75": 56
+    },
+    "rough_from_hold_multiplier": 41.66276542484621,
+    "rough_from_fold_chord": 49.41265979341428
+   },
+   {
+    "log10_temperature_beyond_fold": 0.0001044832612346891,
+    "group": "nominal",
+    "profile": "axis-stencil",
+    "measured": 50,
+    "measured_at_thresholds": {
+     "0.25": 14,
+     "0.5": 38,
+     "0.75": 50
+    },
+    "rough_from_hold_multiplier": 35.59007255343496,
+    "rough_from_fold_chord": 42.210355677855354
+   },
+   {
+    "log10_temperature_beyond_fold": 0.00020448326123467808,
+    "group": "log10T-plus",
+    "profile": "axis-stencil",
+    "measured": 32,
+    "measured_at_thresholds": {
+     "0.25": 7,
+     "0.5": 26,
+     "0.75": 32
+    },
+    "rough_from_hold_multiplier": 23.96745751514439,
+    "rough_from_fold_chord": 28.42576128186315
+   }
+  ],
+  "write0_line": {
+   "points": 5,
+   "intercept": -3.8515169237698643,
+   "slope": 0.20500932439409864,
+   "residuals": [
+    -0.05416739174691543,
+    1.0740285738007316,
+    -2.1256426331749836,
+    0.9080413096418241,
+    0.19774014147927943
+   ],
+   "max_abs_residual": 2.1256426331749836,
+   "ab_from_slope": 856.5550342481317,
+   "rough_coefficients": {
+    "from_hold_multiplier_constant_coefficient": 1895.4940339618545,
+    "from_third_sheet_fold_along_a_straight_fold_curve": 1347.5414883041285,
+    "fold_curve_chord_dlog10T_dalpha": 2.406095549635158
+   },
+   "extrapolated_to_failing_settings": [
+    {
+     "group": "log10T-minus",
+     "profile": "axis-stencil",
+     "log10_temperature_beyond_fold": 4.483261234700109e-06,
+     "extrapolated_passage_update": 289.367650459984
+    },
+    {
+     "group": "fraction-100",
+     "profile": "negative-axis-refinement",
+     "log10_temperature_beyond_fold": 4.483261234700109e-06,
+     "extrapolated_passage_update": 289.367650459984
+    }
+   ]
+  },
+  "write0_line_bare_inverse_square_root": {
+   "points": 5,
+   "intercept": -12.732042458437675,
+   "slope": 0.6332170535337873,
+   "residuals": [
+    0.11424295367494608,
+    0.9451265733436571,
+    -2.293533394283145,
+    0.7837638781931204,
+    0.45039998907137857
+   ],
+   "max_abs_residual": 2.293533394283145,
+   "ab_from_slope": 886.1291861096831
+  },
+  "write1_reaching_hold_unstable_orbit": [
+   {
+    "alpha_beyond_fold": 1.2067216936945124e-06,
+    "group": "fraction-050",
+    "profile": "negative-axis-refinement",
+    "measured": null,
+    "predicted": 197.81298954318203,
+    "requested_bit_stored": false
+   },
+   {
+    "alpha_beyond_fold": 3.7067216936970127e-06,
+    "group": "fraction-025",
+    "profile": "negative-axis-refinement",
+    "measured": 86.35190529406205,
+    "predicted": 104.36211548856997,
+    "requested_bit_stored": true
+   },
+   {
+    "alpha_beyond_fold": 6.206721693699513e-06,
+    "group": "nominal",
+    "profile": "axis-stencil",
+    "measured": 60.73608757470196,
+    "predicted": 76.34455699311518,
+    "requested_bit_stored": true
+   },
+   {
+    "alpha_beyond_fold": 1.6206721693695636e-05,
+    "group": "alpha-plus",
+    "profile": "axis-stencil",
+    "measured": 29.48740502466617,
+    "predicted": 40.66244199692832,
+    "requested_bit_stored": true
+   }
+  ],
+  "write0_reaching_hold_unstable_orbit": [
+   {
+    "log10_temperature_beyond_fold": 4.483261234700109e-06,
+    "group": "log10T-minus",
+    "profile": "axis-stencil",
+    "measured": null,
+    "requested_bit_stored": false
+   },
+   {
+    "log10_temperature_beyond_fold": 2.9483261234697355e-05,
+    "group": "fraction-075",
+    "profile": "negative-axis-refinement",
+    "measured": 94.8378750466871,
+    "requested_bit_stored": true
+   },
+   {
+    "log10_temperature_beyond_fold": 5.44832612346946e-05,
+    "group": "fraction-050",
+    "profile": "negative-axis-refinement",
+    "measured": 64.96688482976481,
+    "requested_bit_stored": true
+   },
+   {
+    "log10_temperature_beyond_fold": 7.948326123469185e-05,
+    "group": "fraction-025",
+    "profile": "negative-axis-refinement",
+    "measured": 51.15705066586721,
+    "requested_bit_stored": true
+   },
+   {
+    "log10_temperature_beyond_fold": 0.0001044832612346891,
+    "group": "nominal",
+    "profile": "axis-stencil",
+    "measured": 43.01474052865712,
+    "requested_bit_stored": true
+   },
+   {
+    "log10_temperature_beyond_fold": 0.00020448326123467808,
+    "group": "log10T-plus",
+    "profile": "axis-stencil",
+    "measured": 28.040280021147325,
+    "requested_bit_stored": true
+   }
+  ],
+  "write1_slowest_displacement_against_alpha": [
+   {
+    "phase": 0,
+    "settings_with_an_interior_minimum": 4,
+    "zero_crossing": 0.07298219729108946,
+    "zero_crossing_minus_independent_fold": -9.45188649377482e-06,
+    "slope": 2.4110345507015567,
+    "max_abs_residual_over_largest": 0.33273909397110224
+   },
+   {
+    "phase": 1,
+    "settings_with_an_interior_minimum": 4,
+    "zero_crossing": 0.07298106639305756,
+    "zero_crossing_minus_independent_fold": -1.0582784525675626e-05,
+    "slope": 6.646552787732406,
+    "max_abs_residual_over_largest": 0.3439495271919992
+   },
+   {
+    "phase": 2,
+    "settings_with_an_interior_minimum": 4,
+    "zero_crossing": 0.0729864767978681,
+    "zero_crossing_minus_independent_fold": -5.172379715132069e-06,
+    "slope": 8.398350359979068,
+    "max_abs_residual_over_largest": 0.21887460742022896
+   },
+   {
+    "phase": 3,
+    "settings_with_an_interior_minimum": 4,
+    "zero_crossing": 0.07299254036084377,
+    "zero_crossing_minus_independent_fold": 8.911832605346115e-07,
+    "slope": 10.060841438818073,
+    "max_abs_residual_over_largest": 0.1008769462438877
+   },
+   {
+    "phase": 4,
+    "settings_with_an_interior_minimum": 3,
+    "zero_crossing": 0.0729916464267116,
+    "zero_crossing_minus_independent_fold": -2.7508716277102607e-09,
+    "slope": 25.36015433235487,
+    "max_abs_residual_over_largest": 0.0003048795535843842
+   },
+   {
+    "phase": 5,
+    "settings_with_an_interior_minimum": 3,
+    "zero_crossing": 0.07299162986203915,
+    "zero_crossing_minus_independent_fold": -1.9315544080855673e-08,
+    "slope": 29.80893163098084,
+    "max_abs_residual_over_largest": 0.0007758884353079991
+   }
+  ],
+  "write0_slowest_displacement_against_log10_temperature": [
+   {
+    "phase": 0,
+    "settings_with_an_interior_minimum": 4,
+    "zero_crossing": -0.15361650753958322,
+    "zero_crossing_minus_independent_fold": -1.2024278348538031e-05,
+    "slope": 2.812947182760067,
+    "max_abs_residual_over_largest": 0.018925801551000418
+   },
+   {
+    "phase": 1,
+    "settings_with_an_interior_minimum": 5,
+    "zero_crossing": -0.15358461276777488,
+    "zero_crossing_minus_independent_fold": 1.987049345980596e-05,
+    "slope": 3.1344266382571493,
+    "max_abs_residual_over_largest": 0.09102194481963057
+   },
+   {
+    "phase": 2,
+    "settings_with_an_interior_minimum": 5,
+    "zero_crossing": -0.15368660338977122,
+    "zero_crossing_minus_independent_fold": -8.212012853653361e-05,
+    "slope": 1.4568637422966957,
+    "max_abs_residual_over_largest": 0.2245505892661004
+   },
+   {
+    "phase": 3,
+    "settings_with_an_interior_minimum": 5,
+    "zero_crossing": -0.1536871820169365,
+    "zero_crossing_minus_independent_fold": -8.269875570182661e-05,
+    "slope": 1.0960182604027284,
+    "max_abs_residual_over_largest": 0.2160937578493903
+   },
+   {
+    "phase": 4,
+    "settings_with_an_interior_minimum": 5,
+    "zero_crossing": -0.1537026574034818,
+    "zero_crossing_minus_independent_fold": -9.817414224710941e-05,
+    "slope": 2.691810897188649,
+    "max_abs_residual_over_largest": 0.2387695587145111
+   },
+   {
+    "phase": 5,
+    "settings_with_an_interior_minimum": 5,
+    "zero_crossing": -0.15362546110707978,
+    "zero_crossing_minus_independent_fold": -2.0977845845093768e-05,
+    "slope": 6.516633220590314,
+    "max_abs_residual_over_largest": 0.03658968172252361
+   }
+  ],
+  "write1_coefficient_from_bottleneck_curvature": [
+   {
+    "group": "fraction-050",
+    "profile": "negative-axis-refinement",
+    "alpha_beyond_fold": 1.2067216936945124e-06,
+    "ab_by_phase": [
+     6274.186441495988,
+     6283.316995261572,
+     6557.822462295181,
+     6463.331991305148,
+     6544.579807906167,
+     6292.6646417469665
+    ],
+    "ab_median": 6377.998316526057
+   },
+   {
+    "group": "fraction-025",
+    "profile": "negative-axis-refinement",
+    "alpha_beyond_fold": 3.7067216936970127e-06,
+    "ab_by_phase": [
+     6036.85627041927,
+     6744.67025238351,
+     6730.201665075008,
+     6441.828462563134,
+     6673.249766589259,
+     6763.636621995325
+    ],
+    "ab_median": 6701.725715832134
+   },
+   {
+    "group": "nominal",
+    "profile": "axis-stencil",
+    "alpha_beyond_fold": 6.206721693699513e-06,
+    "ab_by_phase": [
+     6116.042704902332,
+     6125.014059182664,
+     6448.595493857513,
+     290915.86542293284,
+     6276.356156001019,
+     6170.767835150889
+    ],
+    "ab_median": 6223.561995575954
+   },
+   {
+    "group": "alpha-plus",
+    "profile": "axis-stencil",
+    "alpha_beyond_fold": 1.6206721693695636e-05,
+    "ab_by_phase": [
+     412282.40632118937,
+     456384.331061732,
+     298186.16458746244,
+     17927.504406169686
+    ],
+    "ab_median": 355234.2854543259
+   }
+  ],
+  "write0_coefficient_from_bottleneck_curvature": [
+   {
+    "group": "fraction-075",
+    "profile": "negative-axis-refinement",
+    "log10_temperature_beyond_fold": 2.9483261234697355e-05,
+    "ab_by_phase": [
+     713.1913927824821,
+     873.2093427382316,
+     838.0551071437972,
+     735.839353584618,
+     734.59512503178,
+     720.9305333423168
+    ],
+    "ab_median": 735.2172393081989
+   },
+   {
+    "group": "fraction-050",
+    "profile": "negative-axis-refinement",
+    "log10_temperature_beyond_fold": 5.44832612346946e-05,
+    "ab_by_phase": [
+     508.19093746887285,
+     728.3143898895759,
+     712.9914992050542,
+     705.2083811564015,
+     704.731706161984,
+     710.2061211412641
+    ],
+    "ab_median": 707.7072511488328
+   },
+   {
+    "group": "fraction-025",
+    "profile": "negative-axis-refinement",
+    "log10_temperature_beyond_fold": 7.948326123469185e-05,
+    "ab_by_phase": [
+     452.00625669851394,
+     29749.603893727606,
+     1637.4882288566166,
+     1060.906280645624,
+     587.0473904339648,
+     527.9161265063462
+    ],
+    "ab_median": 823.9768355397944
+   },
+   {
+    "group": "nominal",
+    "profile": "axis-stencil",
+    "log10_temperature_beyond_fold": 0.0001044832612346891,
+    "ab_by_phase": [
+     295.2883882271892,
+     13743.789613372011,
+     911.3367370087309,
+     795.878866943224,
+     523.9444573771513,
+     485.7029778536572
+    ],
+    "ab_median": 659.9116621601877
+   },
+   {
+    "group": "log10T-plus",
+    "profile": "axis-stencil",
+    "log10_temperature_beyond_fold": 0.00020448326123467808,
+    "ab_by_phase": [
+     2450.361063358851,
+     16213.441103801844,
+     15828.110993566008,
+     17512.07247968962,
+     353.5501357101058
+    ],
+    "ab_median": 15828.110993566008
+   }
+  ]
+ },
+ "continuations": [
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run",
+   "requested_bit": 0,
+   "origin_cycle": 1,
+   "origin_phases": [
+    0,
+    1
+   ],
+   "design": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run/design.json",
+    "bytes": 6405,
+    "sha256": "b8e74fd8fe86e06f448585f133efee1f73434918c8743e5c6f62037cc9c5daef"
+   },
+   "result": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run/result.json",
+    "bytes": 1397690,
+    "sha256": "6f9f7bae6f2891dd33b7dab58bc723bad91595559aa3cc54da7e8d5b6bfd6fe2"
+   },
+   "stage_files": {
+    "files": 76,
+    "bytes": 30541183,
+    "sha256_of_names_and_file_digests": "f82ace8ea85a2cea1d3cd1544af3874e9406ee08d62a39d0c7979344cfcb34f5"
+   },
+   "arms": [
+    {
+     "name": "continue-perturbed-endpoint",
+     "controls": {
+      "alpha": 0.07293697809562831,
+      "log10_temperature": -0.1536
+     },
+     "lanes": [
+      {
+       "origin_phase": 0,
+       "coordinate_at_start": 0.40287932998131926,
+       "passage_update_within_this_stage": null,
+       "final_nearest_cycle": 1,
+       "final_distance_to_that_cycle": 7.463540247983507e-12,
+       "requested_bit_stored": false,
+       "tail": {
+        "coordinate_at_end": 0.29372545993882493,
+        "coordinate_one_period_earlier": 0.30598751759775095,
+        "coordinate_largest": 0.808038678553791,
+        "coordinate_smallest": 0.29372545993882493,
+        "last_four_displacements_same_phase": [
+         4.354788445721901e-05,
+         4.9478954801297436e-05,
+         5.684704730686715e-05,
+         6.608150650891094e-05
+        ],
+        "ratios": [
+         1.1361965206347748,
+         1.1489136651159921,
+         1.1624439551309511
+        ]
+       },
+       "bottleneck_by_phase": [
+        {
+         "phase": 0,
+         "samples": 20,
+         "update_at_minimum": 0,
+         "minimum": 1.7783832879048677e-05,
+         "interior": false,
+         "first": 1.7783832879048677e-05,
+         "last": 6.608150650891094e-05
+        },
+        {
+         "phase": 1,
+         "samples": 19,
+         "update_at_minimum": 1,
+         "minimum": 1.1463315738759311e-05,
+         "interior": false,
+         "first": 1.1463315738759311e-05,
+         "last": 5.446829370426722e-05
+        },
+        {
+         "phase": 2,
+         "samples": 19,
+         "update_at_minimum": 2,
+         "minimum": 1.585211462357618e-05,
+         "interior": false,
+         "first": 1.585211462357618e-05,
+         "last": 7.293341347312457e-05
+        },
+        {
+         "phase": 3,
+         "samples": 19,
+         "update_at_minimum": 3,
+         "minimum": 1.2057648302671243e-05,
+         "interior": false,
+         "first": 1.2057648302671243e-05,
+         "last": 5.4356259869498776e-05
+        },
+        {
+         "phase": 4,
+         "samples": 19,
+         "update_at_minimum": 4,
+         "minimum": 3.288649208880539e-05,
+         "interior": false,
+         "first": 3.288649208880539e-05,
+         "last": 0.00014801909593664266
+        },
+        {
+         "phase": 5,
+         "samples": 19,
+         "update_at_minimum": 5,
+         "minimum": 4.381273390109172e-05,
+         "interior": false,
+         "first": 4.381273390109172e-05,
+         "last": 0.0001741954540740418
+        }
+       ],
+       "start_minus_pilot_state_after_120_updates_max_abs": 0.0,
+       "joined_240_updates_at_this_endpoint": {
+        "passage_update": {
+         "0.25": null,
+         "0.5": null,
+         "0.75": null
+        },
+        "update_reaching_hold_unstable_orbit": null,
+        "coordinate_at_updates_60_120_180_240": [
+         0.44019901971649034,
+         0.40287932998131926,
+         0.36749048948590013,
+         0.29372545993882493
+        ],
+        "bottleneck_by_phase": [
+         {
+          "phase": 0,
+          "samples": 40,
+          "update_at_minimum": 120,
+          "minimum": 1.7783832879048677e-05,
+          "interior": true,
+          "first": 0.0009605216714745784,
+          "last": 6.608150650891094e-05,
+          "minimum_interpolated": 1.7782548322303273e-05,
+          "relative_curvature_per_period_squared": 0.003458998483043774
+         },
+         {
+          "phase": 1,
+          "samples": 39,
+          "update_at_minimum": 109,
+          "minimum": 1.1332892266120028e-05,
+          "interior": true,
+          "first": 0.0012163780608994707,
+          "last": 5.446829370426722e-05,
+          "minimum_interpolated": 1.1331484649656879e-05,
+          "relative_curvature_per_period_squared": 0.003559608961394797
+         },
+         {
+          "phase": 2,
+          "samples": 39,
+          "update_at_minimum": 110,
+          "minimum": 1.5688581812764134e-05,
+          "interior": true,
+          "first": 0.00199145252398952,
+          "last": 7.293341347312457e-05,
+          "minimum_interpolated": 1.56848732728974e-05,
+          "relative_curvature_per_period_squared": 0.0035421431324953903
+         },
+         {
+          "phase": 3,
+          "samples": 39,
+          "update_at_minimum": 111,
+          "minimum": 1.1947902090597406e-05,
+          "interior": true,
+          "first": 0.0015437714483754075,
+          "last": 5.4356259869498776e-05,
+          "minimum_interpolated": 1.1942857686220347e-05,
+          "relative_curvature_per_period_squared": 0.0035459674738585593
+         },
+         {
+          "phase": 4,
+          "samples": 39,
+          "update_at_minimum": 112,
+          "minimum": 3.258940050133534e-05,
+          "interior": true,
+          "first": 0.0042735385900462665,
+          "last": 0.00014801909593664266,
+          "minimum_interpolated": 3.2575265975642e-05,
+          "relative_curvature_per_period_squared": 0.003545388678021331
+         },
+         {
+          "phase": 5,
+          "samples": 39,
+          "update_at_minimum": 119,
+          "minimum": 4.362696188442257e-05,
+          "interior": true,
+          "first": 0.007979847723593588,
+          "last": 0.0001741954540740418,
+          "minimum_interpolated": 4.3625012012463144e-05,
+          "relative_curvature_per_period_squared": 0.003470663776527235
+         }
+        ],
+        "tail": {
+         "coordinate_at_end": 0.29372545993882493,
+         "coordinate_one_period_earlier": 0.30598751759775095,
+         "coordinate_largest": 1.1177164607756445,
+         "coordinate_smallest": 0.29372545993882493,
+         "last_four_displacements_same_phase": [
+          4.354788445721901e-05,
+          4.9478954801297436e-05,
+          5.684704730686715e-05,
+          6.608150650891094e-05
+         ],
+         "ratios": [
+          1.1361965206347748,
+          1.1489136651159921,
+          1.1624439551309511
+         ]
+        }
+       }
+      },
+      {
+       "origin_phase": 1,
+       "coordinate_at_start": 0.8072118585749476,
+       "passage_update_within_this_stage": null,
+       "final_nearest_cycle": 1,
+       "final_distance_to_that_cycle": 1.0985275718953403e-12,
+       "requested_bit_stored": false,
+       "tail": {
+        "coordinate_at_end": 0.7431765737812024,
+        "coordinate_one_period_earlier": 0.7524172615235729,
+        "coordinate_largest": 0.8058267859384509,
+        "coordinate_smallest": 0.28527646028443865,
+        "last_four_displacements_same_phase": [
+         4.236124134394023e-05,
+         5.053950377659014e-05,
+         6.142506586747192e-05,
+         7.624707097136689e-05
+        ],
+        "ratios": [
+         1.19306002782706,
+         1.2153871976860202,
+         1.2413022256398436
+        ]
+       },
+       "bottleneck_by_phase": [
+        {
+         "phase": 0,
+         "samples": 20,
+         "update_at_minimum": 0,
+         "minimum": 1.1566092630095982e-05,
+         "interior": false,
+         "first": 1.1566092630095982e-05,
+         "last": 7.624707097136689e-05
+        },
+        {
+         "phase": 1,
+         "samples": 19,
+         "update_at_minimum": 1,
+         "minimum": 1.5988546247261427e-05,
+         "interior": false,
+         "first": 1.5988546247261427e-05,
+         "last": 8.194579990626476e-05
+        },
+        {
+         "phase": 2,
+         "samples": 19,
+         "update_at_minimum": 2,
+         "minimum": 1.215688764585177e-05,
+         "interior": false,
+         "first": 1.215688764585177e-05,
+         "last": 6.095984855625798e-05
+        },
+        {
+         "phase": 3,
+         "samples": 19,
+         "update_at_minimum": 3,
+         "minimum": 3.3156431392538735e-05,
+         "interior": false,
+         "first": 3.3156431392538735e-05,
+         "last": 0.00016597643371960832
+        },
+        {
+         "phase": 4,
+         "samples": 19,
+         "update_at_minimum": 4,
+         "minimum": 4.4071184590174375e-05,
+         "interior": false,
+         "first": 4.4071184590174375e-05,
+         "last": 0.0001932947526542815
+        },
+        {
+         "phase": 5,
+         "samples": 19,
+         "update_at_minimum": 5,
+         "minimum": 1.79130076044519e-05,
+         "interior": false,
+         "first": 1.79130076044519e-05,
+         "last": 7.279904509788092e-05
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "restore-nominal-endpoint",
+     "controls": {
+      "alpha": 0.07293697809562831,
+      "log10_temperature": -0.1535
+     },
+     "lanes": [
+      {
+       "origin_phase": 0,
+       "coordinate_at_start": 0.40287932998131926,
+       "passage_update_within_this_stage": 44,
+       "final_nearest_cycle": 0,
+       "final_distance_to_that_cycle": 1.1423946708362373e-14,
+       "requested_bit_stored": true,
+       "tail": {
+        "coordinate_at_end": 0.02201042648134858,
+        "coordinate_one_period_earlier": 0.022010324550245045,
+        "coordinate_largest": 0.8042689701736336,
+        "coordinate_smallest": 0.0038856851603898995,
+        "last_four_displacements_same_phase": [
+         1.625738191063456e-07,
+         6.999907027127672e-08,
+         3.0145111395872946e-08,
+         1.2980920298907774e-08
+        ],
+        "ratios": [
+         0.43056791466212474,
+         0.4306501683386305,
+         0.4306144412086977
+        ]
+       },
+       "bottleneck_by_phase": [
+        {
+         "phase": 0,
+         "samples": 20,
+         "update_at_minimum": 114,
+         "minimum": 1.2980920298907774e-08,
+         "interior": false,
+         "first": 0.00018131870692616068,
+         "last": 1.2980920298907774e-08
+        },
+        {
+         "phase": 1,
+         "samples": 19,
+         "update_at_minimum": 109,
+         "minimum": 8.643038764099987e-08,
+         "interior": false,
+         "first": 0.00022204741575591907,
+         "last": 8.643038764099987e-08
+        },
+        {
+         "phase": 2,
+         "samples": 19,
+         "update_at_minimum": 110,
+         "minimum": 6.927695534612752e-08,
+         "interior": false,
+         "first": 0.0003579766300981595,
+         "last": 6.927695534612752e-08
+        },
+        {
+         "phase": 3,
+         "samples": 19,
+         "update_at_minimum": 111,
+         "minimum": 1.8973805039758965e-08,
+         "interior": false,
+         "first": 0.00027175962572426336,
+         "last": 1.8973805039758965e-08
+        },
+        {
+         "phase": 4,
+         "samples": 19,
+         "update_at_minimum": 112,
+         "minimum": 3.040384668642543e-08,
+         "interior": false,
+         "first": 0.0007418397628346327,
+         "last": 3.040384668642543e-08
+        },
+        {
+         "phase": 5,
+         "samples": 19,
+         "update_at_minimum": 113,
+         "minimum": 3.9401660756017055e-08,
+         "interior": false,
+         "first": 0.0009713688978599054,
+         "last": 3.9401660756017055e-08
+        }
+       ]
+      },
+      {
+       "origin_phase": 1,
+       "coordinate_at_start": 0.8072118585749476,
+       "passage_update_within_this_stage": 43,
+       "final_nearest_cycle": 0,
+       "final_distance_to_that_cycle": 2.886054177247461e-15,
+       "requested_bit_stored": true,
+       "tail": {
+        "coordinate_at_end": 0.02167399863531459,
+        "coordinate_one_period_earlier": 0.02166921672558598,
+        "coordinate_largest": 0.7773261415967063,
+        "coordinate_smallest": 0.003817504911158865,
+        "last_four_displacements_same_phase": [
+         4.978123669038478e-07,
+         2.1433954982797537e-07,
+         9.23058118530149e-08,
+         3.974816921655811e-08
+        ],
+        "ratios": [
+         0.43056292707443916,
+         0.430652261456636,
+         0.4306139388043295
+        ]
+       },
+       "bottleneck_by_phase": [
+        {
+         "phase": 0,
+         "samples": 20,
+         "update_at_minimum": 114,
+         "minimum": 3.974816921655811e-08,
+         "interior": false,
+         "first": 0.0002539056858492161,
+         "last": 3.974816921655811e-08
+        },
+        {
+         "phase": 1,
+         "samples": 19,
+         "update_at_minimum": 109,
+         "minimum": 7.398630178612617e-08,
+         "interior": false,
+         "first": 0.0003624495334930593,
+         "last": 7.398630178612617e-08
+        },
+        {
+         "phase": 2,
+         "samples": 19,
+         "update_at_minimum": 110,
+         "minimum": 2.026361178678396e-08,
+         "interior": false,
+         "first": 0.00027538430194283146,
+         "last": 2.026361178678396e-08
+        },
+        {
+         "phase": 3,
+         "samples": 19,
+         "update_at_minimum": 111,
+         "minimum": 3.247063826810249e-08,
+         "interior": false,
+         "first": 0.0007363250344330642,
+         "last": 3.247063826810249e-08
+        },
+        {
+         "phase": 4,
+         "samples": 19,
+         "update_at_minimum": 112,
+         "minimum": 4.208010849830217e-08,
+         "interior": false,
+         "first": 0.0009662749255083765,
+         "last": 4.208010849830217e-08
+        },
+        {
+         "phase": 5,
+         "samples": 19,
+         "update_at_minimum": 113,
+         "minimum": 1.3863337241776934e-08,
+         "interior": false,
+         "first": 0.00039040443740654627,
+         "last": 1.3863337241776934e-08
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run",
+   "requested_bit": 1,
+   "origin_cycle": 0,
+   "origin_phases": [
+    0,
+    1
+   ],
+   "design": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run/design.json",
+    "bytes": 6456,
+    "sha256": "a1cf545051e811f60d8a982b42721a6cc06a0cdce8d2e30d4a8fd19a38e764b5"
+   },
+   "result": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run/result.json",
+    "bytes": 1397830,
+    "sha256": "df4ebd758a13291de0558d7fa702d08f884c19a83c7e36746d5f1dc5aebef145"
+   },
+   "stage_files": {
+    "files": 76,
+    "bytes": 30326487,
+    "sha256_of_names_and_file_digests": "99531ab0f276e7e211c198c27def624c23ef78b022cb52cda34f95008dc1424e"
+   },
+   "arms": [
+    {
+     "name": "continue-perturbed-endpoint",
+     "controls": {
+      "alpha": 0.07298785589927693,
+      "log10_temperature": -0.15395151820007266
+     },
+     "lanes": [
+      {
+       "origin_phase": 0,
+       "coordinate_at_start": 0.02192789634491235,
+       "passage_update_within_this_stage": null,
+       "final_nearest_cycle": 0,
+       "final_distance_to_that_cycle": 1.006132056395756e-15,
+       "requested_bit_stored": false,
+       "tail": {
+        "coordinate_at_end": 0.021927841650181776,
+        "coordinate_one_period_earlier": 0.021927841657898822,
+        "coordinate_largest": 0.22849138974509206,
+        "coordinate_smallest": 0.021927841650181776,
+        "last_four_displacements_same_phase": [
+         2.2291959337018644e-12,
+         1.4806445271056662e-12,
+         9.906026780444459e-13,
+         6.580267598521181e-13
+        ],
+        "ratios": [
+         0.6642056468526152,
+         0.6690347749981934,
+         0.6642691105490773
+        ]
+       },
+       "bottleneck_by_phase": [
+        {
+         "phase": 0,
+         "samples": 20,
+         "update_at_minimum": 114,
+         "minimum": 6.580267598521181e-13,
+         "interior": false,
+         "first": 1.522198428986427e-09,
+         "last": 6.580267598521181e-13
+        },
+        {
+         "phase": 1,
+         "samples": 19,
+         "update_at_minimum": 109,
+         "minimum": 2.8515152671088606e-12,
+         "interior": false,
+         "first": 4.386039770219739e-09,
+         "last": 2.8515152671088606e-12
+        },
+        {
+         "phase": 2,
+         "samples": 19,
+         "update_at_minimum": 110,
+         "minimum": 2.0409339999141737e-12,
+         "interior": false,
+         "first": 3.1412262469227727e-09,
+         "last": 2.0409339999141737e-12
+        },
+        {
+         "phase": 3,
+         "samples": 19,
+         "update_at_minimum": 111,
+         "minimum": 5.242163330161304e-13,
+         "interior": false,
+         "first": 8.09162103764452e-10,
+         "last": 5.242163330161304e-13
+        },
+        {
+         "phase": 4,
+         "samples": 19,
+         "update_at_minimum": 112,
+         "minimum": 1.6240253269755872e-12,
+         "interior": false,
+         "first": 2.5025511178769262e-09,
+         "last": 1.6240253269755872e-12
+        },
+        {
+         "phase": 5,
+         "samples": 19,
+         "update_at_minimum": 113,
+         "minimum": 2.0600825587468256e-12,
+         "interior": false,
+         "first": 3.175115355361511e-09,
+         "last": 2.0600825587468256e-12
+        }
+       ],
+       "start_minus_pilot_state_after_120_updates_max_abs": 0.0,
+       "joined_240_updates_at_this_endpoint": {
+        "passage_update": {
+         "0.25": null,
+         "0.5": null,
+         "0.75": null
+        },
+        "update_reaching_hold_unstable_orbit": null,
+        "coordinate_at_updates_60_120_180_240": [
+         0.021931071124281405,
+         0.02192789634491235,
+         0.02192784256132409,
+         0.021927841650181776
+        ],
+        "bottleneck_by_phase": [
+         {
+          "phase": 0,
+          "samples": 40,
+          "update_at_minimum": 234,
+          "minimum": 6.580267598521181e-13,
+          "interior": false,
+          "first": 0.0006550323172079495,
+          "last": 6.580267598521181e-13
+         },
+         {
+          "phase": 1,
+          "samples": 39,
+          "update_at_minimum": 229,
+          "minimum": 2.8515152671088606e-12,
+          "interior": false,
+          "first": 0.0020179063255588185,
+          "last": 2.8515152671088606e-12
+         },
+         {
+          "phase": 2,
+          "samples": 39,
+          "update_at_minimum": 230,
+          "minimum": 2.0409339999141737e-12,
+          "interior": false,
+          "first": 0.0014442721433505835,
+          "last": 2.0409339999141737e-12
+         },
+         {
+          "phase": 3,
+          "samples": 39,
+          "update_at_minimum": 231,
+          "minimum": 5.242163330161304e-13,
+          "interior": false,
+          "first": 0.0001935359980842357,
+          "last": 5.242163330161304e-13
+         },
+         {
+          "phase": 4,
+          "samples": 39,
+          "update_at_minimum": 232,
+          "minimum": 1.6240253269755872e-12,
+          "interior": false,
+          "first": 4.473655158366622e-05,
+          "last": 1.6240253269755872e-12
+         },
+         {
+          "phase": 5,
+          "samples": 39,
+          "update_at_minimum": 233,
+          "minimum": 2.0600825587468256e-12,
+          "interior": false,
+          "first": 1.7879068217274114e-05,
+          "last": 2.0600825587468256e-12
+         }
+        ],
+        "tail": {
+         "coordinate_at_end": 0.021927841650181776,
+         "coordinate_one_period_earlier": 0.021927841657898822,
+         "coordinate_largest": 0.23209332829395826,
+         "coordinate_smallest": -0.011239117283149651,
+         "last_four_displacements_same_phase": [
+          2.2291959337018644e-12,
+          1.4806445271056662e-12,
+          9.906026780444459e-13,
+          6.580267598521181e-13
+         ],
+         "ratios": [
+          0.6642056468526152,
+          0.6690347749981934,
+          0.6642691105490773
+         ]
+        }
+       }
+      },
+      {
+       "origin_phase": 1,
+       "coordinate_at_start": 0.22847070018793475,
+       "passage_update_within_this_stage": null,
+       "final_nearest_cycle": 0,
+       "final_distance_to_that_cycle": 1.611527986690049e-14,
+       "requested_bit_stored": false,
+       "tail": {
+        "coordinate_at_end": 0.228489807326042,
+        "coordinate_one_period_earlier": 0.22848980456764223,
+        "coordinate_largest": 0.228489807326042,
+        "coordinate_smallest": 0.021927400681527216,
+        "last_four_displacements_same_phase": [
+         7.790084844230477e-11,
+         5.182358903314078e-11,
+         3.445572187303463e-11,
+         2.2909031113037986e-11
+        ],
+        "ratios": [
+         0.6652506367953434,
+         0.6648656049468219,
+         0.6648832143890391
+        ]
+       },
+       "bottleneck_by_phase": [
+        {
+         "phase": 0,
+         "samples": 20,
+         "update_at_minimum": 114,
+         "minimum": 2.2909031113037986e-11,
+         "interior": false,
+         "first": 5.316749708821135e-08,
+         "last": 2.2909031113037986e-11
+        },
+        {
+         "phase": 1,
+         "samples": 19,
+         "update_at_minimum": 109,
+         "minimum": 2.4678596422469175e-11,
+         "interior": false,
+         "first": 3.8077591965211365e-08,
+         "last": 2.4678596422469175e-11
+        },
+        {
+         "phase": 2,
+         "samples": 19,
+         "update_at_minimum": 110,
+         "minimum": 6.355398471183579e-12,
+         "interior": false,
+         "first": 9.807231654715906e-09,
+         "last": 6.355398471183579e-12
+        },
+        {
+         "phase": 3,
+         "samples": 19,
+         "update_at_minimum": 111,
+         "minimum": 1.9657113998442614e-11,
+         "interior": false,
+         "first": 3.033195459885419e-08,
+         "last": 1.9657113998442614e-11
+        },
+        {
+         "phase": 4,
+         "samples": 19,
+         "update_at_minimum": 112,
+         "minimum": 2.4940101164289463e-11,
+         "interior": false,
+         "first": 3.8484045262409874e-08,
+         "last": 2.4940101164289463e-11
+        },
+        {
+         "phase": 5,
+         "samples": 19,
+         "update_at_minimum": 113,
+         "minimum": 7.95132238857321e-12,
+         "interior": false,
+         "first": 1.2271083275532454e-08,
+         "last": 7.95132238857321e-12
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "name": "restore-nominal-endpoint",
+     "controls": {
+      "alpha": 0.07299785589927693,
+      "log10_temperature": -0.15395151820007266
+     },
+     "lanes": [
+      {
+       "origin_phase": 0,
+       "coordinate_at_start": 0.02192789634491235,
+       "passage_update_within_this_stage": 79,
+       "final_nearest_cycle": 1,
+       "final_distance_to_that_cycle": 4.930085392523985e-13,
+       "requested_bit_stored": true,
+       "tail": {
+        "coordinate_at_end": 1.011430644416191,
+        "coordinate_one_period_earlier": 1.2038486674369562,
+        "coordinate_largest": 1.2548616715852652,
+        "coordinate_smallest": 0.028603625741740822,
+        "last_four_displacements_same_phase": [
+         0.0017710618181112814,
+         0.001537859557065996,
+         0.0014023878303524432,
+         0.0012526611878991623
+        ],
+        "ratios": [
+         0.868326300832356,
+         0.9119089086574249,
+         0.8932344967542594
+        ]
+       },
+       "bottleneck_by_phase": [
+        {
+         "phase": 0,
+         "samples": 20,
+         "update_at_minimum": 18,
+         "minimum": 5.673933624948942e-05,
+         "interior": true,
+         "first": 0.00010157430057934802,
+         "last": 0.0012526611878991623,
+         "minimum_interpolated": 5.6525198730274314e-05,
+         "relative_curvature_per_period_squared": 0.04099603343441111
+        },
+        {
+         "phase": 1,
+         "samples": 19,
+         "update_at_minimum": 19,
+         "minimum": 0.0001702167552862665,
+         "interior": true,
+         "first": 0.00032404684689461556,
+         "last": 0.0004910576280037894,
+         "minimum_interpolated": 0.00016996110480727204,
+         "relative_curvature_per_period_squared": 0.04052904807785189
+        },
+        {
+         "phase": 2,
+         "samples": 19,
+         "update_at_minimum": 20,
+         "minimum": 0.00013211104869802721,
+         "interior": true,
+         "first": 0.00022685959530670578,
+         "last": 0.0005670289422256969,
+         "minimum_interpolated": 0.00013203550490000865,
+         "relative_curvature_per_period_squared": 0.04130667630758272
+        },
+        {
+         "phase": 3,
+         "samples": 19,
+         "update_at_minimum": 15,
+         "minimum": 5.393978647087544e-05,
+         "interior": true,
+         "first": 6.14052654462014e-05,
+         "last": 0.0004191231332324052,
+         "minimum_interpolated": 5.3833914703667455e-05,
+         "relative_curvature_per_period_squared": 0.038619637088304674
+        },
+        {
+         "phase": 4,
+         "samples": 19,
+         "update_at_minimum": 16,
+         "minimum": 0.0001574606898596432,
+         "interior": true,
+         "first": 0.00018786984582683678,
+         "last": 0.001182497520832961,
+         "minimum_interpolated": 0.00015745242519367845,
+         "relative_curvature_per_period_squared": 0.0405474113982385
+        },
+        {
+         "phase": 5,
+         "samples": 19,
+         "update_at_minimum": 17,
+         "minimum": 0.00018561317513654012,
+         "interior": true,
+         "first": 0.00022936799681488564,
+         "last": 0.00259160912497174,
+         "minimum_interpolated": 0.0001853775294804826,
+         "relative_curvature_per_period_squared": 0.0407899604553455
+        }
+       ]
+      },
+      {
+       "origin_phase": 1,
+       "coordinate_at_start": 0.22847070018793475,
+       "passage_update_within_this_stage": 84,
+       "final_nearest_cycle": 1,
+       "final_distance_to_that_cycle": 9.382526557021153e-13,
+       "requested_bit_stored": true,
+       "tail": {
+        "coordinate_at_end": 0.9566813014858339,
+        "coordinate_one_period_earlier": 0.9791776306766552,
+        "coordinate_largest": 1.1742801282450364,
+        "coordinate_smallest": 0.02782689710535103,
+        "last_four_displacements_same_phase": [
+         0.00030467150165477453,
+         0.00028036293710819127,
+         0.0002604348264846985,
+         0.00024049664474097524
+        ],
+        "ratios": [
+         0.9202138552028818,
+         0.9289203101200121,
+         0.9234427207265435
+        ]
+       },
+       "bottleneck_by_phase": [
+        {
+         "phase": 0,
+         "samples": 20,
+         "update_at_minimum": 0,
+         "minimum": 0.0001228054212417467,
+         "interior": false,
+         "first": 0.0001228054212417467,
+         "last": 0.00024049664474097524
+        },
+        {
+         "phase": 1,
+         "samples": 19,
+         "update_at_minimum": 25,
+         "minimum": 0.000133041614408801,
+         "interior": true,
+         "first": 0.00013564834343929012,
+         "last": 0.00030456674705811186,
+         "minimum_interpolated": 0.00013204972172523713,
+         "relative_curvature_per_period_squared": 0.040058018865682665
+        },
+        {
+         "phase": 2,
+         "samples": 19,
+         "update_at_minimum": 14,
+         "minimum": 5.42644824419685e-05,
+         "interior": true,
+         "first": 7.615541190083694e-05,
+         "last": 0.00022558465452610218,
+         "minimum_interpolated": 5.372915613598224e-05,
+         "relative_curvature_per_period_squared": 0.0454700144830607
+        },
+        {
+         "phase": 3,
+         "samples": 19,
+         "update_at_minimum": 21,
+         "minimum": 0.0001582519406212984,
+         "interior": true,
+         "first": 0.00022450359456291217,
+         "last": 0.0006361357145057795,
+         "minimum_interpolated": 0.00015749817471241736,
+         "relative_curvature_per_period_squared": 0.039019763366128356
+        },
+        {
+         "phase": 4,
+         "samples": 19,
+         "update_at_minimum": 22,
+         "minimum": 0.0001856340099131964,
+         "interior": true,
+         "first": 0.00027928054729134015,
+         "last": 0.0013939791460824648,
+         "minimum_interpolated": 0.00018551474477604386,
+         "relative_curvature_per_period_squared": 0.03844570413103328
+        },
+        {
+         "phase": 5,
+         "samples": 19,
+         "update_at_minimum": 23,
+         "minimum": 5.6577060516598965e-05,
+         "interior": true,
+         "first": 8.865290831585884e-05,
+         "last": 0.0006737777500075675,
+         "minimum_interpolated": 5.657693780464553e-05,
+         "relative_curvature_per_period_squared": 0.038171841204444966
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "runs": [
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "design": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run/design.json",
+    "bytes": 8751,
+    "sha256": "3459ec225733a702eed72755e4f8282c8aed4f13371b151fd17b8cd153a14ec5"
+   },
+   "result": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run/result.json",
+    "bytes": 3363027,
+    "sha256": "2b900232eb24a5f2db277920e6abcd8e48af335dc5e6b8a9f02ef3cbedf3a1d8"
+   },
+   "manifest": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run/manifest.json",
+    "bytes": 39130,
+    "sha256": "56f2f62328f898ed56f7ff6b77868c1aade77b66a0604c66d0fbbf8b300d3207"
+   },
+   "stage_files": {
+    "files": 190,
+    "bytes": 74787791,
+    "sha256_of_names_and_file_digests": "1e1538dbb3f0393cf2e38df2f276f1f72c17524ed92ab8c53ce4d5804258019a"
+   }
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "design": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run/design.json",
+    "bytes": 8882,
+    "sha256": "6f6b80e7cb711363da984a32d1415c91300a9ac5da45cccc39201b7678a5a781"
+   },
+   "result": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run/result.json",
+    "bytes": 3363426,
+    "sha256": "c2de76f412a9e30ea08425a481efff07d6015f99a5fd644a18433ad48758d264"
+   },
+   "manifest": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run/manifest.json",
+    "bytes": 39130,
+    "sha256": "a5b2890416398d0c470ffeb23887255e9fa434976e252b1654ca994797c76c6a"
+   },
+   "stage_files": {
+    "files": 190,
+    "bytes": 76625673,
+    "sha256_of_names_and_file_digests": "693241e30c92f15d27effbe562751250bae6d59dd97d012a24f285d20146ce97"
+   }
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "design": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run/design.json",
+    "bytes": 9817,
+    "sha256": "ba5052aeba9060447263780b723873bc0502bd122bc012a5e800f7407db58ac2"
+   },
+   "result": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run/result.json",
+    "bytes": 3449931,
+    "sha256": "56226b9079053734ce65101ee092ba18485e70058ac30ebe9f430ad7823af6ba"
+   },
+   "manifest": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run/manifest.json",
+    "bytes": 39131,
+    "sha256": "f02b3ac04573c74a3f8f90a3c94f337cf77f3c3ea5798c32452c83c9ef0de87f"
+   },
+   "stage_files": {
+    "files": 190,
+    "bytes": 75322642,
+    "sha256_of_names_and_file_digests": "e7a78ddbcf706914ddd4e7c9ed2807247f43bfac3837d92c2f18e3935f95b7af"
+   }
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "design": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run/design.json",
+    "bytes": 9941,
+    "sha256": "8312305cea853622c9b8b63d42862e78343e8acb810e5be2f488b8320576064c"
+   },
+   "result": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run/result.json",
+    "bytes": 3450328,
+    "sha256": "9d6198dec6cade3972c22d0b35edbdbd9fed87615fcd9acf68bc742549e4cc5b"
+   },
+   "manifest": {
+    "path": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run/manifest.json",
+    "bytes": 39131,
+    "sha256": "767b0e51385be310b1d40975a9a92d849d702d89b477e9b2fb73ebfd568a9dc6"
+   },
+   "stage_files": {
+    "files": 190,
+    "bytes": 77181778,
+    "sha256_of_names_and_file_digests": "e4ada9d52f9eb1d2a9f019f1ef91cc8e3bff10e392098f9094f2ebed1bd5ddad"
+   }
+  }
+ ],
+ "scope": "Saved trajectories of fixed pilot grids from one model at one hold. The write-1 predictions use a coefficient taken from the companion study's multipliers near the fold; the nominal write-1 passage was already known approximately when the method was fixed. The write-0 line is a two-parameter fit. Not a located bifurcation beyond the receipts named in the plan, not a basin, not a reliability estimate."
+}

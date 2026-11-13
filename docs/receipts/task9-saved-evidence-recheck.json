@@ -1,0 +1,84 @@
+{
+ "kind": "task9-saved-evidence-recheck",
+ "utc": "2026-11-13T03:13:10Z",
+ "model_calls": 0,
+ "comparison": "each output against its committed receipt, ignoring timestamps, source commit and script hashes",
+ "working_tree": "624d30a85b27b43f7f7df23d4bfdc18b8c227820 plus the uncommitted Task 8/9 repairs pinned in comms",
+ "runs": [
+  {
+   "analysis": "public-register-branch",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/analyze_public_register_branch.py --branch-dir /data2/neural-shrimp-data/explore/llm-soft-loop/pod64/kite/kite-la-branch --xor-run /archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run --write-run /archive/shrimp-memory-data/audits/public-note-byte/20261110T234809Z/threshold/run-2 --output OUT",
+   "outcome": "identical"
+  },
+  {
+   "analysis": "public-toggle-mechanism",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/analyze_public_toggle_mechanism.py --branch-dir /data2/neural-shrimp-data/explore/llm-soft-loop/pod64/kite/kite-la-branch --reference /archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run/reference-cycles.npz --check-root /archive/shrimp-memory-data/audits/public-toggle-check/20261110T003500Z-pod-returned --sweep-root /archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/returned-pod --output OUT",
+   "outcome": "identical"
+  },
+  {
+   "analysis": "public-toggle-timing",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/analyze_public_toggle_timing.py --branch-dir /data2/neural-shrimp-data/explore/llm-soft-loop/pod64/kite/kite-la-branch --reference /archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run/reference-cycles.npz --sweep-root /archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/returned-pod --timing-root /archive/shrimp-memory-data/audits/public-toggle-timing/20261111T215842Z-local --output OUT",
+   "outcome": "identical"
+  },
+  {
+   "analysis": "public-toggle-fold",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/analyze_public_toggle_fold.py --check-root /archive/shrimp-memory-data/audits/public-toggle-check/20261110T003500Z-pod-returned --sweep-root /archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/returned-pod --mechanism-receipt docs/receipts/public-toggle-mechanism.json --output OUT",
+   "outcome": "identical in F1, F2, F3, F5, F5b, F6 and traces"
+  },
+  {
+   "analysis": "public-toggle-offset",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/analyze_public_toggle_offset.py --run /archive/shrimp-memory-data/audits/public-toggle-offset/20261112T020802Z-local --check-root /archive/shrimp-memory-data/audits/public-toggle-check/20261110T003500Z-pod-returned --sweep-root /archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/returned-pod --output OUT",
+   "outcome": "identical"
+  },
+  {
+   "analysis": "public-toggle-offset-readout",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/analyze_public_toggle_offset_readout.py --run /archive/shrimp-memory-data/audits/public-toggle-offset-readout/20261112T233414Z-local --part-b-run /archive/shrimp-memory-data/audits/public-toggle-offset/20261112T020802Z-local --sweep-root /archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/returned-pod --branch-dir /data2/neural-shrimp-data/explore/llm-soft-loop/pod64/kite/kite-la-branch --reference /archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run/reference-cycles.npz --output OUT",
+   "outcome": "identical"
+  },
+  {
+   "analysis": "public-toggle-border-rule",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/analyze_public_toggle_border.py --sweep-audit /archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/audit-pod.json --check-audit /archive/shrimp-memory-data/audits/public-toggle-check/audit-batch1.json /archive/shrimp-memory-data/audits/public-toggle-check/audit-batch2.json --sweep-root /archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/returned-pod --reference /archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run/reference-cycles.npz --output OUT",
+   "outcome": "identical"
+  },
+  {
+   "analysis": "public-hold-fate-shortcut",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/analyze_public_hold_fate_shortcut.py --branch-dir /data2/neural-shrimp-data/explore/llm-soft-loop/pod64/kite/kite-la-branch --reference /archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run/reference-cycles.npz --runs /archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/returned-pod /archive/shrimp-memory-data/audits/public-toggle-check/20261110T003500Z-pod-returned /archive/shrimp-memory-data/audits/public-toggle-check/20261110T010800Z-pod-batch2-returned /archive/shrimp-memory-data/audits/public-toggle-timing/20261111T215842Z-local --output OUT",
+   "outcome": "identical (with the original run order)"
+  },
+  {
+   "analysis": "public-write-passage",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/analyze_public_write_passage.py measure --prediction docs/receipts/public-write-passage-prediction.json --reference-cycles /archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run/reference-cycles.npz --run /archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run --run /archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run --run /archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run --run /archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run --continuation /archive/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run --continuation /archive/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run --output OUT",
+   "outcome": "identical except the binding of docs/public-write-passage.md, which grew after the receipt"
+  },
+  {
+   "analysis": "public-p4-register",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/analyze_public_p4_register.py --run /archive/shrimp-memory-data/audits/public-p4-register/20261112T034957Z-local --branch-dir /data2/neural-shrimp-data/explore/llm-soft-loop/pod64/p4/branch-T-up --output OUT",
+   "outcome": "scores and groups identical; audit passed"
+  },
+  {
+   "analysis": "p4 stage-w (D1)",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/prepare_public_p4_register.py stage-w --r-shard /archive/shrimp-memory-data/audits/public-p4-register/20261112T034957Z-local/R/shard-00 --inputs-r /archive/shrimp-memory-data/audits/public-p4-register/20261112T034957Z-local/inputs-R --output-dir NEW_DIR",
+   "outcome": "contract passed; references-p4.npz and starts-W.npz arrays and design-W.json byte-identical to inputs-W; R1 identical"
+  },
+  {
+   "analysis": "XOR-chain audit v2",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/audit_public_xor_chain.py --run /archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-pod-returned/run --run /archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run --output OUT",
+   "outcome": "both passed, no problems; readouts identical to audit-pod-and-local.json"
+  },
+  {
+   "analysis": "11 + 6 adder audit v2",
+   "command": "OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 /data2/neural-shrimp-data/envs/llm/bin/python -I tools/audit_public_adder.py --run /archive/shrimp-memory-data/audits/public-adder/20261110T040000Z-pod-returned/run --run /archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run --output OUT",
+   "outcome": "both passed, no problems; 17 and 18; readouts identical to audit-pod-and-local.json"
+  }
+ ],
+ "strict_historical_qualification": {
+  "note": "lane-audit and adder-audit secondary comparisons, strict loaders, zero calls",
+  "qualified": [
+   "/archive/shrimp-memory-data/audits/public-toggle-check/20261110T003500Z-pod-returned group 0",
+   "/archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/returned-pod groups 0, 1, 2",
+   "/archive/shrimp-memory-data/audits/public-toggle-offset/20261112T020802Z-local/shard-04 stage 4",
+   "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run",
+   "/archive/shrimp-memory-data/audits/public-adder/20261110T040000Z-pod-returned/run"
+  ]
+ }
+}

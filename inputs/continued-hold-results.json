@@ -1,0 +1,413 @@
+{
+  "status": "passed",
+  "evidence": "exploratory finite-precision observation",
+  "scope": "two supplied seeds at one common hold; no write, basin, or stability-proof claim",
+  "rows": [
+    {
+      "label": "ad",
+      "status": "passed",
+      "completed_steps": 120,
+      "seed_provenance": {
+        "label": "ad",
+        "source_alpha": 0.07293697809562831,
+        "source_log10_temperature": -0.15395151820007266,
+        "source_trajectory": {
+          "path": "/data2/shrimp-memory-data/audits/qwen-validation/20261025T214011Z-JbM9BT/p6-hold-01/ad-final-120.npz",
+          "bytes": 833490,
+          "sha256": "c8be24184714a01bfd084f39f33050f8e3b1eb6a55ad057067c52512fe9128e4"
+        },
+        "source_state_index": 120,
+        "state_raw_little_endian_float64_sha256": "bc23e79a1d9e80198628cad2785d00361f22f7acc6e5e05f950ca4ada606ba83",
+        "state_shape": [
+          1,
+          896
+        ]
+      },
+      "checkpoints": [
+        {
+          "path": "ad-block-012.npz",
+          "bytes": 90653,
+          "sha256": "3e34a7ee7aaed7d4169ed6f56c8992da3d7ec37a5f6439f1c7b15c5596ee58e4"
+        },
+        {
+          "path": "ad-block-024.npz",
+          "bytes": 90660,
+          "sha256": "2e079c02a1346704224f132e2c70e958b42b6f950a1793035ce6d72a80784718"
+        },
+        {
+          "path": "ad-block-036.npz",
+          "bytes": 90670,
+          "sha256": "4b3092c0580f4f7873583589ea95cba70113bbea0c96526e643b8f73da0128d2"
+        },
+        {
+          "path": "ad-block-048.npz",
+          "bytes": 90667,
+          "sha256": "1416a2b5c06a7dae5f60a6e5023dda7e135efb9bc886f0efe86c7405ac89a2a4"
+        },
+        {
+          "path": "ad-block-060.npz",
+          "bytes": 90669,
+          "sha256": "d45b83a938020143fd654ff362714187fc8bb8a4e43fcf595fd93cea460a46d3"
+        },
+        {
+          "path": "ad-block-072.npz",
+          "bytes": 90671,
+          "sha256": "a80c70cab7bf17d483556a6f5a4025c1afbae853b7c080d1426be37ae4912703"
+        },
+        {
+          "path": "ad-block-084.npz",
+          "bytes": 90669,
+          "sha256": "3a91adb9ba8e57caa0113418b859e78dc086213a04fc3f40e6d78ae0b87c2ec0"
+        },
+        {
+          "path": "ad-block-096.npz",
+          "bytes": 90679,
+          "sha256": "b8d16876995aff91ebea5b8c1f7bf051b5bf7642277bf8e800d84909cf565150"
+        },
+        {
+          "path": "ad-block-108.npz",
+          "bytes": 90666,
+          "sha256": "b25b0773730feb587895f23b397a4c380a655d630a076ccc8c8a788cf0970ad7"
+        },
+        {
+          "path": "ad-block-120.npz",
+          "bytes": 90675,
+          "sha256": "92b38638a25ad731b9c0d253ae0caf754dfdb46692c33e59b89e6e24e0d3d937"
+        },
+        {
+          "path": "ad-final-120.npz",
+          "bytes": 833527,
+          "sha256": "d636197886d62350b68c90e039b0395e1a69dfeaded62cd94921cec70d9d3968"
+        }
+      ],
+      "cycle_gate": {
+        "passed": true,
+        "lag_six_phase_l2_residuals": [
+          8.500750310449194e-15,
+          2.8052153574478594e-14,
+          2.3938301507609485e-14,
+          6.563289079548334e-15,
+          9.677183725307605e-15,
+          1.1393500742551817e-14
+        ],
+        "maximum_l2_residual": 2.8052153574478594e-14,
+        "closure_tolerance": 1e-08,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.2925316216211745,
+              0.459499483016088,
+              0.43030568588956297,
+              0.28050123550887623,
+              0.48244460473660733,
+              0.46215891591692515
+            ],
+            "maximum_l2_gap": 0.48244460473660733,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.42880393433042996,
+              0.2895782226579991,
+              0.4507506037991507,
+              0.46378481887717904,
+              0.28349162781958565,
+              0.49082699411470226
+            ],
+            "maximum_l2_gap": 0.49082699411470226,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.02550672450654483,
+              0.04523115535306974,
+              0.11840896164916322,
+              0.02550672450654483,
+              0.04523115535306974,
+              0.11840896164916322
+            ],
+            "maximum_l2_gap": 0.11840896164916322,
+            "excluded": true
+          }
+        ],
+        "divisor_separation": 0.0001
+      },
+      "last_six_top_token_ids": [
+        785,
+        3405,
+        271,
+        785,
+        13885,
+        271
+      ],
+      "last_six_decoded_tokens": [
+        "The",
+        " question",
+        "\n\n",
+        "The",
+        " existence",
+        "\n\n"
+      ],
+      "trajectory": {
+        "path": "ad-final-120.npz",
+        "bytes": 833527,
+        "sha256": "d636197886d62350b68c90e039b0395e1a69dfeaded62cd94921cec70d9d3968"
+      }
+    },
+    {
+      "label": "td",
+      "status": "passed",
+      "completed_steps": 120,
+      "seed_provenance": {
+        "label": "td",
+        "source_alpha": 0.07293697809562831,
+        "source_log10_temperature": -0.15395151820007266,
+        "source_trajectory": {
+          "path": "/data2/shrimp-memory-data/audits/qwen-validation/20261025T214011Z-JbM9BT/p6-hold-01/td-final-120.npz",
+          "bytes": 833342,
+          "sha256": "8eb9e72aee97cfef68f5b2b05a00a69ec8d48dca2024259806944d5fca3c5034"
+        },
+        "source_state_index": 120,
+        "state_raw_little_endian_float64_sha256": "ba52d6ff6c25f5a393ab37e138da663f6d31cfc9838299f6b651b9a01005facb",
+        "state_shape": [
+          1,
+          896
+        ]
+      },
+      "checkpoints": [
+        {
+          "path": "td-block-012.npz",
+          "bytes": 90660,
+          "sha256": "98015fd10f35a6031d620bbf2b8e77ffd339b1b34b33f2154748877cfe080fce"
+        },
+        {
+          "path": "td-block-024.npz",
+          "bytes": 90637,
+          "sha256": "9052aef29c54df870e560b2bd3bac509f646f4bd68d3f79224b08ad786af642c"
+        },
+        {
+          "path": "td-block-036.npz",
+          "bytes": 90645,
+          "sha256": "d287066121172c47de5a8cb791617b3d9e149ec41eed217e410419d084a3e935"
+        },
+        {
+          "path": "td-block-048.npz",
+          "bytes": 90618,
+          "sha256": "4bf5895f3f5204b6fbc7e16023090d8e28065a0046ec108cda3f7a42706aae69"
+        },
+        {
+          "path": "td-block-060.npz",
+          "bytes": 90633,
+          "sha256": "0ecc288d0d5c505da508825b30ca0af5cc27a73ef35dbe54e9a67a692f6a1afb"
+        },
+        {
+          "path": "td-block-072.npz",
+          "bytes": 90644,
+          "sha256": "8653e8fddcb55cbe1cee0dfe733b6fccbe14f7f01109a186f9f568478dc60797"
+        },
+        {
+          "path": "td-block-084.npz",
+          "bytes": 90645,
+          "sha256": "0c8c791fbc1b4c16d1fa083541aa90a827feb3ddd3a1525c29fff4d4d528223a"
+        },
+        {
+          "path": "td-block-096.npz",
+          "bytes": 90664,
+          "sha256": "11600e861b8280cd1dd08089ff84ffa16b6f75ff4e04956ee7db908a1d8c7116"
+        },
+        {
+          "path": "td-block-108.npz",
+          "bytes": 90653,
+          "sha256": "96d5d4e697e5beb6cc0096faa9362c46104b024ea34e15cfc081938b987bbbf0"
+        },
+        {
+          "path": "td-block-120.npz",
+          "bytes": 90617,
+          "sha256": "dc06f047130bf5d96855a0f18616cde34f3c1c279bb1de34b0acb61d52bc381e"
+        },
+        {
+          "path": "td-final-120.npz",
+          "bytes": 833280,
+          "sha256": "cfa4c6c15f3bb73c1bb621613716679b9b61113bdcf574e55fbce77debe778ab"
+        }
+      ],
+      "cycle_gate": {
+        "passed": true,
+        "lag_six_phase_l2_residuals": [
+          1.89738259742895e-12,
+          5.350507768794598e-13,
+          5.537222850032231e-13,
+          4.058336435672496e-13,
+          1.1414317260381255e-12,
+          2.446578215222407e-12
+        ],
+        "maximum_l2_residual": 2.446578215222407e-12,
+        "closure_tolerance": 1e-08,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.29342516496994214,
+              0.4650295469076499,
+              0.43385300530778975,
+              0.2752799267276376,
+              0.4682253340388068,
+              0.4539326103744863
+            ],
+            "maximum_l2_gap": 0.4682253340388068,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.43251967804103214,
+              0.2894247199991806,
+              0.4495786574609355,
+              0.45530403898365557,
+              0.27926942368741425,
+              0.4835040638769246
+            ],
+            "maximum_l2_gap": 0.4835040638769246,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.02718288206511113,
+              0.06529638404042651,
+              0.11471224697028484,
+              0.02718288206511113,
+              0.06529638404042651,
+              0.11471224697028484
+            ],
+            "maximum_l2_gap": 0.11471224697028484,
+            "excluded": true
+          }
+        ],
+        "divisor_separation": 0.0001
+      },
+      "last_six_top_token_ids": [
+        785,
+        3405,
+        271,
+        785,
+        13885,
+        271
+      ],
+      "last_six_decoded_tokens": [
+        "The",
+        " question",
+        "\n\n",
+        "The",
+        " existence",
+        "\n\n"
+      ],
+      "trajectory": {
+        "path": "td-final-120.npz",
+        "bytes": 833280,
+        "sha256": "cfa4c6c15f3bb73c1bb621613716679b9b61113bdcf574e55fbce77debe778ab"
+      }
+    }
+  ],
+  "separation": {
+    "passed": true,
+    "minimum_over_shifts_of_maximum_l2_distance": 0.01538034045850213,
+    "best_shift": 0,
+    "required_separation": 0.001,
+    "all_shifts": [
+      {
+        "shift": 0,
+        "phase_l2_distances": [
+          0.0052986181281807765,
+          0.008237504234007592,
+          0.007946303719901168,
+          0.005085587984228441,
+          0.014178676289593807,
+          0.01538034045850213
+        ],
+        "maximum_l2_distance": 0.01538034045850213
+      },
+      {
+        "shift": 1,
+        "phase_l2_distances": [
+          0.2944448582092395,
+          0.4635806998585782,
+          0.4299769814242288,
+          0.277300064610207,
+          0.4734432308807396,
+          0.46200561781218236
+        ],
+        "maximum_l2_distance": 0.4734432308807396
+      },
+      {
+        "shift": 2,
+        "phase_l2_distances": [
+          0.43265885026831563,
+          0.2874775925892824,
+          0.44535616185357985,
+          0.45570373634443584,
+          0.2825152858277596,
+          0.4922609635947365
+        ],
+        "maximum_l2_distance": 0.4922609635947365
+      },
+      {
+        "shift": 3,
+        "phase_l2_distances": [
+          0.025803152031222312,
+          0.05769340257355359,
+          0.11654945080911931,
+          0.026898396210878563,
+          0.05302972592666374,
+          0.11561866197075842
+        ],
+        "maximum_l2_distance": 0.11654945080911931
+      },
+      {
+        "shift": 4,
+        "phase_l2_distances": [
+          0.28020938512579363,
+          0.4820346016815328,
+          0.4286634935941897,
+          0.2915105158315653,
+          0.4549121792874451,
+          0.4634079293002684
+        ],
+        "maximum_l2_distance": 0.4820346016815328
+      },
+      {
+        "shift": 5,
+        "phase_l2_distances": [
+          0.45408874960847057,
+          0.29150132614858054,
+          0.4609610841010435,
+          0.4341731132336261,
+          0.2784478076322636,
+          0.47737859331886023
+        ],
+        "maximum_l2_distance": 0.47737859331886023
+      }
+    ]
+  },
+  "dtype_observations": {
+    "rotary": {
+      "input": "torch.float64",
+      "inverse_frequency": "torch.float64",
+      "angles": "torch.float64",
+      "cos": "torch.float64",
+      "sin": "torch.float64"
+    },
+    "norm": {
+      "input": "torch.float64",
+      "reduction": "torch.float64",
+      "weight": "torch.float64",
+      "output": "torch.float64"
+    }
+  },
+  "model_calls": 241,
+  "elapsed_seconds": 116.35474709600021,
+  "peak_rss_bytes": 5470924800
+}

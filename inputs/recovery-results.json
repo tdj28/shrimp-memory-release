@@ -1,0 +1,3844 @@
+{
+  "status": "failed",
+  "evidence": "exploratory finite-precision observation",
+  "scope": "one finite amplitude and one direction at all phases; no basin or write claim",
+  "rows": [
+    {
+      "trial_id": 0,
+      "kind": "control",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 0,
+      "sign": 0,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-00-block-012.npz",
+          "bytes": 90673,
+          "sha256": "4c223d1640ab9e82120546740140353a7b75bb338c765194005477bd9f5a268b"
+        },
+        {
+          "path": "trial-00-block-024.npz",
+          "bytes": 90674,
+          "sha256": "f3bb7f661570d325423cdbde5c0de4c15f67eb609e0ba5d99213ef0f81750dbd"
+        },
+        {
+          "path": "trial-00-block-036.npz",
+          "bytes": 90667,
+          "sha256": "6d26891327593e8ebdd0bce157442c9e77281775921d0944dd466c5c3a215a0e"
+        },
+        {
+          "path": "trial-00-block-048.npz",
+          "bytes": 90671,
+          "sha256": "29b047bf949d4b2a23cd36d4e93e942a76b5f7f22fbe723c403894fedb0ad08c"
+        },
+        {
+          "path": "trial-00-block-060.npz",
+          "bytes": 90653,
+          "sha256": "4af52e60df37f921323b27362a3ba52119b3fc2bd04236f95cdff45505e29582"
+        },
+        {
+          "path": "trial-00-block-072.npz",
+          "bytes": 90676,
+          "sha256": "1e3ced641a6fa7c5fc7e6abfc537a3001f36084d6ca9d47ac800717b73be3d5a"
+        },
+        {
+          "path": "trial-00-block-084.npz",
+          "bytes": 90653,
+          "sha256": "fd89ee5e53e98e450d7501c47f763743dbeaa028f451e1cacb9b1c79d27a8d30"
+        },
+        {
+          "path": "trial-00-block-096.npz",
+          "bytes": 90659,
+          "sha256": "bd3f71114645190930a4d204373c0d79e3810218ce47837a8973afebb8521c1c"
+        },
+        {
+          "path": "trial-00-block-108.npz",
+          "bytes": 90657,
+          "sha256": "8050bfaa73ec10ae90552066c5fa0f9f1be9d5206838fb9c227c08c43ec95804"
+        },
+        {
+          "path": "trial-00-block-120.npz",
+          "bytes": 90662,
+          "sha256": "badf8dd285ac41261c64da94d716fcbb92d9fab6f40afec4cd3841476e760c0a"
+        },
+        {
+          "path": "trial-00-final-120.npz",
+          "bytes": 833469,
+          "sha256": "3930e4f4fd5d228974786f0c4485da845ce5f441cc68216f4bdd28012667b612"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 1.4094181475841057e-14,
+            "best_shift": 1
+          },
+          {
+            "label": "td",
+            "distance": 0.01538034045849976,
+            "best_shift": 1
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            5.270257646811939e-15,
+            8.768289372665998e-15,
+            3.6890223597310526e-15,
+            5.6218235153857085e-15,
+            7.809035859506751e-15,
+            3.341415826855312e-15
+          ],
+          "maximum_l2_residual": 8.768289372665998e-15,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.45949948301609406,
+                0.43030568588956625,
+                0.28050123550887474,
+                0.48244460473660733,
+                0.4621589159169274,
+                0.29253162162118174
+              ],
+              "maximum_l2_gap": 0.48244460473660733,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.28957822265800204,
+                0.4507506037991527,
+                0.4637848188771809,
+                0.2834916278195885,
+                0.49082699411470626,
+                0.42880393433043357
+              ],
+              "maximum_l2_gap": 0.49082699411470626,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.04523115535308752,
+                0.11840896164917462,
+                0.025506724506548884,
+                0.04523115535308752,
+                0.11840896164917462,
+                0.025506724506548884
+              ],
+              "maximum_l2_gap": 0.11840896164917462,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-00-final-120.npz",
+        "bytes": 833469,
+        "sha256": "3930e4f4fd5d228974786f0c4485da845ce5f441cc68216f4bdd28012667b612"
+      }
+    },
+    {
+      "trial_id": 1,
+      "kind": "control",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 0,
+      "sign": 0,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-01-block-012.npz",
+          "bytes": 90659,
+          "sha256": "e13221cf29e30bbb009e8e7ba9bb4fbb4ab48708a69a0ee1c8246ec53b5749c7"
+        },
+        {
+          "path": "trial-01-block-024.npz",
+          "bytes": 90641,
+          "sha256": "3004396638891ded85c93a973b3a889376e14569b8f03ce3f06e86307734ad46"
+        },
+        {
+          "path": "trial-01-block-036.npz",
+          "bytes": 90632,
+          "sha256": "b44831ce9a5eaebd284207907ef590a019b485ceef3d712b0f1a5d49fb3efb8b"
+        },
+        {
+          "path": "trial-01-block-048.npz",
+          "bytes": 90632,
+          "sha256": "4ec0416e49ee42a5549672d362b3a06c470aed502434cf41c08af29a6f21c826"
+        },
+        {
+          "path": "trial-01-block-060.npz",
+          "bytes": 90628,
+          "sha256": "f2c20b5aa4d48dc430fc7fdaf29eb2b39945ff7512b69295e692c78d1079b803"
+        },
+        {
+          "path": "trial-01-block-072.npz",
+          "bytes": 90613,
+          "sha256": "8cc5d48cc33a2f11f3b3749f1606aa64a7dc305f263a4719a60b77797e3213b6"
+        },
+        {
+          "path": "trial-01-block-084.npz",
+          "bytes": 90643,
+          "sha256": "a18d82d51aec7e64048d6d9a4e8b52563d3ce2a3804b3574bda2fb80068321ab"
+        },
+        {
+          "path": "trial-01-block-096.npz",
+          "bytes": 90642,
+          "sha256": "91faca21faddaf1d9e4ad271ada4b4465374a70568f90b5470364ba11ba4d8d9"
+        },
+        {
+          "path": "trial-01-block-108.npz",
+          "bytes": 90620,
+          "sha256": "b06eac5bd250238dd8b41b294f351c7d3434ee6cb425d303d9cf91a314d1625c"
+        },
+        {
+          "path": "trial-01-block-120.npz",
+          "bytes": 90615,
+          "sha256": "00d562c51d69bd0bba42a8375809c9f1cb3e0e43047cebe52adf2f97394f0816"
+        },
+        {
+          "path": "trial-01-final-120.npz",
+          "bytes": 833197,
+          "sha256": "5aef110b0d55874bb977118a721263d05a7045a4ff33cb5d6300113f722258fa"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380340457782868,
+            "best_shift": 1
+          },
+          {
+            "label": "td",
+            "distance": 9.126994720978722e-13,
+            "best_shift": 1
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            3.639662124050537e-15,
+            5.777270786708479e-15,
+            4.380956665308572e-15,
+            1.1443918344164415e-14,
+            2.501438630180655e-14,
+            1.2164869689298487e-14
+          ],
+          "maximum_l2_residual": 2.501438630180655e-14,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.4650295469075406,
+                0.43385300530769444,
+                0.27527992672779444,
+                0.46822533403961414,
+                0.45393261037505184,
+                0.2934251649696088
+              ],
+              "maximum_l2_gap": 0.46822533403961414,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.28942471999922864,
+                0.4495786574610005,
+                0.4553040389842568,
+                0.27926942368720703,
+                0.4835040638775292,
+                0.4325196780409113
+              ],
+              "maximum_l2_gap": 0.4835040638775292,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.06529638403992959,
+                0.11471224697080973,
+                0.02718288206505903,
+                0.06529638403992959,
+                0.11471224697080973,
+                0.02718288206505903
+              ],
+              "maximum_l2_gap": 0.11471224697080973,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-01-final-120.npz",
+        "bytes": 833197,
+        "sha256": "5aef110b0d55874bb977118a721263d05a7045a4ff33cb5d6300113f722258fa"
+      }
+    },
+    {
+      "trial_id": 2,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 0,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-02-block-012.npz",
+          "bytes": 90639,
+          "sha256": "0bc5e46a1e0b7f58a0c33e285aac4b425c560b2709682278839b6f5718a253c0"
+        },
+        {
+          "path": "trial-02-block-024.npz",
+          "bytes": 90630,
+          "sha256": "5a46bb0d651a85acc3f2acdc911b463537f93cf3d1620abd9424123cc4aa219b"
+        },
+        {
+          "path": "trial-02-block-036.npz",
+          "bytes": 90617,
+          "sha256": "4945e8111c3e077c4c7ac6dcb4cb1d340d1284b609af9f9ed4c8cf1c4156c782"
+        },
+        {
+          "path": "trial-02-block-048.npz",
+          "bytes": 90646,
+          "sha256": "258e4eb77a89af32b64ef785ba08bfdd348b273b85daa3ac84373cae5eb3ce54"
+        },
+        {
+          "path": "trial-02-block-060.npz",
+          "bytes": 90647,
+          "sha256": "4f77309c0ba23071d75340a0dba5d93e5631aef1d0f4953410fcb35fc51b236f"
+        },
+        {
+          "path": "trial-02-block-072.npz",
+          "bytes": 90636,
+          "sha256": "c93779239949b59c8b86de6b44a53894bfe3d1db6a7a2bee658ed403ab168b51"
+        },
+        {
+          "path": "trial-02-block-084.npz",
+          "bytes": 90644,
+          "sha256": "76f6eac6df5178ccfcefe8dd477fb8a16041c0ad4f648cdde74474a73bc39bf5"
+        },
+        {
+          "path": "trial-02-block-096.npz",
+          "bytes": 90664,
+          "sha256": "9ad56173afed2767f230eae203e49c211407088618c1e6ee0c1fa7e14e34a51a"
+        },
+        {
+          "path": "trial-02-block-108.npz",
+          "bytes": 90619,
+          "sha256": "8193f614f44970b0b05bde7e6355773fbf39a80d755d0f9b1e828df1894bc619"
+        },
+        {
+          "path": "trial-02-block-120.npz",
+          "bytes": 90648,
+          "sha256": "e699c4a262fa9b22cd9d84bfe0ad1657abb9c6ec395fcbf757212247e8f6852c"
+        },
+        {
+          "path": "trial-02-final-120.npz",
+          "bytes": 833300,
+          "sha256": "56f0e09611d7fbd6884967b827718c3920036403ffa60355aaac783f4bc80324"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 1.728439475536605e-09,
+            "best_shift": 1
+          },
+          {
+            "label": "td",
+            "distance": 0.015380340026647607,
+            "best_shift": 1
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            4.99266547108061e-09,
+            4.070210391045199e-09,
+            1.1754602592587313e-09,
+            1.9322386882060906e-09,
+            2.8112023059572914e-09,
+            9.744138669561069e-10
+          ],
+          "maximum_l2_residual": 4.99266547108061e-09,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.45949948246204125,
+                0.43030568563893395,
+                0.28050123522755877,
+                0.48244460461468897,
+                0.4621589160484587,
+                0.2925316214344312
+              ],
+              "maximum_l2_gap": 0.48244460461468897,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.28957822213143475,
+                0.45075060331086814,
+                0.4637848189789707,
+                0.2834916278664517,
+                0.4908269939135795,
+                0.42880393410220924
+              ],
+              "maximum_l2_gap": 0.4908269939135795,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.045231154293341624,
+                0.11840896118254773,
+                0.025506724575044503,
+                0.045231154293341624,
+                0.11840896118254773,
+                0.025506724575044503
+              ],
+              "maximum_l2_gap": 0.11840896118254773,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-02-final-120.npz",
+        "bytes": 833300,
+        "sha256": "56f0e09611d7fbd6884967b827718c3920036403ffa60355aaac783f4bc80324"
+      }
+    },
+    {
+      "trial_id": 3,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 0,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-03-block-012.npz",
+          "bytes": 90639,
+          "sha256": "40e566d5137cdb96110c619fd6cd5ee2d9759b4b835ea0fb1778a4875909e6f2"
+        },
+        {
+          "path": "trial-03-block-024.npz",
+          "bytes": 90624,
+          "sha256": "6fd55820c9a3524576762cdbd15be76d37a77a71aa5306724c64deb4871f4365"
+        },
+        {
+          "path": "trial-03-block-036.npz",
+          "bytes": 90645,
+          "sha256": "00b553210003a29518afb185fb9a92c343ba86bc179924d518ea7577b7330bcd"
+        },
+        {
+          "path": "trial-03-block-048.npz",
+          "bytes": 90629,
+          "sha256": "5c4cc78583331f6b4806803995116ba98fd2115e34da09ec8969f53830b70400"
+        },
+        {
+          "path": "trial-03-block-060.npz",
+          "bytes": 90638,
+          "sha256": "b449681b038851d9716be5d16675b63b0fbf6f22524c524df1f479e1362c632a"
+        },
+        {
+          "path": "trial-03-block-072.npz",
+          "bytes": 90681,
+          "sha256": "c17b7a07da63160f9089344d5073bb3ea1a40d14983cf58ddc216bf181887cc7"
+        },
+        {
+          "path": "trial-03-block-084.npz",
+          "bytes": 90677,
+          "sha256": "21be2f7321924653a306f642fca8428d9accaafa798cd56413d6ecd639010b03"
+        },
+        {
+          "path": "trial-03-block-096.npz",
+          "bytes": 90681,
+          "sha256": "81e42dbc0bbe100e4384cf18936774628e34e0eb45df56a92888e2d6bcca97bc"
+        },
+        {
+          "path": "trial-03-block-108.npz",
+          "bytes": 90632,
+          "sha256": "bb59d9daef2d48b6ad52a2dfb2859696ab03c8e724f57077689b1e9743e456fe"
+        },
+        {
+          "path": "trial-03-block-120.npz",
+          "bytes": 90657,
+          "sha256": "7b0ea26cf5294c8c30c1108e2790e5dc511d756d93b439b2158333bcb3f706f9"
+        },
+        {
+          "path": "trial-03-final-120.npz",
+          "bytes": 833400,
+          "sha256": "f86289225c951ce617643d86ffc8a859f8b5f25f1aabec6470143727ca80451f"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 1.530701536745134e-09,
+            "best_shift": 1
+          },
+          {
+            "label": "td",
+            "distance": 0.01538034084094834,
+            "best_shift": 1
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            4.42136726073284e-09,
+            3.6044671979277054e-09,
+            1.0409563085492757e-09,
+            1.7111398858346122e-09,
+            2.489527654931937e-09,
+            8.629159954807275e-10
+          ],
+          "maximum_l2_residual": 4.42136726073284e-09,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.4594994835067539,
+                0.43030568611152215,
+                0.28050123575800096,
+                0.4824446048445841,
+                0.4621589158004542,
+                0.2925316217865666
+              ],
+              "maximum_l2_gap": 0.4824446048445841,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.2895782231243193,
+                0.45075060423156843,
+                0.4637848187870462,
+                0.28349162777808823,
+                0.49082699429282933,
+                0.42880393453254545
+              ],
+              "maximum_l2_gap": 0.49082699429282933,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.04523115629158253,
+                0.11840896206242447,
+                0.025506724445890975,
+                0.04523115629158253,
+                0.11840896206242447,
+                0.025506724445890975
+              ],
+              "maximum_l2_gap": 0.11840896206242447,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-03-final-120.npz",
+        "bytes": 833400,
+        "sha256": "f86289225c951ce617643d86ffc8a859f8b5f25f1aabec6470143727ca80451f"
+      }
+    },
+    {
+      "trial_id": 4,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 0,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-04-block-012.npz",
+          "bytes": 90656,
+          "sha256": "f7d7559073f348aa1edb2c74fd36c53a4269204ca3f50dec38ec4e338bc92312"
+        },
+        {
+          "path": "trial-04-block-024.npz",
+          "bytes": 90656,
+          "sha256": "b51438280333b2eafb3548997ee6e505cc50d745bfb853d29da233707190c7b5"
+        },
+        {
+          "path": "trial-04-block-036.npz",
+          "bytes": 90654,
+          "sha256": "ca93a2c914725a15bbb7382fb431c5cad1a05c8490c6012bbacfc3fdaf2983ee"
+        },
+        {
+          "path": "trial-04-block-048.npz",
+          "bytes": 90649,
+          "sha256": "8885426d073bdc73354bebc752dc5f3065cbaea0516c595078b6b28a97960e6d"
+        },
+        {
+          "path": "trial-04-block-060.npz",
+          "bytes": 90679,
+          "sha256": "6c425482fca6495fadc43bae6bd8cbe92e57df8e56404d95ad66d071d70d71e1"
+        },
+        {
+          "path": "trial-04-block-072.npz",
+          "bytes": 90650,
+          "sha256": "804b0825837264fe52ffa1c96ce8ca9301cbaa3ade04b8e8a88d21349258a560"
+        },
+        {
+          "path": "trial-04-block-084.npz",
+          "bytes": 90629,
+          "sha256": "0f0a5f4893e9fb9cc357eb8b822acee030204764176b1cd237efe0dd8247e100"
+        },
+        {
+          "path": "trial-04-block-096.npz",
+          "bytes": 90649,
+          "sha256": "aee2523b2981c08d3f5c7bdec5d95ca4a677aac283092be82795352e92396a2a"
+        },
+        {
+          "path": "trial-04-block-108.npz",
+          "bytes": 90620,
+          "sha256": "d4b9b31d8c9e1c54cd2651a6709ee657013ba51376e9d3fbb6d47a5ec45b9a4a"
+        },
+        {
+          "path": "trial-04-block-120.npz",
+          "bytes": 90657,
+          "sha256": "fecc3d3b7891c6667ed93c8f606bfbb7dcca3a26dffb365821b431ee4e970114"
+        },
+        {
+          "path": "trial-04-final-120.npz",
+          "bytes": 833384,
+          "sha256": "8b3a5b1471563b7c46e0338f48520a0d1e6128e93a4c22420c48922ec1f0cb84"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380324143780705,
+            "best_shift": 1
+          },
+          {
+            "label": "td",
+            "distance": 2.0711436094437307e-08,
+            "best_shift": 1
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            1.1740155281638067e-08,
+            1.223983224407961e-08,
+            8.982248464607136e-09,
+            2.5351800180373115e-08,
+            5.400155813538515e-08,
+            2.5777236235983113e-08
+          ],
+          "maximum_l2_residual": 5.400155813538515e-08,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.4650295444753649,
+                0.43385300319216275,
+                0.27527993026428005,
+                0.4682253523490182,
+                0.4539326240883342,
+                0.29342516892073245
+              ],
+              "maximum_l2_gap": 0.4682253523490182,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.2894247210737871,
+                0.44957865897339866,
+                0.45530405262998797,
+                0.27926943003066174,
+                0.48350407759984254,
+                0.4325196759892781
+              ],
+              "maximum_l2_gap": 0.48350407759984254,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.06529637284904166,
+                0.11471225887821178,
+                0.027182882364680097,
+                0.06529637284904166,
+                0.11471225887821178,
+                0.027182882364680097
+              ],
+              "maximum_l2_gap": 0.11471225887821178,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-04-final-120.npz",
+        "bytes": 833384,
+        "sha256": "8b3a5b1471563b7c46e0338f48520a0d1e6128e93a4c22420c48922ec1f0cb84"
+      }
+    },
+    {
+      "trial_id": 5,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 0,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-05-block-012.npz",
+          "bytes": 90664,
+          "sha256": "369de1dcd71d15bca45734448d99d920da2bfca97ee681cbfa3e0793919cb750"
+        },
+        {
+          "path": "trial-05-block-024.npz",
+          "bytes": 90639,
+          "sha256": "fce7949af1a2ab032e86a8c627e2fe1c7581e24b32e03d131cf2dc4ff368a363"
+        },
+        {
+          "path": "trial-05-block-036.npz",
+          "bytes": 90629,
+          "sha256": "7f1a81ac08c644f8ce65b35b0c72dadaa77338fbef572f42ea06782e5faf78ad"
+        },
+        {
+          "path": "trial-05-block-048.npz",
+          "bytes": 90648,
+          "sha256": "63ec482a77e374d0cced0a136bd14b0e5b9af648b80c653df76de24e1a343981"
+        },
+        {
+          "path": "trial-05-block-060.npz",
+          "bytes": 90661,
+          "sha256": "c8c8af1f670c2155cf45cffe37bd153509f963a5c33c694577e3240e018c0834"
+        },
+        {
+          "path": "trial-05-block-072.npz",
+          "bytes": 90626,
+          "sha256": "638ebae0409244bf84a4fae9420acbb39faaebf7d08f7583f5fd4825d587cabc"
+        },
+        {
+          "path": "trial-05-block-084.npz",
+          "bytes": 90632,
+          "sha256": "2116909d53b1a1b120ede0bb5b264159793f70166744ae5f380d1ab9777b7d76"
+        },
+        {
+          "path": "trial-05-block-096.npz",
+          "bytes": 90636,
+          "sha256": "ee137829a1bbe09ae8f5aca776bc336c55ada092f26c0b430a6338af491a8636"
+        },
+        {
+          "path": "trial-05-block-108.npz",
+          "bytes": 90632,
+          "sha256": "e5abbdaa1bc61eef34500ae72d1339183938bd01b85de9337305f84171c71d2b"
+        },
+        {
+          "path": "trial-05-block-120.npz",
+          "bytes": 90642,
+          "sha256": "28e1a5126e43b74e58eef936935d1fb0214975bad3944dd1aaba86f673e65b54"
+        },
+        {
+          "path": "trial-05-final-120.npz",
+          "bytes": 833310,
+          "sha256": "a8cb960d19e1fbf53928702c68e65d674734f6f6d92b34daff0dbc0ec8206bea"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380355012990824,
+            "best_shift": 1
+          },
+          {
+            "label": "td",
+            "distance": 1.8476823368071147e-08,
+            "best_shift": 1
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            1.0474452221707109e-08,
+            1.0920302595072775e-08,
+            8.013913637706853e-09,
+            2.2618745386520907e-08,
+            4.8179886721270844e-08,
+            2.2998304935854873e-08
+          ],
+          "maximum_l2_residual": 4.8179886721270844e-08,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.46502954907750516,
+                0.4338530071951546,
+                0.27527992357257414,
+                0.4682253177041346,
+                0.4539325981401902,
+                0.29342516144444714
+              ],
+              "maximum_l2_gap": 0.4682253177041346,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.2894247190405129,
+                0.4495786561116553,
+                0.4553040268096635,
+                0.2792694180276338,
+                0.48350405163460736,
+                0.4325196798713624
+              ],
+              "maximum_l2_gap": 0.48350405163460736,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.06529639402433426,
+                0.11471223634714084,
+                0.027182881797737375,
+                0.06529639402433426,
+                0.11471223634714084,
+                0.027182881797737375
+              ],
+              "maximum_l2_gap": 0.11471223634714084,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-05-final-120.npz",
+        "bytes": 833310,
+        "sha256": "a8cb960d19e1fbf53928702c68e65d674734f6f6d92b34daff0dbc0ec8206bea"
+      }
+    },
+    {
+      "trial_id": 6,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 1,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-06-block-012.npz",
+          "bytes": 90642,
+          "sha256": "ea17f5c568fd0d0d4100026d86e6024d7b84ed317bee2df7dfbf1f87aa35da85"
+        },
+        {
+          "path": "trial-06-block-024.npz",
+          "bytes": 90654,
+          "sha256": "9bf61eb5d89781ee1d3856f8d6987bc5ab04953cc3502780b99bd2c303f19c42"
+        },
+        {
+          "path": "trial-06-block-036.npz",
+          "bytes": 90629,
+          "sha256": "a212916c3f5f221a9355ea43ef11ae32ee92f0abdffb51689d9847168bdef8d6"
+        },
+        {
+          "path": "trial-06-block-048.npz",
+          "bytes": 90671,
+          "sha256": "c3a354495f5a0a4f954be7a215e3bcf408ed0557a303506a007c616fb9b73fbe"
+        },
+        {
+          "path": "trial-06-block-060.npz",
+          "bytes": 90654,
+          "sha256": "fe1b9507126f0c0acbc84499a1d134c91593f3e9aac2b5ad9840e82dfacce218"
+        },
+        {
+          "path": "trial-06-block-072.npz",
+          "bytes": 90647,
+          "sha256": "2d721b645cf9ed98946d4329765dbf682e42b8bd9a2a925e9e10d06987a3b27e"
+        },
+        {
+          "path": "trial-06-block-084.npz",
+          "bytes": 90660,
+          "sha256": "f8f65f400121203682316b7d24fe33c975ba201a192afb20e77784b1e5d2b2a1"
+        },
+        {
+          "path": "trial-06-block-096.npz",
+          "bytes": 90651,
+          "sha256": "1494807a0667de96e2f60cd7cf767435aec724407a2fdb3010df5f584e56ed6b"
+        },
+        {
+          "path": "trial-06-block-108.npz",
+          "bytes": 90673,
+          "sha256": "ddc200f46ad9d8cc336df6951579506bb95bfedf14236cf49667ac193e5e6dac"
+        },
+        {
+          "path": "trial-06-block-120.npz",
+          "bytes": 90657,
+          "sha256": "a1a61ebe21a774bc55de0cb97da3ff147259baeb457f6ae9bb303892a1d98f2e"
+        },
+        {
+          "path": "trial-06-final-120.npz",
+          "bytes": 833395,
+          "sha256": "54bf9bc4f8e3ecb13737d95c2336f920f77a4723350b568a40e6e3d1c42828b6"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 2.2333283075255722e-09,
+            "best_shift": 2
+          },
+          {
+            "label": "td",
+            "distance": 0.015380339774039777,
+            "best_shift": 2
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            6.4510675668662526e-09,
+            1.863035141119557e-09,
+            3.0624729601806174e-09,
+            4.4555752173985784e-09,
+            1.5443816171325836e-09,
+            4.190112805074714e-09
+          ],
+          "maximum_l2_residual": 6.4510675668662526e-09,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.43030568549232834,
+                0.2805012350630087,
+                0.48244460454337273,
+                0.4621589161253937,
+                0.29253162223068657,
+                0.4594994828325109
+              ],
+              "maximum_l2_gap": 0.48244460454337273,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.45075060302525216,
+                0.46378481903850843,
+                0.2834916278938647,
+                0.49082699447530315,
+                0.42880393396871136,
+                0.2895782227382763
+              ],
+              "maximum_l2_gap": 0.49082699447530315,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.11840896090959616,
+                0.02550672461510938,
+                0.04523115772608783,
+                0.11840896090959616,
+                0.02550672461510938,
+                0.04523115772608783
+              ],
+              "maximum_l2_gap": 0.11840896090959616,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-06-final-120.npz",
+        "bytes": 833395,
+        "sha256": "54bf9bc4f8e3ecb13737d95c2336f920f77a4723350b568a40e6e3d1c42828b6"
+      }
+    },
+    {
+      "trial_id": 7,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 1,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-07-block-012.npz",
+          "bytes": 90639,
+          "sha256": "c85f69be3b860d2ad3f0c6fd2db87b7e92935c7332796a04bf99621abc2c2ef5"
+        },
+        {
+          "path": "trial-07-block-024.npz",
+          "bytes": 90650,
+          "sha256": "03498f972cf58e08c23273646d17accaa537c577d7ee08d1bd104182ec5a9607"
+        },
+        {
+          "path": "trial-07-block-036.npz",
+          "bytes": 90640,
+          "sha256": "e3995ef4ff8240d32ec8dfb22434400613e3f9d45d00ee06568e050de74c05bc"
+        },
+        {
+          "path": "trial-07-block-048.npz",
+          "bytes": 90639,
+          "sha256": "0dd2dcd38ed2563052217363d8c4dd4738ea2d126a3add41af0f82c927897926"
+        },
+        {
+          "path": "trial-07-block-060.npz",
+          "bytes": 90646,
+          "sha256": "57837a8931ca7031b57e4f6332851fe3e5708514f49b57c0bfddc14b306ba059"
+        },
+        {
+          "path": "trial-07-block-072.npz",
+          "bytes": 90666,
+          "sha256": "15f5882ce7820fd006f160c47e820d25fdd1a1f538bfa42b757b82176f0e9e34"
+        },
+        {
+          "path": "trial-07-block-084.npz",
+          "bytes": 90664,
+          "sha256": "08c969b2aa103932005dcf8c2da2d1b20f9057fb2b538c3e26e76a2c3021a1c3"
+        },
+        {
+          "path": "trial-07-block-096.npz",
+          "bytes": 90652,
+          "sha256": "b55cf5ccd759d356179f0a55b4508a9c51f4cc5c6abf4cbb7f1a36fe67f3ec6c"
+        },
+        {
+          "path": "trial-07-block-108.npz",
+          "bytes": 90663,
+          "sha256": "5abaf8461e88c4305a973f9c3c364607e494af680e736735b2bc919fd177c02f"
+        },
+        {
+          "path": "trial-07-block-120.npz",
+          "bytes": 90674,
+          "sha256": "43123c89dc8627b7ae2cb1791cfc3a4b98a8105907c01776185717464aaec639"
+        },
+        {
+          "path": "trial-07-final-120.npz",
+          "bytes": 833428,
+          "sha256": "0e9ad1d87de61f10042c21f272dddec8b11325290bec6cd9ada0d860aed5cb4c"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 1.8500447713602351e-09,
+            "best_shift": 2
+          },
+          {
+            "label": "td",
+            "distance": 0.015380341025494992,
+            "best_shift": 2
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            5.343819389729603e-09,
+            1.543272607434223e-09,
+            2.53684818449704e-09,
+            3.6908424951041004e-09,
+            1.279310832932031e-09,
+            3.4709450223728077e-09
+          ],
+          "maximum_l2_residual": 5.343819389729603e-09,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.43030568621862586,
+                0.2805012358782159,
+                0.48244460489668667,
+                0.4621589157442499,
+                0.29253162111629255,
+                0.45949948316817074
+              ],
+              "maximum_l2_gap": 0.48244460489668667,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.4507506044402288,
+                0.46378481874355093,
+                0.28349162775806386,
+                0.4908269938160097,
+                0.4288039346300739,
+                0.28957822259150723
+              ],
+              "maximum_l2_gap": 0.4908269938160097,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.11840896226183527,
+                0.025506724416621763,
+                0.04523115338738121,
+                0.11840896226183527,
+                0.025506724416621763,
+                0.04523115338738121
+              ],
+              "maximum_l2_gap": 0.11840896226183527,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-07-final-120.npz",
+        "bytes": 833428,
+        "sha256": "0e9ad1d87de61f10042c21f272dddec8b11325290bec6cd9ada0d860aed5cb4c"
+      }
+    },
+    {
+      "trial_id": 8,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 1,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-08-block-012.npz",
+          "bytes": 90627,
+          "sha256": "fd20377cf3511219629c5a706b9939c58103b0eda77c787fa710223ea733b70d"
+        },
+        {
+          "path": "trial-08-block-024.npz",
+          "bytes": 90642,
+          "sha256": "6334cb1a1658d3f7505fe2c32b30725fb96273cff212ffdbc39aaeccc3f63551"
+        },
+        {
+          "path": "trial-08-block-036.npz",
+          "bytes": 90651,
+          "sha256": "66b90f946db0d3be3666f5c9fcc1e2fdecae0d5623d058e1575b3f59a668519f"
+        },
+        {
+          "path": "trial-08-block-048.npz",
+          "bytes": 90677,
+          "sha256": "c32ea16d7ab16d09adfc3197a329b169e5744cd7e76e9c9cc15b1d970c4ef018"
+        },
+        {
+          "path": "trial-08-block-060.npz",
+          "bytes": 90676,
+          "sha256": "632386e0c6c8e103ed2030dfb651c02726220e016115eca84025990dc51ac44f"
+        },
+        {
+          "path": "trial-08-block-072.npz",
+          "bytes": 90658,
+          "sha256": "3c5cb35c3d1cbbc79361fda767afa57a7cc0dad417e201062340490164e18598"
+        },
+        {
+          "path": "trial-08-block-084.npz",
+          "bytes": 90616,
+          "sha256": "d8a56b0ac4fa06a6366b5f5bdda784adec0040b9558d9fc35e3c8c0de2e5bffd"
+        },
+        {
+          "path": "trial-08-block-096.npz",
+          "bytes": 90622,
+          "sha256": "73ac26c7cf5df6b9c70cd6646bae8e3fe7fef1054532de78cd5b901bf6009b90"
+        },
+        {
+          "path": "trial-08-block-108.npz",
+          "bytes": 90640,
+          "sha256": "4cc62848bf203a6e390416d3af3299fdedb4020fec0f5f211e173708c3db66e5"
+        },
+        {
+          "path": "trial-08-block-120.npz",
+          "bytes": 90629,
+          "sha256": "c52e922eaef5a69aec7e96575b225ae892a20a3d33adcfc7423f683f7a46aca8"
+        },
+        {
+          "path": "trial-08-final-120.npz",
+          "bytes": 833335,
+          "sha256": "1cb2e0651ad1a156c12f1061f433696ed1e2622e914ad725bdd875a89c1d0759"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380385352828258,
+            "best_shift": 2
+          },
+          {
+            "label": "td",
+            "distance": 5.6993030937877405e-08,
+            "best_shift": 2
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            3.3683642394911666e-08,
+            2.4718894333455835e-08,
+            6.976743498137864e-08,
+            1.4861064693547496e-07,
+            7.093815147454767e-08,
+            2.009907879914382e-08
+          ],
+          "maximum_l2_residual": 1.4861064693547496e-07,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.4338530111295083,
+                0.2752799169956426,
+                0.4682252836534043,
+                0.45393257263704323,
+                0.2934251525428954,
+                0.465029553444049
+              ],
+              "maximum_l2_gap": 0.4682252836534043,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.44957865329901375,
+                0.45530400143214433,
+                0.27926940623045565,
+                0.48350402592505826,
+                0.43251968368688215,
+                0.2894247154298793
+              ],
+              "maximum_l2_gap": 0.48350402592505826,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.11471221420249778,
+                0.027182881240510492,
+                0.06529640042634115,
+                0.11471221420249778,
+                0.027182881240510492,
+                0.06529640042634115
+              ],
+              "maximum_l2_gap": 0.11471221420249778,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-08-final-120.npz",
+        "bytes": 833335,
+        "sha256": "1cb2e0651ad1a156c12f1061f433696ed1e2622e914ad725bdd875a89c1d0759"
+      }
+    },
+    {
+      "trial_id": 9,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 1,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-09-block-012.npz",
+          "bytes": 90625,
+          "sha256": "c765eb225fdca8de98480cefda18f7fef0093ba91c51dfda0121f4a64355efd9"
+        },
+        {
+          "path": "trial-09-block-024.npz",
+          "bytes": 90620,
+          "sha256": "cb2dbce837f153ecdff03ebab1d5ad758bc83b591a1e31e535cbdefb29ecfb46"
+        },
+        {
+          "path": "trial-09-block-036.npz",
+          "bytes": 90638,
+          "sha256": "413037228820620f41df8d697f9505725fe8a1ae21dd032c432f22e565432008"
+        },
+        {
+          "path": "trial-09-block-048.npz",
+          "bytes": 90655,
+          "sha256": "0752c262f4249b1884d4d9da44c844462f917cf0940277dc2e2203fafe9e51d6"
+        },
+        {
+          "path": "trial-09-block-060.npz",
+          "bytes": 90654,
+          "sha256": "91bfcc5a77b8250c3ac0ff13f923cb154c417158c98914977e0b4faba0109d67"
+        },
+        {
+          "path": "trial-09-block-072.npz",
+          "bytes": 90667,
+          "sha256": "33120d7f45183eaad40723197b0b887623d42018a8ab97637ee63fb2ce45534e"
+        },
+        {
+          "path": "trial-09-block-084.npz",
+          "bytes": 90645,
+          "sha256": "0bf64a1f1e268935c7a59f61c00fccba1ff16040c33363cbdb7f708e0b5f1707"
+        },
+        {
+          "path": "trial-09-block-096.npz",
+          "bytes": 90621,
+          "sha256": "fd110c0d96f769c2f35580c0512f96e509676769b17fb0015fb7fda16bc5cf23"
+        },
+        {
+          "path": "trial-09-block-108.npz",
+          "bytes": 90614,
+          "sha256": "2dc00476a373f399126c9a3d931eefaf8c33953e7edc1f7759037a74054b5f00"
+        },
+        {
+          "path": "trial-09-block-120.npz",
+          "bytes": 90625,
+          "sha256": "8455ede456e4176264444bb21c63b3f8d0ba7e328eab77adc24ced168eb5b714"
+        },
+        {
+          "path": "trial-09-final-120.npz",
+          "bytes": 833284,
+          "sha256": "f8ca942278ed17d63b827ef669d0caf8b67ccfe614036c4dc6de06574bc4a53a"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380286021043583,
+            "best_shift": 2
+          },
+          {
+            "label": "td",
+            "distance": 6.910804561119072e-08,
+            "best_shift": 2
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            4.084174574790769e-08,
+            2.997185919772588e-08,
+            8.459361029010887e-08,
+            1.8019192416175025e-07,
+            8.60132670614044e-08,
+            2.4370504457232452e-08
+          ],
+          "maximum_l2_residual": 1.8019192416175025e-07,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.4338529982485591,
+                0.2752799385283922,
+                0.4682253951346686,
+                0.45393265613370243,
+                0.2934251800373803,
+                0.4650295389817931
+              ],
+              "maximum_l2_gap": 0.4682253951346686,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.44957866250759243,
+                0.4553040845175048,
+                0.27926944485412225,
+                0.48350410989620624,
+                0.43251967119498985,
+                0.28942472553970255
+              ],
+              "maximum_l2_gap": 0.48350410989620624,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.11471228670358609,
+                0.02718288306483682,
+                0.0652963641706445,
+                0.11471228670358609,
+                0.02718288306483682,
+                0.0652963641706445
+              ],
+              "maximum_l2_gap": 0.11471228670358609,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-09-final-120.npz",
+        "bytes": 833284,
+        "sha256": "f8ca942278ed17d63b827ef669d0caf8b67ccfe614036c4dc6de06574bc4a53a"
+      }
+    },
+    {
+      "trial_id": 10,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 2,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-10-block-012.npz",
+          "bytes": 90622,
+          "sha256": "2cbecddb53435e74772d92002b8d4d7a5c7157d6cb40a9aff9f93a0116f78eb6"
+        },
+        {
+          "path": "trial-10-block-024.npz",
+          "bytes": 90646,
+          "sha256": "e553b3e1f430bd0a4bc62e7c3455e965af53fa47014d7f36eb0b9ca71886a20c"
+        },
+        {
+          "path": "trial-10-block-036.npz",
+          "bytes": 90625,
+          "sha256": "9270668b9acd4000c09c48e542f0608b6ccf1f84b6dac8a74597a2c231553103"
+        },
+        {
+          "path": "trial-10-block-048.npz",
+          "bytes": 90652,
+          "sha256": "fe740c412b58cfbd678fdff37042f680621a5a8d0a6bec73d697b00dca70d2a0"
+        },
+        {
+          "path": "trial-10-block-060.npz",
+          "bytes": 90662,
+          "sha256": "bc71ffbe35ca92549f9ea1429cd0b23479c2a7ff6bb5c8ead41b4cc15244434b"
+        },
+        {
+          "path": "trial-10-block-072.npz",
+          "bytes": 90654,
+          "sha256": "0336b8ad3137d67808504ae68bb1755d0a777878b6e157bd5a5121817c6f52a5"
+        },
+        {
+          "path": "trial-10-block-084.npz",
+          "bytes": 90646,
+          "sha256": "4077e065f9f82ef0a4df808486b5ea16c77708798639464456984d8f06f3a2f5"
+        },
+        {
+          "path": "trial-10-block-096.npz",
+          "bytes": 90645,
+          "sha256": "40e8d1ea477c47098b5d74fe8d6d8ed7ad426126e49967c838758c6f5682f79d"
+        },
+        {
+          "path": "trial-10-block-108.npz",
+          "bytes": 90655,
+          "sha256": "7d9a97e194133547d9f4416a62e0271fe1242377532b4d0802b8220e443d4d28"
+        },
+        {
+          "path": "trial-10-block-120.npz",
+          "bytes": 90662,
+          "sha256": "2e88b145933a5aa611cbc853caa325ae0815b387347672747655468f02a11f78"
+        },
+        {
+          "path": "trial-10-final-120.npz",
+          "bytes": 833432,
+          "sha256": "21a5257fa4deda39b6c9c212e3e990d9fea743a6e2dfb9665cb0f8a121c1f063"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 1.887033716398965e-09,
+            "best_shift": 3
+          },
+          {
+            "label": "td",
+            "distance": 0.015380339621160177,
+            "best_shift": 3
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            2.279115706609091e-09,
+            3.746434269531027e-09,
+            5.450661710684399e-09,
+            1.889293995660204e-09,
+            5.125901791972468e-09,
+            4.1788360098917306e-09
+          ],
+          "maximum_l2_residual": 5.450661710684399e-09,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.2805012349634255,
+                0.4824446045002063,
+                0.4621589161719473,
+                0.2925316223668137,
+                0.45949948358493725,
+                0.4303056860937809
+              ],
+              "maximum_l2_gap": 0.4824446045002063,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.46378481907453417,
+                0.28349162791045013,
+                0.49082699455583395,
+                0.42880393458067767,
+                0.2895782227562049,
+                0.45075060366648967
+              ],
+              "maximum_l2_gap": 0.49082699455583395,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.02550672463935677,
+                0.04523115825608259,
+                0.11840896403789142,
+                0.02550672463935677,
+                0.04523115825608259,
+                0.11840896403789142
+              ],
+              "maximum_l2_gap": 0.11840896403789142,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-10-final-120.npz",
+        "bytes": 833432,
+        "sha256": "21a5257fa4deda39b6c9c212e3e990d9fea743a6e2dfb9665cb0f8a121c1f063"
+      }
+    },
+    {
+      "trial_id": 11,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 2,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-11-block-012.npz",
+          "bytes": 90644,
+          "sha256": "04441441d5d3469adb7af16a66ac2d801ccb34617fea75f0f161e4b880090766"
+        },
+        {
+          "path": "trial-11-block-024.npz",
+          "bytes": 90628,
+          "sha256": "5ef63926c7931a46fea3a15bef49c4e5e519c47f57f403e88ca36a7ad05caf9c"
+        },
+        {
+          "path": "trial-11-block-036.npz",
+          "bytes": 90620,
+          "sha256": "b30196a236a609ec4882b2ce5c2f705d8a66ea09a4bab042690da6d76295c66d"
+        },
+        {
+          "path": "trial-11-block-048.npz",
+          "bytes": 90625,
+          "sha256": "6930ed084c71a9e9112bd90341672fb2fa04ed2815422ed9835677373fec710c"
+        },
+        {
+          "path": "trial-11-block-060.npz",
+          "bytes": 90635,
+          "sha256": "01bee9ebf7915e674cb1daa66e0113fb8d81bb4123e62f3f23d2fbe6de5b259c"
+        },
+        {
+          "path": "trial-11-block-072.npz",
+          "bytes": 90667,
+          "sha256": "00dd52a2982d5fed1e5c7d00c1acc0f451dd269fd02503b8d70140c5b9905b17"
+        },
+        {
+          "path": "trial-11-block-084.npz",
+          "bytes": 90647,
+          "sha256": "bbda31d2014a71c69611754fe977d1043f8b93f8c385e116ad2da1f796e09c3c"
+        },
+        {
+          "path": "trial-11-block-096.npz",
+          "bytes": 90653,
+          "sha256": "b7f278a2d170bd0118e68c377a0a9ffa3e4762b42b872e3bc079a691bbf2a3ff"
+        },
+        {
+          "path": "trial-11-block-108.npz",
+          "bytes": 90646,
+          "sha256": "0b1f3be4265b10771079599f9be7301bcbb333fd95d1fb2a03c3652cfcfe108d"
+        },
+        {
+          "path": "trial-11-block-120.npz",
+          "bytes": 90658,
+          "sha256": "5049a86cb69d9024ba1aafd13165b9a550c9c336ff4c989166e5a8b8902a368a"
+        },
+        {
+          "path": "trial-11-final-120.npz",
+          "bytes": 833338,
+          "sha256": "327917ee3d98df78b67e0333321e8b3ce5940acd51173bac088770ceb3a1b487"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 1.4041046497813102e-09,
+            "best_shift": 3
+          },
+          {
+            "label": "td",
+            "distance": 0.015380341081553353,
+            "best_shift": 3
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            1.6958688002118969e-09,
+            2.7876875578160775e-09,
+            4.055788989714168e-09,
+            1.4058070856591003e-09,
+            3.814143599205558e-09,
+            3.1094378190359766e-09
+          ],
+          "maximum_l2_residual": 4.055788989714168e-09,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.28050123591473636,
+                0.4824446049125089,
+                0.46215891572716894,
+                0.29253162106636776,
+                0.45949948259282847,
+                0.4303056857376146
+              ],
+              "maximum_l2_gap": 0.4824446049125089,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.46378481873033145,
+                0.2834916277519788,
+                0.4908269937864685,
+                0.42880393414423207,
+                0.2895782225849324,
+                0.4507506038978679
+              ],
+              "maximum_l2_gap": 0.4908269937864685,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.02550672440772905,
+                0.045231153193013074,
+                0.11840895987176457,
+                0.02550672440772905,
+                0.045231153193013074,
+                0.11840895987176457
+              ],
+              "maximum_l2_gap": 0.11840895987176457,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-11-final-120.npz",
+        "bytes": 833338,
+        "sha256": "327917ee3d98df78b67e0333321e8b3ce5940acd51173bac088770ceb3a1b487"
+      }
+    },
+    {
+      "trial_id": 12,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 2,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-12-block-012.npz",
+          "bytes": 90647,
+          "sha256": "f51374a8245ff9f8b7b7a6da68ba605179c5c10ef0d538ef14273f1042acd347"
+        },
+        {
+          "path": "trial-12-block-024.npz",
+          "bytes": 90633,
+          "sha256": "5d9656094b04f170bdabdeda86f8d725097ed1478bcfee7252a1e697671eb1d9"
+        },
+        {
+          "path": "trial-12-block-036.npz",
+          "bytes": 90629,
+          "sha256": "1958d9febd5e8fa887e2154223662d1e058fe58a5e204e25dabd1cf858a4f0d4"
+        },
+        {
+          "path": "trial-12-block-048.npz",
+          "bytes": 90609,
+          "sha256": "f4c15713acdb32b89c182ad42cbddefb5625d08a3db578b297fd6d7f55630b34"
+        },
+        {
+          "path": "trial-12-block-060.npz",
+          "bytes": 90645,
+          "sha256": "12dbc6c09719fc93e7fc6acebfe4f184fe47a485eca57475f0e3bfa2ed0af1a5"
+        },
+        {
+          "path": "trial-12-block-072.npz",
+          "bytes": 90631,
+          "sha256": "0ecaf27969ae7877bf543f67f8919e146d8040814522facdae97da5e22794bd8"
+        },
+        {
+          "path": "trial-12-block-084.npz",
+          "bytes": 90686,
+          "sha256": "268c24a859911d34866be923a73cbed77ba090814a187fabefa7c8f12911b9e6"
+        },
+        {
+          "path": "trial-12-block-096.npz",
+          "bytes": 90656,
+          "sha256": "bbf9f4560cd35273ef438bcd534a5793c2b50820d8f9ef7e03a894fd37de3df3"
+        },
+        {
+          "path": "trial-12-block-108.npz",
+          "bytes": 90645,
+          "sha256": "6f95b72dbb179b0558af46b769674ecd79757fd5b4250789ff1463fa02e74cd5"
+        },
+        {
+          "path": "trial-12-block-120.npz",
+          "bytes": 90629,
+          "sha256": "3b1301784efc59d8e11f88640fa8011fd7d1310fc2e357b4e5b6cff65b432d13"
+        },
+        {
+          "path": "trial-12-final-120.npz",
+          "bytes": 833266,
+          "sha256": "3ea0e95e014a094faa958f25ff4e1ec778ab744092e34a927c125eb594690c81"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380419701768025,
+            "best_shift": 3
+          },
+          {
+            "label": "td",
+            "distance": 1.0059872613455501e-07,
+            "best_shift": 3
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            4.363146845749532e-08,
+            1.2314689965226e-07,
+            2.623133804466712e-07,
+            1.252132632610994e-07,
+            3.547689707283562e-08,
+            3.6986730383737304e-08
+          ],
+          "maximum_l2_residual": 2.623133804466712e-07,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.27527990954965276,
+                0.46822524510326247,
+                0.45393254376394465,
+                0.2934251430352785,
+                0.46502953955785137,
+                0.4338529974366309
+              ],
+              "maximum_l2_gap": 0.46822524510326247,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.45530397270127476,
+                0.27926939287441044,
+                0.48350399688787016,
+                0.4325196699543786,
+                0.2894247119338962,
+                0.4495786305525264
+              ],
+              "maximum_l2_gap": 0.48350399688787016,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.02718288060964845,
+                0.06529641296338601,
+                0.11471220266617257,
+                0.02718288060964845,
+                0.06529641296338601,
+                0.11471220266617257
+              ],
+              "maximum_l2_gap": 0.11471220266617257,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-12-final-120.npz",
+        "bytes": 833266,
+        "sha256": "3ea0e95e014a094faa958f25ff4e1ec778ab744092e34a927c125eb594690c81"
+      }
+    },
+    {
+      "trial_id": 13,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 2,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-13-block-012.npz",
+          "bytes": 90629,
+          "sha256": "db47ae0f4814daa6db9e79f151b17cfcfa34cd250107c42008281dcc39c35b19"
+        },
+        {
+          "path": "trial-13-block-024.npz",
+          "bytes": 90621,
+          "sha256": "86cd43a38e1daa9c1612fdce2584b78e91a568fda690a37c740401674407d0a0"
+        },
+        {
+          "path": "trial-13-block-036.npz",
+          "bytes": 90658,
+          "sha256": "70d61f4f372ed1984143c4439b15d2212457274793d3d79cf2d9bfb3cd4ffb8e"
+        },
+        {
+          "path": "trial-13-block-048.npz",
+          "bytes": 90661,
+          "sha256": "408c6aa3d0b6fafd42d4b959dcc57bec7c0dcc75c33fdf030c4fe93eba3df1ef"
+        },
+        {
+          "path": "trial-13-block-060.npz",
+          "bytes": 90644,
+          "sha256": "e5fd7dee14b8ddca1527f43b8a8cb6eb8c3f53fc55299cef976c98cf35f60230"
+        },
+        {
+          "path": "trial-13-block-072.npz",
+          "bytes": 90629,
+          "sha256": "7c8800d20deaeef1677eac1639a02b248873c19c0e1e063d73532a942b310e17"
+        },
+        {
+          "path": "trial-13-block-084.npz",
+          "bytes": 90650,
+          "sha256": "b722b426718ad6a746331a7cca4b4110091207f5754416ac7ea92ab19382fcae"
+        },
+        {
+          "path": "trial-13-block-096.npz",
+          "bytes": 90647,
+          "sha256": "d33f68153a2279a7b6c4d57f312da638688204c1e1580a29a210c2c482f74d21"
+        },
+        {
+          "path": "trial-13-block-108.npz",
+          "bytes": 90634,
+          "sha256": "6b706136ed0c2270ca9e66d88cbca3ad3ca087462a48cae846dac2791b928554"
+        },
+        {
+          "path": "trial-13-block-120.npz",
+          "bytes": 90621,
+          "sha256": "8b880573d5ca9e2a5d0e0ef0a547976b4e04dfa96fbf00c60f8da00a813defa5"
+        },
+        {
+          "path": "trial-13-final-120.npz",
+          "bytes": 833257,
+          "sha256": "a2285a469e673a10097a82b5653c43091380a2d5b8db0f7e85c987f9ecaca270"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380256215958088,
+            "best_shift": 3
+          },
+          {
+            "label": "td",
+            "distance": 1.0694546795540544e-07,
+            "best_shift": 3
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            4.638168842815517e-08,
+            1.3090928956613585e-07,
+            2.7884854941242597e-07,
+            1.3310628534139216e-07,
+            3.7713639719377244e-08,
+            3.9319006460209535e-08
+          ],
+          "maximum_l2_residual": 2.7884854941242597e-07,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.27527994498945246,
+                0.4682254285853486,
+                0.4539326811874065,
+                0.2934251882872389,
+                0.4650295547204772,
+                0.4338530136749501
+              ],
+              "maximum_l2_gap": 0.4682254285853486,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.4553041094477978,
+                0.2792694564433978,
+                0.4835041350922716,
+                0.432519686637223,
+                0.28942472857320745,
+                0.4495786860664143
+              ],
+              "maximum_l2_gap": 0.4835041350922716,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.027182883612225008,
+                0.0652963532917457,
+                0.11471229406998269,
+                0.027182883612225008,
+                0.0652963532917457,
+                0.11471229406998269
+              ],
+              "maximum_l2_gap": 0.11471229406998269,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-13-final-120.npz",
+        "bytes": 833257,
+        "sha256": "a2285a469e673a10097a82b5653c43091380a2d5b8db0f7e85c987f9ecaca270"
+      }
+    },
+    {
+      "trial_id": 14,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 3,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-14-block-012.npz",
+          "bytes": 90633,
+          "sha256": "f24d2406a96f892b8af2c05e3a35a71e4b7c7fa56f248964768c1b6e4e1a70ad"
+        },
+        {
+          "path": "trial-14-block-024.npz",
+          "bytes": 90654,
+          "sha256": "ba474811120a70387793842872e96c8d1a2c2032a765a557c804c1283a862f77"
+        },
+        {
+          "path": "trial-14-block-036.npz",
+          "bytes": 90638,
+          "sha256": "7fcd14b5e7d2652722f1af8327f49de0a93dabe5a076cdd054ae91ab390a5e48"
+        },
+        {
+          "path": "trial-14-block-048.npz",
+          "bytes": 90673,
+          "sha256": "e46f5fc1d2324c584e3d742703428e5ab1bdf9c078d3cab069de17b8926c7701"
+        },
+        {
+          "path": "trial-14-block-060.npz",
+          "bytes": 90658,
+          "sha256": "d0a2795ea160c64915217eceb58b5e42a70d0313c69a3c3e8f4c202512d7129d"
+        },
+        {
+          "path": "trial-14-block-072.npz",
+          "bytes": 90656,
+          "sha256": "2ee4d9e14a8720b71122696da59a718d97ab65026498af96d373a057b935a38c"
+        },
+        {
+          "path": "trial-14-block-084.npz",
+          "bytes": 90654,
+          "sha256": "8b3a228316dfb9a4237770b95fea45e58d8fb3743ad6e9192658adfe619cf39c"
+        },
+        {
+          "path": "trial-14-block-096.npz",
+          "bytes": 90637,
+          "sha256": "ced3bba0f853b4f3690fa5955f61a7f76f1a43805ef54c27f658159b842db597"
+        },
+        {
+          "path": "trial-14-block-108.npz",
+          "bytes": 90662,
+          "sha256": "2854fe72c67d1dea9a4652f632707a96f91cf44b987a1c37e84c2e42ed989338"
+        },
+        {
+          "path": "trial-14-block-120.npz",
+          "bytes": 90661,
+          "sha256": "4154fd7d55f8b18ab720af8790094e8ba1deba897cff0924d2673065c5f2be6d"
+        },
+        {
+          "path": "trial-14-final-120.npz",
+          "bytes": 833446,
+          "sha256": "37d18981f0319d022ac0dbcc944793fd4318dbc5f445d11689d762e263ca7be7"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 2.6749734022358635e-10,
+            "best_shift": 4
+          },
+          {
+            "label": "td",
+            "distance": 0.015380340339805267,
+            "best_shift": 4
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            5.310601547161212e-10,
+            7.726317815720969e-10,
+            2.6780747971916347e-10,
+            7.266052920923872e-10,
+            5.923572128997878e-10,
+            1.710680229683335e-10
+          ],
+          "maximum_l2_residual": 7.726317815720969e-10,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.4824446047030973,
+                0.4621589159530773,
+                0.29253162172687774,
+                0.4594994830967351,
+                0.4303056859260464,
+                0.2805012354926305
+              ],
+              "maximum_l2_gap": 0.4824446047030973,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.2834916278324682,
+                0.4908269941772382,
+                0.42880393436591124,
+                0.2895782227346357,
+                0.450750603780353,
+                0.4637848189139485
+              ],
+              "maximum_l2_gap": 0.4908269941772382,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.04523115576459954,
+                0.11840896198778103,
+                0.025506724559180648,
+                0.04523115576459954,
+                0.11840896198778103,
+                0.025506724559180648
+              ],
+              "maximum_l2_gap": 0.11840896198778103,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-14-final-120.npz",
+        "bytes": 833446,
+        "sha256": "37d18981f0319d022ac0dbcc944793fd4318dbc5f445d11689d762e263ca7be7"
+      }
+    },
+    {
+      "trial_id": 15,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 3,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-15-block-012.npz",
+          "bytes": 90625,
+          "sha256": "66acebe63d9f0156722d6e8f1879d58370e7f7a14e9ee3a3290f42a6e15bd544"
+        },
+        {
+          "path": "trial-15-block-024.npz",
+          "bytes": 90626,
+          "sha256": "0306b99950d417aad858ef09763389e3379f4a4c4748510aaf4fd9464c1fd967"
+        },
+        {
+          "path": "trial-15-block-036.npz",
+          "bytes": 90650,
+          "sha256": "2ce8c86c4ffe8cee796684556ec89d52e89e1cf86137dabaf508b3b6072f090b"
+        },
+        {
+          "path": "trial-15-block-048.npz",
+          "bytes": 90654,
+          "sha256": "606490f2287bb6f3b6a3d18e2c5f1d38c4b09f8606efafc73628ceddfff3d5fa"
+        },
+        {
+          "path": "trial-15-block-060.npz",
+          "bytes": 90645,
+          "sha256": "b2fd2ab53a05e6c398616598208a963d8033ae22d69b9deefa61e4e5fe3a7489"
+        },
+        {
+          "path": "trial-15-block-072.npz",
+          "bytes": 90636,
+          "sha256": "d8f5842780d3127c4d50b7eb6540931767a3350bbfdb70ad3d801e2c2f910e45"
+        },
+        {
+          "path": "trial-15-block-084.npz",
+          "bytes": 90617,
+          "sha256": "0abd922a858231675b560afd2aa03876e8491bb76923a413e0c5fbf42617a1fa"
+        },
+        {
+          "path": "trial-15-block-096.npz",
+          "bytes": 90656,
+          "sha256": "b987b3ffeadde0e31bbbc17a304b701d01d670b3f2109fdc15559a1d584389e0"
+        },
+        {
+          "path": "trial-15-block-108.npz",
+          "bytes": 90669,
+          "sha256": "ed549ba16a018770ba5fefee255e3904dc53abc93e8ec483bba69ed13f00c419"
+        },
+        {
+          "path": "trial-15-block-120.npz",
+          "bytes": 90655,
+          "sha256": "c07051b421eb7f77e0e21dd7f382c8692387be73484fd0e415bc3288efa1a8e3"
+        },
+        {
+          "path": "trial-15-final-120.npz",
+          "bytes": 833320,
+          "sha256": "17e2d410583d63eaf73869051ea2738f9c28a6cc87bc2d4b2e4de75c7450331b"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 2.6851335172175346e-10,
+            "best_shift": 4
+          },
+          {
+            "label": "td",
+            "distance": 0.015380340577656823,
+            "best_shift": 4
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            5.331443956616037e-10,
+            7.756694272664784e-10,
+            2.688598388558203e-10,
+            7.294484863291673e-10,
+            5.946798442623698e-10,
+            1.7174044762346027e-10
+          ],
+          "maximum_l2_residual": 7.756694272664784e-10,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.48244460477025053,
+                0.46215891588064134,
+                0.2925316215150801,
+                0.4594994829351523,
+                0.4303056858529526,
+                0.28050123552517864
+              ],
+              "maximum_l2_gap": 0.48244460477025053,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.28349162780665893,
+                0.4908269940519379,
+                0.4288039342948271,
+                0.2895782225810722,
+                0.45075060381803445,
+                0.4637848188402739
+              ],
+              "maximum_l2_gap": 0.4908269940519379,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.045231154939998824,
+                0.11840896130926591,
+                0.025506724453713724,
+                0.045231154939998824,
+                0.11840896130926591,
+                0.025506724453713724
+              ],
+              "maximum_l2_gap": 0.11840896130926591,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-15-final-120.npz",
+        "bytes": 833320,
+        "sha256": "17e2d410583d63eaf73869051ea2738f9c28a6cc87bc2d4b2e4de75c7450331b"
+      }
+    },
+    {
+      "trial_id": 16,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 3,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-16-block-012.npz",
+          "bytes": 90657,
+          "sha256": "c7f588b5a52012a351126f6ea9adcca46d8bbee9dc043a22ec33b84565975bdb"
+        },
+        {
+          "path": "trial-16-block-024.npz",
+          "bytes": 90639,
+          "sha256": "c995c79746bddd4886adfa24c0161d9cf43d397a9e0ae850b8755c48e5e966d6"
+        },
+        {
+          "path": "trial-16-block-036.npz",
+          "bytes": 90645,
+          "sha256": "7053fe44b1f26f83a90cbecf9d4533be8c4a2194e3d69f24d12f5a0e688dce2d"
+        },
+        {
+          "path": "trial-16-block-048.npz",
+          "bytes": 90648,
+          "sha256": "0630fd92344ba7e638858283c7bfdda313c0dd403ef339bda9f4741d2f151c6d"
+        },
+        {
+          "path": "trial-16-block-060.npz",
+          "bytes": 90664,
+          "sha256": "a19e9bef2fbf3137b12d36ce41b2c351f94f4fae90e461d34ce981fc65a1e9e9"
+        },
+        {
+          "path": "trial-16-block-072.npz",
+          "bytes": 90627,
+          "sha256": "b6545d421e1f5e7380035a5f9bf20627e7ebc309818c185b1992052ee4889ff9"
+        },
+        {
+          "path": "trial-16-block-084.npz",
+          "bytes": 90639,
+          "sha256": "c81ceb8e1b0ce0faa13530f3b8970c967270c108175661d036953f00d9f81696"
+        },
+        {
+          "path": "trial-16-block-096.npz",
+          "bytes": 90632,
+          "sha256": "710135abd20d6c16c57afddedb1e5093aa8f4be804381bea8bd895a4dfd2b70b"
+        },
+        {
+          "path": "trial-16-block-108.npz",
+          "bytes": 90610,
+          "sha256": "f182bf0144ce91b80646ccade9ba4f619e3dca40eca5cf6ce63b0a687cfd4026"
+        },
+        {
+          "path": "trial-16-block-120.npz",
+          "bytes": 90625,
+          "sha256": "1b569c04641f6b0872284a5096591215abf0a0c5412df6f94b49724303dcc645"
+        },
+        {
+          "path": "trial-16-final-120.npz",
+          "bytes": 833302,
+          "sha256": "4ec8764497af1a92b3e468b43a91fbf74b88e5cce2bf9dd1ed633c236f42444d"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380393630462265,
+            "best_shift": 4
+          },
+          {
+            "label": "td",
+            "distance": 6.750141934386532e-08,
+            "best_shift": 4
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            8.263111195225567e-08,
+            1.7601135544328825e-07,
+            8.401766757473892e-08,
+            2.3804915565051106e-08,
+            2.48180396068344e-08,
+            1.8212810872740607e-08
+          ],
+          "maximum_l2_residual": 1.7601135544328825e-07,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.46822527436333505,
+                0.45393256567901275,
+                0.2934251502516901,
+                0.4650295419759318,
+                0.43385300101813273,
+                0.27527992253575767
+              ],
+              "maximum_l2_gap": 0.46822527436333505,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.27926940301182845,
+                0.48350401892748535,
+                0.4325196726148754,
+                0.28942472217805437,
+                0.44957863940544196,
+                0.4553039958108031
+              ],
+              "maximum_l2_gap": 0.48350401892748535,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.0652964034476136,
+                0.11471221724238931,
+                0.027182879713329996,
+                0.0652964034476136,
+                0.11471221724238931,
+                0.027182879713329996
+              ],
+              "maximum_l2_gap": 0.11471221724238931,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-16-final-120.npz",
+        "bytes": 833302,
+        "sha256": "4ec8764497af1a92b3e468b43a91fbf74b88e5cce2bf9dd1ed633c236f42444d"
+      }
+    },
+    {
+      "trial_id": 17,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 3,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-17-block-012.npz",
+          "bytes": 90649,
+          "sha256": "03cfdeccab40d7ba64bfbdfd05b6f23af1146ea0a350561478bb634c0974dd16"
+        },
+        {
+          "path": "trial-17-block-024.npz",
+          "bytes": 90596,
+          "sha256": "def18e1ecee296769e8f2749519587b597d39d628991640475cb692d5b69212e"
+        },
+        {
+          "path": "trial-17-block-036.npz",
+          "bytes": 90636,
+          "sha256": "53104141db4492b164b943c3233f4b269363bf68cd4f26a221a213ba758745f4"
+        },
+        {
+          "path": "trial-17-block-048.npz",
+          "bytes": 90644,
+          "sha256": "c23eccf54f560fcd21314d634b82b3c1f58b7fe7574628d2f23442d8db959a33"
+        },
+        {
+          "path": "trial-17-block-060.npz",
+          "bytes": 90646,
+          "sha256": "f18eb79cf5ce3ebeb55adf017e610a9eb2896a562481f3b01efd4fa0b317b484"
+        },
+        {
+          "path": "trial-17-block-072.npz",
+          "bytes": 90631,
+          "sha256": "e4f8be113756d7d86f6788590c5d18ef2aacd163fb25cd837ec9732a0b36bf67"
+        },
+        {
+          "path": "trial-17-block-084.npz",
+          "bytes": 90613,
+          "sha256": "d8d15984446b3b7a3c0cf2487d29c033c02a01b74fd594cd8c50442bc06ae3f7"
+        },
+        {
+          "path": "trial-17-block-096.npz",
+          "bytes": 90637,
+          "sha256": "a65f5f0bb200c8ec3b1a937e9c6abee4fa4ff6c0543d61a8e3c6de9cb48db30d"
+        },
+        {
+          "path": "trial-17-block-108.npz",
+          "bytes": 90629,
+          "sha256": "073bfc617fd97327bdcc896de586dad2f72af7595bd3d26ad90afa9d636aeddf"
+        },
+        {
+          "path": "trial-17-block-120.npz",
+          "bytes": 90563,
+          "sha256": "edf749f62e454dc091bc8abfd0ea7f5016148e33e7ab8888ea14ed89a56d4289"
+        },
+        {
+          "path": "trial-17-final-120.npz",
+          "bytes": 833213,
+          "sha256": "2c31ddd911c458657ca700a44e76a59b2e4af2d4376fe4ee989ab78323033eda"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.01538029052720795,
+            "best_shift": 4
+          },
+          {
+            "label": "td",
+            "distance": 6.338749265079639e-08,
+            "best_shift": 4
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            7.759119749355327e-08,
+            1.65276166722846e-07,
+            7.889333961072295e-08,
+            2.235318030443431e-08,
+            2.3304651157807655e-08,
+            1.7102219928835806e-08
+          ],
+          "maximum_l2_residual": 1.65276166722846e-07,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.4682253900773382,
+                0.45393265234589,
+                0.2934251787901022,
+                0.46502955153835396,
+                0.4338530093356355,
+                0.27527993066430545
+              ],
+              "maximum_l2_gap": 0.4682253900773382,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.2792694431019661,
+                0.48350410608687117,
+                0.43251968313602585,
+                0.289424717953281,
+                0.44957867441560556,
+                0.45530407952535606
+              ],
+              "maximum_l2_gap": 0.48350410608687117,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.06529636581539601,
+                0.1147122748866994,
+                0.027182884273391786,
+                0.06529636581539601,
+                0.1147122748866994,
+                0.027182884273391786
+              ],
+              "maximum_l2_gap": 0.1147122748866994,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-17-final-120.npz",
+        "bytes": 833213,
+        "sha256": "2c31ddd911c458657ca700a44e76a59b2e4af2d4376fe4ee989ab78323033eda"
+      }
+    },
+    {
+      "trial_id": 18,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 4,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-18-block-012.npz",
+          "bytes": 90625,
+          "sha256": "8cdc691c571edc28fdd9b306dcfc1c37bf88bda40cdeee7c5b2c710ec2b4a33d"
+        },
+        {
+          "path": "trial-18-block-024.npz",
+          "bytes": 90646,
+          "sha256": "4077d7442469c5704910c1452f259db1a2aca25154c36228cbf11349803c6fea"
+        },
+        {
+          "path": "trial-18-block-036.npz",
+          "bytes": 90599,
+          "sha256": "080fab93e884eb3699958b4dbf91ed1a2c29535d584143f652fcef408cc68424"
+        },
+        {
+          "path": "trial-18-block-048.npz",
+          "bytes": 90657,
+          "sha256": "88f8868ef7955fd9991b5e37625788116835b1b6bfabdf4e2bf3477114c6d9c4"
+        },
+        {
+          "path": "trial-18-block-060.npz",
+          "bytes": 90655,
+          "sha256": "2ae6adbca24062604bebc9e32da1fdba70a21f0e21b170faf35baa1e4caa7fb9"
+        },
+        {
+          "path": "trial-18-block-072.npz",
+          "bytes": 90650,
+          "sha256": "d3bef0298a7b15f6a74661660e6eea76b7e0e85ea65c9ac55d1a1b1d37dc864e"
+        },
+        {
+          "path": "trial-18-block-084.npz",
+          "bytes": 90653,
+          "sha256": "0a9057a94b54de679b7274c0545663090f291e44f401f5fa0498f4abd3e0f555"
+        },
+        {
+          "path": "trial-18-block-096.npz",
+          "bytes": 90629,
+          "sha256": "fe3af5d899954f3ad351c862b3a01f4ad53427aac6adba36cd5cd0fa0fef4ea3"
+        },
+        {
+          "path": "trial-18-block-108.npz",
+          "bytes": 90669,
+          "sha256": "30e3f39ab3de23ea21fd9a22826bca3020b64fab87ee49ac180bed7cf2f247c5"
+        },
+        {
+          "path": "trial-18-block-120.npz",
+          "bytes": 90655,
+          "sha256": "6e38cb6346c2df71d5af206d9b51ef7eaa3302806b4a4b045d8d549553fa44f0"
+        },
+        {
+          "path": "trial-18-final-120.npz",
+          "bytes": 833305,
+          "sha256": "4b62822145aaab541779f1d08d3a39ac73a542011bec792299b12230e8c3aafc"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 1.098414855340399e-09,
+            "best_shift": 5
+          },
+          {
+            "label": "td",
+            "distance": 0.015380339971105883,
+            "best_shift": 5
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            3.17275124743825e-09,
+            1.0997314285882273e-09,
+            2.983710791297527e-09,
+            2.4324406842005626e-09,
+            7.024830821325374e-10,
+            1.154756659460797e-09
+          ],
+          "maximum_l2_residual": 3.17275124743825e-09,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.4621589160653763,
+                0.29253162205520233,
+                0.4594994833472087,
+                0.4303056860393504,
+                0.2805012356769993,
+                0.4824446049472482
+              ],
+              "maximum_l2_gap": 0.4824446049472482,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.4908269943714854,
+                0.42880393447609694,
+                0.2895782229726923,
+                0.45075060409096623,
+                0.46378481902817026,
+                0.28349162811182643
+              ],
+              "maximum_l2_gap": 0.4908269943714854,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.11840896303961815,
+                0.02550672472267078,
+                0.045231155986407694,
+                0.11840896303961815,
+                0.02550672472267078,
+                0.045231155986407694
+              ],
+              "maximum_l2_gap": 0.11840896303961815,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-18-final-120.npz",
+        "bytes": 833305,
+        "sha256": "4b62822145aaab541779f1d08d3a39ac73a542011bec792299b12230e8c3aafc"
+      }
+    },
+    {
+      "trial_id": 19,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 4,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-19-block-012.npz",
+          "bytes": 90638,
+          "sha256": "6e48097c190de589ed9b17cf920ddc0fa8d9de7efe30e21fed36c5d2e7c5c34d"
+        },
+        {
+          "path": "trial-19-block-024.npz",
+          "bytes": 90661,
+          "sha256": "e4383f8dbf6390618c9b2d677d44e07775b5c5f99d2ba31847a01ea56f23ac54"
+        },
+        {
+          "path": "trial-19-block-036.npz",
+          "bytes": 90659,
+          "sha256": "691df3380a3b29717ad38139d6e5cf5584205752f80e1b9e46bdab533281a53f"
+        },
+        {
+          "path": "trial-19-block-048.npz",
+          "bytes": 90640,
+          "sha256": "98872ae48f192b4ae8a68ab25b881e62a732e8e77b59d2b49e00f0698ed68602"
+        },
+        {
+          "path": "trial-19-block-060.npz",
+          "bytes": 90665,
+          "sha256": "0b5124b3be939288c29ca7133b5f4dea4197443fd4f7fb186542e106818ebf18"
+        },
+        {
+          "path": "trial-19-block-072.npz",
+          "bytes": 90690,
+          "sha256": "caa0eac615cdb9554a64b1e229ff85fc41380b19e3bd013b4f9abc44475ab1a5"
+        },
+        {
+          "path": "trial-19-block-084.npz",
+          "bytes": 90642,
+          "sha256": "5c7988126ba9e6d44e34017a737b548ba18200521aba9a8adf042917374f2aab"
+        },
+        {
+          "path": "trial-19-block-096.npz",
+          "bytes": 90664,
+          "sha256": "85f8c7f845e2aeef388c68bfba581fca08cbd0c7dc3a22d23066d33f904ae719"
+        },
+        {
+          "path": "trial-19-block-108.npz",
+          "bytes": 90653,
+          "sha256": "52e6554e55c07cf295a16240eb64c7b3b9eee532f06e025ee53855c3910b9b5b"
+        },
+        {
+          "path": "trial-19-block-120.npz",
+          "bytes": 90652,
+          "sha256": "c4d430edc6ab45434d9d267b2716ab3b6c82dd18966a92f4fe10700b07b31308"
+        },
+        {
+          "path": "trial-19-final-120.npz",
+          "bytes": 833390,
+          "sha256": "81a43d26dd0e46e4bba7a00cbe1cbc75a7d3ce81427e65fb76fa93e6923e2440"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 1.0402565989769395e-09,
+            "best_shift": 5
+          },
+          {
+            "label": "td",
+            "distance": 0.015380340920100374,
+            "best_shift": 5
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            3.0048036028882853e-09,
+            1.0415200184580907e-09,
+            2.8257811912127947e-09,
+            2.303686630520173e-09,
+            6.652990777002441e-10,
+            1.0936277970497083e-09
+          ],
+          "maximum_l2_residual": 3.0048036028882853e-09,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.4621589157763403,
+                0.29253162121013593,
+                0.45949948270251095,
+                0.43030568574771483,
+                0.2805012353496516,
+                0.48244460453712196
+              ],
+              "maximum_l2_gap": 0.48244460453712196,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.49082699387152434,
+                0.4288039341924836,
+                0.28957822235997194,
+                0.45075060352279084,
+                0.4637848187341889,
+                0.28349162754281976
+              ],
+              "maximum_l2_gap": 0.49082699387152434,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.11840896033234488,
+                0.0255067243018668,
+                0.04523115475329352,
+                0.11840896033234488,
+                0.0255067243018668,
+                0.04523115475329352
+              ],
+              "maximum_l2_gap": 0.11840896033234488,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-19-final-120.npz",
+        "bytes": 833390,
+        "sha256": "81a43d26dd0e46e4bba7a00cbe1cbc75a7d3ce81427e65fb76fa93e6923e2440"
+      }
+    },
+    {
+      "trial_id": 20,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 4,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-20-block-012.npz",
+          "bytes": 90638,
+          "sha256": "2a126f7d2bdddf0df36cbeacd691cfce69a0875462312146b296856ea1b1c9c3"
+        },
+        {
+          "path": "trial-20-block-024.npz",
+          "bytes": 90645,
+          "sha256": "7069f19e6ff29b3a636bb4df63fbc738b637f902b40a4b23969b08bfa6bebdbc"
+        },
+        {
+          "path": "trial-20-block-036.npz",
+          "bytes": 90666,
+          "sha256": "fce37441662aa6855446b2a7cb3bed3a0724aad9c20e0a8b13ab3af0b0d4b9bc"
+        },
+        {
+          "path": "trial-20-block-048.npz",
+          "bytes": 90674,
+          "sha256": "18ed4e68a6bc7f950380e0f142dd2a94f25d7e122cc6922448bc3327f943e841"
+        },
+        {
+          "path": "trial-20-block-060.npz",
+          "bytes": 90631,
+          "sha256": "b2608cad34063f35c866fe04a7204626f9b38b5d7485a2e36b945b26ddea7d81"
+        },
+        {
+          "path": "trial-20-block-072.npz",
+          "bytes": 90646,
+          "sha256": "3cc657de259aa199266eb1c17a7712286cbd6859cda1d308a59f6ecb700ef34a"
+        },
+        {
+          "path": "trial-20-block-084.npz",
+          "bytes": 90646,
+          "sha256": "10ab0340bd95392f65b7c3f6f0d7e44790dd49a2ef32591a7154664077e7295b"
+        },
+        {
+          "path": "trial-20-block-096.npz",
+          "bytes": 90665,
+          "sha256": "0ba631ad22f55830fc5fb25024ac2f841de32cd8aac0a5b24fe8113c02af9cb7"
+        },
+        {
+          "path": "trial-20-block-108.npz",
+          "bytes": 90654,
+          "sha256": "9167c6ba7d7b0e9beee529934d064c66653d5da6387ab61cc6dbc8bc1ca8e29b"
+        },
+        {
+          "path": "trial-20-block-120.npz",
+          "bytes": 90639,
+          "sha256": "8971b89fb8bc89ce538425e059b9f2e40aeb481daa23be93defc23dc24cb7939"
+        },
+        {
+          "path": "trial-20-final-120.npz",
+          "bytes": 833284,
+          "sha256": "f7031ea207e7e3f3a6b51238876180ac10ee21fba99965b1b7d8f1da78c22173"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380374856060489,
+            "best_shift": 5
+          },
+          {
+            "label": "td",
+            "distance": 4.366746274311285e-08,
+            "best_shift": 5
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            1.1386404706154563e-07,
+            5.4352132925115487e-08,
+            1.539974234492299e-08,
+            1.6055182315869553e-08,
+            1.1782159685345912e-08,
+            3.325436413837474e-08
+          ],
+          "maximum_l2_residual": 1.1386404706154563e-07,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.4539325814604441,
+                0.2934251554483476,
+                0.4650295437172112,
+                0.43385300253271386,
+                0.27527993136666484,
+                0.46822530880190266
+              ],
+              "maximum_l2_gap": 0.46822530880190266,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.4835040347986031,
+                0.4325196745307268,
+                0.28942472140874603,
+                0.4495786594448377,
+                0.45530401105463436,
+                0.2792694178930723
+              ],
+              "maximum_l2_gap": 0.4835040347986031,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.11471222773900096,
+                0.02718288054368656,
+                0.06529636936064774,
+                0.11471222773900096,
+                0.02718288054368656,
+                0.06529636936064774
+              ],
+              "maximum_l2_gap": 0.11471222773900096,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-20-final-120.npz",
+        "bytes": 833284,
+        "sha256": "f7031ea207e7e3f3a6b51238876180ac10ee21fba99965b1b7d8f1da78c22173"
+      }
+    },
+    {
+      "trial_id": 21,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 4,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-21-block-012.npz",
+          "bytes": 90640,
+          "sha256": "8f9c93907f3bbc141f831d41496175c490a25a03c391d36f73b97ca06f1fc109"
+        },
+        {
+          "path": "trial-21-block-024.npz",
+          "bytes": 90636,
+          "sha256": "995a057c8dd2f5c033d3ea99ff05c52ff80acd0ad95409737ab76d96c21637e3"
+        },
+        {
+          "path": "trial-21-block-036.npz",
+          "bytes": 90654,
+          "sha256": "d4199101d194373fc3199442245731f0ac92f25b7f514b7ea35f1ec77716029d"
+        },
+        {
+          "path": "trial-21-block-048.npz",
+          "bytes": 90648,
+          "sha256": "4edfd0d1ad456c585f2eae4c16dad9b7ff945da202c28d521c8666cd809acb8a"
+        },
+        {
+          "path": "trial-21-block-060.npz",
+          "bytes": 90625,
+          "sha256": "4931d3d06bcfde4b07d8d26670fa28dc9bad752a50068cc54b7a5d5400719b1e"
+        },
+        {
+          "path": "trial-21-block-072.npz",
+          "bytes": 90642,
+          "sha256": "c7249e2bfe69e9d93e85aa880ae69fd890e34e6eb070b56f17afad38dce4147f"
+        },
+        {
+          "path": "trial-21-block-084.npz",
+          "bytes": 90636,
+          "sha256": "36ee2fc5241064c4c3e63a9c1fc19ae409b3e4b4faad0197e5f24cf8f85140bc"
+        },
+        {
+          "path": "trial-21-block-096.npz",
+          "bytes": 90661,
+          "sha256": "de8a4be2bc22772470e26bed5dd5aa952371f1b746abbfc7669654551160616c"
+        },
+        {
+          "path": "trial-21-block-108.npz",
+          "bytes": 90646,
+          "sha256": "73544b873ad49ce3e5e4f26b7a086d146e74e508923a04ecf039c3beb5aff78e"
+        },
+        {
+          "path": "trial-21-block-120.npz",
+          "bytes": 90641,
+          "sha256": "c709343645a5146054404b1f8ed439a87abd902ed67fa47a0a4efd87070be2a5"
+        },
+        {
+          "path": "trial-21-final-120.npz",
+          "bytes": 833289,
+          "sha256": "4e24db517ff77d56be8338edde165228655acf46355922251fe43ab70dd1c66d"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380304039710267,
+            "best_shift": 5
+          },
+          {
+            "label": "td",
+            "distance": 4.6233439629715175e-08,
+            "best_shift": 5
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            1.205484504900678e-07,
+            5.754289560134194e-08,
+            1.6303856868756565e-08,
+            1.6997822711525282e-08,
+            1.2473925054478276e-08,
+            3.5206833799397636e-08
+          ],
+          "maximum_l2_residual": 1.205484504900678e-07,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.45393264098749225,
+                0.29342517504992216,
+                0.46502955028514625,
+                0.4338530082455775,
+                0.2752799218166152,
+                0.46822536075934523
+              ],
+              "maximum_l2_gap": 0.46822536075934523,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.4835040946639293,
+                0.43251968175716443,
+                0.2894247185069636,
+                0.44957865536071473,
+                0.45530406855388106,
+                0.2792694298216059
+              ],
+              "maximum_l2_gap": 0.4835040946639293,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.11471226733192624,
+                0.027182883675761334,
+                0.06529639958091489,
+                0.11471226733192624,
+                0.027182883675761334,
+                0.06529639958091489
+              ],
+              "maximum_l2_gap": 0.11471226733192624,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-21-final-120.npz",
+        "bytes": 833289,
+        "sha256": "4e24db517ff77d56be8338edde165228655acf46355922251fe43ab70dd1c66d"
+      }
+    },
+    {
+      "trial_id": 22,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 5,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-22-block-012.npz",
+          "bytes": 90626,
+          "sha256": "6d0a7acb35bbed983e4ffa74e567f8b052952444a13a2cacd55b2789d2554f11"
+        },
+        {
+          "path": "trial-22-block-024.npz",
+          "bytes": 90649,
+          "sha256": "3e83ef6bed9bf7ecff3a2007c2ba8709ec84ced73402ce527efb269a76a03fe0"
+        },
+        {
+          "path": "trial-22-block-036.npz",
+          "bytes": 90652,
+          "sha256": "3a70f6534bd53fc4d41e54c5f82329f19c4a09a5550b132bed96915732746eb8"
+        },
+        {
+          "path": "trial-22-block-048.npz",
+          "bytes": 90649,
+          "sha256": "f60b8ae88db3092d6f29ca65bb8901e3861d780f589be5a10b2a13cb0d501997"
+        },
+        {
+          "path": "trial-22-block-060.npz",
+          "bytes": 90641,
+          "sha256": "278b6c8b9264dbde26a4cc84eebb240399d5b4f06a64f9ce57f1c33ca6b4f4b5"
+        },
+        {
+          "path": "trial-22-block-072.npz",
+          "bytes": 90664,
+          "sha256": "e1c58dcc9a96e93413218c18326d8bd0c5357759b7d6019ddf42c0c0068b3d9a"
+        },
+        {
+          "path": "trial-22-block-084.npz",
+          "bytes": 90642,
+          "sha256": "bc9a44b4d9fae72a6f83448b5192986c32701be571c0fcfaaca876d61cee4496"
+        },
+        {
+          "path": "trial-22-block-096.npz",
+          "bytes": 90643,
+          "sha256": "f08aeb0fe348f46b7214b2bc01ea0a5be699f33311a63c49bdb3816f7e032722"
+        },
+        {
+          "path": "trial-22-block-108.npz",
+          "bytes": 90670,
+          "sha256": "8fc0a1bfa7f11395fd88944ee0678a6e2c15b135bb4b58f40b086562c0d6574f"
+        },
+        {
+          "path": "trial-22-block-120.npz",
+          "bytes": 90661,
+          "sha256": "a6c53015db68b50b14cd6e320e8013055348e4b8f87acb027e017e28bdfa40af"
+        },
+        {
+          "path": "trial-22-final-120.npz",
+          "bytes": 833358,
+          "sha256": "cf3891b7d24219cb5cf7bbb4d802a9b4e445f91fe89eca61e616c9178f6cd39d"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 4.892510931994819e-10,
+            "best_shift": 0
+          },
+          {
+            "label": "td",
+            "distance": 0.015380340336251817,
+            "best_shift": 0
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            5.208921422723471e-10,
+            1.4132502830854276e-09,
+            1.1521369818649013e-09,
+            3.3273587311890775e-10,
+            5.469559440633418e-10,
+            7.957579990157496e-10
+          ],
+          "maximum_l2_residual": 1.4132502830854276e-09,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.29253162141560674,
+                0.45949948285926423,
+                0.4303056858186245,
+                0.28050123542924094,
+                0.48244460470209416,
+                0.4621589159479327
+              ],
+              "maximum_l2_gap": 0.48244460470209416,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.42880393426144325,
+                0.2895782225089472,
+                0.45075060366093794,
+                0.4637848189059943,
+                0.2834916276811689,
+                0.4908269940577736
+              ],
+              "maximum_l2_gap": 0.4908269940577736,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.025506724404181218,
+                0.04523115505311616,
+                0.11840896151709106,
+                0.025506724404181218,
+                0.04523115505311616,
+                0.11840896151709106
+              ],
+              "maximum_l2_gap": 0.11840896151709106,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-22-final-120.npz",
+        "bytes": 833358,
+        "sha256": "cf3891b7d24219cb5cf7bbb4d802a9b4e445f91fe89eca61e616c9178f6cd39d"
+      }
+    },
+    {
+      "trial_id": 23,
+      "kind": "perturbed",
+      "source_index": 0,
+      "source_label": "ad",
+      "phase": 5,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-23-block-012.npz",
+          "bytes": 90639,
+          "sha256": "78912969c1717c8fb526a15f7d7f57b0e2ad159a3f181d846b4e1b6d3e8b9f83"
+        },
+        {
+          "path": "trial-23-block-024.npz",
+          "bytes": 90643,
+          "sha256": "bdf33be9dea5bcde55dafd0ea28fca93b5490d4671fcbb0043a386c498697e39"
+        },
+        {
+          "path": "trial-23-block-036.npz",
+          "bytes": 90683,
+          "sha256": "02fb72123ce25f1e82bce7730a665531e192af94986ace4a1249fb316d3128fb"
+        },
+        {
+          "path": "trial-23-block-048.npz",
+          "bytes": 90646,
+          "sha256": "1ea650a9236cb0c561811680af01253150854fe330fb4e64d0c5b5d45294fd27"
+        },
+        {
+          "path": "trial-23-block-060.npz",
+          "bytes": 90660,
+          "sha256": "1b57e46d5357cafae39d03b8c6402a3914b6e410dc7bfdcbe4e7c7629b3315ff"
+        },
+        {
+          "path": "trial-23-block-072.npz",
+          "bytes": 90644,
+          "sha256": "3674adc2a1ee282de42977ec4976fa4cbbfa7f7aa528c4a5dec766429a792f11"
+        },
+        {
+          "path": "trial-23-block-084.npz",
+          "bytes": 90666,
+          "sha256": "43c05924729008f304d984db764a715713e6bba9c03829d299505c745b167cf9"
+        },
+        {
+          "path": "trial-23-block-096.npz",
+          "bytes": 90650,
+          "sha256": "071fdbf7c5c0aa474857c5bf5124e3ea9cb4e820ea478946f00eb75ad702d013"
+        },
+        {
+          "path": "trial-23-block-108.npz",
+          "bytes": 90668,
+          "sha256": "674b0261d01fc86d7246c8265f396eb7bab11d33041aabe64ebc17c2eccbcf33"
+        },
+        {
+          "path": "trial-23-block-120.npz",
+          "bytes": 90652,
+          "sha256": "c6a4b40c1d6a4d75fd72e0300149ee91a32e821cfd964e1a59e9227ad4422f85"
+        },
+        {
+          "path": "trial-23-final-120.npz",
+          "bytes": 833406,
+          "sha256": "2f367591c4a1303fe779b4bc9f23ff49f03fe5c9adb0834dd6c9a8cf284a83d1"
+        }
+      ],
+      "outcome": {
+        "classification": "returned",
+        "reference_matches": [
+          "ad"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 4.837870089429452e-10,
+            "best_shift": 0
+          },
+          {
+            "label": "td",
+            "distance": 0.01538034057936642,
+            "best_shift": 0
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            5.150380260760125e-10,
+            1.3973629193460203e-09,
+            1.1391838002261983e-09,
+            3.2899078472774643e-10,
+            5.407967208549708e-10,
+            7.868016159374558e-10
+          ],
+          "maximum_l2_residual": 1.3973629193460203e-09,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.2925316218244472,
+                0.4594994831711676,
+                0.43030568595971563,
+                0.2805012355876072,
+                0.4824446047707307,
+                0.46215891588627384
+              ],
+              "maximum_l2_gap": 0.4824446047707307,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.42880393439865383,
+                0.28957822280537965,
+                0.4507506039358155,
+                0.4637848188486941,
+                0.28349162795644883,
+                0.49082699417100195
+              ],
+              "maximum_l2_gap": 0.49082699417100195,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.02550672460776544,
+                0.045231155649706055,
+                0.11840896177978849,
+                0.02550672460776544,
+                0.045231155649706055,
+                0.11840896177978849
+              ],
+              "maximum_l2_gap": 0.11840896177978849,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        }
+      },
+      "trajectory": {
+        "path": "trial-23-final-120.npz",
+        "bytes": 833406,
+        "sha256": "2f367591c4a1303fe779b4bc9f23ff49f03fe5c9adb0834dd6c9a8cf284a83d1"
+      }
+    },
+    {
+      "trial_id": 24,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 5,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-24-block-012.npz",
+          "bytes": 90623,
+          "sha256": "c0825493c012ecfacc7fe3931ba4fb2524a3e41018a05249f018ca2dc2439b15"
+        },
+        {
+          "path": "trial-24-block-024.npz",
+          "bytes": 90657,
+          "sha256": "e2628271650cb5645db2269e7d6fa9c5fb334a5da8260376c728a87d5509ca81"
+        },
+        {
+          "path": "trial-24-block-036.npz",
+          "bytes": 90654,
+          "sha256": "9def17af1f88339a75061cf6c5268519968c48f650cfd2475489d474ad686496"
+        },
+        {
+          "path": "trial-24-block-048.npz",
+          "bytes": 90634,
+          "sha256": "8eff24830bfc2391a138a5a009c666b4a2c946d5078be56c3b85142d0b602d25"
+        },
+        {
+          "path": "trial-24-block-060.npz",
+          "bytes": 90659,
+          "sha256": "7fd9534bad11ad4f536a2d3083d9a1a4ab30d002cfd899993adae8f4844ae0cf"
+        },
+        {
+          "path": "trial-24-block-072.npz",
+          "bytes": 90645,
+          "sha256": "e4a715b7aab689e44503a86f8b5c89a159c95e97ba708e68744bc6a163746e3e"
+        },
+        {
+          "path": "trial-24-block-084.npz",
+          "bytes": 90646,
+          "sha256": "d286f8a67c35cdf0a12463bfc4e4b145b27b0bc5d8d80bc88dee25a0138b4320"
+        },
+        {
+          "path": "trial-24-block-096.npz",
+          "bytes": 90654,
+          "sha256": "922c45bb8ec40d0484a3a88205940f346acb1c54d88e117872942bf09b978155"
+        },
+        {
+          "path": "trial-24-block-108.npz",
+          "bytes": 90650,
+          "sha256": "def9ccdeb867d4ee8c5d5950613da1ab3535ac75802b023afb1c1834740710b8"
+        },
+        {
+          "path": "trial-24-block-120.npz",
+          "bytes": 90648,
+          "sha256": "41b2f6f9cfe36027277bf2d456398192b1d22c3cbe72d1316d5accfb407133aa"
+        },
+        {
+          "path": "trial-24-final-120.npz",
+          "bytes": 833306,
+          "sha256": "65036e0cbc16862f1901910173b02230bec13c18ca2e33d105632a11fe3c0a12"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380351159770564,
+            "best_shift": 0
+          },
+          {
+            "label": "td",
+            "distance": 1.3585187101994785e-08,
+            "best_shift": 0
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            2.7182006538907193e-08,
+            7.701573442209001e-09,
+            8.029375826257677e-09,
+            5.892391236177012e-09,
+            1.6630882194758227e-08,
+            3.54252307878208e-08
+          ],
+          "maximum_l2_residual": 3.54252307878208e-08,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.29342516973130905,
+                0.46502954850304784,
+                0.4338530066954869,
+                0.2752799244078616,
+                0.4682253220286482,
+                0.45393260193906676
+              ],
+              "maximum_l2_gap": 0.4682253220286482,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.43251967979638767,
+                0.28942471929431485,
+                0.4495786564688719,
+                0.45530403003265985,
+                0.2792694265849456,
+                0.48350405487569037
+              ],
+              "maximum_l2_gap": 0.48350405487569037,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.027182882825915283,
+                0.06529639138114988,
+                0.11471223915956087,
+                0.027182882825915283,
+                0.06529639138114988,
+                0.11471223915956087
+              ],
+              "maximum_l2_gap": 0.11471223915956087,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-24-final-120.npz",
+        "bytes": 833306,
+        "sha256": "65036e0cbc16862f1901910173b02230bec13c18ca2e33d105632a11fe3c0a12"
+      }
+    },
+    {
+      "trial_id": 25,
+      "kind": "perturbed",
+      "source_index": 1,
+      "source_label": "td",
+      "phase": 5,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "checkpoints": [
+        {
+          "path": "trial-25-block-012.npz",
+          "bytes": 90668,
+          "sha256": "f7f6df9a8100d5bf4033e987e5a28f24e3b8bca1e1e3162ead41bbe38d6dc54e"
+        },
+        {
+          "path": "trial-25-block-024.npz",
+          "bytes": 90627,
+          "sha256": "ab969f3f683aed5a36524ea6cd0faac26786fd0c807ba3e6538913150e795a2f"
+        },
+        {
+          "path": "trial-25-block-036.npz",
+          "bytes": 90683,
+          "sha256": "d4f3b001a24a95b3cd10c657e911339c94fcab5c6d30dd4e6c20989a691faafb"
+        },
+        {
+          "path": "trial-25-block-048.npz",
+          "bytes": 90647,
+          "sha256": "e20dcfd05791811b08ddb3a5473e0e132a92860c8a06d9985814112418baed2d"
+        },
+        {
+          "path": "trial-25-block-060.npz",
+          "bytes": 90647,
+          "sha256": "f0817ca7da6b49a807a811374ae36b15a3d57ea552afeb069b14725fa9cf2c2b"
+        },
+        {
+          "path": "trial-25-block-072.npz",
+          "bytes": 90638,
+          "sha256": "de59751fc94e3a8dfbe400cc295ca869bedfa637cf06607bb09966fa967e5a44"
+        },
+        {
+          "path": "trial-25-block-084.npz",
+          "bytes": 90628,
+          "sha256": "af1db604dd4663aeb0cbb3f049d88cf371e192489b0838bb3fcec9cc9ce182df"
+        },
+        {
+          "path": "trial-25-block-096.npz",
+          "bytes": 90642,
+          "sha256": "7b7161ae0ac95329764519f6f82b9fc6f843f43e8860a9f248cf105679793ff9"
+        },
+        {
+          "path": "trial-25-block-108.npz",
+          "bytes": 90637,
+          "sha256": "a3f47be21e627ebeb21004b92400855ac79ef1e7039783ef6d8412db08975ef2"
+        },
+        {
+          "path": "trial-25-block-120.npz",
+          "bytes": 90644,
+          "sha256": "b21dcd7604aaa03e32e00bcf90ac7ddd7484a1d37493b519cfea2ecfc09f6ff5"
+        },
+        {
+          "path": "trial-25-final-120.npz",
+          "bytes": 833354,
+          "sha256": "45dff74fe6ccd95c682f2b6ec505c85d1f606b7106cba1083c73525eaec8e79d"
+        }
+      ],
+      "outcome": {
+        "classification": "unresolved",
+        "reference_matches": [
+          "td"
+        ],
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380328564531389,
+            "best_shift": 0
+          },
+          {
+            "label": "td",
+            "distance": 1.5099324390694882e-08,
+            "best_shift": 0
+          }
+        ],
+        "match_tolerance": 1e-06,
+        "cycle_gate": {
+          "passed": false,
+          "lag_six_phase_l2_residuals": [
+            3.020758568893473e-08,
+            8.55880979783927e-09,
+            8.923085424753179e-09,
+            6.548242228391138e-09,
+            1.848199089222822e-08,
+            3.936825967716241e-08
+          ],
+          "maximum_l2_residual": 3.936825967716241e-08,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.2934251596779175,
+                0.4650295451344347,
+                0.43385300376542896,
+                0.27527992930596545,
+                0.4682253473875558,
+                0.45393261975007704
+              ],
+              "maximum_l2_gap": 0.4682253473875558,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.43251967609003683,
+                0.2894247207826034,
+                0.44957865856357077,
+                0.4553040489322842,
+                0.27926942046696257,
+                0.48350407388138616
+              ],
+              "maximum_l2_gap": 0.48350407388138616,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.02718288121951439,
+                0.06529637588153857,
+                0.11471225565155835,
+                0.02718288121951439,
+                0.06529637588153857,
+                0.11471225565155835
+              ],
+              "maximum_l2_gap": 0.11471225565155835,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "reason": "primitive period-six closure gate failed"
+      },
+      "trajectory": {
+        "path": "trial-25-final-120.npz",
+        "bytes": 833354,
+        "sha256": "45dff74fe6ccd95c682f2b6ec505c85d1f606b7106cba1083c73525eaec8e79d"
+      }
+    }
+  ],
+  "interpretation": {
+    "controls_passed": true,
+    "recovery_interpretation_valid": true,
+    "all_trials_completed": true,
+    "perturbed_trial_counts": {
+      "returned": 12,
+      "switched": 0,
+      "unresolved": 12
+    },
+    "all_tested_perturbations_returned": false
+  },
+  "dtype_observations": {
+    "rotary": {
+      "input": "torch.float64",
+      "inverse_frequency": "torch.float64",
+      "angles": "torch.float64",
+      "cos": "torch.float64",
+      "sin": "torch.float64"
+    },
+    "norm": {
+      "input": "torch.float64",
+      "reduction": "torch.float64",
+      "weight": "torch.float64",
+      "output": "torch.float64"
+    }
+  },
+  "model_calls": 3121,
+  "elapsed_seconds": 1369.2813915360002,
+  "peak_rss_bytes": 5472006144
+}

@@ -1,0 +1,394 @@
+{
+ "schema": "public-toggle-xor-receipt-v1",
+ "utc": "2026-11-10T02:45:00Z",
+ "plan": "docs/public-toggle-sweep.md",
+ "source_commit": "b2118b14c7121580af476582f5139dc8db35e703",
+ "source_note": "Runner, checker and plotting tools were untracked working-tree files at that commit; each run binds their hashes in its source.json.",
+ "status": "independently_audited",
+ "tldr": "One precise dial pulse can exchange the two period-six cycles at H, but only when it arrives at the right phase. Run on a fixed schedule that keeps that phase, the pulse makes the loop compute XOR: 8 of 8 carried stages from both starting bits, on two different machines. No single pulse toggled from all six phases. Composed, the same moves added 11 + 6 in one loop (17, and 18 with carry in 1), all 24 readouts matching on both machines.",
+ "stage1_sweep": {
+  "groups": 147,
+  "probes": 144,
+  "model_calls": 45162,
+  "cpu_seconds_summed": 27733,
+  "longest_shard_seconds": 2090,
+  "peak_rss_gib": 5.06,
+  "probe_mappings": {
+   "identity": 79,
+   "reset0": 30,
+   "reset1": 26,
+   "toggle": 9
+  },
+  "toggles": [
+   "sweep-t030-r3.5-d012",
+   "sweep-t150-r3.5-d012",
+   "sweep-t210-r3.5-d120",
+   "sweep-t240-r2.0-d012",
+   "sweep-t240-r2.0-d120",
+   "sweep-t240-r3.5-d012",
+   "sweep-t270-r3.5-d120",
+   "sweep-t300-r3.5-d048",
+   "sweep-t300-r3.5-d120"
+  ],
+  "baselines": "identity, reset0, reset1 as expected on both hosts",
+  "parity": {
+   "byte_parity_with_pilot": false,
+   "largest_elementwise_difference_after_366_updates": [
+    1.4e-15,
+    7.6e-16,
+    5.1e-15
+   ],
+   "note": "The pre-registered byte-for-byte gate failed across hardware; mappings agreed. Recorded, run continued."
+  },
+  "cross_host": {
+   "groups": 39,
+   "same_mapping": true,
+   "same_terminal_bytes": 0
+  },
+  "audit": {
+   "path": "/archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/audit-pod-and-local.json",
+   "bytes": 208441,
+   "sha256": "b0d415f736135fa74e89568706940e55357068136c08c7b054a3e88a4892bce3"
+  },
+  "figure": {
+   "path": "/archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/toggle-sweep-map.png",
+   "bytes": 366964,
+   "sha256": "921b5a96ddb17853c37b524b0c47c9ec09d6c5bb96c58865311abd7af490cbd3"
+  },
+  "returned_manifest": {
+   "path": "/archive/shrimp-memory-data/audits/public-toggle-sweep/20261109T230942Z/returned-pod.sha256",
+   "bytes": 644232,
+   "sha256": "c0287f7c204e5fd650b6354f4ebc4a9962e52b1a6389ca5c6e66a9810d8b4098"
+  }
+ },
+ "stage1b_checks": {
+  "rule": "six phases, three 1e-15 perturbations, second-host rerun, at least 4 of 8 neighbours",
+  "model_calls": 53010,
+  "robust_candidates": [],
+  "verdicts": {
+   "t030-r3.5-d012": {
+    "phases": {
+     "0": "toggle",
+     "4": "reset1",
+     "1": "reset1",
+     "5": "reset1",
+     "2": "reset1",
+     "3": "reset1"
+    },
+    "rounding": [
+     "toggle",
+     "toggle",
+     "toggle"
+    ],
+    "neighbours_toggling": 2,
+    "neighbours": 8,
+    "dwells": [
+     "reset1",
+     "reset1"
+    ],
+    "second_host_phase0": [
+     "toggle"
+    ],
+    "robust_by_preregistered_rule": false
+   },
+   "t150-r3.5-d012": {
+    "phases": {
+     "1": "reset0",
+     "5": "reset0",
+     "2": "reset1",
+     "3": "reset0",
+     "0": "toggle",
+     "4": "identity"
+    },
+    "rounding": [
+     "toggle",
+     "toggle",
+     "toggle"
+    ],
+    "neighbours_toggling": 3,
+    "neighbours": 8,
+    "dwells": [
+     "toggle",
+     "reset0"
+    ],
+    "second_host_phase0": [
+     "toggle"
+    ],
+    "robust_by_preregistered_rule": false
+   },
+   "t210-r3.5-d120": {
+    "phases": {
+     "0": "toggle",
+     "1": "toggle",
+     "2": "toggle",
+     "3": "identity",
+     "4": "identity",
+     "5": "reset1"
+    },
+    "rounding": [
+     "toggle",
+     "toggle",
+     "toggle"
+    ],
+    "neighbours_toggling": 3,
+    "neighbours": 8,
+    "dwells": [
+     "reset0",
+     "identity"
+    ],
+    "second_host_phase0": [],
+    "robust_by_preregistered_rule": false
+   },
+   "t240-r2.0-d012": {
+    "phases": {
+     "1": "reset0",
+     "2": "reset0",
+     "3": "reset0",
+     "4": "identity",
+     "5": "identity",
+     "0": "toggle"
+    },
+    "rounding": [
+     "toggle",
+     "toggle",
+     "toggle"
+    ],
+    "neighbours_toggling": 3,
+    "neighbours": 8,
+    "dwells": [
+     "reset1",
+     "toggle"
+    ],
+    "second_host_phase0": [],
+    "robust_by_preregistered_rule": false
+   },
+   "t240-r2.0-d120": {
+    "phases": {
+     "2": "reset0",
+     "3": "reset1",
+     "4": "toggle",
+     "5": "reset0",
+     "0": "toggle",
+     "1": "reset0"
+    },
+    "rounding": [
+     "toggle",
+     "toggle",
+     "toggle"
+    ],
+    "neighbours_toggling": 1,
+    "neighbours": 8,
+    "dwells": [
+     "reset0",
+     "toggle"
+    ],
+    "second_host_phase0": [],
+    "robust_by_preregistered_rule": false
+   },
+   "t240-r3.5-d012": {
+    "phases": {
+     "3": "reset0",
+     "4": "reset0",
+     "5": "reset0",
+     "0": "toggle",
+     "1": "identity",
+     "2": "reset1"
+    },
+    "rounding": [
+     "toggle",
+     "toggle",
+     "toggle"
+    ],
+    "neighbours_toggling": 1,
+    "neighbours": 8,
+    "dwells": [
+     "reset1",
+     "reset0"
+    ],
+    "second_host_phase0": [],
+    "robust_by_preregistered_rule": false
+   },
+   "t270-r3.5-d120": {
+    "phases": {
+     "4": "reset0",
+     "5": "toggle",
+     "0": "toggle",
+     "1": "identity",
+     "2": "reset0",
+     "3": "identity"
+    },
+    "rounding": [
+     "toggle",
+     "reset0",
+     "toggle"
+    ],
+    "neighbours_toggling": 2,
+    "neighbours": 8,
+    "dwells": [
+     "toggle",
+     "toggle"
+    ],
+    "second_host_phase0": [],
+    "robust_by_preregistered_rule": false
+   },
+   "t300-r3.5-d048": {
+    "phases": {
+     "5": "reset0",
+     "0": "toggle",
+     "1": "toggle",
+     "2": "reset1",
+     "3": "toggle",
+     "4": "reset1"
+    },
+    "rounding": [
+     "toggle",
+     "toggle",
+     "toggle"
+    ],
+    "neighbours_toggling": 3,
+    "neighbours": 8,
+    "dwells": [
+     "identity",
+     "reset1"
+    ],
+    "second_host_phase0": [],
+    "robust_by_preregistered_rule": false
+   },
+   "t300-r3.5-d120": {
+    "phases": {
+     "0": "toggle",
+     "1": "toggle",
+     "2": "toggle",
+     "3": "toggle",
+     "4": "reset0",
+     "5": "toggle"
+    },
+    "rounding": [
+     "identity",
+     "toggle",
+     "identity"
+    ],
+    "neighbours_toggling": 1,
+    "neighbours": 8,
+    "dwells": [
+     "identity",
+     "identity"
+    ],
+    "second_host_phase0": [],
+    "robust_by_preregistered_rule": false
+   }
+  },
+  "audits": [
+   {
+    "path": "/archive/shrimp-memory-data/audits/public-toggle-check/audit-batch1.json",
+    "bytes": 8172,
+    "sha256": "50f5c7c890cb0fbf40df1f69e025b362e543c97503cd69bd44b6d9c75035ca89"
+   },
+   {
+    "path": "/archive/shrimp-memory-data/audits/public-toggle-check/audit-batch2.json",
+    "bytes": 26796,
+    "sha256": "be02482f93a0e63630a726ba321e6bf78b39c9a6f9c86daec7d0dc08b4ef7af8"
+   }
+  ]
+ },
+ "stage1c_xor_chain": {
+  "posthoc": true,
+  "deviation": "recorded in the plan at 2026-11-10T01:30Z after partial Stage 1b results: the toggled lanes land phase-locked (252 updates = 42 periods), so the chain was run although no candidate passed the six-phase rule",
+  "toggle": {
+   "theta_degrees": 30,
+   "radius": 3.5,
+   "dwell_updates": 12
+  },
+  "b_sequence": [
+   1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  "hosts": [
+   {
+    "directory": "/archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-pod-returned/run",
+    "matched": 8,
+    "model_calls": 2064,
+    "elapsed_seconds": 1234.5,
+    "peak_rss_gib": 5.05
+   },
+   {
+    "directory": "/archive/shrimp-memory-data/audits/public-xor-chain/20261110T013000Z-local/run",
+    "matched": 8,
+    "model_calls": 2064,
+    "elapsed_seconds": 3151.0,
+    "peak_rss_gib": 5.06
+   }
+  ],
+  "cross_host_stage_end_difference_max": 1.68e-14,
+  "cross_host_difference_max_anywhere": 2.61e-13,
+  "audit": {
+   "path": "/archive/shrimp-memory-data/audits/public-xor-chain/audit-pod-and-local.json",
+   "bytes": 3888,
+   "sha256": "736da7dac11cb0b378c145c8539f24f89ace518548a1c481a473015fc0c319f1"
+  },
+  "figure": {
+   "path": "/archive/shrimp-memory-data/audits/public-xor-chain/xor-chain-pod.png",
+   "bytes": 337063,
+   "sha256": "42edeb8868870228a62eee6c0e74724802abd534862947dfd2859660e49b2a0e"
+  }
+ },
+ "compute": {
+  "remote": "one RunPod pod used as a CPU host (16 vCPU class, 13.6-core quota), 10 single-thread workers; terminated and verified 2026-11-10T02:35Z",
+  "local": "4 sweep shards and 2 reruns at nice 19 on the shared machine"
+ },
+ "scope": "Finite demonstrations from literal reference starts, not reliability estimates. The toggle is narrow in direction, size, length and phase; XOR holds only on a schedule that keeps the phase. The endpoints are instructed programs; nothing is autonomous. No language interface is tested here.",
+ "stage3_adder": {
+  "preregistered": "docs/public-toggle-sweep.md Stage 3, fixed 2026-11-10T03:40Z before any run",
+  "case": "11 + 6, LSB first, register holds the carry; lane 0 carry in 0, lane 1 carry in 1",
+  "moves": "T W T | T T E1 | W T T | T W T",
+  "numbers": [
+   [
+    17,
+    18
+   ],
+   [
+    17,
+    18
+   ]
+  ],
+  "readouts_matched": [
+   12,
+   12
+  ],
+  "readouts_per_lane": 12,
+  "hosts": [
+   {
+    "directory": "/archive/shrimp-memory-data/audits/public-adder/20261110T040000Z-pod-returned/run",
+    "model_calls": 3204,
+    "elapsed_seconds": 1303.6,
+    "peak_rss_gib": 5.07
+   },
+   {
+    "directory": "/archive/shrimp-memory-data/audits/public-adder/20261110T034500Z-local/run",
+    "model_calls": 3204,
+    "elapsed_seconds": 4630.0,
+    "peak_rss_gib": 5.06
+   }
+  ],
+  "cross_host_stage_end_difference_max": 1.25e-14,
+  "cross_host_difference_max_anywhere": 1.41e-12,
+  "controller": "moves chosen from the digits x, y only; the register (carry) is never read to choose a move",
+  "audit": {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/audit-pod-and-local.json",
+   "bytes": 5541,
+   "sha256": "2abaffbf6811f19ed3c3d64e37312b5ec9a35e206774dd0fe3954596706050b3"
+  },
+  "figure": {
+   "path": "/archive/shrimp-memory-data/audits/public-adder/adder-pod.png",
+   "bytes": 366575,
+   "sha256": "bf1940d2d7f181124613cb4ffb325d62ea3d442a9ad35fffb1923444652f60e2"
+  },
+  "scope": "One fixed pair of numbers, one run per host; a finite demonstration that the measured moves compose into arithmetic, not a reliability estimate."
+ }
+}

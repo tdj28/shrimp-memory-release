@@ -1,0 +1,461 @@
+{
+ "schema": "public-write-passage-prediction-v1",
+ "utc": "2026-11-11T01:44:40Z",
+ "model_calls": 0,
+ "opened_saved_states_of_the_pilot_runs": false,
+ "script": {
+  "path": "/data2/shrimp-memory/tools/analyze_public_write_passage.py",
+  "bytes": 39817,
+  "sha256": "51bed0cabaed6086058c11cc64f02a8db8bdecdfefcb9583eb19a01d311bf61e"
+ },
+ "model": "one-dimensional fold normal form y -> y + a (control - fold) + b y^2 for the period-6 return map; passage in periods from the hold orbit, a distance D before the fold, to far beyond the bottleneck at a distance Delta beyond it: [pi/2 + arctan(sqrt(D/Delta))] / sqrt(a b Delta)",
+ "fit_window_abs_multiplier_minus_one": 0.25,
+ "first_sheet_fold": {
+  "window": 0.25,
+  "branch_points": [
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "alpha_fold": 0.07299164917758323,
+  "alpha_fold_minus_last_stable_neighbour": 6.678205577802755e-08,
+  "c2": -4.046661412169807e-05,
+  "c3": -2.1893831016132625e-05,
+  "ab_per_unit_alpha": 6177.932239355573,
+  "orbits_exist": "below the fold",
+  "max_abs_residual_alpha": 5.502993854676302e-09
+ },
+ "third_sheet_fold": {
+  "window": 0.25,
+  "branch_points": [
+   55,
+   56,
+   57,
+   58,
+   59,
+   60,
+   61,
+   62,
+   63,
+   64,
+   65,
+   66
+  ],
+  "alpha_fold": 0.07279274652556843,
+  "alpha_fold_minus_last_stable_neighbour": -8.375442182751652e-08,
+  "c2": 7.710543535937175e-05,
+  "c3": 2.8347170341979317e-05,
+  "ab_per_unit_alpha": 3242.313577957301,
+  "orbits_exist": "above the fold",
+  "max_abs_residual_alpha": 1.0085113948690255e-08
+ },
+ "window_sensitivity": {
+  "0.15": {
+   "first_sheet_fold": {
+    "window": 0.15,
+    "branch_points": [
+     15,
+     16,
+     17,
+     18
+    ],
+    "alpha_fold": 0.07299164451244787,
+    "alpha_fold_minus_last_stable_neighbour": 6.2116920419603e-08,
+    "c2": -3.990810462224526e-05,
+    "c3": -2.179235459544077e-05,
+    "ab_per_unit_alpha": 6264.391716078819,
+    "orbits_exist": "below the fold",
+    "max_abs_residual_alpha": 1.3195413886399355e-10
+   },
+   "third_sheet_fold": {
+    "window": 0.15,
+    "branch_points": [
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64
+    ],
+    "alpha_fold": 0.07279275291049463,
+    "alpha_fold_minus_last_stable_neighbour": -7.736949563429326e-08,
+    "c2": 7.636192971171726e-05,
+    "c3": 2.7325249566493163e-05,
+    "ab_per_unit_alpha": 3273.8826918571053,
+    "orbits_exist": "above the fold",
+    "max_abs_residual_alpha": 1.0630413057191293e-09
+   }
+  },
+  "0.35": {
+   "first_sheet_fold": {
+    "window": 0.35,
+    "branch_points": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "alpha_fold": 0.07299166317238517,
+    "alpha_fold_minus_last_stable_neighbour": 8.077685771924971e-08,
+    "c2": -4.12539266907097e-05,
+    "c3": -2.2034516596614098e-05,
+    "ab_per_unit_alpha": 6060.029191264827,
+    "orbits_exist": "below the fold",
+    "max_abs_residual_alpha": 2.5857771111812646e-08
+   },
+   "third_sheet_fold": {
+    "window": 0.35,
+    "branch_points": [
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68
+    ],
+    "alpha_fold": 0.07279273002330768,
+    "alpha_fold_minus_last_stable_neighbour": -1.0025668258313981e-07,
+    "c2": 7.800663604529273e-05,
+    "c3": 2.879332864441777e-05,
+    "ab_per_unit_alpha": 3204.8555440186315,
+    "orbits_exist": "above the fold",
+    "max_abs_residual_alpha": 4.150056282793285e-08
+   }
+  }
+ },
+ "hold_to_first_sheet_fold_alpha": 5.467108195492121e-05,
+ "fold_on_hold_strength_line_log10_temperature": -0.1536044832612347,
+ "hold_to_that_fold_log10_temperature": 0.00034703493883797565,
+ "multiplier_cycle_0_at_hold": -0.5295164307156879,
+ "multiplier_cycle_1_at_hold": -0.6221006826257115,
+ "hold_unstable_orbit": {
+  "coordinate_at_saved_phase": 0.23159804308118062,
+  "saved_phase": 5,
+  "note": "projection of the hold's unstable orbit on the segment between the two cycles, from the three distances in the branch receipt; in the normal form it is the mirror image of the starting orbit across the fold, and a write succeeds if the state is beyond it when the pulse ends"
+ },
+ "write1_coefficient_ab_per_unit_alpha": 6177.932239355573,
+ "write1_constant_coefficient_estimate_from_hold_multiplier": 10697.705387275015,
+ "write0_rough_coefficients_per_unit_log10_temperature": {
+  "from_hold_multiplier_constant_coefficient": 1895.4940339618545,
+  "from_third_sheet_fold_along_a_straight_fold_curve": 1347.5414883041285,
+  "fold_curve_chord_dlog10T_dalpha": 2.406095549635158
+ },
+ "rows": [
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "nominal",
+   "fraction": null,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1535,
+   "on_recorded_line": true,
+   "log10_temperature_beyond_fold": 0.0001044832612346891,
+   "rough_passage_update_coefficient_from_hold_multiplier": 35.59007255343496,
+   "rough_passage_update_coefficient_from_fold_chord": 42.210355677855354
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "alpha-minus",
+   "fraction": null,
+   "alpha": 0.07292697809562831,
+   "log10_temperature": -0.1535,
+   "on_recorded_line": false
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "alpha-plus",
+   "fraction": null,
+   "alpha": 0.0729469780956283,
+   "log10_temperature": -0.1535,
+   "on_recorded_line": false
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "log10T-minus",
+   "fraction": null,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1536,
+   "on_recorded_line": true,
+   "log10_temperature_beyond_fold": 4.483261234700109e-06,
+   "rough_passage_update_coefficient_from_hold_multiplier": 197.11005596430493,
+   "rough_passage_update_coefficient_from_fold_chord": 233.77545964379541
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run",
+   "profile": "axis-stencil",
+   "requested_bit": 0,
+   "group": "log10T-plus",
+   "fraction": null,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1534,
+   "on_recorded_line": true,
+   "log10_temperature_beyond_fold": 0.00020448326123467808,
+   "rough_passage_update_coefficient_from_hold_multiplier": 23.96745751514439,
+   "rough_passage_update_coefficient_from_fold_chord": 28.42576128186315
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "nominal",
+   "fraction": null,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "on_recorded_line": true,
+   "alpha_beyond_fold": 6.206721693699513e-06,
+   "predicted_passage_update": 86.30256212916082,
+   "predicted_update_reaching_hold_unstable_orbit": 76.34455699311518,
+   "predicted_write_succeeds_with_120_updates": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "alpha-minus",
+   "fraction": null,
+   "alpha": 0.07298785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "on_recorded_line": true,
+   "alpha_beyond_fold": -3.7932783062966102e-06,
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "predicted_write_succeeds_with_120_updates": false,
+   "note": "the cycle-0 sheet is recorded at this strength; no passage expected"
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "alpha-plus",
+   "fraction": null,
+   "alpha": 0.07300785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "on_recorded_line": true,
+   "alpha_beyond_fold": 1.6206721693695636e-05,
+   "predicted_passage_update": 50.116520397712016,
+   "predicted_update_reaching_hold_unstable_orbit": 40.66244199692832,
+   "predicted_write_succeeds_with_120_updates": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "log10T-minus",
+   "fraction": null,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15405151820007265,
+   "on_recorded_line": false
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run",
+   "profile": "axis-stencil",
+   "requested_bit": 1,
+   "group": "log10T-plus",
+   "fraction": null,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15385151820007267,
+   "on_recorded_line": false
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-0",
+   "fraction": 0.0,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1535,
+   "on_recorded_line": true,
+   "log10_temperature_beyond_fold": 0.0001044832612346891,
+   "rough_passage_update_coefficient_from_hold_multiplier": 35.59007255343496,
+   "rough_passage_update_coefficient_from_fold_chord": 42.210355677855354
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-025",
+   "fraction": 0.25,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.153525,
+   "on_recorded_line": true,
+   "log10_temperature_beyond_fold": 7.948326123469185e-05,
+   "rough_passage_update_coefficient_from_hold_multiplier": 41.66276542484621,
+   "rough_passage_update_coefficient_from_fold_chord": 49.41265979341428
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-050",
+   "fraction": 0.5,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.15355,
+   "on_recorded_line": true,
+   "log10_temperature_beyond_fold": 5.44832612346946e-05,
+   "rough_passage_update_coefficient_from_hold_multiplier": 51.61195688703016,
+   "rough_passage_update_coefficient_from_fold_chord": 61.21254892528778
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-075",
+   "fraction": 0.75,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.153575,
+   "on_recorded_line": true,
+   "log10_temperature_beyond_fold": 2.9483261234697355e-05,
+   "rough_passage_update_coefficient_from_hold_multiplier": 72.53719347228656,
+   "rough_passage_update_coefficient_from_fold_chord": 86.03019091185058
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 0,
+   "group": "fraction-100",
+   "fraction": 1.0,
+   "alpha": 0.07293697809562831,
+   "log10_temperature": -0.1536,
+   "on_recorded_line": true,
+   "log10_temperature_beyond_fold": 4.483261234700109e-06,
+   "rough_passage_update_coefficient_from_hold_multiplier": 197.11005596430493,
+   "rough_passage_update_coefficient_from_fold_chord": 233.77545964379541
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-0",
+   "fraction": 0.0,
+   "alpha": 0.07299785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "on_recorded_line": true,
+   "alpha_beyond_fold": 6.206721693699513e-06,
+   "predicted_passage_update": 86.30256212916082,
+   "predicted_update_reaching_hold_unstable_orbit": 76.34455699311518,
+   "predicted_write_succeeds_with_120_updates": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-025",
+   "fraction": 0.25,
+   "alpha": 0.07299535589927693,
+   "log10_temperature": -0.15395151820007266,
+   "on_recorded_line": true,
+   "alpha_beyond_fold": 3.7067216936970127e-06,
+   "predicted_passage_update": 114.4619129242611,
+   "predicted_update_reaching_hold_unstable_orbit": 104.36211548856997,
+   "predicted_write_succeeds_with_120_updates": true
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-050",
+   "fraction": 0.5,
+   "alpha": 0.07299285589927693,
+   "log10_temperature": -0.15395151820007266,
+   "on_recorded_line": true,
+   "alpha_beyond_fold": 1.2067216936945124e-06,
+   "predicted_passage_update": 208.06208868897994,
+   "predicted_update_reaching_hold_unstable_orbit": 197.81298954318203,
+   "predicted_write_succeeds_with_120_updates": false
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-075",
+   "fraction": 0.75,
+   "alpha": 0.07299035589927694,
+   "log10_temperature": -0.15395151820007266,
+   "on_recorded_line": true,
+   "alpha_beyond_fold": -1.29327830629411e-06,
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "predicted_write_succeeds_with_120_updates": false,
+   "note": "the cycle-0 sheet is recorded at this strength; no passage expected"
+  },
+  {
+   "run": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run",
+   "profile": "negative-axis-refinement",
+   "requested_bit": 1,
+   "group": "fraction-100",
+   "fraction": 1.0,
+   "alpha": 0.07298785589927693,
+   "log10_temperature": -0.15395151820007266,
+   "on_recorded_line": true,
+   "alpha_beyond_fold": -3.7932783062966102e-06,
+   "predicted_passage_update": null,
+   "predicted_update_reaching_hold_unstable_orbit": null,
+   "predicted_write_succeeds_with_120_updates": false,
+   "note": "the cycle-0 sheet is recorded at this strength; no passage expected"
+  }
+ ],
+ "inputs": {
+  "branch": {
+   "path": "/data2/neural-shrimp-data/explore/llm-soft-loop/pod64/kite/kite-la-branch/branch.json",
+   "bytes": 174175,
+   "sha256": "583df1de79adbc1e706dab9715b8a161cb80a0de36ad86c9e95bb747422568b3"
+  },
+  "fold_receipt": {
+   "path": "docs/receipts/public-e01-amended-geometry.json",
+   "bytes": 9567,
+   "sha256": "3eb6f3bad67299411319c7900d868238b30b1dbe25d919cb3e79798d8ac0d67a"
+  },
+  "branch_receipt": {
+   "path": "docs/receipts/public-register-branch.json",
+   "bytes": 72638,
+   "sha256": "25e0118f3ad91fe45dfa30dc953e93a2da726f501cd7a349e0a09c2a2ad64576"
+  },
+  "designs": [
+   {
+    "path": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run/design.json",
+    "bytes": 8751,
+    "sha256": "3459ec225733a702eed72755e4f8282c8aed4f13371b151fd17b8cd153a14ec5"
+   },
+   {
+    "path": "/archive/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run/design.json",
+    "bytes": 8882,
+    "sha256": "6f6b80e7cb711363da984a32d1415c91300a9ac5da45cccc39201b7678a5a781"
+   },
+   {
+    "path": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run/design.json",
+    "bytes": 9817,
+    "sha256": "ba5052aeba9060447263780b723873bc0502bd122bc012a5e800f7407db58ac2"
+   },
+   {
+    "path": "/archive/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run/design.json",
+    "bytes": 9941,
+    "sha256": "8312305cea853622c9b8b63d42862e78343e8acb810e5be2f488b8320576064c"
+   }
+  ]
+ }
+}

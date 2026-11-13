@@ -1,0 +1,62 @@
+# Python and tooling
+.venv
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+.DS_Store
+
+# Secrets: never committed (.env.example is the only exception)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Runtime data and backups: globs, not exact names (GIT_WORKFLOW_SKILLS.md section 3)
+*.db*
+*.bak*
+*.sqlite*
+
+# LaTeX build products
+/paper/main.pdf
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Bulky outputs belong in ../<repository name>-data/; these are local fallbacks only
+/data/
+/raw-data/
+/runs/
+/checkpoints/
+/outputs/
+/artifacts/
+/scratch/
+/tmp/
+
+# Videos are never committed
+*.mp4
+*.webm
+*.mov
+*.mkv
+*.avi
+*.m4v
+
+# Claude Code worktrees and local tool state
+.claude/
+
+# Private notes kept out of Git
+cost-ledger.md
+checkpoint.md
+CURRENT_STATE_NEXT_STEPS.md
+RESUME_PLAN.md
+HUMAN_CHECKLIST.md
+NEED_TO_AUDIT.md

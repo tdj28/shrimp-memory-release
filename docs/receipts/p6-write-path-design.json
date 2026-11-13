@@ -1,0 +1,231 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-25T22:17:17Z",
+  "source_commit_before_design": "0cbf774da0fa330c5e28a4be65242b3ba38bca9d",
+  "kind": "prospective exploratory control-pulse design informed by prior numerical continuation",
+  "hold": {
+    "alpha": 0.07293697809562831,
+    "log10_temperature": -0.15395151820007266
+  },
+  "candidate_endpoints": {
+    "ad": {
+      "alpha": 0.07293697809562831,
+      "log10_temperature": -0.1535
+    },
+    "td": {
+      "alpha": 0.07299785589927693,
+      "log10_temperature": -0.15395151820007266
+    }
+  },
+  "prior_sources": [
+    {
+      "path": "/data2/neural-shrimp-data/explore/llm-soft-loop/pod64/kite/kite-la-branch/branch.json",
+      "sha256": "583df1de79adbc1e706dab9715b8a161cb80a0de36ad86c9e95bb747422568b3",
+      "bytes": 174175,
+      "rows": [
+        {
+          "index": 0,
+          "lambda": 0.07290699285213686,
+          "residual": 1.8788958282608683e-11,
+          "spectral_radius_refined": 1.00000000140034
+        },
+        {
+          "index": 4,
+          "lambda": 0.07293697809562831,
+          "residual": 2.453011617209022e-11,
+          "spectral_radius_refined": 0.5295164307156879
+        },
+        {
+          "index": 16,
+          "lambda": 0.07299158239552746,
+          "residual": 1.0962616697281859e-11,
+          "spectral_radius_refined": 0.9601512894267432
+        },
+        {
+          "index": 17,
+          "lambda": 0.0729915446873536,
+          "residual": 1.0367937094617578e-11,
+          "spectral_radius_refined": 1.0493853127569384
+        },
+        {
+          "index": 60,
+          "lambda": 0.07279283027999026,
+          "residual": 1.875291528962723e-11,
+          "spectral_radius_refined": 1.0315773841604354
+        },
+        {
+          "index": 61,
+          "lambda": 0.07279276388508502,
+          "residual": 1.4520056084081099e-11,
+          "spectral_radius_refined": 0.9883319877054899
+        },
+        {
+          "index": 103,
+          "lambda": 0.07299785589927693,
+          "residual": 4.114521460143863e-12,
+          "spectral_radius_refined": 0.9337090789495093
+        },
+        {
+          "index": 104,
+          "lambda": 0.0730069082408208,
+          "residual": 4.831461630159376e-12,
+          "spectral_radius_refined": 0.974114700790853
+        },
+        {
+          "index": 105,
+          "lambda": 0.07301611578520016,
+          "residual": 5.083700881636542e-12,
+          "spectral_radius_refined": 1.013800607326151
+        }
+      ]
+    },
+    {
+      "path": "/data2/neural-shrimp-data/explore/llm-soft-loop/pod64/kite/kite-la-curve-plus/curve.json",
+      "sha256": "a74e991023755da0c5c55ec0d388b7293d9051e9686a0d149632791b65bf48a2",
+      "bytes": 171676,
+      "rows": [
+        {
+          "index": 0,
+          "alpha": 0.0729916439270628,
+          "log10_temperature": -0.15395151820007266,
+          "residual": 5.440302814096021e-14,
+          "critical_multiplier": [
+            0.9999999999788338,
+            0.0
+          ]
+        },
+        {
+          "index": 7,
+          "alpha": 0.07300252864256099,
+          "log10_temperature": -0.153517250457459,
+          "residual": 1.8230748288351165e-11,
+          "critical_multiplier": [
+            0.9999999984371657,
+            0.0
+          ]
+        },
+        {
+          "index": 8,
+          "alpha": 0.07300590020288307,
+          "log10_temperature": -0.15344853225285807,
+          "residual": 4.614238037958344e-11,
+          "critical_multiplier": [
+            0.9999999932999923,
+            0.0
+          ]
+        },
+        {
+          "index": 21,
+          "alpha": 0.07294255083093842,
+          "log10_temperature": -0.1535877198356272,
+          "residual": 3.0237092928940234e-11,
+          "critical_multiplier": [
+            0.9999999938142894,
+            0.0
+          ]
+        },
+        {
+          "index": 22,
+          "alpha": 0.07291769276098406,
+          "log10_temperature": -0.15365967199422506,
+          "residual": 7.17057593491844e-11,
+          "critical_multiplier": [
+            0.999999983255325,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/data2/neural-shrimp-data/explore/llm-soft-loop/pod64/p6s/p6s-ad-curve-plus/curve.json",
+      "sha256": "63255809256c120e1ad34e3706c673b720ed83f798b79020f7e52a930408e080",
+      "bytes": 43017,
+      "rows": [
+        {
+          "index": 4,
+          "alpha": 0.07288936871621211,
+          "log10_temperature": -0.1533127736112152,
+          "residual": 4.799181059481257e-11,
+          "critical_multiplier": [
+            -1.0000000050213873,
+            0.0
+          ]
+        },
+        {
+          "index": 5,
+          "alpha": 0.0728977912283475,
+          "log10_temperature": -0.1536338991659084,
+          "residual": 3.273399994001493e-11,
+          "critical_multiplier": [
+            -1.0000000029357263,
+            0.0
+          ]
+        },
+        {
+          "index": 6,
+          "alpha": 0.07290699285213686,
+          "log10_temperature": -0.15395151820007266,
+          "residual": 1.8759487048261662e-11,
+          "critical_multiplier": [
+            -1.0000000014025976,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "geometry_inference": {
+    "ad_fold_at_hold_temperature": 0.0729916439270628,
+    "td_fold_at_hold_alpha_linear_estimate_log10_temperature": -0.1536038502244946,
+    "interpolation_rows": [
+      21,
+      22
+    ],
+    "interpolation_is_not_a_located_or_certified_fold": true,
+    "td_endpoint": "Stored converged attracting td sample above the ad fold and below the td flip; no assertion that all other attractors are absent.",
+    "ad_endpoint": "Chosen warmer temperature beyond the interpolated td fold arm. Recorded ad flip and opposite fold curves suggest the ad branch remains available. This endpoint and the pulse outcome have not been computed here.",
+    "why_not_opposite_alpha_pulses": "The ad branch reaches its lower flip before decreasing alpha reaches the td fold; the lower-alpha exterior has no established attracting ad period-six branch."
+  },
+  "protocol": {
+    "source_phase": 0,
+    "cases": [
+      {
+        "source": "ad",
+        "desired": "ad"
+      },
+      {
+        "source": "td",
+        "desired": "ad"
+      },
+      {
+        "source": "ad",
+        "desired": "td"
+      },
+      {
+        "source": "td",
+        "desired": "td"
+      }
+    ],
+    "endpoint_steps": 120,
+    "restored_hold_steps": 240,
+    "cache_rebuilt_each_stage": true,
+    "cached_full_check_at_stage_start": true,
+    "cache_max_coordinate_tolerance": 1e-10,
+    "match_max_phase_l2_tolerance": 1e-06,
+    "closure_max_phase_l2_tolerance": 1e-08,
+    "proper_divisor_max_phase_gap_must_exceed": 0.0001,
+    "max_model_calls": 1464,
+    "internal_seconds": 840,
+    "external_seconds": 900,
+    "threads": 1,
+    "max_rss_gib": 20,
+    "map_seconds_estimate": 648.0,
+    "requirements": [
+      "Qualified primitive period-six pair at the exact hold",
+      "Both prior unperturbed recovery controls returned",
+      "Unique phase-aligned final match to intended cycle"
+    ],
+    "stopping": "Run all fixed trials despite measured wrong or unresolved outcomes; stop on resource or implementation failure. No searches, extensions, early convergence stops, or replacement trials."
+  },
+  "claim_limit": "Finite-control-pulse trial from one phase of each reference. Neither a proven hysteresis mechanism nor phase-independent writing, general reliability, basin geometry, language control or logic."
+}
