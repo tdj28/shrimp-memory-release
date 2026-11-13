@@ -1,0 +1,1105 @@
+{
+  "utc": "2026-10-26T08:42:36Z",
+  "source_commit": "e5a2809f6487ab3153a7e3fd397d89bf9c75e990",
+  "preparation_source_commit": "e5a2809f6487ab3153a7e3fd397d89bf9c75e990",
+  "source": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2",
+  "status": "audit_passed",
+  "evidence": "Adapted exploratory follow-up: one additional fixed transverse direction after observing the earlier amplitude panels; eight paired anchor/sign cases.",
+  "epsilon_relative_rms": 0.01,
+  "direction_seed": 2026102604,
+  "planned_rows": 8,
+  "verified_rows": 8,
+  "readback_steps": 600,
+  "qualified_state_counts": {
+    "ad": 3,
+    "td": 5,
+    "null": 0
+  },
+  "proposal_comparison": {
+    "qualified_final_and_decision_denominator": 8,
+    "matching": 8,
+    "wrong_against_qualified_final": 0,
+    "no_decision": 0,
+    "final_unresolved_after_decision": 0,
+    "later_loss": 0,
+    "later_label_change": 0
+  },
+  "static_comparison": {
+    "qualified_final_and_nearest_denominator": 8,
+    "matching": 5,
+    "wrong_against_qualified_final": 3,
+    "nearest_ties": 0
+  },
+  "model_calls": 4817,
+  "executed_updates": 4800,
+  "actual_avoided_updates": 0,
+  "hypothetical_unused_updates_after_decisions": 3240,
+  "observer_seconds": 0.3751746059206198,
+  "saved_forward_seconds": 2132.37966513812,
+  "elapsed_seconds": 2197.645217119003,
+  "peak_rss_bytes": 5472079872,
+  "resource_limits_passed": true,
+  "transverse_comparison": {
+    "planned_rows": 8,
+    "verified_rows": 8,
+    "unverified_rows": 0,
+    "intended_label_retained": 7,
+    "wrong_qualified_label": 1,
+    "final_unresolved": 0,
+    "geometric_decoders": {
+      "one_nn": {
+        "qualified_final_and_prediction_denominator": 8,
+        "matching": 7,
+        "wrong_against_qualified_final": 1,
+        "prediction_erasure": 0,
+        "final_unresolved": 0
+      },
+      "nearest_phase": {
+        "qualified_final_and_prediction_denominator": 8,
+        "matching": 5,
+        "wrong_against_qualified_final": 3,
+        "prediction_erasure": 0,
+        "final_unresolved": 0
+      }
+    },
+    "first_decision": {
+      "present": 8,
+      "absent": 0,
+      "intended_label": 7,
+      "other_label": 1,
+      "steps": [
+        156,
+        168,
+        240,
+        192,
+        216,
+        180,
+        204,
+        204
+      ],
+      "later_loss": 0,
+      "later_label_change": 0
+    }
+  },
+  "strata": {
+    "interior": {
+      "planned_rows": 4,
+      "verified_rows": 4,
+      "unverified_rows": 0,
+      "intended_label_retained": 4,
+      "wrong_qualified_label": 0,
+      "final_unresolved": 0,
+      "geometric_decoders": {
+        "one_nn": {
+          "qualified_final_and_prediction_denominator": 4,
+          "matching": 4,
+          "wrong_against_qualified_final": 0,
+          "prediction_erasure": 0,
+          "final_unresolved": 0
+        },
+        "nearest_phase": {
+          "qualified_final_and_prediction_denominator": 4,
+          "matching": 2,
+          "wrong_against_qualified_final": 2,
+          "prediction_erasure": 0,
+          "final_unresolved": 0
+        }
+      },
+      "first_decision": {
+        "present": 4,
+        "absent": 0,
+        "intended_label": 4,
+        "other_label": 0,
+        "steps": [
+          156,
+          168,
+          240,
+          192
+        ],
+        "later_loss": 0,
+        "later_label_change": 0
+      }
+    },
+    "near_orbit": {
+      "planned_rows": 4,
+      "verified_rows": 4,
+      "unverified_rows": 0,
+      "intended_label_retained": 3,
+      "wrong_qualified_label": 1,
+      "final_unresolved": 0,
+      "geometric_decoders": {
+        "one_nn": {
+          "qualified_final_and_prediction_denominator": 4,
+          "matching": 3,
+          "wrong_against_qualified_final": 1,
+          "prediction_erasure": 0,
+          "final_unresolved": 0
+        },
+        "nearest_phase": {
+          "qualified_final_and_prediction_denominator": 4,
+          "matching": 3,
+          "wrong_against_qualified_final": 1,
+          "prediction_erasure": 0,
+          "final_unresolved": 0
+        }
+      },
+      "first_decision": {
+        "present": 4,
+        "absent": 0,
+        "intended_label": 3,
+        "other_label": 1,
+        "steps": [
+          216,
+          180,
+          204,
+          204
+        ],
+        "later_loss": 0,
+        "later_label_change": 0
+      }
+    }
+  },
+  "rows": [
+    {
+      "packet_index": 0,
+      "anchor_weight": 0.25925925925925924,
+      "sign": -1,
+      "stratum": "interior",
+      "intended_label": "ad",
+      "qualified_state": "ad",
+      "one_nn": {
+        "distances": [
+          0.004778090095985222,
+          0.003021672031107094,
+          0.0034453491091513883,
+          0.005572246479331145,
+          0.008165108871964848,
+          0.01089622166981713,
+          0.013683050178475502,
+          0.016497383108168916,
+          0.002866564550722062,
+          0.0030216720311070917,
+          0.00906616043720015,
+          0.009977381737475236,
+          0.01182090377680647,
+          0.012750157042306556,
+          0.014618886375169428,
+          0.015557134523869982,
+          0.0029365128425770867,
+          0.0028842106651989414,
+          0.002884210665198941,
+          0.002936512842577083,
+          0.003137013504610946,
+          0.003279354093145466,
+          0.005453219594063765,
+          0.0029003984887137446,
+          0.018026340645042695,
+          0.0036257596570872914,
+          0.003427797652510748,
+          0.018616443123105723,
+          0.006991714772796817,
+          0.016088959405683313,
+          0.007278005206735013,
+          0.2910323092613305,
+          0.42902977316266544,
+          0.019161504265498036,
+          0.2820071938237186,
+          0.46241626594756513,
+          0.009608844617536826,
+          0.2929531248417694,
+          0.43289001479473366,
+          0.01932720901658717,
+          0.278759152740415,
+          0.4543390679577128
+        ],
+        "nearest_indices": [
+          8
+        ],
+        "prediction": "ad"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.007278005206735013,
+            0.2910323092613305,
+            0.42902977316266544,
+            0.019161504265498036,
+            0.2820071938237186,
+            0.46241626594756513
+          ],
+          [
+            0.009608844617536826,
+            0.2929531248417694,
+            0.43289001479473366,
+            0.01932720901658717,
+            0.278759152740415,
+            0.4543390679577128
+          ]
+        ],
+        "label_distances": [
+          0.007278005206735013,
+          0.009608844617536826
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 156,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 444
+      }
+    },
+    {
+      "packet_index": 1,
+      "anchor_weight": 0.25925925925925924,
+      "sign": 1,
+      "stratum": "interior",
+      "intended_label": "ad",
+      "qualified_state": "ad",
+      "one_nn": {
+        "distances": [
+          0.004778090095985221,
+          0.003021672031107092,
+          0.003445349109151389,
+          0.0055722464793311445,
+          0.008165108871964848,
+          0.010896221669817132,
+          0.013683050178475502,
+          0.016497383108168916,
+          0.0028665645507220615,
+          0.003021672031107089,
+          0.009066160437200151,
+          0.009977381737475236,
+          0.011820903776806472,
+          0.012750157042306556,
+          0.01461888637516943,
+          0.01555713452386998,
+          0.002936512842577084,
+          0.0028842106651989414,
+          0.00288421066519894,
+          0.002936512842577082,
+          0.0031370135046109465,
+          0.0032793540931454657,
+          0.005453219594063766,
+          0.002900398488713744,
+          0.018026340645042695,
+          0.00362575965708729,
+          0.003427797652510746,
+          0.018616443123105723,
+          0.006991714772796818,
+          0.016088959405683313,
+          0.0072780052067350125,
+          0.2910161943852132,
+          0.4289080790279851,
+          0.019256076772421565,
+          0.2819539115951163,
+          0.46229110175265814,
+          0.009649299237952068,
+          0.2929417871874727,
+          0.4327711185057776,
+          0.01932720901658717,
+          0.2786912309884832,
+          0.45420585420117526
+        ],
+        "nearest_indices": [
+          8
+        ],
+        "prediction": "ad"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.0072780052067350125,
+            0.2910161943852132,
+            0.4289080790279851,
+            0.019256076772421565,
+            0.2819539115951163,
+            0.46229110175265814
+          ],
+          [
+            0.009649299237952068,
+            0.2929417871874727,
+            0.4327711185057776,
+            0.01932720901658717,
+            0.2786912309884832,
+            0.45420585420117526
+          ]
+        ],
+        "label_distances": [
+          0.0072780052067350125,
+          0.009649299237952068
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 168,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 432
+      }
+    },
+    {
+      "packet_index": 2,
+      "anchor_weight": 0.2962962962962963,
+      "sign": -1,
+      "stratum": "interior",
+      "intended_label": "td",
+      "qualified_state": "td",
+      "one_nn": {
+        "distances": [
+          0.005572246479331146,
+          0.003445349109151393,
+          0.0030216720311070887,
+          0.00477809009598522,
+          0.00727800520673501,
+          0.009977381737475238,
+          0.01275015704230656,
+          0.015557134523869984,
+          0.003021672031107089,
+          0.002866564550722062,
+          0.00816510887196485,
+          0.009066160437200155,
+          0.010896221669817133,
+          0.011820903776806472,
+          0.013683050178475504,
+          0.014618886375169433,
+          0.0032793540931454696,
+          0.003137013504610945,
+          0.0029365128425770833,
+          0.00288421066519894,
+          0.0028842106651989397,
+          0.0029365128425770824,
+          0.004667351201428323,
+          0.0029122734015481332,
+          0.01708350503822504,
+          0.0042781842429483845,
+          0.0040318136430364335,
+          0.017672780905985307,
+          0.006132587341878596,
+          0.015149534981521485,
+          0.008165108871964852,
+          0.290826882463902,
+          0.42906048210387493,
+          0.018250079201700343,
+          0.28180156632751374,
+          0.4624507106642252,
+          0.010377733632132178,
+          0.2927490634645357,
+          0.4329216202155138,
+          0.018382653135666456,
+          0.2785575136865022,
+          0.45437205171554734
+        ],
+        "nearest_indices": [
+          9
+        ],
+        "prediction": "td"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.008165108871964852,
+            0.290826882463902,
+            0.42906048210387493,
+            0.018250079201700343,
+            0.28180156632751374,
+            0.4624507106642252
+          ],
+          [
+            0.010377733632132178,
+            0.2927490634645357,
+            0.4329216202155138,
+            0.018382653135666456,
+            0.2785575136865022,
+            0.45437205171554734
+          ]
+        ],
+        "label_distances": [
+          0.008165108871964852,
+          0.010377733632132178
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 240,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 360
+      }
+    },
+    {
+      "packet_index": 3,
+      "anchor_weight": 0.2962962962962963,
+      "sign": 1,
+      "stratum": "interior",
+      "intended_label": "td",
+      "qualified_state": "td",
+      "one_nn": {
+        "distances": [
+          0.005572246479331147,
+          0.003445349109151394,
+          0.0030216720311070917,
+          0.004778090095985222,
+          0.007278005206735011,
+          0.00997738173747524,
+          0.01275015704230656,
+          0.015557134523869984,
+          0.0030216720311070917,
+          0.002866564550722062,
+          0.008165108871964852,
+          0.009066160437200156,
+          0.010896221669817137,
+          0.011820903776806474,
+          0.013683050178475504,
+          0.014618886375169433,
+          0.0032793540931454696,
+          0.0031370135046109478,
+          0.002936512842577085,
+          0.0028842106651989423,
+          0.002884210665198943,
+          0.002936512842577085,
+          0.0046673512014283255,
+          0.0029122734015481354,
+          0.01708350503822504,
+          0.004278184242948385,
+          0.004031813643036434,
+          0.017672780905985307,
+          0.006132587341878598,
+          0.015149534981521487,
+          0.008165108871964852,
+          0.2908107562043428,
+          0.42893879668162177,
+          0.018349349792759123,
+          0.2817482452121014,
+          0.46232555579444684,
+          0.01041520216986033,
+          0.29273771790699604,
+          0.43280273260895963,
+          0.01838265313566646,
+          0.27848954275614723,
+          0.4542388476320934
+        ],
+        "nearest_indices": [
+          9
+        ],
+        "prediction": "td"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.008165108871964852,
+            0.2908107562043428,
+            0.42893879668162177,
+            0.018349349792759123,
+            0.2817482452121014,
+            0.46232555579444684
+          ],
+          [
+            0.01041520216986033,
+            0.29273771790699604,
+            0.43280273260895963,
+            0.01838265313566646,
+            0.27848954275614723,
+            0.4542388476320934
+          ]
+        ],
+        "label_distances": [
+          0.008165108871964852,
+          0.01041520216986033
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 192,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 408
+      }
+    },
+    {
+      "packet_index": 4,
+      "anchor_weight": 0.0,
+      "sign": -1,
+      "stratum": "near_orbit",
+      "intended_label": "ad",
+      "qualified_state": "td",
+      "one_nn": {
+        "distances": [
+          0.004054254331504465,
+          0.006410642383390424,
+          0.009066160437200151,
+          0.011820903776806474,
+          0.014618886375169433,
+          0.017439308567768506,
+          0.020272806897805404,
+          0.0231145730531996,
+          0.007278005206735013,
+          0.008165108871964852,
+          0.015557134523869984,
+          0.016497383108168923,
+          0.018382653135666456,
+          0.019327209016587174,
+          0.021219307475523343,
+          0.022166595116213328,
+          0.006697092859292492,
+          0.0069863243153916975,
+          0.0075718524691301544,
+          0.00786762337144228,
+          0.00846412818563113,
+          0.00876452432651843,
+          0.011685760356646119,
+          0.007685991857642417,
+          0.02465388366805846,
+          0.005309837667767805,
+          0.00559955886243526,
+          0.025247389489540632,
+          0.013377501464003289,
+          0.022702937722110714,
+          0.0028665645507220615,
+          0.2925536816729585,
+          0.42887438054964894,
+          0.025631885687593958,
+          0.2835326167981257,
+          0.462230408866003,
+          0.005991911710126772,
+          0.2944644512588336,
+          0.43272781266743837,
+          0.025961892208963288,
+          0.28025782452634174,
+          0.45416442513074456
+        ],
+        "nearest_indices": [
+          30
+        ],
+        "prediction": "ad"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.0028665645507220615,
+            0.2925536816729585,
+            0.42887438054964894,
+            0.025631885687593958,
+            0.2835326167981257,
+            0.462230408866003
+          ],
+          [
+            0.005991911710126772,
+            0.2944644512588336,
+            0.43272781266743837,
+            0.025961892208963288,
+            0.28025782452634174,
+            0.45416442513074456
+          ]
+        ],
+        "label_distances": [
+          0.0028665645507220615,
+          0.005991911710126772
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 216,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 384
+      }
+    },
+    {
+      "packet_index": 5,
+      "anchor_weight": 0.0,
+      "sign": 1,
+      "stratum": "near_orbit",
+      "intended_label": "ad",
+      "qualified_state": "ad",
+      "one_nn": {
+        "distances": [
+          0.0040542543315044656,
+          0.006410642383390425,
+          0.009066160437200151,
+          0.011820903776806474,
+          0.014618886375169433,
+          0.017439308567768506,
+          0.020272806897805404,
+          0.0231145730531996,
+          0.007278005206735013,
+          0.00816510887196485,
+          0.015557134523869984,
+          0.016497383108168923,
+          0.01838265313566646,
+          0.019327209016587174,
+          0.021219307475523343,
+          0.022166595116213328,
+          0.006697092859292492,
+          0.006986324315391699,
+          0.007571852469130155,
+          0.00786762337144228,
+          0.008464128185631132,
+          0.00876452432651843,
+          0.011685760356646119,
+          0.007685991857642418,
+          0.02465388366805846,
+          0.005309837667767805,
+          0.00559955886243526,
+          0.025247389489540632,
+          0.01337750146400329,
+          0.022702937722110718,
+          0.0028665645507220615,
+          0.29253765060393877,
+          0.4287526423094244,
+          0.025702661551881698,
+          0.2834796212849366,
+          0.46210519433050046,
+          0.006056573853386939,
+          0.29445317179680575,
+          0.4326088717995769,
+          0.025961892208963288,
+          0.28019026607211006,
+          0.45403116013361444
+        ],
+        "nearest_indices": [
+          30
+        ],
+        "prediction": "ad"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.0028665645507220615,
+            0.29253765060393877,
+            0.4287526423094244,
+            0.025702661551881698,
+            0.2834796212849366,
+            0.46210519433050046
+          ],
+          [
+            0.006056573853386939,
+            0.29445317179680575,
+            0.4326088717995769,
+            0.025961892208963288,
+            0.28019026607211006,
+            0.45403116013361444
+          ]
+        ],
+        "label_distances": [
+          0.0028665645507220615,
+          0.006056573853386939
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 180,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 420
+      }
+    },
+    {
+      "packet_index": 6,
+      "anchor_weight": 1.0,
+      "sign": -1,
+      "stratum": "near_orbit",
+      "intended_label": "td",
+      "qualified_state": "td",
+      "one_nn": {
+        "distances": [
+          0.023114573053199597,
+          0.020272806897805404,
+          0.017439308567768513,
+          0.014618886375169435,
+          0.011820903776806476,
+          0.009066160437200156,
+          0.0064106423833904256,
+          0.0040542543315044656,
+          0.01932720901658717,
+          0.01838265313566646,
+          0.010896221669817137,
+          0.00997738173747524,
+          0.008165108871964852,
+          0.007278005206735012,
+          0.005572246479331151,
+          0.004778090095985222,
+          0.019957500965597837,
+          0.019642299960634768,
+          0.019012233605595282,
+          0.018697379566457603,
+          0.01806806098162864,
+          0.017753610242456513,
+          0.014755558109199795,
+          0.018890485332012805,
+          0.0031544142237473916,
+          0.021525294535708138,
+          0.021187777422464863,
+          0.0029553659170092903,
+          0.013054989143681955,
+          0.004357539210965188,
+          0.025961892208963288,
+          0.28750004044002875,
+          0.4300472354861509,
+          0.005680120948926894,
+          0.27848953897733464,
+          0.4634792295856282,
+          0.02732648402629597,
+          0.2894446528715135,
+          0.4339217779220651,
+          0.002866564550722062,
+          0.27532923338221094,
+          0.4553795125477051
+        ],
+        "nearest_indices": [
+          39
+        ],
+        "prediction": "td"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.025961892208963288,
+            0.28750004044002875,
+            0.4300472354861509,
+            0.005680120948926894,
+            0.27848953897733464,
+            0.4634792295856282
+          ],
+          [
+            0.02732648402629597,
+            0.2894446528715135,
+            0.4339217779220651,
+            0.002866564550722062,
+            0.27532923338221094,
+            0.4553795125477051
+          ]
+        ],
+        "label_distances": [
+          0.005680120948926894,
+          0.002866564550722062
+        ],
+        "nearest_label_indices": [
+          1
+        ],
+        "prediction": "td"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 204,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 396
+      }
+    },
+    {
+      "packet_index": 7,
+      "anchor_weight": 1.0,
+      "sign": 1,
+      "stratum": "near_orbit",
+      "intended_label": "td",
+      "qualified_state": "td",
+      "one_nn": {
+        "distances": [
+          0.023114573053199597,
+          0.0202728068978054,
+          0.01743930856776851,
+          0.014618886375169433,
+          0.011820903776806474,
+          0.009066160437200156,
+          0.006410642383390424,
+          0.004054254331504464,
+          0.01932720901658717,
+          0.018382653135666456,
+          0.010896221669817137,
+          0.009977381737475238,
+          0.008165108871964852,
+          0.007278005206735011,
+          0.005572246479331151,
+          0.004778090095985221,
+          0.019957500965597837,
+          0.019642299960634768,
+          0.01901223360559528,
+          0.018697379566457603,
+          0.01806806098162864,
+          0.017753610242456513,
+          0.014755558109199794,
+          0.018890485332012805,
+          0.0031544142237473908,
+          0.021525294535708138,
+          0.02118777742246486,
+          0.00295536591700929,
+          0.013054989143681955,
+          0.004357539210965189,
+          0.025961892208963288,
+          0.28748372756294854,
+          0.42992582935286533,
+          0.005991412266163294,
+          0.27843558360106685,
+          0.4633543525252403,
+          0.027340735362074386,
+          0.28943317778365385,
+          0.43380316441769196,
+          0.002866564550722062,
+          0.2752604652836256,
+          0.45524660324501226
+        ],
+        "nearest_indices": [
+          39
+        ],
+        "prediction": "td"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.025961892208963288,
+            0.28748372756294854,
+            0.42992582935286533,
+            0.005991412266163294,
+            0.27843558360106685,
+            0.4633543525252403
+          ],
+          [
+            0.027340735362074386,
+            0.28943317778365385,
+            0.43380316441769196,
+            0.002866564550722062,
+            0.2752604652836256,
+            0.45524660324501226
+          ]
+        ],
+        "label_distances": [
+          0.005991412266163294,
+          0.002866564550722062
+        ],
+        "nearest_label_indices": [
+          1
+        ],
+        "prediction": "td"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 204,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 396
+      }
+    }
+  ],
+  "paired_direction_comparison": [
+    {
+      "packet_index": 0,
+      "anchor_weight": 0.25925925925925924,
+      "sign": -1,
+      "stratum": "interior",
+      "intended_label": "ad",
+      "direction1_final": "td",
+      "direction2_final": "ad",
+      "changed_final_label": true
+    },
+    {
+      "packet_index": 1,
+      "anchor_weight": 0.25925925925925924,
+      "sign": 1,
+      "stratum": "interior",
+      "intended_label": "ad",
+      "direction1_final": "ad",
+      "direction2_final": "ad",
+      "changed_final_label": false
+    },
+    {
+      "packet_index": 2,
+      "anchor_weight": 0.2962962962962963,
+      "sign": -1,
+      "stratum": "interior",
+      "intended_label": "td",
+      "direction1_final": "td",
+      "direction2_final": "td",
+      "changed_final_label": false
+    },
+    {
+      "packet_index": 3,
+      "anchor_weight": 0.2962962962962963,
+      "sign": 1,
+      "stratum": "interior",
+      "intended_label": "td",
+      "direction1_final": "ad",
+      "direction2_final": "td",
+      "changed_final_label": true
+    },
+    {
+      "packet_index": 4,
+      "anchor_weight": 0.0,
+      "sign": -1,
+      "stratum": "near_orbit",
+      "intended_label": "ad",
+      "direction1_final": "ad",
+      "direction2_final": "td",
+      "changed_final_label": true
+    },
+    {
+      "packet_index": 5,
+      "anchor_weight": 0.0,
+      "sign": 1,
+      "stratum": "near_orbit",
+      "intended_label": "ad",
+      "direction1_final": "ad",
+      "direction2_final": "ad",
+      "changed_final_label": false
+    },
+    {
+      "packet_index": 6,
+      "anchor_weight": 1.0,
+      "sign": -1,
+      "stratum": "near_orbit",
+      "intended_label": "td",
+      "direction1_final": "td",
+      "direction2_final": "td",
+      "changed_final_label": false
+    },
+    {
+      "packet_index": 7,
+      "anchor_weight": 1.0,
+      "sign": 1,
+      "stratum": "near_orbit",
+      "intended_label": "td",
+      "direction1_final": "td",
+      "direction2_final": "td",
+      "changed_final_label": false
+    }
+  ],
+  "changed_final_rows": [
+    0,
+    3,
+    4
+  ],
+  "verified_inventory_files": 853,
+  "verified_archive_files": 120,
+  "verified_trial_files": 832,
+  "verified_checkpoints": 400,
+  "independent_scientific_bindings": 2974,
+  "frozen_sources_equal_to_git": 63,
+  "transfer_reservation_closed": true,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2/complete-audit.json",
+      "bytes": 1036460,
+      "sha256": "6be57fb29f71e163b66167cc246a3d2432cde0d63ba67aaad860e5c3bfffd556"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2/independent-review.json",
+      "bytes": 8823,
+      "sha256": "cbdc838da1212e9c0414b6d189c7c0cf03fb655a56ee4492ec08aab9cce7ad78"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2/independent-return-source-review.json",
+      "bytes": 20840,
+      "sha256": "a932ae74e8c994415cf34f7ebe16c324d2768554bdcdf4c8bdc9b8547388ecc8"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2/operator-source/review-direction2-return-supplement.py",
+      "bytes": 6660,
+      "sha256": "246ca9dc91d75627bcf3fdcc83de453bd33836f2ae5568f841e280cf71f7020b"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2/final-manifest.json",
+      "bytes": 165343,
+      "sha256": "abc8a8be8d3cb1f3b7abfb16dbea851aa522c019ab807fe8a38f7c34608f16ef"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2/final-artifacts.tar",
+      "bytes": 15472640,
+      "sha256": "00eef23ef6210868ddcb5e658c5d08815da9aadc821547126cc99d8a72115c3d"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2/local-return-verification.json",
+      "bytes": 389,
+      "sha256": "d4be58881db44a10d19336e1abbaba617bb8d983859451b8a56ab0e257ab766c"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2/transfer-closeout.json",
+      "bytes": 737,
+      "sha256": "0bff978cc77c66e210798dcda8057001eb913c03a8dac255955e52e6308bbd15"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2/completion.json",
+      "bytes": 107,
+      "sha256": "b02c0b52b4453ad79444d899e94d706be89285b08023db91bd46aa6562bc6f08"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2/completion-journal.jsonl",
+      "bytes": 456,
+      "sha256": "f71c183db6918262b65fab9ed8232bca226b65ffaee7e890c32c7a6faf249f0a"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-direction2/20261026T075848Z-transverse-direction2/audit-source-manifest.json",
+      "bytes": 10449,
+      "sha256": "7b2caab37bce7ffa711fcd30406773f908f5ee39d6744fd632ee9dcd21c3438b"
+    },
+    {
+      "path": "/data2/shrimp-memory/docs/receipts/transverse-amplitude.json",
+      "bytes": 37352,
+      "sha256": "026082fe9b0efebd80d71e6f2ad1c025459eb3714d599972ab9b64bf32f4d02f"
+    }
+  ],
+  "scope": "Direction-sensitive finite numerical robustness. One near-orbit control switched; all four interior probes retained their intended labels in this direction. Do not pool paired rows as independent reliability trials, infer a privileged robust-control region, claim basin fractality or language communication, or turn shadow decisions into achieved speedup."
+}

@@ -1,0 +1,90 @@
+{
+  "utc": "2026-10-26T01:15:43Z",
+  "evidence": "adapted exploratory fresh-start600-step replay of original eight line states",
+  "source_commit": "95330cec94d290c2f38e6d083403b222bb4f1a0d",
+  "qualified_state_counts": {
+    "ad": 4,
+    "td": 4,
+    "null": 0
+  },
+  "rows": [
+    {
+      "weight": 0.1111111111111111,
+      "qualified_state": "td",
+      "nearest_reference_label": "ad",
+      "maximum_closure_residual": 3.9572933193277496e-14
+    },
+    {
+      "weight": 0.2222222222222222,
+      "qualified_state": "td",
+      "nearest_reference_label": "ad",
+      "maximum_closure_residual": 2.7046286718178424e-14
+    },
+    {
+      "weight": 0.3333333333333333,
+      "qualified_state": "ad",
+      "nearest_reference_label": "ad",
+      "maximum_closure_residual": 2.460908949589177e-14
+    },
+    {
+      "weight": 0.4444444444444444,
+      "qualified_state": "ad",
+      "nearest_reference_label": "ad",
+      "maximum_closure_residual": 5.386748763916176e-15
+    },
+    {
+      "weight": 0.5555555555555556,
+      "qualified_state": "ad",
+      "nearest_reference_label": "td",
+      "maximum_closure_residual": 2.2412868749776578e-14
+    },
+    {
+      "weight": 0.6666666666666666,
+      "qualified_state": "td",
+      "nearest_reference_label": "td",
+      "maximum_closure_residual": 6.982472807293913e-14
+    },
+    {
+      "weight": 0.7777777777777778,
+      "qualified_state": "ad",
+      "nearest_reference_label": "td",
+      "maximum_closure_residual": 2.1200336730748788e-14
+    },
+    {
+      "weight": 0.8888888888888888,
+      "qualified_state": "td",
+      "nearest_reference_label": "td",
+      "maximum_closure_residual": 6.267411054084008e-15
+    }
+  ],
+  "nearest_reference_disagreements": 4,
+  "verified_inventory_files": 440,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-long/20261026T003740Z-long/complete-audit.json",
+      "bytes": 180142,
+      "sha256": "b18a7b2f2583b1939d0b6f1bd0e2d0eb4fcddac96357761dcf8e93cb829a3a1e"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-long/20261026T003740Z-long/final-manifest.json",
+      "bytes": 149280,
+      "sha256": "faa2734e4bc8e898a545ee0948e7922c22f8342744242073d17dd48ab354b8e4"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-long/20261026T003740Z-long/local-return-verification.json",
+      "bytes": 389,
+      "sha256": "53f510fa2493688e723f195821fe141d49850ae14880b7d2dc8121843fce4c35"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-long/20261026T003740Z-long/transfer-closeout.json",
+      "bytes": 643,
+      "sha256": "48c1960009b703c73327dcd9b46de319d055521f6a5e6dca4a8a27b5cf4933ef"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-long/20261026T003740Z-long/run/results.json",
+      "bytes": 90369,
+      "sha256": "5395e4d86ada4e22c8d98c68a34b6882d4122836e78c21d78aa2f90e9a238f05"
+    }
+  ],
+  "scope": "Fixed line cohort; no fractality, reliability population or secrecy claim."
+}

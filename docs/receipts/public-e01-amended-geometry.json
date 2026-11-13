@@ -1,0 +1,276 @@
+{
+  "profile": "public-e01-amended-geometry",
+  "status": "independently_audited",
+  "synthetic": false,
+  "utc": "2026-10-30T19:08:11Z",
+  "source_commit": "a28007fc54368fe2d60a372ffb1ef4a3d677e97b",
+  "publication_head": "a28007fc54368fe2d60a372ffb1ef4a3d677e97b",
+  "evidence_class": "adapted exploratory",
+  "evidence_rung": 0,
+  "scientific_status": "completed",
+  "outcome": "p1_branch_link_unresolved",
+  "pulse_eligible": false,
+  "attempt_index": 1,
+  "amendment": "orthogonal-row-order-1",
+  "fold_equation_order": [
+    "orbit",
+    "normalization",
+    "null"
+  ],
+  "independent_audit": {
+    "path": "/data2/shrimp-memory-data/audits/public-e01-case/20261030T033259Z-public-e01/geometry-audit/independent-review.json",
+    "bytes": 128780,
+    "sha256": "112a17358696d7fc31f76931074c53b605dc13e5e1a81808eda048f856ad9c17"
+  },
+  "case_completion": {
+    "path": "/data2/shrimp-memory-data/audits/public-e01-case/20261030T033259Z-public-e01/completion.json",
+    "bytes": 445,
+    "sha256": "efd6bc659bf1454cc4c0379e2e7e0c44ce68e417ae99b2497d774aee8a7c4dee"
+  },
+  "result": {
+    "path": "/data2/shrimp-memory-data/audits/public-e01/20261030T044252Z-public-e01/run/result.json",
+    "bytes": 1174427,
+    "sha256": "b07408aab279d0d9be0318310ef22203b4842dae7efbca48fa015ddfd4bce348"
+  },
+  "source": {
+    "path": "/data2/shrimp-memory-data/audits/public-e01/20261030T044252Z-public-e01/run/source.json",
+    "bytes": 2850,
+    "sha256": "da2efd8f692dbf8b49bfc83ea382ad15bb9997906c78bfbc466987512a1bb239"
+  },
+  "checker": {
+    "path": "/data2/shrimp-memory/tools/audit_public_fold_geometry.py",
+    "bytes": 114050,
+    "sha256": "9a665b9869bc09530384fadfe003335da1394e9c8ffdf62ef2b7ab538f37a7aa"
+  },
+  "final_manifest": {
+    "path": "/data2/shrimp-memory-data/audits/public-e01/20261030T044252Z-public-e01/final-manifest.json",
+    "bytes": 73853,
+    "sha256": "ec529763491b058bbada0c7f3128817cc86cfec744d9cf13752aed8451d97343"
+  },
+  "case_context": {
+    "path": "/data2/shrimp-memory-data/preparations/public-e01/20261030T043149Z-continuation-operators/context/case-context.json",
+    "bytes": 6895,
+    "sha256": "ebf52b7194c0b6baaf9430111a012f13ef1be99f27079b46a985da510297dd51"
+  },
+  "first_attempt_receipt": {
+    "path": "/data2/shrimp-memory/docs/receipts/public-e01-first-geometry.json",
+    "bytes": 1926,
+    "sha256": "2d0250c2be73252cffcf13584bb5462d3637a3b3cdc51a125eb80c07d80343c5"
+  },
+  "amendment_readiness": {
+    "path": "/data2/shrimp-memory/docs/receipts/public-e01-row-order-amendment-readiness.json",
+    "bytes": 4317,
+    "sha256": "8b09beaf232a9bbe0395fb81a074144971b17819c33238525363ab6d40509ee9"
+  },
+  "raw_binding_verification": {
+    "path": "/data2/shrimp-memory-data/manuscript-builds/20261030T190708Z-public-e01-amended/raw-binding-verification.json",
+    "bytes": 108393,
+    "sha256": "9da291d219a5c14be7d939a067b707df6a1b05083c3f2e904b593be1e777fee1"
+  },
+  "metrics_source": {
+    "path": "/data2/shrimp-memory-data/manuscript-builds/20261030T190708Z-public-e01-amended/metrics.json",
+    "bytes": 4941,
+    "sha256": "41e8a55334ecdf12fc1cecca09096caa962881a19830dd62fd67f62d4ec3c791"
+  },
+  "fold": {
+    "alpha": 0.07293697809562831,
+    "primary": {
+      "orbit_l2": 8.018700572274776e-15,
+      "null_l2": 4.397291813268645e-12,
+      "normalization": 0.0,
+      "vector_norm": 1.0000158778860713,
+      "log10_temperature": -0.15360448326123233,
+      "alpha": 0.07293697809562831,
+      "cycle": {
+        "passed": true,
+        "closure_l2": [
+          8.018700572274776e-15,
+          1.3196141443808585e-14,
+          1.8078524250821532e-14,
+          1.3742483293663591e-14,
+          3.634144166149005e-14,
+          5.274917626442984e-14
+        ],
+        "closure_max": 5.274917626442984e-14,
+        "proper_divisor_gaps": {
+          "1": 0.47560469864756205,
+          "2": 0.4884252918579968,
+          "3": 0.11971845589839786
+        }
+      },
+      "passed": true
+    },
+    "refined": {
+      "orbit_l2": 3.223410148800436e-15,
+      "null_l2": 7.693499629380743e-13,
+      "normalization": 1.1102230246251565e-16,
+      "vector_norm": 1.0000158778860744,
+      "log10_temperature": -0.1536044832612347,
+      "alpha": 0.07293697809562831,
+      "cycle": {
+        "passed": true,
+        "closure_l2": [
+          3.223410148800436e-15,
+          4.119661425916464e-15,
+          9.466899164885166e-15,
+          6.988353280531688e-15,
+          1.8770884147493633e-14,
+          3.0695375410459283e-14
+        ],
+        "closure_max": 3.0695375410459283e-14,
+        "proper_divisor_gaps": {
+          "1": 0.4756046986475316,
+          "2": 0.4884252918579799,
+          "3": 0.11971845589837599
+        }
+      },
+      "passed": true
+    },
+    "refinement_spread": 2.3592239273284576e-15,
+    "spectrum": {
+      "basis_passed": true,
+      "pairs": [
+        {
+          "index": 0,
+          "value": [
+            1.0000000000011167,
+            0.0
+          ],
+          "modulus": 1.0000000000011167,
+          "normalized_residual": 1.5886957069030378e-13,
+          "qualified": true
+        },
+        {
+          "index": 1,
+          "value": [
+            -0.0010301524166331788,
+            0.0
+          ],
+          "modulus": 0.0010301524166331788,
+          "normalized_residual": 1.169400431293157e-10,
+          "qualified": true
+        },
+        {
+          "index": 2,
+          "value": [
+            -0.00046370551111564316,
+            0.0
+          ],
+          "modulus": 0.00046370551111564316,
+          "normalized_residual": 1.6959004567912635e-10,
+          "qualified": true
+        }
+      ],
+      "arnoldi": "00330-target-fold-arnoldi.npz",
+      "selected_index": 0,
+      "selected_value": [
+        1.0000000000011167,
+        0.0
+      ],
+      "observed_other_distance_from_one": 0.9999999997597263,
+      "scope": "Eight-dimensional numerical mode diagnostic, not a proof of spectral coverage."
+    },
+    "P": -0.15361287955001818,
+    "N": -0.1535987696062659,
+    "solvers": {
+      "primary": {
+        "binding": {
+          "path": "/data2/shrimp-memory-data/audits/public-e01/20261030T044252Z-public-e01/run/primary-solver.json",
+          "bytes": 9056064,
+          "sha256": "32a41b1b7dc7ae248f5b8a64557152d02d92087fafcbba5562bb4ad6e51e6025"
+        },
+        "status": "converged",
+        "reason": "full_residual_qualified",
+        "newton_iterations": 3,
+        "counts": {
+          "residual_calls": 4,
+          "action_calls": 22
+        }
+      },
+      "refined": {
+        "binding": {
+          "path": "/data2/shrimp-memory-data/audits/public-e01/20261030T044252Z-public-e01/run/refined-solver.json",
+          "bytes": 9056559,
+          "sha256": "23749f2e0f44249640a1c6402d9c46cb10621b22680e1acd79b42bd96d84da0d"
+        },
+        "status": "converged",
+        "reason": "full_residual_qualified",
+        "newton_iterations": 3,
+        "counts": {
+          "residual_calls": 4,
+          "action_calls": 22
+        }
+      }
+    }
+  },
+  "branch": {
+    "status": "unresolved",
+    "reason": "seed_tangent_unqualified",
+    "accepted_steps": 0,
+    "attempted_steps": 0,
+    "tangent_linear_info": 0,
+    "tangent_linear_relative_residual": 0.00014913031215444124,
+    "tangent_linear_tolerance": 0.001,
+    "normalized_tangent_null_residual": 3.212157899795059e-05,
+    "normalized_tangent_tolerance": 1e-08,
+    "norm_error": 1.1102230246251565e-16,
+    "orientation": 0.21539268700267686,
+    "artifact": {
+      "path": "/data2/shrimp-memory-data/audits/public-e01/20261030T044252Z-public-e01/run/p1-branch.json",
+      "bytes": 1097584,
+      "sha256": "ef33b803a658324d7852cf5df6268e3dbfb4c083f9160fbc168dab3df569c79a"
+    },
+    "interpretation": "The initial linear tangent solve passed its relative residual gate, but the freshly evaluated normalized tangent failed its scaled null-residual tolerance. No continuation step or turn bracket was obtained."
+  },
+  "counts": {
+    "ordinary": 169,
+    "jvp_cycles": 255,
+    "augmented": 52,
+    "model_invocations": 1699,
+    "elapsed_seconds": 6671.001278607,
+    "peak_rss_bytes": 5568696320
+  },
+  "case_counts": {
+    "ordinary": 308,
+    "jvp_cycles": 338,
+    "augmented": 68,
+    "model_invocations": 2336,
+    "elapsed_seconds": 8905.510292009974,
+    "peak_rss_bytes": 5568696320
+  },
+  "prior_counts": {
+    "ordinary": 139,
+    "jvp_cycles": 83,
+    "augmented": 16,
+    "model_invocations": 637,
+    "elapsed_seconds": 2234.5090134029742,
+    "peak_rss_bytes": 5567930368
+  },
+  "return_status": "manifest_verified",
+  "closed_verified_return": true,
+  "returned_manifest_entries": 407,
+  "raw_files": 369,
+  "raw_bytes": 85928107,
+  "independent_assertions": 28802,
+  "rehash_unique_bindings": 455,
+  "conditional_pulses": {
+    "status": "not_run",
+    "reason": "geometry_not_pulse_eligible",
+    "model_calls": 0
+  },
+  "not_reached": [
+    "P1 continuation steps",
+    "connected turn bracket",
+    "branch-side mode checks",
+    "native midpoint controls",
+    "conditional pulse tests"
+  ],
+  "scope": "A numerically localized fixed-alpha fold candidate with small orbit/null residuals and limited mode diagnostics. Its connection to the original P1 history remains unresolved. This does not certify a fold, complete spectral coverage, branch loss, or the mechanism of finite writes.",
+  "publication_checks": {
+    "numerical_audit_reexecuted": false,
+    "model_calls": 0,
+    "all_final_manifest_entries_rehashed": true,
+    "all_raw_manifest_entries_rehashed": true,
+    "all_saved_audit_bindings_rehashed": true
+  }
+}

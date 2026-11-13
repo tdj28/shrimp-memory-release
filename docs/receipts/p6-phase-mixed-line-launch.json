@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-26T00:28:03Z",
+  "status": "running_not_a_result",
+  "source_commit": "65b1fd8e621337448fa87a51074a8878f6dbe6a9",
+  "protocol": "docs/p6-phase-mixed-line-protocol.md",
+  "local_base": "/data2/shrimp-memory-data/audits/p6-phase-mixed-line/20261026T002731Z-line",
+  "available_memory_bytes_at_preflight": 28042342400,
+  "reserved_transfer_bytes": 536870912,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-line/20261026T002731Z-line/launch.json",
+      "bytes": 176,
+      "sha256": "fbd456cf2d7f1c4b98cfad4227bc1ccaced8d7c1a663171b87d0a0a19325f83f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-line/20261026T002731Z-line/preflight.json",
+      "bytes": 1617,
+      "sha256": "8919ddf67b910b0edade67e915e628a4cffa420a14b68207ad41d939c6726063"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-line/20261026T002731Z-line/run.sh",
+      "bytes": 1141,
+      "sha256": "874069120bcb20e49ed6fae5b623b7d9c7440e356ccdc44aae60ffa9369dd567"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-line/20261026T002731Z-line/packet.npz",
+      "bytes": 55163,
+      "sha256": "5240495fe014a695cda7da0d87f5975a9042fbc6c938dc7e6d5599c926457230"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-line/20261026T002731Z-line/local-evaluation/design.json",
+      "bytes": 843,
+      "sha256": "f0aa630ab43cf41044e97f98fedd54fbc5ed803580809c193e35e2a18a28bb9d"
+    }
+  ],
+  "scope": "Eight fixed state-space points, no target bits; nearest-reference comparisons conditional on qualified recurrence."
+}

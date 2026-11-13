@@ -1,0 +1,943 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-10-25T22:37:13Z",
+  "receipt_source_commit": "3cc0339cd05c88ff1b4ccf988d709340b1063c55",
+  "experiment_source_commit": "0cbf774da0fa330c5e28a4be65242b3ba38bca9d",
+  "data_root": "/data2/shrimp-memory-data",
+  "raw_directory": "audits/p6-recovery/20261025T221011Z-recovery",
+  "evidence": "exploratory finite-precision fixed-direction recovery; no model continuation or threshold changes",
+  "status": "failed",
+  "interpretation": {
+    "controls_passed": true,
+    "recovery_interpretation_valid": true,
+    "all_trials_completed": true,
+    "perturbed_trial_counts": {
+      "returned": 12,
+      "switched": 0,
+      "unresolved": 12
+    },
+    "all_tested_perturbations_returned": false
+  },
+  "protocol": {
+    "hold": {
+      "alpha": 0.07293697809562831,
+      "log10_temperature": -0.15395151820007266
+    },
+    "epsilon": 0.0002866564550722062,
+    "relative_amplitude": 0.001,
+    "direction_seed": 20261025,
+    "phases": 6,
+    "signs": [
+      -1,
+      1
+    ],
+    "steps_per_trial": 120,
+    "closure_tolerance": 1e-08,
+    "match_tolerance": 1e-06,
+    "proper_divisor_gap": 0.0001,
+    "threads": 1
+  },
+  "by_source": {
+    "ad": {
+      "trials": 12,
+      "counts": {
+        "returned": 12,
+        "switched": 0,
+        "unresolved": 0
+      },
+      "maximum_closure_residual": 6.4510675668662526e-09,
+      "minimum_closure_residual": 7.726317815720969e-10,
+      "maximum_original_reference_distance": 2.2333283075255722e-09,
+      "minimum_original_reference_distance": 2.6749734022358635e-10
+    },
+    "td": {
+      "trials": 12,
+      "counts": {
+        "returned": 0,
+        "switched": 0,
+        "unresolved": 12
+      },
+      "maximum_closure_residual": 2.7884854941242597e-07,
+      "minimum_closure_residual": 3.54252307878208e-08,
+      "maximum_original_reference_distance": 1.0694546795540544e-07,
+      "minimum_original_reference_distance": 1.3585187101994785e-08
+    }
+  },
+  "rows": [
+    {
+      "trial_id": 0,
+      "kind": "control",
+      "source_label": "ad",
+      "phase": 0,
+      "sign": 0,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 8.768289372665998e-15,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 1.4094181475841057e-14,
+          "best_shift": 1
+        },
+        {
+          "label": "td",
+          "distance": 0.01538034045849976,
+          "best_shift": 1
+        }
+      ],
+      "trajectory": {
+        "path": "trial-00-final-120.npz",
+        "bytes": 833469,
+        "sha256": "3930e4f4fd5d228974786f0c4485da845ce5f441cc68216f4bdd28012667b612"
+      }
+    },
+    {
+      "trial_id": 1,
+      "kind": "control",
+      "source_label": "td",
+      "phase": 0,
+      "sign": 0,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 2.501438630180655e-14,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380340457782868,
+          "best_shift": 1
+        },
+        {
+          "label": "td",
+          "distance": 9.126994720978722e-13,
+          "best_shift": 1
+        }
+      ],
+      "trajectory": {
+        "path": "trial-01-final-120.npz",
+        "bytes": 833197,
+        "sha256": "5aef110b0d55874bb977118a721263d05a7045a4ff33cb5d6300113f722258fa"
+      }
+    },
+    {
+      "trial_id": 2,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 0,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 4.99266547108061e-09,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 1.728439475536605e-09,
+          "best_shift": 1
+        },
+        {
+          "label": "td",
+          "distance": 0.015380340026647607,
+          "best_shift": 1
+        }
+      ],
+      "trajectory": {
+        "path": "trial-02-final-120.npz",
+        "bytes": 833300,
+        "sha256": "56f0e09611d7fbd6884967b827718c3920036403ffa60355aaac783f4bc80324"
+      }
+    },
+    {
+      "trial_id": 3,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 0,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 4.42136726073284e-09,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 1.530701536745134e-09,
+          "best_shift": 1
+        },
+        {
+          "label": "td",
+          "distance": 0.01538034084094834,
+          "best_shift": 1
+        }
+      ],
+      "trajectory": {
+        "path": "trial-03-final-120.npz",
+        "bytes": 833400,
+        "sha256": "f86289225c951ce617643d86ffc8a859f8b5f25f1aabec6470143727ca80451f"
+      }
+    },
+    {
+      "trial_id": 4,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 0,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 5.400155813538515e-08,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380324143780705,
+          "best_shift": 1
+        },
+        {
+          "label": "td",
+          "distance": 2.0711436094437307e-08,
+          "best_shift": 1
+        }
+      ],
+      "trajectory": {
+        "path": "trial-04-final-120.npz",
+        "bytes": 833384,
+        "sha256": "8b3a5b1471563b7c46e0338f48520a0d1e6128e93a4c22420c48922ec1f0cb84"
+      }
+    },
+    {
+      "trial_id": 5,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 0,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 4.8179886721270844e-08,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380355012990824,
+          "best_shift": 1
+        },
+        {
+          "label": "td",
+          "distance": 1.8476823368071147e-08,
+          "best_shift": 1
+        }
+      ],
+      "trajectory": {
+        "path": "trial-05-final-120.npz",
+        "bytes": 833310,
+        "sha256": "a8cb960d19e1fbf53928702c68e65d674734f6f6d92b34daff0dbc0ec8206bea"
+      }
+    },
+    {
+      "trial_id": 6,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 1,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 6.4510675668662526e-09,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 2.2333283075255722e-09,
+          "best_shift": 2
+        },
+        {
+          "label": "td",
+          "distance": 0.015380339774039777,
+          "best_shift": 2
+        }
+      ],
+      "trajectory": {
+        "path": "trial-06-final-120.npz",
+        "bytes": 833395,
+        "sha256": "54bf9bc4f8e3ecb13737d95c2336f920f77a4723350b568a40e6e3d1c42828b6"
+      }
+    },
+    {
+      "trial_id": 7,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 1,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 5.343819389729603e-09,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 1.8500447713602351e-09,
+          "best_shift": 2
+        },
+        {
+          "label": "td",
+          "distance": 0.015380341025494992,
+          "best_shift": 2
+        }
+      ],
+      "trajectory": {
+        "path": "trial-07-final-120.npz",
+        "bytes": 833428,
+        "sha256": "0e9ad1d87de61f10042c21f272dddec8b11325290bec6cd9ada0d860aed5cb4c"
+      }
+    },
+    {
+      "trial_id": 8,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 1,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 1.4861064693547496e-07,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380385352828258,
+          "best_shift": 2
+        },
+        {
+          "label": "td",
+          "distance": 5.6993030937877405e-08,
+          "best_shift": 2
+        }
+      ],
+      "trajectory": {
+        "path": "trial-08-final-120.npz",
+        "bytes": 833335,
+        "sha256": "1cb2e0651ad1a156c12f1061f433696ed1e2622e914ad725bdd875a89c1d0759"
+      }
+    },
+    {
+      "trial_id": 9,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 1,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 1.8019192416175025e-07,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380286021043583,
+          "best_shift": 2
+        },
+        {
+          "label": "td",
+          "distance": 6.910804561119072e-08,
+          "best_shift": 2
+        }
+      ],
+      "trajectory": {
+        "path": "trial-09-final-120.npz",
+        "bytes": 833284,
+        "sha256": "f8ca942278ed17d63b827ef669d0caf8b67ccfe614036c4dc6de06574bc4a53a"
+      }
+    },
+    {
+      "trial_id": 10,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 2,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 5.450661710684399e-09,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 1.887033716398965e-09,
+          "best_shift": 3
+        },
+        {
+          "label": "td",
+          "distance": 0.015380339621160177,
+          "best_shift": 3
+        }
+      ],
+      "trajectory": {
+        "path": "trial-10-final-120.npz",
+        "bytes": 833432,
+        "sha256": "21a5257fa4deda39b6c9c212e3e990d9fea743a6e2dfb9665cb0f8a121c1f063"
+      }
+    },
+    {
+      "trial_id": 11,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 2,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 4.055788989714168e-09,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 1.4041046497813102e-09,
+          "best_shift": 3
+        },
+        {
+          "label": "td",
+          "distance": 0.015380341081553353,
+          "best_shift": 3
+        }
+      ],
+      "trajectory": {
+        "path": "trial-11-final-120.npz",
+        "bytes": 833338,
+        "sha256": "327917ee3d98df78b67e0333321e8b3ce5940acd51173bac088770ceb3a1b487"
+      }
+    },
+    {
+      "trial_id": 12,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 2,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 2.623133804466712e-07,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380419701768025,
+          "best_shift": 3
+        },
+        {
+          "label": "td",
+          "distance": 1.0059872613455501e-07,
+          "best_shift": 3
+        }
+      ],
+      "trajectory": {
+        "path": "trial-12-final-120.npz",
+        "bytes": 833266,
+        "sha256": "3ea0e95e014a094faa958f25ff4e1ec778ab744092e34a927c125eb594690c81"
+      }
+    },
+    {
+      "trial_id": 13,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 2,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 2.7884854941242597e-07,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380256215958088,
+          "best_shift": 3
+        },
+        {
+          "label": "td",
+          "distance": 1.0694546795540544e-07,
+          "best_shift": 3
+        }
+      ],
+      "trajectory": {
+        "path": "trial-13-final-120.npz",
+        "bytes": 833257,
+        "sha256": "a2285a469e673a10097a82b5653c43091380a2d5b8db0f7e85c987f9ecaca270"
+      }
+    },
+    {
+      "trial_id": 14,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 3,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 7.726317815720969e-10,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 2.6749734022358635e-10,
+          "best_shift": 4
+        },
+        {
+          "label": "td",
+          "distance": 0.015380340339805267,
+          "best_shift": 4
+        }
+      ],
+      "trajectory": {
+        "path": "trial-14-final-120.npz",
+        "bytes": 833446,
+        "sha256": "37d18981f0319d022ac0dbcc944793fd4318dbc5f445d11689d762e263ca7be7"
+      }
+    },
+    {
+      "trial_id": 15,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 3,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 7.756694272664784e-10,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 2.6851335172175346e-10,
+          "best_shift": 4
+        },
+        {
+          "label": "td",
+          "distance": 0.015380340577656823,
+          "best_shift": 4
+        }
+      ],
+      "trajectory": {
+        "path": "trial-15-final-120.npz",
+        "bytes": 833320,
+        "sha256": "17e2d410583d63eaf73869051ea2738f9c28a6cc87bc2d4b2e4de75c7450331b"
+      }
+    },
+    {
+      "trial_id": 16,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 3,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 1.7601135544328825e-07,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380393630462265,
+          "best_shift": 4
+        },
+        {
+          "label": "td",
+          "distance": 6.750141934386532e-08,
+          "best_shift": 4
+        }
+      ],
+      "trajectory": {
+        "path": "trial-16-final-120.npz",
+        "bytes": 833302,
+        "sha256": "4ec8764497af1a92b3e468b43a91fbf74b88e5cce2bf9dd1ed633c236f42444d"
+      }
+    },
+    {
+      "trial_id": 17,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 3,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 1.65276166722846e-07,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.01538029052720795,
+          "best_shift": 4
+        },
+        {
+          "label": "td",
+          "distance": 6.338749265079639e-08,
+          "best_shift": 4
+        }
+      ],
+      "trajectory": {
+        "path": "trial-17-final-120.npz",
+        "bytes": 833213,
+        "sha256": "2c31ddd911c458657ca700a44e76a59b2e4af2d4376fe4ee989ab78323033eda"
+      }
+    },
+    {
+      "trial_id": 18,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 4,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 3.17275124743825e-09,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 1.098414855340399e-09,
+          "best_shift": 5
+        },
+        {
+          "label": "td",
+          "distance": 0.015380339971105883,
+          "best_shift": 5
+        }
+      ],
+      "trajectory": {
+        "path": "trial-18-final-120.npz",
+        "bytes": 833305,
+        "sha256": "4b62822145aaab541779f1d08d3a39ac73a542011bec792299b12230e8c3aafc"
+      }
+    },
+    {
+      "trial_id": 19,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 4,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 3.0048036028882853e-09,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 1.0402565989769395e-09,
+          "best_shift": 5
+        },
+        {
+          "label": "td",
+          "distance": 0.015380340920100374,
+          "best_shift": 5
+        }
+      ],
+      "trajectory": {
+        "path": "trial-19-final-120.npz",
+        "bytes": 833390,
+        "sha256": "81a43d26dd0e46e4bba7a00cbe1cbc75a7d3ce81427e65fb76fa93e6923e2440"
+      }
+    },
+    {
+      "trial_id": 20,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 4,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 1.1386404706154563e-07,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380374856060489,
+          "best_shift": 5
+        },
+        {
+          "label": "td",
+          "distance": 4.366746274311285e-08,
+          "best_shift": 5
+        }
+      ],
+      "trajectory": {
+        "path": "trial-20-final-120.npz",
+        "bytes": 833284,
+        "sha256": "f7031ea207e7e3f3a6b51238876180ac10ee21fba99965b1b7d8f1da78c22173"
+      }
+    },
+    {
+      "trial_id": 21,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 4,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 1.205484504900678e-07,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380304039710267,
+          "best_shift": 5
+        },
+        {
+          "label": "td",
+          "distance": 4.6233439629715175e-08,
+          "best_shift": 5
+        }
+      ],
+      "trajectory": {
+        "path": "trial-21-final-120.npz",
+        "bytes": 833289,
+        "sha256": "4e24db517ff77d56be8338edde165228655acf46355922251fe43ab70dd1c66d"
+      }
+    },
+    {
+      "trial_id": 22,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 5,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 1.4132502830854276e-09,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 4.892510931994819e-10,
+          "best_shift": 0
+        },
+        {
+          "label": "td",
+          "distance": 0.015380340336251817,
+          "best_shift": 0
+        }
+      ],
+      "trajectory": {
+        "path": "trial-22-final-120.npz",
+        "bytes": 833358,
+        "sha256": "cf3891b7d24219cb5cf7bbb4d802a9b4e445f91fe89eca61e616c9178f6cd39d"
+      }
+    },
+    {
+      "trial_id": 23,
+      "kind": "perturbed",
+      "source_label": "ad",
+      "phase": 5,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "returned",
+      "maximum_lag_six_l2_residual": 1.3973629193460203e-09,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 4.837870089429452e-10,
+          "best_shift": 0
+        },
+        {
+          "label": "td",
+          "distance": 0.01538034057936642,
+          "best_shift": 0
+        }
+      ],
+      "trajectory": {
+        "path": "trial-23-final-120.npz",
+        "bytes": 833406,
+        "sha256": "2f367591c4a1303fe779b4bc9f23ff49f03fe5c9adb0834dd6c9a8cf284a83d1"
+      }
+    },
+    {
+      "trial_id": 24,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 5,
+      "sign": -1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 3.54252307878208e-08,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380351159770564,
+          "best_shift": 0
+        },
+        {
+          "label": "td",
+          "distance": 1.3585187101994785e-08,
+          "best_shift": 0
+        }
+      ],
+      "trajectory": {
+        "path": "trial-24-final-120.npz",
+        "bytes": 833306,
+        "sha256": "65036e0cbc16862f1901910173b02230bec13c18ca2e33d105632a11fe3c0a12"
+      }
+    },
+    {
+      "trial_id": 25,
+      "kind": "perturbed",
+      "source_label": "td",
+      "phase": 5,
+      "sign": 1,
+      "status": "completed",
+      "completed_steps": 120,
+      "classification": "unresolved",
+      "maximum_lag_six_l2_residual": 3.936825967716241e-08,
+      "primitive_period_six_gate_passed": false,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380328564531389,
+          "best_shift": 0
+        },
+        {
+          "label": "td",
+          "distance": 1.5099324390694882e-08,
+          "best_shift": 0
+        }
+      ],
+      "trajectory": {
+        "path": "trial-25-final-120.npz",
+        "bytes": 833354,
+        "sha256": "45dff74fe6ccd95c682f2b6ec505c85d1f606b7106cba1083c73525eaec8e79d"
+      }
+    }
+  ],
+  "model_calls": 3121,
+  "elapsed_seconds": 1369.2813915360002,
+  "peak_rss_bytes": 5472006144,
+  "started_utc": "2026-10-25T22:12:48Z",
+  "finished_utc": "2026-10-25T22:35:38Z",
+  "wrapper_exit_status": 1,
+  "return_verification": {
+    "verified_utc": "2026-10-25T22:36:24Z",
+    "status": "verified",
+    "files": 306,
+    "new_files": 10,
+    "manifest_sha256": "1753dc391ad531a4fc5f40d77a2dfd934820dad99de07985d3b7144afe5d6d71",
+    "archive": {
+      "path": "final-artifacts.tar",
+      "bytes": 2181120,
+      "sha256": "86e7edd44f609aa474885e1e8ccb6c574bb9d700e246598385ce6a6c86b8f970"
+    },
+    "remote_evidence_retained": true
+  },
+  "bindings": [
+    {
+      "path": "audits/p6-recovery/20261025T221011Z-recovery/run/results.json",
+      "bytes": 120462,
+      "sha256": "5de613795c4bc10e0584072fd7cb12586de4db869286d15cbbdc7f57dab37ef5"
+    },
+    {
+      "path": "audits/p6-recovery/20261025T221011Z-recovery/run/metadata.json",
+      "bytes": 5723,
+      "sha256": "292509e87f137fb5deecfd90135058f73ad2549dbac4fe2b1110b11835fbbadc"
+    },
+    {
+      "path": "audits/p6-recovery/20261025T221011Z-recovery/final-manifest.json",
+      "bytes": 51137,
+      "sha256": "1753dc391ad531a4fc5f40d77a2dfd934820dad99de07985d3b7144afe5d6d71"
+    },
+    {
+      "path": "audits/p6-recovery/20261025T221011Z-recovery/complete-audit.json",
+      "bytes": 444885,
+      "sha256": "4d0ab94ecb25fe87a635e217474dfe3daa9225970d08d2e5dd0ed00edf10441f"
+    }
+  ],
+  "independent_audit_status": "complete_audit_passed",
+  "scope": "One direction and one amplitude across all six phases of two reference cycles. Original-reference matching without closure remains unresolved. No basin radius, fractality, general reliability, write or channel claim."
+}

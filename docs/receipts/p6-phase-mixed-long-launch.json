@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-26T00:39:25Z",
+  "status": "running_not_a_result",
+  "source_commit": "95330cec94d290c2f38e6d083403b222bb4f1a0d",
+  "protocol": "docs/p6-phase-mixed-long-protocol.md",
+  "local_base": "/data2/shrimp-memory-data/audits/p6-phase-mixed-long/20261026T003740Z-long",
+  "steps_per_input": 600,
+  "model_call_limit": 4817,
+  "wall_seconds_internal": 2700,
+  "wall_seconds_external": 2760,
+  "rss_gib": 8,
+  "virtual_memory_gib": 16,
+  "threads": 1,
+  "same_initial_states_as_short_run": true,
+  "available_memory_bytes_at_preflight": 32366149632,
+  "reserved_transfer_bytes": 536870912,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-long/20261026T003740Z-long/launch.json",
+      "bytes": 176,
+      "sha256": "bca414ebc3bb2b55ac35986af12bf772d5d5d4adecd09af52b57838df0988bca"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-long/20261026T003740Z-long/preflight.json",
+      "bytes": 1627,
+      "sha256": "09497de467d735541d9a65ca9b873ea61417b58c5afdfe9bf3c5ecfadfff06c8"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-long/20261026T003740Z-long/run.sh",
+      "bytes": 1154,
+      "sha256": "536e2a2fbf053014ce79838d4d4a8926b19c8f8d303722753cc05e88aa1568fd"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-long/20261026T003740Z-long/packet.npz",
+      "bytes": 55163,
+      "sha256": "5240495fe014a695cda7da0d87f5975a9042fbc6c938dc7e6d5599c926457230"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-long/20261026T003740Z-long/local-evaluation/design.json",
+      "bytes": 843,
+      "sha256": "ae15d59eeb68f1abc044d9ad728bdae157a859762a14ad36cbc2a0b8d6cbd319"
+    }
+  ],
+  "short_run_audit": {
+    "path": "/data2/shrimp-memory-data/audits/p6-phase-mixed-line/20261026T002731Z-line/complete-audit.json",
+    "bytes": 98180,
+    "sha256": "e8b8e1aaba2cd9fd54ebcd206373f33059b75b7d41cd9292dd51ff90acd1d2b4"
+  },
+  "scope": "Adapted fixed longer horizon for all original starts; preserve short results and all unresolved points."
+}

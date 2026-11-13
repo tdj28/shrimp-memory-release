@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-30T19:46:44Z",
+  "source_commit": "f246e1b09d05f078826da40c8e9fe7d520b257f5",
+  "status": "offline_saved_action_diagnosis",
+  "analysis": {
+    "path": "/data2/shrimp-memory-data/preparations/public-e01/offline-p1-tangent-20261030T193950Z/analysis.json",
+    "bytes": 14992,
+    "sha256": "8c858066af99b5a42a7d731218af1f829e255e7182a43dfb69c1e02241539ed9"
+  },
+  "diagnosis": {
+    "path": "/data2/shrimp-memory-data/preparations/public-e01/offline-p1-tangent-20261030T193950Z/diagnosis.md",
+    "bytes": 2355,
+    "sha256": "31f6f0b7332eee9deed081650eb4da6d3e7fc21d0232d85dd5c94d89aed45d0b"
+  },
+  "verified_unique_artifact_bindings": 22,
+  "model_calls": 0,
+  "scientific_audit_reruns": 0,
+  "metrics": {
+    "linear_residual_gate": 0.001,
+    "tangent_gate": 1e-08,
+    "gmres_iterations": 3,
+    "gmres_restart_cap": 10,
+    "unnormalized_direction_norm": 4.642683053337472,
+    "unnormalized_equation_block_norm": 0.00014913031049612336,
+    "predicted_normalized_action_norm": 3.2121579005682605e-05,
+    "recorded_fresh_normalized_action_norm": 3.212157899795059e-05,
+    "normalized_action_prediction_gap_l2": 8.913965705063748e-14,
+    "attempted_steps": 0
+  },
+  "finding": "The permissive bordered-solve stopping gate was met after three iterations; normalizing attenuated rather than amplified its residual, but the unchanged fresh tangent gate still failed. Historical outcome remains unresolved.",
+  "proposal_status": "A stricter tangent-only diagnostic is proposed in the linked analysis, not launched or validated."
+}

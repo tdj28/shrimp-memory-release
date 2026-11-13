@@ -1,0 +1,716 @@
+{
+  "utc": "2026-10-26T12:23:53Z",
+  "status": "evidence_verified",
+  "producer_status": "completed",
+  "source_commit": "0554ddae402b998e9f671fadc32e213d64cdcc47",
+  "raw_directory": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse",
+  "evidence": "adapted exploratory isolated public half-pulse pilot",
+  "counts": {
+    "planned_writes": 2,
+    "wrong": 1,
+    "correct": 1
+  },
+  "rows": [
+    {
+      "message_id": 0,
+      "trial_id": 0,
+      "message": "Write bit 1 to register R0.",
+      "requested_bit": 1,
+      "source_reference_index": 0,
+      "historical_trial_id": 2,
+      "status": "completed",
+      "model_calls": 306,
+      "stages": [
+        {
+          "stage": "endpoint",
+          "status": "completed",
+          "attempted_updates": 60,
+          "completed_updates": 60,
+          "requested_updates": 60,
+          "blocks": 5,
+          "cache": {
+            "maximum_coordinate_gap": 4.458239333260394e-16,
+            "maximum_probability_gap": 6.2450045135165055e-15,
+            "cached_first_update_gap": 0.0
+          },
+          "failed_outputs": [],
+          "update_seconds": 28.888886383014324,
+          "finite_states": true
+        },
+        {
+          "stage": "hold",
+          "status": "completed",
+          "attempted_updates": 240,
+          "completed_updates": 240,
+          "requested_updates": 240,
+          "blocks": 20,
+          "cache": {
+            "maximum_coordinate_gap": 6.852157730108388e-17,
+            "maximum_probability_gap": 8.604228440844963e-16,
+            "cached_first_update_gap": 0.0
+          },
+          "failed_outputs": [],
+          "update_seconds": 115.844711678983,
+          "finite_states": true
+        }
+      ],
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          1.2901991657392466e-13,
+          1.0580988211783666e-13,
+          3.096869887973586e-14,
+          5.441298774778414e-14,
+          8.024317650501029e-14,
+          2.78321479085229e-14
+        ],
+        "maximum_l2_residual": 1.2901991657392466e-13,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.45949948301607685,
+              0.43030568588955803,
+              0.2805012355088696,
+              0.48244460473660516,
+              0.46215891591692954,
+              0.29253162162117374
+            ],
+            "maximum_l2_gap": 0.48244460473660516,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.28957822265798794,
+              0.4507506037991401,
+              0.4637848188771824,
+              0.28349162781958914,
+              0.4908269941146992,
+              0.42880393433042574
+            ],
+            "maximum_l2_gap": 0.4908269941146992,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.045231155353048995,
+              0.1184089616491572,
+              0.025506724506548967,
+              0.045231155353048995,
+              0.1184089616491572,
+              0.025506724506548967
+            ],
+            "maximum_l2_gap": 0.1184089616491572,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 3.657047598545343e-14,
+            "phase": 1,
+            "shift_distances": [
+              0.4824446047366101,
+              3.657047598545343e-14,
+              0.4824446047366024,
+              0.490826994114705,
+              0.1184089616491806,
+              0.4908269941146965
+            ]
+          },
+          {
+            "label": "td",
+            "distance": 0.015380340458491001,
+            "phase": 1,
+            "shift_distances": [
+              0.477378593318863,
+              0.015380340458491001,
+              0.4734432308807345,
+              0.4922609635947392,
+              0.11654945080909412,
+              0.48203460168152684
+            ]
+          }
+        ],
+        "reference_matches": [
+          "ad"
+        ],
+        "decoded_bit": 0
+      },
+      "scientific_outcome": "wrong",
+      "prefix_comparison": {
+        "historical_trial_id": 2,
+        "compared_states": 61,
+        "compared_updates": 60,
+        "state_bytes_equal": true,
+        "token_bytes_equal": true,
+        "maximum_coordinate_gap": 0.0,
+        "actual_array_sha256": "a0ccafa19661db6e6c08627e0806ce2dd876e10e35ce1e9a7942a63d044bcdea",
+        "historical_array_sha256": "a0ccafa19661db6e6c08627e0806ce2dd876e10e35ce1e9a7942a63d044bcdea",
+        "passed": true
+      },
+      "outcome": "wrong",
+      "seconds": 153.41572931599512,
+      "frontend_seconds": 0.00016136799968080595,
+      "state_before": {
+        "path": "message-00-before.npy",
+        "bytes": 7296,
+        "sha256": "2601b37cdac14c14249c3e4165dd51b31d4d39b75a14d9311b1082cc4d30b803",
+        "array_sha256": "c5c5be6da824490bdba12765a992e05c39fbac62abaa322b9587d6e687cf8cb9",
+        "shape": [
+          896
+        ],
+        "dtype": "float64"
+      },
+      "state_after": {
+        "path": "message-00-after.npy",
+        "bytes": 7296,
+        "sha256": "51430c340930091663bbda4a60d573a82cf5de74b927c9f27923c05275b72c0a",
+        "array_sha256": "fb00b6e13c2bb26167d109b1d3ac9a7cad9dc1e4bdeeaa3886bf0974358dab56",
+        "shape": [
+          896
+        ],
+        "dtype": "float64"
+      }
+    },
+    {
+      "message_id": 1,
+      "trial_id": 1,
+      "message": "Write bit 0 to register R0.",
+      "requested_bit": 0,
+      "source_reference_index": 1,
+      "historical_trial_id": 1,
+      "status": "completed",
+      "model_calls": 306,
+      "stages": [
+        {
+          "stage": "endpoint",
+          "status": "completed",
+          "attempted_updates": 60,
+          "completed_updates": 60,
+          "requested_updates": 60,
+          "blocks": 5,
+          "cache": {
+            "maximum_coordinate_gap": 5.2562121322097255e-16,
+            "maximum_probability_gap": 7.105427357601002e-15,
+            "cached_first_update_gap": 0.0
+          },
+          "failed_outputs": [],
+          "update_seconds": 27.98720563700772,
+          "finite_states": true
+        },
+        {
+          "stage": "hold",
+          "status": "completed",
+          "attempted_updates": 240,
+          "completed_updates": 240,
+          "requested_updates": 240,
+          "blocks": 20,
+          "cache": {
+            "maximum_coordinate_gap": 2.0816681711721685e-16,
+            "maximum_probability_gap": 2.9976021664879227e-15,
+            "cached_first_update_gap": 0.0
+          },
+          "failed_outputs": [],
+          "update_seconds": 117.95642789500562,
+          "finite_states": true
+        }
+      ],
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          5.700409840917947e-14,
+          4.493222434751648e-14,
+          1.3448806329901578e-14,
+          2.1815259987254337e-14,
+          3.0982188139446477e-14,
+          9.638448332853505e-15
+        ],
+        "maximum_l2_residual": 5.700409840917947e-14,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.4594994830160869,
+              0.4303056858895629,
+              0.28050123550887446,
+              0.48244460473660744,
+              0.4621589159169272,
+              0.2925316216211765
+            ],
+            "maximum_l2_gap": 0.48244460473660744,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.289578222657997,
+              0.4507506037991491,
+              0.4637848188771808,
+              0.28349162781958803,
+              0.4908269941147029,
+              0.4288039343304301
+            ],
+            "maximum_l2_gap": 0.4908269941147029,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.04523115535306598,
+              0.11840896164916379,
+              0.025506724506547212,
+              0.04523115535306598,
+              0.11840896164916379,
+              0.025506724506547212
+            ],
+            "maximum_l2_gap": 0.11840896164916379,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 7.123490487675796e-15,
+            "phase": 1,
+            "shift_distances": [
+              0.48244460473660894,
+              7.123490487675796e-15,
+              0.4824446047366059,
+              0.4908269941147038,
+              0.11840896164916834,
+              0.4908269941147013
+            ]
+          },
+          {
+            "label": "td",
+            "distance": 0.015380340458500145,
+            "phase": 1,
+            "shift_distances": [
+              0.47737859331886184,
+              0.015380340458500145,
+              0.4734432308807381,
+              0.49226096359473803,
+              0.11654945080911462,
+              0.4820346016815318
+            ]
+          }
+        ],
+        "reference_matches": [
+          "ad"
+        ],
+        "decoded_bit": 0
+      },
+      "scientific_outcome": "correct",
+      "prefix_comparison": {
+        "historical_trial_id": 1,
+        "compared_states": 61,
+        "compared_updates": 60,
+        "state_bytes_equal": true,
+        "token_bytes_equal": true,
+        "maximum_coordinate_gap": 0.0,
+        "actual_array_sha256": "e399f76fe5965d81efe05d3ba094b8a909c3cab166eef2cb1dfbb13529f69626",
+        "historical_array_sha256": "e399f76fe5965d81efe05d3ba094b8a909c3cab166eef2cb1dfbb13529f69626",
+        "passed": true
+      },
+      "outcome": "correct",
+      "seconds": 155.00636839900108,
+      "frontend_seconds": 0.00015292900206986815,
+      "state_before": {
+        "path": "message-01-before.npy",
+        "bytes": 7296,
+        "sha256": "fce3c1f5d99732fd8dc2fd3c9f6ac55092fb5ed068ceab1d0fb78dd4836d1660",
+        "array_sha256": "28ee763233ee11e4089ce9b8c38c59383ce8e3dc58c20bd78e599358adf237c2",
+        "shape": [
+          896
+        ],
+        "dtype": "float64"
+      },
+      "state_after": {
+        "path": "message-01-after.npy",
+        "bytes": 7296,
+        "sha256": "3a16c2863e6ef1137ade56bf4b396fc060379d1d3f6025b3714ae3bad866d400",
+        "array_sha256": "42d45bcf74c57bb04a64107e50f9a8ca6222faf60dc667ad74f61e598b0cd46e",
+        "shape": [
+          896
+        ],
+        "dtype": "float64"
+      }
+    }
+  ],
+  "historical_controls": [
+    {
+      "trial_id": 2,
+      "stages": [
+        {
+          "stage": "endpoint",
+          "status": "completed",
+          "attempted_updates": 120,
+          "completed_updates": 120,
+          "requested_updates": 120,
+          "blocks": 10,
+          "cache": {
+            "maximum_coordinate_gap": 4.458239333260394e-16,
+            "maximum_probability_gap": 6.2450045135165055e-15,
+            "cached_first_update_gap": 0.0
+          },
+          "failed_outputs": [],
+          "update_seconds": 51.65022461898843,
+          "finite_states": true
+        },
+        {
+          "stage": "hold",
+          "status": "completed",
+          "attempted_updates": 240,
+          "completed_updates": 240,
+          "requested_updates": 240,
+          "blocks": 20,
+          "cache": {
+            "maximum_coordinate_gap": 1.942890293094024e-16,
+            "maximum_probability_gap": 2.9976021664879227e-15,
+            "cached_first_update_gap": 0.0
+          },
+          "failed_outputs": [],
+          "update_seconds": 102.5936265649907,
+          "finite_states": true
+        }
+      ],
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          2.5225682969284276e-12,
+          2.6309102879774528e-12,
+          1.931711269700792e-12,
+          5.4464117549467245e-12,
+          1.1601096079822524e-11,
+          5.537853474190511e-12
+        ],
+        "maximum_l2_residual": 1.1601096079822524e-11,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.4650295469080657,
+              0.43385300530815096,
+              0.275279926727032,
+              0.46822533403567584,
+              0.45393261037210336,
+              0.2934251649687596
+            ],
+            "maximum_l2_gap": 0.46822533403567584,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.2894247199989962,
+              0.44957865746067543,
+              0.4553040389813227,
+              0.27926942368584257,
+              0.48350406387457917,
+              0.43251967804135416
+            ],
+            "maximum_l2_gap": 0.48350406387457917,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.06529638404233666,
+              0.11471224696824527,
+              0.02718288206499368,
+              0.06529638404233666,
+              0.11471224696824527,
+              0.02718288206499368
+            ],
+            "maximum_l2_gap": 0.11471224696824527,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380340461291275,
+            "phase": 1,
+            "shift_distances": [
+              0.47344323087832013,
+              0.015380340461291275,
+              0.47737859331821125,
+              0.48203460167917084,
+              0.11654945080721636,
+              0.49226096359474464
+            ]
+          },
+          {
+            "label": "td",
+            "distance": 3.540253467792361e-12,
+            "phase": 1,
+            "shift_distances": [
+              0.468225334036345,
+              3.540253467792361e-12,
+              0.4682253340381377,
+              0.48350406387457145,
+              0.11471224696998707,
+              0.4835040638769323
+            ]
+          }
+        ],
+        "reference_matches": [
+          "td"
+        ],
+        "decoded_bit": 1
+      },
+      "model_calls": 366
+    },
+    {
+      "trial_id": 1,
+      "stages": [
+        {
+          "stage": "endpoint",
+          "status": "completed",
+          "attempted_updates": 120,
+          "completed_updates": 120,
+          "requested_updates": 120,
+          "blocks": 10,
+          "cache": {
+            "maximum_coordinate_gap": 5.2562121322097255e-16,
+            "maximum_probability_gap": 7.105427357601002e-15,
+            "cached_first_update_gap": 0.0
+          },
+          "failed_outputs": [],
+          "update_seconds": 50.61030259099789,
+          "finite_states": true
+        },
+        {
+          "stage": "hold",
+          "status": "completed",
+          "attempted_updates": 240,
+          "completed_updates": 240,
+          "requested_updates": 240,
+          "blocks": 20,
+          "cache": {
+            "maximum_coordinate_gap": 2.445960101127298e-16,
+            "maximum_probability_gap": 3.3029134982598407e-15,
+            "cached_first_update_gap": 0.0
+          },
+          "failed_outputs": [],
+          "update_seconds": 102.35425095399296,
+          "finite_states": true
+        }
+      ],
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          4.311069888767858e-14,
+          3.6050692058211697e-14,
+          1.005027908286293e-14,
+          1.2511259070293105e-14,
+          1.6006539276292654e-14,
+          5.211338313083435e-15
+        ],
+        "maximum_l2_residual": 4.311069888767858e-14,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.4594994830160865,
+              0.4303056858895621,
+              0.28050123550887623,
+              0.48244460473661005,
+              0.4621589159169279,
+              0.2925316216211767
+            ],
+            "maximum_l2_gap": 0.48244460473661005,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.2895782226579987,
+              0.45075060379914966,
+              0.4637848188771817,
+              0.2834916278195883,
+              0.49082699411470454,
+              0.4288039343304292
+            ],
+            "maximum_l2_gap": 0.49082699411470454,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.045231155353067286,
+              0.11840896164916528,
+              0.025506724506546733,
+              0.045231155353067286,
+              0.11840896164916528,
+              0.025506724506546733
+            ],
+            "maximum_l2_gap": 0.11840896164916528,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 4.7624921039810065e-15,
+            "phase": 1,
+            "shift_distances": [
+              0.48244460473661005,
+              4.7624921039810065e-15,
+              0.48244460473660733,
+              0.49082699411470493,
+              0.11840896164916591,
+              0.4908269941147019
+            ]
+          },
+          {
+            "label": "td",
+            "distance": 0.015380340458504735,
+            "phase": 1,
+            "shift_distances": [
+              0.477378593318863,
+              0.015380340458504735,
+              0.4734432308807396,
+              0.4922609635947391,
+              0.11654945080911845,
+              0.48203460168153234
+            ]
+          }
+        ],
+        "reference_matches": [
+          "ad"
+        ],
+        "decoded_bit": 0
+      },
+      "model_calls": 366
+    }
+  ],
+  "reset_evidence": {
+    "mutation_applied": true,
+    "after_artifact_available": true
+  },
+  "calls": {
+    "model_calls": 612,
+    "categories": {
+      "prefix": 4,
+      "comparison": 8,
+      "update": 600
+    },
+    "precision_events": 612,
+    "prefix_seconds": 4.759995356987929
+  },
+  "cost_comparison": {
+    "historical_calls_per_trial": 366,
+    "planned_new_calls_per_trial": 306,
+    "prescribed_calls_saved_per_trial": 60,
+    "prescribed_fraction_saved": 0.16393442622950818,
+    "historical_timing_comparable": false
+  },
+  "timings": {
+    "total_seconds": 318.9196607470003,
+    "cold_initialization_seconds": 10.185949291000725,
+    "frontend_seconds": 0.0003142970017506741,
+    "message_seconds": 308.4220977149962,
+    "update_seconds": 290.67723159401066,
+    "digital_latch_seconds": 0.0002391379966866225,
+    "peak_rss_bytes": 5474828288
+  },
+  "verified_return_files": 100,
+  "verified_run_files": 87,
+  "verified_historical_files": 165,
+  "verified_git_sources": 14,
+  "resource_limits_passed": true,
+  "transfer_reservation_closed": true,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/run/result.json",
+      "bytes": 33876,
+      "sha256": "281ed22b248742a5ffca619164df425424f871585475666e3f881f1e07fa0f39"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/run/design.json",
+      "bytes": 3312,
+      "sha256": "d23715ad878c49128c7f4bde32bfa24fd216a7374ba14b37f8b01180c6c7c239"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/run/manifest.json",
+      "bytes": 14018,
+      "sha256": "b3e0e574b84500c9a9e444360fc22d7ab1cff22f110059d381e68e018c27e2eb"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/run/historical-inputs.json",
+      "bytes": 6682,
+      "sha256": "c9a5a5f4c0069c504c533e07994badb3ec7c91dec96f0aa294b1d04ea54d16e6"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/independent-review.json",
+      "bytes": 114877,
+      "sha256": "254032d56308da1bee33321d1a91503c42a786b5968fa18f7429b28c1b24acc1"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/independent-handoff.json",
+      "bytes": 25758,
+      "sha256": "21fd218a8a5b54d3d82e45ca4875ce101309d793bb6775135bcc37a389069e8b"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/final-manifest.json",
+      "bytes": 32235,
+      "sha256": "5d0c82b1e8b3d82a80d7dbbfae6712eb2bc389679855ded4b56d4dedc6806719"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/final-artifacts.tar",
+      "bytes": 19937280,
+      "sha256": "226f8f7fa82899d69444c0060fd3507ede6a3bdd98136f2672946f95c80dbb10"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/local-return-verification.json",
+      "bytes": 388,
+      "sha256": "bf4d16da5361170440b509c1fc1bf3647054062dd37ff69a4cebefe08e6d5da9"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/transfer-closeout.json",
+      "bytes": 677,
+      "sha256": "2f6af0ba759dcf3e494f791593c8417bca1421581c166662943e7e5cc41e66d9"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/exit-status.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/initial-health.json",
+      "bytes": 7048,
+      "sha256": "573cdcc646c2c89833adbea32a81cd696f2fc0be6f2fafb326c55d139da0371f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/preflight.json",
+      "bytes": 1633,
+      "sha256": "00143300d5e6b209a4c2e6ebacb174b771e222e46060cbc813c382af961e96f8"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/operator-source/root-prelaunch-evidence.json",
+      "bytes": 4889,
+      "sha256": "8559b92ef5ff1e51b1b258d39c029a67b2026c222309514dd819b7991f7fef8e"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/operator-source/independent-audit/archive-manifest.json",
+      "bytes": 8222,
+      "sha256": "6876443a04741886893ae0d660b1223d93c5dcf476f967b594df5fc4a53ad8c6"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-half-pulse/20261026T121419Z-public-half-pulse/operator-source/record-public-half-pulse.py",
+      "bytes": 4929,
+      "sha256": "b33e4a5b17effd13a0017c85e4dcdaf17c1dbd93ff6f9100fd264ddfe7bdea3e"
+    }
+  ],
+  "scope": [
+    "Independent saved-array/log/hash audit; no transformer replay or update verification against model weights.",
+    "Two fixed isolated reference-phase-zero switches with an explicit reset. Not a carried-state word, general memory reliability or unrestricted-language experiment.",
+    "Historical120-step controls are saved comparisons, not contemporaneous timing measurements or fresh independent replications; a prescribed call reduction alone is not a wall-time speed claim."
+  ],
+  "conclusion": "Both shortened-pulse trials converged to a qualified bit0. One requested1 therefore failed while the requested0 succeeded. Universal60-step writes are unsupported; a prescribed16.39percent call reduction is not an achieved two-write success.",
+  "validation_history": "108 producer/regression tests,46 independent design checks,2 return tests and83 archived independent auditor tests passed. Initial uv startup and historical status-contract test failure were retained and repaired before inference. Both actual outcome rows passed the first independent saved-evidence audit; no model rerun."
+}

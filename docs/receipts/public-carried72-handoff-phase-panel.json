@@ -1,0 +1,1678 @@
+{
+  "utc": "2026-10-29T20:54:19Z",
+  "status": "independently_audited",
+  "evidence_class": "adapted exploratory",
+  "evidence_rung": 0,
+  "source_commit": "e4debac3a6bbf077f1690a7fc7a655a73c0bc31a",
+  "job_directory": "/data2/shrimp-memory-data/audits/public-carried72-handoff-phase-panel/20261029T202050Z-public-carried72-handoff-phase-panel",
+  "outcome": "panel_qualified",
+  "model_calls": 1788,
+  "elapsed_seconds": 1391.070549238997,
+  "peak_rss_bytes": 5481127936,
+  "rows": [
+    {
+      "row_id": 0,
+      "group_id": 1,
+      "case_index": 0,
+      "stage_index": 1,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "lane": 0,
+      "source_reference_index": 0,
+      "initial_reference_phase": 3,
+      "requested_bit": 0,
+      "name": "phase3-write0-from-h0",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          1.6343640236873885e-10,
+          2.3778147024433407e-10,
+          8.241895485450335e-11,
+          2.2361277919806697e-10,
+          1.822983208948321e-10,
+          5.264720989294724e-11
+        ],
+        "maximum_l2_residual": 2.3778147024433407e-10,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.4824446047469201,
+              0.46215891590580377,
+              0.29253162158865753,
+              0.459499482991285,
+              0.4303056858783445,
+              0.28050123551387185
+            ],
+            "maximum_l2_gap": 0.4824446047469201,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.2834916278156239,
+              0.49082699409546593,
+              0.4288039343195203,
+              0.28957822263442057,
+              0.45075060380494275,
+              0.46378481886586725
+            ],
+            "maximum_l2_gap": 0.49082699409546593,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.04523115522646203,
+              0.1184089615449813,
+              0.025506724490352482,
+              0.04523115522646203,
+              0.1184089615449813,
+              0.025506724490352482
+            ],
+            "maximum_l2_gap": 0.1184089615449813,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 8.230352674555399e-11,
+            "best_shift": 4,
+            "by_shift": [
+              0.49082699410801345,
+              0.11840896159943455,
+              0.4908269941021547,
+              0.48244460472986006,
+              8.230352674555399e-11,
+              0.4824446047536674
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.015380340495025454,
+            "best_shift": 4,
+            "by_shift": [
+              0.49226096358803,
+              0.11654945075530199,
+              0.48203460166868256,
+              0.4773785933120716,
+              0.015380340495025454,
+              0.47344323089830603
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct"
+    },
+    {
+      "row_id": 1,
+      "group_id": 1,
+      "case_index": 0,
+      "stage_index": 1,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "lane": 1,
+      "source_reference_index": 1,
+      "initial_reference_phase": 3,
+      "requested_bit": 0,
+      "name": "phase3-write0-from-h1",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          1.8108630169217822e-10,
+          2.6346225037463e-10,
+          9.132001094155169e-11,
+          2.47763784728999e-10,
+          2.0198826792154898e-10,
+          5.83286901827843e-11
+        ],
+        "maximum_l2_residual": 2.6346225037463e-10,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.48244460474803635,
+              0.46215891590460517,
+              0.292531621585145,
+              0.45949948298860244,
+              0.43030568587713036,
+              0.2805012355144136
+            ],
+            "maximum_l2_gap": 0.48244460474803635,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.28349162781519693,
+              0.49082699409339003,
+              0.42880393431833946,
+              0.28957822263187477,
+              0.45075060380556514,
+              0.4637848188646481
+            ],
+            "maximum_l2_gap": 0.49082699409339003,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.0452311552127831,
+              0.11840896153373115,
+              0.02550672448860276,
+              0.0452311552127831,
+              0.11840896153373115,
+              0.02550672448860276
+            ],
+            "maximum_l2_gap": 0.11840896153373115,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 9.119545555307408e-11,
+            "best_shift": 4,
+            "by_shift": [
+              0.49082699410729347,
+              0.11840896159406529,
+              0.49082699410079883,
+              0.48244460472913375,
+              9.119545555307408e-11,
+              0.48244460475550993
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.015380340498974679,
+            "best_shift": 4,
+            "by_shift": [
+              0.49226096358730803,
+              0.11654945074949034,
+              0.48203460166729395,
+              0.47737859331134086,
+              0.015380340498974679,
+              0.47344323090020324
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct"
+    },
+    {
+      "row_id": 2,
+      "group_id": 3,
+      "case_index": 0,
+      "stage_index": 3,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "lane": 0,
+      "source_reference_index": 0,
+      "initial_reference_phase": 3,
+      "requested_bit": 1,
+      "name": "phase3-write1-from-h0",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          1.7607184403474457e-11,
+          3.7495271198393024e-11,
+          1.7897202300686778e-11,
+          5.068569238944684e-12,
+          5.276732716391509e-12,
+          3.869323828417396e-12
+        ],
+        "maximum_l2_residual": 3.7495271198393024e-11,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.4682253340523098,
+              0.453932610384561,
+              0.2934251649727395,
+              0.4650295469085879,
+              0.4338530053086055,
+              0.2752799267286879
+            ],
+            "maximum_l2_gap": 0.4682253340523098,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.2792694236916052,
+              0.4835040638870923,
+              0.43251967804206404,
+              0.28942471999876673,
+              0.4495786574648393,
+              0.45530403899344235
+            ],
+            "maximum_l2_gap": 0.4835040638870923,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.06529638403579814,
+              0.11471224697713638,
+              0.027182882065558186,
+              0.06529638403579814,
+              0.11471224697713638,
+              0.027182882065558186
+            ],
+            "maximum_l2_gap": 0.11471224697713638,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 0.015380340446469729,
+            "best_shift": 4,
+            "by_shift": [
+              0.482034601691722,
+              0.11654945081732832,
+              0.4922609635947542,
+              0.4734432308911767,
+              0.015380340446469729,
+              0.4773785933216563
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 1.527411749330413e-11,
+            "best_shift": 4,
+            "by_shift": [
+              0.48350406388707573,
+              0.11471224697779872,
+              0.4835040638769411,
+              0.4682253340494271,
+              1.527411749330413e-11,
+              0.46822533404168953
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          }
+        ],
+        "reference_matches": [
+          1
+        ],
+        "decoded_bit": 1
+      },
+      "write_outcome": "correct"
+    },
+    {
+      "row_id": 3,
+      "group_id": 3,
+      "case_index": 0,
+      "stage_index": 3,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "lane": 1,
+      "source_reference_index": 1,
+      "initial_reference_phase": 3,
+      "requested_bit": 1,
+      "name": "phase3-write1-from-h1",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          1.7630904172719312e-11,
+          3.754912229518363e-11,
+          1.79232540935624e-11,
+          5.078033485072765e-12,
+          5.295766018317063e-12,
+          3.886032622784889e-12
+        ],
+        "maximum_l2_residual": 3.754912229518363e-11,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.46822533405235967,
+              0.45393261038459753,
+              0.29342516497275134,
+              0.4650295469085922,
+              0.4338530053086092,
+              0.2752799267286914
+            ],
+            "maximum_l2_gap": 0.46822533405235967,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.2792694236916228,
+              0.4835040638871292,
+              0.43251967804206853,
+              0.28942471999876407,
+              0.4495786574648554,
+              0.45530403899347754
+            ],
+            "maximum_l2_gap": 0.4835040638871292,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.06529638403577918,
+              0.11471224697715825,
+              0.02718288206555985,
+              0.06529638403577918,
+              0.11471224697715825,
+              0.02718288206555985
+            ],
+            "maximum_l2_gap": 0.11471224697715825,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 0.015380340446426164,
+            "best_shift": 4,
+            "by_shift": [
+              0.48203460169175893,
+              0.11654945081735824,
+              0.4922609635947543,
+              0.4734432308912145,
+              0.015380340446426164,
+              0.4773785933216674
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 1.5329002801036557e-11,
+            "best_shift": 4,
+            "by_shift": [
+              0.48350406388711253,
+              0.11471224697782609,
+              0.4835040638769413,
+              0.4682253340494656,
+              1.5329002801036557e-11,
+              0.46822533404170097
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          }
+        ],
+        "reference_matches": [
+          1
+        ],
+        "decoded_bit": 1
+      },
+      "write_outcome": "correct"
+    },
+    {
+      "row_id": 4,
+      "group_id": 5,
+      "case_index": 1,
+      "stage_index": 1,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "lane": 0,
+      "source_reference_index": 0,
+      "initial_reference_phase": 4,
+      "requested_bit": 0,
+      "name": "phase4-write0-from-h0",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          3.242165341754257e-10,
+          1.1237802577979127e-10,
+          3.0489458412140977e-10,
+          2.485619716676157e-10,
+          7.17840915154759e-11,
+          1.1800221805843068e-10
+        ],
+        "maximum_l2_residual": 3.242165341754257e-10,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.46215891590176,
+              0.29253162157683454,
+              0.4594994829822666,
+              0.43030568587426565,
+              0.2805012354916939,
+              0.4824446047150838
+            ],
+            "maximum_l2_gap": 0.4824446047150838,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.49082699408847086,
+              0.428803934315554,
+              0.28957822262584776,
+              0.45075060376933845,
+              0.46378481886175393,
+              0.2834916277897261
+            ],
+            "maximum_l2_gap": 0.49082699408847086,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.11840896150710171,
+              0.02550672448446554,
+              0.04523115528838628,
+              0.11840896150710171,
+              0.02550672448446554,
+              0.04523115528838628
+            ],
+            "maximum_l2_gap": 0.11840896150710171,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 1.1222896865583657e-10,
+            "best_shift": 5,
+            "by_shift": [
+              0.482444604724285,
+              0.4908269941055809,
+              0.11840896158135439,
+              0.49082699409759223,
+              0.4824446047274062,
+              1.1222896865583657e-10
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.01538034050830498,
+            "best_shift": 5,
+            "by_shift": [
+              0.4734432308680515,
+              0.492260963585591,
+              0.11654945073573515,
+              0.4820346016640101,
+              0.4773785933096027,
+              0.01538034050830498
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct"
+    },
+    {
+      "row_id": 5,
+      "group_id": 5,
+      "case_index": 1,
+      "stage_index": 1,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "lane": 1,
+      "source_reference_index": 1,
+      "initial_reference_phase": 4,
+      "requested_bit": 0,
+      "name": "phase4-write0-from-h1",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          2.9023300054018644e-10,
+          1.0059922760800311e-10,
+          2.729411283350322e-10,
+          2.2251479539208899e-10,
+          6.426104559124776e-11,
+          1.056322465551233e-10
+        ],
+        "maximum_l2_residual": 2.9023300054018644e-10,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.462158915903353,
+              0.29253162158148,
+              0.45949948298580723,
+              0.43030568587586654,
+              0.28050123549349604,
+              0.48244460471734496
+            ],
+            "maximum_l2_gap": 0.48244460471734496,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.49082699409122243,
+              0.4288039343171107,
+              0.28957822262921584,
+              0.4507506037724619,
+              0.4637848188633742,
+              0.2834916277928567
+            ],
+            "maximum_l2_gap": 0.49082699409122243,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.11840896152198906,
+              0.025506724486778133,
+              0.04523115529515369,
+              0.11840896152198906,
+              0.025506724486778133,
+              0.04523115529515369
+            ],
+            "maximum_l2_gap": 0.11840896152198906,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 1.004702294915265e-10,
+            "best_shift": 5,
+            "by_shift": [
+              0.48244460472557793,
+              0.4908269941065407,
+              0.11840896158845889,
+              0.4908269940993841,
+              0.48244460472837447,
+              1.004702294915265e-10
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.01538034050309256,
+            "best_shift": 5,
+            "by_shift": [
+              0.4734432308693828,
+              0.49226096358655325,
+              0.11654945074342342,
+              0.48203460166584505,
+              0.4773785933105769,
+              0.01538034050309256
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct"
+    },
+    {
+      "row_id": 6,
+      "group_id": 7,
+      "case_index": 1,
+      "stage_index": 3,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "lane": 0,
+      "source_reference_index": 0,
+      "initial_reference_phase": 4,
+      "requested_bit": 1,
+      "name": "phase4-write1-from-h0",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          5.455438658201726e-11,
+          2.6040014624150995e-11,
+          7.374028428416627e-12,
+          7.678336130189285e-12,
+          5.63415053088054e-12,
+          1.590404344156197e-11
+        ],
+        "maximum_l2_residual": 5.455438658201726e-11,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.45393261038889987,
+              0.29342516497416726,
+              0.46502954690906445,
+              0.43385300530902043,
+              0.27527992672557944,
+              0.46822533405170874
+            ],
+            "maximum_l2_gap": 0.46822533405170874,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.4835040638914557,
+              0.43251967804258884,
+              0.28942471999855557,
+              0.44957865746005393,
+              0.45530403899763383,
+              0.2792694236899853
+            ],
+            "maximum_l2_gap": 0.4835040638914557,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.11471224698002361,
+              0.027182882065785983,
+              0.06529638404694156,
+              0.11471224698002361,
+              0.027182882065785983,
+              0.06529638404694156
+            ],
+            "maximum_l2_gap": 0.11471224698002361,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 0.015380340441307138,
+            "best_shift": 5,
+            "by_shift": [
+              0.47737859331665344,
+              0.4820346016960938,
+              0.11654945082085076,
+              0.49226096359476273,
+              0.4734432308956549,
+              0.015380340441307138
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 2.1827948328464017e-11,
+            "best_shift": 5,
+            "by_shift": [
+              0.4682253340365316,
+              0.4835040638914312,
+              0.11471224698102292,
+              0.4835040638769491,
+              0.468225334053984,
+              2.1827948328464017e-11
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          }
+        ],
+        "reference_matches": [
+          1
+        ],
+        "decoded_bit": 1
+      },
+      "write_outcome": "correct"
+    },
+    {
+      "row_id": 7,
+      "group_id": 7,
+      "case_index": 1,
+      "stage_index": 3,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "lane": 1,
+      "source_reference_index": 1,
+      "initial_reference_phase": 4,
+      "requested_bit": 1,
+      "name": "phase4-write1-from-h1",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          5.4567437517223486e-11,
+          2.604806123428655e-11,
+          7.381176910437067e-12,
+          7.697783375017493e-12,
+          5.6499468065308635e-12,
+          1.5949493724270273e-11
+        ],
+        "maximum_l2_residual": 5.4567437517223486e-11,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.45393261038891436,
+              0.2934251649741745,
+              0.46502954690907244,
+              0.43385300530902665,
+              0.27527992672556695,
+              0.4682253340517099
+            ],
+            "maximum_l2_gap": 0.4682253340517099,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.4835040638914709,
+              0.432519678042596,
+              0.2894247199985519,
+              0.44957865746004727,
+              0.45530403899764704,
+              0.2792694236899832
+            ],
+            "maximum_l2_gap": 0.4835040638914709,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.11471224698002795,
+              0.027182882065788047,
+              0.06529638404697573,
+              0.11471224698002795,
+              0.027182882065788047,
+              0.06529638404697573
+            ],
+            "maximum_l2_gap": 0.11471224698002795,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 0.015380340441291076,
+            "best_shift": 5,
+            "by_shift": [
+              0.47737859331664,
+              0.48203460169610823,
+              0.11654945082086306,
+              0.49226096359476346,
+              0.4734432308956697,
+              0.015380340441291076
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 2.1849368738118303e-11,
+            "best_shift": 5,
+            "by_shift": [
+              0.4682253340365178,
+              0.48350406389144557,
+              0.11471224698103429,
+              0.4835040638769499,
+              0.46822533405399897,
+              2.1849368738118303e-11
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          }
+        ],
+        "reference_matches": [
+          1
+        ],
+        "decoded_bit": 1
+      },
+      "write_outcome": "correct"
+    },
+    {
+      "row_id": 8,
+      "group_id": 9,
+      "case_index": 2,
+      "stage_index": 1,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "lane": 0,
+      "source_reference_index": 0,
+      "initial_reference_phase": 5,
+      "requested_bit": 0,
+      "name": "phase5-write0-from-h0",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          2.0911752183636442e-10,
+          5.673665993171591e-10,
+          4.6254540850949415e-10,
+          1.335806274364175e-10,
+          2.1958169020525873e-10,
+          3.1946885336394666e-10
+        ],
+        "maximum_l2_residual": 5.673665993171591e-10,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.29253162153864926,
+              0.4594994829531297,
+              0.4303056858610834,
+              0.28050123547690586,
+              0.4824446047227528,
+              0.46215891592937436
+            ],
+            "maximum_l2_gap": 0.4824446047227528,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.4288039343027341,
+              0.2895782225981616,
+              0.45075060374366355,
+              0.46378481888874795,
+              0.28349162776401804,
+              0.4908269940918492
+            ],
+            "maximum_l2_gap": 0.4908269940918492,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.025506724465450558,
+              0.04523115523265142,
+              0.11840896159614415,
+              0.025506724465450558,
+              0.04523115523265142,
+              0.11840896159614415
+            ],
+            "maximum_l2_gap": 0.11840896159614415,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 1.9641102643299607e-10,
+            "best_shift": 0,
+            "by_shift": [
+              1.9641102643299607e-10,
+              0.48244460471368145,
+              0.490826994123695,
+              0.11840896172234326,
+              0.4908269940828565,
+              0.4824446047456788
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.015380340409425163,
+            "best_shift": 0,
+            "by_shift": [
+              0.015380340409425163,
+              0.47344323085713313,
+              0.4922609636037529,
+              0.11654945067254166,
+              0.48203460164891887,
+              0.4773785933279873
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct"
+    },
+    {
+      "row_id": 9,
+      "group_id": 9,
+      "case_index": 2,
+      "stage_index": 1,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "lane": 1,
+      "source_reference_index": 1,
+      "initial_reference_phase": 5,
+      "requested_bit": 0,
+      "name": "phase5-write0-from-h1",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          1.8835676416177321e-10,
+          5.110377510445339e-10,
+          4.16622560222526e-10,
+          1.2032152449325135e-10,
+          1.9778384570704682e-10,
+          2.8775748741075866e-10
+        ],
+        "maximum_l2_residual": 5.110377510445339e-10,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.29253162154684803,
+              0.45949948295939036,
+              0.4303056858639173,
+              0.28050123548007755,
+              0.4824446047241309,
+              0.4621589159281442
+            ],
+            "maximum_l2_gap": 0.4824446047241309,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.42880393430549085,
+              0.28957822260410515,
+              0.4507506037491773,
+              0.46378481888760453,
+              0.28349162776953524,
+              0.4908269940941257
+            ],
+            "maximum_l2_gap": 0.4908269940941257,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.025506724469532557,
+              0.04523115524463254,
+              0.1184089616014247,
+              0.025506724469532557,
+              0.04523115524463254,
+              0.1184089616014247
+            ],
+            "maximum_l2_gap": 0.1184089616014247,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 1.768931779245634e-10,
+            "best_shift": 0,
+            "by_shift": [
+              1.768931779245634e-10,
+              0.48244460471595507,
+              0.49082699412280717,
+              0.11840896171509084,
+              0.4908269940860209,
+              0.48244460474478323
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.015380340414295968,
+            "best_shift": 0,
+            "by_shift": [
+              0.015380340414295968,
+              0.4734432308594743,
+              0.4922609636028627,
+              0.11654945068610688,
+              0.48203460165215956,
+              0.4773785933270864
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct"
+    },
+    {
+      "row_id": 10,
+      "group_id": 11,
+      "case_index": 2,
+      "stage_index": 3,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "lane": 0,
+      "source_reference_index": 0,
+      "initial_reference_phase": 5,
+      "requested_bit": 1,
+      "name": "phase5-write1-from-h0",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          2.468404882397192e-11,
+          6.9886480002964455e-12,
+          7.27874242892026e-12,
+          5.3411266022060345e-12,
+          1.5074113976428344e-11,
+          3.2119110409427835e-11
+        ],
+        "maximum_l2_residual": 3.2119110409427835e-11,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.2934251649739278,
+              0.46502954690898524,
+              0.4338530053089514,
+              0.27527992672569307,
+              0.46822533402873656,
+              0.45393261036741256
+            ],
+            "maximum_l2_gap": 0.46822533402873656,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.4325196780425016,
+              0.28942471999858954,
+              0.44957865746010184,
+              0.45530403897615007,
+              0.2792694236898379,
+              0.48350406386937655
+            ],
+            "maximum_l2_gap": 0.48350406386937655,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.02718288206574811,
+              0.06529638404657824,
+              0.11471224696373494,
+              0.02718288206574811,
+              0.06529638404657824,
+              0.11471224696373494
+            ],
+            "maximum_l2_gap": 0.11471224696373494,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 0.015380340467473731,
+            "best_shift": 0,
+            "by_shift": [
+              0.015380340467473731,
+              0.4773785933167755,
+              0.4820346016739333,
+              0.1165494508029958,
+              0.4922609635947612,
+              0.47344323087295526
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 1.139048344127089e-11,
+            "best_shift": 0,
+            "by_shift": [
+              1.139048344127089e-11,
+              0.4682253340366575,
+              0.4835040638693535,
+              0.11471224696934017,
+              0.4835040638769476,
+              0.4682253340308859
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          }
+        ],
+        "reference_matches": [
+          1
+        ],
+        "decoded_bit": 1
+      },
+      "write_outcome": "correct"
+    },
+    {
+      "row_id": 11,
+      "group_id": 11,
+      "case_index": 2,
+      "stage_index": 3,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "lane": 1,
+      "source_reference_index": 1,
+      "initial_reference_phase": 5,
+      "requested_bit": 1,
+      "name": "phase5-write1-from-h1",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          2.4705782945608955e-11,
+          6.9992473426717026e-12,
+          7.29556702362432e-12,
+          5.355187098778746e-12,
+          1.5119304901586307e-11,
+          3.2197223689591366e-11
+        ],
+        "maximum_l2_residual": 3.2197223689591366e-11,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.2934251649739359,
+              0.465029546908993,
+              0.4338530053089572,
+              0.2752799267256821,
+              0.46822533402868766,
+              0.45393261036737875
+            ],
+            "maximum_l2_gap": 0.46822533402868766,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.43251967804250835,
+              0.28942471999858665,
+              0.4495786574600965,
+              0.4553040389761149,
+              0.2792694236898374,
+              0.48350406386934236
+            ],
+            "maximum_l2_gap": 0.48350406386934236,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.027182882065750168,
+              0.06529638404661053,
+              0.11471224696370025,
+              0.027182882065750168,
+              0.06529638404661053,
+              0.11471224696370025
+            ],
+            "maximum_l2_gap": 0.11471224696370025,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 0.015380340467515503,
+            "best_shift": 0,
+            "by_shift": [
+              0.015380340467515503,
+              0.47737859331676386,
+              0.48203460167389794,
+              0.1165494508029667,
+              0.4922609635947622,
+              0.473443230872919
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 1.144360878363552e-11,
+            "best_shift": 0,
+            "by_shift": [
+              1.144360878363552e-11,
+              0.46822533403664546,
+              0.48350406386931827,
+              0.11471224696933216,
+              0.48350406387694866,
+              0.46822533403084904
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          }
+        ],
+        "reference_matches": [
+          1
+        ],
+        "decoded_bit": 1
+      },
+      "write_outcome": "correct"
+    }
+  ],
+  "cases": [
+    {
+      "case_index": 0,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "group_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "row_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "completed",
+      "outcome": "case_qualified",
+      "initial_state_sha256": "7b8bfad671e044f5688f219f5bbc531aea0f6f4d1bdc34bffb86532e8d4e48ad",
+      "terminal_state_sha256": "139c2f7a59b00925a5194188411b914b9bce38a37bbc3cc7b7bdae63292eb2fd",
+      "prefix_replay": {
+        "status": "completed",
+        "state_count": 37,
+        "update_count": 36,
+        "lanes": [
+          {
+            "lane": 0,
+            "source_reference_index": 0,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          },
+          {
+            "lane": 1,
+            "source_reference_index": 1,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          }
+        ],
+        "maximum_coordinate_gap": 0.0,
+        "maximum_l2_difference": 0.0,
+        "state_bytes_equal": true,
+        "token_bytes_equal": true,
+        "fresh_states_array_sha256": "602a56904ee547f0d9c2991e0cb9469ba29ddacc60b878f288670c69f8376ea7",
+        "historical_states_array_sha256": "602a56904ee547f0d9c2991e0cb9469ba29ddacc60b878f288670c69f8376ea7",
+        "fresh_tokens_array_sha256": "0ea3601722b80677e2655e1a71db6a0e386fde59aa913e449de91c1f5c4dc338",
+        "historical_tokens_array_sha256": "0ea3601722b80677e2655e1a71db6a0e386fde59aa913e449de91c1f5c4dc338",
+        "same_input": true,
+        "comparison_kind": "accepted_same_phase_e0_prefix",
+        "case_index": 0,
+        "reference_phase": 3,
+        "packet_index": 1,
+        "coordinate_tolerance": 1e-10,
+        "coordinate_replay_passed": true,
+        "token_replay_passed": true,
+        "passed": true,
+        "gates_readout": false
+      }
+    },
+    {
+      "case_index": 1,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "group_ids": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "row_ids": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "status": "completed",
+      "outcome": "case_qualified",
+      "initial_state_sha256": "d3df1e7a64618a87b7d4ee92edc9a8d589e7f8642145e9cfc2feff24680c8d36",
+      "terminal_state_sha256": "4c40562b0452a74737e9e8f939b187faa7fdb6164e56df1244753497f3240785",
+      "prefix_replay": {
+        "status": "completed",
+        "state_count": 37,
+        "update_count": 36,
+        "lanes": [
+          {
+            "lane": 0,
+            "source_reference_index": 0,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          },
+          {
+            "lane": 1,
+            "source_reference_index": 1,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          }
+        ],
+        "maximum_coordinate_gap": 0.0,
+        "maximum_l2_difference": 0.0,
+        "state_bytes_equal": true,
+        "token_bytes_equal": true,
+        "fresh_states_array_sha256": "76a6f14422b8d1ffcd64d42cc4bec69c6064433dfc0b81d7d20ec07288532183",
+        "historical_states_array_sha256": "76a6f14422b8d1ffcd64d42cc4bec69c6064433dfc0b81d7d20ec07288532183",
+        "fresh_tokens_array_sha256": "5bf732d44644baabc355824099527e2226ba5fc79b785f71fc9b1edede7d106d",
+        "historical_tokens_array_sha256": "5bf732d44644baabc355824099527e2226ba5fc79b785f71fc9b1edede7d106d",
+        "same_input": true,
+        "comparison_kind": "accepted_same_phase_e0_prefix",
+        "case_index": 1,
+        "reference_phase": 4,
+        "packet_index": 2,
+        "coordinate_tolerance": 1e-10,
+        "coordinate_replay_passed": true,
+        "token_replay_passed": true,
+        "passed": true,
+        "gates_readout": false
+      }
+    },
+    {
+      "case_index": 2,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "group_ids": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "row_ids": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "status": "completed",
+      "outcome": "case_qualified",
+      "initial_state_sha256": "b5fa3e5c12575ccfb0f4afae0110ec18adc62135dd2ed1e80770ab5a11993d38",
+      "terminal_state_sha256": "b27dcf8874adba52307854e855b9ffd79c0021b246938eb4b6a706c41a3c851f",
+      "prefix_replay": {
+        "status": "completed",
+        "state_count": 37,
+        "update_count": 36,
+        "lanes": [
+          {
+            "lane": 0,
+            "source_reference_index": 0,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          },
+          {
+            "lane": 1,
+            "source_reference_index": 1,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          }
+        ],
+        "maximum_coordinate_gap": 0.0,
+        "maximum_l2_difference": 0.0,
+        "state_bytes_equal": true,
+        "token_bytes_equal": true,
+        "fresh_states_array_sha256": "87db28c7e94d56c1c47ee78e324b3c937ac2710b678acb216c44b4a53126d976",
+        "historical_states_array_sha256": "87db28c7e94d56c1c47ee78e324b3c937ac2710b678acb216c44b4a53126d976",
+        "fresh_tokens_array_sha256": "ec758a9e7e5439eb77f27e532f894e2aaaa75f87280b9f01a92294cbacf775dd",
+        "historical_tokens_array_sha256": "ec758a9e7e5439eb77f27e532f894e2aaaa75f87280b9f01a92294cbacf775dd",
+        "same_input": true,
+        "comparison_kind": "accepted_same_phase_e0_prefix",
+        "case_index": 2,
+        "reference_phase": 5,
+        "packet_index": 3,
+        "coordinate_tolerance": 1e-10,
+        "coordinate_replay_passed": true,
+        "token_replay_passed": true,
+        "passed": true,
+        "gates_readout": false
+      }
+    }
+  ],
+  "prefix_replay": [
+    {
+      "status": "completed",
+      "state_count": 37,
+      "update_count": 36,
+      "lanes": [
+        {
+          "lane": 0,
+          "source_reference_index": 0,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        },
+        {
+          "lane": 1,
+          "source_reference_index": 1,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        }
+      ],
+      "maximum_coordinate_gap": 0.0,
+      "maximum_l2_difference": 0.0,
+      "state_bytes_equal": true,
+      "token_bytes_equal": true,
+      "fresh_states_array_sha256": "602a56904ee547f0d9c2991e0cb9469ba29ddacc60b878f288670c69f8376ea7",
+      "historical_states_array_sha256": "602a56904ee547f0d9c2991e0cb9469ba29ddacc60b878f288670c69f8376ea7",
+      "fresh_tokens_array_sha256": "0ea3601722b80677e2655e1a71db6a0e386fde59aa913e449de91c1f5c4dc338",
+      "historical_tokens_array_sha256": "0ea3601722b80677e2655e1a71db6a0e386fde59aa913e449de91c1f5c4dc338",
+      "same_input": true,
+      "comparison_kind": "accepted_same_phase_e0_prefix",
+      "case_index": 0,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "coordinate_tolerance": 1e-10,
+      "coordinate_replay_passed": true,
+      "token_replay_passed": true,
+      "passed": true,
+      "gates_readout": false
+    },
+    {
+      "status": "completed",
+      "state_count": 37,
+      "update_count": 36,
+      "lanes": [
+        {
+          "lane": 0,
+          "source_reference_index": 0,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        },
+        {
+          "lane": 1,
+          "source_reference_index": 1,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        }
+      ],
+      "maximum_coordinate_gap": 0.0,
+      "maximum_l2_difference": 0.0,
+      "state_bytes_equal": true,
+      "token_bytes_equal": true,
+      "fresh_states_array_sha256": "76a6f14422b8d1ffcd64d42cc4bec69c6064433dfc0b81d7d20ec07288532183",
+      "historical_states_array_sha256": "76a6f14422b8d1ffcd64d42cc4bec69c6064433dfc0b81d7d20ec07288532183",
+      "fresh_tokens_array_sha256": "5bf732d44644baabc355824099527e2226ba5fc79b785f71fc9b1edede7d106d",
+      "historical_tokens_array_sha256": "5bf732d44644baabc355824099527e2226ba5fc79b785f71fc9b1edede7d106d",
+      "same_input": true,
+      "comparison_kind": "accepted_same_phase_e0_prefix",
+      "case_index": 1,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "coordinate_tolerance": 1e-10,
+      "coordinate_replay_passed": true,
+      "token_replay_passed": true,
+      "passed": true,
+      "gates_readout": false
+    },
+    {
+      "status": "completed",
+      "state_count": 37,
+      "update_count": 36,
+      "lanes": [
+        {
+          "lane": 0,
+          "source_reference_index": 0,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        },
+        {
+          "lane": 1,
+          "source_reference_index": 1,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        }
+      ],
+      "maximum_coordinate_gap": 0.0,
+      "maximum_l2_difference": 0.0,
+      "state_bytes_equal": true,
+      "token_bytes_equal": true,
+      "fresh_states_array_sha256": "87db28c7e94d56c1c47ee78e324b3c937ac2710b678acb216c44b4a53126d976",
+      "historical_states_array_sha256": "87db28c7e94d56c1c47ee78e324b3c937ac2710b678acb216c44b4a53126d976",
+      "fresh_tokens_array_sha256": "ec758a9e7e5439eb77f27e532f894e2aaaa75f87280b9f01a92294cbacf775dd",
+      "historical_tokens_array_sha256": "ec758a9e7e5439eb77f27e532f894e2aaaa75f87280b9f01a92294cbacf775dd",
+      "same_input": true,
+      "comparison_kind": "accepted_same_phase_e0_prefix",
+      "case_index": 2,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "coordinate_tolerance": 1e-10,
+      "coordinate_replay_passed": true,
+      "token_replay_passed": true,
+      "passed": true,
+      "gates_readout": false
+    }
+  ],
+  "carried_boundaries": 9,
+  "between_case_resets": 2,
+  "returned_manifest_entries": 3709,
+  "transfer_reservation_closed": true,
+  "root_recomputed_rows": 12,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-carried72-handoff-phase-panel/20261029T202050Z-public-carried72-handoff-phase-panel/independent-audit-20261029T204817Z/checker/independent-review.json",
+      "bytes": 1204055,
+      "sha256": "b18cb5125b0a2b62782bc3724c9ca705074e36a2f7f814719e3cb24925ae02f3"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-carried72-handoff-phase-panel/20261029T202050Z-public-carried72-handoff-phase-panel/run/result.json",
+      "bytes": 6910950,
+      "sha256": "4f26d3790dfef0c52110e62dc66b51149e31549ccedecb314df72463dbd72252"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-carried72-handoff-phase-panel/20261029T202050Z-public-carried72-handoff-phase-panel/run/literal-inputs.npz",
+      "bytes": 3461712,
+      "sha256": "3f6322a6f854fa45b4cb277f94ec55eb9a684b1f8b47a8052376b69a221f24ec"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-carried72-handoff-phase-panel/20261029T202050Z-public-carried72-handoff-phase-panel/final-manifest.json",
+      "bytes": 632558,
+      "sha256": "802dea2b7ec63bb484aec8b158d2f90408ad7dfc2c3b635d5838f8f57988cde0"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-carried72-handoff-phase-panel/20261029T202050Z-public-carried72-handoff-phase-panel/transfer-closeout.json",
+      "bytes": 978,
+      "sha256": "9cf2e2d1fa1981dc0fbfc9e79cd83cfc7fe9bb81cec0fcccf056d5814cf0a3f7"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-carried72-handoff-phase-panel/20261029T202050Z-public-carried72-handoff-phase-panel/local-return-verification.json",
+      "bytes": 389,
+      "sha256": "b08c91fa19370a440aec870f9e95b753542ab5aa4bf5cd415e7130ac9e98be0c"
+    },
+    {
+      "path": "/tmp/accept-carried72-result.py",
+      "bytes": 3327,
+      "sha256": "88322a34fcbdf470d595481ea5366b0e8eb710129adfb5c24f1dca437a66728b"
+    }
+  ],
+  "scope": "The fixed E0(72), H144, E1(120), H240 word recovered all twelve requested readouts at six literal starts. No general reliability, toggle, minimum duration, measured speedup or causal hysteresis claim."
+}

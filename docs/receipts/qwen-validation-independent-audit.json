@@ -1,0 +1,411 @@
+{
+  "recorded_at_utc": "2026-10-25T21:55:09Z",
+  "repository_commit_at_audit": "ce33d3351296540b4f561618405ba78aa255c5f7",
+  "status": "passed",
+  "kind": "Independent recomputation from saved arrays; no model execution",
+  "auditor": "Codex paper_draft subagent",
+  "data_root": "/data2/shrimp-memory-data",
+  "raw_directory": "audits/qwen-validation/20261025T214011Z-JbM9BT",
+  "input_files": {
+    "precision-01/result.json": {
+      "bytes": 3825,
+      "sha256": "3a7121ad5c7cb53234ae80b993d93f9cfe8ef751b0de42843792addb53be1566"
+    },
+    "precision-01/metadata.json": {
+      "bytes": 2099,
+      "sha256": "a03a9dc62b61affd7e79ea2b75b40a42513b6b940d5b9e8d842ce20b1fadae5e"
+    },
+    "p8-replay-01/status.json": {
+      "bytes": 8105,
+      "sha256": "5e7080fecda0f63add2f6064569ecbb36c4343f5061c80a073e1ffcc1f5058e9"
+    },
+    "p8-reference-states.npz": {
+      "bytes": 55705,
+      "sha256": "11b2d28e0aecbeeb3def5646f6cfd01763d082f6218b2d26ea16a6737813cb05"
+    },
+    "p8-replay-01/trajectory-final.npz": {
+      "bytes": 828410,
+      "sha256": "c7aae86122ac89100545331cecbe22923332ab2de0aa049998f1a12304cd2f43"
+    },
+    "precision-01/call-020-reference_phase_0.npz": {
+      "bytes": 1230590,
+      "sha256": "75b67fbf0ad7910519b8ba6e2fdae99c0e6d4893e7eb6ad9b9bb0cf4d2711e80"
+    },
+    "precision-01/call-021-reference_phase_1.npz": {
+      "bytes": 1230590,
+      "sha256": "7a4ac84185f4f432892956d4e5232cab659aa404867cff2a11072b8d9a3a913b"
+    },
+    "precision-01/call-022-reference_phase_2.npz": {
+      "bytes": 1230590,
+      "sha256": "12b594f94fa94de720c53cf622194669d4becd7da12972ef26538961cc28cfd3"
+    },
+    "precision-01/call-023-reference_phase_3.npz": {
+      "bytes": 1230590,
+      "sha256": "8795f6520f94956da4c4527ea310e8fa75ef0114fa47ae8e433d1654086dca05"
+    },
+    "precision-01/call-024-reference_phase_4.npz": {
+      "bytes": 1230590,
+      "sha256": "6401d4e401af1f9e80cc46db3ba5472d99a758028ad11673ff82e1b3f1cb5070"
+    },
+    "precision-01/call-025-reference_phase_5.npz": {
+      "bytes": 1230590,
+      "sha256": "1d530fb286f754ea25a41b4ed60f8421be19c65102b02f6881d46b77b561c3ff"
+    },
+    "precision-01/call-026-reference_phase_6.npz": {
+      "bytes": 1230590,
+      "sha256": "eea582d031fad86daec1ee41263f1da84dc9871a83b656ed390d6b397ef2b785"
+    },
+    "precision-01/call-027-reference_phase_7.npz": {
+      "bytes": 1230590,
+      "sha256": "1710610043d93c5abfa82b3fdeaf9904f3a55e4cccb0fb93c057529474eb318e"
+    },
+    "precision-01/call-007-native_jvp.npz": {
+      "bytes": 1245414,
+      "sha256": "5a97ba3da47b273fd7bb010d688f2b06d36377749443740399d2e230d0e40b47"
+    },
+    "precision-01/call-008-fd_00_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "02c6b3a16ce7fa6433e6747dca7c2fa69c0d96ae5894f59337ca02a1fe466c95"
+    },
+    "precision-01/call-009-fd_00_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "0fac30f387cff6b7a21fbddb603c62d3f15f36b807d02aba82ce014e42c608a7"
+    },
+    "precision-01/call-010-fd_01_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "dc18d537f67662e97a8a037fdf25d5e864019b87d103c1d2824a05fef4c7ccaa"
+    },
+    "precision-01/call-011-fd_01_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "f6986e3612fd3a83b4cfa8c6ae25b595443f02ed4dfd591aa497fa765dff465f"
+    },
+    "precision-01/call-012-fd_02_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "6fa1120386745e9dae6e937d7ff7fdb81988322df11477fdcc9f4b4b8be8870d"
+    },
+    "precision-01/call-013-fd_02_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "3696bdf05c74d8fa02574bada70e44258d45fe3be92111872170bc43fa69a0a2"
+    },
+    "precision-01/call-014-fd_03_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "4f685656ea16e52ad349b0fb9fa9c6a99c86bfedede09ae1493fbc9f2efc5a24"
+    },
+    "precision-01/call-015-fd_03_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "788d0a25aa04f7f1a64d322accda7015fd7a1f2f3a2b4394ea4c0c7a61361772"
+    },
+    "precision-01/call-016-fd_04_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "927791c59e1e4b666a4586d471fd5b51de0eb865454e1942ec98850d538b481d"
+    },
+    "precision-01/call-017-fd_04_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "188544c31f4d3cbd36e0b3ff9616418725b541b288f48f45cb35d560b3a01222"
+    },
+    "precision-01/call-018-fd_05_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "e256d0ecfd950365b2e38ffea15a8a24b48b35c48f0736033f34f6c60c5c5d06"
+    },
+    "precision-01/call-019-fd_05_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "7c285070049e94832a52d17100b393e8b10da5b9dd070c6c4ff7d1cd3c525a9f"
+    },
+    "precision-01/call-002-stock_base.npz": {
+      "bytes": 1230590,
+      "sha256": "faa5845aa410765846c59b98a4ab5a64dd7a9af6daf6ab1b68199b7061da3875"
+    },
+    "precision-01/call-004-native_base.npz": {
+      "bytes": 1230590,
+      "sha256": "75b67fbf0ad7910519b8ba6e2fdae99c0e6d4893e7eb6ad9b9bb0cf4d2711e80"
+    },
+    "precision-01/call-005-native_repeat.npz": {
+      "bytes": 1230590,
+      "sha256": "75b67fbf0ad7910519b8ba6e2fdae99c0e6d4893e7eb6ad9b9bb0cf4d2711e80"
+    },
+    "precision-01/call-006-native_full_prefix.npz": {
+      "bytes": 1230590,
+      "sha256": "fd42ec16cd70cdcc87b15251c91fb3f2bb2e346a2e918ba1ebefa22847e559e0"
+    },
+    "p8-exit-status.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "precision-exit-status.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    }
+  },
+  "source_context": {
+    "precision_source_commit": "21d150f5173dc910fb6fc5ee95b120607370934c",
+    "precision_source_sha256_recorded": "d64e3def356e1d4b91bf638e378deea850b3dc5a9df1379e72dc4c83bc5a28c2",
+    "precision_source_sha256_current": "d64e3def356e1d4b91bf638e378deea850b3dc5a9df1379e72dc4c83bc5a28c2",
+    "precision_source_hash_matches": true,
+    "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "alpha": 0.071674,
+    "log10_temperature": -0.115
+  },
+  "exit_statuses": {
+    "p8": 0,
+    "precision": 0
+  },
+  "p8_replay": {
+    "states_shape": [
+      120,
+      896
+    ],
+    "states_dtype": "float64",
+    "states_all_finite": true,
+    "initial_state_minimum_l2_distance_to_reference": 0.4924928517591558,
+    "final_phase_lag_l2": {
+      "1": 0.36992988250380826,
+      "2": 0.2564552190597935,
+      "4": 0.1692806566953234,
+      "8": 2.709573254725385e-15
+    },
+    "all_eight_final_phase_lag8_l2": [
+      4.068495539216382e-15,
+      1.2027538237763341e-15,
+      6.0455895878259204e-15,
+      9.004953204130379e-15,
+      5.321442236243097e-15,
+      1.0617856331646725e-15,
+      1.0540475137134165e-16,
+      2.709573254725385e-15
+    ],
+    "maximum_phase_lag8_l2": 9.004953204130379e-15,
+    "proper_divisor_all_phase_l2": {
+      "1": [
+        0.2828850556347331,
+        0.23510026161431424,
+        0.27276979025173886,
+        0.47735792551505046,
+        0.4850427655624598,
+        0.358970040527885,
+        0.36992988250380826,
+        0.29018478633138267
+      ],
+      "2": [
+        0.0769384352762005,
+        0.1328087408900029,
+        0.460217605623852,
+        0.2932256571525048,
+        0.5050328570487819,
+        0.2564552190597935,
+        0.1385703418556216,
+        0.044419237915524865
+      ],
+      "4": [
+        0.47214090033478356,
+        0.24936765679353218,
+        0.19896734485551204,
+        0.1692806566953234,
+        0.47214090033478356,
+        0.24936765679353218,
+        0.19896734485551204,
+        0.1692806566953234
+      ]
+    },
+    "proper_divisor_minimum_l2": {
+      "1": 0.23510026161431424,
+      "2": 0.044419237915524865,
+      "4": 0.1692806566953234
+    },
+    "all_reference_shift_max_absolute_errors": [
+      0.06434381227179989,
+      0.06081715651884639,
+      0.06434381227180555,
+      0.06859276146472618,
+      0.05249324301451794,
+      1.679385797093147e-14,
+      0.05249324301453445,
+      0.06859276146471838
+    ],
+    "best_reference_phase_shift": 5,
+    "best_reference_max_absolute_error": 1.679385797093147e-14,
+    "note": "The original replay gate checked closure at the final phase; this audit additionally checks all eight phases."
+  },
+  "precision_reference_cycle": {
+    "rows": [
+      {
+        "phase": 0,
+        "input_exactly_matches_reference": true,
+        "max_absolute_error": 6.376843497690743e-15,
+        "recorded_max_absolute_error": 6.376843497690743e-15,
+        "exactly_matches_recorded_error": true,
+        "passes_recorded_tolerance": true
+      },
+      {
+        "phase": 1,
+        "input_exactly_matches_reference": true,
+        "max_absolute_error": 1.3530843112619095e-15,
+        "recorded_max_absolute_error": 1.3530843112619095e-15,
+        "exactly_matches_recorded_error": true,
+        "passes_recorded_tolerance": true
+      },
+      {
+        "phase": 2,
+        "input_exactly_matches_reference": true,
+        "max_absolute_error": 3.146788385421928e-15,
+        "recorded_max_absolute_error": 3.146788385421928e-15,
+        "exactly_matches_recorded_error": true,
+        "passes_recorded_tolerance": true
+      },
+      {
+        "phase": 3,
+        "input_exactly_matches_reference": true,
+        "max_absolute_error": 1.762479051592436e-15,
+        "recorded_max_absolute_error": 1.762479051592436e-15,
+        "exactly_matches_recorded_error": true,
+        "passes_recorded_tolerance": true
+      },
+      {
+        "phase": 4,
+        "input_exactly_matches_reference": true,
+        "max_absolute_error": 1.0512424264419451e-15,
+        "recorded_max_absolute_error": 1.0512424264419451e-15,
+        "exactly_matches_recorded_error": true,
+        "passes_recorded_tolerance": true
+      },
+      {
+        "phase": 5,
+        "input_exactly_matches_reference": true,
+        "max_absolute_error": 1.9984014443252818e-15,
+        "recorded_max_absolute_error": 1.9984014443252818e-15,
+        "exactly_matches_recorded_error": true,
+        "passes_recorded_tolerance": true
+      },
+      {
+        "phase": 6,
+        "input_exactly_matches_reference": true,
+        "max_absolute_error": 2.1094237467877974e-15,
+        "recorded_max_absolute_error": 2.1094237467877974e-15,
+        "exactly_matches_recorded_error": true,
+        "passes_recorded_tolerance": true
+      },
+      {
+        "phase": 7,
+        "input_exactly_matches_reference": true,
+        "max_absolute_error": 6.678685382510707e-16,
+        "recorded_max_absolute_error": 6.678685382510707e-16,
+        "exactly_matches_recorded_error": true,
+        "passes_recorded_tolerance": true
+      }
+    ],
+    "tolerance": 1e-10
+  },
+  "derivative_recomputation": {
+    "input_exactly_reference_phase_zero": true,
+    "direction_l2_norm": 1.0000000000000002,
+    "jvp_l2_norm": 0.039326627066841265,
+    "rows": [
+      {
+        "h": 0.01,
+        "absolute_error": 0.00040716571467343374,
+        "relative_error": 0.01035343595527267,
+        "absolute_error_minus_recorded": 0.0,
+        "relative_error_minus_recorded": 0.0,
+        "plus_input_exactly_x_plus_hv": true,
+        "minus_input_exactly_x_minus_hv": true
+      },
+      {
+        "h": 0.005,
+        "absolute_error": 0.00010167536622529344,
+        "relative_error": 0.002585407745558283,
+        "absolute_error_minus_recorded": 0.0,
+        "relative_error_minus_recorded": 0.0,
+        "plus_input_exactly_x_plus_hv": true,
+        "minus_input_exactly_x_minus_hv": true
+      },
+      {
+        "h": 0.0025,
+        "absolute_error": 2.5410938955510734e-05,
+        "relative_error": 0.0006461509885483233,
+        "absolute_error_minus_recorded": 0.0,
+        "relative_error_minus_recorded": 0.0,
+        "plus_input_exactly_x_plus_hv": true,
+        "minus_input_exactly_x_minus_hv": true
+      },
+      {
+        "h": 0.00125,
+        "absolute_error": 6.352230641717785e-06,
+        "relative_error": 0.000161524928922108,
+        "absolute_error_minus_recorded": 0.0,
+        "relative_error_minus_recorded": 0.0,
+        "plus_input_exactly_x_plus_hv": true,
+        "minus_input_exactly_x_minus_hv": true
+      },
+      {
+        "h": 0.0001,
+        "absolute_error": 4.0667439022268536e-08,
+        "relative_error": 1.0340942525568838e-06,
+        "absolute_error_minus_recorded": 6.617444900424222e-24,
+        "relative_error_minus_recorded": 0.0,
+        "plus_input_exactly_x_plus_hv": true,
+        "minus_input_exactly_x_minus_hv": true
+      },
+      {
+        "h": 1e-05,
+        "absolute_error": 5.272346528069304e-10,
+        "relative_error": 1.3406556629197292e-08,
+        "absolute_error_minus_recorded": -1.0339757656912846e-25,
+        "relative_error_minus_recorded": -1.6543612251060553e-24,
+        "plus_input_exactly_x_plus_hv": true,
+        "minus_input_exactly_x_minus_hv": true
+      }
+    ],
+    "orders": [
+      {
+        "h_large": 0.01,
+        "h_small": 0.005,
+        "order": 2.001645897349412,
+        "qualifies_as_quadratic_halving": true
+      },
+      {
+        "h_large": 0.005,
+        "h_small": 0.0025,
+        "order": 2.0004485969830896,
+        "qualifies_as_quadratic_halving": true
+      },
+      {
+        "h_large": 0.0025,
+        "h_small": 0.00125,
+        "order": 2.000114484132984,
+        "qualifies_as_quadratic_halving": true
+      },
+      {
+        "h_large": 0.00125,
+        "h_small": 0.0001,
+        "order": null,
+        "qualifies_as_quadratic_halving": false
+      },
+      {
+        "h_large": 0.0001,
+        "h_small": 1e-05,
+        "order": null,
+        "qualifies_as_quadratic_halving": false
+      }
+    ],
+    "minimum_relative_error": 1.3406556629197292e-08,
+    "comparison_note": "All six errors reproduce within final-bit floating-point norm rounding. Non-halving pairs have no reported halving order."
+  },
+  "implementation_recomputation": {
+    "stock_native_max_absolute_difference": 1.2227712314905048e-09,
+    "stock_native_relative_l2_difference": 2.9273422751834748e-08,
+    "repeat_max_absolute_difference": 0.0,
+    "cache_full_max_absolute_difference": 2.0816681711721685e-17,
+    "jvp_primal_max_absolute_difference": 0.0
+  },
+  "saved_precision_array_checks": {
+    "archives_checked": 25,
+    "issues": [],
+    "maximum_probability_sum_absolute_error": 1.554312234475219e-14
+  },
+  "limitations": [
+    "Independent audit of saved calculations, not a second model implementation or a model rerun.",
+    "Derivative convergence concerns one reference state and one tangent direction at one parameter setting.",
+    "P8 replay concerns one specified fresh start and a finite trajectory; it is not a global basin or stability proof.",
+    "These checks do not establish global effective precision, interval certification, P6 coexistence, writable memory, channel performance or logic gates.",
+    "Raw artifact return hashes were previously checked by the root agent; this receipt binds the exact inputs read for the independent numerical audit."
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-10-25T22:15:56Z",
+  "receipt_source_commit": "0cbf774da0fa330c5e28a4be65242b3ba38bca9d",
+  "source_commit": "471b5eac00924638df3285aa223a84c3c94cedb7",
+  "evidence": "adapted exploratory finite-precision follow-up after observing the failed120-step pilot",
+  "raw_directory": "audits/p6-followup/20261025T220342Z-followup",
+  "data_root": "/data2/shrimp-memory-data",
+  "verified_remote_manifests": [
+    {
+      "manifest": {
+        "path": "audits/p6-followup/20261025T220342Z-followup/map-manifest.json",
+        "bytes": 3873,
+        "sha256": "36845936db3dd02cf212245aaada6d32a42a2a0edcf69ba04633e1d20488a161"
+      },
+      "verified_entries": 22,
+      "payload_bytes": 20977415
+    },
+    {
+      "manifest": {
+        "path": "audits/p6-followup/20261025T220342Z-followup/hold-manifest.json",
+        "bytes": 6615,
+        "sha256": "cd06b83bd1d22c87c477b037f9fc3c4fc7247bfd3f451ae15a71587711afdd36"
+      },
+      "verified_entries": 41,
+      "payload_bytes": 3723243
+    }
+  ],
+  "remote_copy_retained": true,
+  "started_utc": "2026-10-25T22:06:15Z",
+  "finished_utc": "2026-10-25T22:08:37Z",
+  "exits": {
+    "map-exit-status.txt": 0,
+    "hold-exit-status.txt": 0,
+    "exit-status.txt": 0
+  },
+  "inputs": {
+    "path": "audits/p6-followup/20261025T220342Z-followup/seed-manifest.json",
+    "bytes": 3011,
+    "sha256": "049759c518e8c4d394df16d9848d5b5a37636af33a50b3b67a3f5892cce7ea68"
+  },
+  "map_diagnostic": {
+    "status": "passed",
+    "evidence": "exploratory numerical validation",
+    "scope": "one hash-bound external state and one tangent direction; no basin, storage, or global precision claim",
+    "implementation": {
+      "stock_native_max_absolute_difference": 9.29707468649843e-09,
+      "stock_native_relative_l2_difference": 3.1938033303369003e-07,
+      "repeat_max_absolute_difference": 0.0,
+      "cache_full_max_absolute_difference": 1.5265566588595902e-16,
+      "cache_tolerance": 1e-10,
+      "passed": true
+    },
+    "derivative": {
+      "passed": true,
+      "orders": [
+        {
+          "h_large": 0.01,
+          "h_small": 0.005,
+          "order": 2.0009861861669713,
+          "qualifies": true
+        },
+        {
+          "h_large": 0.005,
+          "h_small": 0.0025,
+          "order": 2.0002492942907124,
+          "qualifies": true
+        },
+        {
+          "h_large": 0.0025,
+          "h_small": 0.00125,
+          "order": 2.0000625181245737,
+          "qualifies": true
+        },
+        {
+          "h_large": 0.00125,
+          "h_small": 0.0001,
+          "order": null,
+          "qualifies": false
+        },
+        {
+          "h_large": 0.0001,
+          "h_small": 1e-05,
+          "order": null,
+          "qualifies": false
+        }
+      ],
+      "minimum_relative_error": 3.375807041193375e-09,
+      "relative_tolerance": 1e-06,
+      "required_consecutive_quadratic_halvings": 2,
+      "observed_longest_run": 3,
+      "rows": [
+        {
+          "h": 0.01,
+          "absolute_error": 0.001072758713331932,
+          "relative_error": 0.003515880417907081
+        },
+        {
+          "h": 0.005,
+          "absolute_error": 0.0002680064139793099,
+          "relative_error": 0.0008783694702946639
+        },
+        {
+          "h": 0.0025,
+          "absolute_error": 6.699002677646355e-05,
+          "relative_error": 0.00021955442581016082
+        },
+        {
+          "h": 0.00125,
+          "absolute_error": 1.67467809690011e-05,
+          "relative_error": 5.488622794683509e-05
+        },
+        {
+          "h": 0.0001,
+          "absolute_error": 1.0717622378111079e-07,
+          "relative_error": 3.512614549518366e-07
+        },
+        {
+          "h": 1e-05,
+          "absolute_error": 1.0300197923464157e-09,
+          "relative_error": 3.375807041193375e-09
+        }
+      ],
+      "jvp_primal_max_absolute_difference": 0.0
+    },
+    "dtype_observations": {
+      "rotary": {
+        "input": "torch.float64",
+        "inverse_frequency": "torch.float64",
+        "angles": "torch.float64",
+        "cos": "torch.float64",
+        "sin": "torch.float64"
+      },
+      "norm": {
+        "input": "torch.float64",
+        "reduction": "torch.float64",
+        "weight": "torch.float64",
+        "output": "torch.float64"
+      }
+    },
+    "model_calls": 19,
+    "elapsed_seconds": 23.44357624999975,
+    "peak_rss_bytes": 5612118016,
+    "utc": "2026-10-25T22:06:38Z"
+  },
+  "common_hold": {
+    "alpha": 0.07293697809562831,
+    "log10_temperature": -0.15395151820007266
+  },
+  "continued_hold": {
+    "status": "passed",
+    "additional_steps_per_seed": 120,
+    "total_steps_from_original_seed": 240,
+    "rows": [
+      {
+        "label": "ad",
+        "completed_steps": 120,
+        "status": "passed",
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            8.500750310449194e-15,
+            2.8052153574478594e-14,
+            2.3938301507609485e-14,
+            6.563289079548334e-15,
+            9.677183725307605e-15,
+            1.1393500742551817e-14
+          ],
+          "maximum_l2_residual": 2.8052153574478594e-14,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.2925316216211745,
+                0.459499483016088,
+                0.43030568588956297,
+                0.28050123550887623,
+                0.48244460473660733,
+                0.46215891591692515
+              ],
+              "maximum_l2_gap": 0.48244460473660733,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.42880393433042996,
+                0.2895782226579991,
+                0.4507506037991507,
+                0.46378481887717904,
+                0.28349162781958565,
+                0.49082699411470226
+              ],
+              "maximum_l2_gap": 0.49082699411470226,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.02550672450654483,
+                0.04523115535306974,
+                0.11840896164916322,
+                0.02550672450654483,
+                0.04523115535306974,
+                0.11840896164916322
+              ],
+              "maximum_l2_gap": 0.11840896164916322,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "trajectory": {
+          "path": "ad-final-120.npz",
+          "bytes": 833527,
+          "sha256": "d636197886d62350b68c90e039b0395e1a69dfeaded62cd94921cec70d9d3968"
+        },
+        "last_six_top_token_ids": [
+          785,
+          3405,
+          271,
+          785,
+          13885,
+          271
+        ]
+      },
+      {
+        "label": "td",
+        "completed_steps": 120,
+        "status": "passed",
+        "cycle_gate": {
+          "passed": true,
+          "lag_six_phase_l2_residuals": [
+            1.89738259742895e-12,
+            5.350507768794598e-13,
+            5.537222850032231e-13,
+            4.058336435672496e-13,
+            1.1414317260381255e-12,
+            2.446578215222407e-12
+          ],
+          "maximum_l2_residual": 2.446578215222407e-12,
+          "closure_tolerance": 1e-08,
+          "proper_divisors": [
+            {
+              "divisor": 1,
+              "phase_l2_gaps": [
+                0.29342516496994214,
+                0.4650295469076499,
+                0.43385300530778975,
+                0.2752799267276376,
+                0.4682253340388068,
+                0.4539326103744863
+              ],
+              "maximum_l2_gap": 0.4682253340388068,
+              "excluded": true
+            },
+            {
+              "divisor": 2,
+              "phase_l2_gaps": [
+                0.43251967804103214,
+                0.2894247199991806,
+                0.4495786574609355,
+                0.45530403898365557,
+                0.27926942368741425,
+                0.4835040638769246
+              ],
+              "maximum_l2_gap": 0.4835040638769246,
+              "excluded": true
+            },
+            {
+              "divisor": 3,
+              "phase_l2_gaps": [
+                0.02718288206511113,
+                0.06529638404042651,
+                0.11471224697028484,
+                0.02718288206511113,
+                0.06529638404042651,
+                0.11471224697028484
+              ],
+              "maximum_l2_gap": 0.11471224697028484,
+              "excluded": true
+            }
+          ],
+          "divisor_separation": 0.0001
+        },
+        "trajectory": {
+          "path": "td-final-120.npz",
+          "bytes": 833280,
+          "sha256": "cfa4c6c15f3bb73c1bb621613716679b9b61113bdcf574e55fbce77debe778ab"
+        },
+        "last_six_top_token_ids": [
+          785,
+          3405,
+          271,
+          785,
+          13885,
+          271
+        ]
+      }
+    ],
+    "separation": {
+      "passed": true,
+      "minimum_over_shifts_of_maximum_l2_distance": 0.01538034045850213,
+      "best_shift": 0,
+      "required_separation": 0.001,
+      "all_shifts": [
+        {
+          "shift": 0,
+          "phase_l2_distances": [
+            0.0052986181281807765,
+            0.008237504234007592,
+            0.007946303719901168,
+            0.005085587984228441,
+            0.014178676289593807,
+            0.01538034045850213
+          ],
+          "maximum_l2_distance": 0.01538034045850213
+        },
+        {
+          "shift": 1,
+          "phase_l2_distances": [
+            0.2944448582092395,
+            0.4635806998585782,
+            0.4299769814242288,
+            0.277300064610207,
+            0.4734432308807396,
+            0.46200561781218236
+          ],
+          "maximum_l2_distance": 0.4734432308807396
+        },
+        {
+          "shift": 2,
+          "phase_l2_distances": [
+            0.43265885026831563,
+            0.2874775925892824,
+            0.44535616185357985,
+            0.45570373634443584,
+            0.2825152858277596,
+            0.4922609635947365
+          ],
+          "maximum_l2_distance": 0.4922609635947365
+        },
+        {
+          "shift": 3,
+          "phase_l2_distances": [
+            0.025803152031222312,
+            0.05769340257355359,
+            0.11654945080911931,
+            0.026898396210878563,
+            0.05302972592666374,
+            0.11561866197075842
+          ],
+          "maximum_l2_distance": 0.11654945080911931
+        },
+        {
+          "shift": 4,
+          "phase_l2_distances": [
+            0.28020938512579363,
+            0.4820346016815328,
+            0.4286634935941897,
+            0.2915105158315653,
+            0.4549121792874451,
+            0.4634079293002684
+          ],
+          "maximum_l2_distance": 0.4820346016815328
+        },
+        {
+          "shift": 5,
+          "phase_l2_distances": [
+            0.45408874960847057,
+            0.29150132614858054,
+            0.4609610841010435,
+            0.4341731132336261,
+            0.2784478076322636,
+            0.47737859331886023
+          ],
+          "maximum_l2_distance": 0.47737859331886023
+        }
+      ]
+    },
+    "elapsed_seconds": 116.35474709600021,
+    "peak_rss_bytes": 5470924800
+  },
+  "raw_results": [
+    {
+      "path": "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/result.json",
+      "bytes": 2756,
+      "sha256": "afe4fc9423a54c0b3080f9f710701f9720c52e2b137d09278a4686128c7c2f6c"
+    },
+    {
+      "path": "audits/p6-followup/20261025T220342Z-followup/continued-hold/results.json",
+      "bytes": 12218,
+      "sha256": "8d9b779f6ec6652af1ec803026e7a8f60018de7f91e660f4e1604740177ffec8"
+    }
+  ],
+  "independent_saved_array_audit": "docs/receipts/p6-followup-independent-audit.json",
+  "limits": [
+    "Original120-step pilot failed and remains unchanged. This is an outcome-informed additional fixed segment, not confirmatory replication.",
+    "Two numerical cycles from supplied seeds do not establish asymptotic stability, basin geometry, writable bits, gates or a communication channel.",
+    "The map diagnostic covers one state and tangent at this hold, not all states or controls."
+  ]
+}

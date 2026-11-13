@@ -1,0 +1,797 @@
+{
+  "recorded_at_utc": "2026-10-25T21:57:54Z",
+  "repository_commit_at_audit": "ce33d3351296540b4f561618405ba78aa255c5f7",
+  "audit_status": "passed: recorded failure and rowwise diagnostics reproduced",
+  "experiment_status": "failed",
+  "kind": "Independent saved-array recomputation; no model execution",
+  "auditor": "Codex paper_draft subagent",
+  "data_root": "/data2/shrimp-memory-data",
+  "raw_directory": "audits/qwen-validation/20261025T214011Z-JbM9BT/p6-hold-01",
+  "input_files": {
+    "p6-hold-01/results.json": {
+      "bytes": 9901,
+      "sha256": "2a06e58967e9304ca5e326d65adeac781e23e13f46a9ab6e9dafe5e9a02abb26"
+    },
+    "p6-hold-01/metadata.json": {
+      "bytes": 6335,
+      "sha256": "5b9d2c8b2790c1fa909e767ae68068203e713f4c888b9c226b715a21322238d4"
+    },
+    "p6-hold-01/events.jsonl": {
+      "bytes": 79356,
+      "sha256": "41762e40bbd372b175d13814770569217426ad1cf0da85e1f0e5c608959d3fbb"
+    },
+    "p6-hold-01/ad-final-120.npz": {
+      "bytes": 833490,
+      "sha256": "c8be24184714a01bfd084f39f33050f8e3b1eb6a55ad057067c52512fe9128e4"
+    },
+    "p6-hold-01/ad-block-012.npz": {
+      "bytes": 90670,
+      "sha256": "8702fce249ef349968c68059d178956b86b52c3afa52d24ab6e465ec654a7b20"
+    },
+    "p6-hold-01/ad-block-024.npz": {
+      "bytes": 90641,
+      "sha256": "d0ff7a18798034593ba7450223b503b69d94f91bc818ee7c3151ff50f4734341"
+    },
+    "p6-hold-01/ad-block-036.npz": {
+      "bytes": 90663,
+      "sha256": "96cba2a8a374de152f2f5bbbc97f9f9936df8b6caf6fe6555c82582ef24aff65"
+    },
+    "p6-hold-01/ad-block-048.npz": {
+      "bytes": 90666,
+      "sha256": "0f207481c6fae3e71ef7ddca840e188f559bd932544f4538840d33d26589dab3"
+    },
+    "p6-hold-01/ad-block-060.npz": {
+      "bytes": 90677,
+      "sha256": "b8f68902f934a55539546d27679cb9bb49762d389b6f1e9de57b464c70c92400"
+    },
+    "p6-hold-01/ad-block-072.npz": {
+      "bytes": 90668,
+      "sha256": "450bfece25e865d4d87265347db82b1cad7babd017b1c47e6eaedc8b1dd943d5"
+    },
+    "p6-hold-01/ad-block-084.npz": {
+      "bytes": 90658,
+      "sha256": "d6d5d60bb1033a0b1e6fc96ab55e160b642b73d4b1f82aca6074484665839c45"
+    },
+    "p6-hold-01/ad-block-096.npz": {
+      "bytes": 90657,
+      "sha256": "b4761686fed0391e5cc98597181d77c8a18f8eb02cd67da5744d8c38d90cb93e"
+    },
+    "p6-hold-01/ad-block-108.npz": {
+      "bytes": 90665,
+      "sha256": "4e435935e095350a84f4463b229956ae7f05bcb4e66aa6d0db66b31d7907769c"
+    },
+    "p6-hold-01/ad-block-120.npz": {
+      "bytes": 90685,
+      "sha256": "ead6b90616f8b49386308a10c9f62422ae8cd7cae9e6522167fcab55951c3687"
+    },
+    "p6-hold-01/td-final-120.npz": {
+      "bytes": 833342,
+      "sha256": "8eb9e72aee97cfef68f5b2b05a00a69ec8d48dca2024259806944d5fca3c5034"
+    },
+    "p6-hold-01/td-block-012.npz": {
+      "bytes": 90649,
+      "sha256": "f8cbdffde0533cdfd32d6d5090ddc2f01a4472cecf5b60e28d199a5f947579d7"
+    },
+    "p6-hold-01/td-block-024.npz": {
+      "bytes": 90642,
+      "sha256": "6ed98fe95164b519debfbdb2c1bf66a792adc8a432ec14854539a51253a325fb"
+    },
+    "p6-hold-01/td-block-036.npz": {
+      "bytes": 90659,
+      "sha256": "26da484654f9316bcbe3088281f0d6a6197fa21fcfdbb338eb9c931f2be78c8e"
+    },
+    "p6-hold-01/td-block-048.npz": {
+      "bytes": 90666,
+      "sha256": "35439ebd39d4fc00543f0c9d6209aa23993f02ac520738cdbfe564ea5e5661ed"
+    },
+    "p6-hold-01/td-block-060.npz": {
+      "bytes": 90646,
+      "sha256": "a10d5d6de46e68ae914800ac313fd60c9e83ba17fdb37f1a1618dd6d4a1bde09"
+    },
+    "p6-hold-01/td-block-072.npz": {
+      "bytes": 90642,
+      "sha256": "1bbee2753e5fc0208ac3f62ab806a0955dc0c63d7709d685827257fe3a0a605b"
+    },
+    "p6-hold-01/td-block-084.npz": {
+      "bytes": 90631,
+      "sha256": "7ee48bd793456462a01759139fc90c849ce42cded8734729852dd444f4550b1e"
+    },
+    "p6-hold-01/td-block-096.npz": {
+      "bytes": 90645,
+      "sha256": "d9eb9b2ab30534cc88a73f2f410d0609eb196176c24f31a6a4605d45b402ae67"
+    },
+    "p6-hold-01/td-block-108.npz": {
+      "bytes": 90648,
+      "sha256": "6d05392fbed4760859d7f4e22413bbe8aee7b696270a4a38a85332c3f1bc858b"
+    },
+    "p6-hold-01/td-block-120.npz": {
+      "bytes": 90630,
+      "sha256": "9366f496998e903f830fcb708465a1d948fb91df07362f84f96c72bfabedf875"
+    },
+    "p6-exit-status.txt": {
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    }
+  },
+  "source_commit": "ce33d3351296540b4f561618405ba78aa255c5f7",
+  "source_script_sha256": "b0bf92d204078ab4426a6db75fefec3c8ddfdcafd0ff5a2720c7a4f60e458297",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "hold": {
+    "alpha": 0.07293697809562831,
+    "log10_temperature": -0.15395151820007266
+  },
+  "exit_status": 1,
+  "rows": [
+    {
+      "label": "ad",
+      "completed_steps": 120,
+      "finite_float64_states": true,
+      "initial_seed_hash_matches": true,
+      "all_six_final_lag6_l2_residuals": [
+        9.775118413911225e-15,
+        2.1142107510710325e-14,
+        1.82838823251143e-14,
+        7.596989141861762e-15,
+        1.2009895437498087e-14,
+        1.7524575842839095e-14
+      ],
+      "maximum_final_lag6_l2_residual": 2.1142107510710325e-14,
+      "closure_tolerance": 1e-08,
+      "closure_passed": true,
+      "primitive_cycle_gate_passed": true,
+      "proper_divisor_separation": 0.0001,
+      "proper_divisor_checks": [
+        {
+          "divisor": 1,
+          "all_phase_l2_gaps": [
+            0.2925316216211859,
+            0.4594994830160976,
+            0.4303056858895677,
+            0.2805012355088784,
+            0.4824446047366121,
+            0.4621589159169288
+          ],
+          "minimum_l2_gap": 0.2805012355088784,
+          "maximum_l2_gap": 0.4824446047366121,
+          "excluded_by_recorded_maximum_gap_rule": true,
+          "matches_recorded_gaps_exactly": true
+        },
+        {
+          "divisor": 2,
+          "all_phase_l2_gaps": [
+            0.42880393433043484,
+            0.28957822265800676,
+            0.4507506037991571,
+            0.46378481887718254,
+            0.28349162781959164,
+            0.49082699411471026
+          ],
+          "minimum_l2_gap": 0.28349162781959164,
+          "maximum_l2_gap": 0.49082699411471026,
+          "excluded_by_recorded_maximum_gap_rule": true,
+          "matches_recorded_gaps_exactly": true
+        },
+        {
+          "divisor": 3,
+          "all_phase_l2_gaps": [
+            0.02550672450654992,
+            0.0452311553530911,
+            0.11840896164917845,
+            0.02550672450654992,
+            0.0452311553530911,
+            0.11840896164917845
+          ],
+          "minimum_l2_gap": 0.02550672450654992,
+          "maximum_l2_gap": 0.11840896164917845,
+          "excluded_by_recorded_maximum_gap_rule": true,
+          "matches_recorded_gaps_exactly": true
+        }
+      ],
+      "checkpoint_history": [
+        {
+          "completed_steps": 12,
+          "all_six_lag6_l2_residuals": [
+            4.3137997756786366e-12,
+            9.728718955631692e-12,
+            7.90907466768962e-12,
+            2.1878282412415138e-12,
+            3.4989466533960403e-12,
+            5.086427296898648e-12
+          ],
+          "maximum_l2_residual": 9.728718955631692e-12,
+          "closure_passed": true,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 24,
+          "all_six_lag6_l2_residuals": [
+            9.306733579055013e-13,
+            2.5304257916998724e-12,
+            2.061355481398698e-12,
+            5.939073512545443e-13,
+            9.762143309410856e-13,
+            1.4163646007218581e-12
+          ],
+          "maximum_l2_residual": 2.5304257916998724e-12,
+          "closure_passed": true,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 36,
+          "all_six_lag6_l2_residuals": [
+            2.578142443196035e-13,
+            7.000863000303206e-13,
+            5.712738050440855e-13,
+            1.6465846595562185e-13,
+            2.710582500108933e-13,
+            3.9487391369156877e-13
+          ],
+          "maximum_l2_residual": 7.000863000303206e-13,
+          "closure_passed": true,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 48,
+          "all_six_lag6_l2_residuals": [
+            7.420782748316902e-14,
+            1.9592145634538057e-13,
+            1.5987705353397653e-13,
+            4.551436174461891e-14,
+            7.719841181737348e-14,
+            1.1375262866139005e-13
+          ],
+          "maximum_l2_residual": 1.9592145634538057e-13,
+          "closure_passed": true,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 60,
+          "all_six_lag6_l2_residuals": [
+            2.519272992743699e-14,
+            6.782814368520799e-14,
+            5.557681067855985e-14,
+            1.746151849592737e-14,
+            3.150807417844713e-14,
+            4.5128445251659e-14
+          ],
+          "maximum_l2_residual": 6.782814368520799e-14,
+          "closure_passed": true,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 72,
+          "all_six_lag6_l2_residuals": [
+            3.348075659512188e-15,
+            5.071735594204185e-15,
+            6.551263588533376e-15,
+            4.099441477498613e-15,
+            1.3470666516369323e-14,
+            2.0780237041502252e-14
+          ],
+          "maximum_l2_residual": 2.0780237041502252e-14,
+          "closure_passed": true,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 84,
+          "all_six_lag6_l2_residuals": [
+            2.1621734059626008e-15,
+            6.0708788268569e-15,
+            5.776316636573752e-15,
+            1.965331887731033e-15,
+            7.158789274242831e-15,
+            1.084549630681191e-14
+          ],
+          "maximum_l2_residual": 1.084549630681191e-14,
+          "closure_passed": true,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 96,
+          "all_six_lag6_l2_residuals": [
+            7.917302703652791e-15,
+            1.7118402317723046e-14,
+            1.6897667503952537e-14,
+            6.9139068337721926e-15,
+            1.0912584793408939e-14,
+            1.499432461353264e-14
+          ],
+          "maximum_l2_residual": 1.7118402317723046e-14,
+          "closure_passed": true,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 108,
+          "all_six_lag6_l2_residuals": [
+            2.81558765096908e-15,
+            8.977318598837008e-16,
+            3.065229096435784e-15,
+            2.5270359918615438e-15,
+            7.608369174922164e-15,
+            1.2277435675880922e-14
+          ],
+          "maximum_l2_residual": 1.2277435675880922e-14,
+          "closure_passed": true,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 120,
+          "all_six_lag6_l2_residuals": [
+            9.775118413911225e-15,
+            2.1142107510710325e-14,
+            1.82838823251143e-14,
+            7.596989141861762e-15,
+            1.2009895437498087e-14,
+            1.7524575842839095e-14
+          ],
+          "maximum_l2_residual": 2.1142107510710325e-14,
+          "closure_passed": true,
+          "matches_progress_event_exactly": true
+        }
+      ],
+      "consecutive_checkpoint_max_residual_ratios": [
+        0.2600985600714755,
+        0.2766673902576773,
+        0.2798532928538885,
+        0.3462006915957025,
+        0.30636599960547084,
+        0.5219139841933133,
+        1.578388100779787,
+        0.7172068659217007,
+        1.722029588983642
+      ],
+      "checkpoint_max_residuals_strictly_decreasing": false,
+      "block_final_consistency": [
+        {
+          "completed_steps": 12,
+          "first_state_index": 0,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 24,
+          "first_state_index": 12,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 36,
+          "first_state_index": 24,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 48,
+          "first_state_index": 36,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 60,
+          "first_state_index": 48,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 72,
+          "first_state_index": 60,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 84,
+          "first_state_index": 72,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 96,
+          "first_state_index": 84,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 108,
+          "first_state_index": 96,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 120,
+          "first_state_index": 108,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        }
+      ],
+      "last_six_top_token_ids": [
+        785,
+        3405,
+        271,
+        785,
+        13885,
+        271
+      ],
+      "interpretation": "Passes the specified finite-precision primitive period-six gate at the common hold; not a stability proof."
+    },
+    {
+      "label": "td",
+      "completed_steps": 120,
+      "finite_float64_states": true,
+      "initial_seed_hash_matches": true,
+      "all_six_final_lag6_l2_residuals": [
+        2.495308253784093e-08,
+        7.070049180969537e-09,
+        7.370982661632178e-09,
+        5.4092283187466786e-09,
+        1.5267183774709144e-08,
+        3.252044228404966e-08
+      ],
+      "maximum_final_lag6_l2_residual": 3.252044228404966e-08,
+      "closure_tolerance": 1e-08,
+      "closure_passed": false,
+      "primitive_cycle_gate_passed": false,
+      "proper_divisor_separation": 0.0001,
+      "proper_divisor_checks": [
+        {
+          "divisor": 1,
+          "all_phase_l2_gaps": [
+            0.2934251693408538,
+            0.4650295483722218,
+            0.43385300658169224,
+            0.27527992459808664,
+            0.46822532301349407,
+            0.45393260263077734
+          ],
+          "minimum_l2_gap": 0.27527992459808664,
+          "maximum_l2_gap": 0.46822532301349407,
+          "excluded_by_recorded_maximum_gap_rule": true,
+          "matches_recorded_gaps_exactly": true
+        },
+        {
+          "divisor": 2,
+          "all_phase_l2_gaps": [
+            0.43251967965244376,
+            0.28942471935211495,
+            0.4495786565502217,
+            0.4553040307666495,
+            0.2792694263473282,
+            0.4835040556138
+          ],
+          "minimum_l2_gap": 0.2792694263473282,
+          "maximum_l2_gap": 0.4835040556138,
+          "excluded_by_recorded_maximum_gap_rule": true,
+          "matches_recorded_gaps_exactly": true
+        },
+        {
+          "divisor": 3,
+          "all_phase_l2_gaps": [
+            0.02718288276352644,
+            0.06529639077918971,
+            0.11471223980004859,
+            0.02718288276352644,
+            0.06529639077918971,
+            0.11471223980004859
+          ],
+          "minimum_l2_gap": 0.02718288276352644,
+          "maximum_l2_gap": 0.11471223980004859,
+          "excluded_by_recorded_maximum_gap_rule": true,
+          "matches_recorded_gaps_exactly": true
+        }
+      ],
+      "checkpoint_history": [
+        {
+          "completed_steps": 12,
+          "all_six_lag6_l2_residuals": [
+            7.873226072823523e-05,
+            2.8710652032549584e-05,
+            3.722402143382104e-05,
+            2.8253975326907178e-05,
+            7.915545577574688e-05,
+            0.0001684323760981892
+          ],
+          "maximum_l2_residual": 0.0001684323760981892,
+          "closure_passed": false,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 24,
+          "all_six_lag6_l2_residuals": [
+            4.9480377514472374e-05,
+            1.404829749958046e-05,
+            1.4671649794425287e-05,
+            1.0769555033369845e-05,
+            3.0393994240323797e-05,
+            6.472441823161868e-05
+          ],
+          "maximum_l2_residual": 6.472441823161868e-05,
+          "closure_passed": false,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 36,
+          "all_six_lag6_l2_residuals": [
+            1.9173773113394288e-05,
+            5.436917959518155e-06,
+            5.672155248934763e-06,
+            4.162941443134188e-06,
+            1.1749272107538804e-05,
+            2.502439515566397e-05
+          ],
+          "maximum_l2_residual": 2.502439515566397e-05,
+          "closure_passed": false,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 48,
+          "all_six_lag6_l2_residuals": [
+            7.4242463089713705e-06,
+            2.1041912611279258e-06,
+            2.1943285924576954e-06,
+            1.6103783648580657e-06,
+            4.54513299262136e-06,
+            9.681145801666992e-06
+          ],
+          "maximum_l2_residual": 9.681145801666992e-06,
+          "closure_passed": false,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 60,
+          "all_six_lag6_l2_residuals": [
+            2.8738401910643628e-06,
+            8.14352872497772e-07,
+            8.491006100963805e-07,
+            6.231251249937265e-07,
+            1.7587214318876311e-06,
+            3.7461728660745197e-06
+          ],
+          "maximum_l2_residual": 3.7461728660745197e-06,
+          "closure_passed": false,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 72,
+          "all_six_lag6_l2_residuals": [
+            1.1122915198656247e-06,
+            3.1516392190872824e-07,
+            3.285911316991568e-07,
+            2.4113930090727976e-07,
+            6.805985306485727e-07,
+            1.4497257631388463e-06
+          ],
+          "maximum_l2_residual": 1.4497257631388463e-06,
+          "closure_passed": false,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 84,
+          "all_six_lag6_l2_residuals": [
+            4.304803982914519e-07,
+            1.2197161152990378e-07,
+            1.2716498139018488e-07,
+            9.332073366440934e-08,
+            2.6339142281137286e-07,
+            5.610454689760431e-07
+          ],
+          "maximum_l2_residual": 5.610454689760431e-07,
+          "closure_passed": false,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 96,
+          "all_six_lag6_l2_residuals": [
+            1.6660177601306192e-07,
+            4.7204152157007886e-08,
+            4.921357510001857e-08,
+            3.611561115622999e-08,
+            1.0193389623812206e-07,
+            2.1712791997867114e-07
+          ],
+          "maximum_l2_residual": 2.1712791997867114e-07,
+          "closure_passed": false,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 108,
+          "all_six_lag6_l2_residuals": [
+            6.447659859881033e-08,
+            1.8268406500094504e-08,
+            1.904599074966523e-08,
+            1.3976980977075625e-08,
+            3.944909715028949e-08,
+            8.403000328293879e-08
+          ],
+          "maximum_l2_residual": 8.403000328293879e-08,
+          "closure_passed": false,
+          "matches_progress_event_exactly": true
+        },
+        {
+          "completed_steps": 120,
+          "all_six_lag6_l2_residuals": [
+            2.495308253784093e-08,
+            7.070049180969537e-09,
+            7.370982661632178e-09,
+            5.4092283187466786e-09,
+            1.5267183774709144e-08,
+            3.252044228404966e-08
+          ],
+          "maximum_l2_residual": 3.252044228404966e-08,
+          "closure_passed": false,
+          "matches_progress_event_exactly": true
+        }
+      ],
+      "consecutive_checkpoint_max_residual_ratios": [
+        0.38427539723055965,
+        0.38662989702144973,
+        0.38686832354770345,
+        0.3869555260111327,
+        0.3869884853065956,
+        0.38700110271980415,
+        0.3870059237354657,
+        0.3870069003156904,
+        0.3870098894861345
+      ],
+      "checkpoint_max_residuals_strictly_decreasing": true,
+      "block_final_consistency": [
+        {
+          "completed_steps": 12,
+          "first_state_index": 0,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 24,
+          "first_state_index": 12,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 36,
+          "first_state_index": 24,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 48,
+          "first_state_index": 36,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 60,
+          "first_state_index": 48,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 72,
+          "first_state_index": 60,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 84,
+          "first_state_index": 72,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 96,
+          "first_state_index": 84,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 108,
+          "first_state_index": 96,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        },
+        {
+          "completed_steps": 120,
+          "first_state_index": 108,
+          "states_match_final_exactly": true,
+          "tokens_match_final_exactly": true
+        }
+      ],
+      "last_six_top_token_ids": [
+        785,
+        3405,
+        271,
+        785,
+        13885,
+        271
+      ],
+      "interpretation": "Closure fails after the specified 120 steps despite declining checkpoint residuals; terminal states are not a qualified cycle."
+    }
+  ],
+  "descriptive_terminal_block_comparison": {
+    "status": "descriptive only; not separation of two qualified cycles",
+    "best_shift": 0,
+    "minimum_over_shifts_of_maximum_l2_distance": 0.015380350282263186,
+    "all_shifts": [
+      {
+        "shift": 0,
+        "all_phase_l2_distances": [
+          0.0052986101716774115,
+          0.008237506023866026,
+          0.007946306500836062,
+          0.005085590044834045,
+          0.014178682080736924,
+          0.015380350282263186
+        ],
+        "maximum_l2_distance": 0.015380350282263186
+      },
+      {
+        "shift": 1,
+        "all_phase_l2_distances": [
+          0.29444485842160084,
+          0.4635807013062034,
+          0.4299769813079056,
+          0.27730006330164003,
+          0.47344322235854996,
+          0.462005618102325
+        ],
+        "maximum_l2_distance": 0.47344322235854996
+      },
+      {
+        "shift": 2,
+        "all_phase_l2_distances": [
+          0.43265885164757695,
+          0.2874775917182001,
+          0.44535615941945234,
+          0.4557037282885065,
+          0.2825152899212032,
+          0.492260963622111
+        ],
+        "maximum_l2_distance": 0.492260963622111
+      },
+      {
+        "shift": 3,
+        "all_phase_l2_distances": [
+          0.02580315223396173,
+          0.05769340747434076,
+          0.11654944410573834,
+          0.026898395974897214,
+          0.05302972798757993,
+          0.11561866060961834
+        ],
+        "maximum_l2_distance": 0.11654944410573834
+      },
+      {
+        "shift": 4,
+        "all_phase_l2_distances": [
+          0.2802093837750957,
+          0.48203459336174165,
+          0.42866349383741076,
+          0.29151051605260575,
+          0.4549121807620043,
+          0.46340792916111817
+        ],
+        "maximum_l2_distance": 0.48203459336174165
+      },
+      {
+        "shift": 5,
+        "all_phase_l2_distances": [
+          0.4540887415478894,
+          0.2915013303450554,
+          0.46096108412129827,
+          0.43417311461790326,
+          0.2784478067819728,
+          0.47737859103608105
+        ],
+        "maximum_l2_distance": 0.47737859103608105
+      }
+    ],
+    "same_last_six_top_token_ids": true,
+    "qualified_cycle_separation_gate": "not evaluated because the td primitive-cycle gate failed"
+  },
+  "conclusion": "The ad row passes its finite-precision cycle gate. The td row misses closure at 120 steps; its maximum residual falls at every saved 12-step checkpoint. This trend does not change the failed verdict or establish eventual convergence.",
+  "limitations": [
+    "Both final archives contain the initial state at index zero; checkpoint residuals here use only the requested post-update states.",
+    "Proper-divisor separation in the td terminal block does not establish primitive period six while lag-six closure fails.",
+    "No numerical coexistence qualification for two accepted cycles, no coexistence certification, and no write/hold/read memory claim.",
+    "Declining finite-time residuals do not guarantee later convergence or justify extrapolated success.",
+    "Independent arithmetic audit of saved data, not an independent model implementation, stability analysis or basin study."
+  ]
+}

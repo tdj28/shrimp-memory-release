@@ -1,0 +1,353 @@
+{
+  "utc": "2026-10-28T22:37:51Z",
+  "source_commit": "3a0c04011bb4230bdab196f43ec8147682906e71",
+  "handoff": {
+    "path": "/tmp/public-loop-fraction-final-audits-handoff.json",
+    "bytes": 3276,
+    "sha256": "0a02b1898dc4d12e8f39fc58ff573b034d7bce9c3f90863300ca4adfc3dac6bd"
+  },
+  "verified_unique_bindings": 817,
+  "runs": [
+    {
+      "fraction": 0.25,
+      "audit": {
+        "path": "/data2/shrimp-memory-data/audits/public-loop-fraction/20261028T214537Z-public-loop-fraction-bit0/independent-review.json",
+        "bytes": 877804,
+        "sha256": "47e100520b53939a559703de37a122e2c40d401de487b1ed669bd79062d5bf09"
+      },
+      "model_calls": 3864,
+      "seconds": 2272.3110953600262,
+      "peak_rss_bytes": 5476360192,
+      "verified_return_files": 401,
+      "comparisons": [
+        {
+          "direction": 0,
+          "middle_control_history_comparisons": [
+            {
+              "initial_bit": 0,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 7.186219080426726e-15
+            },
+            {
+              "initial_bit": 1,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 0.013875336935207995
+            }
+          ]
+        },
+        {
+          "direction": 1,
+          "middle_control_history_comparisons": [
+            {
+              "initial_bit": 0,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 0.0154371322548376
+            },
+            {
+              "initial_bit": 1,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 2.4243392299484067e-14
+            }
+          ]
+        }
+      ],
+      "stages": [
+        {
+          "stage_id": 0,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15383863865005448
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 1,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.1535
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 2,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15383863865005448
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 3,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            0,
+            0
+          ]
+        },
+        {
+          "stage_id": 4,
+          "controls": {
+            "alpha": 0.07295219754654046,
+            "log10_temperature": -0.15395151820007266
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 5,
+          "controls": {
+            "alpha": 0.07299785589927693,
+            "log10_temperature": -0.15395151820007266
+          },
+          "qualified_periods": [
+            null,
+            null
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 6,
+          "controls": {
+            "alpha": 0.07295219754654046,
+            "log10_temperature": -0.15395151820007266
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 7,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "fraction": 0.75,
+      "audit": {
+        "path": "/data2/shrimp-memory-data/audits/public-loop-fraction/20261028T214537Z-public-loop-fraction-bit1/independent-review.json",
+        "bytes": 877744,
+        "sha256": "ede01c781a2109c99d4813596750db6c78bd89bfc2fc7a8c51f06aacdf998309"
+      },
+      "model_calls": 3864,
+      "seconds": 2272.3466939480277,
+      "peak_rss_bytes": 5476405248,
+      "verified_return_files": 401,
+      "comparisons": [
+        {
+          "direction": 0,
+          "middle_control_history_comparisons": [
+            {
+              "initial_bit": 0,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 2.3423588037945532e-14
+            },
+            {
+              "initial_bit": 1,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 0.009355557137216215
+            }
+          ]
+        },
+        {
+          "direction": 1,
+          "middle_control_history_comparisons": [
+            {
+              "initial_bit": 0,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 0.015385054511452593
+            },
+            {
+              "initial_bit": 1,
+              "outward_period": null,
+              "return_period": 6,
+              "aligned_gap": null
+            }
+          ]
+        }
+      ],
+      "stages": [
+        {
+          "stage_id": 0,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15361287955001818
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 1,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.1535
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 2,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15361287955001818
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 3,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            0,
+            0
+          ]
+        },
+        {
+          "stage_id": 4,
+          "controls": {
+            "alpha": 0.07298263644836478,
+            "log10_temperature": -0.15395151820007266
+          },
+          "qualified_periods": [
+            6,
+            null
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 5,
+          "controls": {
+            "alpha": 0.07299785589927693,
+            "log10_temperature": -0.15395151820007266
+          },
+          "qualified_periods": [
+            null,
+            null
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 6,
+          "controls": {
+            "alpha": 0.07298263644836478,
+            "log10_temperature": -0.15395151820007266
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            null,
+            null
+          ]
+        },
+        {
+          "stage_id": 7,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "readouts": [
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Finite480-update loops at two additional interior controls. Unresolved recurrence remains unresolved; no stability, fold or causal hysteresis proof."
+}

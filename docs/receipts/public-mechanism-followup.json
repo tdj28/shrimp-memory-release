@@ -1,0 +1,699 @@
+{
+  "utc": "2026-10-28T21:37:05Z",
+  "status": "independently_audited_numerical_observation",
+  "numerical_source_commit": "3489bca6aaf1926d8ec1d6d2251ba3f7885c009d",
+  "auditor_source_commit": "3489bca6aaf1926d8ec1d6d2251ba3f7885c009d",
+  "handoff": {
+    "path": "/data2/shrimp-memory-data/preparations/public-loop-fraction/public-mechanism-followup-final-audits-handoff.json",
+    "bytes": 4063,
+    "sha256": "4b89932364ed1ef1f673d56089039806ecebd15a67f62490c21e4224c5b3c628"
+  },
+  "unique_rehashed_bindings": 795,
+  "runs": [
+    {
+      "mode": "or",
+      "dwell": 240,
+      "audit": {
+        "path": "/data2/shrimp-memory-data/audits/public-mechanism-followup/20261028T205045Z-public-mechanism-followup-bit0/independent-review.json",
+        "bytes": 1499735,
+        "sha256": "b3c2fca704a8cb8202c3b3a29cc3fa44f24846084926a0e170a2abd94fdc1cf8"
+      },
+      "status": "passed",
+      "calls": 2928,
+      "seconds": 1767.223729262012,
+      "peak_rss_bytes": 5475745792,
+      "truth_table": [
+        {
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "first_expected": 0,
+          "final_expected": 0,
+          "first_actual": 0,
+          "final_actual": 0,
+          "passed": true
+        },
+        {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "first_expected": 1,
+          "final_expected": 1,
+          "first_actual": 1,
+          "final_actual": 1,
+          "passed": true
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "c": 1,
+          "first_expected": 0,
+          "final_expected": 1,
+          "first_actual": 0,
+          "final_actual": 1,
+          "passed": true
+        },
+        {
+          "a": 1,
+          "b": 0,
+          "c": 1,
+          "first_expected": 1,
+          "final_expected": 1,
+          "first_actual": 1,
+          "final_actual": 1,
+          "passed": true
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "c": 0,
+          "first_expected": 1,
+          "final_expected": 1,
+          "first_actual": 1,
+          "final_actual": 1,
+          "passed": true
+        },
+        {
+          "a": 1,
+          "b": 1,
+          "c": 0,
+          "first_expected": 1,
+          "final_expected": 1,
+          "first_actual": 1,
+          "final_actual": 1,
+          "passed": true
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "c": 1,
+          "first_expected": 1,
+          "final_expected": 1,
+          "first_actual": 1,
+          "final_actual": 1,
+          "passed": true
+        },
+        {
+          "a": 1,
+          "b": 1,
+          "c": 1,
+          "first_expected": 1,
+          "final_expected": 1,
+          "first_actual": 1,
+          "final_actual": 1,
+          "passed": true
+        }
+      ],
+      "stage_summaries": [
+        {
+          "stage_id": 0,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 120,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            1.8539187566510454e-14,
+            8.465180145313187e-14
+          ],
+          "cyclic_gap": 0.015380340457820758,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 1,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 240,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            7.106665403816306e-15,
+            4.002427673172088e-15
+          ],
+          "cyclic_gap": 0.015380340457769847,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 2,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 120,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            1.892710432843935e-14,
+            2.6906267893698256e-14
+          ],
+          "cyclic_gap": 0.015380340457769735,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 3,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 240,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            9.177110884648257e-15,
+            8.013340423431283e-15
+          ],
+          "cyclic_gap": 0.015380340457775967,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 4,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 120,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            1.8539187566510454e-14,
+            8.465180145313187e-14
+          ],
+          "cyclic_gap": 0.015380340457820758,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 5,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 240,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            7.106665403816306e-15,
+            4.002427673172088e-15
+          ],
+          "cyclic_gap": 0.015380340457769847,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 6,
+          "controls": {
+            "alpha": 0.07299785589927693,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 120,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            null,
+            null
+          ],
+          "period6_residuals": [
+            0.001097142311041847,
+            0.0005380844930287869
+          ],
+          "cyclic_gap": null,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 7,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 240,
+          "labels": [
+            1,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            1.1571117868424528e-11,
+            1.6239838349233603e-11
+          ],
+          "cyclic_gap": 1.7790149893424761e-12,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 8,
+          "controls": {
+            "alpha": 0.07299785589927693,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 120,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            null,
+            null
+          ],
+          "period6_residuals": [
+            0.0010971423098558978,
+            0.0005380844936011456
+          ],
+          "cyclic_gap": null,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 9,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 240,
+          "labels": [
+            1,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            1.1511696117784798e-11,
+            1.6146908733005656e-11
+          ],
+          "cyclic_gap": 1.739347669206229e-12,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 10,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 120,
+          "labels": [
+            1,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            3.835310533479535e-14,
+            6.347833424714271e-15
+          ],
+          "cyclic_gap": 4.232918684748646e-14,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 11,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 240,
+          "labels": [
+            1,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            7.732878299875597e-14,
+            4.198189214042022e-15
+          ],
+          "cyclic_gap": 3.8236607635450685e-14,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 12,
+          "controls": {
+            "alpha": 0.07299785589927693,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 120,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            null,
+            null
+          ],
+          "period6_residuals": [
+            0.0010971423098558978,
+            0.0005380844936011456
+          ],
+          "cyclic_gap": null,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 13,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 240,
+          "labels": [
+            1,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            1.1511696117784798e-11,
+            1.6146908733005656e-11
+          ],
+          "cyclic_gap": 1.739347669206229e-12,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 14,
+          "controls": {
+            "alpha": 0.07299785589927693,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 120,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            null,
+            null
+          ],
+          "period6_residuals": [
+            0.0005380844920319183,
+            0.000538084491370085
+          ],
+          "cyclic_gap": null,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 15,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 240,
+          "labels": [
+            1,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            1.6276332703046636e-11,
+            1.6221193468211673e-11
+          ],
+          "cyclic_gap": 1.4303207025672266e-14,
+          "diagnostics_passed": true
+        }
+      ],
+      "path_comparisons": [],
+      "returned_files": 379,
+      "fixture_payload_rows": [],
+      "fixture_payload_recovered": null
+    },
+    {
+      "mode": "hysteresis",
+      "dwell": 480,
+      "audit": {
+        "path": "/data2/shrimp-memory-data/audits/public-mechanism-followup/20261028T205045Z-public-mechanism-followup-bit1/independent-review.json",
+        "bytes": 885729,
+        "sha256": "5dfe08e08794373c8d58cff2ae1c7cc9fd344c7d65662db7983ca87a6b605731"
+      },
+      "status": "passed",
+      "calls": 3864,
+      "seconds": 2248.436211181979,
+      "peak_rss_bytes": 5476372480,
+      "truth_table": [],
+      "stage_summaries": [
+        {
+          "stage_id": 0,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15372575910003633
+          },
+          "steps": 480,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            1.2270773528942854e-14,
+            2.6659126866929625e-14
+          ],
+          "cyclic_gap": 0.012072547079512165,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 1,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.1535
+          },
+          "steps": 480,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            9.162643069768706e-15,
+            1.7286185814998e-14
+          ],
+          "cyclic_gap": 6.35698430073983e-15,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 2,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15372575910003633
+          },
+          "steps": 480,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            1.0993301188177589e-14,
+            8.881068404599699e-15
+          ],
+          "cyclic_gap": 1.4439547277949677e-14,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 3,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 480,
+          "labels": [
+            0,
+            0
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            1.2146672846664979e-14,
+            2.3909431371660472e-14
+          ],
+          "cyclic_gap": 1.9200936269424242e-14,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 4,
+          "controls": {
+            "alpha": 0.07296741699745263,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 480,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            1.937269324935833e-14,
+            6.472920383883183e-12
+          ],
+          "cyclic_gap": 0.015453784920126877,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 5,
+          "controls": {
+            "alpha": 0.07299785589927693,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 480,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            null,
+            null
+          ],
+          "period6_residuals": [
+            3.846006417049522e-05,
+            4.966319849671663e-06
+          ],
+          "cyclic_gap": null,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 6,
+          "controls": {
+            "alpha": 0.07296741699745263,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 480,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            7.348065555745608e-12,
+            7.152073831021772e-12
+          ],
+          "cyclic_gap": 1.0113281598549183e-13,
+          "diagnostics_passed": true
+        },
+        {
+          "stage_id": 7,
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "steps": 480,
+          "labels": [
+            1,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "period6_residuals": [
+            3.997097265760208e-14,
+            8.465959333047918e-14
+          ],
+          "cyclic_gap": 1.0440210454904447e-13,
+          "diagnostics_passed": true
+        }
+      ],
+      "path_comparisons": [
+        {
+          "direction": 0,
+          "middle_control_history_comparisons": [
+            {
+              "initial_bit": 0,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 9.465527803385143e-15
+            },
+            {
+              "initial_bit": 1,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 0.012072547079521958
+            }
+          ]
+        },
+        {
+          "direction": 1,
+          "middle_control_history_comparisons": [
+            {
+              "initial_bit": 0,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 0.015453784925198418
+            },
+            {
+              "initial_bit": 1,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 6.025892216102361e-12
+            }
+          ]
+        }
+      ],
+      "returned_files": 401,
+      "fixture_payload_rows": [],
+      "fixture_payload_recovered": null
+    }
+  ],
+  "scope": "Exploratory phase-zero OR composition and 480-update history loop. Finite-precision observations, not causal bifurcation, XOR, undetectability, or general gate reliability."
+}

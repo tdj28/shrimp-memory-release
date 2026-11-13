@@ -1,0 +1,100 @@
+{
+  "utc": "2026-10-26T01:55:47Z",
+  "evidence": "adapted exploratory transition refinement; readout policy specified before inspecting this cohort outcomes",
+  "source_commit": "340867ece4f09ffaf3192097e3d7c2a4a0bc2ad7",
+  "rows": [
+    {
+      "weight": 0.25925925925925924,
+      "qualified_state": "ad",
+      "nearest_reference_label": "ad"
+    },
+    {
+      "weight": 0.2962962962962963,
+      "qualified_state": "td",
+      "nearest_reference_label": "ad"
+    },
+    {
+      "weight": 0.5925925925925926,
+      "qualified_state": "ad",
+      "nearest_reference_label": "td"
+    },
+    {
+      "weight": 0.6296296296296297,
+      "qualified_state": "td",
+      "nearest_reference_label": "td"
+    },
+    {
+      "weight": 0.7037037037037037,
+      "qualified_state": "td",
+      "nearest_reference_label": "td"
+    },
+    {
+      "weight": 0.7407407407407407,
+      "qualified_state": "ad",
+      "nearest_reference_label": "td"
+    },
+    {
+      "weight": 0.8148148148148148,
+      "qualified_state": "ad",
+      "nearest_reference_label": "td"
+    },
+    {
+      "weight": 0.8518518518518519,
+      "qualified_state": "td",
+      "nearest_reference_label": "td"
+    }
+  ],
+  "qualified_state_counts": {
+    "ad": 4,
+    "td": 4,
+    "null": 0
+  },
+  "nearest_reference_disagreements": 4,
+  "policy_decision_steps": [
+    168,
+    228,
+    192,
+    240,
+    216,
+    156,
+    156,
+    228
+  ],
+  "policy_final_disagreements": 0,
+  "policy_later_losses": 0,
+  "policy_later_label_changes": 0,
+  "verified_inventory_files": 440,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-transition-thirds/20261026T011707Z-thirds/complete-audit.json",
+      "bytes": 181439,
+      "sha256": "fd03d9831b6094a1be16aa6903dfd57b84dea9161e5df0c1c524e336cbaa4176"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-transition-thirds/20261026T011707Z-thirds/readout-grid.json",
+      "bytes": 241090,
+      "sha256": "124c32ec8fffe6b548f41cc030b6c6accd402509750ce0cd10008ede6f64ae0b"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-transition-thirds/20261026T011707Z-thirds/readout-policy.json",
+      "bytes": 3680,
+      "sha256": "02dbcaf08f9cb86c2a2d19e6c8d3235af0215cd3a7bbb5724ce168da0a134a71"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-transition-thirds/20261026T011707Z-thirds/final-manifest.json",
+      "bytes": 149280,
+      "sha256": "168a4de6c419635edc55e2554c45ecf995969391ccd9e8c7bc60f4f0fe258587"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-transition-thirds/20261026T011707Z-thirds/local-return-verification.json",
+      "bytes": 389,
+      "sha256": "722c8c86cab9eb47a52e02fdf5db6b6f35b9a4e0775ac9981ba4ad012c8b4ae3"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-transition-thirds/20261026T011707Z-thirds/transfer-closeout.json",
+      "bytes": 654,
+      "sha256": "1dc323fa2d68c8f2f33be0778ca535bfcb1486960e0f3f4feef1fd27d2d19fb9"
+    }
+  ],
+  "scope": "No fractality, population accuracy, secrecy or measured online speedup claim."
+}

@@ -1,0 +1,746 @@
+{
+  "status": "independently_audited",
+  "utc": "2026-10-29T15:37:01Z",
+  "evidence": "adapted exploratory numerical observation",
+  "source_commit": "6de069d3037512a123861dd55650dc8bef98342e",
+  "head_at_acceptance": "6de069d3037512a123861dd55650dc8bef98342e",
+  "job_directory": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1",
+  "job_name": "20261029T152512Z-public-short-write0-phase1",
+  "scientific_status": "completed",
+  "outcome": "chain_qualified",
+  "model_calls": 656,
+  "elapsed_seconds": 485.51057793805376,
+  "peak_rss_bytes": 5476831232,
+  "raw_bytes": 1650613372,
+  "returned_manifest_entries": 1381,
+  "independent_assertions": 91430,
+  "geometry": {
+    "initial_reference_indices": [
+      0,
+      1
+    ],
+    "initial_phase": 1,
+    "initial_states_raw_sha256": "438665fa53756160c97404f663ab78bd9400e26a74afe376d21625be3a4a3a33",
+    "literal_stage_carry": [
+      {
+        "group_id": 0,
+        "updates": 36,
+        "initial_sha256": "438665fa53756160c97404f663ab78bd9400e26a74afe376d21625be3a4a3a33",
+        "terminal_sha256": "30727039cb75d100ce03250079c6a5732de5be8634ff9bd41b07efa0e4517d7c"
+      },
+      {
+        "group_id": 1,
+        "updates": 240,
+        "initial_sha256": "30727039cb75d100ce03250079c6a5732de5be8634ff9bd41b07efa0e4517d7c",
+        "terminal_sha256": "56d0e57da5e4a8879e4276f3566c54ce1d2dcf40756a04351593600b05773172"
+      },
+      {
+        "group_id": 2,
+        "updates": 120,
+        "initial_sha256": "56d0e57da5e4a8879e4276f3566c54ce1d2dcf40756a04351593600b05773172",
+        "terminal_sha256": "d0e7a435e88465f625ffbe6d3b12afa97794a083b6f49338f70441d17f610268"
+      },
+      {
+        "group_id": 3,
+        "updates": 240,
+        "initial_sha256": "d0e7a435e88465f625ffbe6d3b12afa97794a083b6f49338f70441d17f610268",
+        "terminal_sha256": "76ee34257846f224fb4aede2a8464205310b1d12da31fce878ccaa8fe0f19c48"
+      }
+    ]
+  },
+  "cross_phase_history": {
+    "status": "completed",
+    "state_count": 37,
+    "update_count": 36,
+    "artifact": {
+      "path": "cross-phase-history.npz",
+      "bytes": 534830,
+      "sha256": "e82e302d79e4bb15936291536bcaf0f6df1bacef140068b73ddce49aaea31408"
+    },
+    "lanes": [
+      {
+        "lane": 0,
+        "source_reference_index": 0,
+        "maximum_coordinate_gap": 0.053375175921257796,
+        "maximum_l2_difference": 0.4819527424222093,
+        "state_bytes_equal": false,
+        "token_bytes_equal": false,
+        "token_mismatch_count": 36
+      },
+      {
+        "lane": 1,
+        "source_reference_index": 1,
+        "maximum_coordinate_gap": 0.05326199193276314,
+        "maximum_l2_difference": 0.4790398664865808,
+        "state_bytes_equal": false,
+        "token_bytes_equal": false,
+        "token_mismatch_count": 36
+      }
+    ],
+    "maximum_coordinate_gap": 0.053375175921257796,
+    "maximum_l2_difference": 0.4819527424222093,
+    "state_bytes_equal": false,
+    "token_bytes_equal": false,
+    "fresh_states_array_sha256": "d0636adcde13cd4ac7388fa474fc293d43f6c95a35b92cc444f2f72118c50b0d",
+    "historical_states_array_sha256": "39733684ad397bf1eae8a58c328b7b6db6e79d14407423ebf01bb35daf71c989",
+    "fresh_tokens_array_sha256": "5ce589525eaec9902e65b60fdff0d97669d8a8cd64be48029e85a5e03618afe2",
+    "historical_tokens_array_sha256": "fcf15a17e7d58e774eea1f36b73491a3a8af404482e4bae12cb4272183b0c60d",
+    "current_reference_phase": 1,
+    "historical_reference_phase": 0,
+    "same_input": false,
+    "comparison_kind": "different_initial_phases",
+    "tolerance_applicable": false,
+    "gates_chain": false
+  },
+  "timing": {
+    "returned_invocations": 656,
+    "returned_model_forward_seconds": 355.6409157036105,
+    "prefix_seconds": 5.09555971599184,
+    "comparison_seconds": 19.360648800968193,
+    "endpoint_update_seconds": 80.40660217643017,
+    "hold_update_seconds": 250.77810501022032,
+    "by_group": [
+      {
+        "group_id": 0,
+        "seconds": 23.44600156508386
+      },
+      {
+        "group_id": 1,
+        "seconds": 126.0479704834288
+      },
+      {
+        "group_id": 2,
+        "seconds": 68.50340909929946
+      },
+      {
+        "group_id": 3,
+        "seconds": 137.6435345557984
+      }
+    ],
+    "scope": "Sum of saved forward durations for returned calls; total run elapsed includes loading, diagnostics, serialization and finalization."
+  },
+  "rows": [
+    {
+      "row_id": 0,
+      "group_id": 1,
+      "lane": 0,
+      "name": "write0-from-h0",
+      "status": "completed",
+      "requested_bit": 0,
+      "decoded_bit": 0,
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          3.7415177885238456e-14,
+          1.3161591435804782e-14,
+          2.174955390852037e-14,
+          3.254065457399244e-14,
+          1.1677806539524977e-14,
+          2.828348346961105e-14
+        ],
+        "maximum_l2_residual": 3.7415177885238456e-14,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.43030568588956886,
+              0.2805012355088799,
+              0.48244460473660705,
+              0.46215891591692243,
+              0.29253162162117674,
+              0.459499483016096
+            ],
+            "maximum_l2_gap": 0.48244460473660705,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.4507506037991599,
+              0.46378481887717643,
+              0.28349162781958726,
+              0.49082699411470126,
+              0.42880393433043584,
+              0.2895782226580036
+            ],
+            "maximum_l2_gap": 0.49082699411470126,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.11840896164917801,
+              0.025506724506547652,
+              0.045231155353071095,
+              0.11840896164917801,
+              0.025506724506547652,
+              0.045231155353071095
+            ],
+            "maximum_l2_gap": 0.11840896164917801,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 2.94037696881088e-14,
+            "best_shift": 2,
+            "by_shift": [
+              0.4908269941147038,
+              0.4824446047366048,
+              2.94037696881088e-14,
+              0.4824446047366097,
+              0.4908269941146997,
+              0.11840896164918509
+            ],
+            "tied_best_shifts": [
+              2
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.015380340458503075,
+            "best_shift": 2,
+            "by_shift": [
+              0.48203460168153434,
+              0.4773785933188576,
+              0.015380340458503075,
+              0.47344323088074197,
+              0.4922609635947339,
+              0.11654945080914329
+            ],
+            "tied_best_shifts": [
+              2
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      }
+    },
+    {
+      "row_id": 1,
+      "group_id": 1,
+      "lane": 1,
+      "name": "write0-from-h1",
+      "status": "completed",
+      "requested_bit": 0,
+      "decoded_bit": 0,
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          3.280929413665811e-14,
+          1.042282691633952e-14,
+          1.4022995078863823e-14,
+          2.0056522411991437e-14,
+          5.837590818911247e-15,
+          1.8238395432109998e-14
+        ],
+        "maximum_l2_residual": 3.280929413665811e-14,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.4303056858895652,
+              0.2805012355088746,
+              0.4824446047366052,
+              0.4621589159169251,
+              0.2925316216211821,
+              0.45949948301609406
+            ],
+            "maximum_l2_gap": 0.4824446047366052,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.4507506037991515,
+              0.46378481887717876,
+              0.2834916278195872,
+              0.4908269941147053,
+              0.4288039343304323,
+              0.2895782226580036
+            ],
+            "maximum_l2_gap": 0.4908269941147053,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.11840896164916595,
+              0.025506724506547417,
+              0.04523115535309332,
+              0.11840896164916595,
+              0.025506724506547417,
+              0.04523115535309332
+            ],
+            "maximum_l2_gap": 0.11840896164916595,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 2.174938747800139e-14,
+            "best_shift": 2,
+            "by_shift": [
+              0.4908269941147059,
+              0.4824446047366067,
+              2.174938747800139e-14,
+              0.4824446047366058,
+              0.49082699411470165,
+              0.1184089616491665
+            ],
+            "tied_best_shifts": [
+              2
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.01538034045849755,
+            "best_shift": 2,
+            "by_shift": [
+              0.48203460168153645,
+              0.4773785933188596,
+              0.01538034045849755,
+              0.473443230880738,
+              0.4922609635947359,
+              0.11654945080911926
+            ],
+            "tied_best_shifts": [
+              2
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      }
+    },
+    {
+      "row_id": 2,
+      "group_id": 3,
+      "lane": 0,
+      "name": "write1-after-h0-source",
+      "status": "completed",
+      "requested_bit": 1,
+      "decoded_bit": 1,
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          5.974755236224783e-12,
+          4.383037564085181e-12,
+          1.2375432588706558e-11,
+          2.6356821159910233e-11,
+          1.2581592312434412e-11,
+          3.566136989400562e-12
+        ],
+        "maximum_l2_residual": 2.6356821159910233e-11,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.43385300530666215,
+              0.2752799267295212,
+              0.4682253340485596,
+              0.4539326103817527,
+              0.29342516497181526,
+              0.4650295469063819
+            ],
+            "maximum_l2_gap": 0.4682253340485596,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.44957865746174,
+              0.45530403899092436,
+              0.27926942369030605,
+              0.4835040638842683,
+              0.43251967803991054,
+              0.28942472000003916
+            ],
+            "maximum_l2_gap": 0.4835040638842683,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.11471224697662691,
+              0.0271828820652045,
+              0.06529638403702095,
+              0.11471224697662691,
+              0.0271828820652045,
+              0.06529638403702095
+            ],
+            "maximum_l2_gap": 0.11471224697662691,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 0.015380340449810988,
+            "best_shift": 2,
+            "by_shift": [
+              0.49226096359474864,
+              0.47344323088827844,
+              0.015380340449810988,
+              0.4773785933208793,
+              0.48203460168889256,
+              0.11654945081504861
+            ],
+            "tied_best_shifts": [
+              2
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 1.1032796176698248e-11,
+            "best_shift": 2,
+            "by_shift": [
+              0.483504063876936,
+              0.46822533404647804,
+              1.1032796176698248e-11,
+              0.4682253340408884,
+              0.4835040638842569,
+              0.11471224697571204
+            ],
+            "tied_best_shifts": [
+              2
+            ]
+          }
+        ],
+        "reference_matches": [
+          1
+        ],
+        "decoded_bit": 1
+      }
+    },
+    {
+      "row_id": 3,
+      "group_id": 3,
+      "lane": 1,
+      "name": "write1-after-h1-source",
+      "status": "completed",
+      "requested_bit": 1,
+      "decoded_bit": 1,
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          5.978767776607539e-12,
+          4.386052054567759e-12,
+          1.2381920271008942e-11,
+          2.6383366476049633e-11,
+          1.2593887618081818e-11,
+          3.569039406155752e-12
+        ],
+        "maximum_l2_residual": 2.6383366476049633e-11,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.43385300530666154,
+              0.27527992672952306,
+              0.46822533404857114,
+              0.4539326103817618,
+              0.29342516497181886,
+              0.46502954690638143
+            ],
+            "maximum_l2_gap": 0.46822533404857114,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.44957865746174136,
+              0.45530403899093336,
+              0.27926942369031016,
+              0.4835040638842777,
+              0.43251967803991004,
+              0.2894247200000405
+            ],
+            "maximum_l2_gap": 0.4835040638842777,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.11471224697663472,
+              0.027182882065204656,
+              0.06529638403701898,
+              0.11471224697663472,
+              0.027182882065204656,
+              0.06529638403701898
+            ],
+            "maximum_l2_gap": 0.11471224697663472,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 0.01538034044979988,
+            "best_shift": 2,
+            "by_shift": [
+              0.49226096359474886,
+              0.4734432308882879,
+              0.01538034044979988,
+              0.4773785933208811,
+              0.4820346016889018,
+              0.11654945081505616
+            ],
+            "tied_best_shifts": [
+              2
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 1.1046767507037745e-11,
+            "best_shift": 2,
+            "by_shift": [
+              0.48350406387693623,
+              0.4682253340464876,
+              1.1046767507037745e-11,
+              0.46822533404089034,
+              0.48350406388426603,
+              0.11471224697571895
+            ],
+            "tied_best_shifts": [
+              2
+            ]
+          }
+        ],
+        "reference_matches": [
+          1
+        ],
+        "decoded_bit": 1
+      }
+    }
+  ],
+  "groups": [
+    {
+      "group_id": 0,
+      "name": "short-write0",
+      "status": "completed",
+      "control_name": "E0",
+      "model_calls": 41,
+      "returned_updates": 36,
+      "completed_updates": 36,
+      "comparison": {
+        "cached_vs_full": {
+          "passed": true,
+          "maximum_coordinate_gap": 1.2836953722228372e-15,
+          "maximum_probability_gap": 1.637578961322106e-14,
+          "tolerance": 1e-10
+        },
+        "cached_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 1.2212453270876722e-15,
+          "maximum_probability_gap": 1.559863349598345e-14,
+          "tolerance": 1e-10
+        },
+        "full_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 1.3183898417423734e-16,
+          "maximum_probability_gap": 2.831068712794149e-15,
+          "tolerance": 1e-10
+        }
+      },
+      "initial_state_sha256": "9ab15a914a69fd7ae69c52e52c5ab312c858ca2fda6c1f92b0520df0bd3b833b",
+      "terminal_state_sha256": "ef2f2cd066f44e6a15f43db12e60bbcfbab452b462ea070c19fa354bf124b2d1",
+      "predecessor_group_id": null
+    },
+    {
+      "group_id": 1,
+      "name": "hold-after-write0",
+      "status": "completed",
+      "control_name": "H",
+      "model_calls": 245,
+      "returned_updates": 240,
+      "completed_updates": 240,
+      "comparison": {
+        "cached_vs_full": {
+          "passed": true,
+          "maximum_coordinate_gap": 1.6924395912498724e-16,
+          "maximum_probability_gap": 2.3869795029440866e-15,
+          "tolerance": 1e-10
+        },
+        "cached_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 1.491862189340054e-16,
+          "maximum_probability_gap": 2.4980018054066022e-15,
+          "tolerance": 1e-10
+        },
+        "full_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 5.984795992119984e-17,
+          "maximum_probability_gap": 6.661338147750939e-16,
+          "tolerance": 1e-10
+        }
+      },
+      "initial_state_sha256": "ef2f2cd066f44e6a15f43db12e60bbcfbab452b462ea070c19fa354bf124b2d1",
+      "terminal_state_sha256": "073948867014fd9cf7e9e6f7b0c19b93485d49a4f37992452693b6ed3caa3d2b",
+      "predecessor_group_id": 0
+    },
+    {
+      "group_id": 2,
+      "name": "carried-write1",
+      "status": "completed",
+      "control_name": "E1",
+      "model_calls": 125,
+      "returned_updates": 120,
+      "completed_updates": 120,
+      "comparison": {
+        "cached_vs_full": {
+          "passed": true,
+          "maximum_coordinate_gap": 4.215378046623641e-16,
+          "maximum_probability_gap": 7.549516567451064e-15,
+          "tolerance": 1e-10
+        },
+        "cached_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 3.3003114130458755e-16,
+          "maximum_probability_gap": 6.772360450213455e-15,
+          "tolerance": 1e-10
+        },
+        "full_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 1.1796119636642288e-16,
+          "maximum_probability_gap": 1.4432899320127035e-15,
+          "tolerance": 1e-10
+        }
+      },
+      "initial_state_sha256": "073948867014fd9cf7e9e6f7b0c19b93485d49a4f37992452693b6ed3caa3d2b",
+      "terminal_state_sha256": "ca9e766607b06cac4609582be681400b8833263dba879251b6481db18c0cc05c",
+      "predecessor_group_id": 1
+    },
+    {
+      "group_id": 3,
+      "name": "hold-after-write1",
+      "status": "completed",
+      "control_name": "H",
+      "model_calls": 245,
+      "returned_updates": 240,
+      "completed_updates": 240,
+      "comparison": {
+        "cached_vs_full": {
+          "passed": true,
+          "maximum_coordinate_gap": 9.384854005034526e-16,
+          "maximum_probability_gap": 1.3322676295501878e-14,
+          "tolerance": 1e-10
+        },
+        "cached_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 8.829742492721948e-16,
+          "maximum_probability_gap": 1.2601031329495527e-14,
+          "tolerance": 1e-10
+        },
+        "full_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 5.898059818321144e-17,
+          "maximum_probability_gap": 7.216449660063518e-16,
+          "tolerance": 1e-10
+        }
+      },
+      "initial_state_sha256": "ca9e766607b06cac4609582be681400b8833263dba879251b6481db18c0cc05c",
+      "terminal_state_sha256": "b8e8890cccecff8d503699dc6fbbcf5a37dc60b3f8cc146421b3f203991378d1",
+      "predecessor_group_id": 2
+    }
+  ],
+  "terminal_resources": {
+    "model_calls": 656,
+    "elapsed_seconds": 485.51057793805376,
+    "peak_rss_bytes": 5476831232,
+    "final_raw_bytes": 1650613372,
+    "calls_passed": true,
+    "wall_time_passed": true,
+    "rss_passed": true,
+    "raw_passed": true,
+    "raw_size_scope": "All files including immutable result.json and manifest.json; predicted byte count verified after write."
+  },
+  "independent_audit": {
+    "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/independent-audit-20261029T153527Z/checker/independent-review.json",
+    "bytes": 399454,
+    "sha256": "12e86a73517974788b03d1f93bc74151f055f65d6411d784a82518d45147c887"
+  },
+  "root_acceptance": {
+    "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/root-acceptance-20261029T153701Z/review.json",
+    "bytes": 385484,
+    "sha256": "36f1e0784b9988d9ef2055e59ebc657e2e28b2f14491290d507eb0b90a5c9e01"
+  },
+  "result": {
+    "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/run/result.json",
+    "bytes": 2229842,
+    "sha256": "c869496e95f8fa9e87a6fdd37f7b00173a0f5d3f80ff6f3325dcf12ac18e0cc1"
+  },
+  "return_status": "verified",
+  "transfer_reservation_closed": true,
+  "transfer": {
+    "charged_bytes": 1658098602,
+    "reserved_bytes": 8589934592,
+    "overhead_reserve_bytes": 33554432,
+    "human_monthly_maximum_bytes": 7000000000000
+  },
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/job.json",
+      "bytes": 2608,
+      "sha256": "11dae83d7958f5dc842bef8a556e75015e7036720f05dc89cb6497e796caac25"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/run/manifest.json",
+      "bytes": 220064,
+      "sha256": "80cd2af11d1fb46ec04297a6761b7c0611b797e975bc8eeffc810ee62021add2"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/run/source.json",
+      "bytes": 4437,
+      "sha256": "1892504b6c8f506491fad3a9e5542a2e1b28e98e52cf9e309a4b5e4a8151643e"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/run/design.json",
+      "bytes": 4721,
+      "sha256": "2213dcf9f86d6adbba3bb667e7a48bdfffa39be2493c0ed5ec82c6f70141d951"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/final-manifest.json",
+      "bytes": 237197,
+      "sha256": "6bbee8bd3a65cd6ca2e986ab3d11deeac4270e18005d4fe93d44a1b16415088d"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/completion.json",
+      "bytes": 277,
+      "sha256": "f5bc638c55f5ba0945178833d85f6460f5342458f71515fad8088fb570b93821"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/terminal-process-check.json",
+      "bytes": 82,
+      "sha256": "db7af956fb3797de9f6ef985587defe26f1025cdaad23846da5219a64eb64739"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/transfer-account.json",
+      "bytes": 2777,
+      "sha256": "a3e349b2145b2b27f388cba5d89cf266e5fb8074eafe1845694de1027bc3c0db"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/transfer-closeout.json",
+      "bytes": 916,
+      "sha256": "a8008e68bcf090c9530f94881d7ce962d60fd40d98860fcc4603ee2820cd12f8"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/maintenance-closeout.json",
+      "bytes": 639,
+      "sha256": "47bffe412797068dcf4397d6e5ddb18715a94f8429b97dee226ac24813973659"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-short-write0-phase1/20261029T152512Z-public-short-write0-phase1/local-return-verification.json",
+      "bytes": 388,
+      "sha256": "c75fb82bca812af0a632099e04cfa3cafda435ce81a77f85f6628e9f35cc210c"
+    }
+  ],
+  "scope": "Fresh E0(36),H240,carried E1(120),H240 from both literal reference phase-one states. Finite qualification only at these starts; no minimum duration, monotonicity, general reliability, causal hysteresis or language-interface claim."
+}

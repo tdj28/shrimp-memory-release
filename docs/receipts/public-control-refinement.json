@@ -1,0 +1,675 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-26T19:35:57Z",
+  "status": "completed_independently_audited",
+  "evidence_class": "adapted exploratory finite-precision numerical observation",
+  "recorded_at_commit": "d7108f46965e67adc2fa4fef1d398d5da9ee9cad",
+  "scope": "Public controller refinement at discrete negative-axis endpoint offsets; no language transmission experiment.",
+  "design": {
+    "profile": "negative-axis-refinement",
+    "fractions": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "write0_delta_log10_temperature_per_fraction": -0.0001,
+    "write1_delta_alpha_per_fraction": -1e-05,
+    "endpoint_steps": 120,
+    "common_hold_steps": 240,
+    "groups_per_process": 5,
+    "batch_size": 2,
+    "initial_references": [
+      "ad phase0",
+      "td phase0"
+    ],
+    "independent_group_reset": true,
+    "precision": "effective float64",
+    "compute_threads_per_process": 1
+  },
+  "counts": {
+    "passed": 16,
+    "failed": 4
+  },
+  "verified_local_binding_count": 748,
+  "runs": [
+    {
+      "requested_bit": 0,
+      "source_commit": "369387d6f0de28908ee1844e517b1c96565715ec",
+      "auditor_source_commit": "d7108f46965e67adc2fa4fef1d398d5da9ee9cad",
+      "audit_status": "passed",
+      "validated_outcome_counts": {
+        "passed": 9,
+        "failed": 1,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "fraction-0",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 6.271801108441437e-14
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "fraction-0",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 9.789989124848384e-14
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "fraction-025",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.25,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 9.589547122391e-14
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "fraction-025",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.25,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 6.001516694640007e-14
+        },
+        {
+          "row_id": 4,
+          "group_id": 2,
+          "group": "fraction-050",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.5,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 7.097925210587197e-14
+        },
+        {
+          "row_id": 5,
+          "group_id": 2,
+          "group": "fraction-050",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.5,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 6.686349109148128e-14
+        },
+        {
+          "row_id": 6,
+          "group_id": 3,
+          "group": "fraction-075",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.75,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 7.071350319751139e-14
+        },
+        {
+          "row_id": 7,
+          "group_id": 3,
+          "group": "fraction-075",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.75,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 5.489736148530472e-14
+        },
+        {
+          "row_id": 8,
+          "group_id": 4,
+          "group": "fraction-100",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 1,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 7.268270168087627e-14
+        },
+        {
+          "row_id": 9,
+          "group_id": 4,
+          "group": "fraction-100",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "failed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "fraction": 1,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.6834591983148088e-11
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 1830,
+        "category_counts": {
+          "prefix": 10,
+          "comparison": 20,
+          "update": 1800
+        },
+        "completed_batch_updates": 1800,
+        "completed_row_updates": 3600,
+        "nonprefix_forward_attempts": 1820
+      },
+      "timings": {
+        "total_seconds": 1215.5801781040063,
+        "cold_initialization_seconds": 9.60420194499602,
+        "update_seconds": 1039.4429887844017,
+        "peak_rss_bytes": 5480697856
+      },
+      "raw_bytes": 130473210,
+      "nominal_equivalence_passed": true,
+      "nominal_historical_comparison": [
+        {
+          "compared_states": 361,
+          "compared_updates": 360,
+          "maximum_coordinate_gap": 3.469446951953614e-15,
+          "token_mismatch_count": 0,
+          "state_bytes_equal": false,
+          "token_bytes_equal": true,
+          "final_labels_equal": true,
+          "historical_qualified_label": "ad",
+          "passed": true
+        },
+        {
+          "compared_states": 361,
+          "compared_updates": 360,
+          "maximum_coordinate_gap": 4.409667075933044e-15,
+          "token_mismatch_count": 0,
+          "state_bytes_equal": false,
+          "token_bytes_equal": true,
+          "final_labels_equal": true,
+          "historical_qualified_label": "ad",
+          "passed": true
+        }
+      ],
+      "verified_return_inventory_files": 260,
+      "verified_producer_manifest_files": 247,
+      "transfer_reservation_closed": true,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/independent-review.json",
+          "bytes": 778335,
+          "sha256": "809c98f35ec9d501198f303587b42cbaa93d18ce8ea6e753bb52bcac04ef2ed2"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run/result.json",
+          "bytes": 3449931,
+          "sha256": "56226b9079053734ce65101ee092ba18485e70058ac30ebe9f430ad7823af6ba"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run/manifest.json",
+          "bytes": 39131,
+          "sha256": "f02b3ac04573c74a3f8f90a3c94f337cf77f3c3ea5798c32452c83c9ef0de87f"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run/source.json",
+          "bytes": 3972,
+          "sha256": "b49c5125ec68ce984b8a0747cd793d49170fb0f0cc6796e1bddada813de35812"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/final-manifest.json",
+          "bytes": 47014,
+          "sha256": "2e4d3e5367a9360b23aec4c15b4c69c458f5747cc25acd03acc34de4960c1d25"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "053b50f69f19fff85695632fa993a6dbb4f5d5cd3e2ab1741423eebf5080961a"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/transfer-closeout.json",
+          "bytes": 880,
+          "sha256": "1b48a03d652223a58baea384c4e47ff5064941c360fe560bf2c134fa1440cbca"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/completion.json",
+          "bytes": 107,
+          "sha256": "f4721def174b7407c439f359fb2167c2fc8cd3365085fd059975c4b2ff744124"
+        }
+      ]
+    },
+    {
+      "requested_bit": 1,
+      "source_commit": "369387d6f0de28908ee1844e517b1c96565715ec",
+      "auditor_source_commit": "d7108f46965e67adc2fa4fef1d398d5da9ee9cad",
+      "audit_status": "passed",
+      "validated_outcome_counts": {
+        "passed": 7,
+        "failed": 3,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "fraction-0",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.1511696117784798e-11
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "fraction-0",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.6146908733005656e-11
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "fraction-025",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.25,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.2458941724251966e-11
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "fraction-025",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.25,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.6440842669126074e-11
+        },
+        {
+          "row_id": 4,
+          "group_id": 2,
+          "group": "fraction-050",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.5,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 1.748157849653068e-14
+        },
+        {
+          "row_id": 5,
+          "group_id": 2,
+          "group": "fraction-050",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.5,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.629119033644824e-11
+        },
+        {
+          "row_id": 6,
+          "group_id": 3,
+          "group": "fraction-075",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.75,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 6.586877932881823e-14
+        },
+        {
+          "row_id": 7,
+          "group_id": 3,
+          "group": "fraction-075",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "fraction": 0.75,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.6084453730904385e-11
+        },
+        {
+          "row_id": 8,
+          "group_id": 4,
+          "group": "fraction-100",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "fraction": 1,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 5.25977846189825e-14
+        },
+        {
+          "row_id": 9,
+          "group_id": 4,
+          "group": "fraction-100",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "fraction": 1,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.5671558256370553e-11
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 1830,
+        "category_counts": {
+          "prefix": 10,
+          "comparison": 20,
+          "update": 1800
+        },
+        "completed_batch_updates": 1800,
+        "completed_row_updates": 3600,
+        "nonprefix_forward_attempts": 1820
+      },
+      "timings": {
+        "total_seconds": 1216.5261783540045,
+        "cold_initialization_seconds": 9.560716744003003,
+        "update_seconds": 1040.6415214790904,
+        "peak_rss_bytes": 5480566784
+      },
+      "raw_bytes": 132343549,
+      "nominal_equivalence_passed": true,
+      "nominal_historical_comparison": [
+        {
+          "compared_states": 361,
+          "compared_updates": 360,
+          "maximum_coordinate_gap": 2.2561813528554353e-14,
+          "token_mismatch_count": 0,
+          "state_bytes_equal": false,
+          "token_bytes_equal": true,
+          "final_labels_equal": true,
+          "historical_qualified_label": "td",
+          "passed": true
+        },
+        {
+          "compared_states": 361,
+          "compared_updates": 360,
+          "maximum_coordinate_gap": 1.0307726894254188e-14,
+          "token_mismatch_count": 0,
+          "state_bytes_equal": false,
+          "token_bytes_equal": true,
+          "final_labels_equal": true,
+          "historical_qualified_label": "td",
+          "passed": true
+        }
+      ],
+      "verified_return_inventory_files": 260,
+      "verified_producer_manifest_files": 247,
+      "transfer_reservation_closed": true,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/independent-review.json",
+          "bytes": 778335,
+          "sha256": "464fa8b81ab053b3e159a7c5aad33ef5127157f7fc13c1da450b1ec18785c9b2"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run/result.json",
+          "bytes": 3450328,
+          "sha256": "9d6198dec6cade3972c22d0b35edbdbd9fed87615fcd9acf68bc742549e4cc5b"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run/manifest.json",
+          "bytes": 39131,
+          "sha256": "767b0e51385be310b1d40975a9a92d849d702d89b477e9b2fb73ebfd568a9dc6"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run/source.json",
+          "bytes": 3972,
+          "sha256": "12a8dccbb96f3e6527388ee1828912059b955229ac60ab9c2505076ea8a97a1e"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/final-manifest.json",
+          "bytes": 47014,
+          "sha256": "a096716508016389259ff7671b65772fc0e9cd487dcd4424680b76f7499fa2b1"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "3e6294c56f84979e46cb8100e1321936320568ea31e6883697ce0090c333e234"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/transfer-closeout.json",
+          "bytes": 880,
+          "sha256": "db841c62728db63ba1b33e6931c5ff1b94402da730c2063fbdb3909700cb3fd6"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/completion.json",
+          "bytes": 107,
+          "sha256": "f4721def174b7407c439f359fb2167c2fc8cd3365085fd059975c4b2ff744124"
+        }
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/independent-review.json",
+      "bytes": 778335,
+      "sha256": "809c98f35ec9d501198f303587b42cbaa93d18ce8ea6e753bb52bcac04ef2ed2"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run/result.json",
+      "bytes": 3449931,
+      "sha256": "56226b9079053734ce65101ee092ba18485e70058ac30ebe9f430ad7823af6ba"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run/manifest.json",
+      "bytes": 39131,
+      "sha256": "f02b3ac04573c74a3f8f90a3c94f337cf77f3c3ea5798c32452c83c9ef0de87f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/run/source.json",
+      "bytes": 3972,
+      "sha256": "b49c5125ec68ce984b8a0747cd793d49170fb0f0cc6796e1bddada813de35812"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/final-manifest.json",
+      "bytes": 47014,
+      "sha256": "2e4d3e5367a9360b23aec4c15b4c69c458f5747cc25acd03acc34de4960c1d25"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "053b50f69f19fff85695632fa993a6dbb4f5d5cd3e2ab1741423eebf5080961a"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/transfer-closeout.json",
+      "bytes": 880,
+      "sha256": "1b48a03d652223a58baea384c4e47ff5064941c360fe560bf2c134fa1440cbca"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit0/completion.json",
+      "bytes": 107,
+      "sha256": "f4721def174b7407c439f359fb2167c2fc8cd3365085fd059975c4b2ff744124"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/independent-review.json",
+      "bytes": 778335,
+      "sha256": "464fa8b81ab053b3e159a7c5aad33ef5127157f7fc13c1da450b1ec18785c9b2"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run/result.json",
+      "bytes": 3450328,
+      "sha256": "9d6198dec6cade3972c22d0b35edbdbd9fed87615fcd9acf68bc742549e4cc5b"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run/manifest.json",
+      "bytes": 39131,
+      "sha256": "767b0e51385be310b1d40975a9a92d849d702d89b477e9b2fb73ebfd568a9dc6"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/run/source.json",
+      "bytes": 3972,
+      "sha256": "12a8dccbb96f3e6527388ee1828912059b955229ac60ab9c2505076ea8a97a1e"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/final-manifest.json",
+      "bytes": 47014,
+      "sha256": "a096716508016389259ff7671b65772fc0e9cd487dcd4424680b76f7499fa2b1"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "3e6294c56f84979e46cb8100e1321936320568ea31e6883697ce0090c333e234"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/transfer-closeout.json",
+      "bytes": 880,
+      "sha256": "db841c62728db63ba1b33e6931c5ff1b94402da730c2063fbdb3909700cb3fd6"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-refinement/20261026T191356Z-public-refinement-bit1/completion.json",
+      "bytes": 107,
+      "sha256": "f4721def174b7407c439f359fb2167c2fc8cd3365085fd059975c4b2ff744124"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-control-refinement/20261026T193508Z/public-control-refinement.receipt.json",
+      "bytes": 208779,
+      "sha256": "f328183455c0a32d054616d17fba976587a1049c5e57e31ab34572432012af51"
+    }
+  ],
+  "figure_receipt": {
+    "path": "/data2/shrimp-memory-data/figures/public-control-refinement/20261026T193508Z/public-control-refinement.receipt.json",
+    "bytes": 208779,
+    "sha256": "f328183455c0a32d054616d17fba976587a1049c5e57e31ab34572432012af51"
+  },
+  "figure_outputs": [
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-control-refinement/20261026T193508Z/public-control-refinement.pdf",
+      "bytes": 30576,
+      "sha256": "6e3090fca38c0e7071527035a4f737d735b610cb65374483bd975bbfb1e8987a"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-control-refinement/20261026T193508Z/public-control-refinement.png",
+      "bytes": 300106,
+      "sha256": "fdab0b0d0deffe744a2e234027aac1af9a23d541f208361805ef9d16f7cd4161"
+    }
+  ],
+  "limitations": [
+    "All twenty planned cases retained, including four qualified wrong bits; no unresolved or diagnostic-invalid rows.",
+    "Sampled fractions do not certify any continuous interval, boundary, monotonic response or general error rate.",
+    "Both original full-offset failures reproduced; the three intermediate fractions were selected prospectively for this adapted follow-up.",
+    "The offsets are engineering choices, not samples from measured language-interface error.",
+    "These fixed phase-zero starts do not establish all-phase robustness; no model replay was performed in the independent saved-data audit."
+  ]
+}

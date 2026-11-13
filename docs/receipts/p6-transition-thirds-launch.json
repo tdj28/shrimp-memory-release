@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-26T01:17:32Z",
+  "status": "launched_outcomes_pending",
+  "source_commit": "340867ece4f09ffaf3192097e3d7c2a4a0bc2ad7",
+  "evidence": "adapted after coarse600-step outcome",
+  "launch": {
+    "path": "/data2/shrimp-memory-data/audits/p6-transition-thirds/20261026T011707Z-thirds/launch.json",
+    "bytes": 180,
+    "sha256": "0985167058d0a142da8e127a772cfe3dcecbd03bbf48f9e03458868bf1a3e681"
+  },
+  "preflight": {
+    "path": "/data2/shrimp-memory-data/audits/p6-transition-thirds/20261026T011707Z-thirds/preflight.json",
+    "bytes": 1632,
+    "sha256": "c85c6c4880db8b5f3898383a24b79584831b223929adf3cad3e9ec08790aec1d"
+  },
+  "packet": {
+    "path": "/data2/shrimp-memory-data/audits/p6-transition-thirds/20261026T011707Z-thirds/packet.npz",
+    "bytes": 55166,
+    "sha256": "8c8ef80e02fbfca92b317a15580a5048d64270f7c6d922f974c7ed6bae7e7232"
+  },
+  "design": {
+    "path": "/data2/shrimp-memory-data/audits/p6-transition-thirds/20261026T011707Z-thirds/local-evaluation/design.json",
+    "bytes": 885,
+    "sha256": "aa7396827a9e5e8b4ebfc24714a31f5ea648c1a72296a89fc59d2269bae8d73d"
+  },
+  "completion_supervisor_pid": 3353120,
+  "maximum_calls": 4817,
+  "internal_seconds": 2700,
+  "external_seconds": 2760,
+  "threads": 1,
+  "scope": "Eight fixed interior-thirds samples; no fractality inference from one subdivision."
+}

@@ -1,0 +1,494 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-26T19:53:51Z",
+  "status": "completed_independently_audited",
+  "evidence_class": "adapted exploratory finite-precision numerical observation",
+  "recorded_at_commit": "2f26cc5acd4ed04639fbc54abb9e8dee4703da3f",
+  "scope": "Public controller challenge at literal source-cycle phases zero and one, separately for each requested bit.",
+  "design": {
+    "profile": "public-two-phase-challenge",
+    "groups": [
+      "nominal",
+      "full-negative-offset"
+    ],
+    "source_phases": [
+      0,
+      1
+    ],
+    "write0_source_cycle": "td",
+    "write1_source_cycle": "ad",
+    "write0_full_delta_log10_temperature": -0.0001,
+    "write1_full_delta_alpha": -1e-05,
+    "endpoint_steps": 120,
+    "common_hold_steps": 240,
+    "batch_size": 2,
+    "independent_group_reset": true,
+    "precision": "effective float64",
+    "compute_threads_per_process": 1
+  },
+  "counts": {
+    "passed": 4,
+    "failed": 4
+  },
+  "nominal_controls": {
+    "correct": 4,
+    "total": 4
+  },
+  "full_offset_cases": {
+    "correct": 0,
+    "qualified_wrong": 4,
+    "total": 4
+  },
+  "verified_local_binding_count": 451,
+  "runs": [
+    {
+      "requested_bit": 0,
+      "source_commit": "739a4fd678e35364236799d3701463a4d7b0009d",
+      "auditor_source_commit": "d9ae2603a4ec6920df8c4298881985416a59b0c5",
+      "audit_status": "passed",
+      "validated_outcome_counts": {
+        "passed": 2,
+        "failed": 2,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "nominal",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "source_reference_index": 1,
+          "source_reference_label": "td",
+          "source_phase": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "nominal_phase0_only",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 9.789989124848384e-14
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "nominal",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "source_reference_index": 1,
+          "source_reference_label": "td",
+          "source_phase": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_phase1",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 2.6391999450978213e-14
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "full-negative-offset",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "source_reference_index": 1,
+          "source_reference_label": "td",
+          "source_phase": 0,
+          "completed_updates": 360,
+          "validated_outcome": "failed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_perturbed_control",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.6834591983148088e-11
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "full-negative-offset",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "source_reference_index": 1,
+          "source_reference_label": "td",
+          "source_phase": 1,
+          "completed_updates": 360,
+          "validated_outcome": "failed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_phase1",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 2.027042857100626e-11
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 732,
+        "category_counts": {
+          "prefix": 4,
+          "comparison": 8,
+          "update": 720
+        },
+        "completed_batch_updates": 720,
+        "completed_row_updates": 1440,
+        "nonprefix_forward_attempts": 728
+      },
+      "timings": {
+        "total_seconds": 478.8218201809941,
+        "cold_initialization_seconds": 9.921084086992778,
+        "update_seconds": 407.2662281002413,
+        "peak_rss_bytes": 5477376000
+      },
+      "raw_bytes": 52598854,
+      "nominal_phase0_equivalence_passed": true,
+      "nominal_phase0_historical_comparison": {
+        "historical_trial_id": 1,
+        "compared_states": 361,
+        "compared_updates": 360,
+        "maximum_coordinate_gap": 4.409667075933044e-15,
+        "token_mismatch_count": 0,
+        "state_bytes_equal": false,
+        "token_bytes_equal": true,
+        "final_labels_equal": true,
+        "historical_qualified_label": "ad",
+        "passed": true
+      },
+      "verified_return_inventory_files": 120,
+      "verified_producer_manifest_files": 107,
+      "transfer_reservation_closed": true,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/independent-review.json",
+          "bytes": 360623,
+          "sha256": "1bf7f8bb88e045bee08b119990425276f470929637f7938a43f139c77d78d262"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/run/result.json",
+          "bytes": 1386944,
+          "sha256": "7a6ec44317974845d85a04693f0d338aac5da8bebca785fe3481fbe3a9548dc6"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/run/manifest.json",
+          "bytes": 16905,
+          "sha256": "d6c66fc073336b3d797b81b75118b7c5d9622fdeff095bdef6d252c9ce25d0e7"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/run/source.json",
+          "bytes": 4459,
+          "sha256": "2fe01a0f4d08210950d0cd850cea54a2075eb4fea546fa70464cb6da4cb98722"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/run/phase-inputs.json",
+          "bytes": 5217,
+          "sha256": "b36413e91f704508d25643e3cba2fe4fb304d131fd206918288f5a41ab814c55"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/final-manifest.json",
+          "bytes": 23481,
+          "sha256": "3eb6c7e44ea8e9dc7d5a40368d52c2cfac68a0e02c94ac769612d20c39e16a4a"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "9d9589869b129a8fcb3bb65fccf31d712f4daf80c6513533aa6426989c2d0fe1"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/transfer-closeout.json",
+          "bytes": 865,
+          "sha256": "7a998d136200d38e38aa62c56f13149a04350fc23bce6976d8cb4fbf700213d8"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/completion.json",
+          "bytes": 107,
+          "sha256": "a3a8496241cb150c1ae96f242a5b5d8426f9cae9df9cb2b554b3533e5b3ea6b9"
+        }
+      ]
+    },
+    {
+      "requested_bit": 1,
+      "source_commit": "739a4fd678e35364236799d3701463a4d7b0009d",
+      "auditor_source_commit": "d9ae2603a4ec6920df8c4298881985416a59b0c5",
+      "audit_status": "passed",
+      "validated_outcome_counts": {
+        "passed": 2,
+        "failed": 2,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "nominal",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "source_reference_index": 0,
+          "source_reference_label": "ad",
+          "source_phase": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "nominal_phase0_only",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.1511696117784798e-11
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "nominal",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "source_reference_index": 0,
+          "source_reference_label": "ad",
+          "source_phase": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_phase1",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 2.6522277929725966e-11
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "full-negative-offset",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "source_reference_index": 0,
+          "source_reference_label": "ad",
+          "source_phase": 0,
+          "completed_updates": 360,
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_perturbed_control",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 5.25977846189825e-14
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "full-negative-offset",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "source_reference_index": 0,
+          "source_reference_label": "ad",
+          "source_phase": 1,
+          "completed_updates": 360,
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_phase1",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 1.9291580155073726e-14
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 732,
+        "category_counts": {
+          "prefix": 4,
+          "comparison": 8,
+          "update": 720
+        },
+        "completed_batch_updates": 720,
+        "completed_row_updates": 1440,
+        "nonprefix_forward_attempts": 728
+      },
+      "timings": {
+        "total_seconds": 478.80444974899,
+        "cold_initialization_seconds": 9.925470337999286,
+        "update_seconds": 406.9801868952054,
+        "peak_rss_bytes": 5477425152
+      },
+      "raw_bytes": 52579932,
+      "nominal_phase0_equivalence_passed": true,
+      "nominal_phase0_historical_comparison": {
+        "historical_trial_id": 2,
+        "compared_states": 361,
+        "compared_updates": 360,
+        "maximum_coordinate_gap": 2.2561813528554353e-14,
+        "token_mismatch_count": 0,
+        "state_bytes_equal": false,
+        "token_bytes_equal": true,
+        "final_labels_equal": true,
+        "historical_qualified_label": "td",
+        "passed": true
+      },
+      "verified_return_inventory_files": 120,
+      "verified_producer_manifest_files": 107,
+      "transfer_reservation_closed": true,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/independent-review.json",
+          "bytes": 360600,
+          "sha256": "1c67f6471fe972974ee7f2c79c92cae3a2916b28d8845211f58c243d8d6fe724"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/run/result.json",
+          "bytes": 1387095,
+          "sha256": "51400364aa3f3e130a36b04ccef8e9828f37d41df631e13cd81d300e331b4bd9"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/run/manifest.json",
+          "bytes": 16905,
+          "sha256": "4b66b131118601869b171e08402f73a44852b0e9e325f0893c157eca42dc98e9"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/run/source.json",
+          "bytes": 4459,
+          "sha256": "f87d71674d5bbd8d5e7b15e9e2fe560e05eb1e9f3594378aa9e07155c7b9e074"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/run/phase-inputs.json",
+          "bytes": 5217,
+          "sha256": "122eafd42830c006a79b0cbc629f6b6dd8b25de08169c414e557cb20eab3b102"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/final-manifest.json",
+          "bytes": 23481,
+          "sha256": "ddb3378e8cf1b2081b852fcf1bd2815bcd721b86e7db274c6ce330d8b639e391"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "ddbb34ceecfc03e113c429d8d17b3ff6b90ce267addb03f1107bfe19333fa53c"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/transfer-closeout.json",
+          "bytes": 865,
+          "sha256": "2123cd9ee0dd847f44f98bd509ded3e1325a4cd679eacda59658dd8b5174bbef"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/completion.json",
+          "bytes": 107,
+          "sha256": "a3a8496241cb150c1ae96f242a5b5d8426f9cae9df9cb2b554b3533e5b3ea6b9"
+        }
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/independent-review.json",
+      "bytes": 360623,
+      "sha256": "1bf7f8bb88e045bee08b119990425276f470929637f7938a43f139c77d78d262"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/run/result.json",
+      "bytes": 1386944,
+      "sha256": "7a6ec44317974845d85a04693f0d338aac5da8bebca785fe3481fbe3a9548dc6"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/run/manifest.json",
+      "bytes": 16905,
+      "sha256": "d6c66fc073336b3d797b81b75118b7c5d9622fdeff095bdef6d252c9ce25d0e7"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/run/source.json",
+      "bytes": 4459,
+      "sha256": "2fe01a0f4d08210950d0cd850cea54a2075eb4fea546fa70464cb6da4cb98722"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/run/phase-inputs.json",
+      "bytes": 5217,
+      "sha256": "b36413e91f704508d25643e3cba2fe4fb304d131fd206918288f5a41ab814c55"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/final-manifest.json",
+      "bytes": 23481,
+      "sha256": "3eb6c7e44ea8e9dc7d5a40368d52c2cfac68a0e02c94ac769612d20c39e16a4a"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "9d9589869b129a8fcb3bb65fccf31d712f4daf80c6513533aa6426989c2d0fe1"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/transfer-closeout.json",
+      "bytes": 865,
+      "sha256": "7a998d136200d38e38aa62c56f13149a04350fc23bce6976d8cb4fbf700213d8"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit0/completion.json",
+      "bytes": 107,
+      "sha256": "a3a8496241cb150c1ae96f242a5b5d8426f9cae9df9cb2b554b3533e5b3ea6b9"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/independent-review.json",
+      "bytes": 360600,
+      "sha256": "1c67f6471fe972974ee7f2c79c92cae3a2916b28d8845211f58c243d8d6fe724"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/run/result.json",
+      "bytes": 1387095,
+      "sha256": "51400364aa3f3e130a36b04ccef8e9828f37d41df631e13cd81d300e331b4bd9"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/run/manifest.json",
+      "bytes": 16905,
+      "sha256": "4b66b131118601869b171e08402f73a44852b0e9e325f0893c157eca42dc98e9"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/run/source.json",
+      "bytes": 4459,
+      "sha256": "f87d71674d5bbd8d5e7b15e9e2fe560e05eb1e9f3594378aa9e07155c7b9e074"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/run/phase-inputs.json",
+      "bytes": 5217,
+      "sha256": "122eafd42830c006a79b0cbc629f6b6dd8b25de08169c414e557cb20eab3b102"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/final-manifest.json",
+      "bytes": 23481,
+      "sha256": "ddb3378e8cf1b2081b852fcf1bd2815bcd721b86e7db274c6ce330d8b639e391"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "ddbb34ceecfc03e113c429d8d17b3ff6b90ce267addb03f1107bfe19333fa53c"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/transfer-closeout.json",
+      "bytes": 865,
+      "sha256": "2123cd9ee0dd847f44f98bd509ded3e1325a4cd679eacda59658dd8b5174bbef"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-phase-challenge/20261026T194117Z-public-phase-bit1/completion.json",
+      "bytes": 107,
+      "sha256": "a3a8496241cb150c1ae96f242a5b5d8426f9cae9df9cb2b554b3533e5b3ea6b9"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-phase-challenge/20261026T195303Z/public-phase-challenge.receipt.json",
+      "bytes": 132774,
+      "sha256": "f33b38ba599dbb023fb22db06718c2feb899b5f7cb6422b493bbd44c29a768ea"
+    }
+  ],
+  "figure_receipt": {
+    "path": "/data2/shrimp-memory-data/figures/public-phase-challenge/20261026T195303Z/public-phase-challenge.receipt.json",
+    "bytes": 132774,
+    "sha256": "f33b38ba599dbb023fb22db06718c2feb899b5f7cb6422b493bbd44c29a768ea"
+  },
+  "figure_outputs": [
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-phase-challenge/20261026T195303Z/public-phase-challenge.pdf",
+      "bytes": 29194,
+      "sha256": "d45a3866052b5ce343c14039327d397ff9d6d5dd7168721550c6bf6ea55f681a"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-phase-challenge/20261026T195303Z/public-phase-challenge.png",
+      "bytes": 242681,
+      "sha256": "7d4253978f41f2b179c3bf99e9ba24ef3fbbc462eebfcba0b95e77f42fdfa6b1"
+    }
+  ],
+  "limitations": [
+    "All eight cases and raw numerical gates are retained. Four wrong bits are qualified outcomes, not unresolved readouts.",
+    "The tested phase change did not rescue either full-offset write. Phases two through five, continuous control regions and general reliability remain untested by this design.",
+    "Only nominal phase zero has a historical scalar trajectory comparison; phase one and perturbed controls do not.",
+    "Offsets are engineering perturbations, not measured language-interface errors. No language-recovery, error-correction or achieved-speedup claim.",
+    "No new model calls occurred in the saved-data audits or figure generation."
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "utc": "2026-10-26T13:16:57Z",
+  "status": "evidence_verified",
+  "producer_status": "completed",
+  "source_commit": "42f07ee935aad9d39674ffa57901b35b271ad1bf",
+  "raw_directory": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes",
+  "evidence": "adapted exploratory batch-write engineering comparison",
+  "counts": {
+    "planned_writes": 2,
+    "correct": 2
+  },
+  "rows": [
+    {
+      "row_id": 0,
+      "message": "Write bit 1 to register R0.",
+      "requested_bit": 1,
+      "source_reference_index": 0,
+      "historical_trial_id": 2,
+      "status": "completed",
+      "completed_updates": 360,
+      "outcome": "correct",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          2.5037324733685325e-12,
+          2.610754249589685e-12,
+          1.9158740288423116e-12,
+          5.407855528055202e-12,
+          1.1511696117784798e-11,
+          5.495066475464164e-12
+        ],
+        "maximum_l2_residual": 1.1511696117784798e-11,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.46502954690806114,
+              0.43385300530814697,
+              0.2752799267270379,
+              0.4682253340357041,
+              0.45393261037212435,
+              0.2934251649687653
+            ],
+            "maximum_l2_gap": 0.4682253340357041,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.2894247199989987,
+              0.44957865746067704,
+              0.45530403898134386,
+              0.27926942368585167,
+              0.48350406387460027,
+              0.43251967804135005
+            ],
+            "maximum_l2_gap": 0.48350406387460027,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.0652963840423217,
+              0.11471224696826547,
+              0.02718288206499406,
+              0.0652963840423217,
+              0.11471224696826547,
+              0.02718288206499406
+            ],
+            "maximum_l2_gap": 0.11471224696826547,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380340461266313,
+            "phase": 1,
+            "shift_distances": [
+              0.47344323087834195,
+              0.015380340461266313,
+              0.4773785933182172,
+              0.48203460167919204,
+              0.11654945080723361,
+              0.4922609635947446
+            ]
+          },
+          {
+            "label": "td",
+            "distance": 3.508198466693352e-12,
+            "phase": 1,
+            "shift_distances": [
+              0.4682253340363671,
+              3.508198466693352e-12,
+              0.4682253340381438,
+              0.4835040638745926,
+              0.11471224696999147,
+              0.4835040638769322
+            ]
+          }
+        ],
+        "reference_matches": [
+          "td"
+        ],
+        "decoded_bit": 1
+      },
+      "scientific_outcome": "correct",
+      "historical_comparison": {
+        "compared_states": 361,
+        "compared_updates": 360,
+        "maximum_coordinate_gap": 2.2561813528554353e-14,
+        "token_mismatch_count": 0,
+        "state_bytes_equal": false,
+        "token_bytes_equal": true,
+        "final_labels_equal": true,
+        "historical_qualified_label": "td",
+        "passed": true
+      }
+    },
+    {
+      "row_id": 1,
+      "message": "Write bit 1 to register R0.",
+      "requested_bit": 1,
+      "source_reference_index": 1,
+      "historical_trial_id": 3,
+      "status": "completed",
+      "completed_updates": 360,
+      "outcome": "correct",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          3.5143866513055047e-12,
+          3.658407768739386e-12,
+          2.6847705737301077e-12,
+          7.580821112883694e-12,
+          1.6146908733005656e-11,
+          7.707017147248733e-12
+        ],
+        "maximum_l2_residual": 1.6146908733005656e-11,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.46502954690826653,
+              0.4338530053083259,
+              0.2752799267267409,
+              0.46822533403416655,
+              0.45393261037097266,
+              0.2934251649684342
+            ],
+            "maximum_l2_gap": 0.46822533403416655,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.28942471999890845,
+              0.4495786574605518,
+              0.45530403898019756,
+              0.27926942368531965,
+              0.4835040638734474,
+              0.43251967804152386
+            ],
+            "maximum_l2_gap": 0.4835040638734474,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.06529638404326639,
+              0.11471224696726899,
+              0.02718288206496963,
+              0.06529638404326639,
+              0.11471224696726899,
+              0.02718288206496963
+            ],
+            "maximum_l2_gap": 0.11471224696726899,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "label": "ad",
+            "distance": 0.015380340462635369,
+            "phase": 1,
+            "shift_distances": [
+              0.4734432308771533,
+              0.015380340462635369,
+              0.47737859331789906,
+              0.48203460167803164,
+              0.1165494508062982,
+              0.4922609635947481
+            ]
+          },
+          {
+            "label": "td",
+            "distance": 5.247544353644042e-12,
+            "phase": 1,
+            "shift_distances": [
+              0.4682253340351576,
+              5.247544353644042e-12,
+              0.4682253340378158,
+              0.48350406387343653,
+              0.11471224696985134,
+              0.4835040638769354
+            ]
+          }
+        ],
+        "reference_matches": [
+          "td"
+        ],
+        "decoded_bit": 1
+      },
+      "scientific_outcome": "correct",
+      "historical_comparison": {
+        "compared_states": 361,
+        "compared_updates": 360,
+        "maximum_coordinate_gap": 1.0307726894254188e-14,
+        "token_mismatch_count": 0,
+        "state_bytes_equal": false,
+        "token_bytes_equal": true,
+        "final_labels_equal": true,
+        "historical_qualified_label": "td",
+        "passed": true
+      }
+    }
+  ],
+  "stages": [
+    {
+      "stage_id": 0,
+      "name": "endpoint",
+      "status": "completed",
+      "completed_updates": 120,
+      "cache": {
+        "scalar_prefix_sha256": "19967fcfa4dd7b00374194c4b579e12e366898919ec6e494f8f28ffce9864fa8",
+        "expanded_sha256": "dcd0242486101f094d990a64c69a5169a7bdbdac3c6d51867098b02903555f0b",
+        "expanded_snapshot_valid": true,
+        "final_scalar_cache_hash_unchanged": true,
+        "diagnostic": {
+          "maximum_coordinate_gap": 5.464378949326942e-16,
+          "maximum_probability_gap": 7.382983113757291e-15,
+          "top_tokens_equal": true,
+          "tolerance": 1e-12,
+          "passed": true
+        }
+      },
+      "update_seconds": 61.51666196498263
+    },
+    {
+      "stage_id": 1,
+      "name": "hold",
+      "status": "completed",
+      "completed_updates": 240,
+      "cache": {
+        "scalar_prefix_sha256": "9aba643567cdb1bd6fdfdf86f4129ff03ece6a38261eea8070c8cff78a0be34e",
+        "expanded_sha256": "9d934071b3e64533eab7fdcec737860f120e300a229565eef08670ad2dfa6a74",
+        "expanded_snapshot_valid": true,
+        "final_scalar_cache_hash_unchanged": true,
+        "diagnostic": {
+          "maximum_coordinate_gap": 4.0766001685454967e-16,
+          "maximum_probability_gap": 6.078471059822732e-15,
+          "top_tokens_equal": true,
+          "tolerance": 1e-12,
+          "passed": true
+        }
+      },
+      "update_seconds": 126.09331569999631
+    }
+  ],
+  "numerical_equivalence_passed": true,
+  "calls": {
+    "admitted_model_calls": 366,
+    "category_counts": {
+      "prefix": 2,
+      "comparison": 4,
+      "update": 360
+    },
+    "completed_batch_updates": 360,
+    "completed_row_updates": 720
+  },
+  "cost_comparison": {
+    "historical_two_scalar_calls": 732,
+    "prescribed_batch_calls": 366,
+    "call_fraction_saved": 0.5,
+    "historical_walltime_comparable": false
+  },
+  "timings": {
+    "total_seconds": 224.43905010099843,
+    "cold_initialization_seconds": 9.105810224005836,
+    "update_seconds": 187.60997766497894,
+    "peak_rss_bytes": 5479620608
+  },
+  "verified_return_files": 66,
+  "verified_run_files": 53,
+  "verified_historical_files": 165,
+  "verified_git_sources": 15,
+  "resource_limits_passed": true,
+  "raw_bytes": 26105237,
+  "transfer_reservation_closed": true,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/run/result.json",
+      "bytes": 649804,
+      "sha256": "aa25f874b69299d6986c6e1630d57e4ca217ec304cd0f5883315863be06009ab"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/run/design.json",
+      "bytes": 3445,
+      "sha256": "d5dc0ba0ba7dd682bbf74d0bd665f5441becca97d6ee87d122de9b20248aba8b"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/run/manifest.json",
+      "bytes": 8371,
+      "sha256": "dc04cac9a0c27fd8fd4cf3d5ddf8ccc9a7b860d64bfae64e37f9baa8510c79a3"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/run/historical-inputs.json",
+      "bytes": 6663,
+      "sha256": "123a4826210faf97f874c27f5b99f11e87798a0a3e27f6075dbc17011606e15a"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/independent-review.json",
+      "bytes": 223158,
+      "sha256": "25af1d4da2efbbd4c56141a0e21666733bd2283fdb5cafb92158a2e650359e01"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/independent-handoff.json",
+      "bytes": 70083,
+      "sha256": "b72f164b1ce9cdb7bc908554ff5ca3b58b02c538e395c6d183b87ed9180dea60"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/final-manifest.json",
+      "bytes": 20667,
+      "sha256": "21ae78ef52e306965c30684445f037f5eb9c8ea3ba6ef462a10c48df2bb2851a"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/final-artifacts.tar",
+      "bytes": 26224640,
+      "sha256": "ded7071187a0d586e0335ac857bf21a6c22fdd24007d8e857ab19dc6fd89aeec"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "ded65cce7832b3ca186854547b8d0cce7935522ac3e21d140224bbc1e6822c24"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/transfer-closeout.json",
+      "bytes": 685,
+      "sha256": "e36ebed485584e03dd8c54bcb43820ed60262ed25330628349525377879aa2bc"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/exit-status.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/initial-health.json",
+      "bytes": 6834,
+      "sha256": "de0037eb2dd284a3390b856b9fee34ba3a2886344e1b1558dbea69915f03e640"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/preflight.json",
+      "bytes": 1635,
+      "sha256": "89671a9c7adb1199ebf6c3a1d65ed444b3e6725a62f9997f4950cdf4465808bd"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/operator-source/root-prelaunch-evidence.json",
+      "bytes": 7789,
+      "sha256": "b768062b16405732e9194e3ae6fcc98a4690ab0717341802a9308011fbdeda76"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/operator-source/independent-audit/preparation.json",
+      "bytes": 19649,
+      "sha256": "653bb32a02ab2ed8d3dfc229e4638c6f2e24d9f3ec0d067063a51e3c8073682b"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/operator-source/independent-audit/pre-audit-supplement.json",
+      "bytes": 1429,
+      "sha256": "f9353650c45c50607324f8a433f335a9cb16955225983b98ed37a1335a9c6cf0"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/operator-source/independent-audit/completion-receipt.json",
+      "bytes": 1506,
+      "sha256": "270a5eb3d5ec8cc6843a67077280940af489e7c0c446e1a17a909c77af88ec80"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-batch-writes/20261026T130740Z-public-batch-writes/operator-source/record-public-batch-writes.py",
+      "bytes": 5602,
+      "sha256": "c765e8916bc5eb63e3f888f043cc0091f734dce6ef1f984839f289b4d3438a14"
+    }
+  ],
+  "scope": [
+    "Independent saved-block reconstruction and numerical readout/equivalence audit, not transformer replay. Per-update probabilities and per-call cache tensors are not all retained; their hash/precision declarations cannot establish full normalization or model replay.",
+    "Two fixed states receive the same explicit public command. No independent register addressing, all-phase/general reliability, unrestricted language or hidden channel.",
+    "Saved scalar controls support trajectory comparison; they are not contemporaneous wall-time controls. Halving prescribed forward calls alone does not demonstrate a runtime speedup."
+  ],
+  "conclusion": "Both fixed rows receiving the same explicit write1 reached the qualified bit1 cycle. Each361state/360token trajectory agrees with the historical scalar control within the prescribed1e-10 coordinate gate, with zero token mismatches. State bytes differ. The366calls and224.44seconds are absolute costs; historical732scalarcalls are not a matched wall-time comparison.",
+  "validation_history": "117 producer/regression tests,189 independent structure assertions,13 independent historical checks,2 return guards,78 independent auditor tests and28 archived core tests passed. Initial test/startup and root prelaunch schema errors are archived. First actual outcome audit passed; no model retry."
+}

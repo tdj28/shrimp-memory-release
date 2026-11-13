@@ -1,0 +1,491 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-10-25T22:48:18Z",
+  "receipt_source_commit": "6f741ec2bd94418f63468edf130496baec8ca494",
+  "experiment_source_commit": "f0c757ed2c7142bd2dd5cb78a796f69f7f49f4c4",
+  "data_root": "/data2/shrimp-memory-data",
+  "raw_directory": "audits/p6-writes/20261025T222347Z-writes",
+  "evidence": "exploratory finite control pulses from reference phase zero; fixed protocol with no extensions or replacements",
+  "status": "passed",
+  "outcome_counts": {
+    "correct": 4,
+    "wrong": 0,
+    "unresolved": 0
+  },
+  "protocol": {
+    "hold": {
+      "alpha": 0.07293697809562831,
+      "log10_temperature": -0.15395151820007266
+    },
+    "candidate_endpoints": {
+      "ad": {
+        "alpha": 0.07293697809562831,
+        "log10_temperature": -0.1535
+      },
+      "td": {
+        "alpha": 0.07299785589927693,
+        "log10_temperature": -0.15395151820007266
+      }
+    },
+    "endpoint_steps": 120,
+    "restored_hold_steps": 240,
+    "source_phase": 0,
+    "closure_tolerance": 1e-08,
+    "match_tolerance": 1e-06,
+    "proper_divisor_gap": 0.0001,
+    "cache_coordinate_tolerance": 1e-10,
+    "threads": 1
+  },
+  "rows": [
+    {
+      "trial_id": 0,
+      "source_label": "ad",
+      "desired_label": "ad",
+      "phase": 0,
+      "status": "completed",
+      "completed_steps": 360,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 6.832414933121826e-14,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 2.44243282196229e-14,
+          "best_shift": 1
+        },
+        {
+          "label": "td",
+          "distance": 0.015380340458494755,
+          "best_shift": 1
+        }
+      ],
+      "stages": [
+        {
+          "name": "endpoint",
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.1535
+          },
+          "completed_steps": 120,
+          "status": "completed",
+          "cache_comparison": {
+            "passed": true,
+            "maximum_coordinate_gap": 4.458239333260394e-16,
+            "tolerance": 1e-10,
+            "input_unchanged": true,
+            "artifacts": [
+              {
+                "path": "trial-00-endpoint-cached.npz",
+                "bytes": 1179715,
+                "sha256": "729406d5675d3f2279c1cc0fc1c2a0772a8e8689cfdad04b22dffabc4eff42fd"
+              },
+              {
+                "path": "trial-00-endpoint-full.npz",
+                "bytes": 1179767,
+                "sha256": "40122cf467745fe507f30d48998578a1c863641c37add0d7b21d07d8c863199a"
+              }
+            ]
+          },
+          "trajectory": {
+            "path": "trial-00-endpoint-final-120.npz",
+            "bytes": 833281,
+            "sha256": "dce4af2b24d392d08589a7e747e832f1a690ca11172d544e7f7d5878e5045f67"
+          }
+        },
+        {
+          "name": "hold",
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "completed_steps": 240,
+          "status": "completed",
+          "cache_comparison": {
+            "passed": true,
+            "maximum_coordinate_gap": 5.533767888366015e-16,
+            "tolerance": 1e-10,
+            "input_unchanged": true,
+            "artifacts": [
+              {
+                "path": "trial-00-hold-cached.npz",
+                "bytes": 1179762,
+                "sha256": "5f67237b88d916ddb4e6ab4c741b98d222dbef9296998d58a4d6b36ec0724d98"
+              },
+              {
+                "path": "trial-00-hold-full.npz",
+                "bytes": 1179772,
+                "sha256": "f2ec68f7eee80cd97082380196b2aa8eb6106213ee42d2fb616f68cf347b94f4"
+              }
+            ]
+          },
+          "trajectory": {
+            "path": "trial-00-hold-final-240.npz",
+            "bytes": 1658537,
+            "sha256": "a70a71f0f371d1122cb0f5839830c4f8979c91818135666493bc85bf002040e6"
+          }
+        }
+      ]
+    },
+    {
+      "trial_id": 1,
+      "source_label": "td",
+      "desired_label": "ad",
+      "phase": 0,
+      "status": "completed",
+      "completed_steps": 360,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 4.311069888767858e-14,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "ad"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 4.7624921039810065e-15,
+          "best_shift": 1
+        },
+        {
+          "label": "td",
+          "distance": 0.015380340458504735,
+          "best_shift": 1
+        }
+      ],
+      "stages": [
+        {
+          "name": "endpoint",
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.1535
+          },
+          "completed_steps": 120,
+          "status": "completed",
+          "cache_comparison": {
+            "passed": true,
+            "maximum_coordinate_gap": 5.2562121322097255e-16,
+            "tolerance": 1e-10,
+            "input_unchanged": true,
+            "artifacts": [
+              {
+                "path": "trial-01-endpoint-cached.npz",
+                "bytes": 1179815,
+                "sha256": "44301e6a7bc1630c02fbedd0759d2f9e12e616da327add46e0686e1c8b25be94"
+              },
+              {
+                "path": "trial-01-endpoint-full.npz",
+                "bytes": 1179766,
+                "sha256": "07eadb40ec01a1d57656eb95ba599f73729f860d03f9e76265ad0c2bc44d4df0"
+              }
+            ]
+          },
+          "trajectory": {
+            "path": "trial-01-endpoint-final-120.npz",
+            "bytes": 833183,
+            "sha256": "c8e4d37d64765734d3b23b3fb3b38e22337d8af1a003cc7bc235cccc3ea51f9a"
+          }
+        },
+        {
+          "name": "hold",
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "completed_steps": 240,
+          "status": "completed",
+          "cache_comparison": {
+            "passed": true,
+            "maximum_coordinate_gap": 2.445960101127298e-16,
+            "tolerance": 1e-10,
+            "input_unchanged": true,
+            "artifacts": [
+              {
+                "path": "trial-01-hold-cached.npz",
+                "bytes": 1179769,
+                "sha256": "9ddc7246fbf40645aefcbe87b7fbc1368a28e98bc427e6f0e68e07f9a6e7418c"
+              },
+              {
+                "path": "trial-01-hold-full.npz",
+                "bytes": 1179641,
+                "sha256": "d2f4c11d3fd1ab6a80e2e8c40db2d7a78b6a4bd571c770355d79df896216e657"
+              }
+            ]
+          },
+          "trajectory": {
+            "path": "trial-01-hold-final-240.npz",
+            "bytes": 1658475,
+            "sha256": "8c692d59fe3e0b31b25bcc01c08cef5bdd34420bb0d2e7956bcef690525a6b40"
+          }
+        }
+      ]
+    },
+    {
+      "trial_id": 2,
+      "source_label": "ad",
+      "desired_label": "td",
+      "phase": 0,
+      "status": "completed",
+      "completed_steps": 360,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 1.1601096079822524e-11,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380340461291275,
+          "best_shift": 1
+        },
+        {
+          "label": "td",
+          "distance": 3.540253467792361e-12,
+          "best_shift": 1
+        }
+      ],
+      "stages": [
+        {
+          "name": "endpoint",
+          "controls": {
+            "alpha": 0.07299785589927693,
+            "log10_temperature": -0.15395151820007266
+          },
+          "completed_steps": 120,
+          "status": "completed",
+          "cache_comparison": {
+            "passed": true,
+            "maximum_coordinate_gap": 4.458239333260394e-16,
+            "tolerance": 1e-10,
+            "input_unchanged": true,
+            "artifacts": [
+              {
+                "path": "trial-02-endpoint-cached.npz",
+                "bytes": 1179684,
+                "sha256": "1762c543c5583fcb534e794b56710c54a8eb9cadb7c936d002996a13069dc08a"
+              },
+              {
+                "path": "trial-02-endpoint-full.npz",
+                "bytes": 1179649,
+                "sha256": "c2ab18120728c7e77441ef52f5d7cae804c2e6bf08ab9f9d8f4b9864684cfedf"
+              }
+            ]
+          },
+          "trajectory": {
+            "path": "trial-02-endpoint-final-120.npz",
+            "bytes": 833253,
+            "sha256": "6b8ca8fb8dfdab3123a1a1110e8d7b5e05c19e0710296a72f1be6f7033e68893"
+          }
+        },
+        {
+          "name": "hold",
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "completed_steps": 240,
+          "status": "completed",
+          "cache_comparison": {
+            "passed": true,
+            "maximum_coordinate_gap": 1.942890293094024e-16,
+            "tolerance": 1e-10,
+            "input_unchanged": true,
+            "artifacts": [
+              {
+                "path": "trial-02-hold-cached.npz",
+                "bytes": 1179731,
+                "sha256": "921b1b858fc873885532a46110281d3728c496dcfe23a8735d384d0c8c087b78"
+              },
+              {
+                "path": "trial-02-hold-full.npz",
+                "bytes": 1179652,
+                "sha256": "ae4b6105a0333b206669243733e23fb29517dcc5c7f9cec74084ba161e7d9081"
+              }
+            ]
+          },
+          "trajectory": {
+            "path": "trial-02-hold-final-240.npz",
+            "bytes": 1658442,
+            "sha256": "1a4c7d2dc9fa4be917d9a496a647c2ac76c531cb9abd67c190c387b6202833d2"
+          }
+        }
+      ]
+    },
+    {
+      "trial_id": 3,
+      "source_label": "td",
+      "desired_label": "td",
+      "phase": 0,
+      "status": "completed",
+      "completed_steps": 360,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 1.6079804344257162e-11,
+      "primitive_period_six_gate_passed": true,
+      "reference_matches": [
+        "td"
+      ],
+      "reference_distances": [
+        {
+          "label": "ad",
+          "distance": 0.015380340462640701,
+          "best_shift": 1
+        },
+        {
+          "label": "td",
+          "distance": 5.2551670428577704e-12,
+          "best_shift": 1
+        }
+      ],
+      "stages": [
+        {
+          "name": "endpoint",
+          "controls": {
+            "alpha": 0.07299785589927693,
+            "log10_temperature": -0.15395151820007266
+          },
+          "completed_steps": 120,
+          "status": "completed",
+          "cache_comparison": {
+            "passed": true,
+            "maximum_coordinate_gap": 4.666406150377611e-16,
+            "tolerance": 1e-10,
+            "input_unchanged": true,
+            "artifacts": [
+              {
+                "path": "trial-03-endpoint-cached.npz",
+                "bytes": 1179746,
+                "sha256": "46ba527b7a6615d0a7dbcfdc6badb4b6e01f8b52ae06139d8f990a3600464c0e"
+              },
+              {
+                "path": "trial-03-endpoint-full.npz",
+                "bytes": 1179824,
+                "sha256": "db07009fd3187c7ed6d618bad066c452954c006deb1ae3104f2d2a2252f0f78d"
+              }
+            ]
+          },
+          "trajectory": {
+            "path": "trial-03-endpoint-final-120.npz",
+            "bytes": 833196,
+            "sha256": "83d66f63878e48cecac4662e708693bedde7547fb51132d1c3b7bac3bc3ff1b3"
+          }
+        },
+        {
+          "name": "hold",
+          "controls": {
+            "alpha": 0.07293697809562831,
+            "log10_temperature": -0.15395151820007266
+          },
+          "completed_steps": 240,
+          "status": "completed",
+          "cache_comparison": {
+            "passed": true,
+            "maximum_coordinate_gap": 1.942890293094024e-16,
+            "tolerance": 1e-10,
+            "input_unchanged": true,
+            "artifacts": [
+              {
+                "path": "trial-03-hold-cached.npz",
+                "bytes": 1179649,
+                "sha256": "80da4c7204ad17f7b0d05c1157fc100dc6eb66141e8fc712197b44c96603de24"
+              },
+              {
+                "path": "trial-03-hold-full.npz",
+                "bytes": 1179688,
+                "sha256": "3c195ff2d495b0d0e75391faf580c632d7c6c40411e7206481a8d0da8769dee1"
+              }
+            ]
+          },
+          "trajectory": {
+            "path": "trial-03-hold-final-240.npz",
+            "bytes": 1658362,
+            "sha256": "60f4567edfeb877c926f2b4993388a68d16403a8b78a69824a329810d93e791b"
+          }
+        }
+      ]
+    }
+  ],
+  "all_eight_stage_cache_checks_passed": true,
+  "maximum_cache_full_coordinate_gap": 5.533767888366015e-16,
+  "all_first_updates_agree_with_cached_comparison": true,
+  "model_calls": 1464,
+  "elapsed_seconds": 656.2444858420004,
+  "peak_rss_bytes": 5472157696,
+  "dtype_observations": {
+    "rotary": {
+      "input": "torch.float64",
+      "inverse_frequency": "torch.float64",
+      "angles": "torch.float64",
+      "cos": "torch.float64",
+      "sin": "torch.float64"
+    },
+    "norm": {
+      "input": "torch.float64",
+      "reduction": "torch.float64",
+      "weight": "torch.float64",
+      "output": "torch.float64"
+    }
+  },
+  "started_utc": "2026-10-25T22:36:26Z",
+  "finished_utc": "2026-10-25T22:47:24Z",
+  "wrapper_exit_status": 0,
+  "return_verification": {
+    "verified_utc": "2026-10-25T22:47:37Z",
+    "status": "verified",
+    "files": 165,
+    "new_files": 159,
+    "manifest_sha256": "4536fb39b68e9ae9e1c9e3e251b36b481caefa8889fcf32f297b3097aec79be3",
+    "archive": {
+      "path": "final-artifacts.tar",
+      "bytes": 40929280,
+      "sha256": "6c233857c33fe1a4f5edac1a099df6c83ddd8e634f2f2eb643d196eba13dd6b5"
+    },
+    "remote_evidence_retained": true
+  },
+  "transfer_reservation_closed": {
+    "id": "20261025T222347Z-writes",
+    "month": "2026-10",
+    "reserved_bytes": 134217728,
+    "state": "complete",
+    "scope": "four fixed control-pulse trials; source upload, outputs and verified complete return",
+    "created_utc": "2026-10-25T22:26:53Z",
+    "observed_vnstat_bytes": 1341800371,
+    "accounting_gap_margin_bytes": 104857600,
+    "provider_allowance_verified": false,
+    "closed_utc": "2026-10-25T22:47:39Z",
+    "local_return_verified": true,
+    "verified_manifest_entries": 165,
+    "manifest_sha256": "4536fb39b68e9ae9e1c9e3e251b36b481caefa8889fcf32f297b3097aec79be3",
+    "local_destination": "/data2/shrimp-memory-data/audits/p6-writes/20261025T222347Z-writes"
+  },
+  "independent_audit_status": "audit_passed",
+  "bindings": [
+    {
+      "path": "audits/p6-writes/20261025T222347Z-writes/run/results.json",
+      "bytes": 46163,
+      "sha256": "4bdba587b2b2adffb4d828b6643f3a4d630ab0684d85485210e7710c3ee60e8d"
+    },
+    {
+      "path": "audits/p6-writes/20261025T222347Z-writes/run/metadata.json",
+      "bytes": 7518,
+      "sha256": "efa7bcc502a6ccbd27789d1deee714d58836e870e14a3f0544f9473e2536807a"
+    },
+    {
+      "path": "audits/p6-writes/20261025T222347Z-writes/final-manifest.json",
+      "bytes": 54152,
+      "sha256": "4536fb39b68e9ae9e1c9e3e251b36b481caefa8889fcf32f297b3097aec79be3"
+    },
+    {
+      "path": "audits/p6-writes/20261025T222347Z-writes/complete-audit.json",
+      "bytes": 77854,
+      "sha256": "257f03396a80c139cab31049fd759d12f610a0566932ccb4e0ebd33d8617fefe"
+    },
+    {
+      "path": "audits/p6-writes/20261025T222347Z-writes/transfer-closeout.json",
+      "bytes": 638,
+      "sha256": "0d5c026fb1c5e238af4c57f8752c00cbffe52f7499b3622f20ad87c27d1d1ffb"
+    }
+  ],
+  "scope": "Four phase-zero cases only, using direct numerical control pulses. Not phase-independent reliability, repeated composition, demonstrated hysteresis mechanism, basin geometry, natural-language channel, logic or secrecy."
+}

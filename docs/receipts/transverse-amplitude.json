@@ -1,0 +1,1225 @@
+{
+  "utc": "2026-10-26T06:35:24Z",
+  "source_commit": "f9d2f96df91909eced19a235c37fb3bd00defa67",
+  "preparation_source_commit": "f9d2f96df91909eced19a235c37fb3bd00defa67",
+  "evidence": "adapted exploratory; eight transverse perturbations in one fixed direction, with four interior states and four near-orbit controls",
+  "source": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude",
+  "status": "audit_passed",
+  "epsilon_relative_rms": 0.01,
+  "strata": {
+    "interior": {
+      "planned_rows": 4,
+      "verified_rows": 4,
+      "unverified_rows": 0,
+      "intended_label_retained": 2,
+      "wrong_qualified_label": 2,
+      "final_unresolved": 0,
+      "geometric_decoders": {
+        "one_nn": {
+          "qualified_final_and_prediction_denominator": 4,
+          "matching": 2,
+          "wrong_against_qualified_final": 2,
+          "prediction_erasure": 0,
+          "final_unresolved": 0
+        },
+        "nearest_phase": {
+          "qualified_final_and_prediction_denominator": 4,
+          "matching": 2,
+          "wrong_against_qualified_final": 2,
+          "prediction_erasure": 0,
+          "final_unresolved": 0
+        }
+      },
+      "first_decision": {
+        "present": 4,
+        "absent": 0,
+        "intended_label": 2,
+        "other_label": 2,
+        "steps": [
+          216,
+          156,
+          228,
+          156
+        ],
+        "later_loss": 0,
+        "later_label_change": 0
+      }
+    },
+    "near_orbit": {
+      "planned_rows": 4,
+      "verified_rows": 4,
+      "unverified_rows": 0,
+      "intended_label_retained": 4,
+      "wrong_qualified_label": 0,
+      "final_unresolved": 0,
+      "geometric_decoders": {
+        "one_nn": {
+          "qualified_final_and_prediction_denominator": 4,
+          "matching": 4,
+          "wrong_against_qualified_final": 0,
+          "prediction_erasure": 0,
+          "final_unresolved": 0
+        },
+        "nearest_phase": {
+          "qualified_final_and_prediction_denominator": 4,
+          "matching": 4,
+          "wrong_against_qualified_final": 0,
+          "prediction_erasure": 0,
+          "final_unresolved": 0
+        }
+      },
+      "first_decision": {
+        "present": 4,
+        "absent": 0,
+        "intended_label": 4,
+        "other_label": 0,
+        "steps": [
+          168,
+          156,
+          204,
+          204
+        ],
+        "later_loss": 0,
+        "later_label_change": 0
+      }
+    }
+  },
+  "transverse_comparison": {
+    "planned_rows": 8,
+    "verified_rows": 8,
+    "unverified_rows": 0,
+    "intended_label_retained": 6,
+    "wrong_qualified_label": 2,
+    "final_unresolved": 0,
+    "geometric_decoders": {
+      "one_nn": {
+        "qualified_final_and_prediction_denominator": 8,
+        "matching": 6,
+        "wrong_against_qualified_final": 2,
+        "prediction_erasure": 0,
+        "final_unresolved": 0
+      },
+      "nearest_phase": {
+        "qualified_final_and_prediction_denominator": 8,
+        "matching": 6,
+        "wrong_against_qualified_final": 2,
+        "prediction_erasure": 0,
+        "final_unresolved": 0
+      }
+    },
+    "first_decision": {
+      "present": 8,
+      "absent": 0,
+      "intended_label": 6,
+      "other_label": 2,
+      "steps": [
+        216,
+        156,
+        228,
+        156,
+        168,
+        156,
+        204,
+        204
+      ],
+      "later_loss": 0,
+      "later_label_change": 0
+    }
+  },
+  "planned_rows": 8,
+  "verified_rows": 8,
+  "readback_steps": 600,
+  "qualified_state_counts": {
+    "ad": 4,
+    "td": 4,
+    "null": 0
+  },
+  "proposal_comparison": {
+    "qualified_final_and_decision_denominator": 8,
+    "matching": 8,
+    "wrong_against_qualified_final": 0,
+    "no_decision": 0,
+    "final_unresolved_after_decision": 0,
+    "later_loss": 0,
+    "later_label_change": 0
+  },
+  "static_comparison": {
+    "qualified_final_and_nearest_denominator": 8,
+    "matching": 6,
+    "wrong_against_qualified_final": 2,
+    "nearest_ties": 0
+  },
+  "model_calls": 4817,
+  "executed_updates": 4800,
+  "actual_avoided_updates": 0,
+  "hypothetical_unused_updates_after_decisions": 3312,
+  "observer_seconds": 0.3724580939815496,
+  "saved_forward_seconds": 2082.250335389159,
+  "elapsed_seconds": 2146.497835023998,
+  "peak_rss_bytes": 5471735808,
+  "resource_limits_passed": true,
+  "rows": [
+    {
+      "packet_index": 0,
+      "anchor_weight": 0.25925925925925924,
+      "sign": -1,
+      "stratum": "interior",
+      "intended_label": "ad",
+      "intended_label_retained": false,
+      "one_nn": {
+        "distances": [
+          0.004778090095985223,
+          0.0030216720311070943,
+          0.0034453491091513896,
+          0.005572246479331145,
+          0.008165108871964848,
+          0.01089622166981713,
+          0.013683050178475504,
+          0.016497383108168916,
+          0.002866564550722063,
+          0.003021672031107091,
+          0.009066160437200151,
+          0.009977381737475236,
+          0.011820903776806472,
+          0.012750157042306556,
+          0.01461888637516943,
+          0.015557134523869982,
+          0.002936512842577086,
+          0.002884210665198943,
+          0.0028842106651989414,
+          0.0029365128425770833,
+          0.003137013504610947,
+          0.0032793540931454665,
+          0.005453219594063766,
+          0.002900398488713745,
+          0.018026340645042695,
+          0.003625759657087292,
+          0.0034277976525107483,
+          0.018616443123105723,
+          0.006991714772796817,
+          0.016088959405683313,
+          0.007278005206735014,
+          0.29101074971271645,
+          0.42891894195696784,
+          0.019214628709346652,
+          0.2819193927089194,
+          0.46230655750842464,
+          0.009621464483850737,
+          0.2929433343926322,
+          0.4327801399734647,
+          0.01932720901658717,
+          0.27864921906716233,
+          0.4542247321297755
+        ],
+        "nearest_indices": [
+          8
+        ],
+        "prediction": "ad"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.007278005206735014,
+            0.29101074971271645,
+            0.42891894195696784,
+            0.019214628709346652,
+            0.2819193927089194,
+            0.46230655750842464
+          ],
+          [
+            0.009621464483850737,
+            0.2929433343926322,
+            0.4327801399734647,
+            0.01932720901658717,
+            0.27864921906716233,
+            0.4542247321297755
+          ]
+        ],
+        "label_distances": [
+          0.007278005206735014,
+          0.009621464483850737
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "status": "verified",
+      "qualified_state": "td",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.007278005206735014,
+          "td": 0.009621464483850737
+        },
+        "decoded": null,
+        "nearest_label": "ad",
+        "nearest_distance_margin": 0.0023434592771157227,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 216,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 384
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": false,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 256.76129365603265,
+      "hypothetical_unused_updates": 384
+    },
+    {
+      "packet_index": 1,
+      "anchor_weight": 0.25925925925925924,
+      "sign": 1,
+      "stratum": "interior",
+      "intended_label": "ad",
+      "intended_label_retained": true,
+      "one_nn": {
+        "distances": [
+          0.004778090095985222,
+          0.0030216720311070943,
+          0.0034453491091513905,
+          0.005572246479331146,
+          0.008165108871964848,
+          0.010896221669817132,
+          0.013683050178475504,
+          0.016497383108168916,
+          0.002866564550722063,
+          0.003021672031107092,
+          0.009066160437200151,
+          0.009977381737475238,
+          0.01182090377680647,
+          0.012750157042306556,
+          0.01461888637516943,
+          0.01555713452386998,
+          0.0029365128425770867,
+          0.0028842106651989423,
+          0.0028842106651989423,
+          0.0029365128425770837,
+          0.0031370135046109478,
+          0.0032793540931454674,
+          0.0054532195940637665,
+          0.002900398488713746,
+          0.018026340645042695,
+          0.003625759657087292,
+          0.003427797652510748,
+          0.018616443123105723,
+          0.006991714772796818,
+          0.016088959405683313,
+          0.007278005206735013,
+          0.29103775353049577,
+          0.4290189130399728,
+          0.019203066993166595,
+          0.28204170196399886,
+          0.4624008138588052,
+          0.009636715823012926,
+          0.2929515776883176,
+          0.4328809956168956,
+          0.01932720901658717,
+          0.2788011480960771,
+          0.45432019477999885
+        ],
+        "nearest_indices": [
+          8
+        ],
+        "prediction": "ad"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.007278005206735013,
+            0.29103775353049577,
+            0.4290189130399728,
+            0.019203066993166595,
+            0.28204170196399886,
+            0.4624008138588052
+          ],
+          [
+            0.009636715823012926,
+            0.2929515776883176,
+            0.4328809956168956,
+            0.01932720901658717,
+            0.2788011480960771,
+            0.45432019477999885
+          ]
+        ],
+        "label_distances": [
+          0.007278005206735013,
+          0.009636715823012926
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "status": "verified",
+      "qualified_state": "ad",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.007278005206735013,
+          "td": 0.009636715823012926
+        },
+        "decoded": null,
+        "nearest_label": "ad",
+        "nearest_distance_margin": 0.0023587106162779124,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 156,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 444
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 258.7173248970139,
+      "hypothetical_unused_updates": 444
+    },
+    {
+      "packet_index": 2,
+      "anchor_weight": 0.2962962962962963,
+      "sign": -1,
+      "stratum": "interior",
+      "intended_label": "td",
+      "intended_label_retained": true,
+      "one_nn": {
+        "distances": [
+          0.005572246479331148,
+          0.003445349109151395,
+          0.0030216720311070917,
+          0.004778090095985222,
+          0.007278005206735011,
+          0.00997738173747524,
+          0.01275015704230656,
+          0.015557134523869984,
+          0.0030216720311070926,
+          0.002866564550722063,
+          0.008165108871964852,
+          0.009066160437200156,
+          0.010896221669817137,
+          0.011820903776806474,
+          0.013683050178475504,
+          0.014618886375169433,
+          0.0032793540931454705,
+          0.0031370135046109486,
+          0.002936512842577086,
+          0.002884210665198943,
+          0.002884210665198943,
+          0.0029365128425770854,
+          0.004667351201428325,
+          0.002912273401548136,
+          0.01708350503822504,
+          0.004278184242948386,
+          0.004031813643036435,
+          0.017672780905985307,
+          0.006132587341878597,
+          0.015149534981521485,
+          0.008165108871964852,
+          0.29080530768548024,
+          0.42894965883269576,
+          0.018305848835541184,
+          0.28171370112523403,
+          0.46234101039843745,
+          0.010389419582898848,
+          0.2927392661907161,
+          0.43281175341768685,
+          0.01838265313566646,
+          0.27844750040427957,
+          0.4542577241895609
+        ],
+        "nearest_indices": [
+          9
+        ],
+        "prediction": "td"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.008165108871964852,
+            0.29080530768548024,
+            0.42894965883269576,
+            0.018305848835541184,
+            0.28171370112523403,
+            0.46234101039843745
+          ],
+          [
+            0.010389419582898848,
+            0.2927392661907161,
+            0.43281175341768685,
+            0.01838265313566646,
+            0.27844750040427957,
+            0.4542577241895609
+          ]
+        ],
+        "label_distances": [
+          0.008165108871964852,
+          0.010389419582898848
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "status": "verified",
+      "qualified_state": "td",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.008165108871964852,
+          "td": 0.010389419582898848
+        },
+        "decoded": null,
+        "nearest_label": "ad",
+        "nearest_distance_margin": 0.002224310710933996,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 228,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 372
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": false,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 256.54934620304994,
+      "hypothetical_unused_updates": 372
+    },
+    {
+      "packet_index": 3,
+      "anchor_weight": 0.2962962962962963,
+      "sign": 1,
+      "stratum": "interior",
+      "intended_label": "td",
+      "intended_label_retained": false,
+      "one_nn": {
+        "distances": [
+          0.005572246479331146,
+          0.003445349109151394,
+          0.0030216720311070917,
+          0.004778090095985221,
+          0.007278005206735011,
+          0.009977381737475238,
+          0.01275015704230656,
+          0.015557134523869984,
+          0.003021672031107091,
+          0.002866564550722063,
+          0.00816510887196485,
+          0.009066160437200156,
+          0.010896221669817135,
+          0.011820903776806474,
+          0.013683050178475504,
+          0.014618886375169433,
+          0.00327935409314547,
+          0.0031370135046109465,
+          0.002936512842577085,
+          0.0028842106651989423,
+          0.0028842106651989423,
+          0.0029365128425770846,
+          0.004667351201428325,
+          0.002912273401548135,
+          0.01708350503822504,
+          0.004278184242948385,
+          0.004031813643036434,
+          0.017672780905985307,
+          0.006132587341878598,
+          0.015149534981521485,
+          0.008165108871964852,
+          0.29083233057857777,
+          0.42904962275848835,
+          0.018293712775040508,
+          0.2818360996449193,
+          0.4624352597264217,
+          0.010403545179842717,
+          0.2927475152326315,
+          0.43291260169613405,
+          0.01838265313566646,
+          0.2785995394367022,
+          0.4543531799079313
+        ],
+        "nearest_indices": [
+          9
+        ],
+        "prediction": "td"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.008165108871964852,
+            0.29083233057857777,
+            0.42904962275848835,
+            0.018293712775040508,
+            0.2818360996449193,
+            0.4624352597264217
+          ],
+          [
+            0.010403545179842717,
+            0.2927475152326315,
+            0.43291260169613405,
+            0.01838265313566646,
+            0.2785995394367022,
+            0.4543531799079313
+          ]
+        ],
+        "label_distances": [
+          0.008165108871964852,
+          0.010403545179842717
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "status": "verified",
+      "qualified_state": "ad",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.008165108871964852,
+          "td": 0.010403545179842717
+        },
+        "decoded": null,
+        "nearest_label": "ad",
+        "nearest_distance_margin": 0.0022384363078778655,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 156,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 444
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 258.5951973761039,
+      "hypothetical_unused_updates": 444
+    },
+    {
+      "packet_index": 4,
+      "anchor_weight": 0.0,
+      "sign": -1,
+      "stratum": "near_orbit",
+      "intended_label": "ad",
+      "intended_label_retained": true,
+      "one_nn": {
+        "distances": [
+          0.004054254331504466,
+          0.0064106423833904256,
+          0.009066160437200151,
+          0.011820903776806474,
+          0.014618886375169435,
+          0.017439308567768506,
+          0.020272806897805404,
+          0.0231145730531996,
+          0.007278005206735014,
+          0.008165108871964852,
+          0.015557134523869986,
+          0.016497383108168923,
+          0.018382653135666456,
+          0.019327209016587174,
+          0.021219307475523343,
+          0.022166595116213328,
+          0.006697092859292493,
+          0.0069863243153917,
+          0.007571852469130155,
+          0.00786762337144228,
+          0.008464128185631132,
+          0.008764524326518431,
+          0.01168576035664612,
+          0.007685991857642418,
+          0.02465388366805846,
+          0.005309837667767806,
+          0.005599558862435261,
+          0.025247389489540636,
+          0.01337750146400329,
+          0.022702937722110718,
+          0.002866564550722063,
+          0.2925322342491119,
+          0.4287635091764709,
+          0.025671623918701227,
+          0.2834452882046733,
+          0.4621206563039932,
+          0.006012128564160039,
+          0.2944547110604315,
+          0.4326178966506271,
+          0.025961892208963288,
+          0.28014847895075773,
+          0.4540500453254276
+        ],
+        "nearest_indices": [
+          30
+        ],
+        "prediction": "ad"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.002866564550722063,
+            0.2925322342491119,
+            0.4287635091764709,
+            0.025671623918701227,
+            0.2834452882046733,
+            0.4621206563039932
+          ],
+          [
+            0.006012128564160039,
+            0.2944547110604315,
+            0.4326178966506271,
+            0.025961892208963288,
+            0.28014847895075773,
+            0.4540500453254276
+          ]
+        ],
+        "label_distances": [
+          0.002866564550722063,
+          0.006012128564160039
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "status": "verified",
+      "qualified_state": "ad",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.002866564550722063,
+          "td": 0.006012128564160039
+        },
+        "decoded": null,
+        "nearest_label": "ad",
+        "nearest_distance_margin": 0.0031455640134379764,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 168,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 432
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 258.592188860006,
+      "hypothetical_unused_updates": 432
+    },
+    {
+      "packet_index": 5,
+      "anchor_weight": 0.0,
+      "sign": 1,
+      "stratum": "near_orbit",
+      "intended_label": "ad",
+      "intended_label_retained": true,
+      "one_nn": {
+        "distances": [
+          0.0040542543315044656,
+          0.0064106423833904256,
+          0.009066160437200151,
+          0.011820903776806474,
+          0.014618886375169433,
+          0.017439308567768506,
+          0.020272806897805404,
+          0.0231145730531996,
+          0.007278005206735013,
+          0.008165108871964852,
+          0.015557134523869984,
+          0.01649738310816892,
+          0.018382653135666456,
+          0.019327209016587174,
+          0.021219307475523343,
+          0.022166595116213328,
+          0.006697092859292492,
+          0.006986324315391699,
+          0.007571852469130155,
+          0.00786762337144228,
+          0.008464128185631132,
+          0.008764524326518431,
+          0.01168576035664612,
+          0.007685991857642417,
+          0.02465388366805846,
+          0.005309837667767806,
+          0.005599558862435261,
+          0.025247389489540636,
+          0.01337750146400329,
+          0.022702937722110718,
+          0.002866564550722063,
+          0.2925590976307139,
+          0.4288635164919449,
+          0.02566297138153002,
+          0.2835669393050141,
+          0.46221495056394324,
+          0.006036505852850274,
+          0.2944629120461234,
+          0.43271879010881387,
+          0.025961892208963288,
+          0.2802995953464336,
+          0.4541455446953021
+        ],
+        "nearest_indices": [
+          30
+        ],
+        "prediction": "ad"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.002866564550722063,
+            0.2925590976307139,
+            0.4288635164919449,
+            0.02566297138153002,
+            0.2835669393050141,
+            0.46221495056394324
+          ],
+          [
+            0.006036505852850274,
+            0.2944629120461234,
+            0.43271879010881387,
+            0.025961892208963288,
+            0.2802995953464336,
+            0.4541455446953021
+          ]
+        ],
+        "label_distances": [
+          0.002866564550722063,
+          0.006036505852850274
+        ],
+        "nearest_label_indices": [
+          0
+        ],
+        "prediction": "ad"
+      },
+      "status": "verified",
+      "qualified_state": "ad",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.002866564550722063,
+          "td": 0.006036505852850274
+        },
+        "decoded": null,
+        "nearest_label": "ad",
+        "nearest_distance_margin": 0.0031699413021282112,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 156,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 444
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 272.28842668700236,
+      "hypothetical_unused_updates": 444
+    },
+    {
+      "packet_index": 6,
+      "anchor_weight": 1.0,
+      "sign": -1,
+      "stratum": "near_orbit",
+      "intended_label": "td",
+      "intended_label_retained": true,
+      "one_nn": {
+        "distances": [
+          0.023114573053199597,
+          0.020272806897805404,
+          0.01743930856776851,
+          0.014618886375169433,
+          0.011820903776806474,
+          0.009066160437200156,
+          0.006410642383390425,
+          0.004054254331504465,
+          0.01932720901658717,
+          0.01838265313566646,
+          0.010896221669817137,
+          0.00997738173747524,
+          0.008165108871964852,
+          0.0072780052067350125,
+          0.0055722464793311515,
+          0.004778090095985222,
+          0.019957500965597837,
+          0.019642299960634768,
+          0.01901223360559528,
+          0.018697379566457603,
+          0.01806806098162864,
+          0.017753610242456513,
+          0.014755558109199795,
+          0.018890485332012805,
+          0.003154414223747392,
+          0.021525294535708138,
+          0.02118777742246486,
+          0.002955365917009291,
+          0.013054989143681956,
+          0.004357539210965188,
+          0.025961892208963288,
+          0.2874782159875644,
+          0.429936666567016,
+          0.0058568323107109025,
+          0.2784006284778214,
+          0.46336977281614794,
+          0.027330924118467773,
+          0.2894347437444702,
+          0.4338121644231671,
+          0.002866564550722063,
+          0.2752179296576103,
+          0.45526543801816177
+        ],
+        "nearest_indices": [
+          39
+        ],
+        "prediction": "td"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.025961892208963288,
+            0.2874782159875644,
+            0.429936666567016,
+            0.0058568323107109025,
+            0.2784006284778214,
+            0.46336977281614794
+          ],
+          [
+            0.027330924118467773,
+            0.2894347437444702,
+            0.4338121644231671,
+            0.002866564550722063,
+            0.2752179296576103,
+            0.45526543801816177
+          ]
+        ],
+        "label_distances": [
+          0.0058568323107109025,
+          0.002866564550722063
+        ],
+        "nearest_label_indices": [
+          1
+        ],
+        "prediction": "td"
+      },
+      "status": "verified",
+      "qualified_state": "td",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.0058568323107109025,
+          "td": 0.002866564550722063
+        },
+        "decoded": null,
+        "nearest_label": "td",
+        "nearest_distance_margin": 0.0029902677599888397,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 204,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 396
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 263.1341253579303,
+      "hypothetical_unused_updates": 396
+    },
+    {
+      "packet_index": 7,
+      "anchor_weight": 1.0,
+      "sign": 1,
+      "stratum": "near_orbit",
+      "intended_label": "td",
+      "intended_label_retained": true,
+      "one_nn": {
+        "distances": [
+          0.023114573053199597,
+          0.020272806897805404,
+          0.01743930856776851,
+          0.014618886375169435,
+          0.011820903776806474,
+          0.009066160437200156,
+          0.006410642383390425,
+          0.004054254331504465,
+          0.01932720901658717,
+          0.018382653135666456,
+          0.010896221669817137,
+          0.00997738173747524,
+          0.008165108871964852,
+          0.007278005206735012,
+          0.005572246479331151,
+          0.004778090095985222,
+          0.019957500965597837,
+          0.019642299960634768,
+          0.01901223360559528,
+          0.018697379566457603,
+          0.01806806098162864,
+          0.017753610242456513,
+          0.014755558109199794,
+          0.018890485332012805,
+          0.003154414223747392,
+          0.021525294535708138,
+          0.02118777742246486,
+          0.0029553659170092903,
+          0.013054989143681956,
+          0.004357539210965189,
+          0.02596189220896329,
+          0.287505551597031,
+          0.4300364010584134,
+          0.005818789412049808,
+          0.2785244829422167,
+          0.46346381293654804,
+          0.02733629686349177,
+          0.28944308696430804,
+          0.4339127801901392,
+          0.002866564550722063,
+          0.2753717518155641,
+          0.4553606824929426
+        ],
+        "nearest_indices": [
+          39
+        ],
+        "prediction": "td"
+      },
+      "nearest_phase": {
+        "phase_distances": [
+          [
+            0.02596189220896329,
+            0.287505551597031,
+            0.4300364010584134,
+            0.005818789412049808,
+            0.2785244829422167,
+            0.46346381293654804
+          ],
+          [
+            0.02733629686349177,
+            0.28944308696430804,
+            0.4339127801901392,
+            0.002866564550722063,
+            0.2753717518155641,
+            0.4553606824929426
+          ]
+        ],
+        "label_distances": [
+          0.005818789412049808,
+          0.002866564550722063
+        ],
+        "nearest_label_indices": [
+          1
+        ],
+        "prediction": "td"
+      },
+      "status": "verified",
+      "qualified_state": "td",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.005818789412049808,
+          "td": 0.002866564550722063
+        },
+        "decoded": null,
+        "nearest_label": "td",
+        "nearest_distance_margin": 0.002952224861327745,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 204,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 396
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 257.6124323520198,
+      "hypothetical_unused_updates": 396
+    }
+  ],
+  "source_files_checked_against_commit": [
+    {
+      "file": "tools/run_p6_readback.py",
+      "bytes": 12861,
+      "sha256": "e2f1f6b52f8551061444f71b96edf17f7491981475180498e0af63cec6f89dfb"
+    },
+    {
+      "file": "tools/validate_qwen_map.py",
+      "bytes": 25943,
+      "sha256": "b7601d6e853ebb0fc1f8bbb5f3f7146a41f4743a6fd37ad297f0c8b90a54aecb"
+    },
+    {
+      "file": "tools/check_p6_writes.py",
+      "bytes": 22766,
+      "sha256": "2ac2b8058a47c1478b092dc3e55f7febcdb0725cf75c455a5b3ffafd63f76781"
+    },
+    {
+      "file": "tools/streaming_readout.py",
+      "bytes": 1769,
+      "sha256": "15101e9d809e92a85aabf44dea6b3eb09ffeb5909a071f43191d45ac8685cd46"
+    },
+    {
+      "file": "tools/audit_p6_recovery.py",
+      "bytes": 21230,
+      "sha256": "dff1be03ec6cacbe00d4093a9162725a48b3778f42d20680e2767593f88835b5"
+    }
+  ],
+  "preparation_files_checked_against_commit": [
+    {
+      "file": "tools/prepare_transverse_readout.py",
+      "bytes": 21262,
+      "sha256": "9c67054a4e337613a509901e615f49b855881fd696273e36f091fe4f7622f488"
+    },
+    {
+      "file": "tools/run_p6_readback.py",
+      "bytes": 12861,
+      "sha256": "e2f1f6b52f8551061444f71b96edf17f7491981475180498e0af63cec6f89dfb"
+    },
+    {
+      "file": "tools/validate_qwen_map.py",
+      "bytes": 25943,
+      "sha256": "b7601d6e853ebb0fc1f8bbb5f3f7146a41f4743a6fd37ad297f0c8b90a54aecb"
+    },
+    {
+      "file": "tools/check_p6_writes.py",
+      "bytes": 22766,
+      "sha256": "2ac2b8058a47c1478b092dc3e55f7febcdb0725cf75c455a5b3ffafd63f76781"
+    },
+    {
+      "file": "tools/streaming_readout.py",
+      "bytes": 1769,
+      "sha256": "15101e9d809e92a85aabf44dea6b3eb09ffeb5909a071f43191d45ac8685cd46"
+    },
+    {
+      "file": "tools/audit_p6_recovery.py",
+      "bytes": 21230,
+      "sha256": "dff1be03ec6cacbe00d4093a9162725a48b3778f42d20680e2767593f88835b5"
+    },
+    {
+      "file": "docs/transverse-readout-protocol.md",
+      "bytes": 7744,
+      "sha256": "47860c1b23ce402e1f6dd0e456efeb45f31dfd81a9e4d7d16b11ac05299baa25"
+    },
+    {
+      "file": "pyproject.toml",
+      "bytes": 647,
+      "sha256": "ada1e984ecbd2084418f011c2dc9065df68281288d8fde06e9730e4f478bcf9c"
+    },
+    {
+      "file": "uv.lock",
+      "bytes": 392521,
+      "sha256": "d080ff29fd93afd311ace32ec06ed612e51f4cada1db5b332e4060d9d8a478c0"
+    }
+  ],
+  "verified_inventory_files": 848,
+  "verified_archive_files": 219,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude/complete-audit.json",
+      "bytes": 1034776,
+      "sha256": "4cb4094c38421f054ad369de8eebe32af33c9d30b5479a862830230bbe70b1a7"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude/run/results.json",
+      "bytes": 426107,
+      "sha256": "40cba34b050931ebbbf509e49d5a185f7cd4ad4f468f24715568ac7e5bc1f826"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude/run/metadata.json",
+      "bytes": 2915,
+      "sha256": "d2493a243b364d393e23ab0910591ff4ff9d61bc9768f71929028c3e8edd3834"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude/run/events.jsonl",
+      "bytes": 1436034,
+      "sha256": "046735631507f7ef4a6b641bdc4878252b5923e6ebf00341631019b4cb69a45e"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude/local-evaluation/design.json",
+      "bytes": 621505,
+      "sha256": "9d3afa3fcc230a4a3bcd26fd6c8bae09101ae01d3a6dae739ef3f6033f3b5389"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude/local-evaluation/preparation.json",
+      "bytes": 1300,
+      "sha256": "6962eafc242596678f64cdf70f0e9eecbf97b63087a43e9af8029c06cff0e9ed"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude/preparation-audit.json",
+      "bytes": 581020,
+      "sha256": "86feb98b1947c16165838ec3ea449d8728ebe166c1ff5227f29781a9fdb22686"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude/final-manifest.json",
+      "bytes": 181482,
+      "sha256": "fab5e92b64e0f43b99bddf7da44d2eb3b503df04238ee7936229dc581a6fd17a"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude/local-return-verification.json",
+      "bytes": 389,
+      "sha256": "d0d369c0bd357cc453a8d7015255f44932691d104bfef40e448496f04c7c7667"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude/transfer-closeout.json",
+      "bytes": 737,
+      "sha256": "893118966c1a351810919eeef26bf2bb8f5b804a2b861606d7496a910a0cf0ab"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/transverse-amplitude/20261026T055813Z-transverse-amplitude/independent-review.json",
+      "bytes": 8707,
+      "sha256": "603f1e11d13991386441c34536723dc222b57252a839f72ddfb14e32209594a9"
+    }
+  ],
+  "scope": "Adapted exploratory eight-state transverse test: four interior probes and four near-orbit controls, one fixed direction/amplitude and two known reference cycles. Full 600 updates and 4817 model calls; shadow decisions provide hypothetical latency only, no actual stopping savings. Intended-label retention and static-decoder disagreement are outcomes, not integrity gates. Saved evidence is rechecked without model replay. No basin-volume, fractality, shrimp-specificity, secrecy, population-reliability or language-channel claim."
+}

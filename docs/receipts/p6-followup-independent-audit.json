@@ -1,0 +1,857 @@
+{
+  "recorded_at_utc": "2026-10-25T22:11:17Z",
+  "repository_commit_at_audit": "471b5eac00924638df3285aa223a84c3c94cedb7",
+  "audit_status": "passed",
+  "evidence_label": "adapted exploratory follow-up after the failed original 120-step hold",
+  "kind": "Independent recomputation from saved arrays; no model execution",
+  "auditor": "Codex paper_draft subagent",
+  "data_root": "/data2/shrimp-memory-data",
+  "raw_directory": "audits/p6-followup/20261025T220342Z-followup",
+  "input_files": {
+    "audits/qwen-validation/20261025T214011Z-JbM9BT/p6-hold-01/results.json": {
+      "bytes": 9901,
+      "sha256": "2a06e58967e9304ca5e326d65adeac781e23e13f46a9ab6e9dafe5e9a02abb26"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/results.json": {
+      "bytes": 12218,
+      "sha256": "8d9b779f6ec6652af1ec803026e7a8f60018de7f91e660f4e1604740177ffec8"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/metadata.json": {
+      "bytes": 6238,
+      "sha256": "ad1dba0b172e1639e87062bad1a1c05c28de645870cad1822e30981a0a3cb2bb"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/result.json": {
+      "bytes": 2756,
+      "sha256": "afe4fc9423a54c0b3080f9f710701f9720c52e2b137d09278a4686128c7c2f6c"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/metadata.json": {
+      "bytes": 2295,
+      "sha256": "3b1ff9d0ac707677b873a9c8974a71c447656fefceaf20ae5c18460c7d5e4404"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/terminal-seeds.npz": {
+      "bytes": 13961,
+      "sha256": "ef0b512f282a002037331be9f7ef265e06d6f0bce137a979b4baaae51aaeae8c"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/seed-manifest.json": {
+      "bytes": 3011,
+      "sha256": "049759c518e8c4d394df16d9848d5b5a37636af33a50b3b67a3f5892cce7ea68"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/td-test-state.npz": {
+      "bytes": 7099,
+      "sha256": "8347543802009d1dd07b055f486ab82cf5ea86522a3843deab788fd3efbd38e6"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/events.jsonl": {
+      "bytes": 79653,
+      "sha256": "bf926fe8b7875dbd41726381c842deb438ce5b1d73ea9653549d9703242936da"
+    },
+    "audits/qwen-validation/20261025T214011Z-JbM9BT/p6-hold-01/ad-final-120.npz": {
+      "bytes": 833490,
+      "sha256": "c8be24184714a01bfd084f39f33050f8e3b1eb6a55ad057067c52512fe9128e4"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-final-120.npz": {
+      "bytes": 833527,
+      "sha256": "d636197886d62350b68c90e039b0395e1a69dfeaded62cd94921cec70d9d3968"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-block-012.npz": {
+      "bytes": 90653,
+      "sha256": "3e34a7ee7aaed7d4169ed6f56c8992da3d7ec37a5f6439f1c7b15c5596ee58e4"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-block-024.npz": {
+      "bytes": 90660,
+      "sha256": "2e079c02a1346704224f132e2c70e958b42b6f950a1793035ce6d72a80784718"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-block-036.npz": {
+      "bytes": 90670,
+      "sha256": "4b3092c0580f4f7873583589ea95cba70113bbea0c96526e643b8f73da0128d2"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-block-048.npz": {
+      "bytes": 90667,
+      "sha256": "1416a2b5c06a7dae5f60a6e5023dda7e135efb9bc886f0efe86c7405ac89a2a4"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-block-060.npz": {
+      "bytes": 90669,
+      "sha256": "d45b83a938020143fd654ff362714187fc8bb8a4e43fcf595fd93cea460a46d3"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-block-072.npz": {
+      "bytes": 90671,
+      "sha256": "a80c70cab7bf17d483556a6f5a4025c1afbae853b7c080d1426be37ae4912703"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-block-084.npz": {
+      "bytes": 90669,
+      "sha256": "3a91adb9ba8e57caa0113418b859e78dc086213a04fc3f40e6d78ae0b87c2ec0"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-block-096.npz": {
+      "bytes": 90679,
+      "sha256": "b8d16876995aff91ebea5b8c1f7bf051b5bf7642277bf8e800d84909cf565150"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-block-108.npz": {
+      "bytes": 90666,
+      "sha256": "b25b0773730feb587895f23b397a4c380a655d630a076ccc8c8a788cf0970ad7"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-block-120.npz": {
+      "bytes": 90675,
+      "sha256": "92b38638a25ad731b9c0d253ae0caf754dfdb46692c33e59b89e6e24e0d3d937"
+    },
+    "audits/qwen-validation/20261025T214011Z-JbM9BT/p6-hold-01/td-final-120.npz": {
+      "bytes": 833342,
+      "sha256": "8eb9e72aee97cfef68f5b2b05a00a69ec8d48dca2024259806944d5fca3c5034"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/td-final-120.npz": {
+      "bytes": 833280,
+      "sha256": "cfa4c6c15f3bb73c1bb621613716679b9b61113bdcf574e55fbce77debe778ab"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/td-block-012.npz": {
+      "bytes": 90660,
+      "sha256": "98015fd10f35a6031d620bbf2b8e77ffd339b1b34b33f2154748877cfe080fce"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/td-block-024.npz": {
+      "bytes": 90637,
+      "sha256": "9052aef29c54df870e560b2bd3bac509f646f4bd68d3f79224b08ad786af642c"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/td-block-036.npz": {
+      "bytes": 90645,
+      "sha256": "d287066121172c47de5a8cb791617b3d9e149ec41eed217e410419d084a3e935"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/td-block-048.npz": {
+      "bytes": 90618,
+      "sha256": "4bf5895f3f5204b6fbc7e16023090d8e28065a0046ec108cda3f7a42706aae69"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/td-block-060.npz": {
+      "bytes": 90633,
+      "sha256": "0ecc288d0d5c505da508825b30ca0af5cc27a73ef35dbe54e9a67a692f6a1afb"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/td-block-072.npz": {
+      "bytes": 90644,
+      "sha256": "8653e8fddcb55cbe1cee0dfe733b6fccbe14f7f01109a186f9f568478dc60797"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/td-block-084.npz": {
+      "bytes": 90645,
+      "sha256": "0c8c791fbc1b4c16d1fa083541aa90a827feb3ddd3a1525c29fff4d4d528223a"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/td-block-096.npz": {
+      "bytes": 90664,
+      "sha256": "11600e861b8280cd1dd08089ff84ffa16b6f75ff4e04956ee7db908a1d8c7116"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/td-block-108.npz": {
+      "bytes": 90653,
+      "sha256": "96d5d4e697e5beb6cc0096faa9362c46104b024ea34e15cfc081938b987bbbf0"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/continued-hold/td-block-120.npz": {
+      "bytes": 90617,
+      "sha256": "dc06f047130bf5d96855a0f18616cde34f3c1c279bb1de34b0acb61d52bc381e"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-007-native_jvp.npz": {
+      "bytes": 1245414,
+      "sha256": "ec7d5bcadc3aac7bc29089516bf8ff875287c88cb708ccca02a5cad1ffe232f5"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-008-fd_00_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "cc6cde518776f04b9bcd0b2f98cd9dff4cb16068503f96aec30847a98e699e2c"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-009-fd_00_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "2401228a1b7714c3d3bb13fcd4a898d9a4a33baae44645918924842cf03fbdd9"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-010-fd_01_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "3f9e5305ad5858aefeb465118390393441b829dcdcf5e3d5ee00ed88ac6dabce"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-011-fd_01_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "52825356c9829544d137f464b6e667dc403004775671f3aadd7ea89199758a9a"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-012-fd_02_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "d50567b6b312b2b1dbe1db1d95e646954f0e6cb73566dfdb2a1c9556814e2f49"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-013-fd_02_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "0dbb4da644ec7b2dd923e9aad875904b2fd90e611b61cc1b6633144e47d7de50"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-014-fd_03_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "c62d5a4a13c7cfac7f2e2161c1376749abf557795990ac477f8c867d6e08acf3"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-015-fd_03_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "8d639e440c82d5a4caecd31cd86d23e74239ad451278ff90da1d774a28b1fa1b"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-016-fd_04_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "dda08096e128e34b31d2144e8ad61c867049f21414515709a50c05ef16ed1280"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-017-fd_04_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "77397605bd91957b307793683827a18fe508d2a2bd7bcf30394be89e61970585"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-018-fd_05_plus.npz": {
+      "bytes": 1230590,
+      "sha256": "6b40810547003b56ad0e0e688f4fa1b8123362467de2f9d200534d041b714ae6"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-019-fd_05_minus.npz": {
+      "bytes": 1230590,
+      "sha256": "d72534e0568e59dff0e3e99be5ef6b8830464d7b83a3f4b896885775d1d2e7b1"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-002-stock_base.npz": {
+      "bytes": 1230590,
+      "sha256": "0371e8548633fc6c5a4525d727b88740c1837665e587fac518d67a7c373212c2"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-004-native_base.npz": {
+      "bytes": 1230590,
+      "sha256": "7614442a500501218f5008147882c8d38a32ec9271944fcbf80daa7e791d4b3d"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-005-native_repeat.npz": {
+      "bytes": 1230590,
+      "sha256": "7614442a500501218f5008147882c8d38a32ec9271944fcbf80daa7e791d4b3d"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-diagnostic/call-006-native_full_prefix.npz": {
+      "bytes": 1230590,
+      "sha256": "4103499dcd83f5a96b41f799c87d9ac1bc32e096fb8afa8d5f060ba1730ebb2e"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/map-exit-status.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "audits/p6-followup/20261025T220342Z-followup/hold-exit-status.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    }
+  },
+  "source_context": {
+    "map_source_commit": "471b5eac00924638df3285aa223a84c3c94cedb7",
+    "map_script_sha256": "b7601d6e853ebb0fc1f8bbb5f3f7146a41f4743a6fd37ad297f0c8b90a54aecb",
+    "hold_source_commit": "471b5eac00924638df3285aa223a84c3c94cedb7",
+    "hold_script_sha256": "b0bf92d204078ab4426a6db75fefec3c8ddfdcafd0ff5a2720c7a4f60e458297",
+    "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "hold": {
+      "alpha": 0.07293697809562831,
+      "log10_temperature": -0.15395151820007266
+    }
+  },
+  "original_attempt": {
+    "status": "failed",
+    "raw_directory": "audits/qwen-validation/20261025T214011Z-JbM9BT/p6-hold-01",
+    "preserved": true,
+    "reason": "td closure exceeded the declared tolerance after the original 120 steps"
+  },
+  "exit_statuses": {
+    "map": 0,
+    "hold": 0
+  },
+  "continued_hold": {
+    "rows": [
+      {
+        "label": "ad",
+        "initial_state_exactly_prior_terminal": true,
+        "initial_state_exactly_supplied_seed": true,
+        "finite_float64": true,
+        "additional_steps": 120,
+        "total_steps": 240,
+        "phase_lag6_l2": [
+          8.500750310449194e-15,
+          2.8052153574478594e-14,
+          2.3938301507609485e-14,
+          6.563289079548334e-15,
+          9.677183725307605e-15,
+          1.1393500742551817e-14
+        ],
+        "maximum_l2_residual": 2.8052153574478594e-14,
+        "closure_tolerance": 1e-08,
+        "proper_divisor_checks": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.2925316216211745,
+              0.459499483016088,
+              0.43030568588956297,
+              0.28050123550887623,
+              0.48244460473660733,
+              0.46215891591692515
+            ],
+            "maximum_l2_gap": 0.48244460473660733,
+            "minimum_l2_gap": 0.28050123550887623,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.42880393433042996,
+              0.2895782226579991,
+              0.4507506037991507,
+              0.46378481887717904,
+              0.28349162781958565,
+              0.49082699411470226
+            ],
+            "maximum_l2_gap": 0.49082699411470226,
+            "minimum_l2_gap": 0.28349162781958565,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.02550672450654483,
+              0.04523115535306974,
+              0.11840896164916322,
+              0.02550672450654483,
+              0.04523115535306974,
+              0.11840896164916322
+            ],
+            "maximum_l2_gap": 0.11840896164916322,
+            "minimum_l2_gap": 0.02550672450654483,
+            "excluded": true
+          }
+        ],
+        "primitive_cycle_gate_passed": true,
+        "checkpoint_history": [
+          {
+            "additional_steps": 12,
+            "total_steps_including_original_attempt": 132,
+            "phase_lag6_l2": [
+              1.869318469211834e-15,
+              3.238369262089117e-15,
+              2.8424295113716457e-15,
+              1.4464861401588459e-15,
+              5.52234831543672e-15,
+              8.385914449604508e-15
+            ],
+            "maximum_l2_residual": 8.385914449604508e-15,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 24,
+            "total_steps_including_original_attempt": 144,
+            "phase_lag6_l2": [
+              6.017830415493883e-15,
+              8.30387567509385e-15,
+              6.993981942852036e-15,
+              1.2133166116209038e-15,
+              1.976866458545446e-15,
+              3.2802430694973497e-15
+            ],
+            "maximum_l2_residual": 8.30387567509385e-15,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 36,
+            "total_steps_including_original_attempt": 156,
+            "phase_lag6_l2": [
+              3.593884450797794e-15,
+              1.0695852353181362e-14,
+              7.888893612117798e-15,
+              1.2397727048052233e-15,
+              1.60645520379162e-15,
+              1.7989763984685695e-15
+            ],
+            "maximum_l2_residual": 1.0695852353181362e-14,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 48,
+            "total_steps_including_original_attempt": 168,
+            "phase_lag6_l2": [
+              1.6450369953095898e-15,
+              1.3982266919728867e-15,
+              1.0511694214150715e-15,
+              4.84147119768626e-16,
+              1.3100611447147187e-15,
+              2.2521233384511018e-15
+            ],
+            "maximum_l2_residual": 2.2521233384511018e-15,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 60,
+            "total_steps_including_original_attempt": 180,
+            "phase_lag6_l2": [
+              2.8311145130282275e-15,
+              6.973876182160623e-15,
+              6.697148823591819e-15,
+              1.6965281181677e-15,
+              2.997884826815872e-15,
+              5.658451330144517e-15
+            ],
+            "maximum_l2_residual": 6.973876182160623e-15,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 72,
+            "total_steps_including_original_attempt": 192,
+            "phase_lag6_l2": [
+              5.798978741749477e-15,
+              1.319454049853029e-14,
+              1.2216488882182925e-14,
+              6.1927689693572535e-15,
+              1.4289989813766576e-14,
+              1.9444144005809136e-14
+            ],
+            "maximum_l2_residual": 1.9444144005809136e-14,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 84,
+            "total_steps_including_original_attempt": 204,
+            "phase_lag6_l2": [
+              6.218825495273948e-15,
+              1.7685621228942642e-14,
+              1.3419923016482965e-14,
+              4.089636253285157e-15,
+              3.1777640983551156e-15,
+              6.335178065655225e-15
+            ],
+            "maximum_l2_residual": 1.7685621228942642e-14,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 96,
+            "total_steps_including_original_attempt": 216,
+            "phase_lag6_l2": [
+              7.063931924042519e-15,
+              1.741245620552181e-14,
+              1.4972489834129033e-14,
+              5.067657522057761e-15,
+              9.605630305900716e-15,
+              1.2724059592231971e-14
+            ],
+            "maximum_l2_residual": 1.741245620552181e-14,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 108,
+            "total_steps_including_original_attempt": 228,
+            "phase_lag6_l2": [
+              3.597523047948024e-15,
+              7.072268147711791e-15,
+              1.2932361285963024e-14,
+              8.362410579896557e-15,
+              1.688451801141616e-14,
+              2.1817444029710548e-14
+            ],
+            "maximum_l2_residual": 2.1817444029710548e-14,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 120,
+            "total_steps_including_original_attempt": 240,
+            "phase_lag6_l2": [
+              8.500750310449194e-15,
+              2.8052153574478594e-14,
+              2.3938301507609485e-14,
+              6.563289079548334e-15,
+              9.677183725307605e-15,
+              1.1393500742551817e-14
+            ],
+            "maximum_l2_residual": 2.8052153574478594e-14,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          }
+        ]
+      },
+      {
+        "label": "td",
+        "initial_state_exactly_prior_terminal": true,
+        "initial_state_exactly_supplied_seed": true,
+        "finite_float64": true,
+        "additional_steps": 120,
+        "total_steps": 240,
+        "phase_lag6_l2": [
+          1.89738259742895e-12,
+          5.350507768794598e-13,
+          5.537222850032231e-13,
+          4.058336435672496e-13,
+          1.1414317260381255e-12,
+          2.446578215222407e-12
+        ],
+        "maximum_l2_residual": 2.446578215222407e-12,
+        "closure_tolerance": 1e-08,
+        "proper_divisor_checks": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.29342516496994214,
+              0.4650295469076499,
+              0.43385300530778975,
+              0.2752799267276376,
+              0.4682253340388068,
+              0.4539326103744863
+            ],
+            "maximum_l2_gap": 0.4682253340388068,
+            "minimum_l2_gap": 0.2752799267276376,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.43251967804103214,
+              0.2894247199991806,
+              0.4495786574609355,
+              0.45530403898365557,
+              0.27926942368741425,
+              0.4835040638769246
+            ],
+            "maximum_l2_gap": 0.4835040638769246,
+            "minimum_l2_gap": 0.27926942368741425,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.02718288206511113,
+              0.06529638404042651,
+              0.11471224697028484,
+              0.02718288206511113,
+              0.06529638404042651,
+              0.11471224697028484
+            ],
+            "maximum_l2_gap": 0.11471224697028484,
+            "minimum_l2_gap": 0.02718288206511113,
+            "excluded": true
+          }
+        ],
+        "primitive_cycle_gate_passed": true,
+        "checkpoint_history": [
+          {
+            "additional_steps": 12,
+            "total_steps_including_original_attempt": 132,
+            "phase_lag6_l2": [
+              9.657121142399967e-09,
+              2.7361870587765118e-09,
+              2.852657386457145e-09,
+              2.093435091785512e-09,
+              5.908580821790137e-09,
+              1.2585791979563111e-08
+            ],
+            "maximum_l2_residual": 1.2585791979563111e-08,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 24,
+            "total_steps_including_original_attempt": 144,
+            "phase_lag6_l2": [
+              3.73746423219803e-09,
+              1.0589518843846121e-09,
+              1.1040262569074854e-09,
+              8.101945421259733e-10,
+              2.286722918575086e-09,
+              4.870929642853517e-09
+            ],
+            "maximum_l2_residual": 4.870929642853517e-09,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 36,
+            "total_steps_including_original_attempt": 156,
+            "phase_lag6_l2": [
+              1.4464757613881014e-09,
+              4.0984191688231623e-10,
+              4.27303585686834e-10,
+              3.1358092181534694e-10,
+              8.850651457267716e-10,
+              1.885266751443398e-09
+            ],
+            "maximum_l2_residual": 1.885266751443398e-09,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 48,
+            "total_steps_including_original_attempt": 168,
+            "phase_lag6_l2": [
+              5.598978703859784e-10,
+              1.586386659997213e-10,
+              1.65393938803112e-10,
+              1.2137439228189593e-10,
+              3.4257003617277976e-10,
+              7.297052800124703e-10
+            ],
+            "maximum_l2_residual": 7.297052800124703e-10,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 60,
+            "total_steps_including_original_attempt": 180,
+            "phase_lag6_l2": [
+              2.1670104485139428e-10,
+              6.140204439669348e-11,
+              6.402375779886793e-11,
+              4.6985589024429814e-11,
+              1.3260985692158218e-10,
+              2.82469816909892e-10
+            ],
+            "maximum_l2_residual": 2.82469816909892e-10,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 72,
+            "total_steps_including_original_attempt": 192,
+            "phase_lag6_l2": [
+              8.388835422698574e-11,
+              2.3766696779058555e-11,
+              2.4775353787404893e-11,
+              1.8182198463169982e-11,
+              5.132345815676096e-11,
+              1.0932906753288721e-10
+            ],
+            "maximum_l2_residual": 1.0932906753288721e-10,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 84,
+            "total_steps_including_original_attempt": 204,
+            "phase_lag6_l2": [
+              3.2444086952362494e-11,
+              9.192133204285443e-12,
+              9.573638839036937e-12,
+              7.023459410389311e-12,
+              1.9822547336592925e-11,
+              4.222681086691811e-11
+            ],
+            "maximum_l2_residual": 4.222681086691811e-11,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 96,
+            "total_steps_including_original_attempt": 216,
+            "phase_lag6_l2": [
+              1.252169391440845e-11,
+              3.5465342029101662e-12,
+              3.694382710561383e-12,
+              2.7099923964581964e-12,
+              7.649266632299245e-12,
+              1.629491436435803e-11
+            ],
+            "maximum_l2_residual": 1.629491436435803e-11,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 108,
+            "total_steps_including_original_attempt": 228,
+            "phase_lag6_l2": [
+              4.8479121684693894e-12,
+              1.3758403850131644e-12,
+              1.4364781939816228e-12,
+              1.053716453139176e-12,
+              2.9771521752798966e-12,
+              6.3515571740676536e-12
+            ],
+            "maximum_l2_residual": 6.3515571740676536e-12,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          },
+          {
+            "additional_steps": 120,
+            "total_steps_including_original_attempt": 240,
+            "phase_lag6_l2": [
+              1.89738259742895e-12,
+              5.350507768794598e-13,
+              5.537222850032231e-13,
+              4.058336435672496e-13,
+              1.1414317260381255e-12,
+              2.446578215222407e-12
+            ],
+            "maximum_l2_residual": 2.446578215222407e-12,
+            "recorded_residuals_match_exactly": true,
+            "checkpoint_states_and_tokens_match_final": true
+          }
+        ]
+      }
+    ],
+    "qualified_pair_separation": {
+      "all_six_shifts": [
+        {
+          "shift": 0,
+          "phase_l2_distances": [
+            0.0052986181281807765,
+            0.008237504234007592,
+            0.007946303719901168,
+            0.005085587984228441,
+            0.014178676289593807,
+            0.01538034045850213
+          ],
+          "maximum_l2_distance": 0.01538034045850213
+        },
+        {
+          "shift": 1,
+          "phase_l2_distances": [
+            0.2944448582092395,
+            0.4635806998585782,
+            0.4299769814242288,
+            0.277300064610207,
+            0.4734432308807396,
+            0.46200561781218236
+          ],
+          "maximum_l2_distance": 0.4734432308807396
+        },
+        {
+          "shift": 2,
+          "phase_l2_distances": [
+            0.43265885026831563,
+            0.2874775925892824,
+            0.44535616185357985,
+            0.45570373634443584,
+            0.2825152858277596,
+            0.4922609635947365
+          ],
+          "maximum_l2_distance": 0.4922609635947365
+        },
+        {
+          "shift": 3,
+          "phase_l2_distances": [
+            0.025803152031222312,
+            0.05769340257355359,
+            0.11654945080911931,
+            0.026898396210878563,
+            0.05302972592666374,
+            0.11561866197075842
+          ],
+          "maximum_l2_distance": 0.11654945080911931
+        },
+        {
+          "shift": 4,
+          "phase_l2_distances": [
+            0.28020938512579363,
+            0.4820346016815328,
+            0.4286634935941897,
+            0.2915105158315653,
+            0.4549121792874451,
+            0.4634079293002684
+          ],
+          "maximum_l2_distance": 0.4820346016815328
+        },
+        {
+          "shift": 5,
+          "phase_l2_distances": [
+            0.45408874960847057,
+            0.29150132614858054,
+            0.4609610841010435,
+            0.4341731132336261,
+            0.2784478076322636,
+            0.47737859331886023
+          ],
+          "maximum_l2_distance": 0.47737859331886023
+        }
+      ],
+      "best_shift": 0,
+      "minimum_over_shifts_of_maximum_l2_distance": 0.01538034045850213,
+      "threshold": 0.001,
+      "passed": true,
+      "same_last_six_top_token_ids": true
+    }
+  },
+  "map_diagnostic": {
+    "input_exactly_supplied_test_state": true,
+    "input_exactly_original_td_endpoint": true,
+    "direction_l2_norm": 1.0000000000000002,
+    "jvp_l2_norm": 0.30511808873480384,
+    "finite_difference_rows": [
+      {
+        "h": 0.01,
+        "absolute_error": 0.001072758713331932,
+        "relative_error": 0.003515880417907081,
+        "absolute_error_minus_recorded": 0.0,
+        "relative_error_minus_recorded": 0.0,
+        "inputs_exactly_x_plus_minus_hv": true
+      },
+      {
+        "h": 0.005,
+        "absolute_error": 0.0002680064139793099,
+        "relative_error": 0.0008783694702946639,
+        "absolute_error_minus_recorded": 0.0,
+        "relative_error_minus_recorded": 0.0,
+        "inputs_exactly_x_plus_minus_hv": true
+      },
+      {
+        "h": 0.0025,
+        "absolute_error": 6.699002677646355e-05,
+        "relative_error": 0.00021955442581016082,
+        "absolute_error_minus_recorded": 0.0,
+        "relative_error_minus_recorded": 0.0,
+        "inputs_exactly_x_plus_minus_hv": true
+      },
+      {
+        "h": 0.00125,
+        "absolute_error": 1.67467809690011e-05,
+        "relative_error": 5.488622794683509e-05,
+        "absolute_error_minus_recorded": 0.0,
+        "relative_error_minus_recorded": 0.0,
+        "inputs_exactly_x_plus_minus_hv": true
+      },
+      {
+        "h": 0.0001,
+        "absolute_error": 1.0717622378111082e-07,
+        "relative_error": 3.512614549518367e-07,
+        "absolute_error_minus_recorded": 2.6469779601696886e-23,
+        "relative_error_minus_recorded": 1.0587911840678754e-22,
+        "inputs_exactly_x_plus_minus_hv": true
+      },
+      {
+        "h": 1e-05,
+        "absolute_error": 1.030019792346416e-09,
+        "relative_error": 3.3758070411933753e-09,
+        "absolute_error_minus_recorded": 2.0679515313825692e-25,
+        "relative_error_minus_recorded": 4.1359030627651384e-25,
+        "inputs_exactly_x_plus_minus_hv": true
+      }
+    ],
+    "halving_orders": [
+      {
+        "h_large": 0.01,
+        "h_small": 0.005,
+        "order": 2.0009861861669713
+      },
+      {
+        "h_large": 0.005,
+        "h_small": 0.0025,
+        "order": 2.0002492942907124
+      },
+      {
+        "h_large": 0.0025,
+        "h_small": 0.00125,
+        "order": 2.0000625181245737
+      },
+      {
+        "h_large": 0.00125,
+        "h_small": 0.0001,
+        "order": null
+      },
+      {
+        "h_large": 0.0001,
+        "h_small": 1e-05,
+        "order": null
+      }
+    ],
+    "minimum_relative_error": 3.3758070411933753e-09,
+    "implementation_comparisons": {
+      "stock_native_max_absolute_difference": 9.29707468649843e-09,
+      "stock_native_relative_l2_difference": 3.193803330336902e-07,
+      "repeat_max_absolute_difference": 0.0,
+      "cache_full_max_absolute_difference": 1.5265566588595902e-16,
+      "jvp_primal_max_absolute_difference": 0.0
+    },
+    "saved_arrays_checked": 17,
+    "array_issues": [],
+    "maximum_probability_sum_absolute_error": 9.992007221626409e-15
+  },
+  "limitations": [
+    "The extra hold was selected after examining the original failed 120-step attempt. It is an adapted continuation, not a replacement or confirmatory success.",
+    "Two separate terminal period-six trajectories pass finite-precision recurrence, divisor and separation gates at the specified common hold. This does not certify exact coexistence or attraction.",
+    "No perturbation recovery, basin-volume, write/hold/read, channel or logic claim is established by these data.",
+    "The derivative comparison covers one td state and one tangent direction at the tested controls, not a global effective-precision guarantee.",
+    "This is an independent arithmetic audit of saved evidence, not an independent model implementation or a new model run."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "recorded_utc": "2026-10-26T00:00:43Z",
+  "receipt_source_commit": "77b3a654b8afebdbe468a2f5d2a28077db7d187e",
+  "experiment_source_commit": "a75267447b9395c33f143a6157c6afcafee34f6e",
+  "status": "passed",
+  "evidence": "exploratory fixed byte, one continuous register from ad phase zero",
+  "decoded_byte": "10110001",
+  "bit_mapping": {
+    "ad": 0,
+    "td": 1
+  },
+  "outcome_counts": {
+    "correct": 8,
+    "wrong": 0,
+    "unresolved": 0
+  },
+  "rows": [
+    {
+      "trial_id": 0,
+      "desired_label": "td",
+      "predecessor_trial_id": null,
+      "predecessor_continuity_verified": false,
+      "endpoint_hold_continuity_verified": true,
+      "decoded_state": "td",
+      "maximum_lag_six_l2_residual": 1.1601096079822524e-11
+    },
+    {
+      "trial_id": 1,
+      "desired_label": "ad",
+      "predecessor_trial_id": 0,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "decoded_state": "ad",
+      "maximum_lag_six_l2_residual": 6.420122368884852e-14
+    },
+    {
+      "trial_id": 2,
+      "desired_label": "td",
+      "predecessor_trial_id": 1,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "decoded_state": "td",
+      "maximum_lag_six_l2_residual": 1.1512055444359717e-11
+    },
+    {
+      "trial_id": 3,
+      "desired_label": "td",
+      "predecessor_trial_id": 2,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "decoded_state": "td",
+      "maximum_lag_six_l2_residual": 1.6307471782043674e-11
+    },
+    {
+      "trial_id": 4,
+      "desired_label": "ad",
+      "predecessor_trial_id": 3,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "decoded_state": "ad",
+      "maximum_lag_six_l2_residual": 5.497711315938933e-14
+    },
+    {
+      "trial_id": 5,
+      "desired_label": "ad",
+      "predecessor_trial_id": 4,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "decoded_state": "ad",
+      "maximum_lag_six_l2_residual": 4.1552341236095244e-14
+    },
+    {
+      "trial_id": 6,
+      "desired_label": "ad",
+      "predecessor_trial_id": 5,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "decoded_state": "ad",
+      "maximum_lag_six_l2_residual": 7.435489404764104e-14
+    },
+    {
+      "trial_id": 7,
+      "desired_label": "td",
+      "predecessor_trial_id": 6,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "decoded_state": "td",
+      "maximum_lag_six_l2_residual": 1.155155996260043e-11
+    }
+  ],
+  "maximum_closure_residual": 1.6307471782043674e-11,
+  "model_calls": 2928,
+  "elapsed_seconds": 1317.029997691001,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+      "bytes": 153459,
+      "sha256": "0786ede4a44ff6c9cee54951e85d7c725b242182a454cf997340cb4e76698f5f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/run/results.json",
+      "bytes": 92292,
+      "sha256": "69d99e1bba123808e72a57f5284d3c7b9bbb36399693531d1e647f9e1a2d9a6b"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "dd3d9e9a1556aa7a3497ee1d6fd89d53bc40c77b4696d90d588cd99fb3d379ee"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/transfer-closeout.json",
+      "bytes": 640,
+      "sha256": "e420c15b5716543192669432df519b723d4832b130086d2db1e76b0d2da8662d"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/completion.json",
+      "bytes": 120,
+      "sha256": "97b831f4a0438ed347fc524964f44d18ce15e37997f94ffc3b590ebf27074017"
+    }
+  ],
+  "limitations": [
+    "One selected byte and initial phase; no general error rate or arbitrary sequence reliability.",
+    "Explicit parameter pulses in one register; no separate-instance communication, language interface or secrecy established."
+  ]
+}

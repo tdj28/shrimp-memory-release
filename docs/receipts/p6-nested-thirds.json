@@ -1,0 +1,159 @@
+{
+  "utc": "2026-10-26T02:47:53Z",
+  "evidence": "adapted exploratory nested basin-line refinement and exact repeat controls",
+  "source_commit": "edbc5d88d45a8f8fc06d307e2f896d5f83982768",
+  "qualified_state_counts": {
+    "ad": 5,
+    "td": 3,
+    "null": 0
+  },
+  "rows": [
+    {
+      "packet_index": 0,
+      "weight": 0.2345679012345679,
+      "qualified_state": "ad"
+    },
+    {
+      "packet_index": 1,
+      "weight": 0.24691358024691357,
+      "qualified_state": "ad"
+    },
+    {
+      "packet_index": 2,
+      "weight": 0.25925925925925924,
+      "qualified_state": "ad"
+    },
+    {
+      "packet_index": 3,
+      "weight": 0.2716049382716049,
+      "qualified_state": "ad"
+    },
+    {
+      "packet_index": 4,
+      "weight": 0.2839506172839506,
+      "qualified_state": "td"
+    },
+    {
+      "packet_index": 5,
+      "weight": 0.2962962962962963,
+      "qualified_state": "td"
+    },
+    {
+      "packet_index": 6,
+      "weight": 0.30864197530864196,
+      "qualified_state": "ad"
+    },
+    {
+      "packet_index": 7,
+      "weight": 0.32098765432098764,
+      "qualified_state": "td"
+    }
+  ],
+  "policy_decision_steps": [
+    156,
+    168,
+    168,
+    156,
+    216,
+    228,
+    168,
+    252
+  ],
+  "policy_final_disagreements": 0,
+  "policy_later_losses": 0,
+  "policy_later_label_changes": 0,
+  "repeat_controls": [
+    {
+      "nested_row": 2,
+      "transition_row": 0,
+      "initial_vectors_exactly_equal": true,
+      "state_shape": [
+        601,
+        896
+      ],
+      "full_states_exactly_equal": true,
+      "maximum_coordinate_gap": 0.0,
+      "current_label": "ad",
+      "previous_label": "ad",
+      "array_keys": [
+        "states",
+        "first_state_index",
+        "token_ids",
+        "step_seconds",
+        "alpha",
+        "log10_temperature"
+      ],
+      "initial_state_equals_packet": true,
+      "token_ids_exactly_equal": true,
+      "labels_equal": true
+    },
+    {
+      "nested_row": 5,
+      "transition_row": 1,
+      "initial_vectors_exactly_equal": true,
+      "state_shape": [
+        601,
+        896
+      ],
+      "full_states_exactly_equal": true,
+      "maximum_coordinate_gap": 0.0,
+      "current_label": "td",
+      "previous_label": "td",
+      "array_keys": [
+        "states",
+        "first_state_index",
+        "token_ids",
+        "step_seconds",
+        "alpha",
+        "log10_temperature"
+      ],
+      "initial_state_equals_packet": true,
+      "token_ids_exactly_equal": true,
+      "labels_equal": true
+    }
+  ],
+  "verified_inventory_files": 440,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/complete-audit.json",
+      "bytes": 182742,
+      "sha256": "07eb07e9c9a447f40063b979ec88dafd93486e37d6322ff526b112ada395a28e"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/repeat-control-audit.json",
+      "bytes": 3506,
+      "sha256": "a566e95a60efa5ea4c5d72b618e4f55753c29ff0b2c9a46fba5031c7af64ea80"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/readout-grid.json",
+      "bytes": 242466,
+      "sha256": "9f23c8b95889e5403eabe0dc112f073a4b0107abfcbe066070e25453337c5232"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/readout-policy.json",
+      "bytes": 3686,
+      "sha256": "10fe3e484a6b749475313888095c9c654b83d5df1c780c9b5e0468c8ee2086ed"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/independent-return-audit.json",
+      "bytes": 410,
+      "sha256": "de8b927c0d5b94d50142a056e3ae05b43262f6c73b214faa3749832cef4572da"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/final-manifest.json",
+      "bytes": 149280,
+      "sha256": "0b009985f75a54cd97b5ebecf2c7b8cee02ae4113eef68488b73b16f66c769cb"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/local-return-verification.json",
+      "bytes": 389,
+      "sha256": "becbae37323704f10579caf9035bf434474b752c6f30fa6b0cbda5c8c84744b1"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/transfer-closeout.json",
+      "bytes": 673,
+      "sha256": "f6301089bd358118bcd4a4b114a0689d06ecece639a0c9982d98625297ca5a03"
+    }
+  ],
+  "scope": "Observed additional line alternation; no proof of fractality, population accuracy, concealment, or achieved early-stop speedup."
+}

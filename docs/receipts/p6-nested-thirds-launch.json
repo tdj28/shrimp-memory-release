@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-26T01:57:13Z",
+  "status": "launched_outcomes_pending",
+  "source_commit": "edbc5d88d45a8f8fc06d307e2f896d5f83982768",
+  "evidence": "adapted second-scale refinement with two exact repeat controls",
+  "launch": {
+    "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/launch.json",
+    "bytes": 183,
+    "sha256": "47d5dc560f371628aecd6f45d919051e327675e635cb2b3ff8c80deaa7ffb337"
+  },
+  "preflight": {
+    "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/preflight.json",
+    "bytes": 1648,
+    "sha256": "c3852b8d6725c9a1c9be57553530ff23f6cdee77b6dc0ea6f3bdcf469dcf5f64"
+  },
+  "packet": {
+    "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/packet.npz",
+    "bytes": 55173,
+    "sha256": "63bed5c417e9bd74b89e46a7a55a7fade85e35682fd760c3ad77683f27630c9c"
+  },
+  "design": {
+    "path": "/data2/shrimp-memory-data/audits/p6-nested-thirds/20261026T015648Z-nested-thirds/local-evaluation/design.json",
+    "bytes": 887,
+    "sha256": "636192cd4fc18ba2046aeaad69e4362edaf96d89181466835eb9d9de470c5d69"
+  },
+  "completion_supervisor_pid": 3383740,
+  "maximum_calls": 4817,
+  "internal_seconds": 2700,
+  "external_seconds": 2760,
+  "threads": 1
+}

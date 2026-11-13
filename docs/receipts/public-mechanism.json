@@ -1,0 +1,446 @@
+{
+  "utc": "2026-10-28T19:13:26Z",
+  "status": "independently_audited_numerical_observation",
+  "numerical_source_commit": "5d8baf7a3559d29d8da1eb14865a9f2c8cd232ab",
+  "auditor_source_commit": "700fd16dcc07043d1781ee7ecee183ada30d7c79",
+  "unique_rehashed_bindings": 635,
+  "runs": [
+    {
+      "mode": "and",
+      "audit": {
+        "path": "/data2/shrimp-memory-data/audits/public-mechanism/20261026T222843Z-public-mechanism-bit0/independent-review.json",
+        "bytes": 1486056,
+        "sha256": "b0d235790154f50e473c64f1261ca4f384ee7e2dac7037b0fa0723eb3f77567e"
+      },
+      "status": "passed",
+      "calls": 2928,
+      "seconds": 1745.350043597995,
+      "truth_table": [
+        {
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "first_expected": 0,
+          "final_expected": 0,
+          "first_actual": 0,
+          "final_actual": 0,
+          "passed": true
+        },
+        {
+          "a": 1,
+          "b": 0,
+          "c": 0,
+          "first_expected": 0,
+          "final_expected": 0,
+          "first_actual": 0,
+          "final_actual": 0,
+          "passed": true
+        },
+        {
+          "a": 0,
+          "b": 0,
+          "c": 1,
+          "first_expected": 0,
+          "final_expected": 0,
+          "first_actual": 0,
+          "final_actual": 0,
+          "passed": true
+        },
+        {
+          "a": 1,
+          "b": 0,
+          "c": 1,
+          "first_expected": 0,
+          "final_expected": 0,
+          "first_actual": 0,
+          "final_actual": 0,
+          "passed": true
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "c": 0,
+          "first_expected": 0,
+          "final_expected": 0,
+          "first_actual": 0,
+          "final_actual": 0,
+          "passed": true
+        },
+        {
+          "a": 1,
+          "b": 1,
+          "c": 0,
+          "first_expected": 1,
+          "final_expected": 0,
+          "first_actual": 1,
+          "final_actual": 0,
+          "passed": true
+        },
+        {
+          "a": 0,
+          "b": 1,
+          "c": 1,
+          "first_expected": 0,
+          "final_expected": 0,
+          "first_actual": 0,
+          "final_actual": 0,
+          "passed": true
+        },
+        {
+          "a": 1,
+          "b": 1,
+          "c": 1,
+          "first_expected": 1,
+          "final_expected": 1,
+          "first_actual": 1,
+          "final_actual": 1,
+          "passed": true
+        }
+      ],
+      "stage_summaries": [
+        {
+          "stage_id": 0,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            null
+          ],
+          "cyclic_gap": null
+        },
+        {
+          "stage_id": 1,
+          "labels": [
+            0,
+            0
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 1.335348171690961e-14
+        },
+        {
+          "stage_id": 2,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 2.4609847645085737e-14
+        },
+        {
+          "stage_id": 3,
+          "labels": [
+            0,
+            0
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 3.0898033382085954e-14
+        },
+        {
+          "stage_id": 4,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            null
+          ],
+          "cyclic_gap": null
+        },
+        {
+          "stage_id": 5,
+          "labels": [
+            0,
+            0
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 1.335348171690961e-14
+        },
+        {
+          "stage_id": 6,
+          "labels": [
+            0,
+            0
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 2.4754485007640912e-14
+        },
+        {
+          "stage_id": 7,
+          "labels": [
+            0,
+            0
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 1.1195094783133136e-14
+        },
+        {
+          "stage_id": 8,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 0.015380340457820758
+        },
+        {
+          "stage_id": 9,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 0.015380340457769847
+        },
+        {
+          "stage_id": 10,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            null
+          ],
+          "cyclic_gap": null
+        },
+        {
+          "stage_id": 11,
+          "labels": [
+            0,
+            0
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 7.6961062617735e-15
+        },
+        {
+          "stage_id": 12,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 0.015380340457820758
+        },
+        {
+          "stage_id": 13,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 0.015380340457769847
+        },
+        {
+          "stage_id": 14,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 0.015380340457769735
+        },
+        {
+          "stage_id": 15,
+          "labels": [
+            0,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 0.015380340457775967
+        }
+      ],
+      "path_comparisons": [],
+      "returned_files": 379
+    },
+    {
+      "mode": "hysteresis",
+      "audit": {
+        "path": "/data2/shrimp-memory-data/audits/public-mechanism/20261026T222843Z-public-mechanism-bit1/independent-review.json",
+        "bytes": 790726,
+        "sha256": "05168a04ed14654ff8d66b0fa9cff5cefd4c4e44fcdb2fd7782f7d1d4304d0b6"
+      },
+      "status": "passed",
+      "calls": 1944,
+      "seconds": 1166.5007709290076,
+      "truth_table": [],
+      "stage_summaries": [
+        {
+          "stage_id": 0,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 0.012072547079550713
+        },
+        {
+          "stage_id": 1,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 2.309967148756684e-14
+        },
+        {
+          "stage_id": 2,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 1.2625724791080721e-14
+        },
+        {
+          "stage_id": 3,
+          "labels": [
+            0,
+            0
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 9.379918804297038e-15
+        },
+        {
+          "stage_id": 4,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            6,
+            null
+          ],
+          "cyclic_gap": null
+        },
+        {
+          "stage_id": 5,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            null,
+            null
+          ],
+          "cyclic_gap": null
+        },
+        {
+          "stage_id": 6,
+          "labels": [
+            null,
+            null
+          ],
+          "qualified_periods": [
+            null,
+            null
+          ],
+          "cyclic_gap": null
+        },
+        {
+          "stage_id": 7,
+          "labels": [
+            1,
+            1
+          ],
+          "qualified_periods": [
+            6,
+            6
+          ],
+          "cyclic_gap": 1.2349678129410033e-14
+        }
+      ],
+      "path_comparisons": [
+        {
+          "direction": 0,
+          "middle_control_history_comparisons": [
+            {
+              "initial_bit": 0,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 1.697499207146898e-14
+            },
+            {
+              "initial_bit": 1,
+              "outward_period": 6,
+              "return_period": 6,
+              "aligned_gap": 0.012072547079552468
+            }
+          ]
+        },
+        {
+          "direction": 1,
+          "middle_control_history_comparisons": [
+            {
+              "initial_bit": 0,
+              "outward_period": 6,
+              "return_period": null,
+              "aligned_gap": null
+            },
+            {
+              "initial_bit": 1,
+              "outward_period": null,
+              "return_period": null,
+              "aligned_gap": null
+            }
+          ]
+        }
+      ],
+      "returned_files": 241
+    }
+  ],
+  "scope": "Exploratory phase-zero AND chain and coarse240-update outward-return pilot. Finite-precision observations; no XOR, general reliability or causal hysteresis proof."
+}

@@ -1,0 +1,247 @@
+{
+  "recorded_utc": "2026-10-26T00:00:43Z",
+  "receipt_source_commit": "77b3a654b8afebdbe468a2f5d2a28077db7d187e",
+  "evidence": "exploratory saved-data observer diagnostic after outcomes were known",
+  "qualified_writes": 24,
+  "excluded_rows": [],
+  "endpoint_groups": [
+    {
+      "tokens": [
+        271,
+        785,
+        3405,
+        271,
+        785,
+        13885
+      ],
+      "states": [
+        "ad",
+        "td"
+      ],
+      "rows": [
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-writes/20261025T222347Z-writes/complete-audit.json",
+          "trial_id": 0
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-writes/20261025T222347Z-writes/complete-audit.json",
+          "trial_id": 1
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-writes/20261025T222347Z-writes/complete-audit.json",
+          "trial_id": 2
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-writes/20261025T222347Z-writes/complete-audit.json",
+          "trial_id": 3
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 0
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 1
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 2
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 3
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 4
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 5
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 6
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 7
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 8
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 9
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 10
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 11
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 0
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 1
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 2
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 3
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 4
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 5
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 6
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 7
+        }
+      ],
+      "cross_state_collision": true
+    }
+  ],
+  "hold_groups": [
+    {
+      "tokens": [
+        271,
+        785,
+        3405,
+        271,
+        785,
+        13885
+      ],
+      "states": [
+        "ad",
+        "td"
+      ],
+      "rows": [
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-writes/20261025T222347Z-writes/complete-audit.json",
+          "trial_id": 0
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-writes/20261025T222347Z-writes/complete-audit.json",
+          "trial_id": 1
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-writes/20261025T222347Z-writes/complete-audit.json",
+          "trial_id": 2
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-writes/20261025T222347Z-writes/complete-audit.json",
+          "trial_id": 3
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 0
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 1
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 2
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 3
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 4
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 5
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 6
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 7
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 8
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 9
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 10
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+          "trial_id": 11
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 0
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 1
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 2
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 3
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 4
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 5
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 6
+        },
+        {
+          "run": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/complete-audit.json",
+          "trial_id": 7
+        }
+      ],
+      "cross_state_collision": true
+    }
+  ],
+  "analysis": {
+    "path": "/data2/shrimp-memory-data/audits/write-readouts/20261025T235712Z/including-byte-sequence.json",
+    "bytes": 30427,
+    "sha256": "5c29a74b42e510f6165de09186cf64907520d712720a4f9b0a86e0b62b6a7813"
+  },
+  "limitations": [
+    "Only a phase-invariant final-six-token argmax summary; not ordinary dialogue or all visible outputs.",
+    "Known parameter endpoints distinguish requested bits; matching token summaries do not establish secrecy.",
+    "No independent held-out observer accuracy or generalization claim."
+  ]
+}

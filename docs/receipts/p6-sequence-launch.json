@@ -1,0 +1,61 @@
+{
+  "recorded_utc": "2026-10-25T23:37:54Z",
+  "status": "launched_outcomes_pending",
+  "protocol": "docs/p6-sequence-protocol.md",
+  "launch": {
+    "pid": 45517,
+    "base": "/home/ubuntu/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence",
+    "source_commit": "a75267447b9395c33f143a6157c6afcafee34f6e"
+  },
+  "data_directory": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence",
+  "sequence": "10110001",
+  "bit_mapping": {
+    "ad": 0,
+    "td": 1
+  },
+  "maximum_calls": 2928,
+  "internal_seconds": 1600,
+  "external_seconds": 1660,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/preflight.json",
+      "bytes": 1628,
+      "sha256": "664215c52a97e47ff63060781ddce3837d6f98106fc3f1b31602f64f440b9b98"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/launch.json",
+      "bytes": 172,
+      "sha256": "e439347d5de85c4197e5a3866606d0347c57ff3c2e208818530f67a18c76acdc"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/run.sh",
+      "bytes": 1905,
+      "sha256": "08bf71c1d014eda562dcd40a9439dad698d87f0b238a6bfff65f484b8faa5753"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/source.bundle",
+      "bytes": 40912,
+      "sha256": "e3144a1eafb797439c7ff9978696c478421ca6fa59289647c66469c516a8a6f3"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/operator-source/shrimp-memory-finish-sequence.py",
+      "bytes": 3473,
+      "sha256": "60c62b05f046596dead521094ff2d3a8954851d5cb05af2951f207f834613daa"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/operator-source/shrimp-memory-pack-roundtrip.py",
+      "bytes": 1630,
+      "sha256": "695097a8e4e0dab5751a4e89ccca6d46656e8c61b32c77e88b88c4b2c44cebb7"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/operator-source/shrimp-memory-return-roundtrip.py",
+      "bytes": 3504,
+      "sha256": "159bd1671cc187ab462288be150c612f78f2c59890234d6010102ec7145c84c0"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-sequence/20261025T233720Z-sequence/operator-source/shrimp-memory-start-sequence.py",
+      "bytes": 9066,
+      "sha256": "555576757bcfcfca9b594040824beca0ae6bcc7b484ce744aa9a92b83fb2e3ea"
+    }
+  ]
+}

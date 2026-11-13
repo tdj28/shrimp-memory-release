@@ -1,0 +1,495 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-26T20:21:24Z",
+  "status": "completed_independently_audited",
+  "evidence_class": "adapted exploratory finite-precision numerical observation",
+  "recorded_at_commit": "5a1e7daff76c6f035915b44ba0a2df160c2ff52c",
+  "scope": "Matched public endpoint continuations from identical saved pre-hold states; origin phases are historical labels.",
+  "design": {
+    "profile": "public-endpoint-continuation",
+    "groups": [
+      "continue-perturbed-endpoint",
+      "restore-nominal-endpoint"
+    ],
+    "origin_phases": [
+      0,
+      1
+    ],
+    "write0_origin_cycle": "td",
+    "write1_origin_cycle": "ad",
+    "historical_endpoint_updates": 120,
+    "new_endpoint_updates": 120,
+    "new_hold_updates": 240,
+    "full_branch_updates": 480,
+    "batch_size": 2,
+    "independent_arm_reset": true,
+    "precision": "effective float64",
+    "compute_threads_per_process": 1
+  },
+  "counts": {
+    "failed": 4,
+    "passed": 4
+  },
+  "by_arm": [
+    {
+      "group_id": 0,
+      "arm": "continue-perturbed-endpoint",
+      "counts": {
+        "failed": 4
+      }
+    },
+    {
+      "group_id": 1,
+      "arm": "restore-nominal-endpoint",
+      "counts": {
+        "passed": 4
+      }
+    }
+  ],
+  "verified_local_binding_count": 725,
+  "runs": [
+    {
+      "requested_bit": 0,
+      "source_commit": "bdffd4abfd5c0fac12db175b3f5b6ec3d8b7745c",
+      "auditor_source_commit": "1b417609b0ec3c8c9a5837d0dad8adf7cab93e38",
+      "audit_status": "passed",
+      "producer_status": "completed",
+      "validated_outcome_counts": {
+        "passed": 2,
+        "failed": 2,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "continue-perturbed-endpoint",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_endpoint_continuation",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 3.678329522267482e-11
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "continue-perturbed-endpoint",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_endpoint_continuation",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.714652527162775e-11
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "restore-nominal-endpoint",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_endpoint_continuation",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 8.591891678610894e-14
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "restore-nominal-endpoint",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_endpoint_continuation",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 2.1158705303841858e-14
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 732,
+        "category_counts": {
+          "prefix": 4,
+          "comparison": 8,
+          "update": 720
+        },
+        "completed_batch_updates": 720,
+        "completed_row_updates": 1440,
+        "nonprefix_forward_attempts": 728
+      },
+      "timings": {
+        "total_seconds": 427.69927626599383,
+        "cold_initialization_seconds": 9.583839572005672,
+        "update_seconds": 362.30295823176857,
+        "peak_rss_bytes": 5475012608
+      },
+      "raw_bytes": 52689959,
+      "verified_return_inventory_files": 122,
+      "verified_producer_manifest_files": 106,
+      "transfer_reservation_closed": true,
+      "retained_producer_error": null,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/independent-review.json",
+          "bytes": 397612,
+          "sha256": "ea59fc82bcd1435e1a762458e4d2cdf4c33e8910b33d3d4af48dc15c862ec0fb"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run/result.json",
+          "bytes": 1397690,
+          "sha256": "6f9f7bae6f2891dd33b7dab58bc723bad91595559aa3cc54da7e8d5b6bfd6fe2"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run/manifest.json",
+          "bytes": 16755,
+          "sha256": "23c1192b18c031adc632696c8e27175f9bfa1657383602e16bd065ed329ce0cc"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run/source.json",
+          "bytes": 5090,
+          "sha256": "6560c2e60cbee85d4b561d1c25f9584c4eecaedfa9a9f865c0cf796a8693e00f"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/final-manifest.json",
+          "bytes": 23661,
+          "sha256": "4c3849bee6db114a2eb402c790e8b12d316bdcaea4415d8f87a8b5fb5894a0d4"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "cf58b19e0af07c7dd84dab7288787704306edc15bdb6531e09d1c8eb13e91669"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/transfer-closeout.json",
+          "bytes": 897,
+          "sha256": "e54d3e4ba43e2337988284e55669e9cc7ee5102338f878587607b45cebbf2db3"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/completion.json",
+          "bytes": 107,
+          "sha256": "1836de4f272107f1119ee25f1403fe7967088f5321a7f26babfed00b0245924f"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run/continuation-inputs.json",
+          "bytes": 29629,
+          "sha256": "62e3b4bcae46f094b0a51b4911023e1c8bcb32a54c81ba9420a8f44114577ba3"
+        }
+      ]
+    },
+    {
+      "requested_bit": 1,
+      "source_commit": "bdffd4abfd5c0fac12db175b3f5b6ec3d8b7745c",
+      "auditor_source_commit": "1b417609b0ec3c8c9a5837d0dad8adf7cab93e38",
+      "audit_status": "passed",
+      "producer_status": "completed",
+      "validated_outcome_counts": {
+        "passed": 2,
+        "failed": 2,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "continue-perturbed-endpoint",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_endpoint_continuation",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 2.8192948930187224e-14
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "continue-perturbed-endpoint",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_endpoint_continuation",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 7.0158717906344736e-15
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "restore-nominal-endpoint",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_endpoint_continuation",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.231121415487854e-12
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "restore-nominal-endpoint",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_endpoint_continuation",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.41667420012215e-11
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 732,
+        "category_counts": {
+          "prefix": 4,
+          "comparison": 8,
+          "update": 720
+        },
+        "completed_batch_updates": 720,
+        "completed_row_updates": 1440,
+        "nonprefix_forward_attempts": 728
+      },
+      "timings": {
+        "total_seconds": 428.48551116300223,
+        "cold_initialization_seconds": 9.565295132997562,
+        "update_seconds": 363.2228007831727,
+        "peak_rss_bytes": 5474754560
+      },
+      "raw_bytes": 52475964,
+      "verified_return_inventory_files": 122,
+      "verified_producer_manifest_files": 106,
+      "transfer_reservation_closed": true,
+      "retained_producer_error": null,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/independent-review.json",
+          "bytes": 397623,
+          "sha256": "d6e1ecc0835d801a46205451d9b019418d995bd7d3e696688ea370b294a9de08"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run/result.json",
+          "bytes": 1397830,
+          "sha256": "df4ebd758a13291de0558d7fa702d08f884c19a83c7e36746d5f1dc5aebef145"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run/manifest.json",
+          "bytes": 16755,
+          "sha256": "dc74c3a2aca8f9c5b83dd1dd7327517bb756c66d3e38ec1f059d8b0c756d6692"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run/source.json",
+          "bytes": 5090,
+          "sha256": "d7ff11e802d359a9cbb679076012ada53d10b11a1456811f98ec8801e279af9c"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/final-manifest.json",
+          "bytes": 23661,
+          "sha256": "2270e7faa0bfd15b08a2800b0c498a1dedc71a29498eba2b5ab267138d85a698"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "db585feb85aedf2e4c763e3ebfd8cf5bb833173d8b2ab4dec65dc923ba775677"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/transfer-closeout.json",
+          "bytes": 897,
+          "sha256": "153105c50de3e2b3a70b0c42890e49ad0deb5c4a64ac9a1ef8f147903866cda4"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/completion.json",
+          "bytes": 107,
+          "sha256": "1836de4f272107f1119ee25f1403fe7967088f5321a7f26babfed00b0245924f"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run/continuation-inputs.json",
+          "bytes": 29645,
+          "sha256": "89a0f765a286b9c410c8de3d4b7211ebab65f6c963ac72b04522a9a6aab8f03e"
+        }
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/independent-review.json",
+      "bytes": 397612,
+      "sha256": "ea59fc82bcd1435e1a762458e4d2cdf4c33e8910b33d3d4af48dc15c862ec0fb"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run/result.json",
+      "bytes": 1397690,
+      "sha256": "6f9f7bae6f2891dd33b7dab58bc723bad91595559aa3cc54da7e8d5b6bfd6fe2"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run/manifest.json",
+      "bytes": 16755,
+      "sha256": "23c1192b18c031adc632696c8e27175f9bfa1657383602e16bd065ed329ce0cc"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run/source.json",
+      "bytes": 5090,
+      "sha256": "6560c2e60cbee85d4b561d1c25f9584c4eecaedfa9a9f865c0cf796a8693e00f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/final-manifest.json",
+      "bytes": 23661,
+      "sha256": "4c3849bee6db114a2eb402c790e8b12d316bdcaea4415d8f87a8b5fb5894a0d4"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "cf58b19e0af07c7dd84dab7288787704306edc15bdb6531e09d1c8eb13e91669"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/transfer-closeout.json",
+      "bytes": 897,
+      "sha256": "e54d3e4ba43e2337988284e55669e9cc7ee5102338f878587607b45cebbf2db3"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/completion.json",
+      "bytes": 107,
+      "sha256": "1836de4f272107f1119ee25f1403fe7967088f5321a7f26babfed00b0245924f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit0/run/continuation-inputs.json",
+      "bytes": 29629,
+      "sha256": "62e3b4bcae46f094b0a51b4911023e1c8bcb32a54c81ba9420a8f44114577ba3"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/independent-review.json",
+      "bytes": 397623,
+      "sha256": "d6e1ecc0835d801a46205451d9b019418d995bd7d3e696688ea370b294a9de08"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run/result.json",
+      "bytes": 1397830,
+      "sha256": "df4ebd758a13291de0558d7fa702d08f884c19a83c7e36746d5f1dc5aebef145"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run/manifest.json",
+      "bytes": 16755,
+      "sha256": "dc74c3a2aca8f9c5b83dd1dd7327517bb756c66d3e38ec1f059d8b0c756d6692"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run/source.json",
+      "bytes": 5090,
+      "sha256": "d7ff11e802d359a9cbb679076012ada53d10b11a1456811f98ec8801e279af9c"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/final-manifest.json",
+      "bytes": 23661,
+      "sha256": "2270e7faa0bfd15b08a2800b0c498a1dedc71a29498eba2b5ab267138d85a698"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "db585feb85aedf2e4c763e3ebfd8cf5bb833173d8b2ab4dec65dc923ba775677"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/transfer-closeout.json",
+      "bytes": 897,
+      "sha256": "153105c50de3e2b3a70b0c42890e49ad0deb5c4a64ac9a1ef8f147903866cda4"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/completion.json",
+      "bytes": 107,
+      "sha256": "1836de4f272107f1119ee25f1403fe7967088f5321a7f26babfed00b0245924f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-continuation/20261026T201011Z-public-continuation-bit1/run/continuation-inputs.json",
+      "bytes": 29645,
+      "sha256": "89a0f765a286b9c410c8de3d4b7211ebab65f6c963ac72b04522a9a6aab8f03e"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-control-continuation/20261026T202109Z/public-control-continuation.receipt.json",
+      "bytes": 265005,
+      "sha256": "24b896342bdd8250e3c91335de736b6f1ef65d64ebd39f1c1a0b403e9ea54cd8"
+    }
+  ],
+  "figure_receipt": {
+    "path": "/data2/shrimp-memory-data/figures/public-control-continuation/20261026T202109Z/public-control-continuation.receipt.json",
+    "bytes": 265005,
+    "sha256": "24b896342bdd8250e3c91335de736b6f1ef65d64ebd39f1c1a0b403e9ea54cd8"
+  },
+  "figure_outputs": [
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-control-continuation/20261026T202109Z/public-control-continuation.pdf",
+      "bytes": 29286,
+      "sha256": "0e8b308b5c3e792920f50fe30b17f3264f234e208786457ac0026d41e5c48748"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-control-continuation/20261026T202109Z/public-control-continuation.png",
+      "bytes": 246571,
+      "sha256": "9fd31e0c435ff935720c09c9b967966d88e10032d36c07d236b6e83dba18ee65"
+    }
+  ],
+  "limitations": [
+    "All eight planned cases retained, including wrong, unresolved, diagnostic-invalid, incomplete and unexecuted outcomes.",
+    "The same selected pre-hold endpoints start both arms; origins are earlier reference phases, not fresh reference resets or settled wrong-bit starts.",
+    "The original120-step histories and source-run calls are prior cost, not new calls or free end-to-end initialization.",
+    "No continuous tolerance, all-phase reliability, longer-hold effect, error-correcting code, online policy or language-interface recovery is established.",
+    "No model calls in the saved-data audits or figure generation."
+  ]
+}

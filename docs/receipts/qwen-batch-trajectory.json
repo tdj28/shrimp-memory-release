@@ -1,0 +1,227 @@
+{
+  "utc": "2026-10-26T04:40:59Z",
+  "source_commit": "6ddc3220015a077a95f37048f2798a572ca224c6",
+  "evidence": "adapted implementation comparison on two fixed inputs with preliminary scalar decisions already visible to the coordinating agent",
+  "source": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory",
+  "status": "audit_passed",
+  "producer_status": "completed",
+  "diagnostic_gates_passed": true,
+  "trajectory_engineering_equivalence_passed": true,
+  "combined_numerical_gate_passed": true,
+  "planned_rows": 2,
+  "planned_updates_per_row": 600,
+  "planned_model_calls": 605,
+  "model_calls": 605,
+  "returned_batch_updates": 600,
+  "qualified_batch_updates": 600,
+  "complete_schedule": true,
+  "resource_limits_passed": true,
+  "elapsed_seconds": 327.66083077200165,
+  "peak_rss_bytes": 5471862784,
+  "saved_batch_update_seconds": 281.9112015909777,
+  "maximum_event_peak_rss_bytes": 5471862784,
+  "whole_run_observed_peak_rss_bytes": 5471862784,
+  "maximum_coordinate_gap": 4.933553565678039e-15,
+  "maximum_l2_gap": 3.919064873868123e-14,
+  "token_mismatch_count": 0,
+  "all_states_exactly_equal": false,
+  "rows": [
+    {
+      "packet_index": 0,
+      "status": "verified",
+      "compared_updates": 600,
+      "compared_states_including_initial": 601,
+      "states_exactly_equal": false,
+      "tokens_equal": true,
+      "maximum_coordinate_gap": 4.933553565678039e-15,
+      "maximum_l2_gap": 3.919064873868123e-14,
+      "coordinate_tolerance": 1e-10,
+      "all_coordinates_within_tolerance": true,
+      "token_mismatch_count": 0,
+      "final_labels_equal": true,
+      "first_decisions_equal": true,
+      "later_loss_equal": true,
+      "later_switch_equal": true,
+      "later_loss_steps_equal": true,
+      "later_switch_steps_equal": true,
+      "both_final_labels_qualified": true,
+      "engineering_equivalence_passed": true,
+      "batch_final_label": "ad",
+      "scalar_final_label": "ad",
+      "batch_policy": {
+        "decision": {
+          "steps": 156,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 444
+      },
+      "scalar_policy": {
+        "decision": {
+          "steps": 156,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 444
+      }
+    },
+    {
+      "packet_index": 1,
+      "status": "verified",
+      "compared_updates": 600,
+      "compared_states_including_initial": 601,
+      "states_exactly_equal": false,
+      "tokens_equal": true,
+      "maximum_coordinate_gap": 4.793040964123918e-15,
+      "maximum_l2_gap": 3.733963463659888e-14,
+      "coordinate_tolerance": 1e-10,
+      "all_coordinates_within_tolerance": true,
+      "token_mismatch_count": 0,
+      "final_labels_equal": true,
+      "first_decisions_equal": true,
+      "later_loss_equal": true,
+      "later_switch_equal": true,
+      "later_loss_steps_equal": true,
+      "later_switch_steps_equal": true,
+      "both_final_labels_qualified": true,
+      "engineering_equivalence_passed": true,
+      "batch_final_label": "ad",
+      "scalar_final_label": "ad",
+      "batch_policy": {
+        "decision": {
+          "steps": 168,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 432
+      },
+      "scalar_policy": {
+        "decision": {
+          "steps": 168,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 432
+      }
+    }
+  ],
+  "diagnostics": {
+    "initial": {
+      "passed": true,
+      "maximum_coordinate_gap": 1.4675760606763788e-15,
+      "maximum_probability_gap": 2.09277040141842e-14,
+      "outputs_exact": false,
+      "probabilities_exact": false,
+      "top_tokens_equal": true,
+      "tolerance": 1e-12
+    },
+    "final": {
+      "passed": true,
+      "maximum_coordinate_gap": 2.6194324487249787e-16,
+      "maximum_probability_gap": 3.3306690738754696e-15,
+      "outputs_exact": false,
+      "probabilities_exact": false,
+      "top_tokens_equal": true,
+      "tolerance": 1e-12
+    }
+  },
+  "source_files_checked_against_commit": [
+    {
+      "file": "tools/validate_qwen_batch_trajectory.py",
+      "bytes": 17685,
+      "sha256": "fd621d2b5193722cb381202f378dfcbcaffef8dd24f8d7b70d5ded3832e6f3ce"
+    },
+    {
+      "file": "tools/benchmark_qwen_batch.py",
+      "bytes": 22875,
+      "sha256": "644c65689ea48a54d81a31244f528317e68cb924c9aef46d14bb177911c6a74c"
+    },
+    {
+      "file": "tools/validate_qwen_map.py",
+      "bytes": 25943,
+      "sha256": "b7601d6e853ebb0fc1f8bbb5f3f7146a41f4743a6fd37ad297f0c8b90a54aecb"
+    },
+    {
+      "file": "tools/check_p6_writes.py",
+      "bytes": 22766,
+      "sha256": "2ac2b8058a47c1478b092dc3e55f7febcdb0725cf75c455a5b3ffafd63f76781"
+    }
+  ],
+  "verified_inventory_files": 682,
+  "verified_archive_files": 652,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory/complete-audit.json",
+      "bytes": 787484,
+      "sha256": "abc313f395e2275ff6e2a2fd1261779659332671b2e15da123e7e4f8be202800"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory/run/results.json",
+      "bytes": 1105108,
+      "sha256": "dd3d398ba68591f3a2837022fa8efff28485bc1f555710b9ecd3a0e3683ba02d"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory/run/metadata.json",
+      "bytes": 2910,
+      "sha256": "fd264f6ce3f9e532c171b34dbfe7f3bba6091f3b595a88b6dc2e2b30615671cf"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory/final-manifest.json",
+      "bytes": 222466,
+      "sha256": "a70b22a12dc4365e16a09f8e14d5b327d4b0a03b0888387a026d66874c849f2f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory/local-return-verification.json",
+      "bytes": 389,
+      "sha256": "d11ed27441da5c74d77ff3e7c9a69f90ac71d4e083aa3ede55ae0b8cb04a10b7"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory/transfer-closeout.json",
+      "bytes": 701,
+      "sha256": "b145f848eda00a855a8446405da17707279b9fbf2882e0d901941a599e0041ad"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory/run/return-shards/midpoint/verification.json",
+      "bytes": 218,
+      "sha256": "093f27b415432a431da46ce29e3fcd67b6a2fed9d38a4cfd53738797ee998e67"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory/independent-review.json",
+      "bytes": 101155,
+      "sha256": "5f1291b22b1a7e2f952e0fdf4cb80d0ec87b8c9bee2e0014125b7b01be11d81d"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory/independent-review.py",
+      "bytes": 13433,
+      "sha256": "65dc7dd78ab5a467463132e06762d4ca62c83bffb85fb0458e6e2dc1336eb1f7"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory/independent-review-attempt-1.json",
+      "bytes": 336,
+      "sha256": "291180187194b1bf511c97b5d23613d8d24ed1bf793ad770694b69ac1491ff0b"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/qwen-batch-trajectory/20261026T043109Z-qwen-batch-trajectory/independent-review-attempt-1.py",
+      "bytes": 13052,
+      "sha256": "7e427b9314d0fa2b52ff9e8dba0ddb00b16cad9cef733a62e04b00a50ca2ea04"
+    }
+  ],
+  "exposure_correction": "Protocol initially overstated team blinding. Root had seen provisional scalar first decisions for rows0/1 in incremental collector output; authors had not. Inputs were chosen as first two without filtering, and all gates fixed before batch outcomes. Dated correction in research log; no run or numerical criterion changed.",
+  "scope": "Saved-evidence audit of two fixed 600-update trajectories, not model replay or a proof. The chosen 1e-10 maximum-coordinate threshold, zero token mismatches, final labels, first decisions and later-loss/switch flags define only this finite-horizon engineering comparison. Equal unresolved labels do not establish decoding. Final recurrence and every twelve-update readout checkpoint are independently recomputed for both methods. Ordinary update probabilities/argmax and per-call cache hashes are producer-recorded evidence; diagnostic probabilities and retained initial/final/expanded caches are independently checked. All fixed-horizon calls execute; no achieved early-stop or end-to-end communication speedup is inferred."
+}

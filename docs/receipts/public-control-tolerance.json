@@ -1,0 +1,679 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-26T18:50:39Z",
+  "status": "completed_independently_audited",
+  "evidence_class": "adapted exploratory finite-precision numerical observation",
+  "recorded_at_commit": "e7529c1570612cbb979507b66f29d20c6e5017c0",
+  "scope": "Public controller endpoint perturbations, two phase-zero reference starts; not a language transmission experiment.",
+  "design": {
+    "group_order": [
+      "nominal",
+      "alpha-minus",
+      "alpha-plus",
+      "log10T-minus",
+      "log10T-plus"
+    ],
+    "endpoint_deltas": [
+      [
+        0,
+        0
+      ],
+      [
+        -1e-05,
+        0
+      ],
+      [
+        1e-05,
+        0
+      ],
+      [
+        0,
+        -0.0001
+      ],
+      [
+        0,
+        0.0001
+      ]
+    ],
+    "endpoint_steps": 120,
+    "common_hold_steps": 240,
+    "groups_per_process": 5,
+    "batch_size": 2,
+    "independent_group_reset": true,
+    "precision": "effective float64",
+    "compute_threads_per_process": 1
+  },
+  "counts": {
+    "passed": 18,
+    "failed": 2
+  },
+  "verified_local_binding_count": 743,
+  "runs": [
+    {
+      "requested_bit": 0,
+      "source_commit": "f79b57e48a5d6f516413dcaf1b4cb629b71b74fe",
+      "auditor_source_commit": "0136aa276738d103e163009f1bbb555070450718",
+      "audit_status": "passed",
+      "validated_outcome_counts": {
+        "passed": 9,
+        "failed": 1,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "nominal",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 6.271801108441437e-14
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "nominal",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 9.789989124848384e-14
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "alpha-minus",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 4.9175993299941205e-14
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "alpha-minus",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 5.1734232301346575e-14
+        },
+        {
+          "row_id": 4,
+          "group_id": 2,
+          "group": "alpha-plus",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 4.6581591258398375e-14
+        },
+        {
+          "row_id": 5,
+          "group_id": 2,
+          "group": "alpha-plus",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 6.73132033177498e-14
+        },
+        {
+          "row_id": 6,
+          "group_id": 3,
+          "group": "log10T-minus",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 7.268270168087627e-14
+        },
+        {
+          "row_id": 7,
+          "group_id": 3,
+          "group": "log10T-minus",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "failed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.6834591983148088e-11
+        },
+        {
+          "row_id": 8,
+          "group_id": 4,
+          "group": "log10T-plus",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 6.714730708860882e-14
+        },
+        {
+          "row_id": 9,
+          "group_id": 4,
+          "group": "log10T-plus",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 6.599195143839921e-14
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 1830,
+        "category_counts": {
+          "prefix": 10,
+          "comparison": 20,
+          "update": 1800
+        },
+        "completed_batch_updates": 1800,
+        "completed_row_updates": 3600,
+        "nonprefix_forward_attempts": 1820
+      },
+      "timings": {
+        "total_seconds": 1076.368245236008,
+        "cold_initialization_seconds": 9.598956593996263,
+        "update_seconds": 917.7845870380552,
+        "peak_rss_bytes": 5480210432
+      },
+      "raw_bytes": 129599047,
+      "nominal_equivalence_passed": true,
+      "nominal_historical_comparison": [
+        {
+          "compared_states": 361,
+          "compared_updates": 360,
+          "maximum_coordinate_gap": 3.469446951953614e-15,
+          "token_mismatch_count": 0,
+          "state_bytes_equal": false,
+          "token_bytes_equal": true,
+          "final_labels_equal": true,
+          "historical_qualified_label": "ad",
+          "passed": true
+        },
+        {
+          "compared_states": 361,
+          "compared_updates": 360,
+          "maximum_coordinate_gap": 4.409667075933044e-15,
+          "token_mismatch_count": 0,
+          "state_bytes_equal": false,
+          "token_bytes_equal": true,
+          "final_labels_equal": true,
+          "historical_qualified_label": "ad",
+          "passed": true
+        }
+      ],
+      "verified_return_inventory_files": 260,
+      "verified_producer_manifest_files": 247,
+      "transfer_reservation_closed": true,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/independent-review.json",
+          "bytes": 774165,
+          "sha256": "9e04977abe4019f54777bfd3f651516d3c14f1ec3781d254e2da7107fae77790"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run/result.json",
+          "bytes": 3363027,
+          "sha256": "2b900232eb24a5f2db277920e6abcd8e48af335dc5e6b8a9f02ef3cbedf3a1d8"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run/manifest.json",
+          "bytes": 39130,
+          "sha256": "56f2f62328f898ed56f7ff6b77868c1aade77b66a0604c66d0fbbf8b300d3207"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run/source.json",
+          "bytes": 3924,
+          "sha256": "d331a8d6aed4fbbc578aadf57bbf7af67515d27381ab534d3954e15fe3bf2caf"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/final-manifest.json",
+          "bytes": 47012,
+          "sha256": "425e97125847a6f945cd68dc187afc1ec093f7d7411f27f9172b001c7ea21820"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "42e530f3e18e96a8c357f55c436d9df6fdfead1b13a776ee057a9cff5257e484"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/transfer-closeout.json",
+          "bytes": 868,
+          "sha256": "e368228a8567b4522d19f0f3836aefdd7dcff8c27a3e88937b37b8b1669635b3"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/completion.json",
+          "bytes": 107,
+          "sha256": "f4721def174b7407c439f359fb2167c2fc8cd3365085fd059975c4b2ff744124"
+        }
+      ]
+    },
+    {
+      "requested_bit": 1,
+      "source_commit": "f79b57e48a5d6f516413dcaf1b4cb629b71b74fe",
+      "auditor_source_commit": "0136aa276738d103e163009f1bbb555070450718",
+      "audit_status": "passed",
+      "validated_outcome_counts": {
+        "passed": 9,
+        "failed": 1,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "nominal",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.1511696117784798e-11
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "nominal",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.6146908733005656e-11
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "alpha-minus",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 5.25977846189825e-14
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "alpha-minus",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.5671558256370553e-11
+        },
+        {
+          "row_id": 4,
+          "group_id": 2,
+          "group": "alpha-plus",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 3.4202006495550292e-12
+        },
+        {
+          "row_id": 5,
+          "group_id": 2,
+          "group": "alpha-plus",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.2486330074455355e-11
+        },
+        {
+          "row_id": 6,
+          "group_id": 3,
+          "group": "log10T-minus",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 3.715758151075601e-11
+        },
+        {
+          "row_id": 7,
+          "group_id": 3,
+          "group": "log10T-minus",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 2.3465955201642767e-11
+        },
+        {
+          "row_id": 8,
+          "group_id": 4,
+          "group": "log10T-plus",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "ad",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 3.3925989806437266e-11
+        },
+        {
+          "row_id": 9,
+          "group_id": 4,
+          "group": "log10T-plus",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "completed_updates": 360,
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "initial_reference": "td",
+          "initial_phase": 0,
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 3.449109655879828e-11
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 1830,
+        "category_counts": {
+          "prefix": 10,
+          "comparison": 20,
+          "update": 1800
+        },
+        "completed_batch_updates": 1800,
+        "completed_row_updates": 3600,
+        "nonprefix_forward_attempts": 1820
+      },
+      "timings": {
+        "total_seconds": 1075.6707983649976,
+        "cold_initialization_seconds": 9.601219720003428,
+        "update_seconds": 917.1647023508849,
+        "peak_rss_bytes": 5480050688
+      },
+      "raw_bytes": 131463471,
+      "nominal_equivalence_passed": true,
+      "nominal_historical_comparison": [
+        {
+          "compared_states": 361,
+          "compared_updates": 360,
+          "maximum_coordinate_gap": 2.2561813528554353e-14,
+          "token_mismatch_count": 0,
+          "state_bytes_equal": false,
+          "token_bytes_equal": true,
+          "final_labels_equal": true,
+          "historical_qualified_label": "td",
+          "passed": true
+        },
+        {
+          "compared_states": 361,
+          "compared_updates": 360,
+          "maximum_coordinate_gap": 1.0307726894254188e-14,
+          "token_mismatch_count": 0,
+          "state_bytes_equal": false,
+          "token_bytes_equal": true,
+          "final_labels_equal": true,
+          "historical_qualified_label": "td",
+          "passed": true
+        }
+      ],
+      "verified_return_inventory_files": 260,
+      "verified_producer_manifest_files": 247,
+      "transfer_reservation_closed": true,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/independent-review.json",
+          "bytes": 774137,
+          "sha256": "8073d62e59531970a24880bbcb5c82d1be6f83f269de3269c0d50c4480bc1b7d"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run/result.json",
+          "bytes": 3363426,
+          "sha256": "c2de76f412a9e30ea08425a481efff07d6015f99a5fd644a18433ad48758d264"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run/manifest.json",
+          "bytes": 39130,
+          "sha256": "a5b2890416398d0c470ffeb23887255e9fa434976e252b1654ca994797c76c6a"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run/source.json",
+          "bytes": 3924,
+          "sha256": "c3b2053521a4b81d1e6a84d0127a4ad7a5554cfe739d4f283001fb25628cd291"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/final-manifest.json",
+          "bytes": 47012,
+          "sha256": "1b2c5a0977d2f02cb3a1bc6dcf641a609406d795a92b2da6602b3f8e8eaf4528"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "5639ac4e447bc7e2744ec7886dee4d449886db68fcf84de5d380d9052c84438d"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/transfer-closeout.json",
+          "bytes": 868,
+          "sha256": "401fe29e68caf1038e04c8d523776a6c5be7a51240bfdb6cc1d0f18e11f8f643"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/completion.json",
+          "bytes": 107,
+          "sha256": "f4721def174b7407c439f359fb2167c2fc8cd3365085fd059975c4b2ff744124"
+        }
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/independent-review.json",
+      "bytes": 774165,
+      "sha256": "9e04977abe4019f54777bfd3f651516d3c14f1ec3781d254e2da7107fae77790"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run/result.json",
+      "bytes": 3363027,
+      "sha256": "2b900232eb24a5f2db277920e6abcd8e48af335dc5e6b8a9f02ef3cbedf3a1d8"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run/manifest.json",
+      "bytes": 39130,
+      "sha256": "56f2f62328f898ed56f7ff6b77868c1aade77b66a0604c66d0fbbf8b300d3207"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/run/source.json",
+      "bytes": 3924,
+      "sha256": "d331a8d6aed4fbbc578aadf57bbf7af67515d27381ab534d3954e15fe3bf2caf"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/final-manifest.json",
+      "bytes": 47012,
+      "sha256": "425e97125847a6f945cd68dc187afc1ec093f7d7411f27f9172b001c7ea21820"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "42e530f3e18e96a8c357f55c436d9df6fdfead1b13a776ee057a9cff5257e484"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/transfer-closeout.json",
+      "bytes": 868,
+      "sha256": "e368228a8567b4522d19f0f3836aefdd7dcff8c27a3e88937b37b8b1669635b3"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit0/completion.json",
+      "bytes": 107,
+      "sha256": "f4721def174b7407c439f359fb2167c2fc8cd3365085fd059975c4b2ff744124"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/independent-review.json",
+      "bytes": 774137,
+      "sha256": "8073d62e59531970a24880bbcb5c82d1be6f83f269de3269c0d50c4480bc1b7d"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run/result.json",
+      "bytes": 3363426,
+      "sha256": "c2de76f412a9e30ea08425a481efff07d6015f99a5fd644a18433ad48758d264"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run/manifest.json",
+      "bytes": 39130,
+      "sha256": "a5b2890416398d0c470ffeb23887255e9fa434976e252b1654ca994797c76c6a"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/run/source.json",
+      "bytes": 3924,
+      "sha256": "c3b2053521a4b81d1e6a84d0127a4ad7a5554cfe739d4f283001fb25628cd291"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/final-manifest.json",
+      "bytes": 47012,
+      "sha256": "1b2c5a0977d2f02cb3a1bc6dcf641a609406d795a92b2da6602b3f8e8eaf4528"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "5639ac4e447bc7e2744ec7886dee4d449886db68fcf84de5d380d9052c84438d"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/transfer-closeout.json",
+      "bytes": 868,
+      "sha256": "401fe29e68caf1038e04c8d523776a6c5be7a51240bfdb6cc1d0f18e11f8f643"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-control-tolerance/20261026T182840Z-public-control-bit1/completion.json",
+      "bytes": 107,
+      "sha256": "f4721def174b7407c439f359fb2167c2fc8cd3365085fd059975c4b2ff744124"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-control-tolerance/20261026T184910Z/public-control-tolerance.receipt.json",
+      "bytes": 205284,
+      "sha256": "6c8dfeddc76bde06f63ea39f18926231e900015a5c0fbad0f33f95eae8528bfc"
+    }
+  ],
+  "limitations": [
+    "All20planned cases retained; wrong labels are qualified outcomes, not unresolved readouts.",
+    "Finite sampled settings only; no continuous safe region, all-phase robustness or estimated general error rate.",
+    "Both wrong cases retain their initial bit; nominal controls from both initial references pass.",
+    "No fresh model replay in audit and no general language-interface success or concealment claim.",
+    "Nominal batching equivalence is checked against recorded scalar histories; perturbed cases are numerical observations."
+  ],
+  "figure_provenance": {
+    "path": "/data2/shrimp-memory-data/figures/public-control-tolerance/20261026T184910Z/public-control-tolerance.receipt.json",
+    "bytes": 205284,
+    "sha256": "6c8dfeddc76bde06f63ea39f18926231e900015a5c0fbad0f33f95eae8528bfc"
+  },
+  "figure_outputs": [
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-control-tolerance/20261026T184910Z/public-control-tolerance.pdf",
+      "bytes": 32679,
+      "sha256": "5dc090959b1ab8f59b0a14ac508f6e30747c786b72b5238ff710cf1d6531e918"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/figures/public-control-tolerance/20261026T184910Z/public-control-tolerance.png",
+      "bytes": 262956,
+      "sha256": "66a3250431cef5687261afffa21c419bf7289f33914abed5c7be6d3fd8261b41"
+    }
+  ],
+  "figure_generator_sources": [
+    {
+      "path": "/data2/shrimp-memory/tools/plot_public_control_tolerance.py",
+      "bytes": 16884,
+      "sha256": "1e4e4b0506a98fb96c61441960438d21f8272d3e80c2486fc16c4011813dad8f",
+      "commit": "e7529c1570612cbb979507b66f29d20c6e5017c0",
+      "relative_path": "tools/plot_public_control_tolerance.py"
+    }
+  ]
+}

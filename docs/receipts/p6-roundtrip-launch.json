@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-10-25T23:09:13Z",
+  "source_commit": "19428a73cc0ac39d972bd979d618b2eef7188101",
+  "status": "launched; outcomes pending",
+  "protocol": "docs/p6-roundtrip-protocol.md",
+  "data_root": "/data2/shrimp-memory-data",
+  "raw_directory": "audits/p6-roundtrip/20261025T230754Z-roundtrip",
+  "reference_initials": "six ad-cycle phases",
+  "requested_sequence": [
+    "td",
+    "ad"
+  ],
+  "chains": 6,
+  "writes": 12,
+  "state_reset_between_writes": false,
+  "model_call_cap": 4392,
+  "internal_seconds_cap": 2400,
+  "external_seconds_cap": 2460,
+  "threads": 1,
+  "rss_gib_cap": 20,
+  "vm_gib_cap": 24,
+  "reserved_transfer_bytes": 536870912,
+  "local_return_probe_verified": true,
+  "incremental_collector_started": true,
+  "final_return_and_audit_worker_started": true,
+  "targeted_tests_passed": 40,
+  "bindings": [
+    {
+      "path": "audits/p6-roundtrip/20261025T230754Z-roundtrip/launch.json",
+      "bytes": 174,
+      "sha256": "f4f5c8c87e84b21245bd9489cc443620567f2aa121dc82d8dc25461ba861a52b"
+    },
+    {
+      "path": "audits/p6-roundtrip/20261025T230754Z-roundtrip/preflight.json",
+      "bytes": 1614,
+      "sha256": "a4743847239769899d4fd4dde8218a4833108515ed645f622decd0b6c9bcdea9"
+    },
+    {
+      "path": "audits/p6-roundtrip/20261025T230754Z-roundtrip/source.bundle",
+      "bytes": 84685,
+      "sha256": "ceef04b1741b375cc47e5e5cc7e7c85ae63c27ba19f4de7fd7a3fe5b71310141"
+    },
+    {
+      "path": "audits/p6-roundtrip/20261025T230754Z-roundtrip/run.sh",
+      "bytes": 1849,
+      "sha256": "33028a103ac8ce19516a3b81de043a68036bd161b89853af5b9bcd0e25a07221"
+    },
+    {
+      "path": "audits/p6-roundtrip/20261025T230754Z-roundtrip/return-probe.txt",
+      "bytes": 58,
+      "sha256": "c786b4d2242dc11c278fe6e0740a4e725772d6164043b4f6c526fb3ea1e8e7c1"
+    },
+    {
+      "path": "audits/p6-roundtrip/20261025T230754Z-roundtrip/return-probe.returned.txt",
+      "bytes": 58,
+      "sha256": "c786b4d2242dc11c278fe6e0740a4e725772d6164043b4f6c526fb3ea1e8e7c1"
+    },
+    {
+      "path": "audits/p6-roundtrip/20261025T230754Z-roundtrip/operator-source/shrimp-memory-finish-roundtrip.py",
+      "bytes": 3474,
+      "sha256": "d167d549a84b19eb73fcec63a85ec691c05bf59800ea93a3ff3d18264f161276"
+    },
+    {
+      "path": "audits/p6-roundtrip/20261025T230754Z-roundtrip/operator-source/shrimp-memory-pack-roundtrip.py",
+      "bytes": 1630,
+      "sha256": "695097a8e4e0dab5751a4e89ccca6d46656e8c61b32c77e88b88c4b2c44cebb7"
+    },
+    {
+      "path": "audits/p6-roundtrip/20261025T230754Z-roundtrip/operator-source/shrimp-memory-return-roundtrip.py",
+      "bytes": 3504,
+      "sha256": "159bd1671cc187ab462288be150c612f78f2c59890234d6010102ec7145c84c0"
+    },
+    {
+      "path": "audits/p6-roundtrip/20261025T230754Z-roundtrip/operator-source/shrimp-memory-start-roundtrip.py",
+      "bytes": 8483,
+      "sha256": "42c5fb716e3debda56431cb98a23b4b8acf1e82dd07524af0e362381345c5f00"
+    }
+  ],
+  "scope": "Exploratory six two-write round trips; no outcomes asserted by this launch receipt."
+}

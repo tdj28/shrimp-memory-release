@@ -1,0 +1,660 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-26T20:50:21Z",
+  "status": "completed_independently_audited",
+  "evidence_class": "adapted exploratory finite-precision numerical observation",
+  "recorded_at_commit": "5f37e942a5df2cd2b30363cdcf6b06e327588a0a",
+  "scope": "Matched public repair from saved hold ages36and240; origin phases are historical labels.",
+  "design": {
+    "profile": "public-hold-repair",
+    "groups": [
+      "hold36-continue-hold",
+      "hold36-restore-nominal",
+      "hold240-continue-hold",
+      "hold240-restore-nominal"
+    ],
+    "hold_ages": [
+      36,
+      240
+    ],
+    "origin_phases": [
+      0,
+      1
+    ],
+    "write0_origin_cycle": "td",
+    "write1_origin_cycle": "ad",
+    "historical_endpoint_updates": 120,
+    "new_endpoint_updates": 120,
+    "new_hold_updates": 240,
+    "full_branch_updates": [
+      516,
+      720
+    ],
+    "batch_size": 2,
+    "independent_arm_reset": true,
+    "precision": "effective float64",
+    "compute_threads_per_process": 1
+  },
+  "counts": {
+    "failed": 8,
+    "passed": 8
+  },
+  "by_arm": [
+    {
+      "group_id": 0,
+      "arm": "hold36-continue-hold",
+      "counts": {
+        "failed": 4
+      }
+    },
+    {
+      "group_id": 1,
+      "arm": "hold36-restore-nominal",
+      "counts": {
+        "passed": 4
+      }
+    },
+    {
+      "group_id": 2,
+      "arm": "hold240-continue-hold",
+      "counts": {
+        "failed": 4
+      }
+    },
+    {
+      "group_id": 3,
+      "arm": "hold240-restore-nominal",
+      "counts": {
+        "passed": 4
+      }
+    }
+  ],
+  "verified_local_binding_count": 922,
+  "runs": [
+    {
+      "requested_bit": 0,
+      "source_commit": "5cbb3ec5800a7eadb24cbcf1fbe6f23f23b68d9b",
+      "auditor_source_commit": "5f37e942a5df2cd2b30363cdcf6b06e327588a0a",
+      "audit_status": "passed",
+      "producer_status": "completed",
+      "validated_outcome_counts": {
+        "passed": 4,
+        "failed": 4,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "hold36-continue-hold",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 36,
+          "hold_age": 36,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.7115786671726138e-14
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "hold36-continue-hold",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 36,
+          "hold_age": 36,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 3.207078047039132e-14
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "hold36-restore-nominal",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 36,
+          "hold_age": 36,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 7.358879418665514e-14
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "hold36-restore-nominal",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 36,
+          "hold_age": 36,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 2.1143311537966984e-14
+        },
+        {
+          "row_id": 4,
+          "group_id": 2,
+          "group": "hold240-continue-hold",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 240,
+          "hold_age": 240,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 8.300089144149673e-15
+        },
+        {
+          "row_id": 5,
+          "group_id": 2,
+          "group": "hold240-continue-hold",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 240,
+          "hold_age": 240,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 2.1019749696052978e-14
+        },
+        {
+          "row_id": 6,
+          "group_id": 3,
+          "group": "hold240-restore-nominal",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 240,
+          "hold_age": 240,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 8.680121569894404e-14
+        },
+        {
+          "row_id": 7,
+          "group_id": 3,
+          "group": "hold240-restore-nominal",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 240,
+          "hold_age": 240,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 3.2257277308072105e-14
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 1464,
+        "category_counts": {
+          "prefix": 8,
+          "comparison": 16,
+          "update": 1440
+        },
+        "completed_batch_updates": 1440,
+        "completed_row_updates": 2880,
+        "nonprefix_forward_attempts": 1456
+      },
+      "timings": {
+        "total_seconds": 858.6490924730024,
+        "cold_initialization_seconds": 9.5700583680009,
+        "update_seconds": 732.7085450929153,
+        "peak_rss_bytes": 5475610624
+      },
+      "raw_bytes": 103930634,
+      "verified_return_inventory_files": 216,
+      "verified_producer_manifest_files": 200,
+      "transfer_reservation_closed": true,
+      "retained_producer_error": null,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/independent-review.json",
+          "bytes": 735469,
+          "sha256": "99c8b90861afa5213bac3e1f604001b37b1d6d7bfbace161813b0ce7cb460f53"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/run/result.json",
+          "bytes": 2775382,
+          "sha256": "4efff770b2e4d7b63d036231d6f1d3287209ddb0517c7f93e0ded8bf9b709783"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/run/manifest.json",
+          "bytes": 31666,
+          "sha256": "a6200a5ca190a967ddfa4f0e4fe0ede47eb1e705d76ff8ed6b7921f360e2ca61"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/run/source.json",
+          "bytes": 5804,
+          "sha256": "006d70e6a632d1d2b20acd602a9c380960605c1d352b9695d870eea059ca880c"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/final-manifest.json",
+          "bytes": 39536,
+          "sha256": "d5311fee58536757526f91b76c17e9d92aee80271195c81d200719bc26cf8b25"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "5d6e54d156ce67ea2dccad505719c46bdad97f18289a10e0bdd610f015cd850e"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/transfer-closeout.json",
+          "bytes": 895,
+          "sha256": "870ca63a2b746ce18fa15212eae9d707cd89dd42207889c1aa7e908485063c22"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/completion.json",
+          "bytes": 107,
+          "sha256": "0491627ebdff08024d647bcd033fe64751084e2439e1ca9b3461743fd5ca264d"
+        }
+      ]
+    },
+    {
+      "requested_bit": 1,
+      "source_commit": "5cbb3ec5800a7eadb24cbcf1fbe6f23f23b68d9b",
+      "auditor_source_commit": "5f37e942a5df2cd2b30363cdcf6b06e327588a0a",
+      "audit_status": "passed",
+      "producer_status": "completed",
+      "validated_outcome_counts": {
+        "passed": 4,
+        "failed": 4,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "hold36-continue-hold",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 36,
+          "hold_age": 36,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 2.7292638186390343e-14
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "hold36-continue-hold",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 36,
+          "hold_age": 36,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 2.5777549001817183e-14
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "hold36-restore-nominal",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 36,
+          "hold_age": 36,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.3178074934643e-11
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "hold36-restore-nominal",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 36,
+          "hold_age": 36,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 2.6485891871002047e-11
+        },
+        {
+          "row_id": 4,
+          "group_id": 2,
+          "group": "hold240-continue-hold",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 240,
+          "hold_age": 240,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 3.014913167227858e-14
+        },
+        {
+          "row_id": 5,
+          "group_id": 2,
+          "group": "hold240-continue-hold",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 240,
+          "hold_age": 240,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 2.016276180795297e-14
+        },
+        {
+          "row_id": 6,
+          "group_id": 3,
+          "group": "hold240-restore-nominal",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 240,
+          "hold_age": 240,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 1.1590557400230325e-11
+        },
+        {
+          "row_id": 7,
+          "group_id": 3,
+          "group": "hold240-restore-nominal",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 120,
+          "historical_hold_updates": 240,
+          "hold_age": 240,
+          "completed_updates": 360,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "td",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_hold_repair",
+          "decoded_bit": 1,
+          "maximum_lag_six_residual": 2.644288541134821e-11
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 1464,
+        "category_counts": {
+          "prefix": 8,
+          "comparison": 16,
+          "update": 1440
+        },
+        "completed_batch_updates": 1440,
+        "completed_row_updates": 2880,
+        "nonprefix_forward_attempts": 1456
+      },
+      "timings": {
+        "total_seconds": 859.9189211720077,
+        "cold_initialization_seconds": 9.44616524099547,
+        "update_seconds": 733.915063888111,
+        "peak_rss_bytes": 5476048896
+      },
+      "raw_bytes": 104042097,
+      "verified_return_inventory_files": 216,
+      "verified_producer_manifest_files": 200,
+      "transfer_reservation_closed": true,
+      "retained_producer_error": null,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/independent-review.json",
+          "bytes": 735847,
+          "sha256": "b74f4ac56f01d0773aed1927fded173ec65da68e717a8312cd37a998664fad49"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/run/result.json",
+          "bytes": 2775575,
+          "sha256": "54b8b0101be8d5978a2fcfb74f2a4d972070c330c0f9368083270f8c7f079f77"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/run/manifest.json",
+          "bytes": 31667,
+          "sha256": "60aab22f94e193d35f8ce564b7cc1f1dc785530b8738654ae2ff6b30fe20e0b8"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/run/source.json",
+          "bytes": 5804,
+          "sha256": "c431678ba6bbef3474de9ef71600852af3739c6efc69d652ae01338026107b26"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/final-manifest.json",
+          "bytes": 39538,
+          "sha256": "7bea8ae4a973937dabd4cb12211deba175a8957712932c19d6c57c604cbf69a0"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "b659955e7a03adbd1da1d3cc6d4f785fb5ea405fe1844fc5feefe2bf54188d25"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/transfer-closeout.json",
+          "bytes": 895,
+          "sha256": "1299ee8556ac3cfa2be85bd8c37cba98c78308211e450e79274c8c91bb32681f"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/completion.json",
+          "bytes": 107,
+          "sha256": "0491627ebdff08024d647bcd033fe64751084e2439e1ca9b3461743fd5ca264d"
+        }
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/independent-review.json",
+      "bytes": 735469,
+      "sha256": "99c8b90861afa5213bac3e1f604001b37b1d6d7bfbace161813b0ce7cb460f53"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/run/result.json",
+      "bytes": 2775382,
+      "sha256": "4efff770b2e4d7b63d036231d6f1d3287209ddb0517c7f93e0ded8bf9b709783"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/run/manifest.json",
+      "bytes": 31666,
+      "sha256": "a6200a5ca190a967ddfa4f0e4fe0ede47eb1e705d76ff8ed6b7921f360e2ca61"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/run/source.json",
+      "bytes": 5804,
+      "sha256": "006d70e6a632d1d2b20acd602a9c380960605c1d352b9695d870eea059ca880c"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/final-manifest.json",
+      "bytes": 39536,
+      "sha256": "d5311fee58536757526f91b76c17e9d92aee80271195c81d200719bc26cf8b25"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "5d6e54d156ce67ea2dccad505719c46bdad97f18289a10e0bdd610f015cd850e"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/transfer-closeout.json",
+      "bytes": 895,
+      "sha256": "870ca63a2b746ce18fa15212eae9d707cd89dd42207889c1aa7e908485063c22"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit0/completion.json",
+      "bytes": 107,
+      "sha256": "0491627ebdff08024d647bcd033fe64751084e2439e1ca9b3461743fd5ca264d"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/independent-review.json",
+      "bytes": 735847,
+      "sha256": "b74f4ac56f01d0773aed1927fded173ec65da68e717a8312cd37a998664fad49"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/run/result.json",
+      "bytes": 2775575,
+      "sha256": "54b8b0101be8d5978a2fcfb74f2a4d972070c330c0f9368083270f8c7f079f77"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/run/manifest.json",
+      "bytes": 31667,
+      "sha256": "60aab22f94e193d35f8ce564b7cc1f1dc785530b8738654ae2ff6b30fe20e0b8"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/run/source.json",
+      "bytes": 5804,
+      "sha256": "c431678ba6bbef3474de9ef71600852af3739c6efc69d652ae01338026107b26"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/final-manifest.json",
+      "bytes": 39538,
+      "sha256": "7bea8ae4a973937dabd4cb12211deba175a8957712932c19d6c57c604cbf69a0"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "b659955e7a03adbd1da1d3cc6d4f785fb5ea405fe1844fc5feefe2bf54188d25"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/transfer-closeout.json",
+      "bytes": 895,
+      "sha256": "1299ee8556ac3cfa2be85bd8c37cba98c78308211e450e79274c8c91bb32681f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-hold-repair/20261026T203420Z-public-hold-repair-bit1/completion.json",
+      "bytes": 107,
+      "sha256": "0491627ebdff08024d647bcd033fe64751084e2439e1ca9b3461743fd5ca264d"
+    }
+  ],
+  "limitations": [
+    "All sixteen planned cases retained, including wrong, unresolved, diagnostic-invalid, incomplete and unexecuted outcomes.",
+    "The same selected hold states start both arms; origins are earlier reference phases, not fresh reference resets or settled wrong-bit starts.",
+    "The original120-step endpoint plus36or240hold histories and source-run calls are prior cost, not new calls or free end-to-end initialization.",
+    "No continuous tolerance, all-phase reliability, longer-hold effect, error-correcting code, online policy or language-interface recovery is established.",
+    "No model calls in the saved-data audits or figure generation."
+  ]
+}

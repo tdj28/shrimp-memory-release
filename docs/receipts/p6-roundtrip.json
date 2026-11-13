@@ -1,0 +1,257 @@
+{
+  "recorded_utc": "2026-10-25T23:47:39Z",
+  "receipt_source_commit": "1eac0b0c4ff8fd74681dd5620b4a1af507fad1a1",
+  "experiment_source_commit": "19428a73cc0ac39d972bd979d618b2eef7188101",
+  "status": "passed",
+  "evidence": "exploratory six two-write chains from ad phases zero through five",
+  "protocol": "docs/p6-roundtrip-protocol.md",
+  "outcome_counts": {
+    "correct": 12,
+    "wrong": 0,
+    "unresolved": 0
+  },
+  "round_trips": [
+    {
+      "initial_phase": 0,
+      "both_writes_correct": true
+    },
+    {
+      "initial_phase": 1,
+      "both_writes_correct": true
+    },
+    {
+      "initial_phase": 2,
+      "both_writes_correct": true
+    },
+    {
+      "initial_phase": 3,
+      "both_writes_correct": true
+    },
+    {
+      "initial_phase": 4,
+      "both_writes_correct": true
+    },
+    {
+      "initial_phase": 5,
+      "both_writes_correct": true
+    }
+  ],
+  "rows": [
+    {
+      "trial_id": 0,
+      "chain_id": 0,
+      "pulse_index": 0,
+      "phase": 0,
+      "desired_label": "td",
+      "predecessor_trial_id": null,
+      "predecessor_continuity_verified": false,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 1.1601096079822524e-11,
+      "reference_matches": [
+        "td"
+      ]
+    },
+    {
+      "trial_id": 1,
+      "chain_id": 0,
+      "pulse_index": 1,
+      "phase": 0,
+      "desired_label": "ad",
+      "predecessor_trial_id": 0,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 6.420122368884852e-14,
+      "reference_matches": [
+        "ad"
+      ]
+    },
+    {
+      "trial_id": 2,
+      "chain_id": 1,
+      "pulse_index": 0,
+      "phase": 1,
+      "desired_label": "td",
+      "predecessor_trial_id": null,
+      "predecessor_continuity_verified": false,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 2.6392761947805505e-11,
+      "reference_matches": [
+        "td"
+      ]
+    },
+    {
+      "trial_id": 3,
+      "chain_id": 1,
+      "pulse_index": 1,
+      "phase": 1,
+      "desired_label": "ad",
+      "predecessor_trial_id": 2,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 2.0204884246769357e-14,
+      "reference_matches": [
+        "ad"
+      ]
+    },
+    {
+      "trial_id": 4,
+      "chain_id": 2,
+      "pulse_index": 0,
+      "phase": 2,
+      "desired_label": "td",
+      "predecessor_trial_id": null,
+      "predecessor_continuity_verified": false,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 4.626262028373219e-11,
+      "reference_matches": [
+        "td"
+      ]
+    },
+    {
+      "trial_id": 5,
+      "chain_id": 2,
+      "pulse_index": 1,
+      "phase": 2,
+      "desired_label": "ad",
+      "predecessor_trial_id": 4,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 5.375942723796467e-15,
+      "reference_matches": [
+        "ad"
+      ]
+    },
+    {
+      "trial_id": 6,
+      "chain_id": 3,
+      "pulse_index": 0,
+      "phase": 3,
+      "desired_label": "td",
+      "predecessor_trial_id": null,
+      "predecessor_continuity_verified": false,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 3.751515778113345e-11,
+      "reference_matches": [
+        "td"
+      ]
+    },
+    {
+      "trial_id": 7,
+      "chain_id": 3,
+      "pulse_index": 1,
+      "phase": 3,
+      "desired_label": "ad",
+      "predecessor_trial_id": 6,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 1.2261075739390592e-14,
+      "reference_matches": [
+        "ad"
+      ]
+    },
+    {
+      "trial_id": 8,
+      "chain_id": 4,
+      "pulse_index": 0,
+      "phase": 4,
+      "desired_label": "td",
+      "predecessor_trial_id": null,
+      "predecessor_continuity_verified": false,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 5.457101904953173e-11,
+      "reference_matches": [
+        "td"
+      ]
+    },
+    {
+      "trial_id": 9,
+      "chain_id": 4,
+      "pulse_index": 1,
+      "phase": 4,
+      "desired_label": "ad",
+      "predecessor_trial_id": 8,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 2.7449227521890157e-14,
+      "reference_matches": [
+        "ad"
+      ]
+    },
+    {
+      "trial_id": 10,
+      "chain_id": 5,
+      "pulse_index": 0,
+      "phase": 5,
+      "desired_label": "td",
+      "predecessor_trial_id": null,
+      "predecessor_continuity_verified": false,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 3.213342810530904e-11,
+      "reference_matches": [
+        "td"
+      ]
+    },
+    {
+      "trial_id": 11,
+      "chain_id": 5,
+      "pulse_index": 1,
+      "phase": 5,
+      "desired_label": "ad",
+      "predecessor_trial_id": 10,
+      "predecessor_continuity_verified": true,
+      "endpoint_hold_continuity_verified": true,
+      "classification": "correct",
+      "maximum_lag_six_l2_residual": 2.7748748526795393e-14,
+      "reference_matches": [
+        "ad"
+      ]
+    }
+  ],
+  "maximum_closure_residual": 5.457101904953173e-11,
+  "maximum_cache_full_coordinate_gap": 2.796374243274613e-15,
+  "model_calls": 4392,
+  "elapsed_seconds": 1973.4168427349996,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/complete-audit.json",
+      "bytes": 229127,
+      "sha256": "48e8f773347a253dc25a75e1bbb1e8c89ce724b4d40a3465714293dbabc2c4f1"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/run/results.json",
+      "bytes": 138061,
+      "sha256": "948bbc87bd04449dcb961f2f79a3937253e02fefd238634dbea45cab024a59eb"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "0cd9443d56daf7fc937baed31b8649f47514c704cfd0ade8b778981309b0a0ce"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/transfer-closeout.json",
+      "bytes": 640,
+      "sha256": "97721d5d8ebd46590fae2219312977eed9e781c0feb65a8feb4b760ec3347d93"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/p6-roundtrip/20261025T230754Z-roundtrip/completion.json",
+      "bytes": 120,
+      "sha256": "431cfe70066cacf5bc4a8c21e0a2cc96848cf58bafbf8d2bc95e70d79489d4c4"
+    }
+  ],
+  "limitations": [
+    "Six separate two-write chains, not a continuous twelve-write chain.",
+    "Starts from each ad reference phase; does not test every phase of every off-reference state.",
+    "Not an arbitrary-sequence reliability rate, separate-instance communication, language encoding or logic."
+  ]
+}

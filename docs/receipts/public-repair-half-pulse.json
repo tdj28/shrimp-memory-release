@@ -1,0 +1,698 @@
+{
+  "schema_version": 1,
+  "utc": "2026-10-26T22:28:55Z",
+  "status": "completed_independently_audited",
+  "evidence_class": "adapted exploratory finite-precision numerical observation",
+  "recorded_at_commit": "5d8baf7a3559d29d8da1eb14865a9f2c8cd232ab",
+  "scope": "Shortened60-update opposite-bit writes from literal early and late repaired states; origin phases identify historical reference starts.",
+  "design": {
+    "profile": "public-repair-half-pulse",
+    "groups": [
+      "repair36-handoff36",
+      "repair36-handoff240",
+      "repair240-handoff36",
+      "repair240-handoff240"
+    ],
+    "hold_ages": [
+      36,
+      240
+    ],
+    "origin_phases": [
+      0,
+      1
+    ],
+    "write0_origin_cycle": "ad",
+    "write1_origin_cycle": "td",
+    "historical_endpoint_updates": 240,
+    "new_endpoint_updates": 60,
+    "new_hold_updates": 240,
+    "full_branch_updates": [
+      612,
+      816,
+      816,
+      1020
+    ],
+    "batch_size": 2,
+    "independent_arm_reset": true,
+    "precision": "effective float64",
+    "compute_threads_per_process": 1
+  },
+  "counts": {
+    "passed": 8,
+    "failed": 8
+  },
+  "by_arm": [
+    {
+      "group_id": 0,
+      "arm": "repair36-handoff36",
+      "counts": {
+        "passed": 2,
+        "failed": 2
+      }
+    },
+    {
+      "group_id": 1,
+      "arm": "repair36-handoff240",
+      "counts": {
+        "passed": 2,
+        "failed": 2
+      }
+    },
+    {
+      "group_id": 2,
+      "arm": "repair240-handoff36",
+      "counts": {
+        "passed": 2,
+        "failed": 2
+      }
+    },
+    {
+      "group_id": 3,
+      "arm": "repair240-handoff240",
+      "counts": {
+        "passed": 2,
+        "failed": 2
+      }
+    }
+  ],
+  "verified_local_binding_count": 1356,
+  "runs": [
+    {
+      "requested_bit": 0,
+      "source_commit": "ec9773921d3d86f9d61e3793ab3cf8f69179e4ac",
+      "auditor_source_commit": "444d54229d7f668c54a526df69e0e568523c8c42",
+      "audit_status": "passed",
+      "producer_status": "completed",
+      "validated_outcome_counts": {
+        "passed": 8,
+        "failed": 0,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "repair36-handoff36",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 72,
+          "hold_age": 36,
+          "source_failed_hold_age": 36,
+          "source_repaired_bit": 1,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 5.49865590715993e-14
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "repair36-handoff36",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 72,
+          "hold_age": 36,
+          "source_failed_hold_age": 36,
+          "source_repaired_bit": 1,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 2.1255678429535247e-14
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "repair36-handoff240",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 276,
+          "hold_age": 240,
+          "source_failed_hold_age": 36,
+          "source_repaired_bit": 1,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 5.258881894774021e-14
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "repair36-handoff240",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 276,
+          "hold_age": 240,
+          "source_failed_hold_age": 36,
+          "source_repaired_bit": 1,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 2.5834197228126246e-14
+        },
+        {
+          "row_id": 4,
+          "group_id": 2,
+          "group": "repair240-handoff36",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 276,
+          "hold_age": 36,
+          "source_failed_hold_age": 240,
+          "source_repaired_bit": 1,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 5.78507321384198e-14
+        },
+        {
+          "row_id": 5,
+          "group_id": 2,
+          "group": "repair240-handoff36",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 276,
+          "hold_age": 36,
+          "source_failed_hold_age": 240,
+          "source_repaired_bit": 1,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 3.348871028188084e-14
+        },
+        {
+          "row_id": 6,
+          "group_id": 3,
+          "group": "repair240-handoff240",
+          "batch_index": 0,
+          "requested_bit": 0,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 480,
+          "hold_age": 240,
+          "source_failed_hold_age": 240,
+          "source_repaired_bit": 1,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 7.796245826102903e-14
+        },
+        {
+          "row_id": 7,
+          "group_id": 3,
+          "group": "repair240-handoff240",
+          "batch_index": 1,
+          "requested_bit": 0,
+          "origin_reference_index": 0,
+          "origin_reference_label": "ad",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 480,
+          "hold_age": 240,
+          "source_failed_hold_age": 240,
+          "source_repaired_bit": 1,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "passed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 1.3143376380439534e-14
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 1224,
+        "category_counts": {
+          "prefix": 8,
+          "comparison": 16,
+          "update": 1200
+        },
+        "completed_batch_updates": 1200,
+        "completed_row_updates": 2400,
+        "nonprefix_forward_attempts": 1216
+      },
+      "timings": {
+        "total_seconds": 735.9569042450021,
+        "cold_initialization_seconds": 10.079304220998893,
+        "update_seconds": 622.7965484021406,
+        "peak_rss_bytes": 5475262464
+      },
+      "raw_bytes": 100884614,
+      "verified_return_inventory_files": 196,
+      "verified_producer_manifest_files": 180,
+      "transfer_reservation_closed": true,
+      "retained_producer_error": null,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/independent-review.json",
+          "bytes": 692580,
+          "sha256": "aac9b34827dd40557eaae1cf48809a43cf50c4ffbc751ff2309ef4085676d077"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/run/result.json",
+          "bytes": 2336113,
+          "sha256": "a96db05d0d41e508119580bea27067d6659c3dce5a1f41b80601fb7a09f37d4f"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/run/manifest.json",
+          "bytes": 28483,
+          "sha256": "78be6af6c1a6b5ebb2e291c4ebee4d7218dc0b59b0222624266032df349aed32"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/run/source.json",
+          "bytes": 5878,
+          "sha256": "ce5ba71c15233db62ec68b306d4218d75cc5f3e1b1f5cf9889a6a356f56d2d37"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/final-manifest.json",
+          "bytes": 36274,
+          "sha256": "0acccdeac75e01981f71237e3927202ae13f49f58938f3fa382f8ca9f76c6efa"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "b402876198ecb27a43c9b1afc499cf926a29aadcf031b75d8ab0e43409ebfe93"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/transfer-closeout.json",
+          "bytes": 911,
+          "sha256": "08ca29da8cf817f6066e4abd7b562b30eee746c6112e9d54c8d5d1caed45d197"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/completion.json",
+          "bytes": 107,
+          "sha256": "28476bece774a5fb251e7cce39184976eaa8d7967df9a523fadf03160d11aa53"
+        }
+      ]
+    },
+    {
+      "requested_bit": 1,
+      "source_commit": "ec9773921d3d86f9d61e3793ab3cf8f69179e4ac",
+      "auditor_source_commit": "444d54229d7f668c54a526df69e0e568523c8c42",
+      "audit_status": "passed",
+      "producer_status": "completed",
+      "validated_outcome_counts": {
+        "passed": 0,
+        "failed": 8,
+        "unresolved": 0,
+        "diagnostic_invalid": 0,
+        "not_evaluated": 0
+      },
+      "rows": [
+        {
+          "row_id": 0,
+          "group_id": 0,
+          "group": "repair36-handoff36",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 72,
+          "hold_age": 36,
+          "source_failed_hold_age": 36,
+          "source_repaired_bit": 0,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 2.424993969175495e-13
+        },
+        {
+          "row_id": 1,
+          "group_id": 0,
+          "group": "repair36-handoff36",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 72,
+          "hold_age": 36,
+          "source_failed_hold_age": 36,
+          "source_repaired_bit": 0,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 6.74993266515308e-14
+        },
+        {
+          "row_id": 2,
+          "group_id": 1,
+          "group": "repair36-handoff240",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 276,
+          "hold_age": 240,
+          "source_failed_hold_age": 36,
+          "source_repaired_bit": 0,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 1.19153593514826e-13
+        },
+        {
+          "row_id": 3,
+          "group_id": 1,
+          "group": "repair36-handoff240",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 276,
+          "hold_age": 240,
+          "source_failed_hold_age": 36,
+          "source_repaired_bit": 0,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 7.332546617407713e-14
+        },
+        {
+          "row_id": 4,
+          "group_id": 2,
+          "group": "repair240-handoff36",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 276,
+          "hold_age": 36,
+          "source_failed_hold_age": 240,
+          "source_repaired_bit": 0,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 2.311831827688857e-13
+        },
+        {
+          "row_id": 5,
+          "group_id": 2,
+          "group": "repair240-handoff36",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 276,
+          "hold_age": 36,
+          "source_failed_hold_age": 240,
+          "source_repaired_bit": 0,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 7.50793861694395e-14
+        },
+        {
+          "row_id": 6,
+          "group_id": 3,
+          "group": "repair240-handoff240",
+          "batch_index": 0,
+          "requested_bit": 1,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 0,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 480,
+          "hold_age": 240,
+          "source_failed_hold_age": 240,
+          "source_repaired_bit": 0,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 1.1906471811148086e-13
+        },
+        {
+          "row_id": 7,
+          "group_id": 3,
+          "group": "repair240-handoff240",
+          "batch_index": 1,
+          "requested_bit": 1,
+          "origin_reference_index": 1,
+          "origin_reference_label": "td",
+          "origin_reference_phase": 1,
+          "historical_endpoint_updates": 240,
+          "historical_hold_updates": 480,
+          "hold_age": 240,
+          "source_failed_hold_age": 240,
+          "source_repaired_bit": 0,
+          "completed_updates": 300,
+          "status": "completed",
+          "validated_outcome": "failed",
+          "qualified_label": "ad",
+          "numerical_diagnostics_passed": true,
+          "historical_comparison_scope": "not_applicable_new_repair_half_pulse",
+          "decoded_bit": 0,
+          "maximum_lag_six_residual": 9.229284135935694e-14
+        }
+      ],
+      "calls": {
+        "admitted_model_calls": 1224,
+        "category_counts": {
+          "prefix": 8,
+          "comparison": 16,
+          "update": 1200
+        },
+        "completed_batch_updates": 1200,
+        "completed_row_updates": 2400,
+        "nonprefix_forward_attempts": 1216
+      },
+      "timings": {
+        "total_seconds": 737.0672738400026,
+        "cold_initialization_seconds": 10.081413343999884,
+        "update_seconds": 623.9416203980945,
+        "peak_rss_bytes": 5475405824
+      },
+      "raw_bytes": 101004814,
+      "verified_return_inventory_files": 196,
+      "verified_producer_manifest_files": 180,
+      "transfer_reservation_closed": true,
+      "retained_producer_error": null,
+      "bindings": [
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/independent-review.json",
+          "bytes": 692603,
+          "sha256": "94dcc8fa6cab83499f2c734464494e0633d11b9006e9ebadf806ba5a961a7497"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/run/result.json",
+          "bytes": 2336422,
+          "sha256": "1e01f694c9631c434094d1974da2431b6625375d3d56fbc1695f7c7ebf0aa6e4"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/run/manifest.json",
+          "bytes": 28483,
+          "sha256": "350a4acdf44b866c0462e9694e798b66c087a05da90423bd8b089a6f00d293cd"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/run/source.json",
+          "bytes": 5878,
+          "sha256": "4aebc7d837860019ab031b44bc554831a0c17f649ec97f52376b7703243d1ae8"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/final-manifest.json",
+          "bytes": 36274,
+          "sha256": "27d6e0b116ab2ee7bc7901fc1d464382455f61f060427f125d6590ffbb387a11"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/local-return-verification.json",
+          "bytes": 387,
+          "sha256": "53ac1f833298283795bedc22e93eab756bccf1666199e03c45f10e3288e8a3ef"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/transfer-closeout.json",
+          "bytes": 911,
+          "sha256": "52692ad9698dc60827e9da690c8bfcf9a9cfab5d5dc5315e9cef53691aaf6897"
+        },
+        {
+          "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/completion.json",
+          "bytes": 107,
+          "sha256": "28476bece774a5fb251e7cce39184976eaa8d7967df9a523fadf03160d11aa53"
+        }
+      ]
+    }
+  ],
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/independent-review.json",
+      "bytes": 692580,
+      "sha256": "aac9b34827dd40557eaae1cf48809a43cf50c4ffbc751ff2309ef4085676d077"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/run/result.json",
+      "bytes": 2336113,
+      "sha256": "a96db05d0d41e508119580bea27067d6659c3dce5a1f41b80601fb7a09f37d4f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/run/manifest.json",
+      "bytes": 28483,
+      "sha256": "78be6af6c1a6b5ebb2e291c4ebee4d7218dc0b59b0222624266032df349aed32"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/run/source.json",
+      "bytes": 5878,
+      "sha256": "ce5ba71c15233db62ec68b306d4218d75cc5f3e1b1f5cf9889a6a356f56d2d37"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/final-manifest.json",
+      "bytes": 36274,
+      "sha256": "0acccdeac75e01981f71237e3927202ae13f49f58938f3fa382f8ca9f76c6efa"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "b402876198ecb27a43c9b1afc499cf926a29aadcf031b75d8ab0e43409ebfe93"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/transfer-closeout.json",
+      "bytes": 911,
+      "sha256": "08ca29da8cf817f6066e4abd7b562b30eee746c6112e9d54c8d5d1caed45d197"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit0/completion.json",
+      "bytes": 107,
+      "sha256": "28476bece774a5fb251e7cce39184976eaa8d7967df9a523fadf03160d11aa53"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/independent-review.json",
+      "bytes": 692603,
+      "sha256": "94dcc8fa6cab83499f2c734464494e0633d11b9006e9ebadf806ba5a961a7497"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/run/result.json",
+      "bytes": 2336422,
+      "sha256": "1e01f694c9631c434094d1974da2431b6625375d3d56fbc1695f7c7ebf0aa6e4"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/run/manifest.json",
+      "bytes": 28483,
+      "sha256": "350a4acdf44b866c0462e9694e798b66c087a05da90423bd8b089a6f00d293cd"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/run/source.json",
+      "bytes": 5878,
+      "sha256": "4aebc7d837860019ab031b44bc554831a0c17f649ec97f52376b7703243d1ae8"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/final-manifest.json",
+      "bytes": 36274,
+      "sha256": "27d6e0b116ab2ee7bc7901fc1d464382455f61f060427f125d6590ffbb387a11"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/local-return-verification.json",
+      "bytes": 387,
+      "sha256": "53ac1f833298283795bedc22e93eab756bccf1666199e03c45f10e3288e8a3ef"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/transfer-closeout.json",
+      "bytes": 911,
+      "sha256": "52692ad9698dc60827e9da690c8bfcf9a9cfab5d5dc5315e9cef53691aaf6897"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-repair-half-pulse/20261026T212530Z-public-repair-half-pulse-bit1/completion.json",
+      "bytes": 107,
+      "sha256": "28476bece774a5fb251e7cce39184976eaa8d7967df9a523fadf03160d11aa53"
+    }
+  ],
+  "limitations": [
+    "All sixteen planned cases retained, including wrong, unresolved, diagnostic-invalid, incomplete and unexecuted outcomes.",
+    "Four distinct saved batches cover two failed-hold histories and two repaired-hold ages; each next write targets the opposite bit. Origins are historical labels, not fresh resets.",
+    "Prior work includes120perturbed endpoint updates,36or240failed-hold updates,120repair endpoint updates,and36or240repaired-hold updates; this is not free initialization.",
+    "No continuous tolerance, all-phase reliability, longer-hold effect, error-correcting code, online policy or language-interface recovery is established.",
+    "No model calls in the saved-data audits or figure generation."
+  ]
+}

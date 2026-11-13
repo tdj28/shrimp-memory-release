@@ -1,0 +1,1623 @@
+{
+  "status": "independently_audited",
+  "profile": "public-intermediate-write0-phase-panel",
+  "synthetic": false,
+  "evidence": "adapted exploratory numerical observation",
+  "source_commit": "c77c35d53ea572f823602ec885d7f78155e34846",
+  "job_directory": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel",
+  "job_name": "20261029T185852Z-public-intermediate-write0-phase-panel",
+  "scientific_status": "completed",
+  "outcome": "panel_qualified",
+  "model_calls": 966,
+  "elapsed_seconds": 714.0437759060296,
+  "peak_rss_bytes": 5480128512,
+  "raw_bytes": 2434824408,
+  "returned_manifest_entries": 2020,
+  "independent_assertions": 166348,
+  "rows": [
+    {
+      "row_id": 0,
+      "group_id": 1,
+      "case_index": 0,
+      "stage_index": 1,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "lane": 0,
+      "source_reference_index": 0,
+      "initial_reference_phase": 3,
+      "requested_bit": 0,
+      "name": "phase3-write0-from-h0",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          2.0035445645709862e-14,
+          3.05261042149166e-14,
+          1.226648625579212e-14,
+          3.2285244145920744e-14,
+          2.4291566453207774e-14,
+          3.0734906529052257e-15
+        ],
+        "maximum_l2_residual": 3.2285244145920744e-14,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.4824446047366073,
+              0.4621589159169229,
+              0.29253162162117474,
+              0.45949948301608734,
+              0.43030568588956214,
+              0.2805012355088787
+            ],
+            "maximum_l2_gap": 0.4824446047366073,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.28349162781958637,
+              0.4908269941147009,
+              0.42880393433042874,
+              0.2895782226580012,
+              0.45075060379915155,
+              0.46378481887717715
+            ],
+            "maximum_l2_gap": 0.4908269941147009,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.04523115535306598,
+              0.11840896164916287,
+              0.025506724506545928,
+              0.04523115535306598,
+              0.11840896164916287,
+              0.025506724506545928
+            ],
+            "maximum_l2_gap": 0.11840896164916287,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 8.703530825656188e-15,
+            "best_shift": 4,
+            "by_shift": [
+              0.49082699411470043,
+              0.11840896164916934,
+              0.4908269941147027,
+              0.4824446047366055,
+              8.703530825656188e-15,
+              0.48244460473660916
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.015380340458504315,
+            "best_shift": 4,
+            "by_shift": [
+              0.49226096359473465,
+              0.11654945080912535,
+              0.48203460168153317,
+              0.47737859331885835,
+              0.015380340458504315,
+              0.4734432308807414
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct",
+      "availability": "evaluated",
+      "decoded_bit": 0
+    },
+    {
+      "row_id": 1,
+      "group_id": 1,
+      "case_index": 0,
+      "stage_index": 1,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "lane": 1,
+      "source_reference_index": 1,
+      "initial_reference_phase": 3,
+      "requested_bit": 0,
+      "name": "phase3-write0-from-h1",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          1.6523289657742406e-14,
+          2.322499458341257e-14,
+          8.467453612980265e-15,
+          2.2342912197512787e-14,
+          1.977163899979444e-14,
+          5.81087256770155e-15
+        ],
+        "maximum_l2_residual": 2.322499458341257e-14,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.4824446047366117,
+              0.4621589159169267,
+              0.292531621621177,
+              0.45949948301609095,
+              0.4303056858895646,
+              0.28050123550887784
+            ],
+            "maximum_l2_gap": 0.4824446047366117,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.2834916278195881,
+              0.4908269941147053,
+              0.4288039343304318,
+              0.2895782226580008,
+              0.45075060379915516,
+              0.4637848188771804
+            ],
+            "maximum_l2_gap": 0.4908269941147053,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.04523115535306898,
+              0.11840896164916222,
+              0.025506724506545418,
+              0.04523115535306898,
+              0.11840896164916222,
+              0.025506724506545418
+            ],
+            "maximum_l2_gap": 0.11840896164916222,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 9.623412715368683e-15,
+            "best_shift": 4,
+            "by_shift": [
+              0.4908269941147042,
+              0.11840896164916641,
+              0.4908269941147034,
+              0.48244460473660933,
+              9.623412715368683e-15,
+              0.4824446047366097
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.015380340458509334,
+            "best_shift": 4,
+            "by_shift": [
+              0.49226096359473837,
+              0.11654945080912299,
+              0.4820346016815339,
+              0.47737859331886223,
+              0.015380340458509334,
+              0.473443230880742
+            ],
+            "tied_best_shifts": [
+              4
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct",
+      "availability": "evaluated",
+      "decoded_bit": 0
+    },
+    {
+      "row_id": 2,
+      "group_id": 3,
+      "case_index": 1,
+      "stage_index": 1,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "lane": 0,
+      "source_reference_index": 0,
+      "initial_reference_phase": 4,
+      "requested_bit": 0,
+      "name": "phase4-write0-from-h0",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          2.721981634253585e-14,
+          9.47232238531558e-15,
+          2.7468194213390768e-14,
+          2.015720257954427e-14,
+          2.9854516125395666e-15,
+          3.8013440012838495e-15
+        ],
+        "maximum_l2_residual": 2.7468194213390768e-14,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.4621589159169269,
+              0.29253162162117924,
+              0.45949948301609195,
+              0.4303056858895647,
+              0.28050123550887823,
+              0.48244460473661077
+            ],
+            "maximum_l2_gap": 0.48244460473661077,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.49082699411470615,
+              0.42880393433043157,
+              0.2895782226580029,
+              0.45075060379915427,
+              0.4637848188771808,
+              0.28349162781958864
+            ],
+            "maximum_l2_gap": 0.49082699411470615,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.11840896164917146,
+              0.025506724506547264,
+              0.04523115535307468,
+              0.11840896164917146,
+              0.025506724506547264,
+              0.04523115535307468
+            ],
+            "maximum_l2_gap": 0.11840896164917146,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 1.1389638092128282e-14,
+            "best_shift": 5,
+            "by_shift": [
+              0.48244460473660883,
+              0.4908269941147041,
+              0.11840896164917174,
+              0.4908269941147044,
+              0.4824446047366092,
+              1.1389638092128282e-14
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.01538034045850579,
+            "best_shift": 5,
+            "by_shift": [
+              0.47344323088074114,
+              0.49226096359473825,
+              0.1165494508091285,
+              0.4820346016815349,
+              0.4773785933188622,
+              0.01538034045850579
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct",
+      "availability": "evaluated",
+      "decoded_bit": 0
+    },
+    {
+      "row_id": 3,
+      "group_id": 3,
+      "case_index": 1,
+      "stage_index": 1,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "lane": 1,
+      "source_reference_index": 1,
+      "initial_reference_phase": 4,
+      "requested_bit": 0,
+      "name": "phase4-write0-from-h1",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          4.842994946844445e-15,
+          2.0916809025199033e-15,
+          5.741393496055933e-15,
+          2.766772466920405e-15,
+          8.000127753270311e-16,
+          8.994612841970143e-16
+        ],
+        "maximum_l2_residual": 5.741393496055933e-15,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.4621589159169208,
+              0.29253162162117613,
+              0.45949948301609045,
+              0.4303056858895641,
+              0.2805012355088784,
+              0.48244460473660467
+            ],
+            "maximum_l2_gap": 0.48244460473660467,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.49082699411469954,
+              0.42880393433043074,
+              0.28957822265800215,
+              0.45075060379915344,
+              0.46378481887717504,
+              0.28349162781958653
+            ],
+            "maximum_l2_gap": 0.49082699411469954,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.11840896164916355,
+              0.025506724506546247,
+              0.04523115535307164,
+              0.11840896164916355,
+              0.025506724506546247,
+              0.04523115535307164
+            ],
+            "maximum_l2_gap": 0.11840896164916355,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 9.415288266510039e-15,
+            "best_shift": 5,
+            "by_shift": [
+              0.4824446047366089,
+              0.49082699411469816,
+              0.11840896164917125,
+              0.49082699411470365,
+              0.48244460473660317,
+              9.415288266510039e-15
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.01538034045850032,
+            "best_shift": 5,
+            "by_shift": [
+              0.47344323088074114,
+              0.49226096359473237,
+              0.11654945080912783,
+              0.48203460168153417,
+              0.47737859331885596,
+              0.01538034045850032
+            ],
+            "tied_best_shifts": [
+              5
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct",
+      "availability": "evaluated",
+      "decoded_bit": 0
+    },
+    {
+      "row_id": 4,
+      "group_id": 5,
+      "case_index": 2,
+      "stage_index": 1,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "lane": 0,
+      "source_reference_index": 0,
+      "initial_reference_phase": 5,
+      "requested_bit": 0,
+      "name": "phase5-write0-from-h0",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          6.422723012584489e-15,
+          1.6077558157958526e-14,
+          1.2559118541899198e-14,
+          2.012019433452811e-15,
+          8.134442882048939e-15,
+          1.4041207032062322e-14
+        ],
+        "maximum_l2_residual": 1.6077558157958526e-14,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.2925316216211822,
+              0.4594994830160942,
+              0.43030568588956614,
+              0.2805012355088787,
+              0.48244460473661116,
+              0.4621589159169269
+            ],
+            "maximum_l2_gap": 0.48244460473661116,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.4288039343304331,
+              0.28957822265800437,
+              0.45075060379915605,
+              0.4637848188771808,
+              0.28349162781959064,
+              0.4908269941147071
+            ],
+            "maximum_l2_gap": 0.4908269941147071,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.02550672450654836,
+              0.04523115535308094,
+              0.1184089616491712,
+              0.02550672450654836,
+              0.04523115535308094,
+              0.1184089616491712
+            ],
+            "maximum_l2_gap": 0.1184089616491712,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 1.8292125641843637e-14,
+            "best_shift": 0,
+            "by_shift": [
+              1.8292125641843637e-14,
+              0.48244460473660916,
+              0.4908269941147042,
+              0.11840896164917467,
+              0.49082699411470515,
+              0.4824446047366094
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.015380340458508944,
+            "best_shift": 0,
+            "by_shift": [
+              0.015380340458508944,
+              0.4734432308807414,
+              0.4922609635947384,
+              0.11654945080913177,
+              0.4820346016815357,
+              0.4773785933188623
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct",
+      "availability": "evaluated",
+      "decoded_bit": 0
+    },
+    {
+      "row_id": 5,
+      "group_id": 5,
+      "case_index": 2,
+      "stage_index": 1,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "lane": 1,
+      "source_reference_index": 1,
+      "initial_reference_phase": 5,
+      "requested_bit": 0,
+      "name": "phase5-write0-from-h1",
+      "status": "completed",
+      "readout": {
+        "lag_six_phase_l2_residuals": [
+          3.2157080658540006e-15,
+          7.0848889413698436e-15,
+          8.316522958383812e-15,
+          2.474434398932788e-15,
+          8.785989097591031e-15,
+          1.6159583593940772e-14
+        ],
+        "maximum_l2_residual": 1.6159583593940772e-14,
+        "proper_divisors": [
+          {
+            "divisor": 1,
+            "phase_l2_gaps": [
+              0.29253162162118046,
+              0.4594994830160915,
+              0.4303056858895643,
+              0.2805012355088804,
+              0.48244460473660716,
+              0.46215891591692154
+            ],
+            "maximum_l2_gap": 0.48244460473660716,
+            "excluded": true
+          },
+          {
+            "divisor": 2,
+            "phase_l2_gaps": [
+              0.42880393433043135,
+              0.2895782226580042,
+              0.45075060379915555,
+              0.4637848188771754,
+              0.2834916278195908,
+              0.4908269941147011
+            ],
+            "maximum_l2_gap": 0.4908269941147011,
+            "excluded": true
+          },
+          {
+            "divisor": 3,
+            "phase_l2_gaps": [
+              0.025506724506546886,
+              0.045231155353071935,
+              0.11840896164916206,
+              0.025506724506546886,
+              0.045231155353071935,
+              0.11840896164916206
+            ],
+            "maximum_l2_gap": 0.11840896164916206,
+            "excluded": true
+          }
+        ],
+        "cycle_gate_passed": true,
+        "reference_distances": [
+          {
+            "bit": 0,
+            "distance": 1.3948454851131407e-14,
+            "best_shift": 0,
+            "by_shift": [
+              1.3948454851131407e-14,
+              0.48244460473661066,
+              0.4908269941146988,
+              0.11840896164917318,
+              0.4908269941147045,
+              0.48244460473660383
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          },
+          {
+            "bit": 1,
+            "distance": 0.015380340458504761,
+            "best_shift": 0,
+            "by_shift": [
+              0.015380340458504761,
+              0.47344323088074297,
+              0.4922609635947331,
+              0.11654945080912978,
+              0.482034601681535,
+              0.47737859331885674
+            ],
+            "tied_best_shifts": [
+              0
+            ]
+          }
+        ],
+        "reference_matches": [
+          0
+        ],
+        "decoded_bit": 0
+      },
+      "write_outcome": "correct",
+      "availability": "evaluated",
+      "decoded_bit": 0
+    }
+  ],
+  "cases": [
+    {
+      "case_index": 0,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "group_ids": [
+        0,
+        1
+      ],
+      "row_ids": [
+        0,
+        1
+      ],
+      "status": "completed",
+      "outcome": "case_qualified",
+      "initial_state_sha256": "7b8bfad671e044f5688f219f5bbc531aea0f6f4d1bdc34bffb86532e8d4e48ad",
+      "terminal_state_sha256": "882dcdd2737ee3a91758ad03a65251e0b84f45cde7d3f148627396f57e403374",
+      "prefix_replay": {
+        "status": "completed",
+        "state_count": 37,
+        "update_count": 36,
+        "artifact": {
+          "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/case-00-prefix-replay.npz",
+          "bytes": 535046,
+          "sha256": "5ae4600455a747075efb4cfc9747e0bc0e3900c32c8130c8b7f7338d115cc9f5"
+        },
+        "lanes": [
+          {
+            "lane": 0,
+            "source_reference_index": 0,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          },
+          {
+            "lane": 1,
+            "source_reference_index": 1,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          }
+        ],
+        "maximum_coordinate_gap": 0.0,
+        "maximum_l2_difference": 0.0,
+        "state_bytes_equal": true,
+        "token_bytes_equal": true,
+        "fresh_states_array_sha256": "602a56904ee547f0d9c2991e0cb9469ba29ddacc60b878f288670c69f8376ea7",
+        "historical_states_array_sha256": "602a56904ee547f0d9c2991e0cb9469ba29ddacc60b878f288670c69f8376ea7",
+        "fresh_tokens_array_sha256": "0ea3601722b80677e2655e1a71db6a0e386fde59aa913e449de91c1f5c4dc338",
+        "historical_tokens_array_sha256": "0ea3601722b80677e2655e1a71db6a0e386fde59aa913e449de91c1f5c4dc338",
+        "case_index": 0,
+        "reference_phase": 3,
+        "packet_index": 1,
+        "same_input": true,
+        "comparison_kind": "accepted_same_phase_e0_prefix",
+        "coordinate_tolerance": 1e-10,
+        "coordinate_replay_passed": true,
+        "token_replay_passed": true,
+        "passed": true,
+        "gates_readout": false
+      }
+    },
+    {
+      "case_index": 1,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "group_ids": [
+        2,
+        3
+      ],
+      "row_ids": [
+        2,
+        3
+      ],
+      "status": "completed",
+      "outcome": "case_qualified",
+      "initial_state_sha256": "d3df1e7a64618a87b7d4ee92edc9a8d589e7f8642145e9cfc2feff24680c8d36",
+      "terminal_state_sha256": "39f290be1817bdab5aea5124b89695db46a249e439f57bd384600f0273cae484",
+      "prefix_replay": {
+        "status": "completed",
+        "state_count": 37,
+        "update_count": 36,
+        "artifact": {
+          "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/case-01-prefix-replay.npz",
+          "bytes": 535046,
+          "sha256": "9cbdc610c6c95e4537873e0150d1888ec602f80bc230ff0528c7bc2675b48221"
+        },
+        "lanes": [
+          {
+            "lane": 0,
+            "source_reference_index": 0,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          },
+          {
+            "lane": 1,
+            "source_reference_index": 1,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          }
+        ],
+        "maximum_coordinate_gap": 0.0,
+        "maximum_l2_difference": 0.0,
+        "state_bytes_equal": true,
+        "token_bytes_equal": true,
+        "fresh_states_array_sha256": "76a6f14422b8d1ffcd64d42cc4bec69c6064433dfc0b81d7d20ec07288532183",
+        "historical_states_array_sha256": "76a6f14422b8d1ffcd64d42cc4bec69c6064433dfc0b81d7d20ec07288532183",
+        "fresh_tokens_array_sha256": "5bf732d44644baabc355824099527e2226ba5fc79b785f71fc9b1edede7d106d",
+        "historical_tokens_array_sha256": "5bf732d44644baabc355824099527e2226ba5fc79b785f71fc9b1edede7d106d",
+        "case_index": 1,
+        "reference_phase": 4,
+        "packet_index": 2,
+        "same_input": true,
+        "comparison_kind": "accepted_same_phase_e0_prefix",
+        "coordinate_tolerance": 1e-10,
+        "coordinate_replay_passed": true,
+        "token_replay_passed": true,
+        "passed": true,
+        "gates_readout": false
+      }
+    },
+    {
+      "case_index": 2,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "group_ids": [
+        4,
+        5
+      ],
+      "row_ids": [
+        4,
+        5
+      ],
+      "status": "completed",
+      "outcome": "case_qualified",
+      "initial_state_sha256": "b5fa3e5c12575ccfb0f4afae0110ec18adc62135dd2ed1e80770ab5a11993d38",
+      "terminal_state_sha256": "49b0ed88696c4155ff5b29fdca3cf82535d9fe8f3770ff93f868b10a50d96e03",
+      "prefix_replay": {
+        "status": "completed",
+        "state_count": 37,
+        "update_count": 36,
+        "artifact": {
+          "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/case-02-prefix-replay.npz",
+          "bytes": 535046,
+          "sha256": "8728307035cf51abfe8ffa992e1b3088887d67c6aca019b14134b9d8503330e7"
+        },
+        "lanes": [
+          {
+            "lane": 0,
+            "source_reference_index": 0,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          },
+          {
+            "lane": 1,
+            "source_reference_index": 1,
+            "maximum_coordinate_gap": 0.0,
+            "maximum_l2_difference": 0.0,
+            "state_bytes_equal": true,
+            "token_bytes_equal": true,
+            "token_mismatch_count": 0,
+            "coordinate_replay_passed": true,
+            "token_replay_passed": true
+          }
+        ],
+        "maximum_coordinate_gap": 0.0,
+        "maximum_l2_difference": 0.0,
+        "state_bytes_equal": true,
+        "token_bytes_equal": true,
+        "fresh_states_array_sha256": "87db28c7e94d56c1c47ee78e324b3c937ac2710b678acb216c44b4a53126d976",
+        "historical_states_array_sha256": "87db28c7e94d56c1c47ee78e324b3c937ac2710b678acb216c44b4a53126d976",
+        "fresh_tokens_array_sha256": "ec758a9e7e5439eb77f27e532f894e2aaaa75f87280b9f01a92294cbacf775dd",
+        "historical_tokens_array_sha256": "ec758a9e7e5439eb77f27e532f894e2aaaa75f87280b9f01a92294cbacf775dd",
+        "case_index": 2,
+        "reference_phase": 5,
+        "packet_index": 3,
+        "same_input": true,
+        "comparison_kind": "accepted_same_phase_e0_prefix",
+        "coordinate_tolerance": 1e-10,
+        "coordinate_replay_passed": true,
+        "token_replay_passed": true,
+        "passed": true,
+        "gates_readout": false
+      }
+    }
+  ],
+  "groups": [
+    {
+      "group_id": 0,
+      "case_index": 0,
+      "stage_index": 0,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "name": "phase3-intermediate-write0",
+      "status": "completed",
+      "control_name": "E0",
+      "model_calls": 77,
+      "returned_updates": 72,
+      "completed_updates": 72,
+      "comparison": {
+        "cached_vs_full": {
+          "passed": true,
+          "maximum_coordinate_gap": 4.475586568020162e-16,
+          "maximum_probability_gap": 6.328271240363392e-15,
+          "tolerance": 1e-10
+        },
+        "cached_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 4.2674197509029455e-16,
+          "maximum_probability_gap": 5.88418203051333e-15,
+          "tolerance": 1e-10
+        },
+        "full_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 3.122502256758253e-17,
+          "maximum_probability_gap": 4.440892098500626e-16,
+          "tolerance": 1e-10
+        }
+      },
+      "initial_state_sha256": "7b8bfad671e044f5688f219f5bbc531aea0f6f4d1bdc34bffb86532e8d4e48ad",
+      "terminal_state_sha256": "6dabc74f837feb4c0fce13798a98fb92efd905d95c175d97c4e36dd6d0e3bbd7",
+      "predecessor_group_id": null
+    },
+    {
+      "group_id": 1,
+      "case_index": 0,
+      "stage_index": 1,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "name": "phase3-hold-after-write0",
+      "status": "completed",
+      "control_name": "H",
+      "model_calls": 245,
+      "returned_updates": 240,
+      "completed_updates": 240,
+      "comparison": {
+        "cached_vs_full": {
+          "passed": true,
+          "maximum_coordinate_gap": 9.84455572616838e-16,
+          "maximum_probability_gap": 1.3433698597964394e-14,
+          "tolerance": 1e-10
+        },
+        "cached_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 9.558326352632207e-16,
+          "maximum_probability_gap": 1.3211653993039363e-14,
+          "tolerance": 1e-10
+        },
+        "full_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 6.938893903907228e-17,
+          "maximum_probability_gap": 9.159339953157541e-16,
+          "tolerance": 1e-10
+        }
+      },
+      "initial_state_sha256": "6dabc74f837feb4c0fce13798a98fb92efd905d95c175d97c4e36dd6d0e3bbd7",
+      "terminal_state_sha256": "882dcdd2737ee3a91758ad03a65251e0b84f45cde7d3f148627396f57e403374",
+      "predecessor_group_id": 0
+    },
+    {
+      "group_id": 2,
+      "case_index": 1,
+      "stage_index": 0,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "name": "phase4-intermediate-write0",
+      "status": "completed",
+      "control_name": "E0",
+      "model_calls": 77,
+      "returned_updates": 72,
+      "completed_updates": 72,
+      "comparison": {
+        "cached_vs_full": {
+          "passed": true,
+          "maximum_coordinate_gap": 1.0720591081536668e-15,
+          "maximum_probability_gap": 1.609823385706477e-14,
+          "tolerance": 1e-10
+        },
+        "cached_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 1.1379786002407855e-15,
+          "maximum_probability_gap": 1.7763568394002505e-14,
+          "tolerance": 1e-10
+        },
+        "full_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 7.632783294297951e-17,
+          "maximum_probability_gap": 1.6653345369377348e-15,
+          "tolerance": 1e-10
+        }
+      },
+      "initial_state_sha256": "d3df1e7a64618a87b7d4ee92edc9a8d589e7f8642145e9cfc2feff24680c8d36",
+      "terminal_state_sha256": "70ef0b92f9daf9c3d7770658647f2a97f3fb2e518b367b3aab6c939e39dac37f",
+      "predecessor_group_id": null
+    },
+    {
+      "group_id": 3,
+      "case_index": 1,
+      "stage_index": 1,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "name": "phase4-hold-after-write0",
+      "status": "completed",
+      "control_name": "H",
+      "model_calls": 245,
+      "returned_updates": 240,
+      "completed_updates": 240,
+      "comparison": {
+        "cached_vs_full": {
+          "passed": true,
+          "maximum_coordinate_gap": 1.0685896612017132e-15,
+          "maximum_probability_gap": 1.5432100042289676e-14,
+          "tolerance": 1e-10
+        },
+        "cached_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 9.922618282587337e-16,
+          "maximum_probability_gap": 1.3100631690576847e-14,
+          "tolerance": 1e-10
+        },
+        "full_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 1.0408340855860843e-16,
+          "maximum_probability_gap": 2.3314683517128287e-15,
+          "tolerance": 1e-10
+        }
+      },
+      "initial_state_sha256": "70ef0b92f9daf9c3d7770658647f2a97f3fb2e518b367b3aab6c939e39dac37f",
+      "terminal_state_sha256": "39f290be1817bdab5aea5124b89695db46a249e439f57bd384600f0273cae484",
+      "predecessor_group_id": 2
+    },
+    {
+      "group_id": 4,
+      "case_index": 2,
+      "stage_index": 0,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "name": "phase5-intermediate-write0",
+      "status": "completed",
+      "control_name": "E0",
+      "model_calls": 77,
+      "returned_updates": 72,
+      "completed_updates": 72,
+      "comparison": {
+        "cached_vs_full": {
+          "passed": true,
+          "maximum_coordinate_gap": 9.020562075079397e-17,
+          "maximum_probability_gap": 2.220446049250313e-15,
+          "tolerance": 1e-10
+        },
+        "cached_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 1.231653667943533e-16,
+          "maximum_probability_gap": 3.3861802251067274e-15,
+          "tolerance": 1e-10
+        },
+        "full_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 4.85722573273506e-17,
+          "maximum_probability_gap": 1.1657341758564144e-15,
+          "tolerance": 1e-10
+        }
+      },
+      "initial_state_sha256": "b5fa3e5c12575ccfb0f4afae0110ec18adc62135dd2ed1e80770ab5a11993d38",
+      "terminal_state_sha256": "9b9fe916f1756122b02b0b032009d88231e6c30a1654db8f30a054efdf1ae27f",
+      "predecessor_group_id": null
+    },
+    {
+      "group_id": 5,
+      "case_index": 2,
+      "stage_index": 1,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "name": "phase5-hold-after-write0",
+      "status": "completed",
+      "control_name": "H",
+      "model_calls": 245,
+      "returned_updates": 240,
+      "completed_updates": 240,
+      "comparison": {
+        "cached_vs_full": {
+          "passed": true,
+          "maximum_coordinate_gap": 2.42861286636753e-16,
+          "maximum_probability_gap": 3.497202527569243e-15,
+          "tolerance": 1e-10
+        },
+        "cached_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 2.3245294578089215e-16,
+          "maximum_probability_gap": 3.552713678800501e-15,
+          "tolerance": 1e-10
+        },
+        "full_vs_scalars": {
+          "passed": true,
+          "maximum_coordinate_gap": 2.2551405187698492e-17,
+          "maximum_probability_gap": 5.134781488891349e-16,
+          "tolerance": 1e-10
+        }
+      },
+      "initial_state_sha256": "9b9fe916f1756122b02b0b032009d88231e6c30a1654db8f30a054efdf1ae27f",
+      "terminal_state_sha256": "49b0ed88696c4155ff5b29fdca3cf82535d9fe8f3770ff93f868b10a50d96e03",
+      "predecessor_group_id": 4
+    }
+  ],
+  "geometry": {
+    "planned_carry_boundaries": 3,
+    "planned_literal_resets": 2,
+    "observed_carry_boundaries": 3,
+    "observed_literal_resets": 2,
+    "case_boundaries": [
+      {
+        "case_index": 0,
+        "reference_phase": 3,
+        "groups": [
+          {
+            "group_id": 0,
+            "returned_updates": 72,
+            "initial_sha256": "a6f116dfe2c09f5b2ec9fbac29e4633e40bccdbd3ddc9324b69dad68dac0ff45",
+            "terminal_sha256": "118868faa00127c9ef38d2e13b5b5c94555d69a5c85b253f34220d8ce79a0b04"
+          },
+          {
+            "group_id": 1,
+            "returned_updates": 240,
+            "initial_sha256": "118868faa00127c9ef38d2e13b5b5c94555d69a5c85b253f34220d8ce79a0b04",
+            "terminal_sha256": "5a90559ea0f225a98129cdc3d8ab565b6168b0d4fb3171578a48af05e912e0be"
+          }
+        ]
+      },
+      {
+        "case_index": 1,
+        "reference_phase": 4,
+        "groups": [
+          {
+            "group_id": 2,
+            "returned_updates": 72,
+            "initial_sha256": "9cfc5c30be03cdaac065a774947e2754049311ef032f8c169e9c1e5ba9c40820",
+            "terminal_sha256": "726967057b74ab8345701b959063169888971a1e7a3301ce8638ea0da7bd9a15"
+          },
+          {
+            "group_id": 3,
+            "returned_updates": 240,
+            "initial_sha256": "726967057b74ab8345701b959063169888971a1e7a3301ce8638ea0da7bd9a15",
+            "terminal_sha256": "53123a8a0334533360415bcb86632b67c1be83f0588cad7c29de540fb24937eb"
+          }
+        ]
+      },
+      {
+        "case_index": 2,
+        "reference_phase": 5,
+        "groups": [
+          {
+            "group_id": 4,
+            "returned_updates": 72,
+            "initial_sha256": "7fd2448b6669a1afe03abb1a8a0cee8448ac0a098a2490d3738a65e9ddc0db49",
+            "terminal_sha256": "f41afe6a51360516503bd73e97229d8bf738bcb2268dc7e22f93145cc49d2c98"
+          },
+          {
+            "group_id": 5,
+            "returned_updates": 240,
+            "initial_sha256": "f41afe6a51360516503bd73e97229d8bf738bcb2268dc7e22f93145cc49d2c98",
+            "terminal_sha256": "14cddb148b9dbaa5ab31b85aba6a396cdc2cd635f70862fd9498da852494b7d7"
+          }
+        ]
+      }
+    ],
+    "reference_phases": [
+      3,
+      4,
+      5
+    ],
+    "literal_inputs_available": true,
+    "initial_raw_sha256": "2df8c08179029016029e6a02b9333a77f1cbe26d9bb86f43c9d475310bc19361",
+    "references_raw_sha256": "5fb5412b840330e55f2c88d97587f6a9ff430b882ee41ab1d0b42371c2420d1a"
+  },
+  "prefix_replay": [
+    {
+      "status": "completed",
+      "state_count": 37,
+      "update_count": 36,
+      "artifact": {
+        "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/case-00-prefix-replay.npz",
+        "bytes": 535046,
+        "sha256": "5ae4600455a747075efb4cfc9747e0bc0e3900c32c8130c8b7f7338d115cc9f5"
+      },
+      "lanes": [
+        {
+          "lane": 0,
+          "source_reference_index": 0,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        },
+        {
+          "lane": 1,
+          "source_reference_index": 1,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        }
+      ],
+      "maximum_coordinate_gap": 0.0,
+      "maximum_l2_difference": 0.0,
+      "state_bytes_equal": true,
+      "token_bytes_equal": true,
+      "fresh_states_array_sha256": "602a56904ee547f0d9c2991e0cb9469ba29ddacc60b878f288670c69f8376ea7",
+      "historical_states_array_sha256": "602a56904ee547f0d9c2991e0cb9469ba29ddacc60b878f288670c69f8376ea7",
+      "fresh_tokens_array_sha256": "0ea3601722b80677e2655e1a71db6a0e386fde59aa913e449de91c1f5c4dc338",
+      "historical_tokens_array_sha256": "0ea3601722b80677e2655e1a71db6a0e386fde59aa913e449de91c1f5c4dc338",
+      "case_index": 0,
+      "reference_phase": 3,
+      "packet_index": 1,
+      "same_input": true,
+      "comparison_kind": "accepted_same_phase_e0_prefix",
+      "coordinate_tolerance": 1e-10,
+      "coordinate_replay_passed": true,
+      "token_replay_passed": true,
+      "passed": true,
+      "gates_readout": false
+    },
+    {
+      "status": "completed",
+      "state_count": 37,
+      "update_count": 36,
+      "artifact": {
+        "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/case-01-prefix-replay.npz",
+        "bytes": 535046,
+        "sha256": "9cbdc610c6c95e4537873e0150d1888ec602f80bc230ff0528c7bc2675b48221"
+      },
+      "lanes": [
+        {
+          "lane": 0,
+          "source_reference_index": 0,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        },
+        {
+          "lane": 1,
+          "source_reference_index": 1,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        }
+      ],
+      "maximum_coordinate_gap": 0.0,
+      "maximum_l2_difference": 0.0,
+      "state_bytes_equal": true,
+      "token_bytes_equal": true,
+      "fresh_states_array_sha256": "76a6f14422b8d1ffcd64d42cc4bec69c6064433dfc0b81d7d20ec07288532183",
+      "historical_states_array_sha256": "76a6f14422b8d1ffcd64d42cc4bec69c6064433dfc0b81d7d20ec07288532183",
+      "fresh_tokens_array_sha256": "5bf732d44644baabc355824099527e2226ba5fc79b785f71fc9b1edede7d106d",
+      "historical_tokens_array_sha256": "5bf732d44644baabc355824099527e2226ba5fc79b785f71fc9b1edede7d106d",
+      "case_index": 1,
+      "reference_phase": 4,
+      "packet_index": 2,
+      "same_input": true,
+      "comparison_kind": "accepted_same_phase_e0_prefix",
+      "coordinate_tolerance": 1e-10,
+      "coordinate_replay_passed": true,
+      "token_replay_passed": true,
+      "passed": true,
+      "gates_readout": false
+    },
+    {
+      "status": "completed",
+      "state_count": 37,
+      "update_count": 36,
+      "artifact": {
+        "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/case-02-prefix-replay.npz",
+        "bytes": 535046,
+        "sha256": "8728307035cf51abfe8ffa992e1b3088887d67c6aca019b14134b9d8503330e7"
+      },
+      "lanes": [
+        {
+          "lane": 0,
+          "source_reference_index": 0,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        },
+        {
+          "lane": 1,
+          "source_reference_index": 1,
+          "maximum_coordinate_gap": 0.0,
+          "maximum_l2_difference": 0.0,
+          "state_bytes_equal": true,
+          "token_bytes_equal": true,
+          "token_mismatch_count": 0,
+          "coordinate_replay_passed": true,
+          "token_replay_passed": true
+        }
+      ],
+      "maximum_coordinate_gap": 0.0,
+      "maximum_l2_difference": 0.0,
+      "state_bytes_equal": true,
+      "token_bytes_equal": true,
+      "fresh_states_array_sha256": "87db28c7e94d56c1c47ee78e324b3c937ac2710b678acb216c44b4a53126d976",
+      "historical_states_array_sha256": "87db28c7e94d56c1c47ee78e324b3c937ac2710b678acb216c44b4a53126d976",
+      "fresh_tokens_array_sha256": "ec758a9e7e5439eb77f27e532f894e2aaaa75f87280b9f01a92294cbacf775dd",
+      "historical_tokens_array_sha256": "ec758a9e7e5439eb77f27e532f894e2aaaa75f87280b9f01a92294cbacf775dd",
+      "case_index": 2,
+      "reference_phase": 5,
+      "packet_index": 3,
+      "same_input": true,
+      "comparison_kind": "accepted_same_phase_e0_prefix",
+      "coordinate_tolerance": 1e-10,
+      "coordinate_replay_passed": true,
+      "token_replay_passed": true,
+      "passed": true,
+      "gates_readout": false
+    }
+  ],
+  "prefix_replay_passed": true,
+  "prefix_comparison": {
+    "completed_cases": 3,
+    "planned_cases": 3,
+    "passed": true,
+    "gates_readout": false,
+    "maximum_coordinate_gap": 0.0,
+    "maximum_l2_difference": 0.0,
+    "state_pairs_compared": 222,
+    "token_pairs_compared": 216,
+    "state_bytes_equal_all_observed": true,
+    "token_bytes_equal_all_observed": true,
+    "scope": "Same literal phase and first 36 E0 updates; finite mismatch limits pulse-duration attribution but does not change neutral readouts or trigger retry."
+  },
+  "timing": {
+    "attempted_invocations": 966,
+    "returned_invocations": 966,
+    "failed_invocations": 0,
+    "forward_seconds": 510.8549609486945,
+    "categories": {
+      "prefix": {
+        "attempted_calls": 6,
+        "returned_calls": 6,
+        "failed_calls": 0,
+        "observed_call_seconds": 7.418743864982389,
+        "calls_without_returned_timing": 0
+      },
+      "comparisons": {
+        "attempted_calls": 24,
+        "returned_calls": 24,
+        "failed_calls": 0,
+        "observed_call_seconds": 28.607495814969297,
+        "calls_without_returned_timing": 0
+      },
+      "endpoint_updates": {
+        "attempted_calls": 216,
+        "returned_calls": 216,
+        "failed_calls": 0,
+        "observed_call_seconds": 109.54938571574166,
+        "calls_without_returned_timing": 0
+      },
+      "hold_updates": {
+        "attempted_calls": 720,
+        "returned_calls": 720,
+        "failed_calls": 0,
+        "observed_call_seconds": 365.27933555300115,
+        "calls_without_returned_timing": 0
+      }
+    },
+    "by_group": [
+      {
+        "group_id": 0,
+        "forward_seconds": 42.547938484174665
+      },
+      {
+        "group_id": 1,
+        "forward_seconds": 130.91225457866676
+      },
+      {
+        "group_id": 2,
+        "forward_seconds": 42.77506360801635
+      },
+      {
+        "group_id": 3,
+        "forward_seconds": 127.7845098071848
+      },
+      {
+        "group_id": 4,
+        "forward_seconds": 42.152216876565944
+      },
+      {
+        "group_id": 5,
+        "forward_seconds": 124.68297759408597
+      }
+    ],
+    "elapsed_seconds": 714.0437759060296,
+    "schedule_arithmetic": {
+      "intermediate_planned_calls": 966,
+      "corresponding_canonical_write0_only_calls": 1110,
+      "corresponding_short_write0_only_calls": 858,
+      "fewer_calls_than_canonical": 144,
+      "measured_speedup": false
+    },
+    "scope": "Forward durations and whole-run elapsed are distinct. Elapsed includes loading, checks and serialization; transfer bytes are reported separately. The 144-call reduction relative to the matched 120-update schedule is planned arithmetic only and is conditional on successful writes. It is not a measured speedup; the short panel also executed WRITE1/H."
+  },
+  "terminal_resources": {
+    "model_calls": 966,
+    "elapsed_seconds": 714.0437759060296,
+    "peak_rss_bytes": 5480128512,
+    "final_raw_bytes": 2434824408,
+    "calls_passed": true,
+    "wall_time_passed": true,
+    "rss_passed": true,
+    "raw_passed": true,
+    "raw_size_scope": "All files including immutable result.json and manifest.json; predicted byte count verified after write."
+  },
+  "instrument_failures": [],
+  "partial_evidence": [],
+  "independent_audit": {
+    "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/independent-audit-20261029T191450Z/checker/independent-review.json",
+    "bytes": 687093,
+    "sha256": "15fdbb474dc1de6394708707d2bbbf2fcc5634e32518bca7da6c55085a459e1a"
+  },
+  "result": {
+    "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/result.json",
+    "bytes": 3743898,
+    "sha256": "c9dfc9b5db717262c75eb338c92caed8a79d8ec0c676cc2389c0480dfc49e512"
+  },
+  "return_status": "verified",
+  "transfer_reservation_closed": true,
+  "transfer": {
+    "charged_bytes": 2448239445,
+    "reserved_bytes": 34359738368,
+    "overhead_reserve_bytes": 33554432,
+    "human_monthly_maximum_bytes": 7000000000000
+  },
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/result.json",
+      "bytes": 3743898,
+      "sha256": "c9dfc9b5db717262c75eb338c92caed8a79d8ec0c676cc2389c0480dfc49e512"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/manifest.json",
+      "bytes": 323891,
+      "sha256": "99814b366b88cf2bf8a702f08851cfa07aaf5829575704d1d42a8e247732961e"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/source.json",
+      "bytes": 7286,
+      "sha256": "55af599535fb1fc10cd0f5104642699515c07e5f4d32942f736dfca82ff3a1cd"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/design.json",
+      "bytes": 6079,
+      "sha256": "fbe5e785204f7c3f77fa97675020c82125017176e6e4d8a88a6a3e309b49816e"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/events.jsonl",
+      "bytes": 912404,
+      "sha256": "0dffa0289b0fa9729e67f93a85cb103e7ccb843e942a37263c628c83c9beea1f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/final-manifest.json",
+      "bytes": 345218,
+      "sha256": "a2b54b44536d9151bde65dfd1c8569c85ff35f246947c0aaef24670229c672fd"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/completion.json",
+      "bytes": 289,
+      "sha256": "4fb8c5576cebcf9579169b852b0246dc129ccd31d0a0ea50178d4a41b27ddd21"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/transfer-account.json",
+      "bytes": 4119,
+      "sha256": "ad6ffa5e5dc15936f4f574b80cadb49b0377b3fe136b9f67fa53559e27ca8db8"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/transfer-closeout.json",
+      "bytes": 949,
+      "sha256": "eb3a4996aa02e29cd7913f62a63ffbef7adab9d790c19344cda5e21b30a13a53"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/maintenance-closeout.json",
+      "bytes": 701,
+      "sha256": "8c7d5476fa976b41c30af914c05ce3c2da4649c180c6c8ad5a542541c3285797"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/local-return-verification.json",
+      "bytes": 389,
+      "sha256": "c0c4aee51d7015d4afcc86a610ce0397694ee4e14f9fc401c2908555ab072364"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/terminal-process-check.json",
+      "bytes": 82,
+      "sha256": "db7af956fb3797de9f6ef985587defe26f1025cdaad23846da5219a64eb64739"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-00.json",
+      "bytes": 26380,
+      "sha256": "37947c832b5788ebcc9202acc8c4cf2e946f518d157096a7a35e7cf4f33b85ca"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-00-summary.json",
+      "bytes": 267517,
+      "sha256": "5287fe284cfed4fb954203a411f6cfa04c10d2391132f3f6d14b4302eb639e30"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-01.json",
+      "bytes": 81475,
+      "sha256": "db7caa879e3723a066efe768e8950e3b72a2a5a0bd4f109b56287b3a0e673276"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-01-summary.json",
+      "bytes": 850172,
+      "sha256": "02ecff7a7a20979e5a822725cb24e45f3e728b93e321e25ec73a9c4606e1e6b7"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-02.json",
+      "bytes": 26380,
+      "sha256": "b1f06e463ba407e10b34ae504a84f45456b65b923803fc3a6099b6580dbc17b6"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-02-summary.json",
+      "bytes": 267612,
+      "sha256": "c7f648d7d59cb9d5a22e95c378449e4fc57087d25ff994400916c8e9a37c1984"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-03.json",
+      "bytes": 81475,
+      "sha256": "8545911e3b884cc9325cd6940780df3ed4954bb24c04a466a3ea986d4fccf339"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-03-summary.json",
+      "bytes": 850212,
+      "sha256": "b41f134af1b2ed8e2ce9d2fe51fba88d67d31587be6a8d14f4edb96468f6a65b"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-04.json",
+      "bytes": 26380,
+      "sha256": "26b11a1e4544bc42089f01fbac73e5b8b9dd0190ec6b650437677172c850df07"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-04-summary.json",
+      "bytes": 267608,
+      "sha256": "dce4c671f852dc91cf3af94b402a6d6789ef89c5929e2ef1334564adba999fa9"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-05.json",
+      "bytes": 81475,
+      "sha256": "c30ad036a1f0958363cd697534e86f831ad66b66f918781dc6f7becc935ee220"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-05-summary.json",
+      "bytes": 850218,
+      "sha256": "2e583a499ca02b6608d21e8b307b6399981389b7effc04dcbbd6710299d93428"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/literal-inputs.npz",
+      "bytes": 3461712,
+      "sha256": "3f6322a6f854fa45b4cb277f94ec55eb9a684b1f8b47a8052376b69a221f24ec"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-00-states.npz",
+      "bytes": 1050024,
+      "sha256": "919cdf478490b5bcb0ffd9f2b5caec58004b12a8f3f99bff53be580d28f676cf"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-01-states.npz",
+      "bytes": 3459812,
+      "sha256": "2bb29c491f4ffe4e86251dd0882739de2b8e7e45731070c50926d1321ab25341"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-02-states.npz",
+      "bytes": 1050024,
+      "sha256": "95e453ba100cea163a0821f339ea2a475a54501222ddf8f1179b4f68bc4eceb5"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-03-states.npz",
+      "bytes": 3459812,
+      "sha256": "a5537b1c2888f2b0fcf5c691dab87f9a6bb0936ebfcd5280498ad859718f5442"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-04-states.npz",
+      "bytes": 1050024,
+      "sha256": "9ba4d57176c23589428ff76a45010db44e188f8bb2a3c6a28f253078b6b8b632"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/group-05-states.npz",
+      "bytes": 3459812,
+      "sha256": "afae33e3b698fcb9cf545d2cd9adf3ccc43726466be4c289f5fb52d7db79cf28"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/case-00-prefix-replay.npz",
+      "bytes": 535046,
+      "sha256": "5ae4600455a747075efb4cfc9747e0bc0e3900c32c8130c8b7f7338d115cc9f5"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/case-01-prefix-replay.npz",
+      "bytes": 535046,
+      "sha256": "9cbdc610c6c95e4537873e0150d1888ec602f80bc230ff0528c7bc2675b48221"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/run/case-02-prefix-replay.npz",
+      "bytes": 535046,
+      "sha256": "8728307035cf51abfe8ffa992e1b3088887d67c6aca019b14134b9d8503330e7"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/job.json",
+      "bytes": 3024,
+      "sha256": "d6bc7369a2d32a356961377719ffb86e78cd43bfae7945db558cb3cd6686d155"
+    }
+  ],
+  "scope": "E0(72) followed by H240 at the six literal H0/H1 starts in phases 3\u20135. No WRITE1/reuse test, off-cycle reliability, error rate, minimum duration, monotonic duration response, speedup, asymptotic attraction, causal hysteresis or language interface is established. Wrong, unresolved, failed and unrun evidence is retained.",
+  "utc": "2026-10-29T19:19:14Z",
+  "head_at_acceptance": "c77c35d53ea572f823602ec885d7f78155e34846",
+  "root_acceptance": {
+    "path": "/data2/shrimp-memory-data/audits/public-intermediate-write0-phase-panel/20261029T185852Z-public-intermediate-write0-phase-panel/root-acceptance-20261029T191914Z/review.json",
+    "bytes": 659266,
+    "sha256": "e40b1a280b97a3d413c0302ddd9d9a8688264054f9da460ea02473629d8b9a40"
+  }
+}
