@@ -1,0 +1,443 @@
+{
+  "utc": "2026-10-26T04:35:51Z",
+  "source_commit": "a5563658e7f7dad9ebdba19973a3db3ff1fc0e17",
+  "preparation_source_commit": "a5563658e7f7dad9ebdba19973a3db3ff1fc0e17",
+  "evidence": "exploratory; fixed first eight unsorted uniform draws from one previously selected state line, no filtering or outcome selection",
+  "source": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout",
+  "status": "audit_passed",
+  "planned_rows": 8,
+  "verified_rows": 8,
+  "readback_steps": 600,
+  "qualified_state_counts": {
+    "ad": 2,
+    "td": 6,
+    "null": 0
+  },
+  "proposal_comparison": {
+    "qualified_final_and_decision_denominator": 8,
+    "matching": 8,
+    "wrong_against_qualified_final": 0,
+    "no_decision": 0,
+    "final_unresolved_after_decision": 0,
+    "later_loss": 0,
+    "later_label_change": 0
+  },
+  "static_comparison": {
+    "qualified_final_and_nearest_denominator": 8,
+    "matching": 6,
+    "wrong_against_qualified_final": 2,
+    "nearest_ties": 0
+  },
+  "model_calls": 4817,
+  "executed_updates": 4800,
+  "actual_avoided_updates": 0,
+  "hypothetical_unused_updates_after_decisions": 3228,
+  "observer_seconds": 0.3562741531604843,
+  "saved_forward_seconds": 2068.8333521728164,
+  "elapsed_seconds": 2132.3013795219995,
+  "peak_rss_bytes": 5471608832,
+  "resource_limits_passed": true,
+  "rows": [
+    {
+      "packet_index": 0,
+      "weight": 0.43904387477102347,
+      "status": "verified",
+      "qualified_state": "ad",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.01132871584909365,
+          "td": 0.01327349884844001
+        },
+        "decoded": null,
+        "nearest_label": "ad",
+        "nearest_distance_margin": 0.0019447829993463617,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 156,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 444
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 255.52450514700104,
+      "hypothetical_unused_updates": 444
+    },
+    {
+      "packet_index": 1,
+      "weight": 0.2763782082269718,
+      "status": "verified",
+      "qualified_state": "ad",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.007131428924997371,
+          "td": 0.009559196546847917
+        },
+        "decoded": null,
+        "nearest_label": "ad",
+        "nearest_distance_margin": 0.002427767621850546,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 168,
+          "label": "ad"
+        },
+        "final_label": "ad",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 432
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 263.3857927859317,
+      "hypothetical_unused_updates": 432
+    },
+    {
+      "packet_index": 2,
+      "weight": 0.9489796237377028,
+      "status": "verified",
+      "qualified_state": "td",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.005049830581177914,
+          "td": 0.0013164865253862193
+        },
+        "decoded": null,
+        "nearest_label": "td",
+        "nearest_distance_margin": 0.0037333440557916946,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 180,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 420
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 258.2931578639509,
+      "hypothetical_unused_updates": 420
+    },
+    {
+      "packet_index": 3,
+      "weight": 0.17321853879006954,
+      "status": "verified",
+      "qualified_state": "td",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.004469584291026344,
+          "td": 0.007473469990402673
+        },
+        "decoded": null,
+        "nearest_label": "ad",
+        "nearest_distance_margin": 0.003003885699376329,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 216,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 384
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": false,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 261.3938444789892,
+      "hypothetical_unused_updates": 384
+    },
+    {
+      "packet_index": 4,
+      "weight": 0.18641845322087192,
+      "status": "verified",
+      "qualified_state": "td",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.004810183689883464,
+          "td": 0.0077206115913755575
+        },
+        "decoded": null,
+        "nearest_label": "ad",
+        "nearest_distance_margin": 0.002910427901492094,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 216,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 384
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": false,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 254.92413662294348,
+      "hypothetical_unused_updates": 384
+    },
+    {
+      "packet_index": 5,
+      "weight": 0.9721342606936881,
+      "status": "verified",
+      "qualified_state": "td",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.005023512195777728,
+          "td": 0.0007190239077831726
+        },
+        "decoded": null,
+        "nearest_label": "td",
+        "nearest_distance_margin": 0.004304488287994556,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 204,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 396
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 259.71137239502787,
+      "hypothetical_unused_updates": 396
+    },
+    {
+      "packet_index": 6,
+      "weight": 0.5064018998850371,
+      "status": "verified",
+      "qualified_state": "td",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.01295396720363122,
+          "td": 0.012736386819588878
+        },
+        "decoded": null,
+        "nearest_label": "td",
+        "nearest_distance_margin": 0.00021758038404234153,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 216,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 384
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 256.7165423509796,
+      "hypothetical_unused_updates": 384
+    },
+    {
+      "packet_index": 7,
+      "weight": 0.8728095928275086,
+      "status": "verified",
+      "qualified_state": "td",
+      "static_baseline": {
+        "distances": {
+          "ad": 0.005604470215316312,
+          "td": 0.0032819134131848657
+        },
+        "decoded": null,
+        "nearest_label": "td",
+        "nearest_distance_margin": 0.0023225568021314463,
+        "nearest_rule": "closest reference phase without distance rejection; exact ties unresolved"
+      },
+      "proposed_policy": {
+        "decision": {
+          "steps": 216,
+          "label": "td"
+        },
+        "final_label": "td",
+        "disagrees_with_qualified_final": false,
+        "final_unresolved_after_decision": false,
+        "later_loss": false,
+        "later_label_change": false,
+        "remaining_updates_after_decision": 384
+      },
+      "decision_matches_qualified_final": true,
+      "static_nearest_matches_qualified_final": true,
+      "later_unresolved_steps": [],
+      "later_different_label_steps": [],
+      "saved_forward_seconds": 258.8840005279926,
+      "hypothetical_unused_updates": 384
+    }
+  ],
+  "source_files_checked_against_commit": [
+    {
+      "file": "tools/run_p6_readback.py",
+      "bytes": 12861,
+      "sha256": "e2f1f6b52f8551061444f71b96edf17f7491981475180498e0af63cec6f89dfb"
+    },
+    {
+      "file": "tools/validate_qwen_map.py",
+      "bytes": 25943,
+      "sha256": "b7601d6e853ebb0fc1f8bbb5f3f7146a41f4743a6fd37ad297f0c8b90a54aecb"
+    },
+    {
+      "file": "tools/check_p6_writes.py",
+      "bytes": 22766,
+      "sha256": "2ac2b8058a47c1478b092dc3e55f7febcdb0725cf75c455a5b3ffafd63f76781"
+    },
+    {
+      "file": "tools/streaming_readout.py",
+      "bytes": 1769,
+      "sha256": "15101e9d809e92a85aabf44dea6b3eb09ffeb5909a071f43191d45ac8685cd46"
+    },
+    {
+      "file": "tools/audit_p6_recovery.py",
+      "bytes": 21230,
+      "sha256": "dff1be03ec6cacbe00d4093a9162725a48b3778f42d20680e2767593f88835b5"
+    }
+  ],
+  "preparation_files_checked_against_commit": [
+    {
+      "file": "tools/prepare_fresh_readout.py",
+      "bytes": 7877,
+      "sha256": "f1782e2e294ed59365af7ea6729d8feb2228b2df8ed2f013adc0ee213324c089"
+    },
+    {
+      "file": "tools/run_p6_readback.py",
+      "bytes": 12861,
+      "sha256": "e2f1f6b52f8551061444f71b96edf17f7491981475180498e0af63cec6f89dfb"
+    },
+    {
+      "file": "tools/streaming_readout.py",
+      "bytes": 1769,
+      "sha256": "15101e9d809e92a85aabf44dea6b3eb09ffeb5909a071f43191d45ac8685cd46"
+    },
+    {
+      "file": "tools/audit_p6_recovery.py",
+      "bytes": 21230,
+      "sha256": "dff1be03ec6cacbe00d4093a9162725a48b3778f42d20680e2767593f88835b5"
+    },
+    {
+      "file": "tools/evaluate_readout_policy.py",
+      "bytes": 2735,
+      "sha256": "ee6f340323d197942f0a63d4c733ee0f0dab6941d4b2b5f8e66ef759bcde3a34"
+    },
+    {
+      "file": "docs/fresh-readout-protocol.md",
+      "bytes": 6607,
+      "sha256": "cefae1b197ae5cbee6fee2fcbd283bdbf17f21a1467257e55bca3ead335c6079"
+    },
+    {
+      "file": "pyproject.toml",
+      "bytes": 647,
+      "sha256": "ada1e984ecbd2084418f011c2dc9065df68281288d8fde06e9730e4f478bcf9c"
+    },
+    {
+      "file": "uv.lock",
+      "bytes": 392521,
+      "sha256": "d080ff29fd93afd311ace32ec06ed612e51f4cada1db5b332e4060d9d8a478c0"
+    }
+  ],
+  "verified_inventory_files": 848,
+  "verified_archive_files": 219,
+  "bindings": [
+    {
+      "path": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout/complete-audit.json",
+      "bytes": 420122,
+      "sha256": "f48fc32007233cf4ec2b6b0d093e2fbf634ad3776d7570b6c43d885aa171f335"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout/run/results.json",
+      "bytes": 426338,
+      "sha256": "4e312e442978f477564fe3af3812b0612391b4d6f41886671452803451f6f50a"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout/run/metadata.json",
+      "bytes": 2873,
+      "sha256": "ad26381544f8fe5f5d2f3bacaba7c6731f55619d825f43063173f824eb83e8f9"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout/run/events.jsonl",
+      "bytes": 1436138,
+      "sha256": "a7c67e1947a218879a615a3d277454f870643a04a3c5fc754bbeba4446260a84"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout/local-evaluation/design.json",
+      "bytes": 4964,
+      "sha256": "3a3dab7661e42f66e3dce13540e9a76d8cc3614ff27fd477b55ebf33e121570d"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout/local-evaluation/preparation.json",
+      "bytes": 723,
+      "sha256": "a307a88e4d07ae4d69fcb33e62064661ec6e95d2e8f683e3c72332eb00438bda"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout/prior-input-coincidences.json",
+      "bytes": 1753,
+      "sha256": "0825ffd831b086174aa6d9f3c3fac8489c75df6cffde7c1e11f448ec0fbe998f"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout/final-manifest.json",
+      "bytes": 181480,
+      "sha256": "bedb28666d78cc7b2aadcc63afa12bb7022a56c8e6018b6223dca67f70a263bf"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout/local-return-verification.json",
+      "bytes": 389,
+      "sha256": "90100540d2200e10c70f8d3f2858e78972f3e33ebf2a24448024c6fb24b79747"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout/transfer-closeout.json",
+      "bytes": 668,
+      "sha256": "f34577e4dda318050c478ee8c03c84327ce9d869368eab37c4e4214129457f63"
+    },
+    {
+      "path": "/data2/shrimp-memory-data/audits/fresh-readout/20261026T035750Z-fresh-readout/independent-review.json",
+      "bytes": 7580,
+      "sha256": "bc55df3263f06ebc3a31cde07ac992a88c92b5a7cff35d6028369a0523f1dadf"
+    }
+  ],
+  "scope": "Eight fresh draw-order states on one previously selected line. Full 600-update trajectories and all 4817 model calls were required for a complete audit; no actual early stopping or measured speedup here. Wrong, absent and unresolved proposed readouts are retained outcomes. Recorded precision/source/cache evidence is checked without model replay. No guarantee between twelve-update checkpoints, beyond 600 updates, of population reliability, fractality, secrecy or language-mediated communication."
+}
