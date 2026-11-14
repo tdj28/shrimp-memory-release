@@ -5,7 +5,7 @@ feedback* (T. D. Jones, arXiv link to be added). It contains what another resear
 register experiments: the instrument and runners, the audits and analyses, the plans written before each run, the
 receipts of every result, the steering vector and reference inputs, and tests.
 
-**Status: release candidate, not yet published.** The data archive link and the results index are still to come.
+**Status: release candidate, not yet published.**
 
 ## What the loop is
 
@@ -25,9 +25,10 @@ arithmetic on one CPU thread.
 | `docs/receipts/` | the receipt of each result: inputs bound by SHA-256, outcomes, model-call counts |
 | `inputs/` | the steering vector, the two reference cycles and their manifest, the P8 reference states, and the two earlier runs (`continued-hold/`, `recovery/`) whose results, metadata and trajectories the runners verify before any call |
 
-Not included: the research history of the private study repository, the materials of the article's prose tests
-(Section V: the sentence bank, note texts and calibration sentences), the model weights, and the raw run data, which
-is too large for a repository and will be archived separately.
+Not included: the research history of the private study repository; the code and materials of the article's
+Section V (the message exchange, the prose tests with their sentence bank, note texts and calibration sentences, and
+the Pythia route); the model weights; and the raw run data (about 60 GB), whose files are identified by SHA-256 in
+the receipts and are available from the author on reasonable request.
 
 ## Environments
 
