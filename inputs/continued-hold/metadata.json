@@ -1,0 +1,176 @@
+{
+  "utc": "2026-10-25T22:06:39Z",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "arguments": {
+    "cache_dir": "/home/ubuntu/shrimp-memory-data/models/hf/hub",
+    "vectors": "/home/ubuntu/shrimp-memory-data/audits/qwen-validation/20261025T214011Z-JbM9BT/vectors.npz",
+    "seeds": "/home/ubuntu/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/terminal-seeds.npz",
+    "seeds_sha256": "ef0b512f282a002037331be9f7ef265e06d6f0bce137a979b4baaae51aaeae8c",
+    "seed_manifest": "/home/ubuntu/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/seed-manifest.json",
+    "seed_manifest_sha256": "049759c518e8c4d394df16d9848d5b5a37636af33a50b3b67a3f5892cce7ea68",
+    "output_dir": "/home/ubuntu/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/continued-hold",
+    "steps": 120,
+    "threads": 1,
+    "max_seconds": 840,
+    "max_rss_gib": 20.0
+  },
+  "source_commit": "471b5eac00924638df3285aa223a84c3c94cedb7",
+  "script_sha256": "b0bf92d204078ab4426a6db75fefec3c8ddfdcafd0ff5a2720c7a4f60e458297",
+  "helper_sha256": "b7601d6e853ebb0fc1f8bbb5f3f7146a41f4743a6fd37ad297f0c8b90a54aecb",
+  "prefix_ids": [
+    151644,
+    8948,
+    198,
+    2610,
+    525,
+    458,
+    15235,
+    7404,
+    448,
+    2441,
+    15235,
+    13,
+    1446,
+    614,
+    4583,
+    11290,
+    13,
+    31733,
+    1910,
+    311,
+    22729,
+    8820,
+    498,
+    1366,
+    13,
+    151645,
+    198,
+    151644,
+    872,
+    198,
+    9707,
+    0,
+    151645,
+    198,
+    151644,
+    77091,
+    198
+  ],
+  "weights": {
+    "path": "/home/ubuntu/shrimp-memory-data/models/hf/hub/blobs/bb/bb5ff7e71536bbce6378f6d4bb523a77f1e9455965702d18bec33f599d5851f7",
+    "bytes": 988097824,
+    "sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe"
+  },
+  "config": {
+    "path": "/home/ubuntu/shrimp-memory-data/models/hf/hub/models--Qwen--Qwen2.5-0.5B-Instruct/blobs/0dbb161213629a23f0fc00ef286e6b1e366d180f",
+    "bytes": 659,
+    "sha256": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45"
+  },
+  "vectors": {
+    "path": "/home/ubuntu/shrimp-memory-data/audits/qwen-validation/20261025T214011Z-JbM9BT/vectors.npz",
+    "bytes": 14860,
+    "sha256": "b630bb7bef06bde87f8e6a7ca5e8672f83d24bc0585bf19048e9e494a4357f41"
+  },
+  "seeds": {
+    "path": "/home/ubuntu/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/terminal-seeds.npz",
+    "bytes": 13961,
+    "sha256": "ef0b512f282a002037331be9f7ef265e06d6f0bce137a979b4baaae51aaeae8c"
+  },
+  "seed_manifest": {
+    "path": "/home/ubuntu/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/seed-manifest.json",
+    "bytes": 3011,
+    "sha256": "049759c518e8c4d394df16d9848d5b5a37636af33a50b3b67a3f5892cce7ea68"
+  },
+  "gates": {
+    "closure_l2_tolerance": 1e-08,
+    "proper_divisor_l2_separation": 0.0001,
+    "cycle_l2_separation": 0.001
+  },
+  "checkpoint_every_steps": 12,
+  "hold": {
+    "alpha": 0.07293697809562831,
+    "log10_temperature": -0.15395151820007266
+  },
+  "input_provenance": {
+    "schema_version": 1,
+    "created_at_utc": "2026-10-25T22:03:42Z",
+    "extraction_repository_commit": "f043642ba916f50d2a57b47de826c8686a0205c1",
+    "evidence_level": "adapted follow-up inputs after seeing incomplete convergence",
+    "hold": {
+      "alpha": 0.07293697809562831,
+      "log10_temperature": -0.15395151820007266
+    },
+    "seeds": [
+      {
+        "label": "ad",
+        "source_alpha": 0.07293697809562831,
+        "source_log10_temperature": -0.15395151820007266,
+        "source_trajectory": {
+          "path": "/data2/shrimp-memory-data/audits/qwen-validation/20261025T214011Z-JbM9BT/p6-hold-01/ad-final-120.npz",
+          "bytes": 833490,
+          "sha256": "c8be24184714a01bfd084f39f33050f8e3b1eb6a55ad057067c52512fe9128e4"
+        },
+        "source_state_index": 120,
+        "state_raw_little_endian_float64_sha256": "bc23e79a1d9e80198628cad2785d00361f22f7acc6e5e05f950ca4ada606ba83",
+        "state_shape": [
+          1,
+          896
+        ]
+      },
+      {
+        "label": "td",
+        "source_alpha": 0.07293697809562831,
+        "source_log10_temperature": -0.15395151820007266,
+        "source_trajectory": {
+          "path": "/data2/shrimp-memory-data/audits/qwen-validation/20261025T214011Z-JbM9BT/p6-hold-01/td-final-120.npz",
+          "bytes": 833342,
+          "sha256": "8eb9e72aee97cfef68f5b2b05a00a69ec8d48dca2024259806944d5fca3c5034"
+        },
+        "source_state_index": 120,
+        "state_raw_little_endian_float64_sha256": "ba52d6ff6c25f5a393ab37e138da663f6d31cfc9838299f6b651b9a01005facb",
+        "state_shape": [
+          1,
+          896
+        ]
+      }
+    ],
+    "output": {
+      "path": "/data2/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/terminal-seeds.npz",
+      "bytes": 13961,
+      "sha256": "ef0b512f282a002037331be9f7ef265e06d6f0bce137a979b4baaae51aaeae8c",
+      "key": "states",
+      "shape": [
+        2,
+        1,
+        896
+      ],
+      "dtype": "float64",
+      "order": [
+        "ad",
+        "td"
+      ]
+    },
+    "test_state": {
+      "path": "/data2/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/td-test-state.npz",
+      "bytes": 7099,
+      "sha256": "8347543802009d1dd07b055f486ab82cf5ea86522a3843deab788fd3efbd38e6",
+      "key": "state",
+      "shape": [
+        896
+      ],
+      "dtype": "float64"
+    },
+    "previous_results": {
+      "path": "/data2/shrimp-memory-data/audits/qwen-validation/20261025T214011Z-JbM9BT/p6-hold-01/results.json",
+      "bytes": 9901,
+      "sha256": "2a06e58967e9304ca5e326d65adeac781e23e13f46a9ab6e9dafe5e9a02abb26"
+    },
+    "previous_manifest": {
+      "path": "/data2/shrimp-memory-data/audits/qwen-validation/20261025T214011Z-JbM9BT/p6-manifest.json",
+      "bytes": 6090,
+      "sha256": "05d1ea4c32f360db07cd8cf1a4529e8aeba6515ce6491f73b40bab581252a302"
+    },
+    "selection_rationale": "Both terminal states from the fixed 120-step pilot. No seed search or optimization. The prior td residual fell at every 12-step checkpoint but missed tolerance. Check the map at its terminal state before a fixed additional 120 steps for both seeds. Original failure remains unchanged."
+  }
+}

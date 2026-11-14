@@ -1,0 +1,154 @@
+{
+  "utc": "2026-10-25T22:12:48Z",
+  "arguments": {
+    "cache_dir": "/home/ubuntu/shrimp-memory-data/models/hf/hub",
+    "vectors": "/home/ubuntu/shrimp-memory-data/audits/qwen-validation/20261025T214011Z-JbM9BT/vectors.npz",
+    "references": "/home/ubuntu/shrimp-memory-data/audits/p6-recovery/20261025T221011Z-recovery/reference-cycles.npz",
+    "reference_manifest": "/home/ubuntu/shrimp-memory-data/audits/p6-recovery/20261025T221011Z-recovery/reference-manifest.json",
+    "source_hold_results": "/home/ubuntu/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/continued-hold/results.json",
+    "output_dir": "/home/ubuntu/shrimp-memory-data/audits/p6-recovery/20261025T221011Z-recovery/run",
+    "references_sha256": "d96f923d537a6bcd6b86be7fe91f29a4cba6a46e5e036c8dd408817281395fe0",
+    "reference_manifest_sha256": "17b8e826a63a01d442877b6cf837272f760f49f8f4ba26aa6192294f47b6853f"
+  },
+  "source_commit": "0cbf774da0fa330c5e28a4be65242b3ba38bca9d",
+  "source_hashes": {
+    "check_p6_recovery.py": "95919740e59a782102f55df5f85e77a5b51bad2422b2382162347746cd96fa3c",
+    "validate_qwen_map.py": "b7601d6e853ebb0fc1f8bbb5f3f7146a41f4743a6fd37ad297f0c8b90a54aecb",
+    "check_p6_hold.py": "b0bf92d204078ab4426a6db75fefec3c8ddfdcafd0ff5a2720c7a4f60e458297"
+  },
+  "max_model_calls": 3121,
+  "max_seconds": 2100,
+  "max_rss_gib": 20,
+  "threads": 1,
+  "checkpoint_every_steps": 12,
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "hold": {
+    "alpha": 0.07293697809562831,
+    "log10_temperature": -0.15395151820007266
+  },
+  "prefix_ids": [
+    151644,
+    8948,
+    198,
+    2610,
+    525,
+    458,
+    15235,
+    7404,
+    448,
+    2441,
+    15235,
+    13,
+    1446,
+    614,
+    4583,
+    11290,
+    13,
+    31733,
+    1910,
+    311,
+    22729,
+    8820,
+    498,
+    1366,
+    13,
+    151645,
+    198,
+    151644,
+    872,
+    198,
+    9707,
+    0,
+    151645,
+    198,
+    151644,
+    77091,
+    198
+  ],
+  "qualified_inputs": {
+    "manifest": {
+      "schema_version": 1,
+      "created_utc": "2026-10-25T22:10:11Z",
+      "source_commit_at_extraction": "471b5eac00924638df3285aa223a84c3c94cedb7",
+      "hold": {
+        "alpha": 0.07293697809562831,
+        "log10_temperature": -0.15395151820007266
+      },
+      "source_hold_results": {
+        "path": "/data2/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/continued-hold/results.json",
+        "bytes": 12218,
+        "sha256": "8d9b779f6ec6652af1ec803026e7a8f60018de7f91e660f4e1604740177ffec8"
+      },
+      "source_hold_metadata": {
+        "path": "/data2/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/continued-hold/metadata.json",
+        "bytes": 6238,
+        "sha256": "ad1dba0b172e1639e87062bad1a1c05c28de645870cad1822e30981a0a3cb2bb"
+      },
+      "output": {
+        "path": "/data2/shrimp-memory-data/audits/p6-recovery/20261025T221011Z-recovery/reference-cycles.npz",
+        "bytes": 82695,
+        "sha256": "d96f923d537a6bcd6b86be7fe91f29a4cba6a46e5e036c8dd408817281395fe0",
+        "key": "states",
+        "shape": [
+          2,
+          6,
+          896
+        ],
+        "dtype": "float64",
+        "order": [
+          "ad",
+          "td"
+        ]
+      },
+      "evidence": "adapted numerical qualification after original120-step failure; no writable-memory or finite-perturbation result yet"
+    },
+    "references": {
+      "path": "/home/ubuntu/shrimp-memory-data/audits/p6-recovery/20261025T221011Z-recovery/reference-cycles.npz",
+      "bytes": 82695,
+      "sha256": "d96f923d537a6bcd6b86be7fe91f29a4cba6a46e5e036c8dd408817281395fe0"
+    },
+    "reference_manifest": {
+      "path": "/home/ubuntu/shrimp-memory-data/audits/p6-recovery/20261025T221011Z-recovery/reference-manifest.json",
+      "bytes": 1237,
+      "sha256": "17b8e826a63a01d442877b6cf837272f760f49f8f4ba26aa6192294f47b6853f"
+    },
+    "source_results": {
+      "path": "/home/ubuntu/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/continued-hold/results.json",
+      "bytes": 12218,
+      "sha256": "8d9b779f6ec6652af1ec803026e7a8f60018de7f91e660f4e1604740177ffec8"
+    },
+    "source_metadata": {
+      "path": "/home/ubuntu/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/continued-hold/metadata.json",
+      "bytes": 6238,
+      "sha256": "ad1dba0b172e1639e87062bad1a1c05c28de645870cad1822e30981a0a3cb2bb"
+    },
+    "source_trajectories": [
+      {
+        "path": "/home/ubuntu/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/continued-hold/ad-final-120.npz",
+        "bytes": 833527,
+        "sha256": "d636197886d62350b68c90e039b0395e1a69dfeaded62cd94921cec70d9d3968"
+      },
+      {
+        "path": "/home/ubuntu/shrimp-memory-data/audits/p6-followup/20261025T220342Z-followup/continued-hold/td-final-120.npz",
+        "bytes": 833280,
+        "sha256": "cfa4c6c15f3bb73c1bb621613716679b9b61113bdcf574e55fbce77debe778ab"
+      }
+    ]
+  },
+  "weights": {
+    "path": "/home/ubuntu/shrimp-memory-data/models/hf/hub/blobs/bb/bb5ff7e71536bbce6378f6d4bb523a77f1e9455965702d18bec33f599d5851f7",
+    "bytes": 988097824,
+    "sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe"
+  },
+  "config": {
+    "path": "/home/ubuntu/shrimp-memory-data/models/hf/hub/models--Qwen--Qwen2.5-0.5B-Instruct/blobs/0dbb161213629a23f0fc00ef286e6b1e366d180f",
+    "bytes": 659,
+    "sha256": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45"
+  },
+  "vectors": {
+    "path": "/home/ubuntu/shrimp-memory-data/audits/qwen-validation/20261025T214011Z-JbM9BT/vectors.npz",
+    "bytes": 14860,
+    "sha256": "b630bb7bef06bde87f8e6a7ca5e8672f83d24bc0585bf19048e9e494a4357f41"
+  }
+}
