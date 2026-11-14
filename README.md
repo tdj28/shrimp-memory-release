@@ -23,7 +23,7 @@ arithmetic on one CPU thread.
 | `tests/` | model-free tests of the runners, audits and launcher (fake backends and synthetic archives) |
 | `docs/` | the plan of each experiment, written before its runs, with dated revisions and results |
 | `docs/receipts/` | the receipt of each result: inputs bound by SHA-256, outcomes, model-call counts |
-| `inputs/` | the steering vector, the two reference cycles and their manifest, and the two earlier result files the runners qualify their inputs against |
+| `inputs/` | the steering vector, the two reference cycles and their manifest, the P8 reference states, and the two earlier runs (`continued-hold/`, `recovery/`) whose results, metadata and trajectories the runners verify before any call |
 
 Not included: the research history of the private study repository, the materials of the article's prose tests
 (Section V: the sentence bank, note texts and calibration sentences), the model weights, and the raw run data, which
@@ -43,9 +43,38 @@ huggingface-cli download Qwen/Qwen2.5-0.5B-Instruct --revision 7ae557604adf67be5
 
 ## Tests
 
+Run each test module in its own process. Some fixtures are archive-sized, and pytest keeps every temporary folder
+until a session ends:
+
 ```bash
-OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 python -m pytest -q tests
+for f in tests/test_*.py; do
+  OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 python -m pytest -q "$f"
+done
 ```
+
+From a fresh clone this gives 2,145 passed and 107 skipped. 49 tests in nine short-pulse suites
+(`*write0_phase_panel*`, `*carried72*`, `test_run_public_short_write0_*`) also check pinned historical artifacts at
+their original absolute paths. They fail without the data archive mounted there, exactly as they do in the private
+study repository.
+
+## Checking the inputs without a model call
+
+The runners verify every input against its SHA-256 before they load a model. A preflight does this and stops:
+
+```bash
+I=inputs
+OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 \
+python -u tools/run_public_lane_layout.py --shard 12 --shards 16 --cache-dir ./hf-cache \
+  --vectors $I/vectors.npz --references $I/reference-cycles.npz --reference-manifest $I/reference-manifest.json \
+  --source-hold-results $I/continued-hold/results.json --recovery-results $I/recovery/results.json \
+  --references-sha256 d96f923d537a6bcd6b86be7fe91f29a4cba6a46e5e036c8dd408817281395fe0 \
+  --reference-manifest-sha256 17b8e826a63a01d442877b6cf837272f760f49f8f4ba26aa6192294f47b6853f \
+  --recovery-results-sha256 5de613795c4bc10e0584072fd7cb12586de4db869286d15cbbdc7f57dab37ef5 \
+  --output-dir ./preflight-lanes-12 --preflight-only
+```
+
+Without `--preflight-only` the same command loads the model and runs the job. The full sets go through
+`tools/launch_full_adder_and_lane_layout.sh`.
 
 ## License
 
