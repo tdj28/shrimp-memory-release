@@ -70,11 +70,23 @@ python -u tools/run_public_lane_layout.py --shard 12 --shards 16 --cache-dir ./h
   --references-sha256 d96f923d537a6bcd6b86be7fe91f29a4cba6a46e5e036c8dd408817281395fe0 \
   --reference-manifest-sha256 17b8e826a63a01d442877b6cf837272f760f49f8f4ba26aa6192294f47b6853f \
   --recovery-results-sha256 5de613795c4bc10e0584072fd7cb12586de4db869286d15cbbdc7f57dab37ef5 \
-  --output-dir ./preflight-lanes-12 --preflight-only
+  --output-dir runs/preflight-lanes-12 --preflight-only
 ```
 
-Without `--preflight-only` the same command loads the model and runs the job. The full sets go through
-`tools/launch_full_adder_and_lane_layout.sh`.
+Without `--preflight-only` the same command loads the model and runs the job.
+
+The full sets go through the launcher. It requires a clean checkout at the commit you name, a new run folder, and the
+run environment's interpreter in `PY`. It admits jobs by available memory, about 7 GiB each, and stops only its own
+jobs:
+
+```bash
+PY=$(command -v python) tools/launch_full_adder_and_lane_layout.sh preflight "$PWD" "$(git rev-parse HEAD)" runs/pre-adder-and-lanes
+PY=$(command -v python) tools/launch_full_adder_and_lane_layout.sh preflight "$PWD" "$(git rev-parse HEAD)" runs/pre-single-lane single-lane
+```
+
+Replace `preflight` with `execute` to run them: 8,304 calls for the adder and two-lane sets, 2,496 for the single-lane
+set. `inputs/` and `hf-cache/` are the defaults (`SHRIMP_INPUTS`, `SHRIMP_HF_CACHE`). `runs/` and `hf-cache/` are
+git-ignored, so the checkout stays clean.
 
 ## License
 

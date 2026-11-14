@@ -14,9 +14,10 @@ Environment (all validated; a bad value refuses the launch with status 2): MAX_J
 jobs, >= 1, default 10), JOB_GIB (memory budget per job, >= 1, default 7; peak RSS was about 5.5 GB), RESERVE_GIB
 (headroom kept for everything else, >= 0, default 8), DEADLINE (per job, e.g. 4h; > 0), GRACE (seconds between TERM
 and KILL, >= 1, default 120), ADMIT_WAIT (seconds, >= 1, default 7200), MEMINFO (meminfo-format file read for
-MemAvailable, default /proc/meminfo), LAUNCH_LOCK (default /archive/shrimp-memory-data/audits/.launch-controller.lock;
+MemAvailable, default /proc/meminfo), LAUNCH_LOCK (default shrimp-memory-launch.lock in the system temp folder;
 only one controller may hold it, because admission is decided per controller and two would count the same memory),
-PY (interpreter for the jobs).
+PY (interpreter for the jobs, default python3 on PATH), SHRIMP_INPUTS (default inputs/ in this
+repository) and SHRIMP_HF_CACHE (default hf-cache/ in this repository).
 
 Revised after Codex's Task 8 recheck (docs/audits/2026-11-13-task8-recheck/review.md):
 R1  One controller decides every start, so concurrent jobs cannot each count the same free memory. A job is
@@ -45,17 +46,21 @@ import re
 import signal
 import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
 HERE = Path(__file__).resolve()
-A = '/archive/shrimp-memory-data/audits'
-COMMON = ['--cache-dir', '/data2/neural-shrimp-data/models/hf/hub',
-          '--vectors', '/archive/shrimp-memory-data/inputs/p8-reference/vectors.npz',
-          '--references', f'{A}/p6-recovery/20261025T221011Z-recovery/reference-cycles.npz',
-          '--reference-manifest', f'{A}/p6-recovery/20261025T221011Z-recovery/reference-manifest.json',
-          '--source-hold-results', f'{A}/p6-followup/20261025T220342Z-followup/continued-hold/results.json',
-          '--recovery-results', f'{A}/p6-recovery/20261025T221011Z-recovery/run/results.json',
+# Public release: the frozen runs passed this machine's absolute paths. Here the inputs come from the repository's
+# inputs/ folder (SHRIMP_INPUTS overrides it) and the model cache from SHRIMP_HF_CACHE (default ./hf-cache, which
+# .gitignore excludes so that it cannot make the checkout unclean). The files and their SHA-256 values are the same.
+INPUTS = Path(os.environ.get('SHRIMP_INPUTS', HERE.parent.parent / 'inputs'))
+COMMON = ['--cache-dir', os.environ.get('SHRIMP_HF_CACHE', str(HERE.parent.parent / 'hf-cache')),
+          '--vectors', str(INPUTS / 'vectors.npz'),
+          '--references', str(INPUTS / 'reference-cycles.npz'),
+          '--reference-manifest', str(INPUTS / 'reference-manifest.json'),
+          '--source-hold-results', str(INPUTS / 'continued-hold' / 'results.json'),
+          '--recovery-results', str(INPUTS / 'recovery' / 'results.json'),
           '--references-sha256', 'd96f923d537a6bcd6b86be7fe91f29a4cba6a46e5e036c8dd408817281395fe0',
           '--reference-manifest-sha256', '17b8e826a63a01d442877b6cf837272f760f49f8f4ba26aa6192294f47b6853f',
           '--recovery-results-sha256', '5de613795c4bc10e0584072fd7cb12586de4db869286d15cbbdc7f57dab37ef5']
@@ -156,7 +161,7 @@ class Controller:
         self.admit_wait = setting('ADMIT_WAIT', 7200, 1)
         self.deadline = deadline_seconds(os.environ.get('DEADLINE', '4h'))
         self.meminfo = os.environ.get('MEMINFO', '/proc/meminfo')
-        self.py = os.environ.get('PY', '/archive/shrimp-memory-data/envs/llm-cpu/bin/python')
+        self.py = os.environ.get('PY', 'python3')           # the run environment's interpreter (public release)
         self.extra = ['--preflight-only'] if mode == 'preflight' else []
         self.records = {name: dict(job=name, argv=argv, state='scheduled') for name, argv in self.jobs}
         self.running = {}                              # name -> dict(proc, pgid, started, term_sent, kill_sent)
@@ -300,7 +305,7 @@ def main(argv):
     if job_set not in JOB_SETS:
         refuse(f'JOB_SET must be one of {sorted(JOB_SETS)}')
     controller = Controller(mode, src, frozen, run, job_set)  # validates the environment first
-    lock_path = os.environ.get('LAUNCH_LOCK', '/archive/shrimp-memory-data/audits/.launch-controller.lock')
+    lock_path = os.environ.get('LAUNCH_LOCK', os.path.join(tempfile.gettempdir(), 'shrimp-memory-launch.lock'))
     try:
         lock = open(lock_path, 'a')
     except OSError as exc:

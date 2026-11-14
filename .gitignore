@@ -60,3 +60,7 @@ CURRENT_STATE_NEXT_STEPS.md
 RESUME_PLAN.md
 HUMAN_CHECKLIST.md
 NEED_TO_AUDIT.md
+
+# Public release: model cache and local run outputs
+hf-cache/
+runs/
