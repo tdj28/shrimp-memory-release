@@ -33,7 +33,7 @@ def fate(states, refs):
     return bit, residual
 
 
-def check(run):
+def check(run, references=None):
     saved = read(run/'results.json')
     attempt = read(run/'attempt.json')
     plan = read(run/'trial-plan.json')['trials']
@@ -43,7 +43,7 @@ def check(run):
     with np.load(input_path, allow_pickle=False) as z:
         refs=z['references']
     # Verify the extracted references against the canonical file used by the release.
-    canonical = Path(attempt['arguments']['references'])
+    canonical = references or Path(attempt['arguments']['references'])
     require(sha(canonical)=='d96f923d537a6bcd6b86be7fe91f29a4cba6a46e5e036c8dd408817281395fe0','Reference identity')
     with np.load(canonical, allow_pickle=False) as z:
         require(refs.tobytes()==z['states'].tobytes(),'Reference values')
@@ -87,8 +87,9 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('run',type=Path)
     parser.add_argument('output',type=Path)
+    parser.add_argument('--references',type=Path,help='Relocated canonical reference-cycles.npz')
     args=parser.parse_args()
-    receipt=check(args.run)
+    receipt=check(args.run,args.references)
     with args.output.open('x') as out:
         json.dump(receipt,out,indent=2,allow_nan=False)
         out.write('\n')

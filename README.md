@@ -109,6 +109,6 @@ Replace the runner with `tools/check_p6_writes.py`, omit the two shard arguments
 `--preflight-only`, and pass `--protocol boundary --output-dir runs/write-boundary`.
 The scalar runner uses 1,944 model calls for six pulse/hold rows. The runner reports a nonzero
 exit if a predicted fate differs or is unresolved. Check the execution status of every row,
-then run `python tools/audit_write_boundary.py runs/write-boundary runs/boundary-score.json`
+then run `python tools/audit_write_boundary.py runs/write-boundary runs/boundary-score.json --references inputs/reference-cycles.npz`
 from the same working directory to recompute the scores and distinguish a scientific miss from an
 interrupted experiment. Keep the full raw outputs locally.
