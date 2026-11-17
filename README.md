@@ -27,7 +27,7 @@ arithmetic on one CPU thread.
 
 Not included: the research history of the private study repository; the code and materials of the article's
 Section V (the message exchange, the prose tests with their sentence bank, note texts and calibration sentences, and
-the Pythia route); the model weights; and the raw run data (about 60 GB), whose files are identified by SHA-256 in
+the Pythia route); the model weights; and the full raw run data (about 60 GB), whose files are identified by SHA-256 in
 the receipts and are available from the author on reasonable request.
 
 ## Environments
@@ -41,6 +41,15 @@ weights, config or steering vector whose SHA-256 differs from the values in `too
 ```bash
 huggingface-cli download Qwen/Qwen2.5-0.5B-Instruct --revision 7ae557604adf67be50417f59c2c2f167def9a775 --cache-dir ./hf-cache
 ```
+
+## Reproduce the full-adder table
+
+From the repository root, run `python tools/replay_adder_example.py` with NumPy installed.
+The example includes the original final twelve states of each hold in both lanes for all four digit pairs.
+It checks the archived blocks and reference cycles, scores period and unique cycle membership,
+prints all 24 measured readouts, and compares them with the Boolean truth table.
+The small extract covers the readouts. Checking continuity throughout the moves requires the full trajectories.
+The index identifies each original block and its run manifest.
 
 ## Tests
 

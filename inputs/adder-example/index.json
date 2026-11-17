@@ -1,0 +1,110 @@
+[
+  {
+    "x": 0,
+    "y": 0,
+    "stage": 1,
+    "file": "x0-y0-stage-01-block-240.npz",
+    "source_block": "stage-01-block-240.npz",
+    "source_manifest_sha256": "4811175a9803ed41fbe9fe9e3645217228c870b38ad4473cb57acb37a5215db9",
+    "sha256": "7c6eb5ea83f1c0f4edade6fb38e51dc3104d3ddb9fa8ec8e8df6ec7224213519"
+  },
+  {
+    "x": 0,
+    "y": 0,
+    "stage": 3,
+    "file": "x0-y0-stage-03-block-240.npz",
+    "source_block": "stage-03-block-240.npz",
+    "source_manifest_sha256": "4811175a9803ed41fbe9fe9e3645217228c870b38ad4473cb57acb37a5215db9",
+    "sha256": "7bfb037326d6ab7d2e6cf4ca65fca2773e14ef93bb065910527b6c0142a024cc"
+  },
+  {
+    "x": 0,
+    "y": 0,
+    "stage": 5,
+    "file": "x0-y0-stage-05-block-240.npz",
+    "source_block": "stage-05-block-240.npz",
+    "source_manifest_sha256": "4811175a9803ed41fbe9fe9e3645217228c870b38ad4473cb57acb37a5215db9",
+    "sha256": "c924bc1f237772fa139099688d616a59e47f890037ceab54b34df28af288a53d"
+  },
+  {
+    "x": 0,
+    "y": 1,
+    "stage": 1,
+    "file": "x0-y1-stage-01-block-240.npz",
+    "source_block": "stage-01-block-240.npz",
+    "source_manifest_sha256": "65643f1d60dc280d695cb02fbdebace828f9589437a6f1dcd5247115ae8bc680",
+    "sha256": "f7491dbee2a87f7567616c65ae9e616d8587007eee9615912f4a978edaf85f0c"
+  },
+  {
+    "x": 0,
+    "y": 1,
+    "stage": 3,
+    "file": "x0-y1-stage-03-block-240.npz",
+    "source_block": "stage-03-block-240.npz",
+    "source_manifest_sha256": "65643f1d60dc280d695cb02fbdebace828f9589437a6f1dcd5247115ae8bc680",
+    "sha256": "550c71752dd4f627206142df99b1d5e5572fc0694f5d1998135b8ac6baa2a305"
+  },
+  {
+    "x": 0,
+    "y": 1,
+    "stage": 5,
+    "file": "x0-y1-stage-05-block-240.npz",
+    "source_block": "stage-05-block-240.npz",
+    "source_manifest_sha256": "65643f1d60dc280d695cb02fbdebace828f9589437a6f1dcd5247115ae8bc680",
+    "sha256": "275496ff697a995f1dca36738ad95fbda9d201d525a082b53fb9829499307548"
+  },
+  {
+    "x": 1,
+    "y": 0,
+    "stage": 1,
+    "file": "x1-y0-stage-01-block-240.npz",
+    "source_block": "stage-01-block-240.npz",
+    "source_manifest_sha256": "296a1e4653afd9dff1b8072f2197101f1ffb449ac372520427ecbc37ae891e42",
+    "sha256": "865dbae04f194f93ec3dbcce90ed8c19fcabb8188d85651f3a1f89f7e2babe67"
+  },
+  {
+    "x": 1,
+    "y": 0,
+    "stage": 3,
+    "file": "x1-y0-stage-03-block-240.npz",
+    "source_block": "stage-03-block-240.npz",
+    "source_manifest_sha256": "296a1e4653afd9dff1b8072f2197101f1ffb449ac372520427ecbc37ae891e42",
+    "sha256": "199344f8a8b067e7876d3c6d0b114e24595b64a55a2b57449576140dc78aee78"
+  },
+  {
+    "x": 1,
+    "y": 0,
+    "stage": 5,
+    "file": "x1-y0-stage-05-block-240.npz",
+    "source_block": "stage-05-block-240.npz",
+    "source_manifest_sha256": "296a1e4653afd9dff1b8072f2197101f1ffb449ac372520427ecbc37ae891e42",
+    "sha256": "ef052fdfb36155e91034beadeee051420b04f4132211dda2a599450b804bfe26"
+  },
+  {
+    "x": 1,
+    "y": 1,
+    "stage": 1,
+    "file": "x1-y1-stage-01-block-240.npz",
+    "source_block": "stage-01-block-240.npz",
+    "source_manifest_sha256": "8bac00f2355df238c6757ef6d54995b929836d2645c02cc980902b54b0e9eb5b",
+    "sha256": "51facd337a4c88120ccc0b04cf07b41dc66194758e547dc19e2c8966524898bd"
+  },
+  {
+    "x": 1,
+    "y": 1,
+    "stage": 3,
+    "file": "x1-y1-stage-03-block-240.npz",
+    "source_block": "stage-03-block-240.npz",
+    "source_manifest_sha256": "8bac00f2355df238c6757ef6d54995b929836d2645c02cc980902b54b0e9eb5b",
+    "sha256": "b17ed05f53475693e05ef1f9c457b5d50ca162cdb5aaa77b086c59e27bf6b314"
+  },
+  {
+    "x": 1,
+    "y": 1,
+    "stage": 5,
+    "file": "x1-y1-stage-05-block-240.npz",
+    "source_block": "stage-05-block-240.npz",
+    "source_manifest_sha256": "8bac00f2355df238c6757ef6d54995b929836d2645c02cc980902b54b0e9eb5b",
+    "sha256": "b3450700a7aae6ed7c1143dec8b311efbabb71a59409691d777d10269b2eb583"
+  }
+]
