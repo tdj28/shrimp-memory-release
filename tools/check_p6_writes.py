@@ -13,6 +13,7 @@ actual state continuity (4392 calls, 2400-second internal cap). Use an external
 import argparse
 import importlib.metadata
 import json
+import math
 import os
 from pathlib import Path
 import signal
@@ -47,6 +48,25 @@ def trial_plan():
                                      "steps": ENDPOINT_STEPS, "status": "not_started", "completed_steps": 0},
                                     {"name": "hold", "controls": dict(HOLD), "steps": HOLD_STEPS,
                                      "status": "not_started", "completed_steps": 0}]})
+    return rows
+
+
+def boundary_plan():
+    """Prospective common-hold fates from A0 at three fresh endpoints."""
+    fold = 0.07299164917758323
+    coefficient = 6177.932239355573
+    rows = []
+    for offset in (-2e-6, 4e-6, 12e-6):
+        crossing = (12 * math.atan(math.sqrt((fold - HOLD["alpha"]) / offset))
+                    / math.sqrt(coefficient * offset)) if offset > 0 else None
+        for duration in (54, 102):
+            predicted = int(crossing is not None and duration >= crossing)
+            row = trial_plan()[2]
+            row.update(trial_id=len(rows), desired_label=recovery.LABELS[predicted],
+                       predicted_bit=predicted, duration_only_bit=int(duration >= 90),
+                       predicted_crossing=crossing, offset_from_fold=offset)
+            row["stages"][0].update(steps=duration, controls=dict(HOLD, alpha=fold + offset))
+            rows.append(row)
     return rows
 
 
@@ -211,7 +231,7 @@ def check_stage_cache(loop, x, recorder, budget, label, controls):
 
 def parser():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--protocol", choices=("isolated", "roundtrip", "sequence"), default="isolated")
+    p.add_argument("--protocol", choices=("isolated", "roundtrip", "sequence", "boundary"), default="isolated")
     for name in ("cache-dir", "vectors", "references", "reference-manifest", "source-hold-results",
                  "recovery-results", "output-dir"):
         p.add_argument("--" + name, type=Path, required=True)
@@ -230,10 +250,10 @@ def main(argv=None):
     roundtrip = args.protocol == "roundtrip"
     max_calls, max_seconds = {"isolated": (MAX_CALLS, MAX_SECONDS),
                               "roundtrip": (ROUNDTRIP_CALLS, ROUNDTRIP_SECONDS),
-                              "sequence": (SEQUENCE_CALLS, SEQUENCE_SECONDS)}[args.protocol]
+                              "sequence": (SEQUENCE_CALLS, SEQUENCE_SECONDS), "boundary": (1944, 1200)}[args.protocol]
     budget = reference.Budget(recorder, max_calls, max_seconds, MAX_RSS_GIB)
     rows, observations = {"isolated": trial_plan, "roundtrip": roundtrip_plan,
-                          "sequence": sequence_plan}[args.protocol](), {}
+                          "sequence": sequence_plan, "boundary": boundary_plan}[args.protocol](), {}
     summary = {"status": "failed", "evidence": "exploratory finite-control-pulse observation",
                "protocol": args.protocol,
                "scope": ("one fixed 10110001 register sequence; not separate-instance communication or language encoding"
@@ -241,6 +261,8 @@ def main(argv=None):
                          "general reliability, language control or logic" if roundtrip else
                          "four phase-zero trials; not proven hysteresis, general writing, language control or logic"),
                "rows": rows}
+    if args.protocol == "boundary":
+        summary["scope"] = "Six prospectively scored phase-zero A0 writes at three fresh controls"
     old_handlers = {sig: signal.getsignal(sig) for sig in (signal.SIGALRM, signal.SIGTERM, signal.SIGINT)}
 
     def stop(signum, frame):

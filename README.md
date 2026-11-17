@@ -101,3 +101,14 @@ git-ignored, so the checkout stays clean.
 ## License
 
 Code: MIT (`LICENSE`). Documents, receipts, inputs and data: CC BY 4.0 (`LICENSE-docs-and-data.md`).
+
+## Prospective write-boundary panel
+
+Use the same thread settings, environment, cache and input arguments as the lane preflight above.
+Replace the runner with `tools/check_p6_writes.py`, omit the two shard arguments and
+`--preflight-only`, and pass `--protocol boundary --output-dir runs/write-boundary`.
+The scalar runner uses 1,944 model calls for six pulse/hold rows. The runner reports a nonzero
+exit if a predicted fate differs or is unresolved. Check the execution status of every row,
+then run `python tools/audit_write_boundary.py runs/write-boundary runs/boundary-score.json`
+from the same working directory to recompute the scores and distinguish a scientific miss from an
+interrupted experiment. Keep the full raw outputs locally.
