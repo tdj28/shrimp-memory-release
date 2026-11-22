@@ -54,14 +54,15 @@ def main():
             observed[key] = [decode(states[:, lane], refs) for lane in range(2)]
     if set(observed) != {(x,y,s) for x in (0,1) for y in (0,1) for s in (1,3,5)}:
         raise ValueError("Incomplete stage coverage")
-    print("carry_in  x  y  after_first  sum  carry_out")
+    print(f"{'carry_in':>8} {'x':>2} {'y':>2} {'after_first':>11} {'sum':>4} {'carry_out':>9}")
     for c in (0,1):
         for x in (0,1):
             for y in (0,1):
                 readings = [observed[x,y,s][c] for s in (1,3,5)]
-                print(c, x, y, *readings, sep="       ")
+                print(f"{c:>8} {x:>2} {y:>2} {readings[0]:>11} {readings[1]:>4} {readings[2]:>9}")
                 if readings != [c ^ x, (c+x+y)%2, (c+x+y)//2]:
                     raise ValueError("Measured readouts differ from the truth table")
+    print("All 24 readouts match the full-adder truth table (after_first = carry_in XOR x).")
 
 
 if __name__ == "__main__":

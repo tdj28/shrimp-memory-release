@@ -1,7 +1,7 @@
 # Can the Qwen two-cycle register compute XOR? Toggle sweep, then two-loop gates
 
-Plan written 9 November 2026 at the human's request ("let's test whether the Qwen two-cycle loop can compute XOR, and
-update the film and blog only if a result passes audit"; approved the same day: "do it approved go go go go").
+Plan written 9 November 2026 at the author's request and approved the same day. (Edited for the public release on
+21 November 2026: hosting, cost and outreach details removed; the plan is otherwise as written.)
 
 ## Why this question
 
@@ -99,21 +99,18 @@ gate as written failed across hardware; the run continued with mapping parity an
 ## Standards
 
 Independent rerun and repo audit; receipt in docs/receipts; rounding sensitivity; model calls, time and peak memory
-counted; finite demonstrations, not reliability estimates; the endpoints are instructed programs. Withheld as before:
-runner code, prompt prefixes, steering vectors, sentence bank.
+counted; finite demonstrations, not reliability estimates; the endpoints are instructed programs. Withheld at the time:
+runner code, prompt prefixes, steering vectors, sentence bank (the first three are now in the public release).
 
 ## Compute
 
-The local machine is shared and currently saturated; Lightsail did not answer (9 Nov). The sweep runs on one RunPod pod
-chosen for its CPU count, under the 1 November "within reason" authorization and the human's 9 November approval, with
-a hard ceiling recorded in the private cost ledger. All outputs return to /archive/shrimp-memory-data/audits/
-public-toggle-sweep/<UTC>/; the pod is terminated and its termination verified.
+The sweep runs on one rented CPU host chosen for its CPU count, under a recorded spending ceiling. All outputs return
+to the data archive (audits/public-toggle-sweep/<UTC>/); the host is terminated and its termination verified.
 
 ## Publication rule
 
-If and only if a toggle or XOR passes audit: update the paper (paper/main.tex), the blog's "precise limit" paragraph
-with a receipt-backed figure, and the film's c21. Otherwise change nothing in the paper, blog or film, and record the
-negative result here, in docs/receipts and in the explainer's RUN.md.
+If and only if a toggle or XOR passes audit, update the paper with a receipt-backed figure. Otherwise leave the paper
+unchanged and record the negative result here and in docs/receipts.
 
 ## Results (10 November 2026)
 
