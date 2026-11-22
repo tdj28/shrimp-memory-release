@@ -389,7 +389,7 @@ def test_preflight_zero_calls_and_no_model(tmp_path,producer_fixture):
 def test_actual_ten_pinned_inputs_and_raw_prefix_extraction(tmp_path,producer_fixture,monkeypatch):
     """Zero forwards; independent qualification includes148 accepted raw files."""
     monkeypatch.setattr(producer_fixture.runner,'VOCAB',audit.VOCAB)
-    directory=tmp_path/'run';args=producer_fixture.actual_args(directory);args.preflight_only=True
+    directory=tmp_path/'run';args=producer_fixture.pinned_args(directory);args.preflight_only=True
     producer_fixture.runner.run(args,input_qualifier=producer_fixture.runner.qualify_inputs,
         model_qualifier=producer_fixture.synthetic_model,source_factory=producer_fixture.synthetic_source)
     result=load_json(directory/'result.json')
@@ -405,6 +405,7 @@ def test_actual_ten_pinned_inputs_and_raw_prefix_extraction(tmp_path,producer_fi
     'source_groups','phase_indices','control','checks'])
 def test_pinned_prefix_proof_semantics_reject_corruption(mutation):
     base=Path('/data2/shrimp-memory-data/preparations/public-canonical-write0-phase-panel/20261029T172047Z')
+    if not all((base/n).is_file() for n in ('accepted-short-prefix-provenance.json','accepted-short-prefix.npz')):pytest.skip(f'pinned historical artifact not available: {base}')
     proof=load_json(base/'accepted-short-prefix-provenance.json')
     with np.load(base/'accepted-short-prefix.npz',allow_pickle=False) as z:arrays={k:z[k] for k in z.files}
     audit.qualify_prefix_proof(proof,arrays)

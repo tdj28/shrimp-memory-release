@@ -180,7 +180,7 @@ def clone(source,destination):
 def test_actual_ten_pinned_inputs_and_raw_prefix_extraction(tmp_path,producer_fixture,monkeypatch):
     """Zero forwards; independent qualification includes148 accepted raw files."""
     monkeypatch.setattr(producer_fixture.runner,'VOCAB',audit.VOCAB)
-    directory=tmp_path/'run';args=producer_fixture.actual_args(directory);args.preflight_only=True
+    directory=tmp_path/'run';args=producer_fixture.pinned_args(directory);args.preflight_only=True
     producer_fixture.runner.run(args,input_qualifier=producer_fixture.runner.qualify_inputs,
         model_qualifier=producer_fixture.synthetic_model,source_factory=producer_fixture.synthetic_source)
     result=load_json(directory/'result.json')

@@ -26,6 +26,17 @@ def actual_args(output):
         preflight_only=False)
 
 
+ARCHIVE = '/data2/shrimp-memory-data/'
+
+
+def pinned_args(output):
+    """actual_args(), but skip the test when a pinned historical file is not at its original path."""
+    args = actual_args(output)
+    missing = [p for p in vars(args).values() if isinstance(p, Path) and str(p).startswith(ARCHIVE) and not p.is_file()]
+    if missing:
+        pytest.skip(f'pinned historical artifact not available: {missing[0]}')
+    return args
+
 
 def synthetic_payload():
     refs=np.zeros((2,6,896),dtype=np.float64); refs[1,:,0]=10.
@@ -334,7 +345,7 @@ def test_raw_cap_and_startup_thread_failure_preserved(tmp_path,monkeypatch):
 
 
 def test_actual_ten_input_pins_and_literal_packet(monkeypatch,tmp_path):
-    monkeypatch.setattr(runner,'VOCAB',151936);p,proof=runner.qualify_inputs(actual_args(tmp_path/'unused'))
+    monkeypatch.setattr(runner,'VOCAB',151936);p,proof=runner.qualify_inputs(pinned_args(tmp_path/'unused'))
     assert len(proof['bindings'])==10 and proof['same_phase_short_prefix_input']
     assert proof['historical_reference_phase']==0 and not proof['same_historical_input']
     for case,phase in enumerate((2,3,4,5)):
@@ -353,7 +364,7 @@ def test_changed_input_pin_stops_before_model(tmp_path,key):
 
 @pytest.mark.parametrize('defect',['phase','index','initial','tokens','shape','extra','provenance','conflict'])
 def test_rehashed_prefix_packet_contract_rejects_semantic_tampering(tmp_path,defect,monkeypatch):
-    monkeypatch.setattr(runner,'VOCAB',151936);a=actual_args(tmp_path/'unused')
+    monkeypatch.setattr(runner,'VOCAB',151936);a=pinned_args(tmp_path/'unused')
     payload,_=runner.qualify_inputs(a)
     with np.load(a.short_prefix) as z:arrays={k:z[k].copy() for k in z.files}
     proof=json.loads(a.short_prefix_provenance.read_text())

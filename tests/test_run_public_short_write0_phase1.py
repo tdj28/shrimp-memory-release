@@ -24,6 +24,17 @@ def actual_args(output):
         preflight_only=False)
 
 
+ARCHIVE = '/data2/shrimp-memory-data/'
+
+
+def pinned_args(output):
+    """actual_args(), but skip the test when a pinned historical file is not at its original path."""
+    args = actual_args(output)
+    missing = [p for p in vars(args).values() if isinstance(p, Path) and str(p).startswith(ARCHIVE) and not p.is_file()]
+    if missing:
+        pytest.skip(f'pinned historical artifact not available: {missing[0]}')
+    return args
+
 
 def synthetic_payload():
     refs=np.zeros((2,6,896),dtype=np.float64); refs[1,:,0]=10.
@@ -366,7 +377,7 @@ def test_maximum_actual_serialization(tmp_path):
 
 def test_actual_eight_pins_and_distinct_initial_phase(monkeypatch,tmp_path):
     monkeypatch.setattr(runner,'VOCAB',151936)
-    payload,proof=runner.qualify_inputs(actual_args(tmp_path/'unused'))
+    payload,proof=runner.qualify_inputs(pinned_args(tmp_path/'unused'))
     assert len(proof['bindings'])==8 and proof['reference_phase']==1 and proof['historical_reference_phase']==0
     assert proof['same_historical_input'] is False
     assert runner.same_bytes(payload['initial_states'],payload['references'][:,1])

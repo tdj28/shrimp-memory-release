@@ -26,6 +26,17 @@ def actual_args(output):
         preflight_only=False)
 
 
+ARCHIVE = '/data2/shrimp-memory-data/'
+
+
+def pinned_args(output):
+    """actual_args(), but skip the test when a pinned historical file is not at its original path."""
+    args = actual_args(output)
+    missing = [p for p in vars(args).values() if isinstance(p, Path) and str(p).startswith(ARCHIVE) and not p.is_file()]
+    if missing:
+        pytest.skip(f'pinned historical artifact not available: {missing[0]}')
+    return args
+
 
 def synthetic_payload():
     refs=np.zeros((2,6,896),dtype=np.float64); refs[1,:,0]=10.
@@ -338,12 +349,12 @@ def test_raw_cap_and_startup_thread_failure_preserved(tmp_path,monkeypatch):
 
 
 def test_actual_ten_input_pins_and_literal_packet(monkeypatch,tmp_path):
-    monkeypatch.setattr(runner,'VOCAB',151936);p,proof=runner.qualify_inputs(actual_args(tmp_path/'unused'))
+    monkeypatch.setattr(runner,'VOCAB',151936);p,proof=runner.qualify_inputs(pinned_args(tmp_path/'unused'))
     assert len(proof['bindings'])==10 and proof['same_phase_short_prefix_input']
     assert proof['historical_reference_phase']==0 and not proof['same_historical_input']
     assert proof['packet_indices']==[1,2,3] and proof['packet_reference_phases']==[2,3,4,5]
     assert np.array_equal(p['packet_indices'],[1,2,3]) and np.array_equal(p['reference_phases'],[3,4,5])
-    with np.load(actual_args(tmp_path/'unused').short_prefix) as source:
+    with np.load(pinned_args(tmp_path/'unused').short_prefix) as source:
         assert runner.same_bytes(p['short_prefix_states'],source['states'][[1,2,3]])
         assert runner.same_bytes(p['short_prefix_token_ids'],source['token_ids'][[1,2,3]])
     for case,phase in enumerate((3,4,5)):
@@ -355,7 +366,7 @@ def test_actual_ten_input_pins_and_literal_packet(monkeypatch,tmp_path):
 @pytest.mark.parametrize('defect',['unselected_initial','phase_order','already_sliced','dtype'])
 def test_complete_prospective_packet_is_checked_before_fixed_selection(tmp_path,defect,monkeypatch):
     monkeypatch.setattr(runner,'VOCAB',151936)
-    args=actual_args(tmp_path/'unused');payload,_=runner.qualify_inputs(args)
+    args=pinned_args(tmp_path/'unused');payload,_=runner.qualify_inputs(args)
     with np.load(args.prospective_panel) as z:arrays={k:z[k].copy() for k in z.files}
     if defect=='unselected_initial':arrays['initial_states'][0,0,0]+=1
     if defect=='phase_order':arrays['reference_phases'][0]=3
@@ -377,7 +388,7 @@ def test_changed_input_pin_stops_before_model(tmp_path,key):
 
 @pytest.mark.parametrize('defect',['phase','index','initial','tokens','shape','extra','provenance','conflict'])
 def test_rehashed_prefix_packet_contract_rejects_semantic_tampering(tmp_path,defect,monkeypatch):
-    monkeypatch.setattr(runner,'VOCAB',151936);a=actual_args(tmp_path/'unused')
+    monkeypatch.setattr(runner,'VOCAB',151936);a=pinned_args(tmp_path/'unused')
     payload,_=runner.qualify_inputs(a)
     with np.load(a.short_prefix) as z:arrays={k:z[k].copy() for k in z.files}
     proof=json.loads(a.short_prefix_provenance.read_text())

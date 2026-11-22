@@ -26,6 +26,17 @@ def actual_args(output):
         preflight_only=False)
 
 
+ARCHIVE = '/data2/shrimp-memory-data/'
+
+
+def pinned_args(output):
+    """actual_args(), but skip the test when a pinned historical file is not at its original path."""
+    args = actual_args(output)
+    missing = [p for p in vars(args).values() if isinstance(p, Path) and str(p).startswith(ARCHIVE) and not p.is_file()]
+    if missing:
+        pytest.skip(f'pinned historical artifact not available: {missing[0]}')
+    return args
+
 
 def synthetic_payload():
     refs=np.zeros((2,6,896),dtype=np.float64); refs[1,:,0]=10.
@@ -331,7 +342,7 @@ def test_comparison_failure_prevents_trajectory_updates(tmp_path):
 
 def test_actual_ten_pins_literal_inputs_and_zero_model_preflight(tmp_path,monkeypatch):
     monkeypatch.setattr(runner,'VOCAB',151936)
-    args=actual_args(tmp_path/'run');payload,proof=runner.qualify_inputs(args)
+    args=pinned_args(tmp_path/'run');payload,proof=runner.qualify_inputs(args)
     assert len(proof['bindings'])==10 and proof['same_phase_short_prefix_input']
     assert payload['initial_states'].shape==(3,2,896)
     assert np.array_equal(payload['reference_phases'],[3,4,5]) and np.array_equal(payload['packet_indices'],[1,2,3])
