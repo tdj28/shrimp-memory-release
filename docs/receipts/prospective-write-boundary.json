@@ -1,6 +1,34 @@
 {
+  "kind": "prospective-write-boundary",
+  "plan": "docs/prospective-write-boundary.md",
+  "model_calls_by_this_check": 0,
   "source_commit": "8275b9a2e86f733f467e5c0a18bc6fc14b64ee69",
-  "utc": "2026-11-17T19:23:18Z",
+  "source_commit_repository": "private study repository",
+  "run_started_utc": "2026-11-17T19:14:28Z",
+  "source_files": [
+    {
+      "path": "tools/check_p6_writes.py",
+      "sha256": "c48428255cc42d2076ad548ac7d5152f8f527332df270344edd2c4ac5e37d57f",
+      "equals_this_checkout": true
+    },
+    {
+      "path": "tools/validate_qwen_map.py",
+      "sha256": "9d1fb36a1c275062136e6347422f090631cc8e509124bf4dcecbef93dba67d0d",
+      "equals_this_checkout": true
+    },
+    {
+      "path": "tools/check_p6_hold.py",
+      "sha256": "b0bf92d204078ab4426a6db75fefec3c8ddfdcafd0ff5a2720c7a4f60e458297",
+      "equals_this_checkout": true
+    },
+    {
+      "path": "tools/check_p6_recovery.py",
+      "sha256": "95919740e59a782102f55df5f85e77a5b51bad2422b2382162347746cd96fa3c",
+      "equals_this_checkout": true
+    }
+  ],
+  "cited_raw_files_verified": 192,
+  "utc": "2026-11-22T03:08:59Z",
   "calls": 1944,
   "seconds": 521.422165196971,
   "peak_rss_bytes": 5427396608,

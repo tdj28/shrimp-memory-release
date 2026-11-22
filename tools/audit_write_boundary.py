@@ -1,11 +1,17 @@
-"""Recompute the prospective panel's fate scores from saved single-state trajectories."""
+"""Recompute the prospective panel's fate scores from saved single-state trajectories.
+
+Also checks the size and SHA-256 of every raw file the row records cite, and copies the run's own record of the
+source files it executed, noting whether each equals the file in this checkout. No model call.
+"""
 import argparse
+from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
-import subprocess
 
 import numpy as np
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def sha(path):
@@ -31,6 +37,21 @@ def fate(states, refs):
                if min(gap(b,np.roll(r,j,axis=0)) for j in range(6)) <= 1e-6]
     bit = matches[0] if len(matches)==1 and periods_excluded and residual<=1e-8 else None
     return bit, residual
+
+
+def cited_files(rows):
+    found = {}
+    def walk(o):
+        if isinstance(o, dict):
+            if {'path', 'bytes', 'sha256'} <= set(o):
+                require(found.setdefault(o['path'], (o['bytes'], o['sha256'])) == (o['bytes'], o['sha256']), 'Citation conflict')
+            for v in o.values():
+                walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+    walk(rows)
+    return found
 
 
 def check(run, references=None):
@@ -76,7 +97,16 @@ def check(run, references=None):
         require(category==row['outcome']['classification'],'Readout disagreement')
         records.append(dict(offset=offset,updates=duration,fold=folded[i],duration_only=i%2,measured=bit,
                             closure=residual, endpoint=row['stages'][0]['trajectory'],hold=row['stages'][1]['trajectory']))
-    return dict(source_commit=attempt['source_commit'],utc=subprocess.check_output(['date','-u','+%FT%TZ'],text=True).strip(),
+    cited = cited_files(saved['rows'])
+    for name, (size, digest) in cited.items():
+        path = run/name
+        require(path.parent == run and path.stat().st_size == size and sha(path) == digest, 'Raw file binding '+name)
+    sources = [dict(path='tools/'+name, sha256=digest, equals_this_checkout=(ROOT/'tools'/name).is_file() and sha(ROOT/'tools'/name) == digest)
+               for name, digest in attempt['source_hashes'].items()]
+    return dict(kind='prospective-write-boundary', plan='docs/prospective-write-boundary.md', model_calls_by_this_check=0,
+                source_commit=attempt['source_commit'], source_commit_repository='private study repository',
+                run_started_utc=attempt['utc'], source_files=sources, cited_raw_files_verified=len(cited),
+                utc=datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
                 calls=saved['model_calls'],seconds=saved['elapsed_seconds'],peak_rss_bytes=saved['peak_rss_bytes'],
                 rows=records,fold_score=sum(r['fold']==r['measured'] for r in records),
                 duration_score=sum(r['duration_only']==r['measured'] for r in records),
