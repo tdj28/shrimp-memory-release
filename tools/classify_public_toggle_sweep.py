@@ -2,7 +2,7 @@
 """Which region of the earlier study's fixed-start map each public toggle-sweep pulse target lies in.
 
 Reads the audited sweep report (tools/audit_public_toggle_sweep.py) and the fixed-start scans drawn behind the sweep
-figure (hr10 under hr11, /data2/neural-shrimp-data/explore/llm-soft-loop/pod64, read only), with the figure's classes:
+figure (hr10 under hr11, in the earlier study's pod64 folder given by --map-root, read only), with the figure's classes:
 period p >= 1 with Lyapunov < 0 is periodic (period 6 = the shrimp), period <= 0 with Lyapunov > 1e-3 is chaotic, and
 anything else is undetermined. Each target takes the class of the nearest pixel of the finest scan that covers it; the
 3 x 3 neighbourhood is reported so a target on a boundary is visible. No model call. The map describes where a loop
@@ -15,7 +15,6 @@ from pathlib import Path
 
 import numpy as np
 
-POD64 = Path('/data2/neural-shrimp-data/explore/llm-soft-loop/pod64')
 SCANS = ('hr10', 'hr11')                      # later entries lie on top, as in plot_public_toggle_sweep.py
 
 
@@ -27,7 +26,7 @@ def label(period, lyapunov):
     return 'undetermined'
 
 
-def load(root=POD64, scans=SCANS):
+def load(root, scans=SCANS):
     out = []
     for s in scans:
         d = np.load(root/s/'scan.npz', allow_pickle=True)
@@ -53,9 +52,10 @@ def main(argv=None):
     p.add_argument('--report', type=Path, required=True)
     p.add_argument('--host', required=True)
     p.add_argument('--output', type=Path, required=True)
+    p.add_argument('--map-root', type=Path, required=True, help="the earlier study's pod64 folder (scans hr10, hr11)")
     a = p.parse_args(argv)
     rep = json.loads(a.report.read_text())
-    scans = load()
+    scans = load(a.map_root)
     rows = []
     for g in rep['hosts'][a.host]['groups']:
         if g['group_id'] < 3:
