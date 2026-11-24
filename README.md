@@ -26,11 +26,12 @@ arithmetic on one CPU thread.
 | `docs/` | the plan of each experiment, written before its runs, with dated revisions and results |
 | `docs/receipts/` | the receipt of each result: inputs bound by SHA-256, outcomes, model-call counts |
 | `inputs/` | the steering vector, the two reference cycles and their manifest, the P8 reference states, and the two earlier runs (`continued-hold/`, `recovery/`) whose results, metadata and trajectories the runners verify before any call |
+| `tools/public-basin-map/` | the shell drivers that ran the basin map's shards on CPU pods sharing one network volume (`docs/public-basin-map.md`) |
 | `inputs/adder-example/` | the final twelve states of every hold of the full-adder run, both lanes, with an index of their original blocks |
 
 Not included: the research history of the private study repository; the programs and materials of the message
 exchange and of the sentence test that the article's Discussion describes, and of the study's other prose
-experiments, with every sentence and note text; the model weights; and the full raw run data (about 60 GB), whose
+experiments, with every sentence and note text; the model weights; and the full raw run data (about 140 GB), whose
 files are identified by SHA-256 in the receipts and are available from the author on reasonable request. One analysis
 touches that material: the register-branch analysis (`docs/public-register-branch.md`) reads the saved write-1 stages
 of one run of the sentence test, in which each note selected an exact write, and its receipt binds those files by
@@ -134,7 +135,7 @@ tells a scientific miss from an interrupted experiment. The plan, its provenance
   `transverse-readout`) pin the earlier file (SHA-256 `2ac2b805…`), which is the version in the first commit of this
   repository (`git log -- tools/check_p6_writes.py`). The boundary receipt pins the current one.
 - **Original paths.** Receipts, run inputs and some tools keep the absolute paths of the original machines (`/data2`,
-  `/archive`, and `/home/ubuntu` on rented hosts). They are records: most are bound by SHA-256, and editing them
+  `/archive`, and `/home/ubuntu`, `/root` and `/workspace` on rented hosts). They are records: most are bound by SHA-256, and editing them
   would break the chain of hashes. Pass data folders as arguments.
 - **Files named but not here.** Some plans and receipts name files that are not included: receipts of experiments
   outside the article, review notes, and tools of other experiments. They are kept as written.

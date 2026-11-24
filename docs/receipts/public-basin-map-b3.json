@@ -1,0 +1,197 @@
+{
+ "check": "B3",
+ "plan": "docs/public-basin-map.md",
+ "model_calls": 0,
+ "compared": [
+  {
+   "group": 2112,
+   "lane": 1,
+   "shard": "shard-257"
+  },
+  {
+   "group": 1056,
+   "lane": 0,
+   "shard": "shard-261"
+  }
+ ],
+ "same_start": true,
+ "updates": 240,
+ "bitwise_equal": true,
+ "first_differing_update": null,
+ "max_abs_difference": 0.0,
+ "terminal_sha256": [
+  "a3ebbc89455ee829824191b29b988cf439df74bf2716af1385fb936d922a70ae",
+  "a3ebbc89455ee829824191b29b988cf439df74bf2716af1385fb936d922a70ae"
+ ],
+ "holds": true,
+ "inputs": [
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-initial.npy",
+   "sha256": "788bc52b16e3fb34d71f1bc8dd6fada1892ad7b99fa1e843ae6e16bf983183b0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-012.npz",
+   "sha256": "31f00a175e8459aeda8abf62bb99fb1fffeb778232d19e6d94ec6629a8a964f4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-024.npz",
+   "sha256": "d2b59b1463efa289b319f427b9a7065aa24c1895c6eb8c7c04eb74b8e313af01"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-036.npz",
+   "sha256": "dc04874faf380a5102d78d3a6e5a0089b6f843e775425da1b6389837d96bd8bd"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-048.npz",
+   "sha256": "4779358448d3a25c4c1d6b76f36575b8d1cb47e7cf23cd70bcf361609dcab9ff"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-060.npz",
+   "sha256": "daeb17449898f7d83fdd4788bde30d37016dbe3392642d7102b633721b6eeb78"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-072.npz",
+   "sha256": "929c3744d29819abfdba3d39e9d4cd2889a2494160ea973ade46431b4d23c633"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-084.npz",
+   "sha256": "87852f86a172ba9f38f7e9d2114b796d193742c61e3a8630e59ef4096e1dc08d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-096.npz",
+   "sha256": "553eb26e3da5a153e01c5e254eb3665f3750db2644bf9a92309f9801acf4c246"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-108.npz",
+   "sha256": "4778ae66e351f8ccf32226c984aea1af2b92571b89a320f6cb3ffe3c6cc64fb0"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-120.npz",
+   "sha256": "b607b2b88ee98bb434696c77ebca7ac45f9245589526c3357e0da5c5c89c93bf"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-132.npz",
+   "sha256": "ce1d5394c399d0426b8fa9ffae1c21a3a6c367f7d0cccc50427ad8a8752be7bb"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-144.npz",
+   "sha256": "1e1efb00d67e37f1aa488eb27a2bb03e8685f12fa8e8d794941ea1f7f2cc44f6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-156.npz",
+   "sha256": "3b8d1751dbe708489128780c7144061cc5742b287cd3fbf4b38ddbfedb4f38f6"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-168.npz",
+   "sha256": "ea3d6c44d1e2da58385b49a1eae1cc7b7f2b44e5e1c60853fc8091e934945dde"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-180.npz",
+   "sha256": "8ee2a985b29107197bffafec4021cc14d287a9b6bf535d85ee8d7e46e739dae7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-192.npz",
+   "sha256": "558032b1732acf4dd40f01575c635b54139b637a0092d4df38ca54a95591f21f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-204.npz",
+   "sha256": "0f500e5cf909d3520dc0c2a3814ac397767f6a49bcd9f8870e98d9cc2c0f07d4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-216.npz",
+   "sha256": "82e7794f63b4f789fe7a0774265d53e884884e2e931685178be3ed2a7cb4a995"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-228.npz",
+   "sha256": "ad788f03a7ac42d8abce5af207aaf41bdd3d8d651ce427207dd75c256cba326a"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-257/stage-2112-block-240.npz",
+   "sha256": "53c31ef12d3cf9d9beaa6471669bb7c63704712ca3032be1e44913ca4c4cb375"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-initial.npy",
+   "sha256": "159e0d1829d187ba245105a9b14436b46872231ffc51e1fa08c9a5c355783a5b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-012.npz",
+   "sha256": "cfc8ccc399b4d18589ae2b070b21e7df7f34a0cf6581e64e81236f73be7364bc"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-024.npz",
+   "sha256": "b8bba55beaa244225daf2e90d392c230aa2995192d61d6a11a2e748993f4f185"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-036.npz",
+   "sha256": "b7bc82de2196e73e745f02de7bb0bda840514cca6200f114413af7ff2fb00937"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-048.npz",
+   "sha256": "a7ca00b32d86de1d370d303451dca7a67810ea113937083482fb260eaa3aeb1c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-060.npz",
+   "sha256": "d42b6e107d1c62e9f054f8e7792a12dfe8a273433cf22216af040311e657007d"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-072.npz",
+   "sha256": "28109f48a9ccf647683b75b4b991017a576b264db40059b1a649c29c5c0e1c1f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-084.npz",
+   "sha256": "7351adbb23bc9b1cce6e9cc0f1b4fa8e9320a2b0bf275964f02843bff26ea099"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-096.npz",
+   "sha256": "89dfa338610b1ec80d318d2aec4c808cd3d110b366ade8cf4b09642887e5fd0f"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-108.npz",
+   "sha256": "e12a228ca52159f2694f48e607449870753d55d73fb215ac40f64e2ddf9988ad"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-120.npz",
+   "sha256": "67a32f03a2672b356b05b77d02f9ca263a441d169cdeb4f6120bf57bd67a17a4"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-132.npz",
+   "sha256": "ac20c2b69329639c80bb83fb88ba9811078bb7de0da151fdf7eb76ee671d8ed1"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-144.npz",
+   "sha256": "87c4258f92942cdaea3e70c53ca9266291ba6134ea43c9fb226c23a19dc0e78c"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-156.npz",
+   "sha256": "3a12bc2cba8e52226de762e28635650fdddedc5e049572e94aff626c305d8319"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-168.npz",
+   "sha256": "8027a1955aeabae31c9f60a903bf3a7d2b4b00ec6fa2eba3d70e580b2b197f6b"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-180.npz",
+   "sha256": "d051eb12bf6174527fae3618ec373f7b843eea8efcda09d4ca6335b61b9b60fe"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-192.npz",
+   "sha256": "61fb74ec8da15786e55f53f094061a3f9f6f0738685ce396bae47843fec9ece3"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-204.npz",
+   "sha256": "b848d9acecb15e6403e0dc5a4bda50f17d0b873b791f74e60a6a7eb17e5f3d36"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-216.npz",
+   "sha256": "9f93fba4cad213faff8fbd01a6cb31ee67451f67a6d30393aadd198da232cd45"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-228.npz",
+   "sha256": "44087d118cfa9d4189ca448dde08a694014564660868c0d0cc2c23ae67a545e7"
+  },
+  {
+   "path": "/archive/shrimp-memory-data/audits/public-basin-map/pod-key/b3-stages/shard-261/stage-1056-block-240.npz",
+   "sha256": "73a9806f58d25b099f20e681d3643c07577421e78535a644bc67d9bebc7fba99"
+  }
+ ]
+}

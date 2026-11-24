@@ -68,6 +68,8 @@ where delta is the distance of the control beyond the fold (negative short of it
 
 For far endpoints both times scale as the inverse square root of the distance beyond the fold.
 
+**Correction, 23 November 2026, 03:40 UTC.** The sentence above is wrong for far endpoints. Near the fold (delta much smaller than D_H) both times diverge as the inverse square root of delta, approaching pi / sqrt(a b delta) periods. Far from it (delta much larger than D_H), arctan(sqrt(D_H / delta)) is close to sqrt(D_H / delta), so the time to reach the hold's unstable orbit scales as 2 sqrt(D_H) / (sqrt(a b) delta) periods, the inverse of delta, while the full passage scales as (pi/2) / sqrt(a b delta) periods, the inverse square root. The formulas and every number computed from them are unchanged.
+
 **Coefficient for the write of 1** (the fold that ends the cycle-0 sheet on the hold-temperature line): least
 squares of alpha = alpha_fold + c2 m^2 + c3 m^3 over the recorded branch points with |m| <= 0.25, where
 m = multiplier - 1. There is no linear term because the branch turns where the multiplier passes +1. Then
