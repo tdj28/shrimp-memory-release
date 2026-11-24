@@ -31,9 +31,7 @@ arithmetic on one CPU thread.
 
 Not included: the research history of the private study repository; the programs and materials of the message
 exchange and of the sentence test that the article's Discussion describes, and of the study's other prose
-experiments, with every sentence and note text; the model weights; and the full raw run data (about 140 GB), whose
-files are identified by SHA-256 in the receipts and are available from the author on reasonable request. One analysis
-touches that material: the register-branch analysis (`docs/public-register-branch.md`) reads the saved write-1 stages
+experiments, with every sentence and note text; and the model weights. One analysis touches that material: the register-branch analysis (`docs/public-register-branch.md`) reads the saved write-1 stages
 of one run of the sentence test, in which each note selected an exact write, and its receipt binds those files by
 path and SHA-256. The notes, the programs and that run's own receipt are not here. The toggle-sweep figure and its map
 classes (`tools/plot_public_toggle_sweep.py`, `tools/classify_public_toggle_sweep.py`) also read the fixed-start scans
@@ -60,7 +58,7 @@ original final twelve states of each hold in both lanes for all four digit pairs
 reference cycles, scores the period and unique cycle membership of each, prints the eight rows (24 readouts) and
 compares them with the full-adder truth table. The small extract covers the readouts only; checking continuity through
 the moves needs the full trajectories. The index names each original block and the SHA-256 of its run manifest,
-which `docs/receipts/public-full-adder.json` also records; the manifests themselves are in the raw data.
+which `docs/receipts/public-full-adder.json` also records.
 
 ## Tests
 
@@ -128,7 +126,7 @@ tells a scientific miss from an interrupted experiment. The plan, its provenance
 - **Frozen commits are in the private study repository.** Where a receipt names a frozen or source commit
   (`frozen_commit`, `source_commit`), the commit is in the private study repository, whose history is not part of
   this release. So this repository's own history does not show when a plan was frozen, and the audits that read
-  source files from a frozen commit with `git show` cannot run from a clone, even with the raw data. Most receipts
+  source files from a frozen commit with `git show` cannot run from a clone. Most receipts
   also record the SHA-256 of the source files a run executed, which can be compared with the files here.
 - **Two versions of `tools/check_p6_writes.py`.** The boundary protocol was added after the earlier receipts were
   written. Five receipts (`fresh-readout`, `qwen-batch-trajectory`, `transverse-amplitude`, `transverse-intermediate`,
