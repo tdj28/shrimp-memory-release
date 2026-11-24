@@ -75,7 +75,7 @@ def main() -> int:
     ax[0].plot(0, 0, marker="+", ms=8, color="white", mew=1.4)
     ax[0].annotate("$C_p$", (0, 0), xytext=(-16, 5), textcoords="offset points", color="white", fontsize=8)
     for (u, lane), (s, t) in landings.items():
-        ax[0].plot(s / 1e-3, t / 1e-3, marker="o" if lane else "s", ms=3.2, mfc="white", mec=INK, mew=0.6, ls="none")
+        ax[0].plot(s / 1e-3, t / 1e-3, marker="s" if lane else "o", ms=3.2, mfc="white", mec=INK, mew=0.6, ls="none")
     if "Z" in r:
         zs, zt = r["Z"]["centre"]
         ax[0].add_patch(Rectangle(((zs - HALF_Z) / 1e-3, (zt - HALF_Z) / 1e-3), 2 * HALF_Z / 1e-3, 2 * HALF_Z / 1e-3,
@@ -113,10 +113,10 @@ def main() -> int:
                Patch(fc=UNRESOLVED, label="unresolved")]
     if partial:
         handles.append(Patch(fc=NOT_RUN, ec=MUTED, lw=0.5, label="not yet run"))
-    handles += [plt.Line2D([], [], marker="s", ms=3.5, mfc="white", mec=INK, ls="none", label="pulse ends, from $A_0$"),
-                plt.Line2D([], [], marker="o", ms=3.5, mfc="white", mec=INK, ls="none", label="pulse ends, from $A_1$")]
+    handles += [plt.Line2D([], [], marker="o", ms=3.5, mfc="white", mec=INK, ls="none", label="pulse ends, from $A_0$"),
+                plt.Line2D([], [], marker="s", ms=3.5, mfc="white", mec=INK, ls="none", label="pulse ends, from $A_1$")]
     fig.legend(handles=handles, loc="outside lower center", ncol=len(handles), frameon=False)
-    fig.savefig(a.output)
+    fig.savefig(a.output, dpi=220)
     print(a.output, "partial" if partial else "complete")
     return 0
 
